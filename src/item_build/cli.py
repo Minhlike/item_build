@@ -6,8 +6,9 @@ from pathlib import Path
 import httpx
 
 from .acquisition import audit, clean_for_review, monitor, snap
-from .benchmark import benchmark
+from .benchmark import benchmark, benchmark_catalogs
 from .compiler import compile_repo
+from .local_review import build_local_review
 from .retrieval import LANES, Repository
 from .storage import encode, read, write
 
@@ -28,6 +29,7 @@ def main() -> int:
     context.add_argument("--role", choices=sorted(LANES))
     context.add_argument("--enemies", nargs="*", default=[])
     context.add_argument("--mode", choices=["hero_preparation", "fast_draft"], default="fast_draft")
+    context.add_argument("--include-candidates", action="store_true")
     cooldown = commands.add_parser("cooldown")
     cooldown.add_argument("--entity", required=True)
     cooldown.add_argument("--property", required=True)
@@ -36,6 +38,7 @@ def main() -> int:
     cooldown.add_argument("--cap", type=float)
     perf = commands.add_parser("benchmark")
     perf.add_argument("--save", action="store_true")
+    perf.add_argument("--catalogs", action="store_true")
     options = parser.parse_args()
     root = options.root.resolve()
     try:
@@ -52,6 +55,7 @@ def run(root: Path, options) -> dict:
         case "ingest" | "audit":
             manifest, datasets = snap(root)
             clean_for_review(root, datasets)
+            build_local_review(root, manifest, datasets)
             return audit(root, manifest, datasets) if options.command == "audit" else manifest
         case "enrich":
             repo = Repository(root)
@@ -99,18 +103,20 @@ def run(root: Path, options) -> dict:
             hero_id = repo.identify(options.hero)
             result = repo.get(f"heroes/{hero_id}", canonical=options.canonical)
             if options.local_upstream:
-                path = root / ".local/clean/heroes.json"
-                source_id = read(root / "sources/identity-map.json").get(hero_id, hero_id)
+                pin = read(root / "sources/upstream.json")["sha"]
+                path = root / ".local/review" / pin / "heroes" / f"{hero_id}.json"
                 result = {
                     **result,
-                    "local_unverified": next(
-                        (row for row in read(path) if row["slug"] == source_id), None
-                    ),
+                    "local_unverified": read(path),
                 }
             return result
         case "context":
             return Repository(root).context(
-                options.hero, options.role, options.enemies, options.mode
+                options.hero,
+                options.role,
+                options.enemies,
+                options.mode,
+                include_candidates=options.include_candidates,
             )
         case "cooldown":
             inputs = {}
@@ -121,9 +127,10 @@ def run(root: Path, options) -> dict:
                 options.entity, options.property, inputs, options.cdr, options.cap
             )
         case "benchmark":
-            result = benchmark(root)
+            result = (benchmark_catalogs if options.catalogs else benchmark)(root)
             if options.save:
-                write(root / "reports/benchmark.json", encode(result))
+                name = "catalog-benchmark.json" if options.catalogs else "benchmark.json"
+                write(root / "reports" / name, encode(result))
             return result
     raise ValueError("Lệnh không hợp lệ.")
 

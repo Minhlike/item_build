@@ -1,0 +1,725 @@
+{
+  "id": "vn-2026-04-08",
+  "title": "Lễ Hội 5v5 08/04/2026",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-04-08",
+  "evidence": "patch-2026-04-08",
+  "changes": [
+    {
+      "entity": "items/riu-leviathan",
+      "property": "shop.recipe",
+      "classification": "rework",
+      "replacement": {
+        "value": [
+          "items/riu-gnoll",
+          "items/giap-chan"
+        ],
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/kiem-truy-hon",
+      "property": "shop.recipe",
+      "classification": "rework",
+      "replacement": {
+        "value": [
+          "items/dao-truy-kich",
+          "items/kiem-dai"
+        ],
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-bao-to",
+      "property": "shop.recipe",
+      "classification": "rework",
+      "replacement": {
+        "value": [
+          "items/cung-gio-loc",
+          "items/song-dao"
+        ],
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/guom-hien-te",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/riu-gnoll",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/riu-gnoll",
+      "property": "stat.hp",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 400,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dao-truy-kich",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dao-truy-kich",
+      "property": "stat.ad",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 25,
+          "unit": "attack_damage"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-gio-loc",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-gio-loc",
+      "property": "stat.attack-speed",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.12,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/guom-loki",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 2000,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/guom-loki",
+      "property": "stat.ap",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 150,
+          "unit": "ability_power"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/guom-loki",
+      "property": "stat.cdr",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/guom-loki",
+      "property": "stat.move",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.07,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/riu-leviathan",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 2000,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/riu-leviathan",
+      "property": "stat.hp",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 1200,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/riu-leviathan",
+      "property": "stat.cdr",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/riu-leviathan",
+      "property": "stat.move",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.06,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/kiem-truy-hon",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 2000,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/kiem-truy-hon",
+      "property": "stat.ad",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 90,
+          "unit": "attack_damage"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/kiem-truy-hon",
+      "property": "stat.cdr",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/kiem-truy-hon",
+      "property": "stat.move",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-bao-to",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 2000,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-bao-to",
+      "property": "stat.attack-speed",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.3,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-bao-to",
+      "property": "stat.lifesteal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.15,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-bao-to",
+      "property": "stat.move",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.07,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dai-dia-ma-nhan",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dai-dia-ma-nhan",
+      "property": "stat.move",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dai-dia-than-khien",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dai-dia-than-khien",
+      "property": "stat.move",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dai-dia-mo-troi",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dai-dia-mo-troi",
+      "property": "stat.move",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/guom-hien-te",
+      "property": "passive.hunt-stacks",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "delivery": "item",
+          "activation": "automatic",
+          "stacks": 15,
+          "detail": "4 công phép và 0,2% giảm hồi chiêu mỗi tầng.",
+          "unique_group": "lung-diet"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/riu-gnoll",
+      "property": "passive.hunt-stacks",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "delivery": "item",
+          "activation": "automatic",
+          "stacks": 15,
+          "detail": "25 HP và 0,2% giảm hồi chiêu mỗi tầng.",
+          "unique_group": "lung-diet"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/dao-truy-kich",
+      "property": "passive.hunt-stacks",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "delivery": "item",
+          "activation": "automatic",
+          "stacks": 15,
+          "detail": "2 công vật lý và 0,2% giảm hồi chiêu mỗi tầng.",
+          "unique_group": "lung-diet"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-gio-loc",
+      "property": "passive.hunt-stacks",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "delivery": "item",
+          "activation": "automatic",
+          "stacks": 15,
+          "detail": "0,8% tốc đánh và 0,2% hút máu mỗi tầng.",
+          "unique_group": "lung-diet"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/guom-loki",
+      "property": "passive.hunt-stacks",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "delivery": "item",
+          "activation": "automatic",
+          "stacks": 25,
+          "detail": "4 công phép và 0,2% giảm hồi chiêu mỗi tầng.",
+          "unique_group": "lung-diet"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/riu-leviathan",
+      "property": "passive.hunt-stacks",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "delivery": "item",
+          "activation": "automatic",
+          "stacks": 25,
+          "detail": "25 HP và 0,2% giảm hồi chiêu mỗi tầng.",
+          "unique_group": "lung-diet"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/kiem-truy-hon",
+      "property": "passive.hunt-stacks",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "delivery": "item",
+          "activation": "automatic",
+          "stacks": 25,
+          "detail": "2 công vật lý và 0,2% giảm hồi chiêu mỗi tầng.",
+          "unique_group": "lung-diet"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/cung-bao-to",
+      "property": "passive.hunt-stacks",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "delivery": "item",
+          "activation": "automatic",
+          "stacks": 25,
+          "detail": "0,8% tốc đánh và 0,2% hút máu mỗi tầng.",
+          "unique_group": "lung-diet"
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "items/rua-tho-san",
+      "property": "passive.jungle-damage",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "jungle-monster",
+          "trigger": "Săn bắt tác động lên quái",
+          "delivery": "item",
+          "activation": "automatic",
+          "damage_type": "true",
+          "detail": "50–120 sát thương theo nhịp, công thức chọn mốc chưa xác minh.",
+          "timing": {
+            "interval_s": 0.5
+          }
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    }
+  ],
+  "review_notes": [
+    "Chỉ thêm nhóm đồ thuộc đấu hạng. Triệu hồi khổng lồ được ghi trong mùa Lễ Hội 5v5 và không dùng làm luật mùa Vết Nứt."
+  ]
+}

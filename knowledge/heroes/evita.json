@@ -10,13 +10,95 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.base-magic": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 trúng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 300.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 60.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.base-magic": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản Chiêu 3.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 30.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 15.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.06
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.cooldown": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 55.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5.0
+                }
+              ]
+            }
+          }
+        }
+      }
     ]
   },
   "unknown": [
     "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Các kỹ năng và tương tác còn lại"
   ],
   "relations": []
 }

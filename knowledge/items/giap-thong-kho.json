@@ -54,6 +54,7 @@
           "target": "damage-dealer",
           "delivery": "item",
           "trigger": "Nhận sát thương",
+          "activation": "automatic",
           "damage_type": "true",
           "formula": {
             "unit": "damage",
@@ -84,6 +85,7 @@
           "target": "self",
           "delivery": "item",
           "trigger": "Bật Phản Pháo",
+          "activation": "manual",
           "detail": "Đặt tỷ lệ của Phản phệ lên 25% trong cửa sổ; vẫn xét khoảng cách.",
           "amount": {
             "amount": 0.25,
@@ -103,5 +105,6 @@
     "Đối chiếu số liệu trong cửa hàng phiên bản VN",
     "Giá vàng hiện hành"
   ],
+  "shop_group": "defense",
   "relations": []
 }

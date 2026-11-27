@@ -67,7 +67,9 @@ def test_first_draft_mechanisms(repo):
     assert latest(repo, "trieu-van", "passive.takedown-heal")["effect"] == "heal"
     assert latest(repo, "trieu-van", "skill-2.lifesteal")["effect"] == "lifesteal"
     assert latest(repo, "trieu-van", "skill-3.on-hit-true")["damage_type"] == "true"
-    assert "items/ao-choang-than-ra" not in ctx["related"]
+    ra_live = ctx["related"]["items/ao-choang-than-ra"]["live"]
+    assert ra_live["passive.anti-heal"]["value"]["effect"] == "heal_reduction"
+    assert "passive.burn" not in ra_live
     ra = repo.get("items/ao-choang-than-ra", canonical=True)
     assert ra["facts"]["passive.burn"][0]["value"]["timing"]["interval_s"] == 1
     assert next(edge for edge in ra["relations"] if edge["id"] == "ra-allain")["condition"]
@@ -83,7 +85,7 @@ def test_second_draft_vision_and_damage(repo):
     assert hayate["damage_type"] == "true" and hayate["stacks"] == 6
     assert hayate["timing"]["duration_s"] == 4
     assert foes["kaine"]["live"]["passive.stealth"]["value"]["effect"] == "stealth"
-    assert "items/dai-dia-ma-nhan" not in ctx["related"]
+    assert "active.reveal" not in ctx["related"]["items/dai-dia-ma-nhan"]["live"]
     ma_nhan = repo.get("items/dai-dia-ma-nhan", canonical=True)
     assert ma_nhan["facts"]["active.reveal"][0]["value"]["effect"] == "reveal"
     assert ma_nhan["relations"][0]["object"] == "heroes/kaine#passive.stealth"

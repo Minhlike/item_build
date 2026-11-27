@@ -10,13 +10,64 @@
         ],
         "value": true
       }
+    ],
+    "skill-2.target-max-hp-true": [
+      {
+        "evidence": [
+          "hero-florentino",
+          "florentino-archive"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Từng nhịp Thưởng hoa trúng địch",
+          "detail": "Tách thành phần chuẩn theo máu tối đa khỏi thành phần vật lý. Trang kỹ năng không xác định hệ số hiện hành.",
+          "damage_type": "true",
+          "basis": "target_max_hp"
+        }
+      }
+    ],
+    "skill-2.flower-loop": [
+      {
+        "evidence": [
+          "hero-florentino"
+        ],
+        "value": {
+          "effect": "reset_cooldown",
+          "target": "self",
+          "trigger": "Nhặt được hoa",
+          "detail": "Hồi nội năng, chuẩn bị Đột kích ở đòn kế và hoàn lại nhịp Thưởng hoa. Có thể cắt vòng lặp bằng cách khiến đối thủ mất đường nhặt hoa."
+        }
+      }
+    ],
+    "skill-3.armor-reduction": [
+      {
+        "evidence": [
+          "hero-florentino"
+        ],
+        "value": {
+          "effect": "armor_reduction",
+          "target": "first-enemy-hero",
+          "trigger": "Tướng đầu tiên bị Quyết đấu",
+          "timing": {
+            "duration_s": 5.0
+          }
+        }
+      }
+    ],
+    "tactics.duel": [
+      {
+        "evidence": [
+          "hero-florentino",
+          "florentino-tactics"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh đứng vào đường nối hoa. Ép đối phương bỏ lộ trình nhặt hoa hoặc rút chờ cửa sổ quyết đấu."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
   ],
   "relations": []
 }

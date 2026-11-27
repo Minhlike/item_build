@@ -1,0 +1,88 @@
+{
+  "id": "dai-dia-than-khien",
+  "kind": "items",
+  "name": "Đại địa thần khiên",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      },
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1200.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        }
+      },
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "active.team-shield": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self-and-nearby-allies",
+          "delivery": "item",
+          "trigger": "Bấm Thần khiên",
+          "activation": "manual",
+          "detail": "Lá chắn trong khoảng 680–1800, cách tính theo cấp cần đối chiếu.",
+          "timing": {
+            "duration_s": 3.0,
+            "cooldown_s": 60.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "support",
+  "relations": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "kiem-muramasa",
+  "kind": "items",
+  "name": "Kiếm Muramasa",
+  "aliases": [
+    "Muramasa"
+  ],
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2020.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 80.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 500.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.penetration": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "armor_pen",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Khi sở hữu trang bị",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.35,
+            "unit": "ratio"
+          },
+          "unique_group": "xuyen-thau"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

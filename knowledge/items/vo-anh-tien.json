@@ -67,6 +67,7 @@
           "target": "self",
           "delivery": "item",
           "trigger": "Bật Vô hình khi người mang thuộc nhóm melee",
+          "activation": "manual",
           "timing": {
             "duration_s": 1.0,
             "cooldown_s": 75.0
@@ -87,6 +88,7 @@
           "target": "self",
           "delivery": "item",
           "trigger": "Bật Vô hình khi người mang thuộc nhóm ranged",
+          "activation": "manual",
           "timing": {
             "duration_s": 2.5,
             "cooldown_s": 75.0
@@ -107,6 +109,7 @@
           "target": "self",
           "delivery": "item",
           "trigger": "Trong thời gian Vô hình",
+          "activation": "manual",
           "detail": "130–260 HP mỗi nhịp, nguồn chưa ghi rõ mốc tăng.",
           "timing": {
             "interval_s": 0.5
@@ -126,6 +129,7 @@
           "target": "self",
           "delivery": "item",
           "trigger": "Trong thời gian Vô hình",
+          "activation": "manual",
           "detail": "Tăng tốc chạy.",
           "amount": {
             "amount": 0.3,
@@ -141,5 +145,6 @@
     "Đối chiếu số liệu trong cửa hàng phiên bản VN",
     "Giá vàng hiện hành"
   ],
+  "shop_group": "physical",
   "relations": []
 }

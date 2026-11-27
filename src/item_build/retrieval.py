@@ -5,10 +5,19 @@ from pathlib import Path
 from pydantic import TypeAdapter
 from rapidfuzz import fuzz, process
 
+from .catalog import eligibility
 from .models import Basis, Formula, Nonnegative
 from .storage import read
 
 LANES = {"support", "mid", "jungle", "dragon", "slayer"}
+ROLE_GROUPS = {
+    "support": ("defense", "support", "boots"),
+    "mid": ("magic", "boots", "defense"),
+    "jungle": ("jungle", "physical", "magic", "spells"),
+    "dragon": ("physical", "boots", "defense"),
+    "slayer": ("physical", "defense", "boots"),
+    "general": ("defense", "physical", "magic", "support", "boots", "jungle"),
+}
 
 
 def normalize(name: str) -> str:
@@ -25,7 +34,10 @@ class Repository:
     def __init__(self, root: Path):
         self.root = root
         self.version = read(root / "knowledge/VERSION.json")
-        self.groups = read(root / "packs/INDEX.json")["groups"]
+        index = read(root / "packs/INDEX.json")
+        self.groups = index["groups"]
+        self.catalogs = index["catalogs"]
+        self.preferences = index["preferences"]
         aliases = {}
         for hero_id, (name, _, _, labels) in self.groups["heroes"].items():
             for label in (hero_id, name, *labels):
@@ -65,45 +77,99 @@ class Repository:
     def get(self, key: str, *, canonical: bool = False) -> dict:
         group, entity_id = key.split("/", 1)
         path = self.groups[group][entity_id][2 if canonical else 1]
+        return self.read_file(path)
+
+    def read_file(self, path: str) -> dict:
         if path not in self.cached:
             self.cached[path] = read(self.root / path)
             self.files_read += 1
         return self.cached[path]
 
-    def context(self, hero: str, role: str | None, enemies: list[str], mode: str) -> dict:
+    def context(
+        self,
+        hero: str,
+        role: str | None,
+        enemies: list[str],
+        mode: str,
+        *,
+        include_candidates: bool = False,
+    ) -> dict:
         if role not in LANES | {None} or len(enemies) > 5:
             raise ValueError("Cần vị trí hợp lệ và tối đa năm tướng địch.")
         hero_id = self.identify(hero)
         enemy_ids = list(dict.fromkeys(self.identify(enemy) for enemy in enemies))
-        team = [self.get(f"heroes/{entity_id}") for entity_id in enemy_ids]
-        player = self.get(f"heroes/{hero_id}")
+
+        def match_pack(key: str) -> dict:
+            pack = self.get(key)
+            return (
+                pack
+                if include_candidates
+                else {
+                    k: v for k, v in pack.items() if k not in {"candidates", "candidate_relations"}
+                }
+            )
+
+        team = [match_pack(f"heroes/{entity_id}") for entity_id in enemy_ids]
+        player = match_pack(f"heroes/{hero_id}")
         role_pack = self.get(f"roles/{role or 'general'}")
-        battlefield = self.get("battlefield/ranked-vn")
+        battlefield = match_pack("battlefield/ranked-vn")
+        preference_path = self.preferences.get(f"{hero_id}/{role}")
+        preference = self.read_file(preference_path) if preference_path else None
+        groups = list(ROLE_GROUPS[role or "general"])
+        if mode == "hero_preparation" and include_candidates:
+            groups.extend(("runes", "enchantments", "spells"))
+        groups = list(dict.fromkeys(groups))
         related = {}
-        for key in role_pack["live"].get("catalog.entries", {}).get("value", []):
-            entry = self.get(key)
-            if entry["live"]:
-                related[key] = entry
-        for pack in [player, *team, role_pack, battlefield]:
-            for edge in pack["relations"]:
-                for endpoint in (edge["subject"], edge["object"]):
-                    key = endpoint.split("#", 1)[0]
-                    if key.split("/")[0] in {"items", "runes", "enchantments", "spells"}:
-                        item = self.get(key)
-                        if item["live"]:
-                            related[key] = item
-        pack_list = [player, *team, role_pack, battlefield, *related.values()]
-        references = {
-            key
-            for pack in pack_list
-            for entry in [*pack["live"].values(), *pack["relations"]]
-            for key in entry["evidence"]
-        }
-        references.update(key for pack in pack_list for key in pack["identity_sources"])
+        candidate_reviews = {}
+        for group in groups:
+            path = self.catalogs.get(group)
+            if path is None:
+                continue
+            for item_id, entry in self.read_file(path)["entries"].items():
+                is_item = "shop_group" in entry
+                key = f"{'items' if is_item else group}/{item_id}"
+                choice = eligibility(item_id, entry, preference) if is_item else "reviewable"
+                canonical = self.groups[key.split("/")[0]][item_id][2]
+                if include_candidates and (entry["candidates"] or choice.startswith("excluded")):
+                    candidate_reviews[key] = {
+                        **entry,
+                        "eligibility": choice,
+                        "canonical": canonical,
+                    }
+                if entry["live"] and choice in {"no_personal_filter", "reviewable"}:
+                    related[key] = {
+                        "id": item_id,
+                        "canonical": canonical,
+                        "identity_sources": [],
+                        "review_properties": sorted(entry["candidates"]),
+                        "relations": [],
+                        "review_relations": [],
+                        "unknown": [],
+                        **{
+                            k: v
+                            for k, v in entry.items()
+                            if k not in {"candidates", "candidate_relations"}
+                        },
+                    }
+        pack_list = [
+            player,
+            *team,
+            role_pack,
+            battlefield,
+            *related.values(),
+            *candidate_reviews.values(),
+        ]
+        references = {key for pack in pack_list for key in pack.get("identity_sources", [])}
+        for pack in pack_list:
+            claims = [
+                *pack["live"].values(),
+                *pack.get("relations", []),
+                *pack.get("candidate_relations", []),
+            ]
+            claims.extend(fact for facts in pack.get("candidates", {}).values() for fact in facts)
+            references.update(key for fact in claims for key in fact["evidence"])
         evidence_path = "knowledge/sources/INDEX.json"
-        if evidence_path not in self.cached:
-            self.cached[evidence_path] = read(self.root / evidence_path)
-            self.files_read += 1
+        sources = self.read_file(evidence_path)
         return {
             "version": self.version,
             "mode": mode,
@@ -115,7 +181,10 @@ class Repository:
             "battlefield": battlefield,
             "tactical_role": role_pack,
             "related": related,
-            "evidence": {key: self.cached[evidence_path][key] for key in sorted(references)},
+            "catalog_paths": self.catalogs,
+            "personal_preference": preference,
+            **({"candidate_reviews": candidate_reviews} if include_candidates else {}),
+            "evidence": {key: sources[key] for key in sorted(references)},
         }
 
     def cooldown(

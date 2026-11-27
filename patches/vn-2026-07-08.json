@@ -70,6 +70,509 @@
         "status": "LIVE_VN",
         "effective_from": "2026-07-08"
       }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "river.light-beetle.first-spawn",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 30,
+          "unit": "second"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "river.light-beetle.respawn",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 60,
+          "unit": "second"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "river.light-beetle.gold",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 45,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "river.light-beetle.xp",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 50,
+          "unit": "experience"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "river.light-beetle.hp",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 2500,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "river.light-beetle.armor",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 600,
+          "unit": "armor"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "river.light-beetle.magic-defense",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0,
+          "unit": "magic_defense"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "river.light-beetle.vision",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "reveal",
+          "target": "enemy-jungle-path",
+          "trigger": "Trong bốn phút đầu, đội hạ Bọ Ánh Sáng phía Caesar",
+          "detail": "Tinh linh đi theo đường bay vào rừng đối phương và soi sáng đường bay."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "jungle.guardian-bird",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "invading-hero",
+          "trigger": "Tướng địch vào khu bùa phe mình trước phút 4",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "detail": "Giảm sát thương gây ra khi bị Tinh Linh Điểu xua đuổi.",
+          "ends_when": "Rời vùng bảo vệ hoặc trận tới phút 4."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "jungle.buff-evolution",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "red-and-blue-buff-monsters",
+          "trigger": "Phút 10",
+          "amount": {
+            "amount": 600,
+            "unit": "second"
+          },
+          "detail": "Nếu quái cũ còn sống, quái cường hóa kế thừa tỷ lệ máu hiện tại."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "jungle.buff-sharing",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "jungle",
+          "target": "closest-teammate",
+          "trigger": "Đồng minh đến gần người vừa hạ bùa đã cường hóa",
+          "detail": "Linh hồn truyền bùa tương ứng cho đồng minh gần nhất."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "mid.early-melee-minion-gold",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 27,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "mid.early-ranged-minion-gold",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 29,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.gold-pickup-tier-2",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "support-holder",
+          "trigger": "Vàng lính không có người nhận và có trang bị trợ thủ cấp 2",
+          "amount": {
+            "amount": 450,
+            "unit": "gold"
+          },
+          "timing": {
+            "cooldown_s": 15
+          },
+          "detail": "Thả 50% phần vàng không được nhận; chạm trần nhặt 450 vàng. Có đợt hút toàn bản đồ."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.gold-pickup-tier-3",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "support-holder",
+          "trigger": "Vàng lính không có người nhận và có trang bị trợ thủ cấp 3",
+          "amount": {
+            "amount": 600,
+            "unit": "gold"
+          },
+          "timing": {
+            "cooldown_s": 10
+          },
+          "detail": "Thả 50% phần vàng không được nhận; có đợt hút toàn bản đồ. Tích 600 mở Cộng hưởng."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.resonance",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "self-and-selected-ally",
+          "trigger": "Sau khi nhặt tích đủ 600 vàng với trang bị trợ thủ cấp 3, bấm Cộng hưởng lên một đồng minh",
+          "activation": "manual",
+          "charges": 1,
+          "detail": "Tổng lợi ích chung cho cả hai là 200 vàng và 200 EXP. Một lần mỗi trận."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/flowborn",
+      "property": "skill-2.arrow-physical",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nỏ khổng lồ của dạng xạ thủ trúng mục tiêu.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 550,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 110
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 1.35
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/maloch",
+      "property": "skill-1.base-physical",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đường chém Chiêu 1 trúng; nguồn ghi thành phần cơ bản.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 700,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 140
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 3
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/jinna",
+      "property": "passive.empowered-magic",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn cường hóa nội tại trúng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 250,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 18
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/jinna",
+      "property": "skill-1.magic",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 trúng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 280,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 56
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/lindis",
+      "property": "skill-3.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 11,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -1.5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/teemee",
+      "property": "skill-1.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": 5
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/lu-bo",
+      "property": "skill-3.heal",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Hồi phục từ Chiêu cuối",
+          "formula": {
+            "unit": "hp",
+            "base": 130,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 65
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.35
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
     }
   ],
   "review_notes": []

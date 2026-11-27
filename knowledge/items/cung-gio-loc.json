@@ -1,0 +1,58 @@
+{
+  "id": "cung-gio-loc",
+  "kind": "items",
+  "name": "Cung gió lốc",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 700.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 0.12,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.hunt-stacks": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Điều kiện hạ quái của Lùng diệt được đáp ứng",
+          "activation": "automatic",
+          "detail": "0,8% tốc đánh và 0,2% hút máu mỗi tầng.",
+          "stacks": 15,
+          "unique_group": "lung-diet"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon và quy tắc mua",
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "shop_group": "jungle",
+  "relations": []
+}

@@ -1,0 +1,65 @@
+{
+  "id": "xuyen-tam-lenh",
+  "kind": "items",
+  "name": "Xuyên tâm lệnh",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1980.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 140.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 500.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "passive.magic-debuff": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "enemy-hit",
+          "delivery": "item",
+          "trigger": "Dùng kỹ năng trúng mục tiêu",
+          "activation": "automatic",
+          "detail": "Giảm 10% công phép và 100 giáp phép của nạn nhân.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

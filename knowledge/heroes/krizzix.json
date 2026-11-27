@@ -10,13 +10,40 @@
         ],
         "value": true
       }
+    ],
+    "passive.bonus-magic": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nội tại gây sát thương thêm.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 235.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 17.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [
     "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Các kỹ năng và tương tác còn lại"
   ],
   "relations": []
 }

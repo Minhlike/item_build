@@ -31,8 +31,9 @@
         "evidence": [
           "patch-battlefield"
         ],
-        "status": "LIVE_VN",
+        "status": "SUPERSEDED",
         "effective_from": "2026-09-29",
+        "effective_until": "2026-11-17",
         "value": {
           "effect": "shield",
           "target": "self",
@@ -50,6 +51,30 @@
             ]
           }
         }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "spell",
+          "trigger": "Kích hoạt phép giới hạn mùa",
+          "formula": {
+            "unit": "hp",
+            "base": 350.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 25.0,
+                "origin": 0
+              }
+            ]
+          }
+        }
       }
     ],
     "active.magic": [
@@ -57,8 +82,9 @@
         "evidence": [
           "patch-battlefield"
         ],
-        "status": "LIVE_VN",
+        "status": "SUPERSEDED",
         "effective_from": "2026-09-29",
+        "effective_until": "2026-11-17",
         "value": {
           "effect": "damage",
           "target": "nearby-enemy",
@@ -72,6 +98,34 @@
               {
                 "basis": "hero_level",
                 "coefficient": 20.0,
+                "origin": 0
+              }
+            ]
+          },
+          "interactions": [
+            "Kèm giảm tốc chạy 30% trong một giây."
+          ]
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemy",
+          "delivery": "spell",
+          "trigger": "Ma vật triệu hồi gây sát thương",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 350.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 25.0,
                 "origin": 0
               }
             ]

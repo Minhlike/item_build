@@ -1,0 +1,82 @@
+{
+  "id": "dao-truy-hon",
+  "kind": "items",
+  "name": "Đao Truy Hồn",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 80.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 800.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.wound": [
+      {
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "effect": "heal_reduction",
+          "target": "damaged-target",
+          "delivery": "item",
+          "trigger": "Đòn đánh hoặc chiêu gây sát thương",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 3.0
+          },
+          "unique_group": "troc-na"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon và quy tắc mua",
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

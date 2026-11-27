@@ -11,6 +11,58 @@
         "value": true
       }
     ],
+    "tier-1.canh-gac": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Đứng gần trụ",
+          "detail": "Nhận cả kháng hiệu ứng. Chưa rõ phạm vi và hệ số."
+        }
+      }
+    ],
+    "tier-2.bom-mau": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Đang dùng Bơm máu",
+          "detail": "Tăng hiệu quả hồi máu và lá chắn; kiểm tra cách cộng dồn theo nguồn."
+        }
+      }
+    ],
+    "tier-3.moc-giap": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Tích đủ lần chịu sát thương và vụ nổ trúng tướng",
+          "detail": "Vụ nổ có sát thương phép; hồi máu phụ thuộc trúng tướng."
+        }
+      }
+    ],
+    "tier-3.troi-buoc": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Khống chế trúng tướng",
+          "detail": "Nhận song giáp và hiệu ứng đốt tỷ lệ máu tối đa."
+        }
+      }
+    ],
     "tier-2.cuu-vien": [
       {
         "evidence": [

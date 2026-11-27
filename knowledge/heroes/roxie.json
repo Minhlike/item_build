@@ -10,13 +10,68 @@
         ],
         "value": true
       }
+    ],
+    "skill-2.magic": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 trúng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 180.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.shield": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Chiêu 2 cấp lá chắn",
+          "formula": {
+            "unit": "hp",
+            "base": 250.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [
     "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Các kỹ năng và tương tác còn lại"
   ],
   "relations": []
 }

@@ -71,7 +71,8 @@
           "detail": "Lá chắn có phần gốc 250–500 và thêm 4% máu tối đa. Nguồn chưa làm rõ chủ thể máu tối đa hoặc cách chọn mốc gốc.",
           "exceptions": [
             "Thiếu đồng minh gần đó thì giá trị lá chắn tăng 50%."
-          ]
+          ],
+          "activation": "automatic"
         },
         "evidence": [
           "patch-items"
@@ -97,7 +98,8 @@
           "detail": "Lá chắn có phần gốc 250–500 và thêm 4% máu tối đa. Nguồn chưa làm rõ chủ thể máu tối đa hoặc cách chọn mốc gốc.",
           "exceptions": [
             "Thiếu đồng minh gần đó thì giá trị lá chắn tăng 50%."
-          ]
+          ],
+          "activation": "automatic"
         },
         "evidence": [
           "patch-items"
@@ -184,7 +186,8 @@
             "duration_s": 1,
             "cooldown_s": 75
           },
-          "ends_when": "Dùng chiêu, đánh thường hoặc hết thời lượng."
+          "ends_when": "Dùng chiêu, đánh thường hoặc hết thời lượng.",
+          "activation": "manual"
         },
         "evidence": [
           "patch-items"
@@ -207,7 +210,8 @@
             "duration_s": 2.5,
             "cooldown_s": 75
           },
-          "ends_when": "Dùng chiêu, đánh thường hoặc hết thời lượng."
+          "ends_when": "Dùng chiêu, đánh thường hoặc hết thời lượng.",
+          "activation": "manual"
         },
         "evidence": [
           "patch-items"
@@ -229,7 +233,8 @@
           "timing": {
             "interval_s": 0.5
           },
-          "detail": "130–260 HP mỗi nhịp, nguồn chưa ghi rõ mốc tăng."
+          "detail": "130–260 HP mỗi nhịp, nguồn chưa ghi rõ mốc tăng.",
+          "activation": "manual"
         },
         "evidence": [
           "patch-items"
@@ -252,7 +257,8 @@
             "amount": 0.3,
             "unit": "ratio"
           },
-          "detail": "Tăng tốc chạy."
+          "detail": "Tăng tốc chạy.",
+          "activation": "manual"
         },
         "evidence": [
           "patch-items"
@@ -333,7 +339,8 @@
           "unique_group": "phan-phe",
           "exceptions": [
             "Suy giảm theo khoảng cách, tối đa giảm 50%."
-          ]
+          ],
+          "activation": "automatic"
         },
         "evidence": [
           "patch-items"
@@ -360,7 +367,8 @@
             "duration_s": 3,
             "cooldown_s": 75
           },
-          "detail": "Đặt tỷ lệ của Phản phệ lên 25% trong cửa sổ; vẫn xét khoảng cách."
+          "detail": "Đặt tỷ lệ của Phản phệ lên 25% trong cửa sổ; vẫn xét khoảng cách.",
+          "activation": "manual"
         },
         "evidence": [
           "patch-items"
@@ -683,6 +691,388 @@
         ],
         "status": "SUPERSEDED",
         "effective_until": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/celica",
+      "property": "skill-1.speed-window",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "timing": {
+            "duration_s": 3
+          },
+          "detail": "Tăng tốc chạy; trong cửa sổ kích hoạt, phần công vật lý của nội tại Chiêu 1 nhân đôi."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/celica",
+      "property": "skill-3.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 3",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 20,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -2
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "turret.outer-hp",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "amount": 6500,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "turret.middle-hp",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "amount": 7750,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/natalya",
+      "property": "skill-2.base-magic",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản của Chiêu 2 theo ghi chú cân bằng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/natalya",
+      "property": "skill-3.base-magic",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản của Chiêu 3 theo ghi chú cân bằng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/toro",
+      "property": "skill-2.physical",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 180,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.035
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/krizzix",
+      "property": "passive.bonus-magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nội tại gây sát thương thêm.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 235,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 17
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/ryoma",
+      "property": "skill-3.base-physical",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn của Loạn Trảm trúng đích.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 110,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/roxie",
+      "property": "skill-2.magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 trúng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 180,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/ryoma",
+      "property": "skill-1.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/elandorr",
+      "property": "passive.post-cast-critical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "critical",
+          "target": "target",
+          "trigger": "Đánh thường sau khi tung chiêu hoặc thu đèn",
+          "detail": "Chỉ thành phần sát thương thêm từ nội tại được ghi có thể chí mạng."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/baldum",
+      "property": "skill-2.mitigation",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Dùng Chiêu 2",
+          "timing": {},
+          "stacks": 5,
+          "formula": {
+            "unit": "ratio",
+            "base": 0.04,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.008
+              }
+            ]
+          },
+          "detail": "Giá trị mỗi tầng. Khi mở chiêu nhận hai tầng; trần năm tầng."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/roxie",
+      "property": "skill-2.shield",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Chiêu 2 cấp lá chắn",
+          "formula": {
+            "unit": "hp",
+            "base": 250,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
       }
     }
   ],

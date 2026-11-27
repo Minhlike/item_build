@@ -10,13 +10,61 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.stationary-penetration": [
+      {
+        "evidence": [
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "armor_pen",
+          "target": "self",
+          "trigger": "Đứng yên tới nhịp tích tiếp theo",
+          "detail": "Xuyên giáp tăng theo cấp; trị số và ngưỡng mất cộng dồn cần kiểm thử.",
+          "timing": {
+            "interval_s": 1.0
+          },
+          "stacks": 5
+        }
+      }
+    ],
+    "passive.basic-physical": [
+      {
+        "evidence": [
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "basic_attack",
+          "trigger": "Đánh thường trúng địch",
+          "damage_type": "physical",
+          "exceptions": [
+            "Đánh thường không chí mạng theo mô tả hiện thấy."
+          ]
+        }
+      }
+    ],
+    "skill-2.poke": [
+      {
+        "evidence": [
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Viễn trình kích trúng",
+          "detail": "Mốc 2 giây để tăng tầm và độ chuẩn, có thể bắn sớm.",
+          "damage_type": "physical",
+          "timing": {
+            "cast_s": 2.0
+          }
+        }
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
   ],
   "relations": []
 }

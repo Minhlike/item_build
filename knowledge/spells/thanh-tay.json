@@ -18,6 +18,24 @@
           }
         }
       }
+    ],
+    "active.cc-immunity": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Sau khi bấm Thanh tẩy",
+          "timing": {
+            "duration_s": 1.5
+          },
+          "exceptions": [
+            "Đối chiếu riêng các dạng áp chế hoặc cấm dùng phép."
+          ]
+        }
+      }
     ]
   },
   "unknown": [

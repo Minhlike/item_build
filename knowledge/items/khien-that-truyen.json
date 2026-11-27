@@ -49,6 +49,7 @@
           "target": "attacker",
           "delivery": "item",
           "trigger": "Người mang khiên chịu sát thương từ đối thủ",
+          "activation": "automatic",
           "detail": "Giảm tốc đánh, kèm giảm 15% tốc chạy; danh mục không nêu thời lượng.",
           "amount": {
             "amount": 0.3,
@@ -64,6 +65,7 @@
     "Công thức ghép hiện hành",
     "Đối chiếu số liệu trong cửa hàng phiên bản VN"
   ],
+  "shop_group": "defense",
   "relations": [
     {
       "evidence": [

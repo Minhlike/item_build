@@ -1,0 +1,44 @@
+{
+  "id": "gang-giac-dau",
+  "kind": "items",
+  "name": "Găng giác đấu",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 220.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 90.0,
+          "unit": "magic_defense"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

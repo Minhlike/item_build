@@ -13,6 +13,50 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.speed-window": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "detail": "Tăng tốc chạy; trong cửa sổ kích hoạt, phần công vật lý của nội tại Chiêu 1 nhân đôi.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "skill-3.cooldown": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 3",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 20.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -2.0
+                }
+              ]
+            }
+          }
+        }
+      }
     ]
   },
   "unknown": [

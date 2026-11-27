@@ -49,6 +49,7 @@
           "target": "self",
           "delivery": "item",
           "trigger": "Khi sở hữu giày theo danh mục",
+          "activation": "automatic",
           "detail": "Cần kiểm tra ngoại lệ theo loại khống chế.",
           "amount": {
             "amount": 0.35,
@@ -63,5 +64,6 @@
     "Công thức ghép hiện hành",
     "Đối chiếu số liệu trong cửa hàng phiên bản VN"
   ],
+  "shop_group": "boots",
   "relations": []
 }

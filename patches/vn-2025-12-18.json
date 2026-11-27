@@ -1,0 +1,97 @@
+{
+  "id": "vn-2025-12-18",
+  "title": "Quang Minh & Hắc Ám 18/12/2025",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2025-12-18",
+  "evidence": "patch-2025-12-18",
+  "changes": [
+    {
+      "entity": "items/giap-gaia",
+      "property": "stat.price",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "amount": 2180,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2025-12-18",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "items/giap-gaia",
+      "property": "passive.proc-amount",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại Hồi phục phát sinh",
+          "delivery": "item",
+          "activation": "automatic",
+          "formula": {
+            "unit": "hp",
+            "base": 0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          },
+          "unique_group": "gaia-hoi-phuc"
+        },
+        "evidence": [
+          "patch-2025-12-18",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "heroes/allain",
+      "property": "passive.first-three-physical",
+      "classification": "rework",
+      "replacement": {
+        "evidence": [
+          "allain-dec-patch"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Mỗi trong ba đòn đầu của chuỗi đánh thường",
+          "damage_type": "physical",
+          "delivery": "basic_attack",
+          "formula": {
+            "unit": "damage",
+            "base": 30,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 2
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.36
+              }
+            ]
+          },
+          "exceptions": [
+            "Nguồn nêu phần gốc có thể chí mạng. Không gán chí mạng cho toàn bộ công thức."
+          ]
+        }
+      }
+    }
+  ],
+  "review_notes": [
+    "Mục Giáp Gaia trong thông báo 18/12/2025 được đối chiếu với danh mục Học viện về giá và tỷ lệ hồi."
+  ]
+}

@@ -5,6 +5,296 @@
   "server": "VN",
   "effective_from": "2026-10-15",
   "evidence": "patch-oct15",
-  "changes": [],
+  "changes": [
+    {
+      "entity": "heroes/ngo-khong",
+      "property": "passive.empowered-physical",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Đòn đánh cường hóa từ nội tại trúng",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 450,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              }
+            ]
+          },
+          "delivery": "empowered_attack"
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/errol",
+      "property": "passive.stack-decay",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "spend_stack",
+          "target": "self",
+          "trigger": "Vào pha trừ tầng nội tại",
+          "amount": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "timing": {
+            "interval_s": 1
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/flowborn",
+      "property": "skill-3.volley-physical",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Loạt Chiêu 3 dạng xạ thủ trúng",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 64,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 32
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.26
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/raz",
+      "property": "skill-2.magic-poke",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Cú Đấm Chân Không trúng mục tiêu đầu tiên.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 450,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 90
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.9
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/kriknak",
+      "property": "skill-1.base-physical",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản Chiêu 1, chưa tính sát thương dấu ấn.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 325,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 65
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 1.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/gildur",
+      "property": "skill-2.base-magic",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 350,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 70
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/gildur",
+      "property": "skill-2.ongoing-magic",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần duy trì Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 35,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 7
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.05
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/raz",
+      "property": "skill-1.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/gildur",
+      "property": "skill-3.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 45,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/trieu-van",
+      "property": "skill-1.empowered-dash",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Đòn đánh cường hóa từ Chiêu 1",
+          "detail": "Có mục tiêu thì đột kích mục tiêu; thiếu mục tiêu thì lướt về trước."
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    }
+  ],
   "review_notes": []
 }

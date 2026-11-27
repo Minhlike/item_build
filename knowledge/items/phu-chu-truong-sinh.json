@@ -1,0 +1,133 @@
+{
+  "id": "phu-chu-truong-sinh",
+  "kind": "items",
+  "name": "Phù chú trường sinh",
+  "aliases": [
+    "Trường sinh",
+    "PCTS"
+  ],
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2190.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1500.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 150.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 100.0,
+          "unit": "magic_defense"
+        }
+      }
+    ],
+    "passive.in-combat-regen": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đến nhịp hồi của Trường Sinh, đang trong cửa sổ 3 giây chịu đòn của tướng địch hoặc trụ",
+          "activation": "automatic",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.01
+              }
+            ]
+          },
+          "timing": {
+            "interval_s": 2.0
+          },
+          "unique_group": "truong-sinh"
+        }
+      }
+    ],
+    "passive.out-of-combat-regen": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đến nhịp hồi và đã qua ít nhất 3 giây không bị tướng địch hoặc trụ tấn công",
+          "activation": "automatic",
+          "detail": "Thay nhịp hồi cơ bản; hai mức không cộng lại.",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          },
+          "timing": {
+            "interval_s": 2.0
+          },
+          "unique_group": "truong-sinh"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": [
+    {
+      "evidence": [
+        "academy-items",
+        "thane"
+      ],
+      "kind": "derived_knowledge",
+      "id": "truong-sinh-thane",
+      "subject": "items/phu-chu-truong-sinh#passive.in-combat-regen",
+      "predicate": "SYNERGIZES_WITH",
+      "object": "heroes/thane#passive.low-hp-heal",
+      "condition": "Máu tối đa từ đồ tăng giá trị của hồi theo máu tối đa nếu nội tại Thane còn sẵn. Hồi định kỳ và hồi ngưỡng là hai sự kiện.",
+      "scope": "ranked_solo_vn"
+    }
+  ]
+}

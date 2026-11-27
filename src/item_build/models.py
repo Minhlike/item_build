@@ -87,6 +87,7 @@ class Unit(StrEnum):
     RATIO = "ratio"
     COUNT = "count"
     GOLD = "gold"
+    EXPERIENCE = "experience"
     METER = "meter"
     MANA = "mana"
     ARMOR = "armor"
@@ -257,6 +258,7 @@ class Mechanic(Model):
         | None
     ) = None
     trigger: Nonempty
+    activation: Literal["manual", "automatic"] | None = None
     detail: Nonempty | None = None
     damage_type: Literal["physical", "magic", "true"] | None = None
     basis: Basis | None = None
@@ -328,6 +330,13 @@ class Entity(Model):
     aliases: list[Nonempty] = Field(default_factory=list)
     facts: dict[Property, list[Fact]] = Field(default_factory=dict)
     unknown: list[Nonempty] = Field(default_factory=list)
+    shop_group: Literal["defense", "physical", "magic", "support", "boots", "jungle"] | None = None
+
+    @model_validator(mode="after")
+    def item_group(self):
+        if (self.kind == "items") != (self.shop_group is not None):
+            raise ValueError("Mỗi trang bị cần một nhóm cửa hàng.")
+        return self
 
 
 class Relation(Claim):

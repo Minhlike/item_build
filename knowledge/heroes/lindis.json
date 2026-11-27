@@ -10,13 +10,37 @@
         ],
         "value": true
       }
+    ],
+    "skill-3.cooldown": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 11.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -1.5
+                }
+              ]
+            }
+          }
+        }
+      }
     ]
   },
   "unknown": [
     "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Các kỹ năng và tương tác còn lại"
   ],
   "relations": []
 }

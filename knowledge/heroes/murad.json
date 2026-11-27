@@ -10,13 +10,50 @@
         ],
         "value": true
       }
+    ],
+    "tactics.return-point": [
+      {
+        "evidence": [
+          "hero-murad"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Canh điểm trở về của lướt. Nếu Murad đã tích đủ điều kiện mở chiêu cuối thì nên săn điểm hồi thay vì đuổi theo hướng cấu rỉa."
+      }
+    ],
+    "passive.ultimate-window": [
+      {
+        "evidence": [
+          "hero-murad"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "delivery": "basic_attack",
+          "trigger": "Đòn đánh thường trúng đích",
+          "detail": "Đủ bốn tầng Ảnh hồn mở khóa Ảo ảnh trảm trong năm giây.",
+          "timing": {
+            "duration_s": 5.0
+          },
+          "stacks": 4
+        }
+      }
+    ],
+    "skill-1.return-dash": [
+      {
+        "evidence": [
+          "hero-murad"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Lượt thứ ba của Tàn Ảnh Đao",
+          "detail": "Trở về điểm bắt đầu của chuỗi."
+        }
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
   ],
   "relations": []
 }

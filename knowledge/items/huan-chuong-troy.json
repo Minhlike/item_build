@@ -60,6 +60,7 @@
           "target": "self",
           "delivery": "item",
           "trigger": "Rời giao tranh",
+          "activation": "automatic",
           "detail": "Hấp thu 460–1300 sát thương phép theo danh mục. Có nội tại riêng cho giáp phép theo cấp.",
           "unique_group": "ho-than"
         }
@@ -71,5 +72,6 @@
     "Công thức ghép hiện hành",
     "Đối chiếu số liệu trong cửa hàng phiên bản VN"
   ],
+  "shop_group": "defense",
   "relations": []
 }

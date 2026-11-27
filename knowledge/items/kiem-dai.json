@@ -1,0 +1,43 @@
+{
+  "id": "kiem-dai",
+  "kind": "items",
+  "name": "Kiếm dài",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 910.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 80.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon và quy tắc mua",
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

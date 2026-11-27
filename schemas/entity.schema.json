@@ -225,6 +225,22 @@
           "title": "Trigger",
           "type": "string"
         },
+        "activation": {
+          "anyOf": [
+            {
+              "enum": [
+                "manual",
+                "automatic"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Activation"
+        },
         "detail": {
           "anyOf": [
             {
@@ -713,6 +729,7 @@
         "ratio",
         "count",
         "gold",
+        "experience",
         "meter",
         "mana",
         "armor",
@@ -778,6 +795,26 @@
       },
       "title": "Unknown",
       "type": "array"
+    },
+    "shop_group": {
+      "anyOf": [
+        {
+          "enum": [
+            "defense",
+            "physical",
+            "magic",
+            "support",
+            "boots",
+            "jungle"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Shop Group"
     },
     "relations": {
       "items": {

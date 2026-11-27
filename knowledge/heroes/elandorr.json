@@ -10,13 +10,26 @@
         ],
         "value": true
       }
+    ],
+    "passive.post-cast-critical": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "critical",
+          "target": "target",
+          "trigger": "Đánh thường sau khi tung chiêu hoặc thu đèn",
+          "detail": "Chỉ thành phần sát thương thêm từ nội tại được ghi có thể chí mạng."
+        }
+      }
     ]
   },
   "unknown": [
     "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Các kỹ năng và tương tác còn lại"
   ],
   "relations": []
 }

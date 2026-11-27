@@ -10,6 +10,37 @@
         ],
         "value": true
       }
+    ],
+    "tier-1.thanh-chau": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Mang Thánh châu",
+          "detail": "Áp dụng cho chiêu cuối; tổng giới hạn ghi là 40% trong mô tả Thánh châu. Không dùng làm bằng chứng duy nhất cho mọi kỹ năng.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "tier-3.tinh-linh": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "nearby-enemies",
+          "trigger": "Đánh thường trúng tướng ba lần liên tiếp",
+          "detail": "Triệu hồi tinh linh công kích tự động.",
+          "stacks": 3
+        }
+      }
     ]
   },
   "unknown": [

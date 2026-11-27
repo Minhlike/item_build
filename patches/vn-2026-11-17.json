@@ -813,6 +813,94 @@
         "status": "SUPERSEDED",
         "effective_until": "2026-11-17"
       }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "minions.late-scaling",
+      "classification": "buff",
+      "replacement": {
+        "value": "Lính được tăng máu và tốc đánh sau phút 20; thông báo không nêu mức tăng.",
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "caesar.tyrant-vanguard-attack",
+      "classification": "buff",
+      "replacement": {
+        "value": "Công vật lý gốc tăng cho Caesar tiên phong bạo chúa; chưa công bố con số.",
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "spells/ma-chung-hac-am",
+      "property": "active.shield",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Kích hoạt phép giới hạn mùa",
+          "delivery": "spell",
+          "formula": {
+            "unit": "hp",
+            "base": 350,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 25,
+                "origin": 0
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "spells/ma-chung-hac-am",
+      "property": "active.magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemy",
+          "trigger": "Ma vật triệu hồi gây sát thương",
+          "damage_type": "magic",
+          "delivery": "spell",
+          "formula": {
+            "unit": "damage",
+            "base": 350,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 25,
+                "origin": 0
+              }
+            ]
+          },
+          "interactions": [
+            "Kèm giảm tốc chạy 30% trong một giây."
+          ]
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
     }
   ],
   "review_notes": []

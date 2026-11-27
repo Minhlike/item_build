@@ -10,13 +10,112 @@
         ],
         "value": true
       }
+    ],
+    "passive.rear-critical": [
+      {
+        "evidence": [
+          "hero-quillen"
+        ],
+        "value": {
+          "effect": "critical",
+          "target": "target",
+          "trigger": "Đánh hoặc tung chiêu từ sau lưng",
+          "detail": "Góc lưng làm thay đổi khả năng chí mạng; không suy ra cùng cơ chế ở phía trước."
+        }
+      }
+    ],
+    "skill-2.mark": [
+      {
+        "evidence": [
+          "hero-quillen"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Đánh trúng mục tiêu đã bị Chiêu 2 đánh dấu",
+          "amount": {
+            "amount": 1.0,
+            "unit": "second"
+          },
+          "timing": {
+            "duration_s": 10.0
+          },
+          "exceptions": [
+            "Chỉ giữ dấu trên một mục tiêu."
+          ]
+        }
+      }
+    ],
+    "skill-3.stealth": [
+      {
+        "evidence": [
+          "hero-quillen"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Kích hoạt Ẩn sát",
+          "detail": "Có tăng tốc chạy và hồi phục theo nhịp.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "skill-3.heal": [
+      {
+        "evidence": [
+          "hero-quillen"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Trong cửa sổ Ẩn sát",
+          "timing": {
+            "interval_s": 0.5
+          }
+        }
+      }
+    ],
+    "skill-3.takedown-reset": [
+      {
+        "evidence": [
+          "hero-quillen"
+        ],
+        "value": {
+          "effect": "reset_cooldown",
+          "target": "self",
+          "trigger": "Tham gia hạ tướng địch",
+          "detail": "Làm mới hồi chiêu các kỹ năng."
+        }
+      }
+    ],
+    "tactics.flank": [
+      {
+        "evidence": [
+          "hero-quillen"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Cần trông đường vòng vào lưng chủ lực, không chỉ người đứng trước mặt. Giữ phát hiện và bảo kê đến lúc mất dấu."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
   ],
-  "relations": []
+  "relations": [
+    {
+      "evidence": [
+        "academy-items",
+        "hero-quillen"
+      ],
+      "kind": "derived_knowledge",
+      "id": "ma-nhan-quillen",
+      "subject": "items/dai-dia-ma-nhan#active.reveal",
+      "predicate": "COUNTERS",
+      "object": "heroes/quillen#skill-3.stealth",
+      "condition": "Tầm nhìn chuẩn phải bao phủ đường vòng của Quillen trong cửa sổ Ẩn sát. Xác nhận phạm vi thực tế trước khi dựa vào món.",
+      "scope": "ranked_solo_vn"
+    }
+  ]
 }

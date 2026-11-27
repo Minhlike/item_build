@@ -84,6 +84,47 @@
           }
         }
       }
+    ],
+    "passive.fourth-hit-evidence-conflict": [
+      {
+        "evidence": [
+          "allain-fourth-type-conflict"
+        ],
+        "value": "Đòn thứ tư được mô tả có sát thương chuẩn, với biểu thức 45 + 3 theo cấp tướng + 0,54 công vật lý. Bản công bố cũng có ký hiệu STVL trong dòng này. Chưa xác nhận diễn giải của ký hiệu và mốc tăng cấp."
+      }
+    ],
+    "passive.first-three-physical": [
+      {
+        "evidence": [
+          "allain-dec-patch"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "basic_attack",
+          "trigger": "Mỗi trong ba đòn đầu của chuỗi đánh thường",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 30.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 2.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.36
+              }
+            ]
+          },
+          "exceptions": [
+            "Nguồn nêu phần gốc có thể chí mạng. Không gán chí mạng cho toàn bộ công thức."
+          ]
+        }
+      }
     ]
   },
   "unknown": [

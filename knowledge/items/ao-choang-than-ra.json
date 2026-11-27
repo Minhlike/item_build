@@ -16,6 +16,17 @@
           "amount": 2060.0,
           "unit": "gold"
         }
+      },
+      {
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "amount": 2060.0,
+          "unit": "gold"
+        }
       }
     ],
     "stat.hp": [
@@ -61,6 +72,7 @@
           "target": "nearby-enemies",
           "delivery": "item",
           "trigger": "Kẻ địch ở sát người mang áo khi tới nhịp Hỏa diệm",
+          "activation": "automatic",
           "damage_type": "magic",
           "formula": {
             "unit": "damage",
@@ -92,6 +104,30 @@
           "target": "burned-target",
           "delivery": "item",
           "trigger": "Hỏa diệm gây sát thương lên mục tiêu",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 3.0
+          },
+          "unique_group": "troc-na"
+        }
+      },
+      {
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "effect": "heal_reduction",
+          "target": "damaged-target",
+          "delivery": "item",
+          "trigger": "Hỏa diệm đốt trúng",
+          "activation": "automatic",
           "amount": {
             "amount": 0.4,
             "unit": "ratio"
@@ -109,6 +145,7 @@
     "Công thức ghép hiện hành",
     "Đối chiếu số liệu trong cửa hàng phiên bản VN"
   ],
+  "shop_group": "defense",
   "relations": [
     {
       "evidence": [
@@ -121,6 +158,18 @@
       "predicate": "COUNTERS",
       "object": "heroes/allain#passive.hit-heal",
       "condition": "Đứng trong vùng đốt và áp giảm hồi trước khi Allain chạm ngưỡng hồi.",
+      "scope": "ranked_solo_vn"
+    },
+    {
+      "evidence": [
+        "academy-items"
+      ],
+      "kind": "derived_knowledge",
+      "id": "troc-na-overlap",
+      "subject": "items/ao-choang-than-ra#passive.anti-heal",
+      "predicate": "CONFLICTS_WITH",
+      "object": "items/sach-truy-hon#passive.wound",
+      "condition": "Hai món trùng tên nội tại duy nhất Tróc nã và có cùng tỷ lệ ứng viên. Cần kiểm tra luật làm mới và cộng dồn; không cộng 40% + 40% vào phép tính.",
       "scope": "ranked_solo_vn"
     }
   ]

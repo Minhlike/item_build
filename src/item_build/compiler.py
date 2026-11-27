@@ -1,10 +1,12 @@
 from collections import Counter, defaultdict
 from datetime import date
+from graphlib import TopologicalSorter
 from pathlib import Path
 from urllib.parse import urlsplit
 
 from pydantic import TypeAdapter
 
+from .catalog import activation_review, candidate_layer, group_packs, load_preferences
 from .models import (
     CanonicalEntity,
     Entity,
@@ -19,7 +21,7 @@ from .models import (
 from .storage import encode, read, write
 
 GROUPS = ("heroes", "items", "runes", "enchantments", "spells", "battlefield", "roles")
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 
 
 def payload(model):
@@ -182,11 +184,27 @@ def validate_graph(entities, evidence, relations) -> None:
                 raise ValueError(f"Thuộc tính trống: {key}#{prop}.")
             for fact in timeline:
                 validate_claim(fact, evidence)
+                if (
+                    entity.kind == "items"
+                    and isinstance(fact.value, Mechanic)
+                    and fact.value.activation is None
+                ):
+                    raise ValueError(f"Cơ chế trang bị thiếu loại kích hoạt: {key}#{prop}.")
                 if prop == "catalog.entries" and (
                     not isinstance(fact.value, list)
                     or any(entry not in entities for entry in fact.value)
                 ):
                     raise ValueError(f"Danh mục {key} chứa đích không hợp lệ.")
+                if prop == "shop.recipe" and (
+                    entity.kind != "items"
+                    or not isinstance(fact.value, list)
+                    or not fact.value
+                    or any(
+                        part == key or not part.startswith("items/") or part not in entities
+                        for part in fact.value
+                    )
+                ):
+                    raise ValueError(f"Công thức của {key} thiếu thành phần hợp lệ.")
             dated = sorted(
                 (
                     fact
@@ -238,7 +256,15 @@ def artifacts(root: Path) -> dict[str, bytes]:
     entities, evidence, relations, release, patch = load_inputs(root)
     validate_graph(entities, evidence, relations)
     day = release.as_of
+    recipes = {
+        key: fact.value
+        for key, entity in entities.items()
+        for fact in entity.facts.get("shop.recipe", [])
+        if active(fact, day)
+    }
+    tuple(TopologicalSorter(recipes).static_order())
     files = {}
+    packed = {}
     paths = {group: {} for group in GROUPS}
     coverage = {group: Counter() for group in GROUPS}
     edges = defaultdict(list)
@@ -256,11 +282,23 @@ def artifacts(root: Path) -> dict[str, bytes]:
                     if fact.status == Status.SUPERSEDED:
                         fact = fact.model_copy(update={"status": Status.LIVE_VN})
                     live[prop] = payload(fact) | {"status": fact.status.value}
-                elif fact.status == Status.UNVERIFIED:
-                    review.setdefault(prop, []).append(payload(fact))
+                elif fact.status == Status.UNVERIFIED and prop != "identity.roster":
+                    review.setdefault(prop, []).append(
+                        payload(fact)
+                        | {
+                            "status": fact.status.value,
+                            "evidence_layer": candidate_layer(fact, evidence),
+                        }
+                    )
 
         live_relations = [
             payload(edge) for edge in edges[key] if relation_is_live(edge, entities, day)
+        ]
+        candidate_relations = [
+            payload(edge)
+            | {"status": edge.status.value, "evidence_layer": candidate_layer(edge, evidence)}
+            for edge in edges[key]
+            if edge.status == Status.UNVERIFIED
         ]
         counts = coverage[entity.kind]
         counts["entities"] += 1
@@ -277,25 +315,42 @@ def artifacts(root: Path) -> dict[str, bytes]:
         files[canonical] = encode(
             payload(entity) | {"relations": [payload(edge) for edge in edges[key]]}
         )
-        files[pack] = encode(
-            {
-                "id": entity.id,
-                "name": entity.name,
-                "canonical": canonical,
-                "identity_sources": [
-                    ref for fact in entity.facts.get("identity.roster", []) for ref in fact.evidence
-                ],
-                "live": live,
-                "review_properties": sorted(review),
-                "review_relations": [
-                    edge.id for edge in edges[key] if not relation_is_live(edge, entities, day)
-                ],
-                "unknown": entity.unknown,
-                "relations": live_relations,
-            },
-            compact=True,
-        )
+        record = {
+            "id": entity.id,
+            "name": entity.name,
+            "canonical": canonical,
+            "identity_sources": [
+                ref for fact in entity.facts.get("identity.roster", []) for ref in fact.evidence
+            ],
+            "live": live,
+            "review_properties": sorted(review),
+            "review_relations": [
+                edge.id for edge in edges[key] if not relation_is_live(edge, entities, day)
+            ],
+            "unknown": entity.unknown,
+            "relations": live_relations,
+        }
+        if review:
+            record["candidates"] = review
+        if candidate_relations:
+            record["candidate_relations"] = candidate_relations
+        if entity.shop_group:
+            record["shop_group"] = entity.shop_group
+            record["activation"] = activation_review(record | {"candidates": review})
+        packed[key] = record | {"candidates": review}
+        files[pack] = encode(record, compact=True)
         paths[entity.kind][entity.id] = [entity.name, pack, canonical, entity.aliases]
+    catalog_paths = {}
+    for group, entries in group_packs(packed).items():
+        path = f"packs/catalogs/{group}.json"
+        files[path] = encode({"group": group, "entries": entries}, compact=True)
+        catalog_paths[group] = path
+    preferences = load_preferences(root, entities)
+    preference_paths = {}
+    for key, preference in preferences.items():
+        path = f"packs/preferences/{key.replace('/', '-')}.json"
+        files[path] = encode(preference, compact=True)
+        preference_paths[key] = path
     files["packs/INDEX.json"] = encode(
         {
             "schema": SCHEMA_VERSION,
@@ -304,6 +359,8 @@ def artifacts(root: Path) -> dict[str, bytes]:
             "entry_fields": ["name", "pack", "canonical", "aliases"],
             "evidence": "knowledge/sources/INDEX.json",
             "roles": "packs/roles/",
+            "catalogs": catalog_paths,
+            "preferences": preference_paths,
         },
         compact=True,
     )
@@ -356,6 +413,12 @@ def compile_repo(root: Path, *, check: bool = False) -> dict:
         for path in (root / base / group).glob("*.json")
         if path.relative_to(root).as_posix() not in files
     ]
+    obsolete.extend(
+        path.relative_to(root).as_posix()
+        for directory in ("packs/catalogs", "packs/preferences")
+        for path in (root / directory).glob("*.json")
+        if path.relative_to(root).as_posix() not in files
+    )
     if check and (outdated or obsolete):
         raise ValueError(
             f"Tệp biên dịch lệch nguồn ({len(outdated)} cũ, {len(obsolete)} thừa): {(outdated + obsolete)[:8]}."

@@ -1,0 +1,34 @@
+{
+  "id": "rua-tho-san",
+  "kind": "items",
+  "name": "Rựa thợ săn",
+  "facts": {
+    "passive.jungle-damage": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "damage",
+          "target": "jungle-monster",
+          "delivery": "item",
+          "trigger": "Săn bắt tác động lên quái",
+          "activation": "automatic",
+          "detail": "50–120 sát thương theo nhịp, công thức chọn mốc chưa xác minh.",
+          "damage_type": "true",
+          "timing": {
+            "interval_s": 0.5
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon và quy tắc mua",
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "shop_group": "jungle",
+  "relations": []
+}

@@ -269,5 +269,646 @@
     "unknown": [
       "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
     ]
+  },
+  {
+    "id": "do-iii-cong-vat-ly-xuyen-giap",
+    "kind": "runes",
+    "name": "Đỏ III Công vật lý/Xuyên giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.flat-armor-pen": [
+        {
+          "value": {
+            "amount": 3.6,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "do-iii-cong-phep-xuyen-thu-phep",
+    "kind": "runes",
+    "name": "Đỏ III Công phép/Xuyên thủ phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 4.2,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.flat-magic-pen": [
+        {
+          "value": {
+            "amount": 2.4,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "do-iii-ti-le-chi-mang",
+    "kind": "runes",
+    "name": "Đỏ III Tỉ lệ chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.016,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "do-iii-ti-le-sat-thuong-chi-mang",
+    "kind": "runes",
+    "name": "Đỏ III Tỉ lệ chí mạng/Sát thương chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.007,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit-damage": [
+        {
+          "value": {
+            "amount": 0.036,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "do-iii-cong-vat-ly-hut-mau",
+    "kind": "runes",
+    "name": "Đỏ III Công vật lý/Hút máu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 2.5,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.005,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "do-iii-toc-danh-chi-mang",
+    "kind": "runes",
+    "name": "Đỏ III Tốc đánh/Tỉ lệ chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.016,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.005,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "do-iii-cong-phep-toc-danh",
+    "kind": "runes",
+    "name": "Đỏ III Công phép/Tốc đánh",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 4.2,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "tim-iii-cong-vat-ly-toc-chay",
+    "kind": "runes",
+    "name": "Tím III Công vật lý/Tốc chạy",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 1.6,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "tim-iii-cong-phep-hut-mau-phep",
+    "kind": "runes",
+    "name": "Tím III Công phép/Hút máu phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 2.4,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "tim-iii-mau-toi-da-hoi-mau",
+    "kind": "runes",
+    "name": "Tím III Máu tối đa/Hồi máu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.regen": [
+        {
+          "value": {
+            "amount": 4.5,
+            "unit": "hp_per_5_seconds"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "xanh-iii-cong-phep-giam-hoi-chieu",
+    "kind": "runes",
+    "name": "Xanh III Công phép/Giảm hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 2.4,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.007,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "xanh-iii-hut-mau-phep-giap",
+    "kind": "runes",
+    "name": "Xanh III Hút máu phép/Giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.007,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 5.9,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "xanh-iii-giap-phep",
+    "kind": "runes",
+    "name": "Xanh III Giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 9,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
   }
 ]

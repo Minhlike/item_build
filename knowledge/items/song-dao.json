@@ -1,0 +1,54 @@
+{
+  "id": "song-dao",
+  "kind": "items",
+  "name": "Song đao",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 780.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.25,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon và quy tắc mua",
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

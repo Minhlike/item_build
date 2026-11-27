@@ -1,0 +1,44 @@
+{
+  "id": "nhan-hong-ngoc",
+  "kind": "items",
+  "name": "Nhẫn hồng ngọc",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 300.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 300.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

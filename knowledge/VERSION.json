@@ -14,29 +14,29 @@
   "server": "VN",
   "patch_source": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-vet-nut-thoi-khong-26-11-2026/",
   "effective_from": "2026-11-26",
-  "schema": 1,
+  "schema": 2,
   "coverage": {
     "heroes": {
       "entities": 130,
-      "entities_with_live_facts": 18,
-      "live_properties": 39,
-      "review_claims": 182,
-      "live_mechanics": 34,
-      "mechanical_properties_any": 81
+      "entities_with_live_facts": 46,
+      "live_properties": 84,
+      "review_claims": 79,
+      "live_mechanics": 79,
+      "mechanical_properties_any": 146
     },
     "items": {
-      "entities": 8,
-      "entities_with_live_facts": 3,
-      "live_properties": 18,
-      "review_claims": 22,
-      "live_mechanics": 8,
-      "mechanical_properties_any": 14
+      "entities": 57,
+      "entities_with_live_facts": 23,
+      "live_properties": 80,
+      "review_claims": 176,
+      "live_mechanics": 22,
+      "mechanical_properties_any": 56
     },
     "runes": {
-      "entities": 5,
+      "entities": 18,
       "entities_with_live_facts": 0,
       "live_properties": 0,
-      "review_claims": 21,
+      "review_claims": 71,
       "live_mechanics": 0,
       "mechanical_properties_any": 0
     },
@@ -44,25 +44,25 @@
       "entities": 4,
       "entities_with_live_facts": 2,
       "live_properties": 2,
-      "review_claims": 4,
+      "review_claims": 17,
       "live_mechanics": 2,
-      "mechanical_properties_any": 2
+      "mechanical_properties_any": 15
     },
     "spells": {
       "entities": 11,
       "entities_with_live_facts": 3,
       "live_properties": 6,
-      "review_claims": 9,
+      "review_claims": 15,
       "live_mechanics": 6,
-      "mechanical_properties_any": 15
+      "mechanical_properties_any": 21
     },
     "battlefield": {
       "entities": 1,
       "entities_with_live_facts": 1,
-      "live_properties": 11,
+      "live_properties": 31,
       "review_claims": 0,
-      "live_mechanics": 8,
-      "mechanical_properties_any": 8
+      "live_mechanics": 15,
+      "mechanical_properties_any": 15
     },
     "roles": {
       "entities": 6,

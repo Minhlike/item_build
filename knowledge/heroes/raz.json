@@ -19,6 +19,87 @@
         "kind": "behavioral_tendency",
         "value": "Có thể cấu rỉa từ xa rồi chọn góc đẩy lệch đội hình khi đối thủ bước lên."
       }
+    ],
+    "skill-2.magic-poke": [
+      {
+        "evidence": [
+          "hero-raz"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "first-enemy-hit",
+          "trigger": "Cú Đấm Chân Không trúng mục tiêu đầu tiên",
+          "detail": "Kèm làm chậm, hạ giáp phép và hoàn nội năng nếu trúng.",
+          "damage_type": "magic"
+        }
+      },
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Cú Đấm Chân Không trúng mục tiêu đầu tiên.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 450.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 90.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.9
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.magic-knockup": [
+      {
+        "evidence": [
+          "hero-raz"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Cú Đấm Thăng Hoa trúng mục tiêu",
+          "detail": "Hất tung; hoàn nội năng nếu trúng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        }
+      }
     ]
   },
   "unknown": [

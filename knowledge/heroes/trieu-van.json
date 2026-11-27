@@ -97,6 +97,21 @@
           }
         }
       }
+    ],
+    "skill-1.empowered-dash": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Đòn đánh cường hóa từ Chiêu 1",
+          "detail": "Có mục tiêu thì đột kích mục tiêu; thiếu mục tiêu thì lướt về trước."
+        }
+      }
     ]
   },
   "unknown": [

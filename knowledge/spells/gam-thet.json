@@ -18,6 +18,45 @@
           }
         }
       }
+    ],
+    "active.lifesteal": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "trigger": "Bấm Gầm thét",
+          "amount": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 7.0,
+            "cooldown_s": 60.0
+          }
+        }
+      }
+    ],
+    "active.spell-lifesteal": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "spell_lifesteal",
+          "target": "self",
+          "trigger": "Bấm Gầm thét",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 7.0
+          }
+        }
+      }
     ]
   },
   "unknown": [

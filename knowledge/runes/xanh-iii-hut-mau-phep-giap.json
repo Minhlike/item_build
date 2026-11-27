@@ -1,0 +1,52 @@
+{
+  "id": "xanh-iii-hut-mau-phep-giap",
+  "kind": "runes",
+  "name": "Xanh III Hút máu phép/Giáp",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 3.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "green"
+      }
+    ],
+    "stat.spell-lifesteal": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.007,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 5.9,
+          "unit": "armor"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "relations": []
+}

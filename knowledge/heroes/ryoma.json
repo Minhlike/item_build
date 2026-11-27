@@ -41,6 +41,61 @@
           "trigger": "Trúng rìa Nhất Kích Tất Sát"
         }
       }
+    ],
+    "skill-3.base-physical": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn của Loạn Trảm trúng đích.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 110.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
     ]
   },
   "unknown": [

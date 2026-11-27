@@ -1,0 +1,99 @@
+{
+  "id": "thuong-khung-kiem",
+  "kind": "items",
+  "name": "Thương khung kiếm",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2120.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 100.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 500.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "active.mitigation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Bấm Bất khuất, có thể dùng lúc bị khống chế",
+          "activation": "manual",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 2.0,
+            "cooldown_s": 90.0
+          }
+        }
+      }
+    ],
+    "passive.first-hit": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "first-hero-hit",
+          "delivery": "item",
+          "trigger": "Tung chiêu trúng tướng đầu tiên",
+          "activation": "automatic",
+          "detail": "Làm chậm 30% và giảm 20% sát thương mục tiêu gây ra.",
+          "timing": {
+            "duration_s": 3.0,
+            "internal_cooldown_s": 8.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

@@ -12,6 +12,48 @@
             "academy-badges"
           ]
         }
+      ],
+      "tier-1.mat-ngu": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Mang Mật ngữ",
+            "detail": "Giảm hồi phép bổ trợ; danh mục không nêu tỷ lệ."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-1.qua-cau-bang-suong": [
+        {
+          "value": {
+            "effect": "damage_immunity",
+            "target": "self",
+            "trigger": "Bấm vật phẩm nhận khi trận tới phút 4",
+            "activation": "manual",
+            "charges": 1,
+            "detail": "Không đánh hoặc di chuyển trong trạng thái; sau đó nhận lá chắn."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-3.chuyen-sinh": [
+        {
+          "value": {
+            "effect": "revive",
+            "target": "self",
+            "trigger": "Sau khi bị hạ, dùng chức năng hồi sinh do phù hiệu cấp",
+            "activation": "manual",
+            "detail": "Trở lại tại tế đàn; hồi chiêu tăng ở những lần tiếp theo."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -27,6 +69,37 @@
       "identity.branch": [
         {
           "value": true,
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-1.thanh-chau": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Mang Thánh châu",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "detail": "Áp dụng cho chiêu cuối; tổng giới hạn ghi là 40% trong mô tả Thánh châu. Không dùng làm bằng chứng duy nhất cho mọi kỹ năng."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-3.tinh-linh": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "nearby-enemies",
+            "trigger": "Đánh thường trúng tướng ba lần liên tiếp",
+            "stacks": 3,
+            "detail": "Triệu hồi tinh linh công kích tự động."
+          },
           "evidence": [
             "academy-badges"
           ]
@@ -50,6 +123,65 @@
             "academy-badges"
           ]
         }
+      ],
+      "tier-1.hap-huyet": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Hạ hoặc hỗ trợ hạ",
+            "basis": "caster_missing_hp",
+            "detail": "Đồng thời hồi năng lượng; tỷ lệ còn thiếu."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-1.du-anh": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "self",
+            "trigger": "Dùng lướt",
+            "timing": {
+              "duration_s": 2
+            },
+            "stacks": 3,
+            "ends_when": "Đòn đánh thường kế tiếp tiêu thụ các tầng."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-3.ma-chu": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "marked-enemy-hero",
+            "trigger": "Đòn đánh hoặc kỹ năng đủ ba dấu trên tướng",
+            "damage_type": "magic",
+            "stacks": 3
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-3.dau-khi": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Gây sát thương lên tướng đủ mười tầng",
+            "stacks": 10,
+            "detail": "Có thêm xuyên giáp sau kích hoạt."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -65,6 +197,58 @@
       "identity.branch": [
         {
           "value": true,
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-1.canh-gac": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Đứng gần trụ",
+            "detail": "Nhận cả kháng hiệu ứng. Chưa rõ phạm vi và hệ số."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-2.bom-mau": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "self",
+            "trigger": "Đang dùng Bơm máu",
+            "detail": "Tăng hiệu quả hồi máu và lá chắn; kiểm tra cách cộng dồn theo nguồn."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-3.moc-giap": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Tích đủ lần chịu sát thương và vụ nổ trúng tướng",
+            "detail": "Vụ nổ có sát thương phép; hồi máu phụ thuộc trúng tướng."
+          },
+          "evidence": [
+            "academy-badges"
+          ]
+        }
+      ],
+      "tier-3.troi-buoc": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "self",
+            "trigger": "Khống chế trúng tướng",
+            "detail": "Nhận song giáp và hiệu ứng đốt tỷ lệ máu tối đa."
+          },
           "evidence": [
             "academy-badges"
           ]

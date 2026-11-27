@@ -145,7 +145,8 @@
       {
         "evidence": [
           "patch-aug",
-          "thane"
+          "thane",
+          "thane-source-conflict"
         ],
         "value": "Thông báo 13/08 ghi phần gốc là vật lý với gốc 480, thêm 240 mỗi cấp chiêu và 8% máu tối đa của Thane. Trang kỹ năng mô tả sát thương chuẩn riêng cùng phần vật lý theo máu đã mất của mục tiêu. Chưa phân giải phần gốc và khả năng hai nguồn mô tả các thành phần khác nhau."
       }
@@ -211,6 +212,19 @@
       "predicate": "MITIGATES",
       "object": "heroes/butterfly#tactics.cleanup",
       "condition": "Giữ chiêu đẩy khi Butterfly có góc tiếp cận; cần đứng đủ gần chủ lực.",
+      "scope": "ranked_solo_vn"
+    },
+    {
+      "evidence": [
+        "academy-items",
+        "thane"
+      ],
+      "kind": "derived_knowledge",
+      "id": "truong-sinh-thane",
+      "subject": "items/phu-chu-truong-sinh#passive.in-combat-regen",
+      "predicate": "SYNERGIZES_WITH",
+      "object": "heroes/thane#passive.low-hp-heal",
+      "condition": "Máu tối đa từ đồ tăng giá trị của hồi theo máu tối đa nếu nội tại Thane còn sẵn. Hồi định kỳ và hồi ngưỡng là hai sự kiện.",
       "scope": "ranked_solo_vn"
     }
   ]

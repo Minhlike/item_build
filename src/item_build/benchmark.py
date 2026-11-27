@@ -5,8 +5,63 @@ from platform import system
 from statistics import quantiles
 from time import perf_counter_ns
 
+from .catalog import group_packs
 from .retrieval import Repository
 from .storage import encode
+
+
+def benchmark_catalogs(root: Path) -> dict:
+    import tiktoken
+
+    tokenizer = tiktoken.get_encoding("o200k_base")
+    repo = Repository(root)
+    strategies = {
+        "thane_support_draft": ("defense", "support", "boots"),
+        "mage_preparation": ("magic", "boots", "runes", "enchantments", "spells", "battlefield"),
+        "whole_catalog": tuple(repo.catalogs),
+    }
+    measurements = {}
+    for label, groups in strategies.items():
+        bundled = [repo.read_file(repo.catalogs[group]) for group in groups]
+        individual = {}
+        for record in bundled:
+            group = record["group"]
+            for entry_id, entry in record["entries"].items():
+                kind = "items" if "shop_group" in entry else group
+                key = f"{kind}/{entry_id}"
+                individual[key] = repo.get(key)
+
+        same_fields = group_packs(
+            {key: {"candidates": {}, **entry} for key, entry in individual.items()}
+        ) == {record["group"]: record["entries"] for record in bundled}
+
+        def measure(documents):
+            raw = [encode(doc, compact=True) for doc in documents]
+            return {
+                "file_reads": len(raw),
+                "bytes": sum(map(len, raw)),
+                "tokens": sum(len(tokenizer.encode(blob.decode())) for blob in raw),
+            }
+
+        measurements[label] = {
+            "entity_count": len(individual),
+            "live_facts": sum(len(entry["live"]) for entry in individual.values()),
+            "candidate_facts": sum(
+                len(facts)
+                for entry in individual.values()
+                for facts in entry.get("candidates", {}).values()
+            ),
+            "same_claims_conditions_and_unknowns": same_fields,
+            "individual": measure(list(individual.values())),
+            "grouped": measure(bundled),
+        }
+        if not same_fields:
+            raise ValueError(f"Phát hiện mất dữ liệu khi gộp {label}.")
+    return {
+        "tokenizer": "o200k_base",
+        "scope": "Same compiled records; individual versus grouped file reads. One file per call is an estimate. Connector latency was not measured.",
+        "cases": measurements,
+    }
 
 
 def benchmark(root: Path) -> dict:

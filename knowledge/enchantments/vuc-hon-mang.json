@@ -11,6 +11,65 @@
         "value": true
       }
     ],
+    "tier-1.hap-huyet": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Hạ hoặc hỗ trợ hạ",
+          "detail": "Đồng thời hồi năng lượng; tỷ lệ còn thiếu.",
+          "basis": "caster_missing_hp"
+        }
+      }
+    ],
+    "tier-1.du-anh": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Dùng lướt",
+          "timing": {
+            "duration_s": 2.0
+          },
+          "stacks": 3,
+          "ends_when": "Đòn đánh thường kế tiếp tiêu thụ các tầng."
+        }
+      }
+    ],
+    "tier-3.ma-chu": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "marked-enemy-hero",
+          "trigger": "Đòn đánh hoặc kỹ năng đủ ba dấu trên tướng",
+          "damage_type": "magic",
+          "stacks": 3
+        }
+      }
+    ],
+    "tier-3.dau-khi": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Gây sát thương lên tướng đủ mười tầng",
+          "detail": "Có thêm xuyên giáp sau kích hoạt.",
+          "stacks": 10
+        }
+      }
+    ],
     "tier-2.san-nha": [
       {
         "evidence": [

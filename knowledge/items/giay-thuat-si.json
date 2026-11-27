@@ -1,0 +1,67 @@
+{
+  "id": "giay-thuat-si",
+  "kind": "items",
+  "name": "Giày thuật sĩ",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 700.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.15,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 60.0,
+          "unit": "move_speed"
+        }
+      }
+    ],
+    "passive.spell-cooldown": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đang sở hữu giày",
+          "activation": "automatic",
+          "detail": "Tác dụng ghi cho phép bổ trợ, cần kiểm tra tương tác với Mật ngữ.",
+          "amount": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "unique_group": "thuat-si"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "boots",
+  "relations": []
+}

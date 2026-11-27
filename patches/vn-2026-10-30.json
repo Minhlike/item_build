@@ -132,6 +132,423 @@
         "status": "SUPERSEDED",
         "effective_until": "2026-10-30"
       }
+    },
+    {
+      "entity": "heroes/keera",
+      "property": "skill-1.cooldown",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/keera",
+      "property": "skill-2.path-magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Chiêu 2 lướt trúng trên đường di chuyển",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/keera",
+      "property": "skill-2.triangle-magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Mục tiêu trong vùng tam giác Chiêu 2",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 400,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.8
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/erin",
+      "property": "skill-1.base-magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Thành phần sát thương cơ bản của Chiêu 1",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 450,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 90
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.05
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/erin",
+      "property": "skill-1.contact-magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Thành phần khi đạn chạm mục tiêu",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.35
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/erin",
+      "property": "skill-1.cooldown",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/sephera",
+      "property": "passive.self-bonus-hp-heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại hồi máu được kích hoạt",
+          "formula": {
+            "unit": "hp",
+            "base": 0,
+            "terms": [
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.04
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-1.base-physical",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 275,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/xeniel",
+      "property": "skill-1.magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần sát thương Chiêu 1.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 500,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 100
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.05
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-1.base-magic",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 trúng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 300,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 60
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.base-magic",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản Chiêu 3.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 30,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 15
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.06
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 55,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/xeniel",
+      "property": "skill-1.shield",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Chiêu 1 cấp lá chắn",
+          "formula": {
+            "unit": "hp",
+            "base": 500,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 100
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.05
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
     }
   ],
   "review_notes": []

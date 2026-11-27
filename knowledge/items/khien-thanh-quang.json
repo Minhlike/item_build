@@ -54,6 +54,7 @@
           "target": "self-and-lowest-health-nearby-ally",
           "delivery": "item",
           "trigger": "Người mang nhóm melee gây sát thương lên tướng bằng đánh thường hoặc chiêu",
+          "activation": "automatic",
           "detail": "Lá chắn có phần gốc 250–500 và thêm 4% máu tối đa. Nguồn chưa làm rõ chủ thể máu tối đa hoặc cách chọn mốc gốc.",
           "timing": {
             "duration_s": 3.0,
@@ -77,6 +78,7 @@
           "target": "self-and-lowest-health-nearby-ally",
           "delivery": "item",
           "trigger": "Người mang nhóm ranged gây sát thương lên tướng bằng đánh thường hoặc chiêu",
+          "activation": "automatic",
           "detail": "Lá chắn có phần gốc 250–500 và thêm 4% máu tối đa. Nguồn chưa làm rõ chủ thể máu tối đa hoặc cách chọn mốc gốc.",
           "timing": {
             "duration_s": 3.0,
@@ -95,6 +97,7 @@
     "Đối chiếu số liệu trong cửa hàng phiên bản VN",
     "Giá vàng hiện hành"
   ],
+  "shop_group": "defense",
   "relations": [
     {
       "evidence": [

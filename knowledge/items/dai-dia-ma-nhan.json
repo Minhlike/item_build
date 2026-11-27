@@ -16,6 +16,17 @@
           "amount": 1900.0,
           "unit": "gold"
         }
+      },
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
       }
     ],
     "stat.hp": [
@@ -39,11 +50,55 @@
           "target": "nearby-area",
           "delivery": "item",
           "trigger": "Bật Ma nhãn",
+          "activation": "manual",
           "detail": "Tạo tầm nhìn chuẩn quanh người mang. Phạm vi cụ thể và tương tác với phiên bản tàng hình hiện tại còn cần thử.",
           "timing": {
             "duration_s": 4.0,
             "cooldown_s": 45.0
           }
+        }
+      }
+    ],
+    "active.pulse-damage": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemy-heroes",
+          "delivery": "item",
+          "trigger": "Bấm Ma nhãn",
+          "activation": "manual",
+          "detail": "Hai nhịp trong hai giây; mỗi nhịp tính theo máu hiện tại tại thời điểm đó. Có làm chậm 50%.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "target_current_hp",
+                "coefficient": 0.08
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 2.0,
+            "cooldown_s": 45.0
+          }
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
         }
       }
     ]
@@ -53,6 +108,7 @@
     "Công thức ghép hiện hành",
     "Đối chiếu số liệu trong cửa hàng phiên bản VN"
   ],
+  "shop_group": "support",
   "relations": [
     {
       "evidence": [
@@ -65,6 +121,19 @@
       "predicate": "COUNTERS",
       "object": "heroes/kaine#passive.stealth",
       "condition": "Chỉ áp dụng nếu tầm nhìn chuẩn bao phủ đường vào và cửa sổ Kaine còn tàng hình.",
+      "scope": "ranked_solo_vn"
+    },
+    {
+      "evidence": [
+        "academy-items",
+        "hero-quillen"
+      ],
+      "kind": "derived_knowledge",
+      "id": "ma-nhan-quillen",
+      "subject": "items/dai-dia-ma-nhan#active.reveal",
+      "predicate": "COUNTERS",
+      "object": "heroes/quillen#skill-3.stealth",
+      "condition": "Tầm nhìn chuẩn phải bao phủ đường vòng của Quillen trong cửa sổ Ẩn sát. Xác nhận phạm vi thực tế trước khi dựa vào món.",
       "scope": "ranked_solo_vn"
     }
   ]

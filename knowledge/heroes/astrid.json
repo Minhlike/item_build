@@ -10,13 +10,40 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.base-physical": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 275.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [
     "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Các kỹ năng và tương tác còn lại"
   ],
   "relations": []
 }

@@ -175,6 +175,57 @@
         "status": "SUPERSEDED",
         "effective_until": "2026-08-13"
       }
+    },
+    {
+      "entity": "heroes/alice",
+      "property": "skill-2.cooldown",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 2",
+          "timing": {
+            "cooldown_s": 11
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/alice",
+      "property": "skill-2.team-shield",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "nearby-allies",
+          "trigger": "Dùng Chiêu 2",
+          "formula": {
+            "unit": "hp",
+            "base": 550,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 110
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.95
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
     }
   ],
   "review_notes": [

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "A",
+    "hero": "thane",
+    "role": "support",
+    "enemies": ["Arthur", "Violet", "Natalya", "Ryoma", "Quillen"],
+    "enemy_roles": ["support", "dragon", "mid", "slayer", "jungle"],
+    "feedback": {
+      "type": "personal_experience",
+      "observation": "Người chơi thấy Thane mỏng và khó bấm Phản Pháo khi lên Giáp thống khổ."
+    },
+    "review": {
+      "violet": ["skill-1.poke", "tactics.enemy-critical"],
+      "natalya": ["skill-2.base-magic", "skill-3.base-magic"],
+      "quillen": ["passive.rear-critical", "skill-3.stealth"],
+      "ryoma": ["skill-3.base-physical", "skill-2.edge-stun"]
+    },
+    "judgment": "Đánh giá slot 3 và 4 theo vàng, giáp, kháng phép, HP, nhịp cấu rỉa và cửa sổ lao vào. Gắn Ma nhãn với đường vòng của Quillen, không coi phát hiện là toàn bản đồ. Phân biệt chí mạng và xuyên giáp từ đồ địch đã mua với cơ chế bẩm sinh."
+  },
+  {
+    "id": "B",
+    "hero": "thane",
+    "role": "support",
+    "enemies": ["Raz", "Florentino", "Elsu", "Ngộ Không", "Toro"],
+    "feedback": {
+      "type": "personal_experience",
+      "observation": "Người chơi ưu tiên Phù chú trường sinh ở slot cuối thay Khiên Thánh Quang trong trận này."
+    },
+    "review": {
+      "raz": ["skill-2.magic-poke"],
+      "florentino": ["skill-2.target-max-hp-true"],
+      "elsu": ["skill-1.stationary-penetration", "skill-2.poke"],
+      "ngo-khong": ["passive.innate-critical", "skill-3.recast-stealth"],
+      "toro": ["passive.cast-immunity", "skill-2.physical"]
+    },
+    "judgment": "So sánh hồi giữa các đợt và HP của Phù chú với khiên lập tức có điều kiện của Khiên Thánh Quang. Máu tối đa tăng giá trị hồi theo máu của Thane, đồng thời Florentino có thành phần theo máu tối đa nạn nhân. Nêu khoản chưa kiểm chứng trước khi chốt."
+  }
+]

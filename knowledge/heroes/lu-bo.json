@@ -14,6 +14,34 @@
         ],
         "value": true
       }
+    ],
+    "skill-3.heal": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Hồi phục từ Chiêu cuối",
+          "formula": {
+            "unit": "hp",
+            "base": 130.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 65.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.35
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

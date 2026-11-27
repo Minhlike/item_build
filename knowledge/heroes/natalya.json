@@ -61,6 +61,64 @@
           "trigger": "Lá chắn chiêu cuối còn hiệu lực"
         }
       }
+    ],
+    "skill-2.base-magic": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản của Chiêu 2 theo ghi chú cân bằng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.base-magic": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản của Chiêu 3 theo ghi chú cân bằng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

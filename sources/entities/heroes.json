@@ -139,7 +139,8 @@
           "value": "Thông báo 13/08 ghi phần gốc là vật lý với gốc 480, thêm 240 mỗi cấp chiêu và 8% máu tối đa của Thane. Trang kỹ năng mô tả sát thương chuẩn riêng cùng phần vật lý theo máu đã mất của mục tiêu. Chưa phân giải phần gốc và khả năng hai nguồn mô tả các thành phần khác nhau.",
           "evidence": [
             "patch-aug",
-            "thane"
+            "thane",
+            "thane-source-conflict"
           ],
           "status": "UNVERIFIED"
         }
@@ -228,6 +229,14 @@
           },
           "evidence": [
             "allain"
+          ]
+        }
+      ],
+      "passive.fourth-hit-evidence-conflict": [
+        {
+          "value": "Đòn thứ tư được mô tả có sát thương chuẩn, với biểu thức 45 + 3 theo cấp tướng + 0,54 công vật lý. Bản công bố cũng có ký hiệu STVL trong dòng này. Chưa xác nhận diễn giải của ký hiệu và mốc tăng cấp.",
+          "evidence": [
+            "allain-fourth-type-conflict"
           ]
         }
       ]
@@ -1133,6 +1142,34 @@
           ],
           "kind": "behavioral_tendency"
         }
+      ],
+      "skill-2.magic-poke": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "first-enemy-hit",
+            "trigger": "Cú Đấm Chân Không trúng mục tiêu đầu tiên",
+            "damage_type": "magic",
+            "detail": "Kèm làm chậm, hạ giáp phép và hoàn nội năng nếu trúng."
+          },
+          "evidence": [
+            "hero-raz"
+          ]
+        }
+      ],
+      "skill-1.magic-knockup": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Cú Đấm Thăng Hoa trúng mục tiêu",
+            "damage_type": "magic",
+            "detail": "Hất tung; hoàn nội năng nếu trúng."
+          },
+          "evidence": [
+            "hero-raz"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1371,7 +1408,43 @@
       "Ngộ",
       "NK"
     ],
-    "facts": {},
+    "facts": {
+      "passive.innate-critical": [
+        {
+          "value": {
+            "effect": "critical",
+            "target": "self",
+            "trigger": "Nội tại Hành giả",
+            "detail": "Có tỷ lệ chí mạng sẵn, hệ số không đọc được từ mô tả đang công bố."
+          },
+          "evidence": [
+            "hero-ngo-khong"
+          ]
+        }
+      ],
+      "skill-3.recast-stealth": [
+        {
+          "value": {
+            "effect": "stealth",
+            "target": "self",
+            "trigger": "Bấm lại Gậy như ý trong 5 giây",
+            "detail": "Đồng thời gỡ làm chậm và tăng tốc chạy; 5 giây là cửa sổ tái kích hoạt."
+          },
+          "evidence": [
+            "hero-ngo-khong"
+          ]
+        }
+      ],
+      "tactics.ambush": [
+        {
+          "value": "Giữ tầm nhìn ở góc khuất và tính cả cú quay lại sau bước tàng hình; đừng để chủ lực đứng lẻ trước cửa sông.",
+          "evidence": [
+            "hero-ngo-khong"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ]
+    },
     "unknown": [
       "Chỉ số gốc",
       "Hồi chiêu theo cấp",
@@ -1440,6 +1513,537 @@
       "Hồi chiêu theo cấp",
       "Xác nhận cơ chế chưa định phiên bản",
       "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "id": "quillen",
+    "kind": "heroes",
+    "name": "Quillen",
+    "facts": {
+      "passive.rear-critical": [
+        {
+          "value": {
+            "effect": "critical",
+            "target": "target",
+            "trigger": "Đánh hoặc tung chiêu từ sau lưng",
+            "detail": "Góc lưng làm thay đổi khả năng chí mạng; không suy ra cùng cơ chế ở phía trước."
+          },
+          "evidence": [
+            "hero-quillen"
+          ]
+        }
+      ],
+      "skill-2.mark": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Đánh trúng mục tiêu đã bị Chiêu 2 đánh dấu",
+            "amount": {
+              "amount": 1,
+              "unit": "second"
+            },
+            "timing": {
+              "duration_s": 10
+            },
+            "exceptions": [
+              "Chỉ giữ dấu trên một mục tiêu."
+            ]
+          },
+          "evidence": [
+            "hero-quillen"
+          ]
+        }
+      ],
+      "skill-3.stealth": [
+        {
+          "value": {
+            "effect": "stealth",
+            "target": "self",
+            "trigger": "Kích hoạt Ẩn sát",
+            "timing": {
+              "duration_s": 3
+            },
+            "detail": "Có tăng tốc chạy và hồi phục theo nhịp."
+          },
+          "evidence": [
+            "hero-quillen"
+          ]
+        }
+      ],
+      "skill-3.heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Trong cửa sổ Ẩn sát",
+            "timing": {
+              "interval_s": 0.5
+            }
+          },
+          "evidence": [
+            "hero-quillen"
+          ]
+        }
+      ],
+      "skill-3.takedown-reset": [
+        {
+          "value": {
+            "effect": "reset_cooldown",
+            "target": "self",
+            "trigger": "Tham gia hạ tướng địch",
+            "detail": "Làm mới hồi chiêu các kỹ năng."
+          },
+          "evidence": [
+            "hero-quillen"
+          ]
+        }
+      ],
+      "tactics.flank": [
+        {
+          "value": "Cần trông đường vòng vào lưng chủ lực, không chỉ người đứng trước mặt. Giữ phát hiện và bảo kê đến lúc mất dấu.",
+          "evidence": [
+            "hero-quillen"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "florentino",
+    "kind": "heroes",
+    "name": "Florentino",
+    "facts": {
+      "skill-2.target-max-hp-true": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Từng nhịp Thưởng hoa trúng địch",
+            "damage_type": "true",
+            "basis": "target_max_hp",
+            "detail": "Tách thành phần chuẩn theo máu tối đa khỏi thành phần vật lý. Trang kỹ năng không xác định hệ số hiện hành."
+          },
+          "evidence": [
+            "hero-florentino",
+            "florentino-archive"
+          ]
+        }
+      ],
+      "skill-2.flower-loop": [
+        {
+          "value": {
+            "effect": "reset_cooldown",
+            "target": "self",
+            "trigger": "Nhặt được hoa",
+            "detail": "Hồi nội năng, chuẩn bị Đột kích ở đòn kế và hoàn lại nhịp Thưởng hoa. Có thể cắt vòng lặp bằng cách khiến đối thủ mất đường nhặt hoa."
+          },
+          "evidence": [
+            "hero-florentino"
+          ]
+        }
+      ],
+      "skill-3.armor-reduction": [
+        {
+          "value": {
+            "effect": "armor_reduction",
+            "target": "first-enemy-hero",
+            "trigger": "Tướng đầu tiên bị Quyết đấu",
+            "timing": {
+              "duration_s": 5
+            }
+          },
+          "evidence": [
+            "hero-florentino"
+          ]
+        }
+      ],
+      "tactics.duel": [
+        {
+          "value": "Tránh đứng vào đường nối hoa. Ép đối phương bỏ lộ trình nhặt hoa hoặc rút chờ cửa sổ quyết đấu.",
+          "evidence": [
+            "hero-florentino",
+            "florentino-tactics"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "elsu",
+    "kind": "heroes",
+    "name": "Elsu",
+    "facts": {
+      "skill-1.stationary-penetration": [
+        {
+          "value": {
+            "effect": "armor_pen",
+            "target": "self",
+            "trigger": "Đứng yên tới nhịp tích tiếp theo",
+            "stacks": 5,
+            "timing": {
+              "interval_s": 1
+            },
+            "detail": "Xuyên giáp tăng theo cấp; trị số và ngưỡng mất cộng dồn cần kiểm thử."
+          },
+          "evidence": [
+            "hero-elsu"
+          ]
+        }
+      ],
+      "passive.basic-physical": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Đánh thường trúng địch",
+            "damage_type": "physical",
+            "delivery": "basic_attack",
+            "exceptions": [
+              "Đánh thường không chí mạng theo mô tả hiện thấy."
+            ]
+          },
+          "evidence": [
+            "hero-elsu"
+          ]
+        }
+      ],
+      "skill-2.poke": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemy-hit",
+            "trigger": "Viễn trình kích trúng",
+            "damage_type": "physical",
+            "timing": {
+              "cast_s": 2
+            },
+            "detail": "Mốc 2 giây để tăng tầm và độ chuẩn, có thể bắn sớm."
+          },
+          "evidence": [
+            "hero-elsu"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "violet",
+    "kind": "heroes",
+    "name": "Violet",
+    "facts": {
+      "skill-1.poke": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-and-units-behind",
+            "trigger": "Đòn bắn cường hóa sau cú lộn trúng",
+            "damage_type": "physical",
+            "delivery": "empowered_attack",
+            "detail": "Tầm xa hơn đánh thường, có thể cấu rỉa từ ngoài tầm trả đòn."
+          },
+          "evidence": [
+            "hero-violet"
+          ]
+        }
+      ],
+      "skill-3.missing-hp-physical": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Pháo đại trúng địch",
+            "damage_type": "physical",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "target_missing_hp",
+                  "coefficient": 0.12
+                }
+              ]
+            }
+          },
+          "evidence": [
+            "hero-violet"
+          ]
+        }
+      ],
+      "tactics.enemy-critical": [
+        {
+          "value": "Xét dấu hiệu chí mạng hoặc xuyên giáp từ đồ đối phương thực sự mua như Thánh kiếm và Muramasa. Riêng tỷ lệ chí mạng của phát cường hóa cần xác nhận, không gán mặc định.",
+          "evidence": [
+            "hero-violet",
+            "academy-items"
+          ],
+          "kind": "derived_knowledge"
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "toro",
+    "kind": "heroes",
+    "name": "Toro",
+    "facts": {
+      "passive.cast-immunity": [
+        {
+          "value": {
+            "effect": "cc_immunity",
+            "target": "self",
+            "trigger": "Toro đang tung chiêu"
+          },
+          "evidence": [
+            "hero-toro"
+          ]
+        }
+      ],
+      "passive.combat-mitigation": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Tăng chiến ý trong giao tranh",
+            "detail": "Ra khỏi giao tranh làm giảm chiến ý; mô tả cũng ghi hồi máu khi rời giao tranh."
+          },
+          "evidence": [
+            "hero-toro"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "murad",
+    "kind": "heroes",
+    "name": "Murad",
+    "facts": {
+      "tactics.return-point": [
+        {
+          "value": "Canh điểm trở về của lướt. Nếu Murad đã tích đủ điều kiện mở chiêu cuối thì nên săn điểm hồi thay vì đuổi theo hướng cấu rỉa.",
+          "evidence": [
+            "hero-murad"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ],
+      "passive.ultimate-window": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "self",
+            "trigger": "Đòn đánh thường trúng đích",
+            "delivery": "basic_attack",
+            "stacks": 4,
+            "timing": {
+              "duration_s": 5
+            },
+            "detail": "Đủ bốn tầng Ảnh hồn mở khóa Ảo ảnh trảm trong năm giây."
+          },
+          "evidence": [
+            "hero-murad"
+          ]
+        }
+      ],
+      "skill-1.return-dash": [
+        {
+          "value": {
+            "effect": "dash",
+            "target": "self",
+            "trigger": "Lượt thứ ba của Tàn Ảnh Đao",
+            "detail": "Trở về điểm bắt đầu của chuỗi."
+          },
+          "evidence": [
+            "hero-murad"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "errol",
+    "kind": "heroes",
+    "name": "Errol",
+    "facts": {},
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "alice",
+    "kind": "heroes",
+    "name": "Alice",
+    "facts": {},
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "keera",
+    "kind": "heroes",
+    "name": "Keera",
+    "facts": {},
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "erin",
+    "kind": "heroes",
+    "name": "Erin",
+    "facts": {},
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "sephera",
+    "kind": "heroes",
+    "name": "Sephera",
+    "facts": {},
+    "unknown": [
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "maloch",
+    "name": "Maloch",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "krizzix",
+    "name": "Krizzix",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "roxie",
+    "name": "Roxie",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "kriknak",
+    "name": "Kriknak",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "gildur",
+    "name": "Gildur",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "astrid",
+    "name": "Astrid",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "xeniel",
+    "name": "Xeniel",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "evita",
+    "name": "Evita",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "lindis",
+    "name": "Lindis",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "teemee",
+    "name": "TeeMee",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "elandorr",
+    "name": "Eland’orr",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "baldum",
+    "name": "Baldum",
+    "kind": "heroes",
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Các kỹ năng và tương tác còn lại"
     ]
   }
 ]

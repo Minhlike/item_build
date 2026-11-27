@@ -10,6 +10,48 @@
         ],
         "value": true
       }
+    ],
+    "tier-1.mat-ngu": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Mang Mật ngữ",
+          "detail": "Giảm hồi phép bổ trợ; danh mục không nêu tỷ lệ."
+        }
+      }
+    ],
+    "tier-1.qua-cau-bang-suong": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "damage_immunity",
+          "target": "self",
+          "trigger": "Bấm vật phẩm nhận khi trận tới phút 4",
+          "activation": "manual",
+          "detail": "Không đánh hoặc di chuyển trong trạng thái; sau đó nhận lá chắn.",
+          "charges": 1
+        }
+      }
+    ],
+    "tier-3.chuyen-sinh": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "revive",
+          "target": "self",
+          "trigger": "Sau khi bị hạ, dùng chức năng hồi sinh do phù hiệu cấp",
+          "activation": "manual",
+          "detail": "Trở lại tại tế đàn; hồi chiêu tăng ở những lần tiếp theo."
+        }
+      }
     ]
   },
   "unknown": [

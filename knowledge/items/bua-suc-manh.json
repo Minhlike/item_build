@@ -1,0 +1,44 @@
+{
+  "id": "bua-suc-manh",
+  "kind": "items",
+  "name": "Bùa sức mạnh",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 140.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp-regen": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 30.0,
+          "unit": "hp_per_5_seconds"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

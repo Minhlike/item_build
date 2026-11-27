@@ -1,0 +1,84 @@
+{
+  "id": "thanh-kiem",
+  "kind": "items",
+  "name": "Thánh kiếm",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2120.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 100.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.crit": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.25,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.critical-amplify": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "critical",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đòn gây chí mạng",
+          "activation": "automatic",
+          "detail": "Tăng sát thương chí mạng.",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "passive.ranged-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Tướng đánh xa vừa gây chí mạng",
+          "activation": "automatic",
+          "detail": "Tăng 3–45 tốc chạy.",
+          "timing": {
+            "duration_s": 1.5
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu icon",
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

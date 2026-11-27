@@ -274,6 +274,22 @@
           "title": "Trigger",
           "type": "string"
         },
+        "activation": {
+          "anyOf": [
+            {
+              "enum": [
+                "manual",
+                "automatic"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Activation"
+        },
         "detail": {
           "anyOf": [
             {
@@ -645,6 +661,7 @@
         "ratio",
         "count",
         "gold",
+        "experience",
         "meter",
         "mana",
         "armor",

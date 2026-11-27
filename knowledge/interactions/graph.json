@@ -109,5 +109,43 @@
     "object": "spells/dich-chuyen#active.teleport",
     "condition": "Cửa sổ 30 giây kể từ khi dùng Cổng có thể rút 30 giây hồi phép. Kiểm tra khả dụng theo hàng chờ.",
     "scope": "ranked_solo_vn"
+  },
+  {
+    "evidence": [
+      "academy-items",
+      "hero-quillen"
+    ],
+    "kind": "derived_knowledge",
+    "id": "ma-nhan-quillen",
+    "subject": "items/dai-dia-ma-nhan#active.reveal",
+    "predicate": "COUNTERS",
+    "object": "heroes/quillen#skill-3.stealth",
+    "condition": "Tầm nhìn chuẩn phải bao phủ đường vòng của Quillen trong cửa sổ Ẩn sát. Xác nhận phạm vi thực tế trước khi dựa vào món.",
+    "scope": "ranked_solo_vn"
+  },
+  {
+    "evidence": [
+      "academy-items",
+      "thane"
+    ],
+    "kind": "derived_knowledge",
+    "id": "truong-sinh-thane",
+    "subject": "items/phu-chu-truong-sinh#passive.in-combat-regen",
+    "predicate": "SYNERGIZES_WITH",
+    "object": "heroes/thane#passive.low-hp-heal",
+    "condition": "Máu tối đa từ đồ tăng giá trị của hồi theo máu tối đa nếu nội tại Thane còn sẵn. Hồi định kỳ và hồi ngưỡng là hai sự kiện.",
+    "scope": "ranked_solo_vn"
+  },
+  {
+    "evidence": [
+      "academy-items"
+    ],
+    "kind": "derived_knowledge",
+    "id": "troc-na-overlap",
+    "subject": "items/ao-choang-than-ra#passive.anti-heal",
+    "predicate": "CONFLICTS_WITH",
+    "object": "items/sach-truy-hon#passive.wound",
+    "condition": "Hai món trùng tên nội tại duy nhất Tróc nã và có cùng tỷ lệ ứng viên. Cần kiểm tra luật làm mới và cộng dồn; không cộng 40% + 40% vào phép tính.",
+    "scope": "ranked_solo_vn"
   }
 ]
