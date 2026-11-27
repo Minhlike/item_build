@@ -1,0 +1,131 @@
+{
+  "$defs": {
+    "Status": {
+      "enum": [
+        "LIVE_VN",
+        "UPCOMING_VN",
+        "EXPERIMENTAL",
+        "OTHER_REGION",
+        "UNVERIFIED",
+        "SUPERSEDED"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "evidence": {
+      "items": {
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "status": {
+      "$ref": "#/$defs/Status",
+      "default": "UNVERIFIED"
+    },
+    "kind": {
+      "default": "mechanical_fact",
+      "enum": [
+        "mechanical_fact",
+        "derived_knowledge",
+        "behavioral_tendency",
+        "tactical_heuristic",
+        "unverified_hypothesis"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "effective_from": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Effective From"
+    },
+    "effective_until": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Effective Until"
+    },
+    "id": {
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "subject": {
+      "minLength": 1,
+      "title": "Subject",
+      "type": "string"
+    },
+    "predicate": {
+      "enum": [
+        "HAS_ABILITY",
+        "TRIGGERS",
+        "REQUIRES",
+        "SCALES_WITH",
+        "DEALS_DAMAGE",
+        "APPLIES_EFFECT",
+        "COUNTERS",
+        "MITIGATES",
+        "AMPLIFIES",
+        "SYNERGIZES_WITH",
+        "CONFLICTS_WITH",
+        "RESETS_COOLDOWN",
+        "REDUCES_COOLDOWN",
+        "STACKS_WITH",
+        "DOES_NOT_STACK_WITH",
+        "THREATENS",
+        "ENABLES_TACTIC",
+        "DEPENDS_ON",
+        "SUPERSEDES"
+      ],
+      "title": "Predicate",
+      "type": "string"
+    },
+    "object": {
+      "minLength": 1,
+      "title": "Object",
+      "type": "string"
+    },
+    "condition": {
+      "minLength": 1,
+      "title": "Condition",
+      "type": "string"
+    },
+    "scope": {
+      "minLength": 1,
+      "title": "Scope",
+      "type": "string"
+    }
+  },
+  "required": [
+    "evidence",
+    "id",
+    "subject",
+    "predicate",
+    "object",
+    "condition",
+    "scope"
+  ],
+  "title": "Relation",
+  "type": "object"
+}

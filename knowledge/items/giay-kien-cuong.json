@@ -1,0 +1,67 @@
+{
+  "id": "giay-kien-cuong",
+  "kind": "items",
+  "name": "Giày kiên cường",
+  "aliases": [
+    "GKC"
+  ],
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 700.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 90.0,
+          "unit": "magic_defense"
+        }
+      }
+    ],
+    "stat.move-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 60.0,
+          "unit": "move_speed"
+        }
+      }
+    ],
+    "passive.tenacity": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "tenacity",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Khi sở hữu giày theo danh mục",
+          "detail": "Cần kiểm tra ngoại lệ theo loại khống chế.",
+          "amount": {
+            "amount": 0.35,
+            "unit": "ratio"
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu nhận diện icon",
+    "Công thức ghép hiện hành",
+    "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+  ],
+  "relations": []
+}

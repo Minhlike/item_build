@@ -1,0 +1,68 @@
+{
+  "id": "edras",
+  "kind": "heroes",
+  "name": "Edras",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "light.skill-2.heal": [
+      {
+        "evidence": [
+          "edras"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Kiếm khí dạng Quang minh trúng mục tiêu",
+          "detail": "Có tối đa bốn đường kiếm."
+        }
+      }
+    ],
+    "light.passive.cooldown": [
+      {
+        "evidence": [
+          "edras"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "delivery": "empowered_attack",
+          "trigger": "Chiêu hoặc đòn đánh cường hóa dạng Quang minh trúng địch",
+          "detail": "Giảm hồi tất cả chiêu theo mô tả dạng Quang minh.",
+          "amount": {
+            "amount": 1.0,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "light.form": [
+      {
+        "evidence": [
+          "edras"
+        ],
+        "value": {
+          "effect": "transform",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Học chiêu chuyển dạng"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu",
+    "Biến thể Hắc ám và phân bổ toàn bộ thành phần sát thương"
+  ],
+  "relations": []
+}

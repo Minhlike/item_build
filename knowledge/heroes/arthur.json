@@ -1,0 +1,63 @@
+{
+  "id": "arthur",
+  "kind": "heroes",
+  "name": "Arthur",
+  "aliases": [
+    "Arhur"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "tactics.peel": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ chiêu áp sát và gây gián đoạn khi đối thủ lao vào chủ lực."
+      }
+    ],
+    "skill-2.shield": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Chiêu 2 cấp lá chắn",
+          "formula": {
+            "unit": "hp",
+            "base": 150.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30.0
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

@@ -1,0 +1,53 @@
+{
+  "id": "ryoma",
+  "kind": "heroes",
+  "name": "Ryoma",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "skill-3.hit-heal": [
+      {
+        "evidence": [
+          "ryoma"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Mỗi nhát đâm chiêu cuối trúng tướng",
+          "detail": "Bốn nhát độc lập.",
+          "exceptions": [
+            "Trúng nhiều tướng trong một nhát không tăng hồi máu.",
+            "Hiệu lực giảm với đơn vị không phải tướng theo mô tả."
+          ]
+        }
+      }
+    ],
+    "skill-2.edge-stun": [
+      {
+        "evidence": [
+          "ryoma"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-at-outer-edge",
+          "delivery": "ability",
+          "trigger": "Trúng rìa Nhất Kích Tất Sát"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

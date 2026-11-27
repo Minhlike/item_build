@@ -1,0 +1,27 @@
+{
+  "id": "thanh-tay",
+  "kind": "spells",
+  "name": "Thanh tẩy",
+  "facts": {
+    "active.effect": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "cleanse",
+          "target": "self",
+          "delivery": "spell",
+          "trigger": "Kích hoạt lúc cần gỡ hiệu ứng",
+          "timing": {
+            "cooldown_s": 120.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+  ],
+  "relations": []
+}

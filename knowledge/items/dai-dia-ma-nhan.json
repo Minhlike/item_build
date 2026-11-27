@@ -1,0 +1,71 @@
+{
+  "id": "dai-dia-ma-nhan",
+  "kind": "items",
+  "name": "Đại địa ma nhãn",
+  "aliases": [
+    "Ma nhãn",
+    "Ma nhan"
+  ],
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1200.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "active.reveal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "reveal",
+          "target": "nearby-area",
+          "delivery": "item",
+          "trigger": "Bật Ma nhãn",
+          "detail": "Tạo tầm nhìn chuẩn quanh người mang. Phạm vi cụ thể và tương tác với phiên bản tàng hình hiện tại còn cần thử.",
+          "timing": {
+            "duration_s": 4.0,
+            "cooldown_s": 45.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu nhận diện icon",
+    "Công thức ghép hiện hành",
+    "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+  ],
+  "relations": [
+    {
+      "evidence": [
+        "academy-items",
+        "kaine"
+      ],
+      "kind": "derived_knowledge",
+      "id": "ma-nhan-kaine",
+      "subject": "items/dai-dia-ma-nhan#active.reveal",
+      "predicate": "COUNTERS",
+      "object": "heroes/kaine#passive.stealth",
+      "condition": "Chỉ áp dụng nếu tầm nhìn chuẩn bao phủ đường vào và cửa sổ Kaine còn tàng hình.",
+      "scope": "ranked_solo_vn"
+    }
+  ]
+}

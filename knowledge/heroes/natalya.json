@@ -1,0 +1,73 @@
+{
+  "id": "natalya",
+  "kind": "heroes",
+  "name": "Natalya",
+  "aliases": [
+    "Nat"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.magic": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "passive",
+          "trigger": "Kỹ năng trúng địch",
+          "damage_type": "magic",
+          "timing": {
+            "duration_s": 3.0
+          },
+          "stacks": 10
+        }
+      }
+    ],
+    "skill-3.beam": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-beam",
+          "delivery": "ability",
+          "trigger": "Kẻ địch đứng trong luồng chiêu cuối",
+          "damage_type": "magic",
+          "timing": {
+            "interval_s": 0.25
+          }
+        }
+      }
+    ],
+    "skill-3.cc-immunity": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Lá chắn chiêu cuối còn hiệu lực"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

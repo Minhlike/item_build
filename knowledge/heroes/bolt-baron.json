@@ -1,0 +1,246 @@
+{
+  "id": "bolt-baron",
+  "kind": "heroes",
+  "name": "Bolt Baron",
+  "aliases": [
+    "BB",
+    "Bolt",
+    "Baron",
+    "Boltbaron"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.basic-magic": [
+      {
+        "evidence": [
+          "bolt-type-check",
+          "bolt-archive"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-27",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "basic_attack",
+          "trigger": "Đánh thường trúng mục tiêu",
+          "detail": "Khi ở gần, chế độ cận chiến làm đòn nối nhanh hơn.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "passive.empowered-magic": [
+      {
+        "evidence": [
+          "bolt-baron"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "delivery": "empowered_attack",
+          "trigger": "Đòn cường hóa sau chiêu cơ bản",
+          "damage_type": "magic",
+          "exceptions": [
+            "Đòn tầm xa gây 66% lên mục tiêu phụ và không kích hoạt hiệu ứng đánh thường."
+          ]
+        }
+      }
+    ],
+    "passive.cast-charge": [
+      {
+        "evidence": [
+          "bolt-baron"
+        ],
+        "value": {
+          "effect": "charge",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Thu đủ sáu điểm Thiên lôi từ đánh thường",
+          "detail": "Cho thêm một lượt dùng chiêu cơ bản.",
+          "stacks": 6,
+          "charges": 1
+        }
+      }
+    ],
+    "passive.empowered-heal": [
+      {
+        "evidence": [
+          "bolt-baron"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "empowered_attack",
+          "trigger": "Đòn cường hóa sau chiêu cơ bản"
+        }
+      }
+    ],
+    "skill-1.magic": [
+      {
+        "evidence": [
+          "bolt-type-check",
+          "bolt-archive"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-27",
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-path",
+          "delivery": "ability",
+          "trigger": "Thiên lôi bộ lướt trúng mục tiêu",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.shield": [
+      {
+        "evidence": [
+          "bolt-baron"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Tung Thiên lôi bộ",
+          "timing": {
+            "duration_s": 2.0
+          }
+        }
+      }
+    ],
+    "skill-2.magic": [
+      {
+        "evidence": [
+          "bolt-type-check",
+          "bolt-archive"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-27",
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "delivery": "ability",
+          "trigger": "Cuồng lôi kích chạm hoặc đến cuối tầm",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-08-13",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng Thiên lôi bộ",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 11.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng Thiên lôi bộ",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 9.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-3.cooldown": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-08-13",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng Ngạo khung thiên",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 60.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5.0
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng Ngạo khung thiên",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 60.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -6.0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

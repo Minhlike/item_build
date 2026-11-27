@@ -1,0 +1,236 @@
+{
+  "id": "richter",
+  "kind": "heroes",
+  "name": "Richter",
+  "aliases": [
+    "Riktor",
+    "Rickter"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "skill-2.damage-immunity": [
+      {
+        "evidence": [
+          "richter"
+        ],
+        "value": {
+          "effect": "damage_immunity",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng chiêu phòng thủ",
+          "timing": {
+            "duration_s": 0.75
+          },
+          "charges": 2
+        }
+      }
+    ],
+    "skill-2.cc-immunity": [
+      {
+        "evidence": [
+          "richter"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng chiêu phòng thủ",
+          "timing": {
+            "duration_s": 0.75
+          }
+        }
+      }
+    ],
+    "skill-3.silence": [
+      {
+        "evidence": [
+          "richter"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "marked-target",
+          "delivery": "ability",
+          "trigger": "Mục tiêu bị đánh dấu nhận đủ năm nhịp chiêu 3",
+          "detail": "Câm lặng khi tích đủ các nhịp.",
+          "timing": {
+            "duration_s": 1.0
+          },
+          "stacks": 5
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng Chiêu 1",
+          "timing": {
+            "cooldown_s": 8.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng Chiêu 1",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-3.base": [
+      {
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "delivery": "ability",
+          "trigger": "Nhịp cơ bản của Chiêu 3",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 60.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.13
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "delivery": "ability",
+          "trigger": "Nhịp cơ bản của Chiêu 3",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 50.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.detonation": [
+      {
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "delivery": "ability",
+          "trigger": "Mục tiêu mang dấu đủ điều kiện kích nổ",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 330.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 165.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "delivery": "ability",
+          "trigger": "Mục tiêu mang dấu đủ điều kiện kích nổ",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 300.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 150.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

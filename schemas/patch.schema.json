@@ -1,0 +1,717 @@
+{
+  "$defs": {
+    "Basis": {
+      "enum": [
+        "caster_max_hp",
+        "caster_current_hp",
+        "caster_missing_hp",
+        "caster_bonus_hp",
+        "target_max_hp",
+        "target_current_hp",
+        "target_missing_hp",
+        "base_ad",
+        "bonus_ad",
+        "total_ad",
+        "unspecified_ad",
+        "ap",
+        "bonus_ap",
+        "hero_level",
+        "skill_rank",
+        "damage_dealt",
+        "incoming_pre_mitigation_damage"
+      ],
+      "title": "Basis",
+      "type": "string"
+    },
+    "Change": {
+      "additionalProperties": false,
+      "properties": {
+        "entity": {
+          "minLength": 1,
+          "title": "Entity",
+          "type": "string"
+        },
+        "property": {
+          "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*$",
+          "title": "Property",
+          "type": "string"
+        },
+        "classification": {
+          "enum": [
+            "buff",
+            "nerf",
+            "rework",
+            "bug_fix",
+            "correction",
+            "addition"
+          ],
+          "title": "Classification",
+          "type": "string"
+        },
+        "replacement": {
+          "$ref": "#/$defs/Fact"
+        },
+        "previous": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Fact"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "entity",
+        "property",
+        "classification",
+        "replacement"
+      ],
+      "title": "Change",
+      "type": "object"
+    },
+    "Effect": {
+      "enum": [
+        "damage",
+        "heal",
+        "lifesteal",
+        "spell_lifesteal",
+        "heal_reduction",
+        "shield",
+        "damage_reduction",
+        "damage_immunity",
+        "tenacity",
+        "cc_immunity",
+        "cleanse",
+        "untargetable",
+        "stealth",
+        "camouflage",
+        "reveal",
+        "hard_cc",
+        "soft_cc",
+        "dash",
+        "teleport",
+        "accrue_stack",
+        "spend_stack",
+        "empowered_attack",
+        "on_hit",
+        "reset_cooldown",
+        "reduce_cooldown",
+        "charge",
+        "transform",
+        "revive",
+        "turret",
+        "jungle",
+        "economy",
+        "resource",
+        "stat_change",
+        "attack_speed",
+        "armor_pen",
+        "magic_pen",
+        "armor_reduction",
+        "critical",
+        "unique_passive",
+        "special"
+      ],
+      "title": "Effect",
+      "type": "string"
+    },
+    "Fact": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "items": {
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence",
+          "type": "array"
+        },
+        "status": {
+          "$ref": "#/$defs/Status",
+          "default": "UNVERIFIED"
+        },
+        "kind": {
+          "default": "mechanical_fact",
+          "enum": [
+            "mechanical_fact",
+            "derived_knowledge",
+            "behavioral_tendency",
+            "tactical_heuristic",
+            "unverified_hypothesis"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "effective_from": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective From"
+        },
+        "effective_until": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Effective Until"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Mechanic"
+            },
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "items": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "type": "array"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "evidence",
+        "value"
+      ],
+      "title": "Fact",
+      "type": "object"
+    },
+    "Formula": {
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "$ref": "#/$defs/Unit"
+        },
+        "base": {
+          "minimum": 0,
+          "title": "Base",
+          "type": "number"
+        },
+        "terms": {
+          "items": {
+            "$ref": "#/$defs/Term"
+          },
+          "title": "Terms",
+          "type": "array"
+        }
+      },
+      "required": [
+        "unit",
+        "base"
+      ],
+      "title": "Formula",
+      "type": "object"
+    },
+    "Mechanic": {
+      "additionalProperties": false,
+      "properties": {
+        "effect": {
+          "$ref": "#/$defs/Effect"
+        },
+        "actor": {
+          "default": "caster",
+          "minLength": 1,
+          "title": "Actor",
+          "type": "string"
+        },
+        "target": {
+          "minLength": 1,
+          "title": "Target",
+          "type": "string"
+        },
+        "delivery": {
+          "anyOf": [
+            {
+              "enum": [
+                "basic_attack",
+                "empowered_attack",
+                "ability",
+                "passive",
+                "item",
+                "spell",
+                "battlefield"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Delivery"
+        },
+        "trigger": {
+          "minLength": 1,
+          "title": "Trigger",
+          "type": "string"
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Detail"
+        },
+        "damage_type": {
+          "anyOf": [
+            {
+              "enum": [
+                "physical",
+                "magic",
+                "true"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Damage Type"
+        },
+        "basis": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Basis"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "amount": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Quantity"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "formula": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Formula"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "timing": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Timing"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "stacks": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Stacks"
+        },
+        "charges": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Charges"
+        },
+        "hero_level": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Hero Level"
+        },
+        "skill_rank": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Skill Rank"
+        },
+        "radius": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Radius"
+        },
+        "ends_when": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ends When"
+        },
+        "exceptions": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Exceptions",
+          "type": "array"
+        },
+        "interactions": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "title": "Interactions",
+          "type": "array"
+        },
+        "unique_group": {
+          "anyOf": [
+            {
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unique Group"
+        }
+      },
+      "required": [
+        "effect",
+        "target",
+        "trigger"
+      ],
+      "title": "Mechanic",
+      "type": "object"
+    },
+    "Quantity": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "title": "Amount",
+          "type": "number"
+        },
+        "unit": {
+          "$ref": "#/$defs/Unit"
+        }
+      },
+      "required": [
+        "amount",
+        "unit"
+      ],
+      "title": "Quantity",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "LIVE_VN",
+        "UPCOMING_VN",
+        "EXPERIMENTAL",
+        "OTHER_REGION",
+        "UNVERIFIED",
+        "SUPERSEDED"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "Term": {
+      "additionalProperties": false,
+      "properties": {
+        "basis": {
+          "$ref": "#/$defs/Basis"
+        },
+        "coefficient": {
+          "title": "Coefficient",
+          "type": "number"
+        },
+        "origin": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Origin"
+        }
+      },
+      "required": [
+        "basis",
+        "coefficient"
+      ],
+      "title": "Term",
+      "type": "object"
+    },
+    "Timing": {
+      "additionalProperties": false,
+      "properties": {
+        "duration_s": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Duration S"
+        },
+        "interval_s": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Interval S"
+        },
+        "cooldown_s": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "$ref": "#/$defs/Formula"
+            },
+            {
+              "items": {
+                "minimum": 0,
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cooldown S"
+        },
+        "cooldown_start": {
+          "anyOf": [
+            {
+              "enum": [
+                "cast",
+                "end",
+                "hit"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cooldown Start"
+        },
+        "cast_s": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cast S"
+        },
+        "internal_cooldown_s": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Internal Cooldown S"
+        },
+        "recharge_s": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Recharge S"
+        }
+      },
+      "title": "Timing",
+      "type": "object"
+    },
+    "Unit": {
+      "enum": [
+        "damage",
+        "hp",
+        "second",
+        "ratio",
+        "count",
+        "gold",
+        "meter",
+        "mana",
+        "armor",
+        "magic_defense",
+        "attack_damage",
+        "ability_power",
+        "move_speed",
+        "hp_per_5_seconds"
+      ],
+      "title": "Unit",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "status": {
+      "$ref": "#/$defs/Status"
+    },
+    "server": {
+      "minLength": 1,
+      "title": "Server",
+      "type": "string"
+    },
+    "effective_from": {
+      "format": "date",
+      "title": "Effective From",
+      "type": "string"
+    },
+    "evidence": {
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Evidence",
+      "type": "string"
+    },
+    "changes": {
+      "items": {
+        "$ref": "#/$defs/Change"
+      },
+      "title": "Changes",
+      "type": "array"
+    },
+    "review_notes": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Review Notes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "status",
+    "server",
+    "effective_from",
+    "evidence"
+  ],
+  "title": "Patch",
+  "type": "object"
+}

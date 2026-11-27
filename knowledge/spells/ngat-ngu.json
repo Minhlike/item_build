@@ -1,0 +1,27 @@
+{
+  "id": "ngat-ngu",
+  "kind": "spells",
+  "name": "Ngất ngư",
+  "facts": {
+    "active.effect": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "nearby-enemies",
+          "delivery": "spell",
+          "trigger": "Bật gần kẻ địch",
+          "timing": {
+            "cooldown_s": 90.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+  ],
+  "relations": []
+}

@@ -1,0 +1,76 @@
+{
+  "patch_id": "vn-2026-11-26",
+  "as_of": "2026-11-27",
+  "readiness": "PARTIAL_READY",
+  "gaps": [
+    "Đối chiếu danh sách công khai với danh sách khóa/chọn trong game.",
+    "Thiếu bộ chiêu, chỉ số gốc, hồi chiêu và tương tác có hiệu lực cho phần lớn tướng.",
+    "Thiếu danh mục trang bị hiện hành đầy đủ, công thức ghép, màu icon và quy tắc mua.",
+    "Thiếu bảng ngọc, phù hiệu, giới hạn giảm hồi chiêu và luật chiến trường đầy đủ.",
+    "Nhiều trang Học viện thiếu mốc hiệu lực; giữ lại để kiểm tra.",
+    "Cần phép theo dõi tự động Garena và kiểm thử kết nối ChatGPT Cloud."
+  ],
+  "patch_title": "Vết Nứt Thời Không 2026-11-26",
+  "server": "VN",
+  "patch_source": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-vet-nut-thoi-khong-26-11-2026/",
+  "effective_from": "2026-11-26",
+  "schema": 1,
+  "coverage": {
+    "heroes": {
+      "entities": 130,
+      "entities_with_live_facts": 18,
+      "live_properties": 39,
+      "review_claims": 182,
+      "live_mechanics": 34,
+      "mechanical_properties_any": 81
+    },
+    "items": {
+      "entities": 8,
+      "entities_with_live_facts": 3,
+      "live_properties": 18,
+      "review_claims": 22,
+      "live_mechanics": 8,
+      "mechanical_properties_any": 14
+    },
+    "runes": {
+      "entities": 5,
+      "entities_with_live_facts": 0,
+      "live_properties": 0,
+      "review_claims": 21,
+      "live_mechanics": 0,
+      "mechanical_properties_any": 0
+    },
+    "enchantments": {
+      "entities": 4,
+      "entities_with_live_facts": 2,
+      "live_properties": 2,
+      "review_claims": 4,
+      "live_mechanics": 2,
+      "mechanical_properties_any": 2
+    },
+    "spells": {
+      "entities": 11,
+      "entities_with_live_facts": 3,
+      "live_properties": 6,
+      "review_claims": 9,
+      "live_mechanics": 6,
+      "mechanical_properties_any": 15
+    },
+    "battlefield": {
+      "entities": 1,
+      "entities_with_live_facts": 1,
+      "live_properties": 11,
+      "review_claims": 0,
+      "live_mechanics": 8,
+      "mechanical_properties_any": 8
+    },
+    "roles": {
+      "entities": 6,
+      "entities_with_live_facts": 6,
+      "live_properties": 18,
+      "review_claims": 0,
+      "live_mechanics": 0,
+      "mechanical_properties_any": 0
+    }
+  }
+}

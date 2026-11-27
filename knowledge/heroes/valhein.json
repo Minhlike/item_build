@@ -1,0 +1,44 @@
+{
+  "id": "valhein",
+  "kind": "heroes",
+  "name": "Valhein",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.stack-decay": [
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26",
+        "value": {
+          "effect": "spend_stack",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Trong pha giảm dấu ấn nội tại",
+          "amount": {
+            "amount": 1.0,
+            "unit": "count"
+          },
+          "timing": {
+            "interval_s": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

@@ -1,0 +1,46 @@
+{
+  "id": "yue",
+  "kind": "heroes",
+  "name": "Yue",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "tactics.poke": [
+      {
+        "evidence": [
+          "yue"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Gây áp lực từ xa bằng lặp chiêu và căn điểm giao, nhất là quanh cửa sông và lối vào mục tiêu."
+      }
+    ],
+    "passive.reset": [
+      {
+        "evidence": [
+          "yue"
+        ],
+        "value": {
+          "effect": "reset_cooldown",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Tung chiêu 1 hoặc 2 để đủ hai cộng dồn",
+          "detail": "Cường hóa và làm mới cả chiêu 1 lẫn chiêu 2.",
+          "stacks": 2
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "huan-chuong-troy",
+  "kind": "items",
+  "name": "Huân chương Troy",
+  "aliases": [
+    "Troy"
+  ],
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2320.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1000.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 200.0,
+          "unit": "magic_defense"
+        }
+      }
+    ],
+    "stat.cooldown-reduction": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.magic-shield": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Rời giao tranh",
+          "detail": "Hấp thu 460–1300 sát thương phép theo danh mục. Có nội tại riêng cho giáp phép theo cấp.",
+          "unique_group": "ho-than"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu nhận diện icon",
+    "Công thức ghép hiện hành",
+    "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+  ],
+  "relations": []
+}

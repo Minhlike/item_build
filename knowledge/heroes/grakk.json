@@ -1,0 +1,80 @@
+{
+  "id": "grakk",
+  "kind": "heroes",
+  "name": "Grakk",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "skill-1.magic": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "delivery": "ability",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 150.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "delivery": "ability",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 180.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

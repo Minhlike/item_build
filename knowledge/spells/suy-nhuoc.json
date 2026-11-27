@@ -1,0 +1,27 @@
+{
+  "id": "suy-nhuoc",
+  "kind": "spells",
+  "name": "Suy nhược",
+  "facts": {
+    "active.effect": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self-and-nearby-enemies",
+          "delivery": "spell",
+          "trigger": "Bật phép cạnh địch",
+          "timing": {
+            "cooldown_s": 90.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+  ],
+  "relations": []
+}

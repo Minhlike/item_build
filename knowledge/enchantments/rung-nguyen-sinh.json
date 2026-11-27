@@ -1,0 +1,46 @@
+{
+  "id": "rung-nguyen-sinh",
+  "kind": "enchantments",
+  "name": "Rừng nguyên sinh",
+  "facts": {
+    "identity.branch": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": true
+      }
+    ],
+    "tier-2.cuu-vien": [
+      {
+        "evidence": [
+          "patch-enchantments"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "heal",
+          "target": "self-and-nearby-allied-heroes",
+          "trigger": "Đến nhịp Cứu viện khi trang bị phù hiệu",
+          "formula": {
+            "unit": "hp",
+            "base": 210.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 15.0
+              }
+            ]
+          },
+          "timing": {
+            "interval_s": 15.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đủ các nút theo tầng và ràng buộc nhánh chính/phụ"
+  ],
+  "relations": []
+}

@@ -1,0 +1,45 @@
+{
+  "id": "mid",
+  "kind": "roles",
+  "name": "Đường giữa",
+  "facts": {
+    "tactics.rotation": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-09-29",
+        "value": "Dọn lính an toàn để giành lượt di chuyển. Cắm góc kiểm soát sông cùng rừng, sau đó chuyển nhịp thành mục tiêu, trụ hoặc cứu cánh bị ép."
+      }
+    ],
+    "tactics.composition": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-09-29",
+        "value": "Xét dồn sát thương, cấu rỉa, kéo dài, chuỗi khống chế, bắt lẻ, bảo kê, mở và phản giao tranh, phá trụ và tranh mục tiêu. So sánh ngưỡng cấp/trang bị và các điều kiện thắng xung đột qua từng giai đoạn."
+      }
+    ],
+    "catalog.entries": [
+      {
+        "evidence": [
+          "patch-items",
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "derived_knowledge",
+        "effective_from": "2026-09-29",
+        "value": [
+          "spells/dich-chuyen",
+          "enchantments/vuc-hon-mang"
+        ]
+      }
+    ]
+  },
+  "relations": []
+}

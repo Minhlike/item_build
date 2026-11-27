@@ -1,0 +1,263 @@
+{
+  "id": "ranked-vn",
+  "kind": "battlefield",
+  "name": "Chiến trường xếp hạng Việt Nam",
+  "facts": {
+    "tactics.mid-priority": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-09-29",
+        "value": "Khi đợt lính giữa đã an toàn và biết đường rút, tận dụng nhịp di chuyển để kiểm soát cửa sông, hỗ trợ cánh hoặc vào mục tiêu cùng đồng đội. Nếu phải bỏ lính, vòng rừng hoặc chủ lực đang bị ép, nhường quyền đến trước và gọi đổi phía."
+      }
+    ],
+    "tactics.objective-trade": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-09-29",
+        "value": "Xét quyền đường, vị trí người cầm Trừng trị, tầm nhìn và quân số trước khi mở mục tiêu. Nếu địch có lợi thế tiếp cận, cân nhắc đẩy trụ hoặc đổi mục tiêu ở cánh còn lại."
+      }
+    ],
+    "items.active-shared-cooldown": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Sở hữu đồng thời nhiều trang bị chủ động",
+          "detail": "Có thêm nút kích hoạt; các trang bị chủ động vẫn dùng chung hồi chiêu theo quy tắc."
+        }
+      }
+    ],
+    "season.portal-cooldown": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "teleport",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Dùng Cổng dịch chuyển",
+          "timing": {
+            "cooldown_s": 60.0
+          }
+        }
+      }
+    ],
+    "season.boss-evolution": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "boss",
+          "delivery": "battlefield",
+          "trigger": "Trận vào phút 20",
+          "detail": "Boss cường hóa và đi tuần sông; đội hạ Boss nhận Hắc Ám Tối Thượng và ba đợt Caesar tiên phong.",
+          "amount": {
+            "amount": 1200.0,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "caesar.vanguard-waves": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-09-29",
+        "value": {
+          "amount": 1.0,
+          "unit": "count"
+        }
+      },
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "caesar.vanguard-gold": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "economy",
+          "target": "allied-team",
+          "delivery": "battlefield",
+          "trigger": "Caesar tiên phong tiêu diệt lính",
+          "detail": "Đồng minh được chia vàng; tỷ lệ chia chưa xác minh."
+        }
+      }
+    ],
+    "season.boss-first-selection": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "delivery": "battlefield",
+          "trigger": "Trận tới phút 15",
+          "detail": "Một trong Caesar bạo chúa, Rồng bạo chúa Kraydus và King Kong xuất hiện tại hang Rồng hoặc Caesar theo lựa chọn ngẫu nhiên.",
+          "amount": {
+            "amount": 900.0,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "season.boss-respawn": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "delivery": "battlefield",
+          "trigger": "Boss đã bị hạ",
+          "timing": {
+            "cooldown_s": 210.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "delivery": "battlefield",
+          "trigger": "Boss đã bị hạ",
+          "timing": {
+            "cooldown_s": 180.0
+          }
+        }
+      }
+    ],
+    "season.king-kong-cycle": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 9.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 4.5
+          }
+        }
+      }
+    ],
+    "season.dark-king-kong-cycle": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 6.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 3.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Lịch xuất hiện lính, quái và bùa theo phút",
+    "Khung tầm nhìn bụi, kinh tế và chia sẻ EXP đầy đủ",
+    "Luật giai đoạn trụ và cơ chế bù kinh tế",
+    "Điều kiện cụ thể của Boss ở từng nhánh"
+  ],
+  "relations": [
+    {
+      "evidence": [
+        "patch-battlefield"
+      ],
+      "status": "LIVE_VN",
+      "kind": "derived_knowledge",
+      "effective_from": "2026-09-29",
+      "id": "ranked-teleport",
+      "subject": "battlefield/ranked-vn#season.portal-cooldown",
+      "predicate": "SYNERGIZES_WITH",
+      "object": "spells/dich-chuyen#active.teleport",
+      "condition": "Cửa sổ 30 giây kể từ khi dùng Cổng có thể rút 30 giây hồi phép. Kiểm tra khả dụng theo hàng chờ.",
+      "scope": "ranked_solo_vn"
+    }
+  ]
+}

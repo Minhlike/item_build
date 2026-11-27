@@ -1,0 +1,31 @@
+{
+  "id": "raz",
+  "kind": "heroes",
+  "name": "Raz",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "tactics.ambush": [
+      {
+        "evidence": [
+          "raz"
+        ],
+        "kind": "behavioral_tendency",
+        "value": "Có thể cấu rỉa từ xa rồi chọn góc đẩy lệch đội hình khi đối thủ bước lên."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

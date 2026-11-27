@@ -1,0 +1,57 @@
+{
+  "id": "ybneth",
+  "kind": "heroes",
+  "name": "Y’bneth",
+  "aliases": [
+    "Y'bneth",
+    "Yb"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.brush-heal": [
+      {
+        "evidence": [
+          "ybneth"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Vào bụi khi nội tại sẵn sàng",
+          "detail": "Có hồi tài nguyên song song.",
+          "timing": {
+            "duration_s": 5.0,
+            "interval_s": 1.0
+          }
+        }
+      }
+    ],
+    "skill-3.shield": [
+      {
+        "evidence": [
+          "ybneth"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Kích hoạt chiêu cuối"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

@@ -1,0 +1,82 @@
+{
+  "id": "khien-that-truyen",
+  "kind": "items",
+  "name": "Khiên thất truyền",
+  "aliases": [
+    "KTT"
+  ],
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2100.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1200.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 275.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "passive.slow-attack": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "attack_speed",
+          "target": "attacker",
+          "delivery": "item",
+          "trigger": "Người mang khiên chịu sát thương từ đối thủ",
+          "detail": "Giảm tốc đánh, kèm giảm 15% tốc chạy; danh mục không nêu thời lượng.",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "unique_group": "linh-gac"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Màu nhận diện icon",
+    "Công thức ghép hiện hành",
+    "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+  ],
+  "relations": [
+    {
+      "evidence": [
+        "academy-items",
+        "allain"
+      ],
+      "kind": "derived_knowledge",
+      "id": "thattruyen-allain",
+      "subject": "items/khien-that-truyen#passive.slow-attack",
+      "predicate": "MITIGATES",
+      "object": "heroes/allain#passive.hit-heal",
+      "condition": "Allain phải gây sát thương vào người mang khiên; giá trị phụ thuộc phần chuỗi đánh thật sự bị làm chậm.",
+      "scope": "ranked_solo_vn"
+    }
+  ]
+}

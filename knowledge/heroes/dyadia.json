@@ -1,0 +1,80 @@
+{
+  "id": "dyadia",
+  "kind": "heroes",
+  "name": "Dyadia",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "skill-2.damage-over-time": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "delivery": "ability",
+          "trigger": "Tổng sát thương kéo dài của Chiêu 2 theo ghi chú",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 640.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 128.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.95
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "delivery": "ability",
+          "trigger": "Tổng sát thương kéo dài của Chiêu 2 theo ghi chú",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 540.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 108.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

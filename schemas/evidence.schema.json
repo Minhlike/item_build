@@ -1,0 +1,116 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "minLength": 1,
+      "title": "Source Id",
+      "type": "string"
+    },
+    "source_url": {
+      "format": "uri",
+      "maxLength": 2083,
+      "minLength": 1,
+      "title": "Source Url",
+      "type": "string"
+    },
+    "source_type": {
+      "enum": [
+        "official",
+        "official_academy",
+        "user_experiment",
+        "community_repository"
+      ],
+      "title": "Source Type",
+      "type": "string"
+    },
+    "server": {
+      "minLength": 1,
+      "title": "Server",
+      "type": "string"
+    },
+    "published_at": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Published At"
+    },
+    "retrieved_at": {
+      "format": "date",
+      "title": "Retrieved At",
+      "type": "string"
+    },
+    "effective_from": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Effective From"
+    },
+    "effective_until": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Effective Until"
+    },
+    "patch_id": {
+      "anyOf": [
+        {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Patch Id"
+    },
+    "verification_status": {
+      "enum": [
+        "verified_official",
+        "cross_checked",
+        "experiment",
+        "unverified",
+        "conflict"
+      ],
+      "title": "Verification Status",
+      "type": "string"
+    },
+    "evidence_ref": {
+      "minLength": 1,
+      "title": "Evidence Ref",
+      "type": "string"
+    }
+  },
+  "required": [
+    "source_id",
+    "source_url",
+    "source_type",
+    "server",
+    "retrieved_at",
+    "verification_status",
+    "evidence_ref"
+  ],
+  "title": "Evidence",
+  "type": "object"
+}

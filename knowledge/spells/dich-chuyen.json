@@ -1,0 +1,49 @@
+{
+  "id": "dich-chuyen",
+  "kind": "spells",
+  "name": "Dịch chuyển",
+  "facts": {
+    "active.teleport": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "teleport",
+          "target": "self",
+          "delivery": "spell",
+          "trigger": "Chọn công trình đồng minh, kể cả trụ đổ, hoặc lính đồng minh",
+          "detail": "Đơn vị được chọn miễn sát thương trong thời gian vận chiêu.",
+          "timing": {
+            "cooldown_s": 90.0,
+            "cast_s": 2.0
+          },
+          "exceptions": [
+            "Hủy phép hoặc dùng trong 30 giây sau khi đi qua Cổng dịch chuyển thì hồi chiêu giảm 30 giây."
+          ]
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Kiểm tra khả dụng trong từng hàng chờ và ngày hết hiệu lực"
+  ],
+  "relations": [
+    {
+      "evidence": [
+        "patch-battlefield"
+      ],
+      "status": "LIVE_VN",
+      "kind": "derived_knowledge",
+      "effective_from": "2026-09-29",
+      "id": "ranked-teleport",
+      "subject": "battlefield/ranked-vn#season.portal-cooldown",
+      "predicate": "SYNERGIZES_WITH",
+      "object": "spells/dich-chuyen#active.teleport",
+      "condition": "Cửa sổ 30 giây kể từ khi dùng Cổng có thể rút 30 giây hồi phép. Kiểm tra khả dụng theo hàng chờ.",
+      "scope": "ranked_solo_vn"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "thanh-khoi-nguyen",
+  "kind": "enchantments",
+  "name": "Thành khởi nguyên",
+  "facts": {
+    "identity.branch": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": true
+      }
+    ]
+  },
+  "unknown": [
+    "Đủ các nút theo tầng và ràng buộc nhánh chính/phụ"
+  ],
+  "relations": []
+}

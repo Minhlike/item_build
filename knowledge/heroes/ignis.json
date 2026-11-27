@@ -1,0 +1,136 @@
+{
+  "id": "ignis",
+  "kind": "heroes",
+  "name": "Ignis",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.mark-heal": [
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Kích hoạt Dấu ấn của Ignis",
+          "formula": {
+            "unit": "hp",
+            "base": 90.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 6.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.14
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Kích hoạt Dấu ấn của Ignis",
+          "formula": {
+            "unit": "hp",
+            "base": 95.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 7.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.magic": [
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "ability",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 425.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "ability",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 425.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 85.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

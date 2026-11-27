@@ -1,0 +1,16 @@
+{
+  "packs": "packs/INDEX.json",
+  "version": "knowledge/VERSION.json",
+  "sources": "knowledge/sources/INDEX.json",
+  "graph": "knowledge/interactions/graph.json",
+  "schema": "schemas/entity.schema.json",
+  "directories": {
+    "heroes": "knowledge/heroes/",
+    "items": "knowledge/items/",
+    "runes": "knowledge/runes/",
+    "enchantments": "knowledge/enchantments/",
+    "spells": "knowledge/spells/",
+    "battlefield": "knowledge/battlefield/",
+    "roles": "knowledge/roles/"
+  }
+}

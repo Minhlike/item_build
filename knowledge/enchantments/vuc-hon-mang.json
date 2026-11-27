@@ -1,0 +1,38 @@
+{
+  "id": "vuc-hon-mang",
+  "kind": "enchantments",
+  "name": "Vực hỗn mang",
+  "facts": {
+    "identity.branch": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": true
+      }
+    ],
+    "tier-2.san-nha": [
+      {
+        "evidence": [
+          "patch-enchantments"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Ở nửa bản đồ thuộc phe mình",
+          "detail": "Tăng riêng cả sát thương và tốc chạy theo cùng tỷ lệ.",
+          "amount": {
+            "amount": 0.03,
+            "unit": "ratio"
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đủ các nút theo tầng và ràng buộc nhánh chính/phụ"
+  ],
+  "relations": []
+}

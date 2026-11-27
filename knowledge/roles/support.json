@@ -1,0 +1,46 @@
+{
+  "id": "support",
+  "kind": "roles",
+  "name": "Trợ thủ",
+  "facts": {
+    "tactics.rotation": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-09-29",
+        "value": "Phối hợp giữ nhịp Mid và tầm nhìn sông sau khi bảo đảm chủ lực không bị ép lẻ. Giữ chiêu đẩy hoặc làm choáng cho góc kẻ địch lao vào."
+      }
+    ],
+    "tactics.composition": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-09-29",
+        "value": "Xét dồn sát thương, cấu rỉa, kéo dài, chuỗi khống chế, bắt lẻ, bảo kê, mở và phản giao tranh, phá trụ và tranh mục tiêu. So sánh ngưỡng cấp/trang bị và các điều kiện thắng xung đột qua từng giai đoạn."
+      }
+    ],
+    "catalog.entries": [
+      {
+        "evidence": [
+          "patch-items",
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "derived_knowledge",
+        "effective_from": "2026-09-29",
+        "value": [
+          "items/khien-thanh-quang",
+          "items/giap-thong-kho",
+          "enchantments/rung-nguyen-sinh"
+        ]
+      }
+    ]
+  },
+  "relations": []
+}
