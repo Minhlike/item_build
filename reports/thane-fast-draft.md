@@ -15,6 +15,8 @@ Cloud nạp một pack dùng chung trước khi hiện form. Pack gồm mốc ph
 
 Đếm file trước form gồm bootstrap. Pack nạp trước chiếm 15.792 token ở ca đo. Token dùng tokenizer `o200k_base` trên file nguyên bản. Số liệu trước tối ưu tính lại từ các đường dẫn thực sự truy xuất ở ca 67 giây, kể cả lượt đọc lại VERSION. Token nền tảng thực sự cấp cho mô hình có thể khác. Lệnh `uv run item-build benchmark --progressive` xuất ca `cloud-67s`. 67 giây là số người dùng báo. Mục tiêu 5–10 giây cần đo lại cùng môi trường ChatGPT Cloud, từ gửi form đến build hoàn chỉnh.
 
+Ba lượt kiểm tra được thực hiện qua connector GitHub trong Codex ở SHA `47bd3482ff865995e6ef9677e3f3fd3e4839201c`. Nạp pack chung mất 723, 589 và 720 ms. Đọc song song năm pack tướng và phân tích JSON mất 677, 773 và 709 ms. Cả ba lượt đọc được đầy đủ tướng, mẫu Alice–Hayate và sáu chấm màu. Các số này chỉ đo truy xuất, có thể chịu ảnh hưởng cache của connector và chưa bao gồm thời gian mô hình suy luận hay sinh câu trả lời.
+
 ## Cơ chế ảnh hưởng đến build
 
 - **Hayate.** Phi tiêu có phần vật lý. Đủ sáu lần trúng cùng mục tiêu mới mở cửa sổ gây thêm chuẩn. Công thức chuẩn có phần gốc cộng theo AD, không có số hạng HP của nạn nhân. Học viện ghi có thể chí mạng, chưa chốt hệ số hoặc mọi loại nhịp. Tách nhiều lần nhận phi tiêu, tích đủ dấu và pha lao Bão phi tiêu. [Bản 30/10](https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-vet-nut-thoi-khong-30-10-2026/) · [Hướng dẫn chí mạng](https://hocvien.lienquan.garena.vn/bai-viet/34162)
