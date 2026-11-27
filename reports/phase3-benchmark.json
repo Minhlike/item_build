@@ -1,0 +1,495 @@
+{
+  "phase2_sha": "b0146c96f82f2652ddb1184b27763b3ad5a7c2da",
+  "phase2_context": {
+    "tokenizer": "o200k_base",
+    "platform": "Windows",
+    "reasoning_pack_enabled": false,
+    "runs_per_case": 200,
+    "scope": "Local runtime. File reads include initial indexes. Model quality and connector latency remain unmeasured.",
+    "cases": [
+      {
+        "hero": "thane",
+        "enemies": [
+          "trieu van",
+          "bolt baron",
+          "allain",
+          "natalya",
+          "ryoma"
+        ],
+        "file_reads": 15,
+        "raw_file_tokens": {
+          "knowledge": 33154,
+          "prompts": 1310,
+          "prompt_reads": 2
+        },
+        "index_load_ms": 1.927,
+        "first_context_ms": 3.179,
+        "warm_context_p95_ms": 0.116,
+        "formats": {
+          "json": {
+            "bytes": 51982,
+            "tokens": 13753,
+            "round_trip": true,
+            "decode_p95_ms": 0.597,
+            "sha256": "64a34cd8cfbc6f83a5d405b561169c3b21ff4c9f85f5c95324b0f3161db1c89a"
+          },
+          "json_compact": {
+            "bytes": 35279,
+            "tokens": 9656,
+            "round_trip": true,
+            "decode_p95_ms": 0.458,
+            "sha256": "b3f5f31d9c7aa5c6d0671f07552b60b394b6b78bbc59ece99eac4b724d7a5f9b"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 35470,
+            "tokens": 9734,
+            "round_trip": true,
+            "decode_p95_ms": 0.717,
+            "sha256": "514f4905e6e65c106493e003eefaeb0553e07036c6e704e67f56b9ff0548794a"
+          }
+        }
+      },
+      {
+        "hero": "thane",
+        "enemies": [
+          "richter",
+          "trieu van",
+          "hayate",
+          "raz",
+          "kaine"
+        ],
+        "file_reads": 15,
+        "raw_file_tokens": {
+          "knowledge": 32685,
+          "prompts": 1310,
+          "prompt_reads": 2
+        },
+        "index_load_ms": 1.842,
+        "first_context_ms": 3.284,
+        "warm_context_p95_ms": 0.109,
+        "formats": {
+          "json": {
+            "bytes": 53205,
+            "tokens": 14178,
+            "round_trip": true,
+            "decode_p95_ms": 0.474,
+            "sha256": "76e9560010adc02e56ace6a1ce5e3b40a62fb7bba3888c6f8566791fe7522f52"
+          },
+          "json_compact": {
+            "bytes": 36324,
+            "tokens": 9998,
+            "round_trip": true,
+            "decode_p95_ms": 0.41,
+            "sha256": "60a0a0bbf49d1e9b9a9a248429e7964584bb560633850e27091ff14e54dbaa8e"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 36515,
+            "tokens": 10076,
+            "round_trip": true,
+            "decode_p95_ms": 0.5,
+            "sha256": "ce1fa91b811c8aa86ca91eaa5d43570bf625e72ac0304d693a2a591762a92732"
+          }
+        }
+      },
+      {
+        "hero": "thane",
+        "enemies": [
+          "ybneth",
+          "fennik",
+          "trieu van",
+          "omen",
+          "preyta"
+        ],
+        "file_reads": 15,
+        "raw_file_tokens": {
+          "knowledge": 32441,
+          "prompts": 1310,
+          "prompt_reads": 2
+        },
+        "index_load_ms": 1.922,
+        "first_context_ms": 3.338,
+        "warm_context_p95_ms": 0.109,
+        "formats": {
+          "json": {
+            "bytes": 50047,
+            "tokens": 13414,
+            "round_trip": true,
+            "decode_p95_ms": 0.632,
+            "sha256": "754f2b113518719ad3beb315ae641efbc5c2f3b7a5d283ff71ab4cf08e82bc98"
+          },
+          "json_compact": {
+            "bytes": 34531,
+            "tokens": 9504,
+            "round_trip": true,
+            "decode_p95_ms": 0.496,
+            "sha256": "1680aa8bceb51086b93b99cc9d4457c064b9776ca1473c7e04a59be41ec7d7a9"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 34722,
+            "tokens": 9582,
+            "round_trip": true,
+            "decode_p95_ms": 0.412,
+            "sha256": "e2656c03905d2f2998fd569d655bb65e0ff4819c544b067f067ed185a61a5e1e"
+          }
+        }
+      },
+      {
+        "hero": "thane",
+        "enemies": [
+          "butterfly",
+          "yue",
+          "arthur",
+          "hayate",
+          "edras"
+        ],
+        "file_reads": 15,
+        "raw_file_tokens": {
+          "knowledge": 31954,
+          "prompts": 1310,
+          "prompt_reads": 2
+        },
+        "index_load_ms": 1.637,
+        "first_context_ms": 3.288,
+        "warm_context_p95_ms": 0.098,
+        "formats": {
+          "json": {
+            "bytes": 51394,
+            "tokens": 13619,
+            "round_trip": true,
+            "decode_p95_ms": 0.611,
+            "sha256": "1bc3a5d3984ba02c9208b33765944dfbe15bc9701c2315b0e8ec842c88e29b15"
+          },
+          "json_compact": {
+            "bytes": 35119,
+            "tokens": 9600,
+            "round_trip": true,
+            "decode_p95_ms": 0.42,
+            "sha256": "669bb26f4d58b8fb58f665ec62c2b763716c29a32dd6cfc32d18fc0c4688e210"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 35310,
+            "tokens": 9678,
+            "round_trip": true,
+            "decode_p95_ms": 0.443,
+            "sha256": "b9fc2ef87bd3b567e7b13872a9289c9af4161198d1123d5359dae691bb0758ca"
+          }
+        }
+      },
+      {
+        "hero": "thane",
+        "enemies": [
+          "raz",
+          "natalya",
+          "butterfly",
+          "preyta",
+          "darcy"
+        ],
+        "file_reads": 15,
+        "raw_file_tokens": {
+          "knowledge": 31851,
+          "prompts": 1310,
+          "prompt_reads": 2
+        },
+        "index_load_ms": 1.653,
+        "first_context_ms": 3.236,
+        "warm_context_p95_ms": 0.134,
+        "formats": {
+          "json": {
+            "bytes": 52164,
+            "tokens": 13771,
+            "round_trip": true,
+            "decode_p95_ms": 0.713,
+            "sha256": "51645bc69918d69d85e9ecf63deeff155ff73fd867a6319b0ca88c7d704a81fe"
+          },
+          "json_compact": {
+            "bytes": 35060,
+            "tokens": 9636,
+            "round_trip": true,
+            "decode_p95_ms": 0.418,
+            "sha256": "c948cbeaefc1af7455cd63709b9af078d277da42503c11f0712534cf3ef74c9e"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 35251,
+            "tokens": 9714,
+            "round_trip": true,
+            "decode_p95_ms": 0.717,
+            "sha256": "e94c6515e74a7c1046818ef7a39eaced487e783870575549fd4d337ea744a77c"
+          }
+        }
+      }
+    ]
+  },
+  "phase3_context_with_reasoning": {
+    "tokenizer": "o200k_base",
+    "platform": "Windows",
+    "reasoning_pack_enabled": true,
+    "runs_per_case": 200,
+    "scope": "Local runtime. File reads include initial indexes. Model quality and connector latency remain unmeasured.",
+    "cases": [
+      {
+        "hero": "thane",
+        "enemies": [
+          "trieu van",
+          "bolt baron",
+          "allain",
+          "natalya",
+          "ryoma"
+        ],
+        "file_reads": 16,
+        "raw_file_tokens": {
+          "knowledge": 38382,
+          "prompts": 2253,
+          "prompt_reads": 3
+        },
+        "index_load_ms": 1.524,
+        "first_context_ms": 3.637,
+        "warm_context_p95_ms": 0.2,
+        "formats": {
+          "json": {
+            "bytes": 61342,
+            "tokens": 16189,
+            "round_trip": true,
+            "decode_p95_ms": 0.73,
+            "sha256": "65e72da92bd97536d894f80b8c92757432a52be4a82d879ca955047d6da64e96"
+          },
+          "json_compact": {
+            "bytes": 41900,
+            "tokens": 11427,
+            "round_trip": true,
+            "decode_p95_ms": 0.88,
+            "sha256": "6d45d49ff2c3fdfec441579b74eceadd218bea0ee870e4d181aa60535584890a"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 42106,
+            "tokens": 11510,
+            "round_trip": true,
+            "decode_p95_ms": 1.255,
+            "sha256": "ed4a87fa62347e143e92661593296867de06ac5a1b8f07db350378747d7fe6f6"
+          }
+        }
+      },
+      {
+        "hero": "thane",
+        "enemies": [
+          "richter",
+          "trieu van",
+          "hayate",
+          "raz",
+          "kaine"
+        ],
+        "file_reads": 16,
+        "raw_file_tokens": {
+          "knowledge": 37901,
+          "prompts": 2253,
+          "prompt_reads": 3
+        },
+        "index_load_ms": 2.947,
+        "first_context_ms": 6.549,
+        "warm_context_p95_ms": 0.378,
+        "formats": {
+          "json": {
+            "bytes": 62450,
+            "tokens": 16589,
+            "round_trip": true,
+            "decode_p95_ms": 1.619,
+            "sha256": "1823bc050830cba06dbf79d41da7c89971937c7c82ebbd5b6534e56c7774d2e4"
+          },
+          "json_compact": {
+            "bytes": 42918,
+            "tokens": 11757,
+            "round_trip": true,
+            "decode_p95_ms": 1.368,
+            "sha256": "e4bd04d4411735547e2798118fedf1750b864550eab39475f550d895923b3d59"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 43124,
+            "tokens": 11840,
+            "round_trip": true,
+            "decode_p95_ms": 1.241,
+            "sha256": "209fdbd81d05ecd24f48793605749bebadec79076d226442fb95465a5502d6a6"
+          }
+        }
+      },
+      {
+        "hero": "thane",
+        "enemies": [
+          "ybneth",
+          "fennik",
+          "trieu van",
+          "omen",
+          "preyta"
+        ],
+        "file_reads": 16,
+        "raw_file_tokens": {
+          "knowledge": 38398,
+          "prompts": 2253,
+          "prompt_reads": 3
+        },
+        "index_load_ms": 2.818,
+        "first_context_ms": 6.355,
+        "warm_context_p95_ms": 0.317,
+        "formats": {
+          "json": {
+            "bytes": 64243,
+            "tokens": 17079,
+            "round_trip": true,
+            "decode_p95_ms": 1.144,
+            "sha256": "b4055870adba024eefaa118752e3f8102d8ba14688659faf6f508392fe398ef1"
+          },
+          "json_compact": {
+            "bytes": 44327,
+            "tokens": 12151,
+            "round_trip": true,
+            "decode_p95_ms": 1.083,
+            "sha256": "f967aa92637458cac0e4e1651027b3472ecb5d73e0e3a796d9218861f2edbcd7"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 44533,
+            "tokens": 12234,
+            "round_trip": true,
+            "decode_p95_ms": 1.267,
+            "sha256": "20658245797a4195f3c00d219182636aa79c316f2695d0623540ef9dd21155e1"
+          }
+        }
+      },
+      {
+        "hero": "thane",
+        "enemies": [
+          "butterfly",
+          "yue",
+          "arthur",
+          "hayate",
+          "edras"
+        ],
+        "file_reads": 16,
+        "raw_file_tokens": {
+          "knowledge": 37804,
+          "prompts": 2253,
+          "prompt_reads": 3
+        },
+        "index_load_ms": 3.424,
+        "first_context_ms": 6.582,
+        "warm_context_p95_ms": 0.425,
+        "formats": {
+          "json": {
+            "bytes": 66379,
+            "tokens": 17453,
+            "round_trip": true,
+            "decode_p95_ms": 1.542,
+            "sha256": "be3ebaaaff3409341f38690aea66ecdbef8e903ac3f6c53cf16971cd2ce44f95"
+          },
+          "json_compact": {
+            "bytes": 44826,
+            "tokens": 12302,
+            "round_trip": true,
+            "decode_p95_ms": 1.147,
+            "sha256": "58cd0d357e3df6e85dd2298f90d7488db757b5c1898615e2c700cdbf53621bd5"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 45032,
+            "tokens": 12385,
+            "round_trip": true,
+            "decode_p95_ms": 1.773,
+            "sha256": "13de90da76ab2ba88cbe8717054a297f065dafa892e929c52d0ca135639f8375"
+          }
+        }
+      },
+      {
+        "hero": "thane",
+        "enemies": [
+          "raz",
+          "natalya",
+          "butterfly",
+          "preyta",
+          "darcy"
+        ],
+        "file_reads": 16,
+        "raw_file_tokens": {
+          "knowledge": 39050,
+          "prompts": 2253,
+          "prompt_reads": 3
+        },
+        "index_load_ms": 5.104,
+        "first_context_ms": 9.267,
+        "warm_context_p95_ms": 0.432,
+        "formats": {
+          "json": {
+            "bytes": 77132,
+            "tokens": 20017,
+            "round_trip": true,
+            "decode_p95_ms": 1.946,
+            "sha256": "8199b74cdd38b9abc6f83f0d709f5009e0d63c5921aa6ce808f105d55e63d6d9"
+          },
+          "json_compact": {
+            "bytes": 51578,
+            "tokens": 14083,
+            "round_trip": true,
+            "decode_p95_ms": 2.482,
+            "sha256": "9b590db619ac42968c18b9966336ff95fe0f902981c2be20a1b86836369d7e14"
+          },
+          "markdown_sections_with_json": {
+            "bytes": 51784,
+            "tokens": 14166,
+            "round_trip": true,
+            "decode_p95_ms": 2.251,
+            "sha256": "a05f72f3c8d3074ad3ab25c922c752b009d6f8a12d480bbcc3de09ee94e9d61b"
+          }
+        }
+      }
+    ]
+  },
+  "phase3_catalogues": {
+    "tokenizer": "o200k_base",
+    "scope": "Same compiled records; individual versus grouped file reads. One file per call is an estimate. Connector latency was not measured.",
+    "cases": {
+      "thane_support_draft": {
+        "entity_count": 27,
+        "live_facts": 20,
+        "candidate_facts": 102,
+        "same_claims_conditions_and_unknowns": true,
+        "individual": {
+          "file_reads": 27,
+          "bytes": 42291,
+          "tokens": 11234
+        },
+        "grouped": {
+          "file_reads": 3,
+          "bytes": 37285,
+          "tokens": 10063
+        }
+      },
+      "mage_preparation": {
+        "entity_count": 58,
+        "live_facts": 67,
+        "candidate_facts": 178,
+        "same_claims_conditions_and_unknowns": true,
+        "individual": {
+          "file_reads": 58,
+          "bytes": 74501,
+          "tokens": 20228
+        },
+        "grouped": {
+          "file_reads": 6,
+          "bytes": 63961,
+          "tokens": 17549
+        }
+      },
+      "whole_catalog": {
+        "entity_count": 101,
+        "live_facts": 132,
+        "candidate_facts": 311,
+        "same_claims_conditions_and_unknowns": true,
+        "individual": {
+          "file_reads": 101,
+          "bytes": 138395,
+          "tokens": 37410
+        },
+        "grouped": {
+          "file_reads": 10,
+          "bytes": 120450,
+          "tokens": 33035
+        }
+      }
+    }
+  }
+}

@@ -80,4 +80,4 @@ Theo dõi HTTP chỉ hoạt động với `acquisition: approved_http`, `permiss
 
 Xem [bàn giao Phase 2](reports/phase2.md), [kiểm định upstream](reports/upstream-audit.json), [benchmark pack nhóm](reports/catalog-benchmark.json) và [bộ câu hỏi nghiệm thu](evaluations/reasoning.md). [Bàn giao Phase 1](reports/handoff.md) và [benchmark Phase 1](reports/benchmark.json) lưu số liệu tại checkpoint ban đầu.
 
-Kiểm định đối chứng và hướng dẫn chấm nằm trong [bộ đề Phase 3](evaluations/phase3/README.md). Phiên bản hiện tại dùng các nguyên lý nghiên cứu đã đối chiếu trong [ghi chú nghiên cứu](reports/phase3-research.md).
+Số liệu trước/sau và khoảng trống nằm trong [bàn giao Phase 3](reports/phase3.md). Kiểm định đối chứng và hướng dẫn chấm nằm trong [bộ đề Phase 3](evaluations/phase3/README.md). Phiên bản hiện tại dùng các nguyên lý đã đối chiếu trong [ghi chú nghiên cứu](reports/phase3-research.md).
