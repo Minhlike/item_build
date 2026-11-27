@@ -24,4 +24,3 @@ jobs:
       - run: uv run ruff format --check src tests
       - run: uv run item-build validate
       - run: uv run pytest -q
-
