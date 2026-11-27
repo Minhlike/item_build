@@ -72,6 +72,48 @@
         }
       }
     ],
+    "passive.marked-true-crit": [
+      {
+        "evidence": [
+          "academy-hayate-critical"
+        ],
+        "value": {
+          "effect": "critical",
+          "target": "target-hit",
+          "trigger": "Đòn gây phần sát thương chuẩn sau khi mở dấu.",
+          "detail": "Học viện mô tả có thể chí mạng. Chưa xác minh hệ số hay mọi loại nhịp đều dùng cùng quy tắc."
+        }
+      }
+    ],
+    "skill-1.hit-stacks": [
+      {
+        "evidence": [
+          "hayate",
+          "academy-hayate"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "target-hit",
+          "trigger": "Từng phi tiêu trúng cùng mục tiêu.",
+          "detail": "Ngắt tiếp xúc để tránh chạm mốc cộng dồn."
+        }
+      }
+    ],
+    "skill-3.physical-stacks": [
+      {
+        "evidence": [
+          "hayate",
+          "academy-hayate-critical"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Hayate dịch chuyển đến vị trí chọn và phi tiêu chiêu cuối trúng.",
+          "detail": "Các nhịp có thể tích dấu. Chiêu có thể bị ngắt bởi khống chế; chưa xác minh hệ số và loại ngắt.",
+          "damage_type": "physical"
+        }
+      }
+    ],
     "passive.marked-true": [
       {
         "evidence": [

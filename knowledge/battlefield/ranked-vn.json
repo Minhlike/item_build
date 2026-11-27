@@ -25,6 +25,45 @@
         "value": "Xét quyền đường, vị trí người cầm Trừng trị, tầm nhìn và quân số trước khi mở mục tiêu. Nếu địch có lợi thế tiếp cận, cân nhắc đẩy trụ hoặc đổi mục tiêu ở cánh còn lại."
       }
     ],
+    "support.earth-aura": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self-and-nearby-allied-heroes",
+          "trigger": "Mang Đại địa hoặc Thổ hệ và ở trong phạm vi Nguyên lực.",
+          "detail": "Cấp 3 được ghi tăng 32–60 giáp và giáp phép. Mốc tăng, phạm vi và cộng dồn chưa xác minh."
+        }
+      }
+    ],
+    "support.fire-aura": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self-and-nearby-allied-heroes",
+          "trigger": "Mang Liệt hỏa hoặc Hỏa hệ và ở trong phạm vi Cực ảnh.",
+          "detail": "Danh mục ghi 5% tốc đánh và 5% giảm hồi chiêu. Chưa rõ phạm vi và cộng dồn với nguồn khác."
+        }
+      }
+    ],
+    "support.reward-primary-stat": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Mang nhánh trợ thủ có Tưởng thưởng.",
+          "detail": "Cấp 2 ghi 16–30, cấp 3 ghi 32–60 chỉ số chủ đạo. Một điểm tương ứng 1 AD hoặc 2 AP. Cơ chế chọn chỉ số và mốc tăng chưa rõ."
+        }
+      }
+    ],
     "items.tier-two-boot-swap": [
       {
         "evidence": [

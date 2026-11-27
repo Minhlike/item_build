@@ -100,6 +100,14 @@
         }
       }
     ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-gaia"
+        ],
+        "value": "xanh-ngoc"
+      }
+    ],
     "passive.proc-amount": [
       {
         "evidence": [

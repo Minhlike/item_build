@@ -65,7 +65,7 @@
     "skill-2.base-physical": [
       {
         "evidence": [
-          "patch-2026-02-05-elsu"
+          "patch-2026-02-05"
         ],
         "status": "LIVE_VN",
         "effective_from": "2026-02-05",

@@ -105,6 +105,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-ao-choang-than-ra"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -169,6 +177,33 @@
             "detail": "Giảm tốc đánh, kèm giảm 15% tốc chạy; danh mục không nêu thời lượng.",
             "unique_group": "linh-gac",
             "activation": "automatic"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-khien-that-truyen"
+          ]
+        }
+      ],
+      "passive.slow-movement": [
+        {
+          "value": {
+            "effect": "soft_cc",
+            "target": "attacker",
+            "trigger": "Người mang nhận sát thương.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.15,
+              "unit": "ratio"
+            },
+            "unique_group": "linh-gac"
           },
           "evidence": [
             "academy-items"
@@ -250,6 +285,30 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-huan-chuong-troy"
+          ]
+        }
+      ],
+      "passive.magic-defense-growth": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Tăng theo cấp người mang.",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Nội lực thêm 0–112 giáp phép theo danh mục. Mốc tăng chưa rõ.",
+            "unique_group": "noi-luc"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -316,6 +375,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-giay-kien-cuong"
           ]
         }
       ]
@@ -420,7 +487,16 @@
     "id": "khien-thanh-quang",
     "name": "Khiên Thánh Quang",
     "aliases": [],
-    "facts": {},
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-khien-thanh-quang"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu nhận diện icon",
       "Công thức ghép hiện hành",
@@ -588,6 +664,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-phu-chu-truong-sinh"
           ]
         }
       ]
@@ -769,6 +853,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-giap-gaia"
           ]
         }
       ]
@@ -1756,6 +1848,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-giay-ho-ve"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -2500,6 +2600,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-dai-dia-mo-troi"
           ]
         }
       ]

@@ -23,6 +23,134 @@
         "value": "Giữ chiêu áp sát và gây gián đoạn khi đối thủ lao vào chủ lực."
       }
     ],
+    "passive.max-hp-heal": [
+      {
+        "evidence": [
+          "arthur",
+          "academy-arthur-detail"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại Uy dũng phát nhịp tự hồi.",
+          "detail": "Hồ sơ ghi nhịp theo giây, hướng dẫn cũ ghi 2% HP mỗi 2 giây. Chưa chốt nhịp hoặc hệ số hiện hành.",
+          "basis": "caster_max_hp"
+        }
+      }
+    ],
+    "skill-1.empowered-physical": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh Gươm chính nghĩa cường hóa chạm mục tiêu.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.silence": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Đòn đánh Gươm chính nghĩa cường hóa chạm mục tiêu.",
+          "detail": "Câm lặng. Thời lượng hiện hành chưa rõ."
+        }
+      }
+    ],
+    "skill-1.mark-max-hp-magic": [
+      {
+        "evidence": [
+          "arthur",
+          "academy-arthur-detail"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Arthur đánh thường hoặc dùng chiêu lên kẻ đang mang dấu Gươm chính nghĩa.",
+          "detail": "Tính theo HP tối đa của đích; vẫn là phép.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "target_max_hp",
+                "coefficient": 0.01
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.orbit-magic": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemies",
+          "trigger": "Vòng khiên chạm mục tiêu trong từng nhịp.",
+          "damage_type": "magic",
+          "timing": {
+            "interval_s": 0.5
+          }
+        }
+      }
+    ],
+    "skill-3.knockup": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "trigger": "Arthur đáp xuống khi dùng chiêu cuối.",
+          "detail": "Hất tung vùng."
+        }
+      }
+    ],
+    "skill-3.zone-magic": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Đứng trong vùng dư âm sau cú đáp.",
+          "damage_type": "magic",
+          "timing": {
+            "duration_s": 5.0,
+            "interval_s": 1.0
+          }
+        }
+      }
+    ],
+    "skill-3.impact-magic": [
+      {
+        "evidence": [
+          "arthur",
+          "academy-arthur-detail",
+          "arthur-ultimate-hp-conflict"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Cú đáp Công lý phán quyết trúng.",
+          "detail": "Chủ thể HP tối đa mâu thuẫn; chưa dùng hệ số từ hướng dẫn làm số hiện hành.",
+          "damage_type": "magic"
+        }
+      }
+    ],
     "skill-1.empowered-range": [
       {
         "evidence": [

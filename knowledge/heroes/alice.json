@@ -11,6 +11,102 @@
         "value": true
       }
     ],
+    "skill-1.magic": [
+      {
+        "evidence": [
+          "hero-alice"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Vụ nổ thời không trúng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.stun": [
+      {
+        "evidence": [
+          "hero-alice"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "trigger": "Vụ nổ thời không trúng.",
+          "detail": "Choáng; thời lượng chưa xác minh."
+        }
+      }
+    ],
+    "skill-2.team-speed": [
+      {
+        "evidence": [
+          "hero-alice"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "nearby-allies",
+          "trigger": "Alice tạo lá chắn cho đồng đội gần.",
+          "detail": "Tăng tốc chạy, lượng và thời lượng cần xác minh."
+        }
+      }
+    ],
+    "skill-3.zone-magic": [
+      {
+        "evidence": [
+          "hero-alice"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Mục tiêu chịu nhịp trong Dòng chảy thời không.",
+          "damage_type": "magic",
+          "timing": {
+            "interval_s": 0.5
+          }
+        }
+      }
+    ],
+    "skill-3.magic-defense-reduction": [
+      {
+        "evidence": [
+          "hero-alice"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "enemies-in-area",
+          "trigger": "Mục tiêu nằm trong vùng chiêu cuối.",
+          "detail": "Giảm giáp phép của mục tiêu. Chưa rõ tỷ lệ, dạng phẳng/phần trăm hoặc thứ tự gộp."
+        }
+      }
+    ],
+    "skill-3.slow": [
+      {
+        "evidence": [
+          "hero-alice"
+        ],
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-area",
+          "trigger": "Mục tiêu nằm trong vùng chiêu cuối."
+        }
+      }
+    ],
+    "skill-3.silence": [
+      {
+        "evidence": [
+          "hero-alice"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "trigger": "Mục tiêu bước vào Dòng chảy thời không.",
+          "detail": "Câm lặng. Chưa kiểm chứng khi vào lại vùng hoặc khi bấm Mở trói.",
+          "timing": {
+            "duration_s": 1.0
+          }
+        }
+      }
+    ],
     "skill-2.cooldown": [
       {
         "evidence": [

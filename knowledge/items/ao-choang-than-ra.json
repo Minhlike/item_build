@@ -138,6 +138,14 @@
           "unique_group": "troc-na"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-ao-choang-than-ra"
+        ],
+        "value": "do"
+      }
     ]
   },
   "unknown": [

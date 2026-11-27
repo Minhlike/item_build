@@ -51,7 +51,7 @@ uv run item-build benchmark --progressive
 
 ### Tầng tra cứu và mức sẵn sàng
 
-- `context --layer l1` lấy cơ chế quyết định, shortlist, giới hạn theo người chơi và chiến thuật khớp đội hình. Dữ liệu có công thức giữ tên biến. Tệp `l2` cho biết nơi lấy hệ số và mốc cấp.
+- `context --layer l1` lấy cơ chế, công thức hiện có, ứng viên có nhãn và chiến thuật khớp đội hình. Với Thane SP, dùng [pack nạp trước](packs/l1/thane-support.json) cho trợ thủ, trang bị và chiến trường. Sau khi nhập đội hình chỉ đọc pack tướng chưa có tại cùng SHA. Mở tệp `l2` khi thiếu trường ảnh hưởng quyết định.
 - L2 là mặc định. Bật `--include-candidates` để đọc ứng viên và mâu thuẫn khi chuẩn bị tướng. `--layer l3` kèm timeline, quan hệ và bằng chứng của phạm vi ngữ cảnh. Trên GitHub có thể đi thẳng tới canonical của một ID.
 - `readiness` kiểm tra các neo `--require "nhóm/id#thuộc.tính"` theo tình huống. FAST_DRAFT dùng sáu ID đã chọn và các tướng đã nhập. HERO_PREPARATION cần luật và dữ liệu cho cấu hình ngọc, phù hiệu, phép. QUANTITATIVE liệt kê các thành phần riêng đã đủ cơ sở tính khi có đầu vào và đạt điều kiện. FULL kiểm cả danh mục kỹ năng, chỉ số và phần đã rà soát không áp dụng.
 

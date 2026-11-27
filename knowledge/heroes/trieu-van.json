@@ -98,6 +98,158 @@
         }
       }
     ],
+    "skill-1.area-physical": [
+      {
+        "evidence": [
+          "trieu-van"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemies",
+          "trigger": "Đòn kế tiếp sau Long huyết trúng.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.slow": [
+      {
+        "evidence": [
+          "trieu-van"
+        ],
+        "value": {
+          "effect": "soft_cc",
+          "target": "nearby-enemies",
+          "trigger": "Đòn cường hóa Long huyết trúng.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "skill-2.attack-speed": [
+      {
+        "evidence": [
+          "trieu-van"
+        ],
+        "value": {
+          "effect": "attack_speed",
+          "target": "self",
+          "trigger": "Dùng Long Hống."
+        }
+      }
+    ],
+    "skill-3.knockup": [
+      {
+        "evidence": [
+          "trieu-van"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Nện Long kích trúng mục tiêu.",
+          "detail": "Hất văng ngắn; chưa xác minh thời lượng."
+        }
+      }
+    ],
+    "skill-3.mitigation": [
+      {
+        "evidence": [
+          "trieu-van"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Trong cửa sổ cường hóa Long kích.",
+          "detail": "Chưa rõ tỷ lệ và có áp dụng vào sát thương chuẩn hay không.",
+          "timing": {
+            "duration_s": 5.0
+          }
+        }
+      }
+    ],
+    "skill-2.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-02-05",
+          "trieu-van"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-02-05",
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemies",
+          "trigger": "Long Hống trúng mục tiêu.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 225.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 45.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-02-05"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-02-05",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Long Hống.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 6.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-2.lifesteal-rate": [
+      {
+        "evidence": [
+          "patch-2026-02-05",
+          "trieu-van"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-02-05",
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "trigger": "Hút máu từ Long Hống đang hiệu lực.",
+          "detail": "Chưa xác định mốc cấp và các thành phần sát thương áp hút máu.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.3,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.06
+              }
+            ]
+          }
+        }
+      }
+    ],
     "skill-1.empowered-dash": [
       {
         "evidence": [
@@ -118,7 +270,8 @@
     "Chỉ số gốc",
     "Hồi chiêu theo cấp",
     "Xác nhận cơ chế chưa định phiên bản",
-    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu",
+    "Công thức chuẩn Long kích và đòn cường hóa chưa xác định. Không gán hệ số theo HP đích."
   ],
   "relations": []
 }

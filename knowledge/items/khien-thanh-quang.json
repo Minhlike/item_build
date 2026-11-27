@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Khiên Thánh Quang",
   "facts": {
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-khien-thanh-quang"
+        ],
+        "value": "vang"
+      }
+    ],
     "stat.cooldown-reduction": [
       {
         "evidence": [

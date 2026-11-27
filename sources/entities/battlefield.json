@@ -26,6 +26,45 @@
           "status": "LIVE_VN",
           "effective_from": "2026-09-29"
         }
+      ],
+      "support.earth-aura": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self-and-nearby-allied-heroes",
+            "trigger": "Mang Đại địa hoặc Thổ hệ và ở trong phạm vi Nguyên lực.",
+            "detail": "Cấp 3 được ghi tăng 32–60 giáp và giáp phép. Mốc tăng, phạm vi và cộng dồn chưa xác minh."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "support.fire-aura": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self-and-nearby-allied-heroes",
+            "trigger": "Mang Liệt hỏa hoặc Hỏa hệ và ở trong phạm vi Cực ảnh.",
+            "detail": "Danh mục ghi 5% tốc đánh và 5% giảm hồi chiêu. Chưa rõ phạm vi và cộng dồn với nguồn khác."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "support.reward-primary-stat": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Mang nhánh trợ thủ có Tưởng thưởng.",
+            "detail": "Cấp 2 ghi 16–30, cấp 3 ghi 32–60 chỉ số chủ đạo. Một điểm tương ứng 1 AD hoặc 2 AP. Cơ chế chọn chỉ số và mốc tăng chưa rõ."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
       ]
     },
     "unknown": [

@@ -1003,7 +1003,52 @@
     "verification_status": "verified_official",
     "evidence_ref": "Tối ưu trải nghiệm chiến đấu, mục Thay đổi logic kích hoạt trang bị Hồi Huyết."
   },
-  "patch-2026-02-05-elsu": {
+  "hero-lauriel": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/lauriel/",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "unverified",
+    "evidence_ref": "Bộ chiêu không có ngày hiệu lực. Đủ bốn dấu Trời Phạt gây chuẩn diện rộng, làm chậm và hồi máu."
+  },
+  "lauriel-damage-type-conflict": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-tan-nien-khoi-the-05-02-2026/",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "conflict",
+    "evidence_ref": "Mục Lauriel ghi tiêu đề sát thương chuẩn, số trong cùng dòng được chú thích ST phép."
+  },
+  "academy-hayate-critical": {
+    "source_id": "hocvien_vn",
+    "source_url": "https://hocvien.lienquan.garena.vn/bai-viet/34162",
+    "source_type": "official_academy",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "unverified",
+    "evidence_ref": "Bài hướng dẫn mô tả thành phần chuẩn có thể chí mạng và chiêu cuối có thể bị ngắt."
+  },
+  "academy-arthur-detail": {
+    "source_id": "hocvien_vn",
+    "source_url": "https://hocvien.lienquan.garena.vn/bai-viet/37791",
+    "source_type": "official_academy",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "unverified",
+    "evidence_ref": "Hướng dẫn Arthur. Trùng cơ chế dấu theo HP đích; cơ sở HP của chiêu cuối mâu thuẫn hồ sơ Garena."
+  },
+  "arthur-ultimate-hp-conflict": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/arthur/",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "conflict",
+    "evidence_ref": "Hồ sơ ghi HP tối đa người tung. Bài Học viện 37791 ghi HP tối đa địch."
+  },
+  "patch-2026-02-05": {
     "source_id": "garena_vn",
     "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-tan-nien-khoi-the-05-02-2026/",
     "source_type": "official",
@@ -1013,6 +1058,87 @@
     "effective_from": "2026-02-05",
     "patch_id": "vn-2026-02-05",
     "verification_status": "verified_official",
-    "evidence_ref": "Mục Elsu, thành phần sát thương cơ bản Viễn trình kích."
+    "evidence_ref": "Mục Triệu Vân, Elsu và Lauriel trong cân bằng tướng."
+  },
+  "icon-garena-dai-dia-mo-troi": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2024/05/16214.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Đại địa Mở trói: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "icon-garena-giay-kien-cuong": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2024/05/3a856551539a716067add52f8fc65bc65875f0c7db9e51.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Giày kiên cường: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "icon-garena-giay-ho-ve": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2024/05/0b2a528cdd009437b1635def58e353675875f09318ffd1.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Giày hộ vệ: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "icon-garena-khien-thanh-quang": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2026/09/unnamed-4.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Khiên Thánh Quang: ảnh cạnh mục giới thiệu 29/09/2026. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "icon-garena-giap-gaia": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2024/05/9f2d442bf8b0f7597bd23de1af9c1ba9583eb6859264b1.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Giáp Gaia: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "icon-garena-ao-choang-than-ra": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2024/05/iconc412f57b9e56e33473ff1a7c87f64c3c5c8b6e31b77f71.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Áo choàng thần Ra: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "icon-garena-phu-chu-truong-sinh": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2024/05/icond155d1aa807b4022dd22a16cfa171d5f5853665105cd41.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Phù chú trường sinh: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "icon-garena-huan-chuong-troy": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2024/05/7c7e5cbc16a0a12b0363ffec0dd4bbe0583eb735ebea21.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Huân chương Troy: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "icon-garena-khien-that-truyen": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/wp-content/uploads/2024/05/098ae164502918650b6334ce885d7d71583eb5aa4f7e31.png",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Khiên thất truyền: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
   }
 }

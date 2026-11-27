@@ -1,1 +1,1 @@
-{"name":"Sephera","l2":"packs/heroes/sephera.json","live":{"passive.self-bonus-hp-heal":{"effect":"heal","target":"self","trigger":"Nội tại hồi máu được kích hoạt","formula_basis":["caster_bonus_hp"]}},"unknown":["Đối chiếu các thuộc tính chưa có mốc hiệu lực"]}
+{"name":"Sephera","l2":"packs/heroes/sephera.json","live":{"passive.self-bonus-hp-heal":{"effect":"heal","target":"self","trigger":"Nội tại hồi máu được kích hoạt","formula":{"unit":"hp","base":0.0,"terms":[{"basis":"caster_bonus_hp","coefficient":0.04}]}}},"unknown":["Đối chiếu các thuộc tính chưa có mốc hiệu lực"]}

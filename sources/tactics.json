@@ -1,6 +1,13 @@
 {
   "team_threats": [
     {
+      "id": "alice-hayate-shielded-entry", "enemies": ["alice", "hayate"], "pattern": "burst",
+      "condition": "Alice còn lá chắn hoặc đã che Hayate, Hayate có góc giữ tiếp xúc lên cùng mục tiêu.",
+      "chain": "Lá chắn có thể kéo dài thời gian Hayate đứng an toàn. Phi tiêu gây vật lý và đủ dấu mới mở cửa sổ chuẩn trên cùng đích.",
+      "response": "Đổi góc trước khi đủ dấu. Giữ đẩy hoặc hất tung khi Hayate lao vào. So HP và lá chắn bản thân với giá trị giáp trên riêng phần vật lý.",
+      "anchors": ["heroes/alice#skill-2.team-shield", "heroes/hayate#skill-1.physical", "heroes/hayate#passive.marked-true"]
+    },
+    {
       "id": "raz-natalya-poke-to-burst", "enemies": ["raz", "natalya"], "pattern": "burst",
       "condition": "Raz đã trúng Chiêu 2 vào mục tiêu, giảm giáp phép còn hiệu lực và Natalya đang có góc đánh mục tiêu đó.",
       "chain": "Cấu rỉa và hạ giáp phép trước cửa sổ sát thương phép nối tiếp. Hai nguồn có thể tập trung vào một mục tiêu.",

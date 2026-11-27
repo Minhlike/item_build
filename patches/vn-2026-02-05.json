@@ -1,10 +1,10 @@
 {
   "id": "vn-2026-02-05",
-  "title": "Tân Niên Khởi Thế, Viễn trình kích",
+  "title": "Điều chỉnh Tân Niên Khởi Thế 05/02/2026",
   "status": "LIVE_VN",
   "server": "VN",
   "effective_from": "2026-02-05",
-  "evidence": "patch-2026-02-05-elsu",
+  "evidence": "patch-2026-02-05",
   "changes": [
     {
       "entity": "heroes/elsu",
@@ -35,7 +35,129 @@
         "status": "LIVE_VN",
         "effective_from": "2026-02-05",
         "evidence": [
-          "patch-2026-02-05-elsu"
+          "patch-2026-02-05"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/trieu-van",
+      "property": "skill-2.base-physical",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemies",
+          "trigger": "Long Hống trúng mục tiêu.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 225,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 45
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              }
+            ]
+          }
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-02-05",
+        "evidence": [
+          "patch-2026-02-05",
+          "trieu-van"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/trieu-van",
+      "property": "skill-2.cooldown",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Long Hống.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 6,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            }
+          }
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-02-05",
+        "evidence": [
+          "patch-2026-02-05"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/trieu-van",
+      "property": "skill-2.lifesteal-rate",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "trigger": "Hút máu từ Long Hống đang hiệu lực.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.3,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.06
+              }
+            ]
+          },
+          "detail": "Chưa xác định mốc cấp và các thành phần sát thương áp hút máu."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-02-05",
+        "evidence": [
+          "patch-2026-02-05",
+          "trieu-van"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/lauriel",
+      "property": "passive.heal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại phát sinh hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 120,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.01
+              }
+            ]
+          }
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-02-05",
+        "evidence": [
+          "patch-2026-02-05"
         ]
       }
     }

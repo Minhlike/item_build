@@ -58,6 +58,33 @@
           "unique_group": "linh-gac"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-khien-that-truyen"
+        ],
+        "value": "lam"
+      }
+    ],
+    "passive.slow-movement": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "soft_cc",
+          "target": "attacker",
+          "delivery": "item",
+          "trigger": "Người mang nhận sát thương.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "unique_group": "linh-gac"
+        }
+      }
     ]
   },
   "unknown": [

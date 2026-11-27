@@ -65,6 +65,30 @@
           "unique_group": "ho-than"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-huan-chuong-troy"
+        ],
+        "value": "cam"
+      }
+    ],
+    "passive.magic-defense-growth": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Tăng theo cấp người mang.",
+          "activation": "automatic",
+          "detail": "Nội lực thêm 0–112 giáp phép theo danh mục. Mốc tăng chưa rõ.",
+          "unique_group": "noi-luc"
+        }
+      }
     ]
   },
   "unknown": [

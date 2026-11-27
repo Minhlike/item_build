@@ -356,7 +356,7 @@ def artifacts(root: Path) -> dict[str, bytes]:
     tactics_path = "packs/tactics.json"
     tactics = compile_tactics(root, entities, packed)
     files[tactics_path] = encode(tactics, compact=True)
-    files.update(compile_draft(root, packed, paths, tactics, preferences))
+    files.update(compile_draft(root, packed, paths, tactics, preferences, release, evidence))
     files["packs/INDEX.json"] = encode(
         {
             "schema": SCHEMA_VERSION,
@@ -426,6 +426,7 @@ def compile_repo(root: Path, *, check: bool = False) -> dict:
         for directory in (
             "packs/catalogs",
             "packs/preferences",
+            "packs/l1",
             "packs/l1/heroes",
             "packs/l1/roles",
             "packs/l1/team",

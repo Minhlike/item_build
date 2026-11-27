@@ -70,6 +70,14 @@
         }
       }
     ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giay-kien-cuong"
+        ],
+        "value": "lam"
+      }
+    ],
     "shop.tier": [
       {
         "evidence": [

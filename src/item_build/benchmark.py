@@ -6,6 +6,7 @@ from statistics import quantiles
 from time import perf_counter_ns
 
 from .catalog import group_packs
+from .progressive import THANE_SUPPORT_PACK
 from .retrieval import Repository
 from .storage import encode, read
 
@@ -16,6 +17,7 @@ DRAFT_CASES = [
     ["butterfly", "yue", "arthur", "hayate", "edras"],
     ["raz", "natalya", "butterfly", "preyta", "darcy"],
 ]
+THANE_CLOUD_CASE = ["Alice", "Hayate", "Arthur", "Triệu Vân", "Lauriel"]
 
 
 def benchmark_progressive(root: Path) -> dict:
@@ -34,6 +36,7 @@ def benchmark_progressive(root: Path) -> dict:
         (f"phase3-{i}", "thane", "support", enemies) for i, enemies in enumerate(DRAFT_CASES, 1)
     ]
     lineups += [(case["id"], case["hero"], case["role"], case["enemies"]) for case in regressions]
+    lineups.append(("cloud-67s", "thane", "support", THANE_CLOUD_CASE))
     measurements = []
     for label, hero, role, enemies in lineups:
         layers = {}
@@ -44,7 +47,17 @@ def benchmark_progressive(root: Path) -> dict:
             )
             paths = ["knowledge/VERSION.json", *repo.cached]
             prompts = ["prompts/cloud_bootstrap.md", "prompts/fast_draft.md"]
-            if layer == "l2":
+            warm_path = {}
+            if layer == "l1" and THANE_SUPPORT_PACK in repo.cached:
+                paths = list(repo.cached)
+                prompts = ["prompts/cloud_bootstrap.md"]
+                added = [path for path in paths if path != THANE_SUPPORT_PACK]
+                warm_path = {
+                    "preload_knowledge_tokens": raw_tokens([THANE_SUPPORT_PACK]),
+                    "post_form_reads": len(added),
+                    "post_form_tokens": raw_tokens(added),
+                }
+            elif layer == "l2":
                 paths.append("packs/INDEX.json")
                 prompts.append("prompts/reasoning_protocol.md")
             layers[layer] = {
@@ -52,6 +65,7 @@ def benchmark_progressive(root: Path) -> dict:
                 "github_knowledge_file_count": len(paths),
                 "github_knowledge_tokens": raw_tokens(paths),
                 "github_tokens_with_prompts": raw_tokens(paths + prompts),
+                **warm_path,
             }
         measurements.append(
             {"case": label, "hero": hero, "role": role, "enemies": enemies, **layers}

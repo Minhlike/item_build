@@ -19,18 +19,18 @@
     "heroes": {
       "entities": 130,
       "entities_with_live_facts": 84,
-      "live_properties": 247,
-      "review_claims": 85,
-      "live_mechanics": 239,
-      "mechanical_properties_any": 308
+      "live_properties": 250,
+      "review_claims": 116,
+      "live_mechanics": 242,
+      "mechanical_properties_any": 342
     },
     "items": {
       "entities": 85,
       "entities_with_live_facts": 43,
       "live_properties": 159,
-      "review_claims": 241,
+      "review_claims": 252,
       "live_mechanics": 39,
-      "mechanical_properties_any": 87
+      "mechanical_properties_any": 89
     },
     "runes": {
       "entities": 51,
@@ -60,9 +60,9 @@
       "entities": 1,
       "entities_with_live_facts": 1,
       "live_properties": 41,
-      "review_claims": 0,
+      "review_claims": 3,
       "live_mechanics": 25,
-      "mechanical_properties_any": 25
+      "mechanical_properties_any": 28
     },
     "roles": {
       "entities": 6,

@@ -107,6 +107,14 @@
           "unique_group": "truong-sinh"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-phu-chu-truong-sinh"
+        ],
+        "value": "luc"
+      }
     ]
   },
   "unknown": [

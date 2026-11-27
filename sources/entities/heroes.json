@@ -383,13 +383,84 @@
             "trieu-van"
           ]
         }
+      ],
+      "skill-1.area-physical": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "nearby-enemies",
+            "trigger": "Đòn kế tiếp sau Long huyết trúng.",
+            "damage_type": "physical"
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ],
+      "skill-1.slow": [
+        {
+          "value": {
+            "effect": "soft_cc",
+            "target": "nearby-enemies",
+            "trigger": "Đòn cường hóa Long huyết trúng.",
+            "amount": {
+              "amount": 0.5,
+              "unit": "ratio"
+            }
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ],
+      "skill-2.attack-speed": [
+        {
+          "value": {
+            "effect": "attack_speed",
+            "target": "self",
+            "trigger": "Dùng Long Hống."
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ],
+      "skill-3.knockup": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "target-hit",
+            "trigger": "Nện Long kích trúng mục tiêu.",
+            "detail": "Hất văng ngắn; chưa xác minh thời lượng."
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ],
+      "skill-3.mitigation": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Trong cửa sổ cường hóa Long kích.",
+            "timing": {
+              "duration_s": 5
+            },
+            "detail": "Chưa rõ tỷ lệ và có áp dụng vào sát thương chuẩn hay không."
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
       ]
     },
     "unknown": [
       "Chỉ số gốc",
       "Hồi chiêu theo cấp",
       "Xác nhận cơ chế chưa định phiên bản",
-      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu",
+      "Công thức chuẩn Long kích và đòn cường hóa chưa xác định. Không gán hệ số theo HP đích."
     ]
   },
   {
@@ -588,6 +659,48 @@
           },
           "evidence": [
             "hayate"
+          ]
+        }
+      ],
+      "passive.marked-true-crit": [
+        {
+          "value": {
+            "effect": "critical",
+            "target": "target-hit",
+            "trigger": "Đòn gây phần sát thương chuẩn sau khi mở dấu.",
+            "detail": "Học viện mô tả có thể chí mạng. Chưa xác minh hệ số hay mọi loại nhịp đều dùng cùng quy tắc."
+          },
+          "evidence": [
+            "academy-hayate-critical"
+          ]
+        }
+      ],
+      "skill-1.hit-stacks": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "target-hit",
+            "trigger": "Từng phi tiêu trúng cùng mục tiêu.",
+            "detail": "Ngắt tiếp xúc để tránh chạm mốc cộng dồn."
+          },
+          "evidence": [
+            "hayate",
+            "academy-hayate"
+          ]
+        }
+      ],
+      "skill-3.physical-stacks": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Hayate dịch chuyển đến vị trí chọn và phi tiêu chiêu cuối trúng.",
+            "damage_type": "physical",
+            "detail": "Các nhịp có thể tích dấu. Chiêu có thể bị ngắt bởi khống chế; chưa xác minh hệ số và loại ngắt."
+          },
+          "evidence": [
+            "hayate",
+            "academy-hayate-critical"
           ]
         }
       ]
@@ -1280,6 +1393,134 @@
             "arthur"
           ],
           "kind": "tactical_heuristic"
+        }
+      ],
+      "passive.max-hp-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Nội tại Uy dũng phát nhịp tự hồi.",
+            "basis": "caster_max_hp",
+            "detail": "Hồ sơ ghi nhịp theo giây, hướng dẫn cũ ghi 2% HP mỗi 2 giây. Chưa chốt nhịp hoặc hệ số hiện hành."
+          },
+          "evidence": [
+            "arthur",
+            "academy-arthur-detail"
+          ]
+        }
+      ],
+      "skill-1.empowered-physical": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đòn đánh Gươm chính nghĩa cường hóa chạm mục tiêu.",
+            "damage_type": "physical"
+          },
+          "evidence": [
+            "arthur"
+          ]
+        }
+      ],
+      "skill-1.silence": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "target-hit",
+            "trigger": "Đòn đánh Gươm chính nghĩa cường hóa chạm mục tiêu.",
+            "detail": "Câm lặng. Thời lượng hiện hành chưa rõ."
+          },
+          "evidence": [
+            "arthur"
+          ]
+        }
+      ],
+      "skill-1.mark-max-hp-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "marked-target",
+            "trigger": "Arthur đánh thường hoặc dùng chiêu lên kẻ đang mang dấu Gươm chính nghĩa.",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "target_max_hp",
+                  "coefficient": 0.01
+                }
+              ]
+            },
+            "detail": "Tính theo HP tối đa của đích; vẫn là phép."
+          },
+          "evidence": [
+            "arthur",
+            "academy-arthur-detail"
+          ]
+        }
+      ],
+      "skill-2.orbit-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "nearby-enemies",
+            "trigger": "Vòng khiên chạm mục tiêu trong từng nhịp.",
+            "damage_type": "magic",
+            "timing": {
+              "interval_s": 0.5
+            }
+          },
+          "evidence": [
+            "arthur"
+          ]
+        }
+      ],
+      "skill-3.knockup": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-area",
+            "trigger": "Arthur đáp xuống khi dùng chiêu cuối.",
+            "detail": "Hất tung vùng."
+          },
+          "evidence": [
+            "arthur"
+          ]
+        }
+      ],
+      "skill-3.zone-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Đứng trong vùng dư âm sau cú đáp.",
+            "damage_type": "magic",
+            "timing": {
+              "duration_s": 5,
+              "interval_s": 1
+            }
+          },
+          "evidence": [
+            "arthur"
+          ]
+        }
+      ],
+      "skill-3.impact-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Cú đáp Công lý phán quyết trúng.",
+            "damage_type": "magic",
+            "detail": "Chủ thể HP tối đa mâu thuẫn; chưa dùng hệ số từ hướng dẫn làm số hiện hành."
+          },
+          "evidence": [
+            "arthur",
+            "academy-arthur-detail",
+            "arthur-ultimate-hp-conflict"
+          ]
         }
       ]
     },
@@ -1980,7 +2221,104 @@
     "id": "alice",
     "kind": "heroes",
     "name": "Alice",
-    "facts": {},
+    "facts": {
+      "skill-1.magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Vụ nổ thời không trúng.",
+            "damage_type": "magic"
+          },
+          "evidence": [
+            "hero-alice"
+          ]
+        }
+      ],
+      "skill-1.stun": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-area",
+            "trigger": "Vụ nổ thời không trúng.",
+            "detail": "Choáng; thời lượng chưa xác minh."
+          },
+          "evidence": [
+            "hero-alice"
+          ]
+        }
+      ],
+      "skill-2.team-speed": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "nearby-allies",
+            "trigger": "Alice tạo lá chắn cho đồng đội gần.",
+            "detail": "Tăng tốc chạy, lượng và thời lượng cần xác minh."
+          },
+          "evidence": [
+            "hero-alice"
+          ]
+        }
+      ],
+      "skill-3.zone-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Mục tiêu chịu nhịp trong Dòng chảy thời không.",
+            "damage_type": "magic",
+            "timing": {
+              "interval_s": 0.5
+            }
+          },
+          "evidence": [
+            "hero-alice"
+          ]
+        }
+      ],
+      "skill-3.magic-defense-reduction": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "enemies-in-area",
+            "trigger": "Mục tiêu nằm trong vùng chiêu cuối.",
+            "detail": "Giảm giáp phép của mục tiêu. Chưa rõ tỷ lệ, dạng phẳng/phần trăm hoặc thứ tự gộp."
+          },
+          "evidence": [
+            "hero-alice"
+          ]
+        }
+      ],
+      "skill-3.slow": [
+        {
+          "value": {
+            "effect": "soft_cc",
+            "target": "enemies-in-area",
+            "trigger": "Mục tiêu nằm trong vùng chiêu cuối."
+          },
+          "evidence": [
+            "hero-alice"
+          ]
+        }
+      ],
+      "skill-3.silence": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-area",
+            "trigger": "Mục tiêu bước vào Dòng chảy thời không.",
+            "timing": {
+              "duration_s": 1
+            },
+            "detail": "Câm lặng. Chưa kiểm chứng khi vào lại vùng hoặc khi bấm Mở trói."
+          },
+          "evidence": [
+            "hero-alice"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
     ]
@@ -2130,6 +2468,139 @@
     "unknown": [
       "Chỉ số gốc",
       "Các kỹ năng và tương tác còn lại"
+    ]
+  },
+  {
+    "id": "lauriel",
+    "kind": "heroes",
+    "name": "Lauriel",
+    "facts": {
+      "passive.mark-true": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-around-target",
+            "trigger": "Đủ bốn dấu Trời Phạt trên mục tiêu.",
+            "damage_type": "true",
+            "stacks": 4,
+            "detail": "Hồ sơ mô tả chuẩn. Dòng hệ số trong bản vá tháng 2 tự mâu thuẫn, lưu riêng."
+          },
+          "evidence": [
+            "hero-lauriel"
+          ]
+        }
+      ],
+      "passive.mark-slow": [
+        {
+          "value": {
+            "effect": "soft_cc",
+            "target": "enemies-around-target",
+            "trigger": "Dấu thứ tư nổ.",
+            "detail": "Làm chậm giảm dần."
+          },
+          "evidence": [
+            "hero-lauriel"
+          ]
+        }
+      ],
+      "skill-1.double-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Trúng đường ánh sáng hoặc còn trong vùng khi nổ lần hai.",
+            "damage_type": "magic"
+          },
+          "evidence": [
+            "hero-lauriel"
+          ]
+        }
+      ],
+      "skill-2.dash-light": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Luồng sáng sau khi lướt chạm mục tiêu.",
+            "damage_type": "magic",
+            "detail": "Tối đa ba luồng phát ra; chưa giả định cùng đánh trúng một đích."
+          },
+          "evidence": [
+            "hero-lauriel"
+          ]
+        }
+      ],
+      "skill-2.hit-cdr": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Luồng sáng của Chiêu 2 đánh trúng."
+          },
+          "evidence": [
+            "hero-lauriel"
+          ]
+        }
+      ],
+      "skill-3.zone-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Pháp trận chạm mục tiêu khi mở hoặc kết thúc.",
+            "damage_type": "magic"
+          },
+          "evidence": [
+            "hero-lauriel"
+          ]
+        }
+      ],
+      "skill-3.zone-cdr": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Lauriel đứng trong pháp trận của mình.",
+            "detail": "Hồ sơ mô tả tăng tốc hồi chiêu trong vùng; không cộng thành một tỷ lệ CDR trang bị."
+          },
+          "evidence": [
+            "hero-lauriel"
+          ]
+        }
+      ],
+      "passive.damage-type-conflict": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "target-hit",
+            "trigger": "Dấu Trời Phạt nổ.",
+            "formula": {
+              "unit": "damage",
+              "base": 160,
+              "terms": [
+                {
+                  "basis": "hero_level",
+                  "coefficient": 10
+                },
+                {
+                  "basis": "ap",
+                  "coefficient": 0.5
+                }
+              ]
+            },
+            "detail": "Cùng một dòng bản vá ghi cả chuẩn và phép. Biểu thức nêu theo cấp tướng và AP, không có số hạng HP; chưa dùng để tính loại sát thương."
+          },
+          "evidence": [
+            "lauriel-damage-type-conflict",
+            "hero-lauriel"
+          ],
+          "effective_from": "2026-02-05"
+        }
+      ]
+    },
+    "unknown": [
+      "Mốc cấp, số nhịp sát thương và hồi chiêu theo cấp",
+      "Hệ số và loại sát thương nổ Trời Phạt"
     ]
   }
 ]
