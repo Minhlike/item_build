@@ -10,6 +10,115 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.mushroom-slow": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-area",
+          "trigger": "Đứng trong vùng Nấm hương.",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "skill-1.mushroom-burst": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nấm hương tan, mục tiêu ở vùng phụ cận.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 150.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.35
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 50.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5.0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-3.pet-knockup": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "trigger": "Tý Nị đáp xuống.",
+          "timing": {
+            "duration_s": 0.75
+          }
+        }
+      }
+    ],
+    "skill-3.pet-basic-cdr": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Tý Nị đánh thường khi đang cường hóa.",
+          "detail": "Giảm hồi Chiêu 3 của Ishar.",
+          "amount": {
+            "amount": 1.0,
+            "unit": "second"
+          }
+        }
+      }
     ]
   },
   "unknown": [

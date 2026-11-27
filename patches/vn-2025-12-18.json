@@ -89,6 +89,249 @@
           ]
         }
       }
+    },
+    {
+      "entity": "heroes/errol",
+      "property": "skill-1.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 gây sát thương.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 200,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.4
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "heroes/errol",
+      "property": "skill-2.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản của Chiêu 2.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 250,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.8
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "heroes/errol",
+      "property": "skill-2.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "heroes/airi",
+      "property": "passive.minion-monster-lifesteal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "trigger": "Nội tại gây sát thương chuẩn lên lính hoặc quái rừng.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.5
+          },
+          "exceptions": [
+            "Phạm vi thay đổi này chỉ nêu lính và quái rừng."
+          ]
+        },
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "heroes/allain",
+      "property": "passive.fourth-true",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh thứ tư gây phần sát thương chuẩn.",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 45,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 3
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.54
+              }
+            ]
+          },
+          "detail": "Phần giá trị gốc có thể chí mạng."
+        },
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "heroes/bonnie",
+      "property": "skill-1.burst-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương bùng nổ của Chiêu 1.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 375,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 75
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "heroes/bonnie",
+      "property": "skill-2.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản của Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
+    },
+    {
+      "entity": "heroes/bonnie",
+      "property": "skill-2.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18"
+      }
     }
   ],
   "review_notes": [

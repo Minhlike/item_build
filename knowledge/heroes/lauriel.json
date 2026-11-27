@@ -10,6 +10,34 @@
         ],
         "value": true
       }
+    ],
+    "passive.heal": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại phát sinh hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 140.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10.0
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.01
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

@@ -10,6 +10,27 @@
         ],
         "value": true
       }
+    ],
+    "passive.minion-monster-lifesteal": [
+      {
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18",
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "trigger": "Nội tại gây sát thương chuẩn lên lính hoặc quái rừng.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "ratio"
+          },
+          "exceptions": [
+            "Phạm vi thay đổi này chỉ nêu lính và quái rừng."
+          ]
+        }
+      }
     ]
   },
   "unknown": [

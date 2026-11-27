@@ -16,6 +16,149 @@
         ],
         "value": true
       }
+    ],
+    "skill-2.base-magic": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "SUPERSEDED",
+        "effective_from": "2026-05-21",
+        "effective_until": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 275.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 240.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 48.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.base-magic": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "SUPERSEDED",
+        "effective_from": "2026-05-21",
+        "effective_until": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 3 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 600.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 300.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Sát thương cơ bản Chiêu 3 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 560.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 280.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.1
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.initial-magic": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần ban đầu Chiêu 3 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 230.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 115.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

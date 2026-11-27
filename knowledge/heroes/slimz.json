@@ -10,6 +10,35 @@
         ],
         "value": true
       }
+    ],
+    "passive.empowered-physical": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh thường cường hóa của nội tại.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 220.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 16.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

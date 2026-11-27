@@ -1,0 +1,486 @@
+{
+  "id": "vn-2026-06-04",
+  "title": "Lễ hội 5v5 04/06/2026",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-06-04",
+  "evidence": "patch-2026-06-04",
+  "changes": [
+    {
+      "entity": "heroes/ishar",
+      "property": "skill-1.mushroom-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-area",
+          "trigger": "Đứng trong vùng Nấm hương.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.2
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/ishar",
+      "property": "skill-1.mushroom-burst",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nấm hương tan, mục tiêu ở vùng phụ cận.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.35
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/ishar",
+      "property": "skill-3.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 50,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/ishar",
+      "property": "skill-3.pet-knockup",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "trigger": "Tý Nị đáp xuống.",
+          "timing": {
+            "duration_s": 0.75
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/ishar",
+      "property": "skill-3.pet-basic-cdr",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Tý Nị đánh thường khi đang cường hóa.",
+          "amount": {
+            "unit": "second",
+            "amount": 1
+          },
+          "detail": "Giảm hồi Chiêu 3 của Ishar."
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-2.mark-one-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đánh cường hóa ở một tầng dấu.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 230,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 46
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.35
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-2.mark-two-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đánh cường hóa ở hai tầng dấu.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 345,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 69
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.525
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/paine",
+      "property": "skill-3.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 30,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/paine",
+      "property": "skill-3.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 3.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 700,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 350
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/kriknak",
+      "property": "skill-2.nonhero-heal-factor",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Chiêu 2 trúng đơn vị không phải tướng.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.5
+          },
+          "detail": "Tỷ lệ riêng của hồi máu từ mục tiêu không phải tướng."
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/azzenka",
+      "property": "skill-2.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 210,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 42
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.37
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/thane",
+      "property": "passive.damage-reduction",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Trong thời gian giảm sát thương do nội tại đã kích hoạt.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.4
+          },
+          "detail": "Bản này xác nhận mức giảm. Không ấn định ngưỡng máu, nội hồi hoặc thời lượng từ nguồn này."
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/sinestrea",
+      "property": "ranged.skill-3.blood-arrow-ratio",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Đòn Huyết tiễn trong cường hóa Chiêu 3.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.55
+          },
+          "detail": "Tỷ lệ mới, dòng cập nhật không làm rõ cơ sở."
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/kahlii",
+      "property": "skill-1.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8.5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/kahlii",
+      "property": "skill-3.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 3.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 56,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 28
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/tulen",
+      "property": "skill-1.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 1.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 480,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 96
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.8
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/baldum",
+      "property": "skill-3.recast",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "hard_cc",
+          "target": "imprisoned-enemies",
+          "trigger": "Kích hoạt Chiêu 3 lần hai khi còn giam giữ.",
+          "detail": "Baldum nện xuống tâm, kết thúc giam sớm và hất tung kèm sát thương."
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    },
+    {
+      "entity": "heroes/baldum",
+      "property": "skill-1.landing-knockback",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Tướng địch bị hất qua vai rơi xuống đất.",
+          "detail": "Nạn nhân tiếp tục bị bật lùi một đoạn ngắn."
+        },
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04"
+      }
+    }
+  ]
+}

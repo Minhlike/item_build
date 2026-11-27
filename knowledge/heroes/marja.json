@@ -10,6 +10,35 @@
         ],
         "value": true
       }
+    ],
+    "skill-3.base-magic": [
+      {
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 3 gây sát thương.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 300.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 150.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

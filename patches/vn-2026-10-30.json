@@ -549,6 +549,56 @@
         "status": "LIVE_VN",
         "effective_from": "2026-10-30"
       }
+    },
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-1.attack-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "attack_speed",
+          "target": "self",
+          "trigger": "Chiêu 1 cấp tốc đánh.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.15,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.03
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "active.red-buff-compatibility",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Kích hoạt sau đòn đánh trúng tướng trong lúc mang Bùa đỏ.",
+          "delivery": "item",
+          "activation": "manual",
+          "detail": "Bản sửa lỗi loại việc bị lộ sớm do tương tác này.",
+          "interactions": [
+            "Bùa đỏ."
+          ]
+        },
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      }
     }
   ],
   "review_notes": []

@@ -11,6 +11,32 @@
         "value": true
       }
     ],
+    "skill-2.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
     "skill-2.base-magic": [
       {
         "evidence": [

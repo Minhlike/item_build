@@ -17,6 +17,34 @@
     "passive.empowered-magic": [
       {
         "evidence": [
+          "patch-2026-05-22"
+        ],
+        "status": "SUPERSEDED",
+        "effective_from": "2026-05-22",
+        "effective_until": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn cường hóa của nội tại sau ba lần tấn công.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 280.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
           "patch-july"
         ],
         "status": "LIVE_VN",
@@ -39,6 +67,140 @@
                 "coefficient": 0.6
               }
             ]
+          }
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-05-22"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-22",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-1.heal": [
+      {
+        "evidence": [
+          "patch-2026-05-22"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-22",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu thỏa điều kiện phát sinh hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 75.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 15.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-05-22"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-22",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-2.heal": [
+      {
+        "evidence": [
+          "patch-2026-05-22"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-22",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu thỏa điều kiện phát sinh hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 75.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 15.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-05-22"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-22",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 45.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5.0
+                }
+              ]
+            }
           }
         }
       }
@@ -68,6 +230,25 @@
                 "coefficient": 0.45
               }
             ]
+          }
+        }
+      }
+    ],
+    "skill-3.base-mitigation": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Chiêu 3 đang cấp giảm sát thương.",
+          "detail": "Hiệu quả cơ bản trong thời gian dùng chiêu.",
+          "amount": {
+            "amount": 0.15,
+            "unit": "ratio"
           }
         }
       }

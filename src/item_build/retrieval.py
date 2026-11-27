@@ -8,6 +8,7 @@ from rapidfuzz import fuzz, process
 from .catalog import eligibility
 from .models import Basis, Formula, Nonnegative
 from .storage import read
+from .tactics import select_tactics
 
 LANES = {"support", "mid", "jungle", "dragon", "slayer"}
 ROLE_GROUPS = {
@@ -38,6 +39,7 @@ class Repository:
         self.groups = index["groups"]
         self.catalogs = index["catalogs"]
         self.preferences = index["preferences"]
+        self.tactics = index.get("tactics")
         aliases = {}
         for hero_id, (name, _, _, labels) in self.groups["heroes"].items():
             for label in (hero_id, name, *labels):
@@ -93,11 +95,14 @@ class Repository:
         mode: str,
         *,
         include_candidates: bool = False,
+        include_reasoning: bool = False,
+        allies: list[str] | None = None,
     ) -> dict:
-        if role not in LANES | {None} or len(enemies) > 5:
-            raise ValueError("Cần vị trí hợp lệ và tối đa năm tướng địch.")
+        if role not in LANES | {None} or len(enemies) > 5 or len(allies or []) > 4:
+            raise ValueError("Cần vị trí hợp lệ, tối đa năm tướng địch và bốn đồng minh.")
         hero_id = self.identify(hero)
         enemy_ids = list(dict.fromkeys(self.identify(enemy) for enemy in enemies))
+        ally_ids = list(dict.fromkeys(self.identify(ally) for ally in allies or []))
 
         def match_pack(key: str) -> dict:
             pack = self.get(key)
@@ -110,6 +115,7 @@ class Repository:
             )
 
         team = [match_pack(f"heroes/{entity_id}") for entity_id in enemy_ids]
+        ally_packs = [match_pack(f"heroes/{entity_id}") for entity_id in ally_ids]
         player = match_pack(f"heroes/{hero_id}")
         role_pack = self.get(f"roles/{role or 'general'}")
         battlefield = match_pack("battlefield/ranked-vn")
@@ -154,6 +160,7 @@ class Repository:
         pack_list = [
             player,
             *team,
+            *ally_packs,
             role_pack,
             battlefield,
             *related.values(),
@@ -168,6 +175,11 @@ class Repository:
             ]
             claims.extend(fact for facts in pack.get("candidates", {}).values() for fact in facts)
             references.update(key for fact in claims for key in fact["evidence"])
+        tactics = None
+        if include_reasoning and self.tactics:
+            tactics = select_tactics(self.read_file(self.tactics), hero_id, role, enemy_ids)
+            for rule in tactics["team_threats"] + tactics["macro_goals"]:
+                references.update(rule["evidence"])
         evidence_path = "knowledge/sources/INDEX.json"
         sources = self.read_file(evidence_path)
         return {
@@ -178,13 +190,29 @@ class Repository:
             "hero": player,
             "enemies": team,
             "supplied_enemy_count": len(enemy_ids),
+            **({"allies": ally_packs} if allies is not None else {}),
             "battlefield": battlefield,
             "tactical_role": role_pack,
             "related": related,
             "catalog_paths": self.catalogs,
             "personal_preference": preference,
+            **({"tactics": tactics} if tactics is not None else {}),
             **({"candidate_reviews": candidate_reviews} if include_candidates else {}),
             "evidence": {key: sources[key] for key in sorted(references)},
+        }
+
+    def formula(self, key: str, prop: str, raw_inputs: dict[str, float]):
+        fact = self.get(key)["live"].get(prop)
+        value = fact["value"] if fact else None
+        if not isinstance(value, dict) or "formula" not in value:
+            raise ValueError("Thuộc tính thiếu công thức đã xác minh cho phiên bản.")
+        formula = Formula.model_validate(value["formula"])
+        inputs = TypeAdapter(dict[Basis, Nonnegative]).validate_python(raw_inputs)
+        return {
+            "value": formula.calculate(inputs),
+            "unit": formula.unit.value,
+            "trigger": value["trigger"],
+            "evidence": fact["evidence"],
         }
 
     def cooldown(

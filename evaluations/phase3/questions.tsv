@@ -1,0 +1,57 @@
+id	lane	class	question
+q01	support	tank	Thane chạm đúng tướng địch với Chiêu 3. Nếu 480 là lượng sát thương đã gây, tính phần hồi máu do chính chiêu này. Nêu điều kiện và miền áp dụng.
+q02	mid	mage	Bạn chơi Dirak. Giải thích điều kiện Chiêu 2 rơi xuống trực tiếp, và Pháo tử quang hiện nằm ở ô kỹ năng nào.
+q03	jungle	assassin	Bạn chơi Butterfly. Nêu loại sát thương của các phần chí mạng chắc chắn ở Chiêu 2 và điều kiện mục tiêu để Chiêu 3 hồi máu sau thay đổi 17/11.
+q04	dragon	marksman	Yorn dùng Chiêu 2 qua một bụi rồi bắn trúng tướng. Ai hoặc vùng nào bị lộ, và có thể suy ra điều gì về thời lượng?
+q05	slayer	warrior	Edras ở Quang Minh. Hãy giải thích quan hệ giữa giá trị cơ bản và tối đa Chiêu 1, rồi đối chiếu thành phần cộng thêm Chiêu 2 Hắc Ám dùng cơ sở AD nào.
+q06	mid	mage	D’Arcy đặt Chiêu 2 cường hóa với tâm nằm trong Ma trận ở pha đầu Chiêu 3. Mốc nổ thay đổi ra sao và điều gì khác nếu tâm nằm ngoài?
+q07	support	support	Bạn là Sephera. Với 2500 máu cộng thêm, tính riêng phần hồi cho bản thân được thêm trong thông báo 30/10. Có đủ để tính toàn bộ hồi phục hay không?
+q08	support	tank	Địch đã lộ Raz và Natalya. Trong tình huống nào hai kỹ năng có thể cùng tạo đợt sát thương lên người bạn phải bảo kê? Bạn cần quan sát gì trước khi đổi món?
+q09	mid	mage	Bạn là Ilumia, chỉ biết địch có Preyta và D’Arcy. Giải thích một chuỗi khống chế khả dĩ và lúc nào chuỗi ấy gãy. Đồng minh chưa được công bố.
+q10	dragon	marksman	Bạn là Celica, vừa bị Raz cấu máu và thấy Butterfly đang vòng. Nêu thứ tự nguy cơ và phản ứng phụ thuộc góc nào; đồng đội và vàng đều chưa biết.
+q11	jungle	assassin	Bạn là Keera. Volkath địch đã dùng Chiêu 3, Dolia mất dấu. Nêu thời điểm có thể dùng tài nguyên kết liễu và dữ kiện cần xác nhận.
+q12	slayer	warrior	Chỉ biết địch có Allain, Hayate và Ilumia. Người chơi nói hai tướng đánh tay đồng nghĩa phần lớn sát thương vật lý. Hãy đánh giá dữ kiện đó cho một đợt đánh cụ thể.
+q13	support	support	Bạn là Aya, nhập địch Florentino và Quillen. Florentino đang lộ ở tuyến trước. Chọn thông tin còn thiếu để quyết định đứng chắn trước hay giữ góc vòng sau.
+q14	slayer	tank	Bạn là Toro, chưa biết tỷ trọng đòn địch. Kịch bản cho sẵn A có 3800 máu, nhận 0,50 phần vật lý; B có 4400 máu, nhận 0,67. Cả hai ăn 2400 vật lý thô rồi chuẩn 8% máu tối đa. Tính HP còn lại và nói thứ hạng.
+q15	slayer	warrior	Kịch bản độ nhạy giả định. So A có 5200 HP, nhận 0,45 phần vật lý; B có 5600 HP, nhận 0,65. Cả hai ăn 2500 vật lý thô. Tính HP sau đòn. Sau xuyên giáp giả định tỷ lệ lần lượt 0,60 và 0,68. Kết luận thay đổi ra sao?
+q16	slayer	warrior	Florentino có 700 điểm công vật lý đúng cơ sở trong ghi chú. Mục tiêu có 8000 máu tối đa. Tính riêng thành phần chuẩn một nhịp Thưởng hoa và giải thích vì sao chưa thể cộng cả combo.
+q17	support	tank	Bạn đang có 2000 HP trong kịch bản. Sát thương đã tính giảm trừ 1200 ở giây 1, 900 ở giây 4. Hồi 500 giây 3 nếu sẵn. So trường hợp hồi sẵn giây 2 và hồi sẵn giây 5.
+q18	mid	mage	Ở giây 4 địch thiếu 800 HP, kỹ năng sẽ hồi 600. Hai phương án giả định giảm hồi phục 40% trong [3,5) và [5,7). Tính hồi thực tế từng phương án.
+q19	jungle	assassin	Một chiêu có hồi cơ bản 10 giây, bắt đầu hồi giây 1. Trong mô hình giả định trần 40%, so 25% và 45% CDR cho lượt dùng cần ở giây 7,5.
+q20	dragon	marksman	Trong kịch bản Hayate, A và B có chung 3000 HP, cả hai nhận 500 chuẩn và 1000 vật lý thô. A có hệ số nhận vật lý 0,55; B chưa có hệ số. Tính phần có thể tính và so kết quả nếu được.
+q21	support	tank	Thane SP được đề xuất Giáp thống khổ, Vô ảnh tiễn và Đại địa ma nhãn. Phân loại mỗi món theo hồ sơ cá nhân trước khi tính vàng và nêu điều kiện còn cần kiểm tra.
+q22	mid	mage	Bạn là Evita. Một bảng chuẩn bị đề xuất Phù hiệu Thánh châu để kết luận mọi kỹ năng có trần CDR 40% hiện hành. Hãy kiểm tra phạm vi, ngày hiệu lực và khả năng chọn.
+q23	dragon	marksman	Bạn là Erin. So hồ sơ ngọc xanh III giáp/giáp phép và xanh III công phép/CDR. Cho biết có đủ căn cứ chốt số viên và chỉ số cho rank hiện hành không.
+q24	jungle	assassin	Dịch chuyển có ghi chú vận chiêu 2 giây và hồi 90 giây. Điều đó đủ để chọn thay Trừng trị cho một build rừng rank hiện tại không? Giải thích điều còn thiếu.
+q25	support	support	Bạn chơi Lumburr. Nguồn trang bị nêu một hồi chiêu riêng mỗi món chủ động. Kiểm tra điều còn phải làm trước khi dựa kế hoạch hai lần bấm liên tiếp vào hai hồi riêng đó.
+q26	slayer	warrior	Bạn chơi Arthur. Bản đề xuất có hai món với cùng nội tại duy nhất và hai giá ứng viên ghi trong Học viện. Các bước nào quyết định có cho phép ghép cả hai trong build?
+q27	dragon	marksman	So Hồ sơ Vô ảnh tiễn trên tướng cận chiến và đánh xa. Giải thích kiểu kích hoạt, hai cửa sổ tàng hình và hành động tự làm kết thúc sớm.
+q28	support	tank	Giả định ba món A, B, C. Giá mua lần lượt 400, 350, món C 1000 và dùng A+B, trừ đúng giá thành phần. Vàng tích lũy 400, 800, 1000. Ghi tồn vàng và đồ sau mỗi lần mua A→B→C.
+q29	jungle	assassin	Giả định món X 1100 vàng, tại mốc đầu chỉ có 1000. Lộ trình ghi X trước, Y giá 500 ở mốc 1400. Có được báo đường đã mua hai món và còn 900 không? Tính khoản thiếu và trạng thái Y.
+q30	dragon	marksman	Ở mốc 700 vàng muốn chốt món đang có thành phần 300 vàng. Giá 1000 xuất hiện trên trang không ngày, chưa có công thức hoặc báo giá nâng cấp. Báo kết quả của bước mua và lý do.
+q31	support	tank	Thane SP dự định slot 3 Khiên Thánh Quang, slot 4 Phù chú trường sinh, hoặc đảo lại. Vàng và thành phần chưa đưa. Nêu thông tin thiết yếu để so nhịp lên hai món trước khi nhận định độ lì.
+q32	mid	mage	Hai lộ trình đều xong ở 3200 vàng. Món giảm hồi phục xuất hiện ở 1700 hoặc 2600. Đợt hồi của địch quan trọng ở mốc 2100, vẫn cần gây sát thương để kích giảm hồi. So hai lộ trình theo điều kiện tiếp xúc.
+q33	slayer	warrior	Giả định đang giữ đúng một thành phần A giá 300, món X 1400 cần 2 A và được trừ theo số A sở hữu. Sẽ trả bao nhiêu nếu mua ngay và tồn A sau bước mua là bao nhiêu?
+q34	support	support	Bạn chơi Dolia, giả định đủ vàng và đang giữ sáu món. Trong phương án A món mới không tiêu thụ gì; phương án B món mới tiêu thụ một thành phần đang giữ. So sức chứa cần ở cả hai phương án theo giả định chứa tối đa sáu món.
+q35	support	tank	FAST_DRAFT cho Thane SP. Đầu trận vào Mid an toàn, người đi đường Rồng chưa bị đe dọa. Chỉ viết chiến thuật ≤50 từ, gồm nhịp đầu, giữa, cuối và điều kiện đảo đường.
+q36	jungle	assassin	Bạn chơi Butterfly. Bùa bên kia sông chưa chắc an toàn, Mid đồng minh bị ép, vòng rừng chưa xong. Đề xuất chiến thuật đầu trận theo khu vực, tài nguyên, hành động và rủi ro.
+q37	mid	mage	Bạn chơi Preyta. Lính Mid chưa dọn, hai đối thủ mất dấu sông. Nêu khi nào giữ đường, khi nào di chuyển, và rủi ro của đi sớm.
+q38	dragon	marksman	Bạn chơi Yorn. Một đợt lính sắp vào trụ, hang mục tiêu tối và chưa thấy hỗ trợ đội mình. Nêu lựa chọn trước mắt và tín hiệu để đổi sang mục tiêu.
+q39	slayer	warrior	Bạn chơi Amily. Đội không có góc vào Caesar, lính biên lên cao và bạn thấy hai người địch đủ sức bắt mình đang hiện bên kia. Nêu mục tiêu thay thế, điều kiện dừng và giá phải trả.
+q40	support	support	Rank đơn cuối trận, đồng minh chưa trong tầm theo, chủ lực đang thấp máu và sát thủ địch chưa lộ. So hai nhánh mở từ xa và bảo kê. Nêu dấu hiệu đảo ưu tiên.
+q41	mid	mage	Trận ngày 27/11/2026 có Preyta. Có hai thông báo 29/09 và 26/11. Nêu cách truy nguồn sát thương nổ và sát thương kéo dài để tránh dùng dữ liệu cũ.
+q42	mid	mage	Bạn nhập Flowborn nhưng không chỉ định dạng. Có thể dùng công thức sát thương vật lý ghi trên một mục để chốt build cho tướng chưa phân giải không? Nêu lựa chọn tiếp theo.
+q43	slayer	warrior	Công thức hồi chiêu ghi 8 −0,3 mỗi cấp và thiếu mốc cấp. Có thể chốt con số ở cấp chiêu 1 và cấp 6 không? Nêu điều kiện tính và cách báo cáo khoảng trống.
+q44	support	tank	Khiên Thánh Quang ghi 250–500 +4% máu tối đa. Đồng minh gần đó có 6000, mình có 8500 HP. Hãy xác định phần nào có thể tính chắc và khi nào chưa thể ra một con số tuyệt đối.
+q45	dragon	marksman	Một dấu màu icon của trang bị được suy từ nhóm đồ công kích. FAST_DRAFT cần hiển thị sáu món. Xử lý màu ra sao và cần gì để chuyển từ màu mặc định sang màu thực?
+q46	jungle	assassin	Hai tài liệu cho số hồi máu khác nhau, một ghi ngày ở máy chủ khác và một trang VN không ngày. Trình bày cách dùng hai giá trị trong rank VN và điều cần xác minh.
+q47	mid	mage	Bạn muốn dùng Chiêu 3 Zata để tính toàn bộ sát thương lên một mục tiêu. Chỉ tìm được hệ số ghi rõ tại thời điểm cất cánh. Nêu phần tính được và dữ kiện còn thiếu.
+q48	support	tank	Thane SP chỉ dùng kích hoạt đồ hỗ trợ, từ chối Giáp thống khổ. Đồng đội đề nghị ưu tiên Giáp thống khổ vì có chỉ số lớn rồi bỏ qua bấm. Quyết định theo sở thích thế nào?
+q49	support	tank	Một đồ phòng thủ chưa biết thao tác và một đồ hỗ trợ có kích hoạt được rao ngang giá cho Thane SP. Phân loại trước khi tính giá trị, và nêu khác biệt giữa đủ điều kiện xem xét và đủ dữ liệu chốt.
+q50	mid	mage	Người chơi dùng Thane Mid trong thử nghiệm, yêu cầu áp hồ sơ Thane SP. Xác định những ràng buộc nào được áp từ dữ liệu và cần hỏi gì nếu người chơi muốn giữ chúng cho Mid.
+q51	support	tank	Thane SP gặp Quillen. Nêu điều kiện để xem xét Đại địa ma nhãn dù là món phải bấm. Làm gì khi cơ chế phát hiện còn thiếu xác minh cho bản hiện tại?
+q52	dragon	marksman	Người chơi Yorn nêu rõ muốn toàn bộ trang bị ngoài giày tự kích hoạt, không có hồ sơ riêng trong kho. So Vô ảnh tiễn với một ứng viên có trạng thái thao tác chưa rõ.
+q53	slayer	warrior	Bạn chơi Veres và ưu tiên món giá rẻ đủ sớm để sống qua giao tranh, bạn chấp nhận hy sinh sát thương. Việc giá món cuối cao nhưng tỉ lệ thắng phổ biến được người chơi khác nhắc có đổi mục tiêu so sánh hay không?
+q54	support	tank	Thane SP có thêm yêu cầu tuyệt đối không dùng món hồi sinh. Kho lưu mục cấm Giáp thống khổ và giới hạn đồ bấm. Hãy đề xuất trình tự lọc với cả giới hạn mới và cách xử lý ứng viên chưa rõ cơ chế hồi sinh.
+q55	jungle	assassin	Bạn chơi Quillen. Chỉ có mô tả kỹ năng về số nhịp hồi ẩn sát và một bản cân bằng ghi lượng hồi với AD cộng thêm. Có thể tính tổng hồi máu chắc chắn trong mọi lần dùng không? Giải thích theo nguồn và thời gian tiếp xúc.
+q56	mid	mage	Bạn chuẩn bị Evita. Phù hiệu Cứu viện được mô tả ở Rừng nguyên sinh. Nêu cấp, nhịp hồi theo ghi chú 29/09 và lý do không thể suy toàn bộ quy tắc nhánh chính/phụ từ một nút.

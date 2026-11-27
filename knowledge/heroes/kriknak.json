@@ -11,6 +11,25 @@
         "value": true
       }
     ],
+    "skill-2.nonhero-heal-factor": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Chiêu 2 trúng đơn vị không phải tướng.",
+          "detail": "Tỷ lệ riêng của hồi máu từ mục tiêu không phải tướng.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
     "skill-1.base-physical": [
       {
         "evidence": [

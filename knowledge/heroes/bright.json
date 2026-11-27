@@ -10,6 +10,54 @@
         ],
         "value": true
       }
+    ],
+    "skill-2.attack-speed": [
+      {
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23",
+        "value": {
+          "effect": "attack_speed",
+          "target": "self",
+          "trigger": "Chiêu 2 cấp tốc đánh.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.75,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.heal": [
+      {
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu 2 phát sinh hồi máu.",
+          "formula": {
+            "unit": "hp",
+            "base": 125.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25.0
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

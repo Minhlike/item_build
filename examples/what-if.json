@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "id": "armor",
+    "assumptions": "Lớp giáp giả định, chưa xuyên giáp.",
+    "max_hp": 5200, "initial_hp": 5200, "physical_taken": 0.45,
+    "events": [{"at_s": 1, "damage": {"kind": "physical", "flat": 2500}}]
+  },
+  "alternatives": [
+    {
+      "id": "hp",
+      "assumptions": "Hướng tăng HP, lớp giáp giả định, chưa xuyên giáp.",
+      "max_hp": 5600, "initial_hp": 5600, "physical_taken": 0.65,
+      "events": [{"at_s": 1, "damage": {"kind": "physical", "flat": 2500}}]
+    },
+    {
+      "id": "armor-penetrated",
+      "assumptions": "Cùng lượt đánh, tỷ lệ nhận vật lý giả định sau xuyên giáp.",
+      "max_hp": 5200, "initial_hp": 5200, "physical_taken": 0.60,
+      "events": [{"at_s": 1, "damage": {"kind": "physical", "flat": 2500}}]
+    },
+    {
+      "id": "hp-penetrated",
+      "assumptions": "Cùng lượt đánh, tỷ lệ nhận vật lý giả định sau xuyên giáp.",
+      "max_hp": 5600, "initial_hp": 5600, "physical_taken": 0.68,
+      "events": [{"at_s": 1, "damage": {"kind": "physical", "flat": 2500}}]
+    }
+  ]
+}

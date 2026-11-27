@@ -11,6 +11,36 @@
         "value": true
       }
     ],
+    "skill-3.recast": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "hard_cc",
+          "target": "imprisoned-enemies",
+          "trigger": "Kích hoạt Chiêu 3 lần hai khi còn giam giữ.",
+          "detail": "Baldum nện xuống tâm, kết thúc giam sớm và hất tung kèm sát thương."
+        }
+      }
+    ],
+    "skill-1.landing-knockback": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Tướng địch bị hất qua vai rơi xuống đất.",
+          "detail": "Nạn nhân tiếp tục bị bật lùi một đoạn ngắn."
+        }
+      }
+    ],
     "skill-2.mitigation": [
       {
         "evidence": [

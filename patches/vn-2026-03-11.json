@@ -1,0 +1,511 @@
+{
+  "id": "vn-2026-03-11",
+  "title": "Tân niên khởi thế 11/03/2026",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-03-11",
+  "evidence": "patch-2026-03-11",
+  "changes": [
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-1.flat-armor-penetration",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "armor_pen",
+          "target": "self",
+          "trigger": "Chiêu 1 cấp xuyên giáp.",
+          "formula": {
+            "unit": "armor",
+            "base": 30,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 6
+              }
+            ]
+          },
+          "detail": "Xuyên giáp theo điểm."
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-2.knight-mark",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Sau khi lướt Chiêu 2.",
+          "timing": {
+            "duration_s": 5
+          },
+          "stacks": 2,
+          "detail": "Dấu trên bản thân cường hóa đòn đánh kế tiếp; dấu trên địch làm chậm."
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-2.one-mark-transfer",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "empowered_attack",
+          "target": "target-hit",
+          "trigger": "Đánh thường cường hóa khi đang có một tầng.",
+          "detail": "Lao, chuyển dấu và có thể gây sát thương lần nữa khi rời vùng sáng.",
+          "exceptions": [
+            "Chỉ chuyển dấu sang tướng địch hoặc quái rừng."
+          ]
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-2.two-mark-knockback",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Đánh thường cường hóa khi có hai tầng.",
+          "detail": "Có tụ lực ngắn, lao và đẩy lùi, đồng thời hồi máu. Trúng tướng có phần hồi theo máu đã mất."
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/astrid",
+      "property": "skill-3.charge",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Tụ lực Chiêu 3.",
+          "timing": {
+            "cast_s": 1
+          },
+          "detail": "Vô địch và miễn khống tiếp tục đến sau lúc đòn đánh trúng."
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/violet",
+      "property": "passive.nonhero-cdr",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Đánh thường trúng đơn vị không phải tướng địch.",
+          "amount": {
+            "unit": "second",
+            "amount": 0.5
+          },
+          "detail": "Giảm thời gian hồi Chiêu 1."
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/violet",
+      "property": "skill-1.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Thi triển Chiêu 1.",
+          "timing": {
+            "cooldown_start": "cast",
+            "cooldown_s": {
+              "unit": "second",
+              "base": 5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/violet",
+      "property": "skill-2.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương gốc khi Chiêu 2 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 250,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/violet",
+      "property": "skill-2.armor-debuff",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "armor_reduction",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 trúng và đánh dấu mục tiêu.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.1
+          },
+          "timing": {
+            "duration_s": 5
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/violet",
+      "property": "skill-2.marked-hit",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Đánh thường mục tiêu đang chịu dấu ấn Chiêu 2.",
+          "damage_type": "physical",
+          "delivery": "basic_attack",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.2
+              }
+            ]
+          },
+          "exceptions": [
+            "Thành phần gây lên lính có dấu tăng gấp đôi."
+          ]
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/moren",
+      "property": "stat.base.move-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 360,
+          "unit": "move_speed"
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/arum",
+      "property": "stat.base.move-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 360,
+          "unit": "move_speed"
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/moren",
+      "property": "skill-1.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 1.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 200,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/moren",
+      "property": "skill-3.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 3.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 450,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 225
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/arum",
+      "property": "stat.regen-per-five",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Hồi phục máu cơ bản theo nhịp.",
+          "formula": {
+            "unit": "hp_per_5_seconds",
+            "base": 80,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 7.98
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/toro",
+      "property": "passive.out-of-combat-heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Rời giao tranh và nội tại cấp hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.014
+              }
+            ]
+          },
+          "detail": "Chưa xác định số nhịp hoặc khoảng cách giữa các nhịp từ dòng cập nhật."
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/dolia",
+      "property": "skill-2.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/dolia",
+      "property": "skill-2.heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "heal-recipient",
+          "trigger": "Chiêu 2 cấp hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 400,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.85
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    },
+    {
+      "entity": "heroes/mina",
+      "property": "skill-1.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 1.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 175,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 35
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.6
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.09
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11"
+      }
+    }
+  ]
+}

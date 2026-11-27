@@ -19,6 +19,7 @@ from .models import (
     Status,
 )
 from .storage import encode, read, write
+from .tactics import compile_tactics
 
 GROUPS = ("heroes", "items", "runes", "enchantments", "spells", "battlefield", "roles")
 SCHEMA_VERSION = 2
@@ -351,6 +352,8 @@ def artifacts(root: Path) -> dict[str, bytes]:
         path = f"packs/preferences/{key.replace('/', '-')}.json"
         files[path] = encode(preference, compact=True)
         preference_paths[key] = path
+    tactics_path = "packs/tactics.json"
+    files[tactics_path] = encode(compile_tactics(root, entities, packed), compact=True)
     files["packs/INDEX.json"] = encode(
         {
             "schema": SCHEMA_VERSION,
@@ -361,6 +364,7 @@ def artifacts(root: Path) -> dict[str, bytes]:
             "roles": "packs/roles/",
             "catalogs": catalog_paths,
             "preferences": preference_paths,
+            "tactics": tactics_path,
         },
         compact=True,
     )

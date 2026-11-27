@@ -10,6 +10,39 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 1.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 175.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 35.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.6
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.09
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

@@ -10,6 +10,99 @@
         ],
         "value": true
       }
+    ],
+    "skill-3.attack-physical": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần đánh thường khi dùng Chiêu 3.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản của Chiêu 3.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.cooldown": [
+      {
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": 7.0
+          }
+        }
+      }
+    ],
+    "skill-3.undying-after-reset": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Trong cửa sổ Miễn tử khi dùng Chiêu 3 sau khi Dolia làm mới.",
+          "detail": "Vẫn hưởng miễn tử theo bản sửa lỗi. Chưa có độ dài cửa sổ trong thông báo.",
+          "interactions": [
+            "Chiêu làm mới của Dolia."
+          ]
+        }
+      }
     ]
   },
   "unknown": [

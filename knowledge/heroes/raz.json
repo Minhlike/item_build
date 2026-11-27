@@ -100,6 +100,31 @@
           }
         }
       }
+    ],
+    "skill-2.magic-defense-reduction": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 áp hiệu ứng lên mục tiêu.",
+          "detail": "Giảm giáp phép của mục tiêu. Chưa có thời lượng trong ghi chú.",
+          "formula": {
+            "unit": "magic_defense",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

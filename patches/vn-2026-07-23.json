@@ -1,0 +1,321 @@
+{
+  "id": "vn-2026-07-23",
+  "title": "Ngày hội Liên Quân 23/07/2026",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-07-23",
+  "evidence": "patch-2026-07-23",
+  "changes": [
+    {
+      "entity": "heroes/aya",
+      "property": "skill-2.shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "shield-recipient",
+          "trigger": "Chiêu 2 cấp lá chắn ở trường hợp cơ bản.",
+          "formula": {
+            "unit": "hp",
+            "base": 650,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 130
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.75
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.075
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/aya",
+      "property": "skill-2.attached-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "attached-ally",
+          "trigger": "Chiêu 2 cấp lá chắn trong lúc nhập thân.",
+          "formula": {
+            "unit": "hp",
+            "base": 470,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 94
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.055
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/ybneth",
+      "property": "skill-3.heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu 3 phát sinh hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.015
+              }
+            ]
+          },
+          "detail": "Tỷ lệ mỗi phần hồi theo ghi chú, chưa chốt số nhịp."
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/ybneth",
+      "property": "skill-3.shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Chiêu 3 cấp lá chắn.",
+          "formula": {
+            "unit": "hp",
+            "base": 1000,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 500
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/celica",
+      "property": "skill-3.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 22,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/celica",
+      "property": "skill-1.passive-ad",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Chiêu 1 cấp công vật lý nội tại.",
+          "formula": {
+            "unit": "attack_damage",
+            "base": 35,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 7
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/bright",
+      "property": "skill-2.attack-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "attack_speed",
+          "target": "self",
+          "trigger": "Chiêu 2 cấp tốc đánh.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.75,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/bright",
+      "property": "skill-2.heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu 2 phát sinh hồi máu.",
+          "formula": {
+            "unit": "hp",
+            "base": 125,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/biron",
+      "property": "skill-1.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/moren",
+      "property": "skill-3.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 45,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -4.5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    },
+    {
+      "entity": "heroes/quillen",
+      "property": "skill-3.auto-attack-suppressed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Đang trong trạng thái tàng hình.",
+          "detail": "Bản sửa lỗi ngăn hành vi đánh thường tự động làm hủy tàng hình sau chuỗi đánh rồi dùng chiêu."
+        },
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23"
+      }
+    }
+  ]
+}

@@ -532,6 +532,11 @@
           ],
           "default": null,
           "title": "Origin"
+        },
+        "multiply_by_target_max_hp": {
+          "default": false,
+          "title": "Multiply By Target Max Hp",
+          "type": "boolean"
         }
       },
       "required": [

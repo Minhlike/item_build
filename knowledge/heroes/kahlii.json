@@ -10,6 +10,61 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8.5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-3.base-magic": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 3.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 56.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 28.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

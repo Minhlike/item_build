@@ -14,25 +14,32 @@
         "value": true
       }
     ],
-    "skill-1.speed-window": [
+    "skill-3.cooldown": [
       {
         "evidence": [
-          "patch-sep"
+          "patch-2026-07-23"
         ],
-        "status": "LIVE_VN",
-        "effective_from": "2026-09-29",
+        "status": "SUPERSEDED",
+        "effective_from": "2026-07-23",
+        "effective_until": "2026-09-29",
         "value": {
-          "effect": "stat_change",
+          "effect": "special",
           "target": "self",
-          "trigger": "Dùng Chiêu 1",
-          "detail": "Tăng tốc chạy; trong cửa sổ kích hoạt, phần công vật lý của nội tại Chiêu 1 nhân đôi.",
+          "trigger": "Hồi chiêu 3.",
           "timing": {
-            "duration_s": 3.0
+            "cooldown_s": {
+              "unit": "second",
+              "base": 22.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -3.0
+                }
+              ]
+            }
           }
         }
-      }
-    ],
-    "skill-3.cooldown": [
+      },
       {
         "evidence": [
           "patch-sep"
@@ -55,6 +62,63 @@
               ]
             }
           }
+        }
+      }
+    ],
+    "skill-1.passive-ad": [
+      {
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Chiêu 1 cấp công vật lý nội tại.",
+          "formula": {
+            "unit": "attack_damage",
+            "base": 35.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 7.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.speed-window": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "detail": "Tăng tốc chạy; trong cửa sổ kích hoạt, phần công vật lý của nội tại Chiêu 1 nhân đôi.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "skill-1.active-ad": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Chiêu 1 đang hoạt động.",
+          "detail": "Nhân đôi phần công vật lý do nội tại Chiêu 1 cung cấp."
         }
       }
     ]

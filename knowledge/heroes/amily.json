@@ -10,6 +10,22 @@
         ],
         "value": true
       }
+    ],
+    "skill-2.no-target-dash": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "delivery": "empowered_attack",
+          "trigger": "Ra đòn cường hóa của Chiêu 2 khi thiếu mục tiêu.",
+          "detail": "Lướt tới trước."
+        }
+      }
     ]
   },
   "unknown": [

@@ -226,6 +226,290 @@
         "status": "LIVE_VN",
         "effective_from": "2026-08-13"
       }
+    },
+    {
+      "entity": "heroes/sinestrea",
+      "property": "ranged.skill-3.blood-arrow-ratio",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Đánh thường khi Chiêu 3 đang hiệu lực ở dạng đánh xa.",
+          "detail": "Ba huyết tiễn theo tỷ lệ 100%, 30%, 30%. Chỉ mũi đầu kích hoạt hiệu ứng đòn đánh."
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/sinestrea",
+      "property": "ranged.skill-3.lifesteal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "trigger": "Chiêu 3 đang hiệu lực.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.3
+          },
+          "detail": "Dùng Chiêu 3 lập tức vào dạng đánh xa."
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/sinestrea",
+      "property": "melee.skill-2.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản của Chiêu 2 dạng cận chiến.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 275,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/sinestrea",
+      "property": "ranged.skill-2.missing-hp",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 ở dạng đánh xa gây sát thương.",
+          "basis": "target_missing_hp",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.1
+          },
+          "detail": "100% phần sát thương tham chiếu cộng thêm 10% máu đã mất mục tiêu.",
+          "exceptions": [
+            "Giới hạn công bố 500 với mục tiêu không phải tướng."
+          ]
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/sinestrea",
+      "property": "passive.blood-ritual",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Chọn Huyết tế trên vị trí kích hoạt trang bị.",
+          "detail": "Tiêu hao một nửa HP hiện tại, rồi tụ lực trong trạng thái không bị chọn. Nổ làm choáng tướng trúng 0,5 giây và chia đều máu với các tướng đó.",
+          "interactions": [
+            "Vị trí nút trang bị kích hoạt."
+          ]
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/dextra",
+      "property": "passive.sacrifice-for-sinestrea",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "sinestrea",
+          "trigger": "Dùng Hiến tế lên Sinestrea.",
+          "timing": {
+            "cast_s": 3.5,
+            "duration_s": 10
+          },
+          "detail": "Dextra tiêu 99% HP hiện tại. Sinestrea có cửa sổ nhận Ước nguyện và có thể giúp Dextra hồi khi gây sát thương lên tướng.",
+          "interactions": [
+            "Ước nguyện Huyết linh của Sinestrea."
+          ]
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/sinestrea",
+      "property": "passive.dextra-wish",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Có Ước nguyện Huyết linh do Dextra cấp và chịu sát thương chí tử.",
+          "detail": "Trong thoáng chốc, sát thương nhận vào chuyển thành máu. Chưa có thời lượng chính xác của khoảng chuyển hóa.",
+          "interactions": [
+            "Hiến tế của Dextra."
+          ]
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/dextra",
+      "property": "skill-3.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 70,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -7.5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/dextra",
+      "property": "skill-3.conversion",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Chiêu 3 đang chuyển hóa.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.3
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/dextra",
+      "property": "passive.stack-limit",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Tích cộng dồn nội tại.",
+          "stacks": 12,
+          "detail": "Mỗi tầng 4–8%, tăng một điểm phần trăm mỗi ba cấp tướng; chưa chốt cấp bắt đầu từ đoạn này."
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/krixi",
+      "property": "skill-1.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 ở mức trước suy giảm.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 575,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.8
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/krixi",
+      "property": "skill-1.minimum-decay",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Thành phần sát thương Chiêu 1 chịu suy giảm.",
+          "detail": "Giới hạn thấp nhất 50% của lượng tham chiếu."
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
     }
   ],
   "review_notes": [

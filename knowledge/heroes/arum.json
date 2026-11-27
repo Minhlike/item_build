@@ -10,6 +10,43 @@
         ],
         "value": true
       }
+    ],
+    "stat.base.move-speed": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "amount": 360.0,
+          "unit": "move_speed"
+        }
+      }
+    ],
+    "stat.regen-per-five": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Hồi phục máu cơ bản theo nhịp.",
+          "formula": {
+            "unit": "hp_per_5_seconds",
+            "base": 80.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 7.98
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

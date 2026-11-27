@@ -58,6 +58,135 @@
         "kind": "derived_knowledge",
         "value": "Xét dấu hiệu chí mạng hoặc xuyên giáp từ đồ đối phương thực sự mua như Thánh kiếm và Muramasa. Riêng tỷ lệ chí mạng của phát cường hóa cần xác nhận, không gán mặc định."
       }
+    ],
+    "passive.nonhero-cdr": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Đánh thường trúng đơn vị không phải tướng địch.",
+          "detail": "Giảm thời gian hồi Chiêu 1.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Thi triển Chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 5.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            },
+            "cooldown_start": "cast"
+          }
+        }
+      }
+    ],
+    "skill-2.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương gốc khi Chiêu 2 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 250.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.armor-debuff": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "armor_reduction",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 trúng và đánh dấu mục tiêu.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 5.0
+          }
+        }
+      }
+    ],
+    "skill-2.marked-hit": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "delivery": "basic_attack",
+          "trigger": "Đánh thường mục tiêu đang chịu dấu ấn Chiêu 2.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.2
+              }
+            ]
+          },
+          "exceptions": [
+            "Thành phần gây lên lính có dấu tăng gấp đôi."
+          ]
+        }
+      }
     ]
   },
   "unknown": [

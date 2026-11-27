@@ -10,6 +10,127 @@
         ],
         "value": true
       }
+    ],
+    "skill-2.shield": [
+      {
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "SUPERSEDED",
+        "effective_from": "2025-12-04",
+        "effective_until": "2026-07-23",
+        "value": {
+          "effect": "shield",
+          "target": "shield-recipient",
+          "trigger": "Chiêu 2 tạo lá chắn.",
+          "formula": {
+            "unit": "hp",
+            "base": 700.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 140.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.85
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23",
+        "value": {
+          "effect": "shield",
+          "target": "shield-recipient",
+          "trigger": "Chiêu 2 cấp lá chắn ở trường hợp cơ bản.",
+          "formula": {
+            "unit": "hp",
+            "base": 650.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 130.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.75
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.075
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.cooldown": [
+      {
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 12.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-2.attached-shield": [
+      {
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23",
+        "value": {
+          "effect": "shield",
+          "target": "attached-ally",
+          "trigger": "Chiêu 2 cấp lá chắn trong lúc nhập thân.",
+          "formula": {
+            "unit": "hp",
+            "base": 470.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 94.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.055
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

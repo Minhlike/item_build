@@ -8,7 +8,9 @@ import httpx
 from .acquisition import audit, clean_for_review, monitor, snap
 from .benchmark import benchmark, benchmark_catalogs
 from .compiler import compile_repo
+from .coverage import measure_coverage
 from .local_review import build_local_review
+from .reasoning import Comparison, PurchaseScenario, compare_combat, plan_purchases
 from .retrieval import LANES, Repository
 from .storage import encode, read, write
 
@@ -28,17 +30,27 @@ def main() -> int:
     context.add_argument("--hero", required=True)
     context.add_argument("--role", choices=sorted(LANES))
     context.add_argument("--enemies", nargs="*", default=[])
+    context.add_argument("--allies", nargs="*")
     context.add_argument("--mode", choices=["hero_preparation", "fast_draft"], default="fast_draft")
     context.add_argument("--include-candidates", action="store_true")
+    context.add_argument("--reasoning", action="store_true")
+    for name in ("purchase-plan", "what-if"):
+        commands.add_parser(name).add_argument("--input-file", required=True, type=Path)
+    commands.add_parser("coverage")
     cooldown = commands.add_parser("cooldown")
     cooldown.add_argument("--entity", required=True)
     cooldown.add_argument("--property", required=True)
     cooldown.add_argument("--input", action="append", default=[])
     cooldown.add_argument("--cdr", type=float)
     cooldown.add_argument("--cap", type=float)
+    formula = commands.add_parser("formula")
+    formula.add_argument("--entity", required=True)
+    formula.add_argument("--property", required=True)
+    formula.add_argument("--input", action="append", default=[])
     perf = commands.add_parser("benchmark")
     perf.add_argument("--save", action="store_true")
     perf.add_argument("--catalogs", action="store_true")
+    perf.add_argument("--reasoning", action="store_true")
     options = parser.parse_args()
     root = options.root.resolve()
     try:
@@ -117,19 +129,40 @@ def run(root: Path, options) -> dict:
                 options.enemies,
                 options.mode,
                 include_candidates=options.include_candidates,
+                include_reasoning=options.reasoning,
+                allies=options.allies,
             )
-        case "cooldown":
+        case "coverage":
+            return measure_coverage(Repository(root))
+        case "purchase-plan":
+            return plan_purchases(
+                Repository(root), PurchaseScenario.model_validate(read(options.input_file))
+            )
+        case "what-if":
+            return compare_combat(Comparison.model_validate(read(options.input_file)))
+        case "cooldown" | "formula":
             inputs = {}
             for entry in options.input:
                 stat, value = entry.split("=", 1)
                 inputs[stat] = float(value)
-            return Repository(root).cooldown(
-                options.entity, options.property, inputs, options.cdr, options.cap
-            )
+            repo = Repository(root)
+            if options.command == "formula":
+                return repo.formula(options.entity, options.property, inputs)
+            return repo.cooldown(options.entity, options.property, inputs, options.cdr, options.cap)
         case "benchmark":
-            result = (benchmark_catalogs if options.catalogs else benchmark)(root)
+            if options.catalogs and options.reasoning:
+                raise ValueError("Chọn benchmark danh mục hoặc ngữ cảnh suy luận.")
+            result = (
+                benchmark_catalogs(root)
+                if options.catalogs
+                else benchmark(root, reasoning=options.reasoning)
+            )
             if options.save:
-                name = "catalog-benchmark.json" if options.catalogs else "benchmark.json"
+                name = (
+                    "catalog-benchmark.json"
+                    if options.catalogs
+                    else ("reasoning-benchmark.json" if options.reasoning else "benchmark.json")
+                )
                 write(root / "reports" / name, encode(result))
             return result
     raise ValueError("Lệnh không hợp lệ.")

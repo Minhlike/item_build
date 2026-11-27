@@ -10,6 +10,61 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 7.5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-1.heal-on-hero": [
+      {
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "empowered_attack",
+          "trigger": "Đòn đánh thường cường hóa của Chiêu 1 trúng tướng.",
+          "formula": {
+            "unit": "hp",
+            "base": 70.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 14.0
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.015
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

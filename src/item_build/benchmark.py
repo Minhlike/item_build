@@ -64,7 +64,7 @@ def benchmark_catalogs(root: Path) -> dict:
     }
 
 
-def benchmark(root: Path) -> dict:
+def benchmark(root: Path, *, reasoning: bool = False) -> dict:
     import tiktoken
 
     tokenizer = tiktoken.get_encoding("o200k_base")
@@ -73,6 +73,7 @@ def benchmark(root: Path) -> dict:
         ("thane", ["richter", "trieu van", "hayate", "raz", "kaine"]),
         ("thane", ["ybneth", "fennik", "trieu van", "omen", "preyta"]),
         ("thane", ["butterfly", "yue", "arthur", "hayate", "edras"]),
+        ("thane", ["raz", "natalya", "butterfly", "preyta", "darcy"]),
     ]
     measurements = []
     for hero, enemies in cases:
@@ -80,12 +81,27 @@ def benchmark(root: Path) -> dict:
         repo = Repository(root)
         index_ms = (perf_counter_ns() - start) / 1_000_000
         start = perf_counter_ns()
-        context = repo.context(hero, "support", enemies, "fast_draft")
+        context = repo.context(hero, "support", enemies, "fast_draft", include_reasoning=reasoning)
         first_ms = (perf_counter_ns() - start) / 1_000_000
+        knowledge_paths = ["knowledge/VERSION.json", "packs/INDEX.json", *repo.cached]
+        prompt_paths = ["prompts/cloud_bootstrap.md", "prompts/fast_draft.md"]
+        if reasoning and repo.tactics:
+            prompt_paths.append("prompts/reasoning_protocol.md")
+        raw_tokens = {
+            "knowledge": sum(
+                len(tokenizer.encode((root / path).read_text(encoding="utf-8")))
+                for path in knowledge_paths
+            ),
+            "prompts": sum(
+                len(tokenizer.encode((root / path).read_text(encoding="utf-8")))
+                for path in prompt_paths
+            ),
+            "prompt_reads": len(prompt_paths),
+        }
         warm = []
         for _ in range(200):
             start = perf_counter_ns()
-            repo.context(hero, "support", enemies, "fast_draft")
+            repo.context(hero, "support", enemies, "fast_draft", include_reasoning=reasoning)
             warm.append((perf_counter_ns() - start) / 1_000_000)
         formats = {
             "json": encode(context),
@@ -119,6 +135,7 @@ def benchmark(root: Path) -> dict:
                 "hero": hero,
                 "enemies": enemies,
                 "file_reads": repo.files_read,
+                "raw_file_tokens": raw_tokens,
                 "index_load_ms": round(index_ms, 3),
                 "first_context_ms": round(first_ms, 3),
                 "warm_context_p95_ms": round(quantiles(warm, n=100)[94], 3),
@@ -128,6 +145,7 @@ def benchmark(root: Path) -> dict:
     return {
         "tokenizer": "o200k_base",
         "platform": system(),
+        "reasoning_pack_enabled": reasoning and repo.tactics is not None,
         "runs_per_case": 200,
         "scope": "Local runtime. File reads include initial indexes. Model quality and connector latency remain unmeasured.",
         "cases": measurements,

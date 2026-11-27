@@ -1,0 +1,25 @@
+{
+  "hero": "thane",
+  "role": "support",
+  "paths": [
+    {
+      "id": "shield-at-slot-3",
+      "steps": [
+        {"item": "dai-dia-ma-nhan", "cumulative_gold": 1900, "phase": "early", "purpose": "Mốc hỗ trợ giả định", "final_slot": 1},
+        {"item": "giay-kien-cuong", "cumulative_gold": 2650, "phase": "early", "purpose": "Mốc giày giả định", "final_slot": 2, "quoted_cost": 750},
+        {"item": "giap-nhe", "cumulative_gold": 2950, "phase": "mid", "purpose": "Giá trị phòng thủ khi chưa có món lớn", "quoted_cost": 300},
+        {"item": "khien-thanh-quang", "cumulative_gold": 4850, "phase": "mid", "purpose": "Đối chiếu cửa sổ lá chắn giả định", "final_slot": 3, "quoted_cost": 1900, "quoted_consumption": ["giap-nhe"]},
+        {"item": "giap-gaia", "cumulative_gold": 7030, "phase": "late", "purpose": "Kiểm tra mốc hồi phục", "final_slot": 4, "quoted_cost": 2180}
+      ]
+    },
+    {
+      "id": "shield-at-slot-4",
+      "steps": [
+        {"item": "dai-dia-ma-nhan", "cumulative_gold": 1900, "phase": "early", "purpose": "Mốc hỗ trợ giả định", "final_slot": 1},
+        {"item": "giay-kien-cuong", "cumulative_gold": 2650, "phase": "early", "purpose": "Mốc giày giả định", "final_slot": 2, "quoted_cost": 750},
+        {"item": "giap-gaia", "cumulative_gold": 4850, "phase": "mid", "purpose": "Kiểm tra mốc hồi phục", "final_slot": 3, "quoted_cost": 2180},
+        {"item": "khien-thanh-quang", "cumulative_gold": 7030, "phase": "late", "purpose": "Kiểm tra mốc lá chắn", "final_slot": 4, "quoted_cost": 2200}
+      ]
+    }
+  ]
+}

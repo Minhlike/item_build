@@ -27,6 +27,64 @@
           }
         }
       }
+    ],
+    "skill-1.minimum-magic": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 ở mức sát thương cơ bản.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 400.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.9
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.maximum-magic": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 đạt sát thương tối đa.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 800.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 160.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.8
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

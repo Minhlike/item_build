@@ -573,6 +573,409 @@
         "status": "LIVE_VN",
         "effective_from": "2026-07-08"
       }
+    },
+    {
+      "entity": "heroes/flowborn-2",
+      "property": "skill-2.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 240,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 48
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/flowborn-2",
+      "property": "skill-3.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Sát thương cơ bản Chiêu 3 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 560,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 280
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.1
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/flowborn-2",
+      "property": "skill-3.initial-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần ban đầu Chiêu 3 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 230,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 115
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/jinna",
+      "property": "skill-3.base-mitigation",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Chiêu 3 đang cấp giảm sát thương.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.15
+          },
+          "detail": "Hiệu quả cơ bản trong thời gian dùng chiêu."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/teemee",
+      "property": "skill-1.minimum-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 ở mức sát thương cơ bản.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 400,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.9
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/teemee",
+      "property": "skill-1.maximum-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 đạt sát thương tối đa.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 800,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 160
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.8
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/valhein",
+      "property": "passive.red-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phi tiêu đỏ của nội tại trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.37
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "heroes/valhein",
+      "property": "passive.blue-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phi tiêu xanh của nội tại trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 50,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.185
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "spells/te-cong",
+      "property": "active.charges",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "charge",
+          "target": "self",
+          "trigger": "Sau khi Trừng trị được nâng cấp thành Tê Cóng.",
+          "delivery": "spell",
+          "timing": {
+            "cooldown_s": 10,
+            "recharge_s": 45
+          },
+          "charges": 2,
+          "detail": "Hồi chiêu giữa lượt dùng và thời gian tích trữ là hai số khác nhau."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "spells/te-cong",
+      "property": "active.pve-true",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "minion-or-monster",
+          "trigger": "Dùng lên quái rừng hoặc lính.",
+          "delivery": "spell",
+          "damage_type": "true",
+          "detail": "Làm choáng trong 1 giây; ghi chú không nêu lượng sát thương chuẩn."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "spells/te-cong",
+      "property": "active.hero-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hero",
+          "trigger": "Dùng lên tướng địch. Mang Gươm hiến tế hoặc Gươm Loki.",
+          "damage_type": "magic",
+          "delivery": "spell",
+          "formula": {
+            "unit": "damage",
+            "base": 300,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "spells/te-cong",
+      "property": "active.hero-true",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hero",
+          "trigger": "Dùng lên tướng địch. Mang Rìu Gnoll hoặc Rìu Leviathan.",
+          "damage_type": "true",
+          "delivery": "spell",
+          "formula": {
+            "unit": "damage",
+            "base": 185,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 15
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "spells/te-cong",
+      "property": "active.hero-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hero",
+          "trigger": "Dùng lên tướng địch. Mang Đao truy kích, Kiếm truy hồn, Cung gió lốc hoặc Cung bão tố.",
+          "damage_type": "physical",
+          "delivery": "spell",
+          "formula": {
+            "unit": "damage",
+            "base": 400,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 30
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "spells/te-cong",
+      "property": "active.steal-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemy-hero",
+          "trigger": "Dùng Tê Cóng lên tướng địch.",
+          "delivery": "spell",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.3
+          },
+          "timing": {
+            "duration_s": 2
+          },
+          "detail": "Cướp tốc chạy."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
     }
   ],
   "review_notes": []

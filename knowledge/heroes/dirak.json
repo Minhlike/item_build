@@ -11,6 +11,105 @@
         "value": true
       }
     ],
+    "skill-2.inner-fall": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Chọn điểm rơi Chiêu 2 trong vòng trong của Chiêu 1.",
+          "detail": "Chiêu 2 rơi xuống trực tiếp.",
+          "interactions": [
+            "Vòng trong của Chiêu 1."
+          ]
+        }
+      }
+    ],
+    "skill-3.bastion": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Lô cốt tử quang.",
+          "detail": "Chiêu phòng thủ; Pháo tử quang chuyển sang Chiêu 4."
+        }
+      }
+    ],
+    "skill-4.blast": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Dùng Pháo tử quang, nay là Chiêu 4.",
+          "detail": "Giá trị sát thương công bố: 500 cộng 250 mỗi cấp chiêu và 0,8 công phép. Mục này không ghi loại sát thương.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 50.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5.0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-4.mana": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Thi triển Chiêu 4.",
+          "formula": {
+            "unit": "mana",
+            "base": 90.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 5.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "identity.ability-inventory": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": [
+          "skill-1",
+          "skill-2",
+          "skill-3",
+          "skill-4"
+        ]
+      }
+    ],
     "skill-2.cooldown": [
       {
         "evidence": [

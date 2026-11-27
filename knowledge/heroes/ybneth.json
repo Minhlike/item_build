@@ -44,6 +44,53 @@
           "delivery": "ability",
           "trigger": "Kích hoạt chiêu cuối"
         }
+      },
+      {
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Chiêu 3 cấp lá chắn.",
+          "formula": {
+            "unit": "hp",
+            "base": 1000.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 500.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.heal": [
+      {
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu 3 phát sinh hồi phục.",
+          "detail": "Tỷ lệ mỗi phần hồi theo ghi chú, chưa chốt số nhịp.",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.015
+              }
+            ]
+          }
+        }
       }
     ]
   },

@@ -1074,6 +1074,380 @@
         "status": "LIVE_VN",
         "effective_from": "2026-09-29"
       }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-3.cube-trigger",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Trong pha đầu Chiêu 3, tâm lập phương thường hoặc cường hóa nằm trong Ma trận.",
+          "detail": "Lập phương nổ ngay sau khi Ma trận kéo mục tiêu về.",
+          "interactions": [
+            "Chiêu 2 hoặc Chiêu 2 cường hóa."
+          ]
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/yorn",
+      "property": "skill-1.reveal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "reveal",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 trúng."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/yorn",
+      "property": "skill-2.path-vision",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "reveal",
+          "target": "flight-path",
+          "trigger": "Đạn Chiêu 2 đang bay.",
+          "detail": "Cấp tầm nhìn dọc đường bay."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/yorn",
+      "property": "skill-2.hit-reveal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "reveal",
+          "target": "target-and-self",
+          "trigger": "Chiêu 2 trúng đích."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/yorn",
+      "property": "passive.hero-hit-amount",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "enemy-hero",
+          "trigger": "Nội tại gây sát thương lên tướng.",
+          "detail": "Phần gốc 28–56 cùng 1,5% máu tối đa mục tiêu. Chưa chốt loại sát thương và quy luật tăng phần gốc từ mục này.",
+          "basis": "target_max_hp",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.015
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/celica",
+      "property": "skill-1.active-ad",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Chiêu 1 đang hoạt động.",
+          "detail": "Nhân đôi phần công vật lý do nội tại Chiêu 1 cung cấp."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/lauriel",
+      "property": "passive.heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại phát sinh hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 140,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.01
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/ata",
+      "property": "skill-1.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 7.5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/ata",
+      "property": "skill-2.collision-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Va chạm của Chiêu 2.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.06
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/amily",
+      "property": "skill-2.no-target-dash",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Ra đòn cường hóa của Chiêu 2 khi thiếu mục tiêu.",
+          "delivery": "empowered_attack",
+          "detail": "Lướt tới trước."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "passive.infection",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "target-hit",
+          "trigger": "Chiêu trúng địch.",
+          "stacks": 3,
+          "detail": "Mỗi mục tiêu giữ tầng dịch riêng, nhận sát thương theo thời gian và phát nổ diện rộng khi đủ 3 tầng."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "passive.energy",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Chiêu trúng tướng hoặc hạ lính/quái rừng.",
+          "detail": "Năng lượng dịch bệnh tăng công phép và mở cường hóa vĩnh viễn."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "skill-1.empower-window",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Kích hoạt Chiêu 1.",
+          "timing": {
+            "duration_s": 4
+          },
+          "detail": "Tăng tầm đánh, tốc đánh và tốc chạy. Bình thường, cứ 3 đòn có một đòn gây sát thương vùng."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "skill-1.energy-upgrade",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1 từ 25 năng lượng dịch bệnh.",
+          "detail": "Trong trạng thái cường hóa, mỗi đòn đánh gây sát thương vùng."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "skill-2.delayed-knockup",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Mục tiêu ở trong vùng khi hiệu ứng sau của Chiêu 2 xảy ra.",
+          "detail": "Pha đầu làm chậm; pha hai sau 1 giây gây sát thương và hất tung."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "skill-2.energy-upgrade",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Đạt 75 năng lượng dịch bệnh.",
+          "detail": "Tăng phạm vi Chiêu 2."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "skill-3.release",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 3 nhả tụ lực.",
+          "damage_type": "magic",
+          "detail": "Ba đợt sóng hướng trước. Thời gian tụ lực quyết định tầm đi. Di chuyển hoặc tái kích hoạt nhả ngay trước khi tiến hóa."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "skill-3.energy-upgrade",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Đạt 145 năng lượng dịch bệnh.",
+          "detail": "Có thể di chuyển khi thi triển Chiêu 3."
+        },
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
     }
   ],
   "review_notes": []

@@ -383,5 +383,16 @@
     "unknown": [
       "Kiểm tra khả dụng trong từng hàng chờ và ngày hết hiệu lực"
     ]
+  },
+  {
+    "id": "te-cong",
+    "name": "Tê Cóng",
+    "kind": "spells",
+    "facts": {},
+    "unknown": [
+      "Ngưỡng nâng cấp theo luật mua trong từng hàng chờ",
+      "Khả dụng ngoài điều kiện trang bị đi rừng",
+      "Mốc cấp của sát thương lên tướng và lượng sát thương chuẩn lên quái/lính"
+    ]
   }
 ]

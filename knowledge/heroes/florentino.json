@@ -25,6 +25,32 @@
           "damage_type": "true",
           "basis": "target_max_hp"
         }
+      },
+      {
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Một nhịp của Thưởng hoa trúng mục tiêu.",
+          "detail": "Ví dụ của thông báo: 700 công vật lý tương ứng 6,3% máu tối đa đích mỗi lần. Chỉ tính riêng phần chuẩn.",
+          "damage_type": "true",
+          "basis": "target_max_hp",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 9e-05,
+                "multiply_by_target_max_hp": true
+              }
+            ]
+          }
+        }
       }
     ],
     "skill-2.flower-loop": [

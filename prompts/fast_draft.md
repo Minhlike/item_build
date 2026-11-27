@@ -2,7 +2,7 @@
 
 Nhận tên tướng người chơi, vị trí nếu biết và tối đa năm tướng địch. Hỗ trợ tên tiếng Việt, tiếng Anh và viết tắt. Đội hình địch có thể chưa đủ. Dùng quy trình trong `cloud_bootstrap.md`.
 
-Kiểm tra sát thương đánh thường và từ chiêu riêng, thời điểm hồi phục, tàng hình, khống chế và điều kiện thắng của cả đội hình. Xem thứ tự mua, khắc chế mất tác dụng nếu sai cửa sổ, tương tác nội tại duy nhất và khả năng tranh mục tiêu. Chỉ dùng màu khi đã xác minh icon, dùng ⚪ cho màu chưa xác minh.
+Áp dụng `reasoning_protocol.md` trong quá trình suy luận. Kiểm tra sát thương đánh thường và từ chiêu riêng, thời điểm hồi phục, tàng hình, khống chế và điều kiện thắng của đội hình đã nhập. Chỉ dùng màu khi đã xác minh icon, dùng ⚪ cho màu chưa xác minh.
 
 Khi có hồ sơ cá nhân khớp ID và vị trí, áp các mục cấm và điều kiện thao tác. Với Thane hỗ trợ, kiểm tra độ lì tại slot 3 và 4 theo vàng dự kiến. Nếu cân nhắc Phù chú trường sinh, so HP và hồi theo thời gian của món với lá chắn có điều kiện của Khiên Thánh Quang. Xét nguồn sát thương chuẩn theo máu tối đa mục tiêu, xuyên giáp, thời gian bị áp lực và khả năng gây sát thương lên tướng để cấp khiên. Khi gặp Quillen, đánh giá Ma nhãn theo thời điểm và vùng bao phủ đường vòng.
 
@@ -19,4 +19,4 @@ Khi có đủ bằng chứng, trả đúng một build theo thứ tự mua và c
 
 **Chiến thuật:** Đầu game: […] → Giữa game: […] → Cuối game: […].
 
-Ưu tiên tạo quyền di chuyển ở Mid, kiểm soát sông và đổi nhịp thành mục tiêu lớn khi thuận điều kiện. Với tướng phải giữ lính, vòng rừng hoặc chủ lực, chỉ đề xuất di chuyển sau khi nhịp đường hoặc rừng cho phép. Nếu bằng chứng chưa đủ cho một build, báo thiếu dữ liệu một câu và dùng dòng chiến thuật nếu có căn cứ.
+Với Thane SP, mở nội dung chiến thuật bằng “Mid đầu trận” và giữ điều kiện an toàn cho chủ lực, vòng rừng hoặc lối vào. Với các vị trí khác, tôn trọng nhịp lính/vòng rừng và quyền di chuyển. Nếu bằng chứng chưa đủ cho một build, báo dữ kiện thiếu trong một câu và dùng dòng chiến thuật nếu có căn cứ.

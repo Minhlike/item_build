@@ -10,6 +10,90 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.burst-magic": [
+      {
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương bùng nổ của Chiêu 1.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 375.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 75.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.base-magic": [
+      {
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản của Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.cooldown": [
+      {
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
     ]
   },
   "unknown": [

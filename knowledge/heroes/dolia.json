@@ -10,6 +10,78 @@
         ],
         "value": true
       }
+    ],
+    "skill-2.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-2.heal": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "heal",
+          "target": "heal-recipient",
+          "trigger": "Chiêu 2 cấp hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 400.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.85
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.volkath-reset": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "reset_cooldown",
+          "target": "volkath",
+          "trigger": "Dolia làm mới Chiêu 3 của Volkath.",
+          "detail": "Bản sửa lỗi xác nhận làm mới chiêu và bảo toàn trạng thái miễn tử của lần dùng được làm mới.",
+          "interactions": [
+            "Chiêu 3 của Volkath sau khi được làm mới."
+          ]
+        }
+      }
     ]
   },
   "unknown": [

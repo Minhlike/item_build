@@ -147,6 +147,7 @@ class Term(Model):
     basis: Basis
     coefficient: FiniteFloat
     origin: Integer | None = None
+    multiply_by_target_max_hp: bool = False
 
     @model_validator(mode="after")
     def origin_only_for_levels(self):
@@ -166,6 +167,21 @@ class Formula(Model):
             raise ValueError("Đơn vị kết quả không tương thích với cơ sở tính.")
         if len({term.basis for term in self.terms}) != len(self.terms):
             raise ValueError("Cơ sở công thức bị lặp.")
+        for term in self.terms:
+            if term.multiply_by_target_max_hp and (
+                self.unit != Unit.DAMAGE
+                or term.basis
+                not in {
+                    Basis.BASE_AD,
+                    Basis.BONUS_AD,
+                    Basis.TOTAL_AD,
+                    Basis.UNSPECIFIED_AD,
+                    Basis.AP,
+                }
+            ):
+                raise ValueError(
+                    "Hệ số theo máu tối đa mục tiêu cần cơ sở công và đơn vị sát thương."
+                )
         return self
 
     def calculate(self, inputs: dict[Basis, Nonnegative]) -> float:
@@ -180,6 +196,11 @@ class Formula(Model):
                 if term.origin is None or not value.is_integer() or value < max(1, term.origin):
                     raise ValueError("Cần cấp nguyên và mốc cấp đã xác minh.")
                 value -= term.origin
+            if term.multiply_by_target_max_hp:
+                target_hp = inputs.get(Basis.TARGET_MAX_HP)
+                if target_hp is None or not isfinite(target_hp) or target_hp <= 0:
+                    raise ValueError("Cần máu tối đa mục tiêu dương.")
+                value *= target_hp
             result += value * term.coefficient
         if not isfinite(result) or result < 0:
             raise ValueError("Kết quả công thức ngoài miền giá trị.")

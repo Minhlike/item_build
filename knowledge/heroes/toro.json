@@ -36,6 +36,49 @@
         }
       }
     ],
+    "passive.out-of-combat-heal": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Rời giao tranh và nội tại cấp hồi phục.",
+          "detail": "Chưa xác định số nhịp hoặc khoảng cách giữa các nhịp từ dòng cập nhật.",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.014
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "passive.mitigation": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Nội tại giảm sát thương đang hiệu lực.",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
     "skill-2.physical": [
       {
         "evidence": [

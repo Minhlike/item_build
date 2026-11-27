@@ -15,6 +15,35 @@
         "value": true
       }
     ],
+    "skill-2.base-physical": [
+      {
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 gây sát thương.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 250.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        }
+      }
+    ],
     "skill-3.heal": [
       {
         "evidence": [

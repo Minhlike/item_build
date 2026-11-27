@@ -1,0 +1,152 @@
+{
+  "id": "te-cong",
+  "kind": "spells",
+  "name": "Tê Cóng",
+  "facts": {
+    "active.charges": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "charge",
+          "target": "self",
+          "delivery": "spell",
+          "trigger": "Sau khi Trừng trị được nâng cấp thành Tê Cóng.",
+          "detail": "Hồi chiêu giữa lượt dùng và thời gian tích trữ là hai số khác nhau.",
+          "timing": {
+            "cooldown_s": 10.0,
+            "recharge_s": 45.0
+          },
+          "charges": 2
+        }
+      }
+    ],
+    "active.pve-true": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "minion-or-monster",
+          "delivery": "spell",
+          "trigger": "Dùng lên quái rừng hoặc lính.",
+          "detail": "Làm choáng trong 1 giây; ghi chú không nêu lượng sát thương chuẩn.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "active.hero-magic": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hero",
+          "delivery": "spell",
+          "trigger": "Dùng lên tướng địch. Mang Gươm hiến tế hoặc Gươm Loki.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 300.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "active.hero-true": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hero",
+          "delivery": "spell",
+          "trigger": "Dùng lên tướng địch. Mang Rìu Gnoll hoặc Rìu Leviathan.",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 185.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 15.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "active.hero-physical": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hero",
+          "delivery": "spell",
+          "trigger": "Dùng lên tướng địch. Mang Đao truy kích, Kiếm truy hồn, Cung gió lốc hoặc Cung bão tố.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 400.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 30.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "active.steal-speed": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemy-hero",
+          "delivery": "spell",
+          "trigger": "Dùng Tê Cóng lên tướng địch.",
+          "detail": "Cướp tốc chạy.",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 2.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngưỡng nâng cấp theo luật mua trong từng hàng chờ",
+    "Khả dụng ngoài điều kiện trang bị đi rừng",
+    "Mốc cấp của sát thương lên tướng và lượng sát thương chuẩn lên quái/lính"
+  ],
+  "relations": []
+}

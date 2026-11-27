@@ -1,0 +1,674 @@
+{
+  "id": "vn-2026-08-27",
+  "title": "Ngày hội Liên Quân 2026-08-27",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-08-27",
+  "evidence": "patch-late-aug",
+  "changes": [
+    {
+      "entity": "heroes/darcy",
+      "property": "passive.dimension-energy",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đang giao tranh, đòn đánh hoặc chiêu trúng địch.",
+          "detail": "Tích lực thứ nguyên. Đầy thanh cường hóa chiêu thường kế tiếp, hoàn lại 20% năng lượng đã mất."
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "passive.full-energy-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Lực thứ nguyên đầy.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.5
+          },
+          "timing": {
+            "duration_s": 3
+          },
+          "detail": "Tốc chạy giảm dần còn 10%."
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-1.mitigation",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Trong du hành thứ nguyên.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.2,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.04
+              }
+            ]
+          },
+          "ends_when": "Tung chiêu hoặc đánh thường."
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-1.empowered-hit",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đánh thường cường hóa trong cửa sổ 5 giây.",
+          "delivery": "empowered_attack",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 400,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.7
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 5
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-1.empowered-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "trigger": "Trúng đòn đánh cường hóa của Chiêu 1.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.9
+          },
+          "timing": {
+            "duration_s": 1
+          },
+          "detail": "Làm chậm giảm dần."
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-1.dimension-cc-immunity",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1 khi được cường hóa bởi nội tại.",
+          "ends_when": "Kết thúc du hành thứ nguyên."
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-2.cube-blast",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Lập phương nổ sau khi đặt.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 500,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 100
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1
+              }
+            ]
+          },
+          "timing": {
+            "cast_s": 1
+          },
+          "detail": "Vùng trung tâm thêm 50% sát thương.",
+          "exceptions": [
+            "Thời điểm nổ đổi khi trung tâm nằm trong Ma trận theo điều kiện Chiêu 3."
+          ]
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-2.energy-on-hit",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Mỗi mục tiêu trúng lập phương.",
+          "amount": {
+            "unit": "count",
+            "amount": 5
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-2.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 7,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-3.mark-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "trigger": "Kẻ địch trúng Ma trận.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.3
+          },
+          "timing": {
+            "duration_s": 2
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-3.displace-stun",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "hard_cc",
+          "target": "marked-target",
+          "trigger": "Đủ 2 giây từ khi đặt Ma trận và mục tiêu còn bị đánh dấu.",
+          "timing": {
+            "duration_s": 0.5
+          },
+          "detail": "Kéo về tâm Ma trận, sau đó làm choáng."
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-3.recast-window",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "teleport",
+          "target": "self",
+          "trigger": "Sau khi Ma trận cưỡng chế di dời.",
+          "timing": {
+            "duration_s": 6
+          },
+          "detail": "Có thể tái thi triển tới tâm Ma trận, kèm sát thương phép."
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/darcy",
+      "property": "skill-3.miss-cdr",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Chiêu 3 không trúng tướng địch.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.3
+          },
+          "detail": "Giảm riêng hồi chiêu này."
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/wiro",
+      "property": "skill-1.heal-on-hero",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Đòn đánh thường cường hóa của Chiêu 1 trúng tướng.",
+          "delivery": "empowered_attack",
+          "formula": {
+            "unit": "hp",
+            "base": 70,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 14
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.015
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/azzenka",
+      "property": "passive.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nội tại gây sát thương.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 235,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 17
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.46
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/azzenka",
+      "property": "skill-1.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/ilumia",
+      "property": "skill-1.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 gây sát thương.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 320,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 64
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/marja",
+      "property": "skill-3.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 3 gây sát thương.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 300,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 150
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/veres",
+      "property": "passive.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Vòng sát thương nội tại trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 300,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 25
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.75
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/volkath",
+      "property": "skill-2.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": 7
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/edras",
+      "property": "light.skill-1.base",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 dạng Quang Minh, sát thương cơ bản.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 75,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 15
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.75
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/edras",
+      "property": "light.skill-1.maximum",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 dạng Quang Minh đạt sát thương tối đa.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 225,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 45
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 2.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/edras",
+      "property": "dark.skill-2.bonus",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương thêm của Chiêu 2 dạng Hắc Ám.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    },
+    {
+      "entity": "heroes/zata",
+      "property": "skill-3.takeoff-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 3 gây sát thương ở thời điểm cất cánh.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 300,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 150
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27"
+      }
+    }
+  ]
+}

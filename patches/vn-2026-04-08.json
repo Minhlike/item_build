@@ -717,6 +717,67 @@
         "status": "LIVE_VN",
         "effective_from": "2026-04-08"
       }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "jungle.early-minion-penalty",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "minion",
+          "trigger": "Có trang bị rừng, tấn công lính trong 4 phút đầu.",
+          "delivery": "battlefield",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.25
+          },
+          "detail": "Giảm sát thương lên lính."
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.bonus-hp-tier-2",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Mang trang bị trợ thủ cấp 2.",
+          "delivery": "battlefield",
+          "detail": "Tưởng thưởng cấp thêm 200–410 HP tối đa. Cần xác minh cách đạt từng giá trị."
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.bonus-hp-tier-3",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Mang trang bị trợ thủ cấp 3.",
+          "delivery": "battlefield",
+          "detail": "Tưởng thưởng cấp thêm 400–820 HP tối đa. Cần xác minh cách đạt từng giá trị."
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
     }
   ],
   "review_notes": [

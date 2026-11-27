@@ -910,5 +910,429 @@
     "unknown": [
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
     ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-iii-giap",
+    "name": "Xanh III Giáp",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 9,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-iii-giap-giap-phep-hoi-chieu",
+    "name": "Xanh III Giáp/Giáp phép/Hồi chiêu",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 2.7,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 2.7,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-iii-mau-toi-da-giam-hoi-chieu",
+    "name": "Xanh III Máu tối đa/Giảm hồi chiêu",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 37.5,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-iii-toc-danh-xuyen-giap-phep",
+    "name": "Xanh III Tốc đánh/Xuyên giáp phép",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-penetration": [
+        {
+          "value": {
+            "amount": 6.4,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-iii-cong-vat-ly-xuyen-giap",
+    "name": "Xanh III Công vật lý/Xuyên giáp",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-damage": [
+        {
+          "value": {
+            "amount": 0.9,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor-penetration": [
+        {
+          "value": {
+            "amount": 6.4,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-iii-mau-toi-da",
+    "name": "Tím III Máu tối đa",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 75,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-iii-hut-mau-phep",
+    "name": "Tím III Hút máu phép",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.016,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-iii-cong-phep",
+    "name": "Đỏ III Công phép",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 5.3,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-iii-cong-vat-ly",
+    "name": "Đỏ III Công vật lý",
+    "aliases": [],
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 3.2,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+    ]
   }
 ]

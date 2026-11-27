@@ -1,0 +1,534 @@
+{
+  "id": "vn-2025-12-04",
+  "title": "Quang Minh & Hắc Ám 04/12/2025",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2025-12-04",
+  "evidence": "patch-2025-12-04",
+  "changes": [
+    {
+      "entity": "heroes/florentino",
+      "property": "skill-2.target-max-hp-true",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Một nhịp của Thưởng hoa trúng mục tiêu.",
+          "damage_type": "true",
+          "basis": "target_max_hp",
+          "formula": {
+            "unit": "damage",
+            "base": 0,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 9e-05,
+                "multiply_by_target_max_hp": true
+              }
+            ]
+          },
+          "detail": "Ví dụ của thông báo: 700 công vật lý tương ứng 6,3% máu tối đa đích mỗi lần. Chỉ tính riêng phần chuẩn."
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/quillen",
+      "property": "skill-1.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần sát thương Chiêu 1.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.65
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/quillen",
+      "property": "skill-3.heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Phần hồi máu theo Chiêu 3.",
+          "formula": {
+            "unit": "hp",
+            "base": 180,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 90
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.3
+              }
+            ]
+          },
+          "detail": "Mức theo ghi chú cân bằng. Không suy ra tổng số nhịp."
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/ormarr",
+      "property": "skill-1.empowered-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh cường hóa của Chiêu 1 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 180,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/ormarr",
+      "property": "skill-2.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/lindis",
+      "property": "skill-3.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 3 gây sát thương.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 200,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 100
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.65
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/aya",
+      "property": "skill-2.shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "shield-recipient",
+          "trigger": "Chiêu 2 tạo lá chắn.",
+          "formula": {
+            "unit": "hp",
+            "base": 700,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 140
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.85
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/aya",
+      "property": "skill-2.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 12,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/edras",
+      "property": "dark.skill-2.base",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Sát thương cơ bản của Chiêu 2 dạng Hắc Ám.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 300,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 60
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/edras",
+      "property": "dark.skill-2.bonus",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương thêm của Chiêu 2 dạng Hắc Ám.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 120,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 24
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.4
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/edras",
+      "property": "light.skill-2.base",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Sát thương cơ bản của Chiêu 2 dạng Quang Minh.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 200,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/edras",
+      "property": "light.skill-2.heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu 2 ở đúng dạng phát sinh hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.03
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/edras",
+      "property": "dark.skill-2.heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu 2 ở đúng dạng phát sinh hồi phục.",
+          "formula": {
+            "unit": "hp",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.03
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/lumburr",
+      "property": "passive.armor",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "passive-recipient",
+          "trigger": "Nội tại cấp giáp vật lý.",
+          "formula": {
+            "unit": "armor",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/lumburr",
+      "property": "passive.magic-defense",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "passive-recipient",
+          "trigger": "Nội tại cấp giáp phép.",
+          "formula": {
+            "unit": "magic_defense",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/lumburr",
+      "property": "skill-2.weaken",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 áp suy nhược lên tướng địch.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.2,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.02
+              }
+            ]
+          },
+          "detail": "Mức suy nhược; chưa chốt thời lượng từ dòng cập nhật này."
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    },
+    {
+      "entity": "heroes/lu-bo",
+      "property": "skill-2.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 gây sát thương.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 250,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04"
+      }
+    }
+  ]
+}

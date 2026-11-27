@@ -11,6 +11,64 @@
         "value": true
       }
     ],
+    "passive.red-physical": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phi tiêu đỏ của nội tại trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.37
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "passive.blue-physical": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phi tiêu xanh của nội tại trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 50.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.185
+              }
+            ]
+          }
+        }
+      }
+    ],
     "passive.stack-decay": [
       {
         "evidence": [

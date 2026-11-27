@@ -25,6 +25,74 @@
         "value": "Xét quyền đường, vị trí người cầm Trừng trị, tầm nhìn và quân số trước khi mở mục tiêu. Nếu địch có lợi thế tiếp cận, cân nhắc đẩy trụ hoặc đổi mục tiêu ở cánh còn lại."
       }
     ],
+    "jungle.early-minion-penalty": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "stat_change",
+          "target": "minion",
+          "delivery": "battlefield",
+          "trigger": "Có trang bị rừng, tấn công lính trong 4 phút đầu.",
+          "detail": "Giảm sát thương lên lính.",
+          "amount": {
+            "amount": 0.25,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "support.bonus-hp-tier-2": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Mang trang bị trợ thủ cấp 2.",
+          "detail": "Tưởng thưởng cấp thêm 200–410 HP tối đa. Cần xác minh cách đạt từng giá trị."
+        }
+      }
+    ],
+    "support.bonus-hp-tier-3": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Mang trang bị trợ thủ cấp 3.",
+          "detail": "Tưởng thưởng cấp thêm 400–820 HP tối đa. Cần xác minh cách đạt từng giá trị."
+        }
+      }
+    ],
+    "draft.flowborn-same-team": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Đội đã có Flowborn ở một trong hai dạng.",
+          "detail": "Bản sửa lỗi chặn hai dạng Flowborn xạ thủ và pháp sư cùng xuất hiện trong một đội."
+        }
+      }
+    ],
     "items.active-shared-cooldown": [
       {
         "evidence": [
@@ -528,6 +596,44 @@
         "status": "LIVE_VN",
         "effective_from": "2026-11-17",
         "value": "Công vật lý gốc tăng cho Caesar tiên phong bạo chúa; chưa công bố con số."
+      }
+    ],
+    "season.king-kong-slow": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "delivery": "battlefield",
+          "trigger": "Kỹ năng triệu hồi tương ứng áp làm chậm.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "season.dark-king-kong-slow": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "delivery": "battlefield",
+          "trigger": "Kỹ năng triệu hồi tương ứng áp làm chậm.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "ratio"
+          }
+        }
       }
     ]
   },

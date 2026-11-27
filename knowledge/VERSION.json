@@ -18,25 +18,25 @@
   "coverage": {
     "heroes": {
       "entities": 130,
-      "entities_with_live_facts": 46,
-      "live_properties": 84,
+      "entities_with_live_facts": 83,
+      "live_properties": 241,
       "review_claims": 79,
-      "live_mechanics": 79,
-      "mechanical_properties_any": 146
+      "live_mechanics": 233,
+      "mechanical_properties_any": 296
     },
     "items": {
       "entities": 57,
       "entities_with_live_facts": 23,
-      "live_properties": 80,
+      "live_properties": 81,
       "review_claims": 176,
-      "live_mechanics": 22,
-      "mechanical_properties_any": 56
+      "live_mechanics": 23,
+      "mechanical_properties_any": 57
     },
     "runes": {
-      "entities": 18,
+      "entities": 27,
       "entities_with_live_facts": 0,
       "live_properties": 0,
-      "review_claims": 71,
+      "review_claims": 103,
       "live_mechanics": 0,
       "mechanical_properties_any": 0
     },
@@ -49,20 +49,20 @@
       "mechanical_properties_any": 15
     },
     "spells": {
-      "entities": 11,
-      "entities_with_live_facts": 3,
-      "live_properties": 6,
+      "entities": 12,
+      "entities_with_live_facts": 4,
+      "live_properties": 12,
       "review_claims": 15,
-      "live_mechanics": 6,
-      "mechanical_properties_any": 21
+      "live_mechanics": 12,
+      "mechanical_properties_any": 27
     },
     "battlefield": {
       "entities": 1,
       "entities_with_live_facts": 1,
-      "live_properties": 31,
+      "live_properties": 37,
       "review_claims": 0,
-      "live_mechanics": 15,
-      "mechanical_properties_any": 15
+      "live_mechanics": 21,
+      "mechanical_properties_any": 21
     },
     "roles": {
       "entities": 6,

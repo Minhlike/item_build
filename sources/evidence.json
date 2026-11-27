@@ -809,14 +809,14 @@
     "source_id": "garena_vn",
     "source_type": "official",
     "server": "VN",
-    "source_url": "https://lienquan.garena.vn/tag/giap-gaia/",
-    "published_at": null,
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-quang-minh-hac-am-18-12-2025/",
+    "published_at": "2025-12-16",
     "retrieved_at": "2026-11-27",
     "effective_from": "2025-12-18",
     "effective_until": null,
     "patch_id": "vn-2025-12-18",
     "verification_status": "verified_official",
-    "evidence_ref": "Thông báo 18/12/2025, mục Cân bằng trang bị – Giáp Gaia."
+    "evidence_ref": "Cân bằng tướng và trang bị ngày 18/12/2025."
   },
   "qua-cau-ap-conflict": {
     "source_id": "garena_vn",
@@ -856,5 +856,90 @@
     "patch_id": "vn-2025-12-18",
     "verification_status": "conflict",
     "evidence_ref": "Dòng đòn thứ tư ghi sát thương chuẩn nhưng có ghi chú STVL ở cuối. Cần phân biệt nhãn của hệ số công vật lý với loại sát thương."
+  },
+  "patch-late-aug": {
+    "source_id": "garena_vn",
+    "source_type": "official",
+    "server": "VN",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-ngay-hoi-lien-quan-27-08-2026/",
+    "published_at": "2026-08-26",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2026-08-27",
+    "patch_id": "vn-2026-08-27",
+    "verification_status": "verified_official",
+    "evidence_ref": "Các mục D’Arcy, Wiro, Azzen’Ka, Ilumia, Marja, Veres, Volkath, Edras và Zata"
+  },
+  "patch-2025-12-04": {
+    "source_id": "garena_vn",
+    "source_type": "official",
+    "server": "VN",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-quang-minh-hac-am-4-12-2025/",
+    "published_at": "2025-12-03",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2025-12-04",
+    "effective_until": null,
+    "patch_id": "vn-2025-12-04",
+    "verification_status": "verified_official",
+    "evidence_ref": "Các mục Florentino, Quillen, Lindis, Ormarr, Aya, Edras, Lumburr và Lữ Bố."
+  },
+  "patch-2026-03-11": {
+    "source_id": "garena_vn",
+    "source_type": "official",
+    "server": "VN",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-tan-nien-khoi-the-11-03-2026/",
+    "published_at": "2026-03-10",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2026-03-11",
+    "patch_id": "vn-2026-03-11",
+    "verification_status": "verified_official",
+    "evidence_ref": "Mục Cân bằng tướng, Astrid, Violet, Moren, Toro, Dolia, Mina và Arum."
+  },
+  "patch-2026-05-21": {
+    "source_id": "garena_vn",
+    "source_type": "official",
+    "server": "VN",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-le-hoi-5v5-21-05-2026/",
+    "published_at": "2026-05-19",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2026-05-21",
+    "patch_id": "vn-2026-05-21",
+    "verification_status": "verified_official",
+    "evidence_ref": "Mục Cân bằng tướng và sửa lỗi cùng đội Flowborn."
+  },
+  "patch-2026-05-22": {
+    "source_id": "garena_vn",
+    "source_type": "official",
+    "server": "VN",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-le-hoi-5v5-21-05-2026/",
+    "published_at": "2026-05-19",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2026-05-22",
+    "patch_id": "vn-2026-05-22",
+    "verification_status": "verified_official",
+    "evidence_ref": "Tiểu mục cân bằng Jinna ngày 22/05."
+  },
+  "patch-2026-06-04": {
+    "source_id": "garena_vn",
+    "source_type": "official",
+    "server": "VN",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-le-hoi-5v5-04-06-2026/",
+    "published_at": "2026-06-03",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2026-06-04",
+    "patch_id": "vn-2026-06-04",
+    "verification_status": "verified_official",
+    "evidence_ref": "Mục Cân bằng tướng ngày 04/06."
+  },
+  "patch-2026-07-23": {
+    "source_id": "garena_vn",
+    "source_type": "official",
+    "server": "VN",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-ngay-hoi-lien-quan-23-07-2026/",
+    "published_at": "2026-07-22",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2026-07-23",
+    "patch_id": "vn-2026-07-23",
+    "verification_status": "verified_official",
+    "evidence_ref": "Cân bằng tướng và sửa lỗi hủy trạng thái tàng hình do đòn đánh tự động."
   }
 }

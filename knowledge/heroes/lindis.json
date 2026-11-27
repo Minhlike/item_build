@@ -11,6 +11,35 @@
         "value": true
       }
     ],
+    "skill-3.base-physical": [
+      {
+        "evidence": [
+          "patch-2025-12-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-04",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 3 gây sát thương.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 200.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 100.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.65
+              }
+            ]
+          }
+        }
+      }
+    ],
     "skill-3.cooldown": [
       {
         "evidence": [

@@ -68,6 +68,64 @@
           }
         }
       }
+    ],
+    "passive.bonus-magic-upper-bound": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần nội tại, ở điểm cao nhất của khoảng công bố.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 280.0,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "passive.bonus-magic-lower-bound": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần nội tại, ở điểm thấp nhất của khoảng công bố.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 140.0,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

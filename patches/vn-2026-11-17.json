@@ -901,6 +901,114 @@
         "status": "LIVE_VN",
         "effective_from": "2026-11-17"
       }
+    },
+    {
+      "entity": "heroes/dyadia",
+      "property": "passive.bonus-magic-upper-bound",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần nội tại, ở điểm cao nhất của khoảng công bố.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 280,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/dyadia",
+      "property": "passive.bonus-magic-lower-bound",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần nội tại, ở điểm thấp nhất của khoảng công bố.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 140,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.king-kong-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "trigger": "Kỹ năng triệu hồi tương ứng áp làm chậm.",
+          "delivery": "battlefield",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.5
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.dark-king-kong-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "trigger": "Kỹ năng triệu hồi tương ứng áp làm chậm.",
+          "delivery": "battlefield",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.5
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
     }
   ],
   "review_notes": []

@@ -125,6 +125,36 @@
           ]
         }
       }
+    ],
+    "passive.fourth-true": [
+      {
+        "evidence": [
+          "patch-2025-12-18"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-12-18",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh thứ tư gây phần sát thương chuẩn.",
+          "detail": "Phần giá trị gốc có thể chí mạng.",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 45.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 3.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.54
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [

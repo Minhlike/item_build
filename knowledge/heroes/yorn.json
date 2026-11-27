@@ -10,6 +10,69 @@
         ],
         "value": true
       }
+    ],
+    "skill-1.reveal": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "reveal",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 trúng."
+        }
+      }
+    ],
+    "skill-2.path-vision": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "reveal",
+          "target": "flight-path",
+          "trigger": "Đạn Chiêu 2 đang bay.",
+          "detail": "Cấp tầm nhìn dọc đường bay."
+        }
+      }
+    ],
+    "skill-2.hit-reveal": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "reveal",
+          "target": "target-and-self",
+          "trigger": "Chiêu 2 trúng đích."
+        }
+      }
+    ],
+    "passive.hero-hit-amount": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "enemy-hero",
+          "trigger": "Nội tại gây sát thương lên tướng.",
+          "detail": "Phần gốc 28–56 cùng 1,5% máu tối đa mục tiêu. Chưa chốt loại sát thương và quy luật tăng phần gốc từ mục này.",
+          "basis": "target_max_hp",
+          "amount": {
+            "amount": 0.015,
+            "unit": "ratio"
+          }
+        }
+      }
     ]
   },
   "unknown": [

@@ -1,0 +1,41 @@
+{
+  "id": "tim-iii-hut-mau-phep",
+  "kind": "runes",
+  "name": "Tím III Hút máu phép",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 3.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "purple"
+      }
+    ],
+    "stat.spell-lifesteal": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.016,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+  ],
+  "relations": []
+}
