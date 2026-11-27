@@ -1,0 +1,279 @@
+[
+  {
+    "kind": "roles",
+    "id": "general",
+    "name": "Vị trí chưa rõ",
+    "aliases": [],
+    "facts": {
+      "tactics.rotation": [
+        {
+          "value": "Đọc năng lực dọn lính và khả năng thoát trước khi đề nghị tranh Mid. Chỉ đề nghị đảo nếu có nhịp và đường đi an toàn.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "tactics.composition": [
+        {
+          "value": "Xét dồn sát thương, cấu rỉa, kéo dài, chuỗi khống chế, bắt lẻ, bảo kê, mở và phản giao tranh, phá trụ và tranh mục tiêu. So sánh ngưỡng cấp/trang bị và các điều kiện thắng xung đột qua từng giai đoạn.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "catalog.entries": [
+        {
+          "value": [
+            "items/khien-thanh-quang",
+            "items/vo-anh-tien",
+            "items/giap-thong-kho"
+          ],
+          "evidence": [
+            "patch-items",
+            "patch-battlefield"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29",
+          "kind": "derived_knowledge"
+        }
+      ]
+    },
+    "unknown": []
+  },
+  {
+    "kind": "roles",
+    "id": "support",
+    "name": "Trợ thủ",
+    "aliases": [],
+    "facts": {
+      "tactics.rotation": [
+        {
+          "value": "Phối hợp giữ nhịp Mid và tầm nhìn sông sau khi bảo đảm chủ lực không bị ép lẻ. Giữ chiêu đẩy hoặc làm choáng cho góc kẻ địch lao vào.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "tactics.composition": [
+        {
+          "value": "Xét dồn sát thương, cấu rỉa, kéo dài, chuỗi khống chế, bắt lẻ, bảo kê, mở và phản giao tranh, phá trụ và tranh mục tiêu. So sánh ngưỡng cấp/trang bị và các điều kiện thắng xung đột qua từng giai đoạn.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "catalog.entries": [
+        {
+          "value": [
+            "items/khien-thanh-quang",
+            "items/giap-thong-kho",
+            "enchantments/rung-nguyen-sinh"
+          ],
+          "evidence": [
+            "patch-items",
+            "patch-battlefield"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29",
+          "kind": "derived_knowledge"
+        }
+      ]
+    },
+    "unknown": []
+  },
+  {
+    "kind": "roles",
+    "id": "mid",
+    "name": "Đường giữa",
+    "aliases": [],
+    "facts": {
+      "tactics.rotation": [
+        {
+          "value": "Dọn lính an toàn để giành lượt di chuyển. Cắm góc kiểm soát sông cùng rừng, sau đó chuyển nhịp thành mục tiêu, trụ hoặc cứu cánh bị ép.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "tactics.composition": [
+        {
+          "value": "Xét dồn sát thương, cấu rỉa, kéo dài, chuỗi khống chế, bắt lẻ, bảo kê, mở và phản giao tranh, phá trụ và tranh mục tiêu. So sánh ngưỡng cấp/trang bị và các điều kiện thắng xung đột qua từng giai đoạn.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "catalog.entries": [
+        {
+          "value": [
+            "spells/dich-chuyen",
+            "enchantments/vuc-hon-mang"
+          ],
+          "evidence": [
+            "patch-items",
+            "patch-battlefield"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29",
+          "kind": "derived_knowledge"
+        }
+      ]
+    },
+    "unknown": []
+  },
+  {
+    "kind": "roles",
+    "id": "jungle",
+    "name": "Đi rừng",
+    "aliases": [],
+    "facts": {
+      "tactics.rotation": [
+        {
+          "value": "Đi theo vòng rừng và nhịp Trừng trị. Chỉ ghé Mid khi có thể sửa thế lính, mở tầm nhìn hoặc tranh mục tiêu mà vẫn giữ được tài nguyên.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "tactics.composition": [
+        {
+          "value": "Xét dồn sát thương, cấu rỉa, kéo dài, chuỗi khống chế, bắt lẻ, bảo kê, mở và phản giao tranh, phá trụ và tranh mục tiêu. So sánh ngưỡng cấp/trang bị và các điều kiện thắng xung đột qua từng giai đoạn.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "catalog.entries": [
+        {
+          "value": [
+            "spells/trung-tri",
+            "enchantments/vuc-hon-mang"
+          ],
+          "evidence": [
+            "patch-items",
+            "patch-battlefield"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29",
+          "kind": "derived_knowledge"
+        }
+      ]
+    },
+    "unknown": []
+  },
+  {
+    "kind": "roles",
+    "id": "dragon",
+    "name": "Đường Rồng",
+    "aliases": [],
+    "facts": {
+      "tactics.rotation": [
+        {
+          "value": "Giữ nhịp lính và góc bắn. Khi đã đẩy hoặc đối thủ lộ phía xa, hỗ trợ cửa sông từ góc an toàn để chuyển thành mục tiêu.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "tactics.composition": [
+        {
+          "value": "Xét dồn sát thương, cấu rỉa, kéo dài, chuỗi khống chế, bắt lẻ, bảo kê, mở và phản giao tranh, phá trụ và tranh mục tiêu. So sánh ngưỡng cấp/trang bị và các điều kiện thắng xung đột qua từng giai đoạn.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "catalog.entries": [
+        {
+          "value": [
+            "items/vo-anh-tien"
+          ],
+          "evidence": [
+            "patch-items",
+            "patch-battlefield"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29",
+          "kind": "derived_knowledge"
+        }
+      ]
+    },
+    "unknown": []
+  },
+  {
+    "kind": "roles",
+    "id": "slayer",
+    "name": "Đường Tà Thần",
+    "aliases": [],
+    "facts": {
+      "tactics.rotation": [
+        {
+          "value": "Sửa thế lính trước khi rời đường. Nếu không đủ nhịp nhập giao tranh qua Mid, giữ áp lực cánh có đường thoát hoặc đổi trụ khi đối thủ lộ mặt.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "tactics.composition": [
+        {
+          "value": "Xét dồn sát thương, cấu rỉa, kéo dài, chuỗi khống chế, bắt lẻ, bảo kê, mở và phản giao tranh, phá trụ và tranh mục tiêu. So sánh ngưỡng cấp/trang bị và các điều kiện thắng xung đột qua từng giai đoạn.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "catalog.entries": [
+        {
+          "value": [
+            "items/giap-thong-kho",
+            "spells/dich-chuyen"
+          ],
+          "evidence": [
+            "patch-items",
+            "patch-battlefield"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29",
+          "kind": "derived_knowledge"
+        }
+      ]
+    },
+    "unknown": []
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "id": "vn-2026-10-30",
+  "title": "Vết Nứt Thời Không 2026-10-30",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-10-30",
+  "evidence": "patch-oct",
+  "changes": [
+    {
+      "entity": "heroes/hayate",
+      "property": "passive.marked-true",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "same-marked-target",
+          "trigger": "Sau khi sáu đòn đánh hoặc lần chiêu trúng cùng mục tiêu, lần tấn công tiếp theo trong cửa sổ hiệu lực",
+          "damage_type": "true",
+          "delivery": "passive",
+          "stacks": 6,
+          "timing": {
+            "duration_s": 4
+          },
+          "formula": {
+            "unit": "damage",
+            "base": 45,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.23
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-hayate",
+          "hayate"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "same-marked-target",
+          "trigger": "Sau khi sáu đòn đánh hoặc lần chiêu trúng cùng mục tiêu, lần tấn công tiếp theo trong cửa sổ hiệu lực",
+          "damage_type": "true",
+          "delivery": "passive",
+          "stacks": 6,
+          "timing": {
+            "duration_s": 4
+          },
+          "formula": {
+            "unit": "damage",
+            "base": 40,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-hayate"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-10-30"
+      }
+    },
+    {
+      "entity": "heroes/hayate",
+      "property": "skill-1.physical",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "units-in-path",
+          "trigger": "Từng phi tiêu chạm mục tiêu",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 110,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 22
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.18
+              }
+            ]
+          },
+          "exceptions": [
+            "Có thể xuyên đơn vị không phải tướng, suy giảm theo mỗi lần xuyên."
+          ]
+        },
+        "evidence": [
+          "patch-hayate",
+          "hayate"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "units-in-path",
+          "trigger": "Từng phi tiêu chạm mục tiêu",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 105,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 21
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-hayate"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-10-30"
+      }
+    }
+  ],
+  "review_notes": []
+}

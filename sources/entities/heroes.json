@@ -1,0 +1,1445 @@
+[
+  {
+    "kind": "heroes",
+    "id": "thane",
+    "name": "Thane",
+    "aliases": [
+      "Thanh",
+      "Thane SP"
+    ],
+    "facts": {
+      "tactics.peel": [
+        {
+          "value": "Có thể cắt đường áp sát của Butterfly bằng đẩy lùi nếu chiêu còn sẵn và Thane đứng đủ gần chủ lực.",
+          "evidence": [
+            "academy-butterfly",
+            "thane"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-11-25"
+        }
+      ],
+      "passive.low-hp-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Máu rơi dưới ngưỡng kích hoạt nội tại",
+            "basis": "caster_max_hp",
+            "delivery": "passive",
+            "detail": "Hồi theo máu tối đa của Thane; ngưỡng, lượng, chu kỳ và hồi nội tại chưa xác minh.",
+            "interactions": [
+              "Tăng máu tối đa làm tăng trị liệu tuyệt đối nếu cùng hệ số.",
+              "Giảm hồi phục chỉ có lợi nếu bao phủ các nhịp hồi."
+            ]
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "passive.low-hp-mitigation": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Nội tại kích hoạt lúc máu thấp",
+            "delivery": "passive",
+            "detail": "Miễn thương ngắn khi nội tại kích hoạt; phần trăm và thời lượng chưa xác minh."
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "skill-1.push": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-path",
+            "trigger": "Lướt qua kẻ địch",
+            "delivery": "ability",
+            "detail": "Đẩy nhiều nhịp, hất văng ở cuối; có thể tách sát thủ khỏi chủ lực."
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "skill-1.damage": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-path",
+            "trigger": "Mỗi nhịp chiêu 1 trúng địch",
+            "damage_type": "physical",
+            "delivery": "ability",
+            "detail": "Đứng gần Thane chịu sát thương cao hơn theo mô tả."
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "skill-2.control": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-area",
+            "trigger": "Cắm kiếm trúng mục tiêu",
+            "delivery": "ability",
+            "detail": "Có làm chậm sau hất văng."
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "skill-3.true": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-front",
+            "trigger": "Kiếm chém trúng mục tiêu",
+            "damage_type": "true",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "skill-3.missing-hp": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-front",
+            "trigger": "Kiếm chém trúng mục tiêu",
+            "damage_type": "physical",
+            "delivery": "ability",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "target_missing_hp",
+                  "coefficient": 0.15
+                }
+              ]
+            }
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "skill-3.base-type-conflict": [
+        {
+          "value": "Thông báo 13/08 ghi phần gốc là vật lý với gốc 480, thêm 240 mỗi cấp chiêu và 8% máu tối đa của Thane. Trang kỹ năng mô tả sát thương chuẩn riêng cùng phần vật lý theo máu đã mất của mục tiêu. Chưa phân giải phần gốc và khả năng hai nguồn mô tả các thành phần khác nhau.",
+          "evidence": [
+            "patch-aug",
+            "thane"
+          ],
+          "status": "UNVERIFIED"
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "allain",
+    "name": "Allain",
+    "aliases": [
+      "A lian"
+    ],
+    "facts": {
+      "passive.hit-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Đủ số lần đánh trúng địch",
+            "delivery": "passive",
+            "detail": "Nhịp giao tranh liên tục mở cơ hội hồi máu; chưa xác minh số lần, tỷ lệ và đối tượng được tính."
+          },
+          "evidence": [
+            "allain"
+          ]
+        }
+      ],
+      "passive.armor-pen": [
+        {
+          "value": {
+            "effect": "armor_pen",
+            "target": "self",
+            "trigger": "Đánh thường hoặc Kiếm lưu ngân đánh trúng tướng",
+            "delivery": "passive"
+          },
+          "evidence": [
+            "allain"
+          ]
+        }
+      ],
+      "passive.magic-pen": [
+        {
+          "value": {
+            "effect": "magic_pen",
+            "target": "self",
+            "trigger": "Đánh thường hoặc Kiếm lưu ngân đánh trúng tướng",
+            "delivery": "passive"
+          },
+          "evidence": [
+            "allain"
+          ]
+        }
+      ],
+      "skill-2.damage": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-path",
+            "trigger": "Lướt trúng mục tiêu",
+            "damage_type": "physical",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "allain"
+          ]
+        }
+      ],
+      "skill-3.damage": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Hạ xuống vị trí tướng bị khóa",
+            "damage_type": "true",
+            "delivery": "ability",
+            "timing": {
+              "cast_s": 1.5
+            }
+          },
+          "evidence": [
+            "allain"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu",
+      "Thành phần sát thương theo từng đòn của Kiếm lưu ngân; tỷ lệ hồi và xuyên"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "trieu-van",
+    "name": "Triệu Vân",
+    "aliases": [
+      "Zanis",
+      "TV",
+      "Triệu"
+    ],
+    "facts": {
+      "passive.takedown-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Tham gia hạ tướng với tư cách kết liễu hoặc hỗ trợ",
+            "delivery": "passive",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.05
+                }
+              ]
+            }
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ],
+      "skill-1.cleanse": [
+        {
+          "value": {
+            "effect": "cleanse",
+            "target": "self",
+            "trigger": "Kích hoạt Long huyết",
+            "delivery": "ability",
+            "detail": "Kiểm tra ngoại lệ với khống chế đặc biệt."
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ],
+      "skill-2.lifesteal": [
+        {
+          "value": {
+            "effect": "lifesteal",
+            "target": "self",
+            "trigger": "Kích hoạt Long Hống",
+            "delivery": "ability",
+            "detail": "Tăng hút máu và tốc đánh; loại và đối tượng hút máu cần đối chiếu trong game."
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ],
+      "skill-3.true": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Long kích trúng ngay lúc nện thương",
+            "damage_type": "true",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ],
+      "skill-3.on-hit-true": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Đánh thường trong cửa sổ sau Long kích",
+            "damage_type": "true",
+            "delivery": "basic_attack",
+            "timing": {
+              "duration_s": 5
+            }
+          },
+          "evidence": [
+            "trieu-van"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "bolt-baron",
+    "name": "Bolt Baron",
+    "aliases": [
+      "BB",
+      "Bolt",
+      "Baron",
+      "Boltbaron"
+    ],
+    "facts": {
+      "passive.basic-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Đánh thường trúng mục tiêu",
+            "damage_type": "magic",
+            "delivery": "basic_attack",
+            "detail": "Khi ở gần, chế độ cận chiến làm đòn nối nhanh hơn."
+          },
+          "evidence": [
+            "bolt-type-check",
+            "bolt-archive"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-11-27"
+        }
+      ],
+      "passive.empowered-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Đòn cường hóa sau chiêu cơ bản",
+            "damage_type": "magic",
+            "delivery": "empowered_attack",
+            "exceptions": [
+              "Đòn tầm xa gây 66% lên mục tiêu phụ và không kích hoạt hiệu ứng đánh thường."
+            ]
+          },
+          "evidence": [
+            "bolt-baron"
+          ]
+        }
+      ],
+      "passive.cast-charge": [
+        {
+          "value": {
+            "effect": "charge",
+            "target": "self",
+            "trigger": "Thu đủ sáu điểm Thiên lôi từ đánh thường",
+            "delivery": "passive",
+            "stacks": 6,
+            "charges": 1,
+            "detail": "Cho thêm một lượt dùng chiêu cơ bản."
+          },
+          "evidence": [
+            "bolt-baron"
+          ]
+        }
+      ],
+      "passive.empowered-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Đòn cường hóa sau chiêu cơ bản",
+            "delivery": "empowered_attack"
+          },
+          "evidence": [
+            "bolt-baron"
+          ]
+        }
+      ],
+      "skill-1.magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-path",
+            "trigger": "Thiên lôi bộ lướt trúng mục tiêu",
+            "damage_type": "magic",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "bolt-type-check",
+            "bolt-archive"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-11-27"
+        }
+      ],
+      "skill-1.shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "Tung Thiên lôi bộ",
+            "delivery": "ability",
+            "timing": {
+              "duration_s": 2
+            }
+          },
+          "evidence": [
+            "bolt-baron"
+          ]
+        }
+      ],
+      "skill-2.magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Cuồng lôi kích chạm hoặc đến cuối tầm",
+            "damage_type": "magic",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "bolt-type-check",
+            "bolt-archive"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-11-27"
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "hayate",
+    "name": "Hayate",
+    "aliases": [
+      "Hay",
+      "Haiate"
+    ],
+    "facts": {
+      "tactics.entry": [
+        {
+          "value": "Tích nội tại khi còn giữ được khoảng cách. Cân nhắc lao bằng chiêu cuối sau khi đối phương mất kỹ năng ngắt hoặc khi có góc an toàn.",
+          "evidence": [
+            "academy-hayate",
+            "hayate"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-11-23"
+        }
+      ],
+      "passive.adjacent-physical": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "unit-near-main-target",
+            "trigger": "Đánh thường trúng mục tiêu chính",
+            "damage_type": "physical",
+            "delivery": "basic_attack",
+            "exceptions": [
+              "Sát thương lên quái rừng có điều chỉnh theo cấp."
+            ]
+          },
+          "evidence": [
+            "hayate"
+          ]
+        }
+      ],
+      "passive.energy": [
+        {
+          "value": {
+            "effect": "resource",
+            "target": "self",
+            "trigger": "Đủ sáu đòn hoặc lần chiêu trúng cùng một mục tiêu",
+            "delivery": "passive",
+            "stacks": 6
+          },
+          "evidence": [
+            "hayate"
+          ]
+        }
+      ],
+      "skill-2.dash": [
+        {
+          "value": {
+            "effect": "dash",
+            "target": "self",
+            "trigger": "Chọn hướng Ảnh biến",
+            "delivery": "ability",
+            "detail": "Có thể vượt địa hình."
+          },
+          "evidence": [
+            "hayate"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu",
+      "Thời gian tồn tại của điểm tích trước khi kích hoạt"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "omen",
+    "name": "Omen",
+    "aliases": [],
+    "facts": {
+      "tactics.split": [
+        {
+          "value": "Có thể gây áp lực đường biên nhờ đánh thường và giữ một người trong vùng đấu tay đôi. Đẩy lẻ phụ thuộc vị trí đối thủ, đường thoát và thời điểm đồng đội tranh mục tiêu.",
+          "evidence": [
+            "omen",
+            "academy-omen"
+          ],
+          "kind": "behavioral_tendency"
+        }
+      ],
+      "passive.stacks": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "self",
+            "trigger": "Đánh thường trúng mục tiêu",
+            "delivery": "basic_attack",
+            "stacks": 5,
+            "timing": {
+              "duration_s": 5
+            },
+            "detail": "Đạt ngưỡng vào trạng thái tăng tốc đánh và chạy; mỗi đòn thứ ba có hai lần đánh theo mô tả, bộ đếm đổi khi vào hoặc hết cường hóa."
+          },
+          "evidence": [
+            "omen"
+          ]
+        }
+      ],
+      "passive.cooldown-reduction": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Đánh thường khi đang cường hóa",
+            "delivery": "basic_attack",
+            "amount": {
+              "amount": 1,
+              "unit": "second"
+            },
+            "detail": "Trừ thời gian còn lại của chiêu 1 và 2."
+          },
+          "evidence": [
+            "omen"
+          ]
+        }
+      ],
+      "passive.true": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Đánh thường cường hóa trúng đích",
+            "damage_type": "true",
+            "delivery": "basic_attack"
+          },
+          "evidence": [
+            "omen"
+          ]
+        }
+      ],
+      "skill-2.mitigation": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Bật Sát niệm",
+            "delivery": "ability",
+            "timing": {
+              "duration_s": 2
+            }
+          },
+          "evidence": [
+            "omen"
+          ]
+        }
+      ],
+      "skill-2.reflect": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "attacking-hero",
+            "trigger": "Tướng địch đánh thường vào Omen trong Sát niệm",
+            "damage_type": "physical",
+            "delivery": "ability",
+            "timing": {
+              "duration_s": 2
+            },
+            "exceptions": [
+              "Mỗi tướng địch bị phản một lần."
+            ],
+            "interactions": [
+              "Áp hiệu ứng đòn đánh của Omen và tạo sát khí."
+            ]
+          },
+          "evidence": [
+            "omen"
+          ]
+        }
+      ],
+      "skill-3.duel": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "first-enemy-hero",
+            "trigger": "Lướt trúng tướng đầu tiên",
+            "delivery": "ability",
+            "timing": {
+              "duration_s": 5
+            },
+            "detail": "Giữ nạn nhân trong khu vực và giảm sát thương nạn nhân gây ra."
+          },
+          "evidence": [
+            "omen"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu",
+      "Loại hiệu ứng đòn đánh áp dụng lên trụ cần xác minh riêng"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "fennik",
+    "name": "Fennik",
+    "aliases": [
+      "Fen"
+    ],
+    "facts": {
+      "tactics.objective": [
+        {
+          "value": "Giữ khoảng bắn đủ lâu để tích Kíp nổ. Khi Fennik có thể chạm trụ hoặc mục tiêu, chú ý che đường vào và cắt nhịp bắn thay vì chỉ tính sát thương mở đầu.",
+          "evidence": [
+            "academy-fennik",
+            "fennik"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-11-23"
+        }
+      ],
+      "passive.vision": [
+        {
+          "value": {
+            "effect": "reveal",
+            "target": "target",
+            "trigger": "Ná thun phát hiện dấu vết",
+            "delivery": "passive",
+            "timing": {
+              "duration_s": 1,
+              "internal_cooldown_s": 6
+            },
+            "exceptions": [
+              "Hồi nội tại tính riêng từng đơn vị."
+            ]
+          },
+          "evidence": [
+            "fennik"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "kaine",
+    "name": "Kaine",
+    "aliases": [],
+    "facts": {
+      "tactics.ambush": [
+        {
+          "value": "Có xu hướng dùng tàng hình để đổi góc và tiếp cận chủ lực. Giữ kỹ năng bảo kê khi mất dấu Kaine.",
+          "evidence": [
+            "academy-kaine",
+            "kaine"
+          ],
+          "kind": "behavioral_tendency",
+          "status": "LIVE_VN",
+          "effective_from": "2026-10-15"
+        }
+      ],
+      "passive.stealth": [
+        {
+          "value": {
+            "effect": "stealth",
+            "target": "self",
+            "trigger": "Không còn địch đủ gần",
+            "delivery": "passive",
+            "detail": "Phạm vi và cửa sổ phát hiện chưa xác minh."
+          },
+          "evidence": [
+            "academy-kaine",
+            "kaine"
+          ],
+          "status": "LIVE_VN",
+          "effective_from": "2026-10-15"
+        }
+      ],
+      "skill-3.untargetable": [
+        {
+          "value": {
+            "effect": "untargetable",
+            "target": "self",
+            "trigger": "Trong lúc lướt Huyết Kích",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "kaine"
+          ]
+        }
+      ],
+      "skill-3.cc-immunity": [
+        {
+          "value": {
+            "effect": "cc_immunity",
+            "target": "self",
+            "trigger": "Trong lúc lướt Huyết Kích",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "kaine"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "ryoma",
+    "name": "Ryoma",
+    "aliases": [],
+    "facts": {
+      "skill-3.hit-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Mỗi nhát đâm chiêu cuối trúng tướng",
+            "delivery": "ability",
+            "detail": "Bốn nhát độc lập.",
+            "exceptions": [
+              "Trúng nhiều tướng trong một nhát không tăng hồi máu.",
+              "Hiệu lực giảm với đơn vị không phải tướng theo mô tả."
+            ]
+          },
+          "evidence": [
+            "ryoma"
+          ]
+        }
+      ],
+      "skill-2.edge-stun": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-at-outer-edge",
+            "trigger": "Trúng rìa Nhất Kích Tất Sát",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "ryoma"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "natalya",
+    "name": "Natalya",
+    "aliases": [
+      "Nat"
+    ],
+    "facts": {
+      "passive.magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Kỹ năng trúng địch",
+            "damage_type": "magic",
+            "delivery": "passive",
+            "stacks": 10,
+            "timing": {
+              "duration_s": 3
+            }
+          },
+          "evidence": [
+            "natalya"
+          ]
+        }
+      ],
+      "skill-3.beam": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-beam",
+            "trigger": "Kẻ địch đứng trong luồng chiêu cuối",
+            "damage_type": "magic",
+            "delivery": "ability",
+            "timing": {
+              "interval_s": 0.25
+            }
+          },
+          "evidence": [
+            "natalya"
+          ]
+        }
+      ],
+      "skill-3.cc-immunity": [
+        {
+          "value": {
+            "effect": "cc_immunity",
+            "target": "self",
+            "trigger": "Lá chắn chiêu cuối còn hiệu lực",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "natalya"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "richter",
+    "name": "Richter",
+    "aliases": [
+      "Riktor",
+      "Rickter"
+    ],
+    "facts": {
+      "skill-2.damage-immunity": [
+        {
+          "value": {
+            "effect": "damage_immunity",
+            "target": "self",
+            "trigger": "Dùng chiêu phòng thủ",
+            "delivery": "ability",
+            "timing": {
+              "duration_s": 0.75
+            },
+            "charges": 2
+          },
+          "evidence": [
+            "richter"
+          ]
+        }
+      ],
+      "skill-2.cc-immunity": [
+        {
+          "value": {
+            "effect": "cc_immunity",
+            "target": "self",
+            "trigger": "Dùng chiêu phòng thủ",
+            "delivery": "ability",
+            "timing": {
+              "duration_s": 0.75
+            }
+          },
+          "evidence": [
+            "richter"
+          ]
+        }
+      ],
+      "skill-3.silence": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "marked-target",
+            "trigger": "Mục tiêu bị đánh dấu nhận đủ năm nhịp chiêu 3",
+            "delivery": "ability",
+            "stacks": 5,
+            "timing": {
+              "duration_s": 1
+            },
+            "detail": "Câm lặng khi tích đủ các nhịp."
+          },
+          "evidence": [
+            "richter"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "ybneth",
+    "name": "Y’bneth",
+    "aliases": [
+      "Y'bneth",
+      "Yb"
+    ],
+    "facts": {
+      "passive.brush-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Vào bụi khi nội tại sẵn sàng",
+            "delivery": "passive",
+            "timing": {
+              "duration_s": 5,
+              "interval_s": 1
+            },
+            "detail": "Có hồi tài nguyên song song."
+          },
+          "evidence": [
+            "ybneth"
+          ]
+        }
+      ],
+      "skill-3.shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "Kích hoạt chiêu cuối",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "ybneth"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "yue",
+    "name": "Yue",
+    "aliases": [],
+    "facts": {
+      "tactics.poke": [
+        {
+          "value": "Gây áp lực từ xa bằng lặp chiêu và căn điểm giao, nhất là quanh cửa sông và lối vào mục tiêu.",
+          "evidence": [
+            "yue"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ],
+      "passive.reset": [
+        {
+          "value": {
+            "effect": "reset_cooldown",
+            "target": "self",
+            "trigger": "Tung chiêu 1 hoặc 2 để đủ hai cộng dồn",
+            "stacks": 2,
+            "delivery": "passive",
+            "detail": "Cường hóa và làm mới cả chiêu 1 lẫn chiêu 2."
+          },
+          "evidence": [
+            "yue"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "edras",
+    "name": "Edras",
+    "aliases": [],
+    "facts": {
+      "light.skill-2.heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Kiếm khí dạng Quang minh trúng mục tiêu",
+            "delivery": "ability",
+            "detail": "Có tối đa bốn đường kiếm."
+          },
+          "evidence": [
+            "edras"
+          ]
+        }
+      ],
+      "light.passive.cooldown": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Chiêu hoặc đòn đánh cường hóa dạng Quang minh trúng địch",
+            "delivery": "empowered_attack",
+            "amount": {
+              "amount": 1,
+              "unit": "second"
+            },
+            "detail": "Giảm hồi tất cả chiêu theo mô tả dạng Quang minh."
+          },
+          "evidence": [
+            "edras"
+          ]
+        }
+      ],
+      "light.form": [
+        {
+          "value": {
+            "effect": "transform",
+            "target": "self",
+            "trigger": "Học chiêu chuyển dạng",
+            "delivery": "ability"
+          },
+          "evidence": [
+            "edras"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu",
+      "Biến thể Hắc ám và phân bổ toàn bộ thành phần sát thương"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "raz",
+    "name": "Raz",
+    "aliases": [],
+    "facts": {
+      "tactics.ambush": [
+        {
+          "value": "Có thể cấu rỉa từ xa rồi chọn góc đẩy lệch đội hình khi đối thủ bước lên.",
+          "evidence": [
+            "raz"
+          ],
+          "kind": "behavioral_tendency"
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "arthur",
+    "name": "Arthur",
+    "aliases": [
+      "Arhur"
+    ],
+    "facts": {
+      "tactics.peel": [
+        {
+          "value": "Giữ chiêu áp sát và gây gián đoạn khi đối thủ lao vào chủ lực.",
+          "evidence": [
+            "arthur"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "butterfly",
+    "name": "Butterfly",
+    "aliases": [
+      "But",
+      "Bướm"
+    ],
+    "facts": {
+      "tactics.cleanup": [
+        {
+          "value": "Ưu tiên tránh để đồng đội đứng thấp máu cô lập. Sát thủ có thể nối pha truy đuổi sau khi mục tiêu ngã.",
+          "evidence": [
+            "academy-butterfly",
+            "patch-butterfly"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-11-25"
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "rouie",
+    "name": "Rouie",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "valhein",
+    "name": "Valhein",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "yena",
+    "name": "Yena",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "ignis",
+    "name": "Ignis",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "aoi",
+    "name": "Aoi",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "preyta",
+    "name": "Preyta",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "arduin",
+    "name": "Arduin",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "grakk",
+    "name": "Grakk",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "dirak",
+    "name": "Dirak",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "dyadia",
+    "name": "Dyadia",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "flowborn",
+    "name": "Flowborn",
+    "aliases": [
+      "Flowborn xạ thủ",
+      "Flowborn ADC",
+      "Flowborn marksman",
+      "Flowborn 1"
+    ],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "flowborn-2",
+    "name": "Flowborn",
+    "aliases": [
+      "Flowborn pháp sư",
+      "Flowborn mage",
+      "Flowborn mid",
+      "Flowborn 2"
+    ],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "ngo-khong",
+    "name": "Ngộ Không",
+    "aliases": [
+      "Wukong",
+      "Ngộ",
+      "NK"
+    ],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "dieu-thuyen",
+    "name": "Điêu Thuyền",
+    "aliases": [
+      "Diaochan",
+      "Diao Chan",
+      "DT"
+    ],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "lu-bo",
+    "name": "Lữ Bố",
+    "aliases": [
+      "Lu Bu",
+      "LB"
+    ],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "celica",
+    "name": "Celica",
+    "aliases": [
+      "Brunhilda"
+    ],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  },
+  {
+    "kind": "heroes",
+    "id": "jinna",
+    "name": "Jinna",
+    "aliases": [
+      "Jinnar"
+    ],
+    "facts": {},
+    "unknown": [
+      "Chỉ số gốc",
+      "Hồi chiêu theo cấp",
+      "Xác nhận cơ chế chưa định phiên bản",
+      "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+    ]
+  }
+]

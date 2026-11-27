@@ -1,0 +1,416 @@
+[
+  {
+    "kind": "items",
+    "id": "ao-choang-than-ra",
+    "name": "Áo choàng thần Ra",
+    "aliases": [
+      "Áo lửa",
+      "Áo Ra"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2060,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1000,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 225,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.regen": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "hp_per_5_seconds"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.burn": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "nearby-enemies",
+            "trigger": "Kẻ địch ở sát người mang áo khi tới nhịp Hỏa diệm",
+            "damage_type": "magic",
+            "delivery": "item",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.02
+                }
+              ]
+            },
+            "timing": {
+              "interval_s": 1
+            },
+            "unique_group": "hoa-diem",
+            "exceptions": [
+              "Tăng 50% sát thương lên lính hoặc quái theo danh mục."
+            ]
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.anti-heal": [
+        {
+          "value": {
+            "effect": "heal_reduction",
+            "target": "burned-target",
+            "trigger": "Hỏa diệm gây sát thương lên mục tiêu",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.4,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 3
+            },
+            "unique_group": "troc-na"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Màu nhận diện icon",
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ]
+  },
+  {
+    "kind": "items",
+    "id": "khien-that-truyen",
+    "name": "Khiên thất truyền",
+    "aliases": [
+      "KTT"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2100,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 275,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.slow-attack": [
+        {
+          "value": {
+            "effect": "attack_speed",
+            "target": "attacker",
+            "trigger": "Người mang khiên chịu sát thương từ đối thủ",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.3,
+              "unit": "ratio"
+            },
+            "detail": "Giảm tốc đánh, kèm giảm 15% tốc chạy; danh mục không nêu thời lượng.",
+            "unique_group": "linh-gac"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Màu nhận diện icon",
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ]
+  },
+  {
+    "kind": "items",
+    "id": "huan-chuong-troy",
+    "name": "Huân chương Troy",
+    "aliases": [
+      "Troy"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2320,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1000,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 200,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.magic-shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "Rời giao tranh",
+            "delivery": "item",
+            "detail": "Hấp thu 460–1300 sát thương phép theo danh mục. Có nội tại riêng cho giáp phép theo cấp.",
+            "unique_group": "ho-than"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Màu nhận diện icon",
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ]
+  },
+  {
+    "kind": "items",
+    "id": "giay-kien-cuong",
+    "name": "Giày kiên cường",
+    "aliases": [
+      "GKC"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 700,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 90,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move-speed": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "move_speed"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.tenacity": [
+        {
+          "value": {
+            "effect": "tenacity",
+            "target": "self",
+            "trigger": "Khi sở hữu giày theo danh mục",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.35,
+              "unit": "ratio"
+            },
+            "detail": "Cần kiểm tra ngoại lệ theo loại khống chế."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Màu nhận diện icon",
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ]
+  },
+  {
+    "kind": "items",
+    "id": "dai-dia-ma-nhan",
+    "name": "Đại địa ma nhãn",
+    "aliases": [
+      "Ma nhãn",
+      "Ma nhan"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.reveal": [
+        {
+          "value": {
+            "effect": "reveal",
+            "target": "nearby-area",
+            "trigger": "Bật Ma nhãn",
+            "delivery": "item",
+            "timing": {
+              "duration_s": 4,
+              "cooldown_s": 45
+            },
+            "detail": "Tạo tầm nhìn chuẩn quanh người mang. Phạm vi cụ thể và tương tác với phiên bản tàng hình hiện tại còn cần thử."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Màu nhận diện icon",
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ]
+  },
+  {
+    "kind": "items",
+    "id": "khien-thanh-quang",
+    "name": "Khiên Thánh Quang",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Màu nhận diện icon",
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN",
+      "Giá vàng hiện hành"
+    ]
+  },
+  {
+    "kind": "items",
+    "id": "vo-anh-tien",
+    "name": "Vô ảnh tiễn",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Màu nhận diện icon",
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN",
+      "Giá vàng hiện hành"
+    ]
+  },
+  {
+    "kind": "items",
+    "id": "giap-thong-kho",
+    "name": "Giáp thống khổ",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Màu nhận diện icon",
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN",
+      "Giá vàng hiện hành"
+    ]
+  }
+]

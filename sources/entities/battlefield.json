@@ -1,0 +1,38 @@
+[
+  {
+    "kind": "battlefield",
+    "id": "ranked-vn",
+    "name": "Chiến trường xếp hạng Việt Nam",
+    "aliases": [],
+    "facts": {
+      "tactics.mid-priority": [
+        {
+          "value": "Khi đợt lính giữa đã an toàn và biết đường rút, tận dụng nhịp di chuyển để kiểm soát cửa sông, hỗ trợ cánh hoặc vào mục tiêu cùng đồng đội. Nếu phải bỏ lính, vòng rừng hoặc chủ lực đang bị ép, nhường quyền đến trước và gọi đổi phía.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ],
+      "tactics.objective-trade": [
+        {
+          "value": "Xét quyền đường, vị trí người cầm Trừng trị, tầm nhìn và quân số trước khi mở mục tiêu. Nếu địch có lợi thế tiếp cận, cân nhắc đẩy trụ hoặc đổi mục tiêu ở cánh còn lại.",
+          "evidence": [
+            "patch-battlefield"
+          ],
+          "kind": "tactical_heuristic",
+          "status": "LIVE_VN",
+          "effective_from": "2026-09-29"
+        }
+      ]
+    },
+    "unknown": [
+      "Lịch xuất hiện lính, quái và bùa theo phút",
+      "Khung tầm nhìn bụi, kinh tế và chia sẻ EXP đầy đủ",
+      "Luật giai đoạn trụ và cơ chế bù kinh tế",
+      "Điều kiện cụ thể của Boss ở từng nhánh"
+    ]
+  }
+]

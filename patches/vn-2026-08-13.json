@@ -1,0 +1,184 @@
+{
+  "id": "vn-2026-08-13",
+  "title": "Ngày hội Liên Quân 2026-08-13",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-08-13",
+  "evidence": "patch-aug",
+  "changes": [
+    {
+      "entity": "heroes/thane",
+      "property": "skill-3.damage-heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu 3 gây sát thương thành công",
+          "delivery": "ability",
+          "formula": {
+            "unit": "hp",
+            "base": 0,
+            "terms": [
+              {
+                "basis": "damage_dealt",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/arthur",
+      "property": "skill-2.shield",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Chiêu 2 cấp lá chắn",
+          "delivery": "ability",
+          "formula": {
+            "unit": "hp",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/bolt-baron",
+      "property": "skill-1.cooldown",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Thiên lôi bộ",
+          "delivery": "ability",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 9,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      },
+      "previous": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Thiên lôi bộ",
+          "delivery": "ability",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 11,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-08-13"
+      }
+    },
+    {
+      "entity": "heroes/bolt-baron",
+      "property": "skill-3.cooldown",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Ngạo khung thiên",
+          "delivery": "ability",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 60,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -6
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13"
+      },
+      "previous": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Ngạo khung thiên",
+          "delivery": "ability",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 60,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-08-13"
+      }
+    }
+  ],
+  "review_notes": [
+    "Phần lý do của Bolt Baron ghi Chiêu 2, phần thông số liệt kê Chiêu 1 và Chiêu 3. Hai thuộc tính dùng phần thông số.",
+    "Thông báo ghi sát thương gốc Chiêu 3 Thane là vật lý. Trang kỹ năng mô tả phần chuẩn cộng phần vật lý theo máu đã mất; cần kiểm thử từng thành phần."
+  ]
+}

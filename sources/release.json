@@ -1,0 +1,13 @@
+{
+  "patch_id": "vn-2026-11-26",
+  "as_of": "2026-11-27",
+  "readiness": "PARTIAL_READY",
+  "gaps": [
+    "Đối chiếu danh sách công khai với danh sách khóa/chọn trong game.",
+    "Thiếu bộ chiêu, chỉ số gốc, hồi chiêu và tương tác có hiệu lực cho phần lớn tướng.",
+    "Thiếu danh mục trang bị hiện hành đầy đủ, công thức ghép, màu icon và quy tắc mua.",
+    "Thiếu bảng ngọc, phù hiệu, giới hạn giảm hồi chiêu và luật chiến trường đầy đủ.",
+    "Nhiều trang Học viện thiếu mốc hiệu lực; giữ lại để kiểm tra.",
+    "Cần phép theo dõi tự động Garena và kiểm thử kết nối ChatGPT Cloud."
+  ]
+}

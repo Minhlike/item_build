@@ -1,0 +1,690 @@
+{
+  "id": "vn-2026-09-29",
+  "title": "Vết Nứt Thời Không 2026-09-29",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-09-29",
+  "evidence": "patch-sep",
+  "changes": [
+    {
+      "entity": "items/khien-thanh-quang",
+      "property": "stat.cooldown-reduction",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/khien-thanh-quang",
+      "property": "stat.armor",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 180,
+          "unit": "armor"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/khien-thanh-quang",
+      "property": "stat.hp",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1000,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/khien-thanh-quang",
+      "property": "passive.shield-melee",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self-and-lowest-health-nearby-ally",
+          "trigger": "Người mang nhóm melee gây sát thương lên tướng bằng đánh thường hoặc chiêu",
+          "delivery": "item",
+          "timing": {
+            "duration_s": 3,
+            "internal_cooldown_s": 10
+          },
+          "detail": "Lá chắn có phần gốc 250–500 và thêm 4% máu tối đa. Nguồn chưa làm rõ chủ thể máu tối đa hoặc cách chọn mốc gốc.",
+          "exceptions": [
+            "Thiếu đồng minh gần đó thì giá trị lá chắn tăng 50%."
+          ]
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/khien-thanh-quang",
+      "property": "passive.shield-ranged",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self-and-lowest-health-nearby-ally",
+          "trigger": "Người mang nhóm ranged gây sát thương lên tướng bằng đánh thường hoặc chiêu",
+          "delivery": "item",
+          "timing": {
+            "duration_s": 3,
+            "internal_cooldown_s": 12.5
+          },
+          "detail": "Lá chắn có phần gốc 250–500 và thêm 4% máu tối đa. Nguồn chưa làm rõ chủ thể máu tối đa hoặc cách chọn mốc gốc.",
+          "exceptions": [
+            "Thiếu đồng minh gần đó thì giá trị lá chắn tăng 50%."
+          ]
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "stat.ad",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 40,
+          "unit": "attack_damage"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "stat.attack-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.2,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "stat.critical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.2,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "stat.hp",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 650,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "active.stealth-melee",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Bật Vô hình khi người mang thuộc nhóm melee",
+          "delivery": "item",
+          "timing": {
+            "duration_s": 1,
+            "cooldown_s": 75
+          },
+          "ends_when": "Dùng chiêu, đánh thường hoặc hết thời lượng."
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "active.stealth-ranged",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Bật Vô hình khi người mang thuộc nhóm ranged",
+          "delivery": "item",
+          "timing": {
+            "duration_s": 2.5,
+            "cooldown_s": 75
+          },
+          "ends_when": "Dùng chiêu, đánh thường hoặc hết thời lượng."
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "active.heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Trong thời gian Vô hình",
+          "delivery": "item",
+          "timing": {
+            "interval_s": 0.5
+          },
+          "detail": "130–260 HP mỗi nhịp, nguồn chưa ghi rõ mốc tăng."
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/vo-anh-tien",
+      "property": "active.speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Trong thời gian Vô hình",
+          "delivery": "item",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "detail": "Tăng tốc chạy."
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/giap-thong-kho",
+      "property": "stat.ad",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 50,
+          "unit": "attack_damage"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/giap-thong-kho",
+      "property": "stat.armor",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 300,
+          "unit": "armor"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/giap-thong-kho",
+      "property": "stat.hp",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/giap-thong-kho",
+      "property": "passive.reflect",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "damage-dealer",
+          "trigger": "Nhận sát thương",
+          "damage_type": "true",
+          "delivery": "item",
+          "formula": {
+            "unit": "damage",
+            "base": 0,
+            "terms": [
+              {
+                "basis": "incoming_pre_mitigation_damage",
+                "coefficient": 0.05
+              }
+            ]
+          },
+          "unique_group": "phan-phe",
+          "exceptions": [
+            "Suy giảm theo khoảng cách, tối đa giảm 50%."
+          ]
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "items/giap-thong-kho",
+      "property": "active.reflect",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Bật Phản Pháo",
+          "delivery": "item",
+          "amount": {
+            "amount": 0.25,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 3,
+            "cooldown_s": 75
+          },
+          "detail": "Đặt tỷ lệ của Phản phệ lên 25% trong cửa sổ; vẫn xét khoảng cách."
+        },
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "enchantments/vuc-hon-mang",
+      "property": "tier-2.san-nha",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Ở nửa bản đồ thuộc phe mình",
+          "amount": {
+            "amount": 0.03,
+            "unit": "ratio"
+          },
+          "detail": "Tăng riêng cả sát thương và tốc chạy theo cùng tỷ lệ."
+        },
+        "evidence": [
+          "patch-enchantments"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "enchantments/rung-nguyen-sinh",
+      "property": "tier-2.cuu-vien",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self-and-nearby-allied-heroes",
+          "trigger": "Đến nhịp Cứu viện khi trang bị phù hiệu",
+          "formula": {
+            "unit": "hp",
+            "base": 210,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 15
+              }
+            ]
+          },
+          "timing": {
+            "interval_s": 15
+          }
+        },
+        "evidence": [
+          "patch-enchantments"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "spells/dich-chuyen",
+      "property": "active.teleport",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "teleport",
+          "target": "self",
+          "trigger": "Chọn công trình đồng minh, kể cả trụ đổ, hoặc lính đồng minh",
+          "delivery": "spell",
+          "timing": {
+            "cast_s": 2,
+            "cooldown_s": 90
+          },
+          "detail": "Đơn vị được chọn miễn sát thương trong thời gian vận chiêu.",
+          "exceptions": [
+            "Hủy phép hoặc dùng trong 30 giây sau khi đi qua Cổng dịch chuyển thì hồi chiêu giảm 30 giây."
+          ]
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "spells/ma-chung-hac-am",
+      "property": "active.remaining-cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Kích hoạt phép giới hạn mùa",
+          "delivery": "spell",
+          "amount": {
+            "amount": 0.5,
+            "unit": "ratio"
+          },
+          "timing": {
+            "cooldown_s": 100
+          },
+          "detail": "Giảm một nửa thời gian hồi còn lại của các kỹ năng; khác với giảm hồi chiêu theo chỉ số."
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "spells/ma-chung-hac-am",
+      "property": "active.shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Kích hoạt phép giới hạn mùa",
+          "delivery": "spell",
+          "formula": {
+            "unit": "hp",
+            "base": 280,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20,
+                "origin": 0
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "spells/ma-chung-hac-am",
+      "property": "active.magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemy",
+          "trigger": "Ma vật triệu hồi gây sát thương",
+          "damage_type": "magic",
+          "delivery": "spell",
+          "formula": {
+            "unit": "damage",
+            "base": 280,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20,
+                "origin": 0
+              }
+            ]
+          },
+          "interactions": [
+            "Kèm giảm tốc chạy 30% trong một giây."
+          ]
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.portal-cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "teleport",
+          "target": "self",
+          "trigger": "Dùng Cổng dịch chuyển",
+          "delivery": "battlefield",
+          "timing": {
+            "cooldown_s": 60
+          }
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.boss-evolution",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "boss",
+          "trigger": "Trận vào phút 20",
+          "delivery": "battlefield",
+          "amount": {
+            "amount": 1200,
+            "unit": "second"
+          },
+          "detail": "Boss cường hóa và đi tuần sông; đội hạ Boss nhận Hắc Ám Tối Thượng và ba đợt Caesar tiên phong."
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "caesar.vanguard-waves",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "amount": 2,
+          "unit": "count"
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      },
+      "previous": {
+        "value": {
+          "amount": 1,
+          "unit": "count"
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-09-29"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "caesar.vanguard-gold",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "allied-team",
+          "trigger": "Caesar tiên phong tiêu diệt lính",
+          "delivery": "battlefield",
+          "detail": "Đồng minh được chia vàng; tỷ lệ chia chưa xác minh."
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.boss-first-selection",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "trigger": "Trận tới phút 15",
+          "delivery": "battlefield",
+          "amount": {
+            "amount": 900,
+            "unit": "second"
+          },
+          "detail": "Một trong Caesar bạo chúa, Rồng bạo chúa Kraydus và King Kong xuất hiện tại hang Rồng hoặc Caesar theo lựa chọn ngẫu nhiên."
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.boss-respawn",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "trigger": "Boss đã bị hạ",
+          "delivery": "battlefield",
+          "timing": {
+            "cooldown_s": 180
+          }
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29"
+      },
+      "previous": {
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "trigger": "Boss đã bị hạ",
+          "delivery": "battlefield",
+          "timing": {
+            "cooldown_s": 210
+          }
+        },
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-09-29"
+      }
+    }
+  ],
+  "review_notes": []
+}

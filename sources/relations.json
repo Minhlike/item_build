@@ -1,0 +1,113 @@
+[
+  {
+    "id": "ra-allain",
+    "subject": "items/ao-choang-than-ra#passive.anti-heal",
+    "predicate": "COUNTERS",
+    "object": "heroes/allain#passive.hit-heal",
+    "condition": "Đứng trong vùng đốt và áp giảm hồi trước khi Allain chạm ngưỡng hồi.",
+    "scope": "ranked_solo_vn",
+    "evidence": [
+      "academy-items",
+      "allain"
+    ],
+    "kind": "derived_knowledge"
+  },
+  {
+    "id": "ma-nhan-kaine",
+    "subject": "items/dai-dia-ma-nhan#active.reveal",
+    "predicate": "COUNTERS",
+    "object": "heroes/kaine#passive.stealth",
+    "condition": "Chỉ áp dụng nếu tầm nhìn chuẩn bao phủ đường vào và cửa sổ Kaine còn tàng hình.",
+    "scope": "ranked_solo_vn",
+    "evidence": [
+      "academy-items",
+      "kaine"
+    ],
+    "kind": "derived_knowledge"
+  },
+  {
+    "id": "thattruyen-allain",
+    "subject": "items/khien-that-truyen#passive.slow-attack",
+    "predicate": "MITIGATES",
+    "object": "heroes/allain#passive.hit-heal",
+    "condition": "Allain phải gây sát thương vào người mang khiên; giá trị phụ thuộc phần chuỗi đánh thật sự bị làm chậm.",
+    "scope": "ranked_solo_vn",
+    "evidence": [
+      "academy-items",
+      "allain"
+    ],
+    "kind": "derived_knowledge"
+  },
+  {
+    "id": "thane-shield",
+    "subject": "heroes/thane#tactics.peel",
+    "predicate": "SYNERGIZES_WITH",
+    "object": "items/khien-thanh-quang",
+    "condition": "Thane phải gây sát thương lên tướng địch đủ gần để cấp lá chắn cho đồng minh cần giữ.",
+    "scope": "ranked_solo_vn",
+    "evidence": [
+      "academy-butterfly",
+      "patch-items",
+      "thane"
+    ],
+    "status": "LIVE_VN",
+    "effective_from": "2026-11-25",
+    "kind": "derived_knowledge"
+  },
+  {
+    "id": "thane-butterfly-peel",
+    "subject": "heroes/thane#tactics.peel",
+    "predicate": "MITIGATES",
+    "object": "heroes/butterfly#tactics.cleanup",
+    "condition": "Giữ chiêu đẩy khi Butterfly có góc tiếp cận; cần đứng đủ gần chủ lực.",
+    "scope": "ranked_solo_vn",
+    "evidence": [
+      "academy-butterfly"
+    ],
+    "status": "LIVE_VN",
+    "effective_from": "2026-11-25",
+    "kind": "tactical_heuristic"
+  },
+  {
+    "id": "omen-cooldown",
+    "subject": "heroes/omen#passive.stacks",
+    "predicate": "ENABLES_TACTIC",
+    "object": "heroes/omen#tactics.split",
+    "condition": "Cần đủ lượt đánh trúng để vào cửa sổ cường hóa và giữ đường rút khi kéo cánh.",
+    "scope": "ranked_solo_vn",
+    "evidence": [
+      "omen"
+    ],
+    "kind": "derived_knowledge"
+  },
+  {
+    "id": "fennik-objective",
+    "subject": "heroes/fennik#skill-1.detonation",
+    "predicate": "ENABLES_TACTIC",
+    "object": "heroes/fennik#tactics.objective",
+    "condition": "Chỉ có nổ sớm khi đủ đòn lên đúng mục tiêu.",
+    "scope": "ranked_solo_vn",
+    "evidence": [
+      "patch-fennik",
+      "academy-fennik",
+      "fennik"
+    ],
+    "status": "LIVE_VN",
+    "effective_from": "2026-11-23",
+    "kind": "derived_knowledge"
+  },
+  {
+    "id": "ranked-teleport",
+    "subject": "battlefield/ranked-vn#season.portal-cooldown",
+    "predicate": "SYNERGIZES_WITH",
+    "object": "spells/dich-chuyen#active.teleport",
+    "condition": "Cửa sổ 30 giây kể từ khi dùng Cổng có thể rút 30 giây hồi phép. Kiểm tra khả dụng theo hàng chờ.",
+    "scope": "ranked_solo_vn",
+    "evidence": [
+      "patch-battlefield"
+    ],
+    "status": "LIVE_VN",
+    "effective_from": "2026-09-29",
+    "kind": "derived_knowledge"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "hero": "thane",
+  "role": "support",
+  "kind": "user_preference",
+  "runes": {
+    "red": {"id": "do-iii-toc-danh-mau-giap", "count": 10},
+    "purple": {"id": "tim-iii-mau-hoi-mau-toc-chay", "count": 10},
+    "green": {"id": "xanh-iii-giap-giap-phep", "count": 10}
+  },
+  "spell": "toc-bien"
+}

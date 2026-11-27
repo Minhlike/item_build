@@ -1,0 +1,76 @@
+{
+  "id": "vn-2026-07-08",
+  "title": "Ngày hội Liên Quân 2026-07-08",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-07-08",
+  "evidence": "patch-july",
+  "changes": [
+    {
+      "entity": "spells/trung-tri",
+      "property": "active.charges",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "charge",
+          "target": "self",
+          "trigger": "Hồi lượt Trừng trị hoặc Tê Cóng",
+          "delivery": "spell",
+          "charges": 2,
+          "timing": {
+            "cooldown_s": 10,
+            "recharge_s": 45
+          },
+          "detail": "Giãn cách sử dụng và thời gian hồi một lượt là hai bộ đếm riêng."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "spells/trung-tri",
+      "property": "active.pve-true",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "nearby-monsters-and-minions",
+          "trigger": "Kích hoạt Trừng trị hoặc Tê Cóng",
+          "damage_type": "true",
+          "delivery": "spell",
+          "interactions": [
+            "Làm choáng các mục tiêu PvE trong 1 giây."
+          ]
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "items.active-shared-cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Sở hữu đồng thời nhiều trang bị chủ động",
+          "delivery": "battlefield",
+          "detail": "Có thêm nút kích hoạt; các trang bị chủ động vẫn dùng chung hồi chiêu theo quy tắc."
+        },
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08"
+      }
+    }
+  ],
+  "review_notes": []
+}

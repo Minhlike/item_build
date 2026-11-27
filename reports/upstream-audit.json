@@ -1,0 +1,142 @@
+{
+  "snapshot": {
+    "repository": "https://github.com/MLuc24/lien-quan-data.git",
+    "sha": "a210fe47690de7cefd18f76b61694724e02fdb5e",
+    "source_committed_at": "2026-11-23T09:54:27Z",
+    "files": {
+      "data/heroes.json": {
+        "sha256": "34a3806b31726aa16b160fb78ce845a03d83a69ae8488c93db62fb1b53f684e1",
+        "bytes": 1738639
+      },
+      "data/items.json": {
+        "sha256": "746f1582aa5c1bbb22dc570933cceba842ee4e7fe2f8337049884168736e5a0e",
+        "bytes": 79740
+      },
+      "data/runes.json": {
+        "sha256": "93bb6db20562745822c4df23cda1bf65a38807a6a7f2283e0275b76944f0d45a",
+        "bytes": 36814
+      },
+      "data/badges.json": {
+        "sha256": "8b803598b3aef6a971f635bfe42afdbd062de914667df82d8dfe174376e5f90c",
+        "bytes": 11455
+      },
+      "data/spells.json": {
+        "sha256": "52411db7c9000fa979e36e349200b08909f65302e3ab33079c4102eab1fceb28",
+        "bytes": 3583
+      },
+      "data/modes.json": {
+        "sha256": "1c3bb03442e31e811f2338a19d9e0b9706a411a9989ea08c31a9278720181e58",
+        "bytes": 3407
+      },
+      "data/name-aliases.json": {
+        "sha256": "53bba8eb1b8530219f587d17d06de33905ec88dcc03f67a6ae96ceebddac19d7",
+        "bytes": 1661
+      },
+      "data/crawl-info.json": {
+        "sha256": "8807fd429b710f56e9b61f6d881551bf9e2319b29ba2938b18fba4265867b9ff",
+        "bytes": 209
+      }
+    }
+  },
+  "counts": {
+    "heroes": 130,
+    "items": 112,
+    "runes": 88,
+    "badges": 4,
+    "spells": 9,
+    "modes": 5,
+    "name-aliases": 6,
+    "crawl-info": 2
+  },
+  "duplicate_ids": {
+    "heroes": [],
+    "items": [],
+    "runes": [],
+    "badges": [],
+    "spells": [],
+    "modes": []
+  },
+  "hero_coverage": {
+    "base_stats_any": 103,
+    "base_stats_by_key": {
+      "abilitypower": 88,
+      "armor": 103,
+      "armorpierce": 58,
+      "attackdamage": 101,
+      "attackrange": 103,
+      "attackspeed": 102,
+      "cooldownspeed": 99,
+      "criticalchance": 101,
+      "criticaldamage": 100,
+      "hpregen": 97,
+      "lifesteal": 101,
+      "magicdefense": 103,
+      "magiclifesteal": 101,
+      "magicpierce": 101,
+      "mana": 93,
+      "manaregen": 90,
+      "maxhp": 101,
+      "movementspeed": 100
+    },
+    "base_stats_thane": 0,
+    "balance_history_any": 17,
+    "source_by_key": {
+      "fandomEn": 128,
+      "fandomVi": 129,
+      "garena": 130
+    },
+    "skills": 520,
+    "slots": {
+      "1": 130,
+      "2": 130,
+      "3": 130,
+      "passive": 130
+    },
+    "descriptions": 520,
+    "explicit_cooldown_fields": 0,
+    "true_damage_text_single_type_label": [
+      "aleister",
+      "allain",
+      "arduin",
+      "astrid",
+      "bijan",
+      "bright",
+      "dextra",
+      "florentino",
+      "hayate",
+      "ignis",
+      "lauriel",
+      "max",
+      "ming",
+      "omega",
+      "omen",
+      "richter",
+      "slimz",
+      "tachi",
+      "thane",
+      "trieu-van",
+      "veres",
+      "wonder-woman",
+      "yorn"
+    ],
+    "identity_reconciliations": {
+      "11596": "edras"
+    },
+    "only_upstream": [],
+    "only_official_roster": []
+  },
+  "item_coverage": {
+    "stats_any": 112,
+    "passives_any": 87,
+    "recipes_explicit": 0,
+    "khiên_thánh_quang": false
+  },
+  "runes_with_stats": 86,
+  "enchantment_nodes": 31,
+  "alias_counts": {
+    "vi": 2,
+    "en": 7,
+    "buildNames": 1
+  },
+  "pipeline": "Garena: mô tả kỹ năng và hệ thống. Fandom EN: chỉ số. Fandom VI: nhãn và build. Các ô thiếu và nhãn suy ra cần kiểm chứng."
+}
