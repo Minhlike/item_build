@@ -1,0 +1,54 @@
+{
+  "tokenizer": "o200k_base",
+  "scope": "Same compiled records; individual versus grouped file reads. One file per call is an estimate. Connector latency was not measured.",
+  "cases": {
+    "thane_support_draft": {
+      "entity_count": 27,
+      "live_facts": 20,
+      "candidate_facts": 102,
+      "same_claims_conditions_and_unknowns": true,
+      "individual": {
+        "file_reads": 27,
+        "bytes": 42291,
+        "tokens": 11234
+      },
+      "grouped": {
+        "file_reads": 3,
+        "bytes": 37285,
+        "tokens": 10063
+      }
+    },
+    "mage_preparation": {
+      "entity_count": 48,
+      "live_facts": 55,
+      "candidate_facts": 146,
+      "same_claims_conditions_and_unknowns": true,
+      "individual": {
+        "file_reads": 48,
+        "bytes": 61665,
+        "tokens": 16707
+      },
+      "grouped": {
+        "file_reads": 6,
+        "bytes": 53032,
+        "tokens": 14537
+      }
+    },
+    "whole_catalog": {
+      "entity_count": 91,
+      "live_facts": 119,
+      "candidate_facts": 279,
+      "same_claims_conditions_and_unknowns": true,
+      "individual": {
+        "file_reads": 91,
+        "bytes": 125168,
+        "tokens": 33792
+      },
+      "grouped": {
+        "file_reads": 10,
+        "bytes": 109130,
+        "tokens": 29926
+      }
+    }
+  }
+}

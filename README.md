@@ -24,17 +24,19 @@ uv run item-build enrich --hero thane
 uv run item-build query --hero "trieu van" --canonical
 uv run item-build query --hero edras --local-upstream
 uv run item-build context --hero thane --role support --enemies "trieu van" "bolt baron" allain natalya ryoma
+uv run item-build context --hero thane --role support --enemies arthur violet natalya ryoma quillen --include-candidates
 uv run item-build context --mode hero_preparation --hero hayate --role dragon
 uv run item-build cooldown --entity spells/dich-chuyen --property active.teleport
 uv run item-build compile
 uv run item-build validate
 uv run pytest -q
 uv run item-build benchmark
+uv run item-build benchmark --catalogs
 ```
 
-`ingest` kiểm tra SHA pin, tái sử dụng Git object đã tải, lưu blob gốc và manifest SHA-256 ở `.local/raw/`, rồi tạo bản dùng để rà soát ở `.local/clean/`. `audit` tính lại báo cáo từ toàn bộ các tệp. `enrich` liệt kê dữ liệu thiếu, thuộc tính chờ thẩm định và gợi ý truy vấn theo bốn ngôn ngữ. `query --local-upstream` dành cho rà soát cục bộ sau khi chạy ingest, với nhãn `local_unverified`.
+`ingest` kiểm tra SHA pin, tái sử dụng Git object đã tải, lưu blob gốc và manifest SHA-256 ở `.local/raw/`, rồi tạo bản rà soát ở `.local/clean/` và `.local/review/<SHA>/`. Bản rà soát theo tướng giữ toàn văn từng kỹ năng kèm vị trí cụm cơ chế và trị số tìm thấy. Các cụm dò được dùng để tìm đoạn cần đọc. `audit` tính lại báo cáo từ toàn bộ nguồn. `enrich` liệt kê dữ liệu thiếu, thuộc tính chờ thẩm định và gợi ý truy vấn theo bốn ngôn ngữ. `query --local-upstream` đọc hồ sơ cục bộ sau khi chạy ingest, với nhãn `local_unverified`.
 
-`context` lấy các pack liên quan cho tác nhân phân tích. `cooldown` đọc hồi chiêu cơ bản đã xác minh, phân biệt thời gian hồi lượt với hồi chiêu và từ chối tính theo cấp khi thiếu mốc cấp. Cặp `--cdr` và `--cap` mô phỏng riêng công thức giảm hồi chiêu chuẩn theo giả định nhập vào. Reset, giảm thời gian hồi còn lại và hồi lượt được biểu diễn theo từng cơ chế.
+`context` lấy các pack liên quan cho tác nhân phân tích. Thêm `--include-candidates` để đưa vào dữ kiện chưa có mốc hiệu lực, suy luận và mâu thuẫn, kèm nguồn. `catalogs` trong index trỏ tới các pack nhóm đã biên dịch, gồm cả đồ thành phần. Khi có ID tướng và vị trí trùng khớp, `preferences` trỏ tới hồ sơ cá nhân. `cooldown` đọc hồi chiêu cơ bản đã xác minh, phân biệt thời gian hồi lượt với hồi chiêu và từ chối tính theo cấp khi thiếu mốc cấp. Cặp `--cdr` và `--cap` mô phỏng riêng công thức giảm hồi chiêu chuẩn theo giả định nhập vào. Reset, giảm thời gian hồi còn lại và hồi lượt được biểu diễn theo từng cơ chế.
 
 ## Dữ liệu và quyền nguồn
 
@@ -44,7 +46,7 @@ uv run item-build benchmark
 | Clean | `.local/clean/` | Bỏ hình ảnh và nội dung trang trí, giữ mô tả và điều kiện để rà soát |
 | Cơ chế và ngữ cảnh | `sources/`, `patches/`, `overrides/` | Sự kiện độc lập, lịch sử thuộc tính, quan hệ có điều kiện và bằng chứng |
 | Canonical | `knowledge/` | Hồ sơ đầy đủ theo ID và đồ thị JSON có kiểu |
-| Packs | `packs/` | Phiên bản nhỏ gọn với thuộc tính LIVE_VN, đường dẫn ngược và khoảng trống |
+| Packs | `packs/` | LIVE_VN, ứng viên có lớp bằng chứng, pack nhóm và đường dẫn tới canonical |
 | Truy xuất | `packs/INDEX.json`, CLI | Tra ID, alias và lỗi chính tả bằng chỉ mục trong RAM |
 
 Khóa `kind` mặc định là `mechanical_fact`; khóa `status` mặc định là `UNVERIFIED` ở hồ sơ gốc. Các thuộc tính tình huống dùng `derived_knowledge`, `behavioral_tendency` hoặc `tactical_heuristic`. Thiếu giá trị là thiếu dữ liệu. Công thức dùng AST tuyến tính gồm gốc, hệ số và cơ sở có kiểu. `origin` là mốc cấp để tính phần tăng trưởng; nếu vắng, bảng chi tiết giữ nguyên số liệu công bố và CLI yêu cầu xác minh mốc trước khi tính. `unspecified_ad` giữ nguyên bất định giữa công cơ bản, cộng thêm và tổng.
@@ -61,4 +63,4 @@ Registry tại `knowledge/sources/registry.json` lưu phạm vi khai thác và p
 
 Theo dõi HTTP chỉ hoạt động với `acquisition: approved_http`, `permission_ref` và `monitor_urls` hợp lệ. Chương trình kiểm tra robots, dùng ETag và Last-Modified, băm nội dung và lưu checkpoint cục bộ. Thay đổi phát hiện được chờ thẩm định trước khi trở thành thuộc tính. [Điều khoản Garena Việt Nam](https://garena.vn/terms)
 
-Số liệu chi tiết ở [báo cáo kiểm định](reports/upstream-audit.json), [benchmark](reports/benchmark.json) và [trạng thái bàn giao](reports/handoff.md).
+Xem [bàn giao Phase 2](reports/phase2.md), [kiểm định upstream](reports/upstream-audit.json), [benchmark pack nhóm](reports/catalog-benchmark.json) và [bộ câu hỏi nghiệm thu](evaluations/reasoning.md). [Bàn giao Phase 1](reports/handoff.md) và [benchmark Phase 1](reports/benchmark.json) lưu số liệu tại checkpoint ban đầu.
