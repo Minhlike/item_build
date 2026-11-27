@@ -1,0 +1,107 @@
+{
+  "id": "liet-hoa-hoi-huyet",
+  "kind": "items",
+  "name": "Liệt hỏa hồi huyết",
+  "facts": {
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1200.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "active.hoi-huyet": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self-and-lowest-hp-nearby-allied-hero",
+          "delivery": "item",
+          "trigger": "Bấm khi còn lượt sạc và có đồng minh trong tầm nối dây.",
+          "activation": "manual",
+          "detail": "Dây đứt khi quá tầm. Mô tả PvP giảm còn 20% hiệu lực, chưa rõ áp cho ai và trong bao lâu. Chưa rõ HP của ai dùng làm cơ sở.",
+          "timing": {
+            "duration_s": 5.0,
+            "recharge_s": 50.0
+          },
+          "charges": 2
+        }
+      }
+    ],
+    "active.independent-recharge": [
+      {
+        "evidence": [
+          "patch-2025-04-23-support-recharge",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-04-23",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đang sạc lượt Hồi Huyết.",
+          "activation": "manual",
+          "detail": "Bản vá xác nhận độc lập với hồi trang bị trợ thủ khác; cần kiểm tra giữ lượt/cấu hình khi đổi nhánh.",
+          "exceptions": [
+            "Sạc theo bộ đếm riêng của Hồi Huyết."
+          ]
+        }
+      }
+    ],
+    "shop.tier": [
+      {
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 3.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "stat.price": [
+      {
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "support",
+  "relations": []
+}

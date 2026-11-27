@@ -1,0 +1,84 @@
+{
+  "id": "vn-2025-07-31",
+  "title": "Ngày hội Liên Quân, đối chiếu Chớp giật",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2025-07-31",
+  "evidence": "patch-2025-07-31-lightning",
+  "changes": [
+    {
+      "entity": "items/guom-sam-set",
+      "property": "passive.lightning-on-hit",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "actor": "caster",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đánh thường trúng.",
+          "activation": "automatic",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 45,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 3
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 0.3
+          },
+          "unique_group": "chop-giat",
+          "detail": "Hồi nội tại 0,3 giây. Chưa rõ mốc cấp của biểu thức."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-31",
+        "evidence": [
+          "patch-2025-07-31-lightning",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/guom-sam-set",
+      "property": "passive.lightning-chain",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "actor": "caster",
+          "target": "target-and-nearby",
+          "delivery": "item",
+          "trigger": "Đủ ba đòn đánh thường.",
+          "activation": "automatic",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 0.3
+          },
+          "unique_group": "chop-giat",
+          "detail": "Sét lan; cùng nhóm nội tại với phần cộng thêm đòn đánh."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-31",
+        "evidence": [
+          "patch-2025-07-31-lightning",
+          "academy-items"
+        ]
+      }
+    }
+  ]
+}

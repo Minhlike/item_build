@@ -18,35 +18,35 @@
   "coverage": {
     "heroes": {
       "entities": 130,
-      "entities_with_live_facts": 83,
-      "live_properties": 241,
-      "review_claims": 79,
-      "live_mechanics": 233,
-      "mechanical_properties_any": 296
+      "entities_with_live_facts": 84,
+      "live_properties": 247,
+      "review_claims": 85,
+      "live_mechanics": 239,
+      "mechanical_properties_any": 308
     },
     "items": {
-      "entities": 57,
-      "entities_with_live_facts": 23,
-      "live_properties": 81,
-      "review_claims": 176,
-      "live_mechanics": 23,
-      "mechanical_properties_any": 57
+      "entities": 85,
+      "entities_with_live_facts": 43,
+      "live_properties": 159,
+      "review_claims": 241,
+      "live_mechanics": 39,
+      "mechanical_properties_any": 87
     },
     "runes": {
-      "entities": 27,
+      "entities": 51,
       "entities_with_live_facts": 0,
       "live_properties": 0,
-      "review_claims": 103,
+      "review_claims": 203,
       "live_mechanics": 0,
       "mechanical_properties_any": 0
     },
     "enchantments": {
       "entities": 4,
       "entities_with_live_facts": 2,
-      "live_properties": 2,
-      "review_claims": 17,
-      "live_mechanics": 2,
-      "mechanical_properties_any": 15
+      "live_properties": 4,
+      "review_claims": 35,
+      "live_mechanics": 4,
+      "mechanical_properties_any": 33
     },
     "spells": {
       "entities": 12,
@@ -59,10 +59,10 @@
     "battlefield": {
       "entities": 1,
       "entities_with_live_facts": 1,
-      "live_properties": 37,
+      "live_properties": 41,
       "review_claims": 0,
-      "live_mechanics": 21,
-      "mechanical_properties_any": 21
+      "live_mechanics": 25,
+      "mechanical_properties_any": 25
     },
     "roles": {
       "entities": 6,

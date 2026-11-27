@@ -1,0 +1,101 @@
+{
+  "id": "thuong-longinus",
+  "kind": "items",
+  "name": "Thương Longinus",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2030.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 80.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.15,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 500.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "passive.flat-penetration": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "armor_pen",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang trang bị.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 60.0,
+            "unit": "armor"
+          },
+          "unique_group": "pha-giap"
+        }
+      }
+    ],
+    "passive.armor-shred": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "armor_reduction",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Gây sát thương lên mục tiêu.",
+          "activation": "automatic",
+          "detail": "Tỷ lệ mỗi tầng; thứ tự áp dụng với xuyên giáp chưa xác minh.",
+          "amount": {
+            "amount": 0.06,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 5.0,
+            "internal_cooldown_s": 0.3
+          },
+          "stacks": 4,
+          "unique_group": "toai-giap"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

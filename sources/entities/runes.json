@@ -1334,5 +1334,1273 @@
     "unknown": [
       "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
     ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-mau-hoi-mau",
+    "name": "Tím I Máu/Hồi máu",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 18,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.regen": [
+        {
+          "value": {
+            "amount": 1.4,
+            "unit": "hp_per_5_seconds"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-ti-le-chi-mang-mau",
+    "name": "Tím I Tỷ lệ chí mạng/Máu",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 18,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-mau-hoi-mau-toc-chay",
+    "name": "Tím I Máu/Hồi máu/Tốc chạy",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 13.5,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.regen": [
+        {
+          "value": {
+            "amount": 1.6,
+            "unit": "hp_per_5_seconds"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.001,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-hut-mau-phep",
+    "name": "Tím I Hút máu phép",
+    "facts": {
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.005,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-cong-phep-hut-mau-phep",
+    "name": "Tím I Công phép/Hút máu phép",
+    "facts": {
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 0.7,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-cong-vat-ly-toc-chay",
+    "name": "Tím I Công vật lý/Tốc chạy",
+    "facts": {
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 0.5,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-mau-hoi-mau",
+    "name": "Tím II Máu/Hồi máu",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 37.5,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.regen": [
+        {
+          "value": {
+            "amount": 2.8,
+            "unit": "hp_per_5_seconds"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-ti-le-chi-mang-mau",
+    "name": "Tím II Tỷ lệ chí mạng/Máu",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 37.5,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-mau-hoi-mau-toc-chay",
+    "name": "Tím II Máu/Hồi máu/Tốc chạy",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 28.1,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.regen": [
+        {
+          "value": {
+            "amount": 3.3,
+            "unit": "hp_per_5_seconds"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-hut-mau-phep",
+    "name": "Tím II Hút máu phép",
+    "facts": {
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-cong-phep-hut-mau-phep",
+    "name": "Tím II Công phép/Hút máu phép",
+    "facts": {
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 1.5,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-cong-vat-ly-toc-chay",
+    "name": "Tím II Công vật lý/Tốc chạy",
+    "facts": {
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 1.0,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-toc-danh-toc-chay",
+    "name": "Tím II Tốc đánh/Chạy",
+    "facts": {
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-toc-danh-mau-giap",
+    "name": "Đỏ I Tốc đánh/Máu/Giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 10.1,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 0.7,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-toc-danh-mau-giap",
+    "name": "Đỏ II Tốc đánh/Máu/Giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 21.1,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 1.4,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-cong-vat-ly-xuyen-giap",
+    "name": "Đỏ I Công vật lý/Xuyên giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 0.6,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor-pen": [
+        {
+          "value": {
+            "amount": 1.1,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-cong-phep-xuyen-thu-phep",
+    "name": "Đỏ I Công phép/Xuyên giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 1.3,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-pen": [
+        {
+          "value": {
+            "amount": 0.7,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-cong-phep-toc-danh",
+    "name": "Đỏ II Công phép/Tốc đánh",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 2.6,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.004,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-ti-le-sat-thuong-chi-mang",
+    "name": "Đỏ II Tỷ lệ chí mạng/Sát thương chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.004,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit-damage": [
+        {
+          "value": {
+            "amount": 0.023,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-giap-giap-phep-hoi-chieu",
+    "name": "Xanh I Giáp/Giáp phép/Hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 0.8,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 0.8,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-giap-giap-phep-hoi-chieu",
+    "name": "Xanh II Giáp/Giáp phép/Hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 1.7,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 1.7,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.004,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-cong-vat-ly-xuyen-giap",
+    "name": "Xanh I Công vật lý/Xuyên giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 0.3,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor-pen": [
+        {
+          "value": {
+            "amount": 1.9,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-toc-danh-xuyen-giap-phep",
+    "name": "Xanh II Tốc đánh/Xuyên giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.004,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-pen": [
+        {
+          "value": {
+            "amount": 4,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-mau-toi-da-giam-hoi-chieu",
+    "name": "Xanh II Máu/Hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 23.4,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.004,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+    ]
   }
 ]

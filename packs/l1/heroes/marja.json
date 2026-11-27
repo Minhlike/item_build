@@ -1,0 +1,1 @@
+{"name":"Marja","l2":"packs/heroes/marja.json","live":{"skill-3.base-magic":{"effect":"damage","target":"target-hit","trigger":"Chiêu 3 gây sát thương.","damage_type":"magic","formula_basis":["skill_rank","ap"]}},"unknown":["Chỉ số gốc","Bộ chiêu đầy đủ và biến thể","Hồi chiêu theo cấp","Tương tác và ngưỡng sức mạnh"]}

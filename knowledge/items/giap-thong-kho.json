@@ -3,6 +3,39 @@
   "kind": "items",
   "name": "Giáp thống khổ",
   "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-reflect-conflict"
+        ],
+        "value": {
+          "amount": 1940.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-reflect-conflict"
+        ],
+        "value": {
+          "amount": 1200.0,
+          "unit": "hp"
+        }
+      },
+      {
+        "evidence": [
+          "patch-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "amount": 700.0,
+          "unit": "hp"
+        }
+      }
+    ],
     "stat.ad": [
       {
         "evidence": [
@@ -26,19 +59,6 @@
         "value": {
           "amount": 300.0,
           "unit": "armor"
-        }
-      }
-    ],
-    "stat.hp": [
-      {
-        "evidence": [
-          "patch-items"
-        ],
-        "status": "LIVE_VN",
-        "effective_from": "2026-09-29",
-        "value": {
-          "amount": 700.0,
-          "unit": "hp"
         }
       }
     ],

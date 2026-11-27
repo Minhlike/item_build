@@ -1,0 +1,63 @@
+{
+  "id": "xanh-i-giap-giap-phep-hoi-chieu",
+  "kind": "runes",
+  "name": "Xanh I Giáp/Giáp phép/Hồi chiêu",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "green"
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.8,
+          "unit": "armor"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.8,
+          "unit": "magic_defense"
+        }
+      }
+    ],
+    "stat.cooldown-reduction": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.002,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+  ],
+  "relations": []
+}

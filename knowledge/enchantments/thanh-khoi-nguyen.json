@@ -52,6 +52,58 @@
           "detail": "Trở lại tại tế đàn; hồi chiêu tăng ở những lần tiếp theo."
         }
       }
+    ],
+    "tier-1.sieu-hoi-mau": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Dùng hồi máu được chuyển thành Siêu hồi máu.",
+          "detail": "Hồi thêm HP và năng lượng; cần xác minh lượng."
+        }
+      }
+    ],
+    "tier-2.uy-ap": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Đánh hoặc tung chiêu vào lính.",
+          "detail": "Hỗ trợ kết liễu lính; thiếu ngưỡng, điều kiện hạn chế và hồi."
+        }
+      }
+    ],
+    "tier-2.tho-san": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Hạ hoặc hỗ trợ hạ tướng.",
+          "detail": "Tích lũy AD và AP; chưa rõ mức mỗi điểm và giới hạn."
+        }
+      }
+    ],
+    "tier-3.luyen-kim": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Đánh hoặc dùng chiêu trúng tướng hoặc trụ.",
+          "detail": "Thêm vàng; cần xác minh các lần liên tiếp, mốc và giới hạn."
+        }
+      }
     ]
   },
   "unknown": [

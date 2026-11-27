@@ -18,6 +18,7 @@ from .models import (
     Release,
     Status,
 )
+from .progressive import compile_draft
 from .storage import encode, read, write
 from .tactics import compile_tactics
 
@@ -353,7 +354,9 @@ def artifacts(root: Path) -> dict[str, bytes]:
         files[path] = encode(preference, compact=True)
         preference_paths[key] = path
     tactics_path = "packs/tactics.json"
-    files[tactics_path] = encode(compile_tactics(root, entities, packed), compact=True)
+    tactics = compile_tactics(root, entities, packed)
+    files[tactics_path] = encode(tactics, compact=True)
+    files.update(compile_draft(root, packed, paths, tactics, preferences))
     files["packs/INDEX.json"] = encode(
         {
             "schema": SCHEMA_VERSION,
@@ -365,6 +368,7 @@ def artifacts(root: Path) -> dict[str, bytes]:
             "catalogs": catalog_paths,
             "preferences": preference_paths,
             "tactics": tactics_path,
+            "fast_draft_index": "packs/l1/INDEX.json",
         },
         compact=True,
     )
@@ -419,7 +423,13 @@ def compile_repo(root: Path, *, check: bool = False) -> dict:
     ]
     obsolete.extend(
         path.relative_to(root).as_posix()
-        for directory in ("packs/catalogs", "packs/preferences")
+        for directory in (
+            "packs/catalogs",
+            "packs/preferences",
+            "packs/l1/heroes",
+            "packs/l1/roles",
+            "packs/l1/team",
+        )
         for path in (root / directory).glob("*.json")
         if path.relative_to(root).as_posix() not in files
     )

@@ -506,6 +506,125 @@
         "status": "LIVE_VN",
         "effective_from": "2026-03-11"
       }
+    },
+    {
+      "entity": "heroes/arthur",
+      "property": "skill-1.empowered-range",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "trigger": "Đòn đánh được Gươm chính nghĩa cường hóa.",
+          "target": "target-hit",
+          "detail": "Tầm đòn đánh cường hóa tăng 500 lên 600 theo đơn vị trong thông báo."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "evidence": [
+          "patch-2026-03-11"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/ryoma",
+      "property": "skill-1.base-physical",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "trigger": "Kiếm từ Nhất kích tất sát trúng.",
+          "target": "target-hit",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 200,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          },
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/ryoma",
+      "property": "skill-2.base-physical",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "trigger": "Nhất kích trúng mục tiêu.",
+          "target": "target-hit",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 330,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 66
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.7
+              }
+            ]
+          },
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/ryoma",
+      "property": "skill-3.heal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "trigger": "Một đòn Loạn Trảm trúng tướng.",
+          "target": "self",
+          "formula": {
+            "unit": "hp",
+            "base": 80,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          },
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ]
+      }
     }
   ]
 }

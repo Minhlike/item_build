@@ -1,0 +1,52 @@
+{
+  "id": "tim-ii-cong-phep-hut-mau-phep",
+  "kind": "runes",
+  "name": "Tím II Công phép/Hút máu phép",
+  "facts": {
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.5,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.spell-lifesteal": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.006,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "purple"
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+  ],
+  "relations": []
+}

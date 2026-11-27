@@ -1,0 +1,349 @@
+{
+  "id": "vn-2024-07-10",
+  "title": "Ngày hội Liên Quân 2024, cơ chế giày",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2024-07-10",
+  "evidence": "patch-2024-07-10-shoes",
+  "changes": [
+    {
+      "entity": "items/giay-ho-ve",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-ho-ve",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-kien-cuong",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-kien-cuong",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-thuat-si",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-thuat-si",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-hermes",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-hermes",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-du-muc",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-du-muc",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-phu-thuy",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 700,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-phu-thuy",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "items.tier-two-boot-swap",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Đang có giày cấp II và tính năng đổi sẵn sàng.",
+          "timing": {
+            "cooldown_s": 180
+          },
+          "detail": "Hoán đổi qua lại giữa các giày cấp II không tốn vàng; hồi giữa các lượt đổi."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-ho-ve",
+      "property": "passive.physical-mitigation",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage_reduction",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Chịu sát thương vật lý.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "unique_group": "ho-ve"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-hermes",
+      "property": "stat.hp",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 300,
+          "unit": "hp"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-hermes",
+      "property": "stat.move-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 70,
+          "unit": "move_speed"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-hermes",
+      "property": "passive.out-of-combat-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Ra khỏi giao tranh.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 60,
+            "unit": "move_speed"
+          },
+          "unique_group": "hermes-nhanh-nhay"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/giay-phu-thuy",
+      "property": "passive.magic-penetration",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "magic_pen",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang Giày phù thủy.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 100,
+            "unit": "magic_defense"
+          },
+          "unique_group": "giay-phu-thuy-xuyen-phep"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ]
+      }
+    }
+  ]
+}

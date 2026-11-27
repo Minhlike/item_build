@@ -23,6 +23,21 @@
         "value": "Giữ chiêu áp sát và gây gián đoạn khi đối thủ lao vào chủ lực."
       }
     ],
+    "skill-1.empowered-range": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "trigger": "Đòn đánh được Gươm chính nghĩa cường hóa.",
+          "detail": "Tầm đòn đánh cường hóa tăng 500 lên 600 theo đơn vị trong thông báo."
+        }
+      }
+    ],
     "skill-2.shield": [
       {
         "evidence": [

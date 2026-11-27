@@ -6,9 +6,9 @@ from pathlib import Path
 import httpx
 
 from .acquisition import audit, clean_for_review, monitor, snap
-from .benchmark import benchmark, benchmark_catalogs
+from .benchmark import benchmark, benchmark_catalogs, benchmark_progressive
 from .compiler import compile_repo
-from .coverage import measure_coverage
+from .coverage import assess_readiness, measure_coverage
 from .local_review import build_local_review
 from .reasoning import Comparison, PurchaseScenario, compare_combat, plan_purchases
 from .retrieval import LANES, Repository
@@ -34,9 +34,16 @@ def main() -> int:
     context.add_argument("--mode", choices=["hero_preparation", "fast_draft"], default="fast_draft")
     context.add_argument("--include-candidates", action="store_true")
     context.add_argument("--reasoning", action="store_true")
+    context.add_argument("--layer", choices=["l1", "l2", "l3"], default="l2")
     for name in ("purchase-plan", "what-if"):
         commands.add_parser(name).add_argument("--input-file", required=True, type=Path)
     commands.add_parser("coverage")
+    ready = commands.add_parser("readiness")
+    ready.add_argument("--hero", required=True)
+    ready.add_argument("--role", choices=sorted(LANES))
+    ready.add_argument("--items", nargs="*", default=[])
+    ready.add_argument("--enemies", nargs="*", default=[])
+    ready.add_argument("--require", action="append", default=[])
     cooldown = commands.add_parser("cooldown")
     cooldown.add_argument("--entity", required=True)
     cooldown.add_argument("--property", required=True)
@@ -49,8 +56,10 @@ def main() -> int:
     formula.add_argument("--input", action="append", default=[])
     perf = commands.add_parser("benchmark")
     perf.add_argument("--save", action="store_true")
-    perf.add_argument("--catalogs", action="store_true")
-    perf.add_argument("--reasoning", action="store_true")
+    variant = perf.add_mutually_exclusive_group()
+    variant.add_argument("--catalogs", action="store_true")
+    variant.add_argument("--reasoning", action="store_true")
+    variant.add_argument("--progressive", action="store_true")
     options = parser.parse_args()
     root = options.root.resolve()
     try:
@@ -131,15 +140,27 @@ def run(root: Path, options) -> dict:
                 include_candidates=options.include_candidates,
                 include_reasoning=options.reasoning,
                 allies=options.allies,
+                layer=options.layer,
             )
         case "coverage":
             return measure_coverage(Repository(root))
+        case "readiness":
+            return assess_readiness(
+                Repository(root),
+                options.hero,
+                options.role,
+                options.items,
+                options.enemies,
+                options.require,
+            )
         case "purchase-plan":
             return plan_purchases(
                 Repository(root), PurchaseScenario.model_validate(read(options.input_file))
             )
         case "what-if":
-            return compare_combat(Comparison.model_validate(read(options.input_file)))
+            return compare_combat(
+                Comparison.model_validate(read(options.input_file)), Repository(root)
+            )
         case "cooldown" | "formula":
             inputs = {}
             for entry in options.input:
@@ -150,19 +171,14 @@ def run(root: Path, options) -> dict:
                 return repo.formula(options.entity, options.property, inputs)
             return repo.cooldown(options.entity, options.property, inputs, options.cdr, options.cap)
         case "benchmark":
-            if options.catalogs and options.reasoning:
-                raise ValueError("Chọn benchmark danh mục hoặc ngữ cảnh suy luận.")
-            result = (
-                benchmark_catalogs(root)
-                if options.catalogs
-                else benchmark(root, reasoning=options.reasoning)
-            )
+            if options.progressive:
+                result, name = benchmark_progressive(root), "phase4-benchmark.json"
+            elif options.catalogs:
+                result, name = benchmark_catalogs(root), "catalog-benchmark.json"
+            else:
+                result = benchmark(root, reasoning=options.reasoning)
+                name = "reasoning-benchmark.json" if options.reasoning else "benchmark.json"
             if options.save:
-                name = (
-                    "catalog-benchmark.json"
-                    if options.catalogs
-                    else ("reasoning-benchmark.json" if options.reasoning else "benchmark.json")
-                )
                 write(root / "reports" / name, encode(result))
             return result
     raise ValueError("Lệnh không hợp lệ.")

@@ -1,0 +1,1 @@
+{"name":"Alice","l2":"packs/heroes/alice.json","live":{"skill-2.cooldown":{"effect":"special","target":"self","trigger":"Dùng Chiêu 2","timing":{"cooldown_s":11.0}},"skill-2.team-shield":{"effect":"shield","target":"nearby-allies","trigger":"Dùng Chiêu 2","formula_basis":["skill_rank","ap"]}},"unknown":["Đối chiếu các thuộc tính chưa có mốc hiệu lực"]}

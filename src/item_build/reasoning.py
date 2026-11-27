@@ -5,7 +5,7 @@ from typing import Annotated, Literal
 from pydantic import Field, model_validator
 
 from .catalog import eligibility
-from .models import Id, Integer, Model, Nonempty, Nonnegative
+from .models import Basis, Id, Integer, Model, Nonempty, Nonnegative
 from .retrieval import LANES, Repository
 
 Ratio = Annotated[Nonnegative, Field(le=1)]
@@ -174,12 +174,28 @@ class Damage(Model):
     kind: DamageKind
     flat: Nonnegative = 0
     target_max_hp_ratio: Ratio = 0
+    fact: Nonempty | None = None
+    inputs: dict[Basis, Nonnegative] = Field(default_factory=dict)
+
+    @model_validator(mode="after")
+    def source(self):
+        if self.fact and (self.flat or self.target_max_hp_ratio) or not self.fact and self.inputs:
+            raise ValueError("Chọn sát thương nhập tay hoặc công thức có nguồn.")
+        return self
 
 
 class Heal(Model):
-    amount: Nonnegative
+    amount: Nonnegative | None = None
     ready_at_s: Nonnegative | None
     condition_met: bool | None
+    fact: Nonempty | None = None
+    inputs: dict[Basis, Nonnegative] = Field(default_factory=dict)
+
+    @model_validator(mode="after")
+    def source(self):
+        if (self.amount is None) == (self.fact is None) or not self.fact and self.inputs:
+            raise ValueError("Chọn lượng hồi nhập tay hoặc công thức có nguồn.")
+        return self
 
 
 class Shield(Model):
@@ -213,6 +229,11 @@ class HealWindow(Model):
         return self
 
 
+class SourcedHealWindow(Model):
+    start_s: Nonnegative
+    fact: Nonempty
+
+
 class CooldownScenario(Model):
     base_s: Nonnegative
     started_at_s: Nonnegative
@@ -228,7 +249,7 @@ class Combat(Model):
     initial_hp: Annotated[Nonnegative, Field(gt=0)]
     physical_taken: Ratio | None = None
     magic_taken: Ratio | None = None
-    anti_heal: list[HealWindow] = Field(default_factory=list)
+    anti_heal: list[HealWindow | SourcedHealWindow] = Field(default_factory=list)
     cooldown: CooldownScenario | None = None
     events: list[Event]
 
@@ -237,11 +258,7 @@ class Combat(Model):
         times = [event.at_s for event in self.events]
         if self.initial_hp > self.max_hp or times != sorted(times):
             raise ValueError("HP ban đầu và thứ tự sự kiện không hợp lệ.")
-        windows = sorted(self.anti_heal, key=lambda window: window.start_s)
-        if any(
-            left.end_s > right.start_s for left, right in zip(windows, windows[1:], strict=False)
-        ):
-            raise ValueError("Đầu vào chỉ nhận cửa sổ giảm hồi phục hiệu lực đã hợp nhất.")
+        check_heal_windows([window for window in self.anti_heal if isinstance(window, HealWindow)])
         return self
 
 
@@ -250,9 +267,46 @@ class Comparison(Model):
     alternatives: Annotated[list[Combat], Field(min_length=1)]
 
 
-def evaluate_combat(case: Combat) -> dict:
+def check_heal_windows(windows: list[HealWindow]) -> None:
+    ordered = sorted(windows, key=lambda window: window.start_s)
+    if any(left.end_s > right.start_s for left, right in zip(ordered, ordered[1:], strict=False)):
+        raise ValueError("Đầu vào chỉ nhận cửa sổ giảm hồi phục hiệu lực đã hợp nhất.")
+
+
+def live_component(repo: Repository | None, reference: str, effect: str):
+    key, _, prop = reference.partition("#")
+    if repo is None or not prop:
+        raise ValueError("Cần kho tri thức và neo dạng nhóm/id#thuộc.tính.")
+    fact = repo.get(key)["live"].get(prop)
+    value = fact["value"] if fact else None
+    if not isinstance(value, dict) or value.get("effect") != effect:
+        raise ValueError(f"Hiệu ứng {reference} thiếu dữ liệu LIVE_VN phù hợp với {effect}.")
+    return key, prop, value, fact["evidence"]
+
+
+def evaluate_combat(case: Combat, repo: Repository | None = None) -> dict:
     hp = case.initial_hp
     ledger = []
+    windows = []
+    sourced_windows = []
+    for window in case.anti_heal:
+        if isinstance(window, SourcedHealWindow):
+            _, _, mechanic, evidence = live_component(repo, window.fact, "heal_reduction")
+            amount = mechanic.get("amount", {})
+            duration = mechanic.get("timing", {}).get("duration_s")
+            if amount.get("unit") != "ratio" or duration is None:
+                raise ValueError(f"Thiếu tỷ lệ hoặc thời lượng đã xác minh tại {window.fact}.")
+            window_values = HealWindow(
+                start_s=window.start_s, end_s=window.start_s + duration, reduction=amount["amount"]
+            )
+            sourced_windows.append(
+                window_values.model_dump()
+                | {"fact": window.fact, "trigger": mechanic["trigger"], "evidence": evidence}
+            )
+            windows.append(window_values)
+        else:
+            windows.append(window)
+    check_heal_windows(windows)
     cooldown = case.cooldown
     timing = None
     shield_remaining = shield_end = 0.0
@@ -269,6 +323,25 @@ def evaluate_combat(case: Combat) -> dict:
             shield_remaining = 0
         if event.damage:
             raw = event.damage.flat + case.max_hp * event.damage.target_max_hp_ratio
+            if event.damage.fact:
+                damage = event.damage
+                key, prop, value, _ = live_component(repo, damage.fact, "damage")
+                if value.get("damage_type") != damage.kind:
+                    raise ValueError(f"Loại sát thương không khớp nguồn {damage.fact}.")
+                calculated = repo.formula(
+                    key,
+                    prop,
+                    damage.inputs
+                    | {
+                        Basis.TARGET_MAX_HP: case.max_hp,
+                        Basis.TARGET_CURRENT_HP: hp,
+                        Basis.TARGET_MISSING_HP: case.max_hp - hp,
+                    },
+                )
+                if calculated["unit"] != "damage":
+                    raise ValueError(f"Đơn vị kết quả không khớp sát thương tại {damage.fact}.")
+                raw = calculated["value"]
+                row["source"] = {"fact": damage.fact, **calculated}
             if not isfinite(raw):
                 raise ValueError("Sát thương vượt miền tính toán.")
             factor = {"physical": case.physical_taken, "magic": case.magic_taken, "true": 1}[
@@ -296,9 +369,24 @@ def evaluate_combat(case: Combat) -> dict:
                 break
             else:
                 reduction = next(
-                    (w.reduction for w in case.anti_heal if w.start_s <= event.at_s < w.end_s), 0
+                    (w.reduction for w in windows if w.start_s <= event.at_s < w.end_s), 0
                 )
-                effective = min(case.max_hp - hp, heal.amount * (1 - reduction))
+                amount = heal.amount
+                if heal.fact:
+                    key, prop, value, _ = live_component(repo, heal.fact, "heal")
+                    inputs = heal.inputs
+                    if value["target"] == "self":
+                        inputs = inputs | {
+                            Basis.CASTER_MAX_HP: case.max_hp,
+                            Basis.CASTER_CURRENT_HP: hp,
+                            Basis.CASTER_MISSING_HP: case.max_hp - hp,
+                        }
+                    calculated = repo.formula(key, prop, inputs)
+                    if calculated["unit"] != "hp":
+                        raise ValueError(f"Đơn vị kết quả không khớp hồi máu tại {heal.fact}.")
+                    amount = calculated["value"]
+                    row["source"] = {"fact": heal.fact, **calculated}
+                effective = min(case.max_hp - hp, amount * (1 - reduction))
                 hp += effective
                 row.update(kind="heal", effective_heal=effective, heal_reduction=reduction)
         else:
@@ -322,14 +410,15 @@ def evaluate_combat(case: Combat) -> dict:
         "depleted_at_s": ledger[-1]["at_s"] if hp == 0 else None,
         "cooldown_scenario": timing,
         "ledger": ledger,
+        **({"sourced_heal_windows": sourced_windows} if sourced_windows else {}),
     }
 
 
-def compare_combat(comparison: Comparison) -> dict:
+def compare_combat(comparison: Comparison, repo: Repository | None = None) -> dict:
     cases = [comparison.baseline, *comparison.alternatives]
     if len({case.id for case in cases}) != len(cases):
         raise ValueError("Mã tình huống what-if phải duy nhất.")
-    results = {case.id: evaluate_combat(case) for case in cases}
+    results = {case.id: evaluate_combat(case, repo) for case in cases}
     baseline_hp = results[comparison.baseline.id]["remaining_hp"]
     for result in results.values():
         hp = result["remaining_hp"]

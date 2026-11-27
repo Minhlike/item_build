@@ -91,6 +91,20 @@
           }
         }
       }
+    ],
+    "shop.tier": [
+      {
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 3.0,
+          "unit": "count"
+        }
+      }
     ]
   },
   "unknown": [

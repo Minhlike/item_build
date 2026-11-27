@@ -1,0 +1,174 @@
+{
+  "tokenizer": "o200k_base",
+  "scope": "JSON dựng cục bộ và tổng token file thô mô phỏng đọc GitHub. Chưa đo connector, chất lượng đầu ra hoặc win rate.",
+  "cases": [
+    {
+      "case": "phase3-1",
+      "hero": "thane",
+      "role": "support",
+      "enemies": [
+        "trieu van",
+        "bolt baron",
+        "allain",
+        "natalya",
+        "ryoma"
+      ],
+      "l1": {
+        "assembled_tokens": 5919,
+        "github_knowledge_file_count": 10,
+        "github_knowledge_tokens": 7865,
+        "github_tokens_with_prompts": 9620
+      },
+      "l2": {
+        "assembled_tokens": 16659,
+        "github_knowledge_file_count": 16,
+        "github_knowledge_tokens": 48912,
+        "github_tokens_with_prompts": 51549
+      }
+    },
+    {
+      "case": "phase3-2",
+      "hero": "thane",
+      "role": "support",
+      "enemies": [
+        "richter",
+        "trieu van",
+        "hayate",
+        "raz",
+        "kaine"
+      ],
+      "l1": {
+        "assembled_tokens": 5663,
+        "github_knowledge_file_count": 10,
+        "github_knowledge_tokens": 7617,
+        "github_tokens_with_prompts": 9372
+      },
+      "l2": {
+        "assembled_tokens": 16326,
+        "github_knowledge_file_count": 16,
+        "github_knowledge_tokens": 47754,
+        "github_tokens_with_prompts": 50391
+      }
+    },
+    {
+      "case": "phase3-3",
+      "hero": "thane",
+      "role": "support",
+      "enemies": [
+        "ybneth",
+        "fennik",
+        "trieu van",
+        "omen",
+        "preyta"
+      ],
+      "l1": {
+        "assembled_tokens": 5908,
+        "github_knowledge_file_count": 10,
+        "github_knowledge_tokens": 7856,
+        "github_tokens_with_prompts": 9611
+      },
+      "l2": {
+        "assembled_tokens": 16720,
+        "github_knowledge_file_count": 16,
+        "github_knowledge_tokens": 48251,
+        "github_tokens_with_prompts": 50888
+      }
+    },
+    {
+      "case": "phase3-4",
+      "hero": "thane",
+      "role": "support",
+      "enemies": [
+        "butterfly",
+        "yue",
+        "arthur",
+        "hayate",
+        "edras"
+      ],
+      "l1": {
+        "assembled_tokens": 5846,
+        "github_knowledge_file_count": 10,
+        "github_knowledge_tokens": 7798,
+        "github_tokens_with_prompts": 9553
+      },
+      "l2": {
+        "assembled_tokens": 17109,
+        "github_knowledge_file_count": 16,
+        "github_knowledge_tokens": 47745,
+        "github_tokens_with_prompts": 50382
+      }
+    },
+    {
+      "case": "phase3-5",
+      "hero": "thane",
+      "role": "support",
+      "enemies": [
+        "raz",
+        "natalya",
+        "butterfly",
+        "preyta",
+        "darcy"
+      ],
+      "l1": {
+        "assembled_tokens": 7394,
+        "github_knowledge_file_count": 13,
+        "github_knowledge_tokens": 9345,
+        "github_tokens_with_prompts": 11100
+      },
+      "l2": {
+        "assembled_tokens": 18671,
+        "github_knowledge_file_count": 16,
+        "github_knowledge_tokens": 49193,
+        "github_tokens_with_prompts": 51830
+      }
+    },
+    {
+      "case": "A",
+      "hero": "thane",
+      "role": "support",
+      "enemies": [
+        "Arthur",
+        "Violet",
+        "Natalya",
+        "Ryoma",
+        "Quillen"
+      ],
+      "l1": {
+        "assembled_tokens": 5944,
+        "github_knowledge_file_count": 10,
+        "github_knowledge_tokens": 7896,
+        "github_tokens_with_prompts": 9651
+      },
+      "l2": {
+        "assembled_tokens": 16718,
+        "github_knowledge_file_count": 16,
+        "github_knowledge_tokens": 48674,
+        "github_tokens_with_prompts": 51311
+      }
+    },
+    {
+      "case": "B",
+      "hero": "thane",
+      "role": "support",
+      "enemies": [
+        "Raz",
+        "Florentino",
+        "Elsu",
+        "Ngộ Không",
+        "Toro"
+      ],
+      "l1": {
+        "assembled_tokens": 5446,
+        "github_knowledge_file_count": 10,
+        "github_knowledge_tokens": 7398,
+        "github_tokens_with_prompts": 9153
+      },
+      "l2": {
+        "assembled_tokens": 15777,
+        "github_knowledge_file_count": 16,
+        "github_knowledge_tokens": 47371,
+        "github_tokens_with_prompts": 50008
+      }
+    }
+  ]
+}

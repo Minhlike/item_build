@@ -1,0 +1,283 @@
+{
+  "version": "vn-2026-11-26",
+  "stats_fields": {
+    "unknown": 2078,
+    "live": 2
+  },
+  "skill_fields": {
+    "effect": {
+      "live": 151,
+      "unknown": 358,
+      "candidate": 27
+    },
+    "quantity": {
+      "live": 116,
+      "unknown": 416,
+      "candidate": 4
+    },
+    "cooldown": {
+      "unknown": 498,
+      "live": 38
+    },
+    "cooldown_resolved": {
+      "unknown": 532,
+      "live": 4
+    },
+    "duration": {
+      "unknown": 510,
+      "live": 12,
+      "candidate": 14
+    },
+    "trigger": {
+      "live": 145,
+      "unknown": 364,
+      "candidate": 27
+    },
+    "exceptions": {
+      "live": 9,
+      "unknown": 520,
+      "candidate": 7
+    },
+    "interactions": {
+      "unknown": 528,
+      "live": 6,
+      "candidate": 2
+    }
+  },
+  "complete_heroes": 0,
+  "hero_count": 130,
+  "counts_by_group": {
+    "heroes": {
+      "entities": 130,
+      "entities_with_live_facts": 84,
+      "live_properties": 247,
+      "review_claims": 85,
+      "live_mechanics": 239,
+      "mechanical_properties_any": 308
+    },
+    "items": {
+      "entities": 85,
+      "entities_with_live_facts": 43,
+      "live_properties": 159,
+      "review_claims": 241,
+      "live_mechanics": 39,
+      "mechanical_properties_any": 87
+    },
+    "runes": {
+      "entities": 51,
+      "entities_with_live_facts": 0,
+      "live_properties": 0,
+      "review_claims": 203,
+      "live_mechanics": 0,
+      "mechanical_properties_any": 0
+    },
+    "enchantments": {
+      "entities": 4,
+      "entities_with_live_facts": 2,
+      "live_properties": 4,
+      "review_claims": 35,
+      "live_mechanics": 4,
+      "mechanical_properties_any": 33
+    },
+    "spells": {
+      "entities": 12,
+      "entities_with_live_facts": 4,
+      "live_properties": 12,
+      "review_claims": 15,
+      "live_mechanics": 12,
+      "mechanical_properties_any": 27
+    },
+    "battlefield": {
+      "entities": 1,
+      "entities_with_live_facts": 1,
+      "live_properties": 41,
+      "review_claims": 0,
+      "live_mechanics": 25,
+      "mechanical_properties_any": 25
+    },
+    "roles": {
+      "entities": 6,
+      "entities_with_live_facts": 6,
+      "live_properties": 18,
+      "review_claims": 0,
+      "live_mechanics": 0,
+      "mechanical_properties_any": 0
+    }
+  },
+  "shop": {
+    "stat.price": 35,
+    "shop.recipe": 7,
+    "identity.icon-color": 0,
+    "shop.tier": 16,
+    "dated_recipe_candidates": 7,
+    "documented_full_profiles": 0
+  },
+  "focus": {
+    "thane": {
+      "live_properties": [
+        "tactics.peel",
+        "passive.damage-reduction",
+        "skill-3.damage-heal"
+      ],
+      "review_properties": [
+        "passive.low-hp-heal",
+        "passive.low-hp-mitigation",
+        "skill-1.damage",
+        "skill-1.end-airborne",
+        "skill-1.push",
+        "skill-2.control",
+        "skill-3.base-type-conflict",
+        "skill-3.cast-mitigation",
+        "skill-3.cast-protection",
+        "skill-3.missing-hp",
+        "skill-3.true"
+      ]
+    },
+    "arthur": {
+      "live_properties": [
+        "skill-1.empowered-range",
+        "skill-2.shield"
+      ],
+      "review_properties": [
+        "tactics.peel"
+      ]
+    },
+    "violet": {
+      "live_properties": [
+        "passive.nonhero-cdr",
+        "skill-1.cooldown",
+        "skill-2.base-physical",
+        "skill-2.armor-debuff",
+        "skill-2.marked-hit",
+        "skill-1.base-physical"
+      ],
+      "review_properties": [
+        "skill-1.poke",
+        "skill-3.missing-hp-physical",
+        "tactics.enemy-critical"
+      ]
+    },
+    "natalya": {
+      "live_properties": [
+        "skill-2.base-magic",
+        "skill-3.base-magic"
+      ],
+      "review_properties": [
+        "passive.magic",
+        "skill-1.hit-refund",
+        "skill-3.beam",
+        "skill-3.cc-immunity",
+        "skill-3.shield-control",
+        "skill-3.tick"
+      ]
+    },
+    "ryoma": {
+      "live_properties": [
+        "skill-1.base-physical",
+        "skill-2.base-physical",
+        "skill-3.heal",
+        "skill-3.base-physical",
+        "skill-1.cooldown"
+      ],
+      "review_properties": [
+        "skill-2.edge-stun",
+        "skill-3.hit-heal"
+      ]
+    },
+    "quillen": {
+      "live_properties": [
+        "skill-3.heal",
+        "skill-1.base-physical",
+        "skill-3.auto-attack-suppressed"
+      ],
+      "review_properties": [
+        "passive.rear-critical",
+        "skill-2.mark",
+        "skill-3.heal",
+        "skill-3.stealth",
+        "skill-3.takedown-reset",
+        "tactics.flank"
+      ]
+    },
+    "raz": {
+      "live_properties": [
+        "skill-2.magic-poke",
+        "skill-1.cooldown",
+        "skill-2.magic-defense-reduction"
+      ],
+      "review_properties": [
+        "skill-1.magic-knockup",
+        "skill-2.magic-poke",
+        "tactics.ambush"
+      ]
+    },
+    "florentino": {
+      "live_properties": [
+        "skill-2.target-max-hp-true"
+      ],
+      "review_properties": [
+        "skill-2.flower-loop",
+        "skill-2.target-max-hp-true",
+        "skill-3.armor-reduction",
+        "tactics.duel"
+      ]
+    },
+    "elsu": {
+      "live_properties": [
+        "skill-2.base-physical"
+      ],
+      "review_properties": [
+        "passive.basic-physical",
+        "skill-1.stationary-penetration",
+        "skill-2.poke"
+      ]
+    },
+    "ngo-khong": {
+      "live_properties": [
+        "passive.empowered-physical"
+      ],
+      "review_properties": [
+        "passive.innate-critical",
+        "skill-3.recast-stealth",
+        "tactics.ambush"
+      ]
+    },
+    "toro": {
+      "live_properties": [
+        "passive.out-of-combat-heal",
+        "passive.mitigation",
+        "skill-2.physical"
+      ],
+      "review_properties": [
+        "passive.cast-immunity",
+        "passive.combat-mitigation"
+      ]
+    }
+  },
+  "thanesp": {
+    "FAST_DRAFT_READY": {
+      "ready": false,
+      "gaps": [
+        "Sáu ID trang bị khác nhau"
+      ]
+    },
+    "HERO_PREPARATION_READY": {
+      "ready": false,
+      "gaps": [
+        "Giới hạn ô, màu và số lượng ngọc",
+        "Luật nhánh chính/phụ và tầng phù hiệu",
+        "Neo cho cấu hình ngọc đã chọn",
+        "Neo cho cấu hình phù hiệu đã chọn",
+        "Neo cho cấu hình phép đã chọn"
+      ]
+    },
+    "QUANTITATIVE_REASONING_READY": {
+      "ready": true,
+      "components": [
+        "passive.damage-reduction",
+        "skill-3.damage-heal"
+      ],
+      "scope": "Thành phần riêng lẻ, cần nhập đủ biến và kiểm tra điều kiện trước khi tính."
+    }
+  }
+}

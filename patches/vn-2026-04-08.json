@@ -778,6 +778,464 @@
         "status": "LIVE_VN",
         "effective_from": "2026-04-08"
       }
+    },
+    {
+      "entity": "items/dai-dia-hoi-huyet",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/dai-dia-hoi-huyet",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/dai-dia-hoi-huyet",
+      "property": "stat.move",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/dai-dia-ma-nhan",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/dai-dia-than-khien",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/dai-dia-mo-troi",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/dai-dia-than-toc",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/dai-dia-than-toc",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/dai-dia-than-toc",
+      "property": "stat.move",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-hoi-huyet",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-hoi-huyet",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-hoi-huyet",
+      "property": "stat.move",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-ma-nhan",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-ma-nhan",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-ma-nhan",
+      "property": "stat.move",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-than-khien",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-than-khien",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-than-khien",
+      "property": "stat.move",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-mo-troi",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-mo-troi",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-mo-troi",
+      "property": "stat.move",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-than-toc",
+      "property": "shop.tier",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 3,
+          "unit": "count"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-than-toc",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1900,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-than-toc",
+      "property": "stat.move",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/violet",
+      "property": "skill-1.cooldown",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Thi triển Chiêu 1.",
+          "timing": {
+            "cooldown_s": 5,
+            "cooldown_start": "cast"
+          }
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
+    },
+    {
+      "entity": "heroes/violet",
+      "property": "skill-1.base-physical",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn cường hóa từ Chiêu 1 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 225,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25
+              }
+            ]
+          },
+          "detail": "Phần gốc được công bố. Không gồm tỷ lệ đánh thường hay chí mạng."
+        },
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08"
+      }
     }
   ],
   "review_notes": [

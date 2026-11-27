@@ -12,6 +12,18 @@
           "amount": 2050.0,
           "unit": "gold"
         }
+      },
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 2050.0,
+          "unit": "gold"
+        }
       }
     ],
     "passive.emergency-shield": [
@@ -30,9 +42,42 @@
             "duration_s": 4.0
           }
         }
+      },
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Máu dưới 30%.",
+          "activation": "automatic",
+          "detail": "Lá chắn 510–1000 + 100% AP + 8% HP cộng thêm. Phần gốc có mốc chưa rõ.",
+          "timing": {
+            "duration_s": 4.0
+          },
+          "unique_group": "carano-protection"
+        }
       }
     ],
     "shop.recipe": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items"
+        ],
+        "status": "SUPERSEDED",
+        "effective_from": "2025-07-09",
+        "effective_until": "2026-01-21",
+        "value": [
+          "items/so-ma-thuat",
+          "items/nhan-lapis",
+          "items/day-chuyen-hong-ngoc"
+        ]
+      },
       {
         "evidence": [
           "patch-2026-01-21"
@@ -43,6 +88,48 @@
           "items/sach-co",
           "items/huyet-truong"
         ]
+      }
+    ],
+    "passive.emergency-cleanse": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "effect": "cleanse",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Máu dưới 30%.",
+          "activation": "automatic",
+          "detail": "Hóa giải khống chế trên bản thân."
+        }
+      }
+    ],
+    "passive.emergency-speed": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Trong cửa sổ bảo hộ.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 4.0
+          }
+        }
       }
     ],
     "stat.ap": [

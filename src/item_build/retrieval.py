@@ -7,6 +7,7 @@ from rapidfuzz import fuzz, process
 
 from .catalog import eligibility
 from .models import Basis, Formula, Nonnegative
+from .progressive import draft_context
 from .storage import read
 from .tactics import select_tactics
 
@@ -97,12 +98,25 @@ class Repository:
         include_candidates: bool = False,
         include_reasoning: bool = False,
         allies: list[str] | None = None,
+        layer: str = "l2",
     ) -> dict:
         if role not in LANES | {None} or len(enemies) > 5 or len(allies or []) > 4:
             raise ValueError("Cần vị trí hợp lệ, tối đa năm tướng địch và bốn đồng minh.")
         hero_id = self.identify(hero)
         enemy_ids = list(dict.fromkeys(self.identify(enemy) for enemy in enemies))
         ally_ids = list(dict.fromkeys(self.identify(ally) for ally in allies or []))
+        if layer == "l1":
+            if mode != "fast_draft" or include_candidates:
+                raise ValueError(
+                    "L1 dành cho draft và chỉ gắn cờ ứng viên. Đọc L2/L3 để chuẩn bị hoặc xem chi tiết."
+                )
+            return draft_context(
+                self, hero_id, role, enemy_ids, ally_ids if allies is not None else None
+            )
+        if layer not in {"l2", "l3"}:
+            raise ValueError("Tầng tri thức không hợp lệ.")
+        include_candidates |= layer == "l3"
+        include_reasoning |= layer == "l3"
 
         def match_pack(key: str) -> dict:
             pack = self.get(key)
@@ -182,7 +196,7 @@ class Repository:
                 references.update(rule["evidence"])
         evidence_path = "knowledge/sources/INDEX.json"
         sources = self.read_file(evidence_path)
-        return {
+        result = {
             "version": self.version,
             "mode": mode,
             "queue": "ranked_solo_vn",
@@ -200,6 +214,25 @@ class Repository:
             **({"candidate_reviews": candidate_reviews} if include_candidates else {}),
             "evidence": {key: sources[key] for key in sorted(references)},
         }
+        if layer == "l3":
+            canonical = {
+                path: self.read_file(path)
+                for path in dict.fromkeys(pack["canonical"] for pack in pack_list)
+            }
+            for record in canonical.values():
+                references.update(
+                    key
+                    for claims in record["facts"].values()
+                    for fact in claims
+                    for key in fact["evidence"]
+                )
+                references.update(key for edge in record["relations"] for key in edge["evidence"])
+            result.update(
+                layer="L3",
+                canonical=canonical,
+                evidence={key: sources[key] for key in sorted(references)},
+            )
+        return result
 
     def formula(self, key: str, prop: str, raw_inputs: dict[str, float]):
         fact = self.get(key)["live"].get(prop)

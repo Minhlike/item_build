@@ -1,0 +1,54 @@
+{
+  "id": "tim-incubus",
+  "kind": "items",
+  "name": "Tim Incubus",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 720.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 150.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "passive.burn": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemies",
+          "delivery": "item",
+          "trigger": "Kẻ địch ở gần người mang.",
+          "activation": "automatic",
+          "detail": "50–78 mỗi nhịp; tăng 50% với lính và quái. Mốc giá trị và bán kính chưa rõ.",
+          "damage_type": "magic",
+          "timing": {
+            "interval_s": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

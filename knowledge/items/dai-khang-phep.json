@@ -1,0 +1,74 @@
+{
+  "id": "dai-khang-phep",
+  "kind": "items",
+  "name": "Đai kháng phép",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1000.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 700.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 110.0,
+          "unit": "magic_defense"
+        }
+      }
+    ],
+    "passive.damage-heal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Nhận sát thương.",
+          "activation": "automatic",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 2.0,
+            "internal_cooldown_s": 15.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

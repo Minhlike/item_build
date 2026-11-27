@@ -1,0 +1,52 @@
+{
+  "id": "xanh-ii-mau-toi-da-giam-hoi-chieu",
+  "kind": "runes",
+  "name": "Xanh II Máu/Hồi chiêu",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "green"
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 23.4,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.cooldown-reduction": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.004,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+  ],
+  "relations": []
+}

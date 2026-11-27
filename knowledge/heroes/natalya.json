@@ -62,6 +62,49 @@
         }
       }
     ],
+    "skill-1.hit-refund": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Các bóng ma trúng tướng địch.",
+          "detail": "Hồi một phần năng lượng và giảm hồi chiêu. Chưa có hệ số và thứ tự tính theo số bóng."
+        }
+      }
+    ],
+    "skill-3.tick": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Tia Năng lượng chết chóc duy trì trúng mục tiêu.",
+          "detail": "Cần đo số nhịp, mốc dừng và hiệu lực khi vỡ lá chắn.",
+          "damage_type": "magic",
+          "timing": {
+            "interval_s": 0.25
+          }
+        }
+      }
+    ],
+    "skill-3.shield-control": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Còn lá chắn do chiêu cuối tạo.",
+          "detail": "Cần kiểm tra miễn khống hết tại lúc vỡ lá chắn hay khi ngừng thi triển."
+        }
+      }
+    ],
     "skill-2.base-magic": [
       {
         "evidence": [

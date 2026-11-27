@@ -1,0 +1,43 @@
+{
+  "id": "vn-2026-02-05",
+  "title": "Tân Niên Khởi Thế, Viễn trình kích",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-02-05",
+  "evidence": "patch-2026-02-05-elsu",
+  "changes": [
+    {
+      "entity": "heroes/elsu",
+      "property": "skill-2.base-physical",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "trigger": "Phát bắn Viễn trình kích trúng.",
+          "target": "target-hit",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 600,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 120
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 1.7
+              }
+            ]
+          },
+          "detail": "Thành phần cơ bản; chưa xác nhận mốc cấp chiêu và hệ số riêng theo HP đối thủ."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-02-05",
+        "evidence": [
+          "patch-2026-02-05-elsu"
+        ]
+      }
+    }
+  ]
+}

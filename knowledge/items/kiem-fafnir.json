@@ -1,0 +1,89 @@
+{
+  "id": "kiem-fafnir",
+  "kind": "items",
+  "name": "Kiếm Fafnir",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2040.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 60.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.3,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.lifesteal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.current-hp-hit": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đòn đánh thường trúng.",
+          "activation": "automatic",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "target_current_hp",
+                "coefficient": 0.08
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 0.3
+          },
+          "exceptions": [
+            "Sát thương giới hạn 80 lên quái rừng."
+          ],
+          "unique_group": "hoi-tho-rong"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

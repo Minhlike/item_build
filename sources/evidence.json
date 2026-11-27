@@ -941,5 +941,78 @@
     "patch_id": "vn-2026-07-23",
     "verification_status": "verified_official",
     "evidence_ref": "Cân bằng tướng và sửa lỗi hủy trạng thái tàng hình do đòn đánh tự động."
+  },
+  "patch-2024-07-10-shoes": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/chi-tiet-ban-cap-nhat-phien-ban-ngay-hoi-lien-quan/",
+    "source_type": "official",
+    "server": "VN",
+    "published_at": "2024-07-09",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2024-07-10",
+    "patch_id": "vn-2024-07-10",
+    "verification_status": "verified_official",
+    "evidence_ref": "Mục Điều chỉnh giày. Mốc triển khai 10/07 xác định từ bài Quy trình cập nhật PB mới Ngày hội Liên Quân 2024."
+  },
+  "patch-2025-07-09-items": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/chi-tiet-ban-cap-nhat-ngay-hoi-lien-quan-9-7-2025/",
+    "source_type": "official",
+    "server": "VN",
+    "published_at": "2025-07-08",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2025-07-09",
+    "patch_id": "vn-2025-07-09",
+    "verification_status": "verified_official",
+    "evidence_ref": "Các mục trang bị Pháp sư và Xạ thủ. Công thức ghép cũ chỉ dùng làm mốc đối chiếu."
+  },
+  "patch-2025-07-31-lightning": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-ngay-hoi-lien-quan-31-7-2025/",
+    "source_type": "official",
+    "server": "VN",
+    "published_at": "2025-07-29",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2025-07-31",
+    "patch_id": "vn-2025-07-31",
+    "verification_status": "verified_official",
+    "evidence_ref": "Mục Gươm sấm sét và xác nhận Rìu Hyoga đã bị rút."
+  },
+  "academy-reflect-conflict": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/hoc-vien/trang-bi/",
+    "source_type": "official",
+    "server": "VN",
+    "published_at": null,
+    "retrieved_at": "2026-11-27",
+    "effective_from": null,
+    "effective_until": null,
+    "patch_id": null,
+    "verification_status": "conflict",
+    "evidence_ref": "Học viện còn hiển thị Giáp thống khổ cũ; đối chiếu bản làm lại VN 29/09. Không áp giá cũ cho bản làm lại."
+  },
+  "patch-2025-04-23-support-recharge": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/chi-tiet-ban-cap-nhat-le-hoi-5v5-ngay-23-04-2025/",
+    "source_type": "official",
+    "server": "VN",
+    "published_at": "2025-04-22",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2025-04-23",
+    "patch_id": "vn-2025-04-23",
+    "verification_status": "verified_official",
+    "evidence_ref": "Tối ưu trải nghiệm chiến đấu, mục Thay đổi logic kích hoạt trang bị Hồi Huyết."
+  },
+  "patch-2026-02-05-elsu": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/dieu-chinh-giua-mua-pb-tan-nien-khoi-the-05-02-2026/",
+    "source_type": "official",
+    "server": "VN",
+    "published_at": "2026-02-03",
+    "retrieved_at": "2026-11-27",
+    "effective_from": "2026-02-05",
+    "patch_id": "vn-2026-02-05",
+    "verification_status": "verified_official",
+    "evidence_ref": "Mục Elsu, thành phần sát thương cơ bản Viễn trình kích."
   }
 }

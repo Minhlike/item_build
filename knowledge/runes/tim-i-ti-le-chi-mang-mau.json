@@ -1,0 +1,52 @@
+{
+  "id": "tim-i-ti-le-chi-mang-mau",
+  "kind": "runes",
+  "name": "Tím I Tỷ lệ chí mạng/Máu",
+  "facts": {
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 18.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.crit": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.002,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "purple"
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+  ],
+  "relations": []
+}

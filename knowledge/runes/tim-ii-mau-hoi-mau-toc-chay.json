@@ -1,0 +1,63 @@
+{
+  "id": "tim-ii-mau-hoi-mau-toc-chay",
+  "kind": "runes",
+  "name": "Tím II Máu/Hồi máu/Tốc chạy",
+  "facts": {
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 28.1,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.regen": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 3.3,
+          "unit": "hp_per_5_seconds"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.003,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "purple"
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+  ],
+  "relations": []
+}

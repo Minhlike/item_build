@@ -1,8 +1,19 @@
 # Dùng repo ITEM_BUILD
 
-Dùng repository GitHub `Minhlike/item_build` làm nguồn tri thức. Nếu người dùng chỉ định nhánh hoặc commit, đọc đúng ref đó. Ở lần đọc đầu, lấy SHA và tải song song `knowledge/VERSION.json`, `packs/INDEX.json`. Cache theo SHA khi có thể.
+Dùng repository GitHub `Minhlike/item_build` làm nguồn tri thức. Nếu người dùng chỉ định nhánh hoặc commit, đọc đúng ref đó. Lấy SHA và đọc `knowledge/VERSION.json` cùng chỉ mục của tầng đang dùng. Cache theo SHA khi có thể.
 
-1. Mặc định là đấu hạng đơn VN. Chọn `prompts/fast_draft.md` cho tình huống cấm/chọn nhanh và `prompts/hero_preparation.md` cho chuẩn bị tướng.
+## L1 dành cho cấm/chọn nhanh
+
+1. Đọc `packs/l1/INDEX.json` và `prompts/fast_draft.md` tại cùng SHA. Chuẩn hóa ID, tên và alias từ `heroes`. Nếu tên chưa rõ, hỏi ngắn. Flowborn cần xác định dạng pháp sư hoặc xạ thủ.
+2. Dùng đường dẫn trong L1 để lấy file chiến trường, vai trò, tướng người chơi và các tướng địch hoặc đồng minh đã nhập. Chỉ mở `team/<id>.json` khi toàn bộ tướng trong mục tương ứng của `team_threats` có trong đội địch. Giữ đúng điều kiện áp dụng và lọc macro theo `hero` khi có.
+3. Dùng `shortlist` để tìm các món theo vai trò. Áp `preferences` và `personal_filter` khi đúng ID và vai trò. Khi thiếu phương án hợp lệ hoặc cơ chế ảnh hưởng quyết định, mở món tương ứng trong L2.
+4. `live` của L1 chứa giá trị đã xác minh. `formula_basis` giữ loại biến cho cơ chế có công thức. Đọc `l2` để lấy hệ số, mốc cấp, nguồn theo thuộc tính và nội dung ứng viên. Đọc L2 trước khi tính hoặc kết luận dựa vào thuộc tính chỉ có trong `review`. Khi cần lịch sử, lấy `canonical` từ L2 và tra ID nguồn theo `evidence` trong chỉ mục.
+
+## L2 và L3
+
+Đọc `packs/INDEX.json` tại cùng SHA. L2 ưu tiên các pack theo ID và nhóm cần thiết. L3 dùng canonical ở `knowledge/` và các mục liên quan trong chỉ mục nguồn. Nếu connector trả nguyên file, ưu tiên lấy trực tiếp thuộc tính qua đường dẫn đã biết.
+
+1. Mặc định là đấu hạng đơn VN. Chọn `prompts/hero_preparation.md` cho chuẩn bị tướng. Đọc `prompts/reasoning_protocol.md` khi cần đối chiếu mốc vàng, công thức hoặc độ nhạy.
 2. Tìm tướng theo ID, tên hoặc alias trong `groups.heroes`. Bỏ dấu thanh, chuyển đ thành d, bỏ khoảng trắng và dấu nháy. Ưu tiên khớp chính xác. Nếu lỗi gõ trả nhiều ứng viên hợp lý, hỏi ngắn về tên chưa rõ. Flowborn cần xác định dạng xạ thủ hoặc pháp sư.
 3. Tải pack người chơi, các tướng địch đã nhập, pack đường hoặc `packs/roles/general.json` khi chưa có vị trí, và `packs/battlefield/ranked-vn.json`. Mỗi mục trong index là `[name, pack, canonical, aliases]`. Đọc các tệp độc lập song song khi công cụ cho phép.
 4. Mở các nhóm phù hợp ở `catalogs` trong index. Với hỗ trợ, bắt đầu từ `defense`, `support`, `boots`. Với chuẩn bị tướng, thêm `runes`, `enchantments` và `spells`. Mở thêm nhóm vật lý, phép hoặc rừng khi build/tướng cần. `catalog.entries` trong pack đường cũ chỉ là ví dụ. ID của mọi món đã biên tập đều có trong pack nhóm, kể cả món thành phần và ứng viên cần kiểm chứng. Dùng bảng `groups` của index để tìm canonical theo ID.

@@ -25,6 +25,83 @@
         "value": "Xét quyền đường, vị trí người cầm Trừng trị, tầm nhìn và quân số trước khi mở mục tiêu. Nếu địch có lợi thế tiếp cận, cân nhắc đẩy trụ hoặc đổi mục tiêu ở cánh còn lại."
       }
     ],
+    "items.tier-two-boot-swap": [
+      {
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Đang có giày cấp II và tính năng đổi sẵn sàng.",
+          "detail": "Hoán đổi qua lại giữa các giày cấp II không tốn vàng; hồi giữa các lượt đổi.",
+          "timing": {
+            "cooldown_s": 180.0
+          }
+        }
+      }
+    ],
+    "support.humility-gold": [
+      {
+        "evidence": [
+          "patch-2025-04-23-support-recharge",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-04-23",
+        "value": {
+          "effect": "economy",
+          "target": "support-holder",
+          "delivery": "battlefield",
+          "trigger": "Khi Khiêm nhường chia vàng có đồng đội gần.",
+          "detail": "Tỷ lệ vàng của trợ thủ: 30% trước phút 4, 35% phút 4–7, 40% phút 7–10, 45% phút 10–13, 50% từ phút 13. Mốc XP chưa được ghi riêng trong bản vá."
+        }
+      }
+    ],
+    "support.logistics-tier-1-2": [
+      {
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "effect": "economy",
+          "target": "lowest-gold-team-hero",
+          "delivery": "battlefield",
+          "trigger": "Trang bị trợ thủ cấp 1–2 cấp nhịp Hậu cần.",
+          "detail": "Thưởng 6 vàng và 6 kinh nghiệm mỗi nhịp; dữ liệu không nêu cách chọn khi hòa vàng.",
+          "timing": {
+            "interval_s": 3.0
+          }
+        }
+      }
+    ],
+    "support.logistics-tier-3": [
+      {
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "effect": "economy",
+          "target": "lowest-gold-team-hero",
+          "delivery": "battlefield",
+          "trigger": "Trang bị trợ thủ cấp 3 cấp nhịp Hậu cần.",
+          "detail": "Thưởng 8 vàng và 8 kinh nghiệm mỗi nhịp; dữ liệu không nêu cách chọn khi hòa vàng.",
+          "timing": {
+            "interval_s": 3.0
+          }
+        }
+      }
+    ],
     "jungle.early-minion-penalty": [
       {
         "evidence": [

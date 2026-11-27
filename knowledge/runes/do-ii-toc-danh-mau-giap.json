@@ -1,0 +1,63 @@
+{
+  "id": "do-ii-toc-danh-mau-giap",
+  "kind": "runes",
+  "name": "Đỏ II Tốc đánh/Máu/Giáp",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "red"
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.006,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 21.1,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.4,
+          "unit": "armor"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+  ],
+  "relations": []
+}

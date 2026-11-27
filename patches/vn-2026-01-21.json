@@ -350,6 +350,52 @@
         "status": "LIVE_VN",
         "effective_from": "2026-01-21"
       }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.logistics-tier-1-2",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "lowest-gold-team-hero",
+          "delivery": "battlefield",
+          "trigger": "Trang bị trợ thủ cấp 1–2 cấp nhịp Hậu cần.",
+          "detail": "Thưởng 6 vàng và 6 kinh nghiệm mỗi nhịp; dữ liệu không nêu cách chọn khi hòa vàng.",
+          "timing": {
+            "interval_s": 3
+          }
+        },
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.logistics-tier-3",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "lowest-gold-team-hero",
+          "delivery": "battlefield",
+          "trigger": "Trang bị trợ thủ cấp 3 cấp nhịp Hậu cần.",
+          "detail": "Thưởng 8 vàng và 8 kinh nghiệm mỗi nhịp; dữ liệu không nêu cách chọn khi hòa vàng.",
+          "timing": {
+            "interval_s": 3
+          }
+        },
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
     }
   ],
   "review_notes": [

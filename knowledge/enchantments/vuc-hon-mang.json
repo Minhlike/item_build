@@ -70,6 +70,58 @@
         }
       }
     ],
+    "tier-1.ma-hoa": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Đòn hoặc chiêu trúng tướng.",
+          "detail": "Có sát thương thêm; chưa đủ hệ số và hồi."
+        }
+      }
+    ],
+    "tier-2.co-thu": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Trang bị Cố thủ.",
+          "detail": "Thêm kháng hiệu ứng."
+        }
+      }
+    ],
+    "tier-2.cuong-cong": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Trang bị Cường công.",
+          "detail": "Thêm AD và AP."
+        }
+      }
+    ],
+    "tier-3.ma-tinh": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Tung chiêu cuối.",
+          "detail": "Giảm hồi chiêu khác. Hạ hoặc hỗ trợ hạ kéo dài hiệu lực."
+        }
+      }
+    ],
     "tier-2.san-nha": [
       {
         "evidence": [

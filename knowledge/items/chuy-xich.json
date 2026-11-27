@@ -1,0 +1,11 @@
+{
+  "id": "chuy-xich",
+  "kind": "items",
+  "name": "Chùy xích",
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

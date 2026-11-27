@@ -1,0 +1,1 @@
+{"name":"Arum","l2":"packs/heroes/arum.json","live":{"stat.regen-per-five":{"effect":"stat_change","target":"self","trigger":"Hồi phục máu cơ bản theo nhịp.","formula_basis":["hero_level"]}},"unknown":["Chỉ số gốc","Bộ chiêu đầy đủ và biến thể","Hồi chiêu theo cấp","Tương tác và ngưỡng sức mạnh"]}

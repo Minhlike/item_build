@@ -7,7 +7,60 @@ from time import perf_counter_ns
 
 from .catalog import group_packs
 from .retrieval import Repository
-from .storage import encode
+from .storage import encode, read
+
+DRAFT_CASES = [
+    ["trieu van", "bolt baron", "allain", "natalya", "ryoma"],
+    ["richter", "trieu van", "hayate", "raz", "kaine"],
+    ["ybneth", "fennik", "trieu van", "omen", "preyta"],
+    ["butterfly", "yue", "arthur", "hayate", "edras"],
+    ["raz", "natalya", "butterfly", "preyta", "darcy"],
+]
+
+
+def benchmark_progressive(root: Path) -> dict:
+    import tiktoken
+
+    tokenizer = tiktoken.get_encoding("o200k_base")
+
+    def tokens(data):
+        return len(tokenizer.encode(encode(data, compact=True).decode()))
+
+    def raw_tokens(paths):
+        return sum(len(tokenizer.encode((root / p).read_text(encoding="utf-8"))) for p in paths)
+
+    regressions = read(root / "evaluations/phase2_cases.json")
+    lineups = [
+        (f"phase3-{i}", "thane", "support", enemies) for i, enemies in enumerate(DRAFT_CASES, 1)
+    ]
+    lineups += [(case["id"], case["hero"], case["role"], case["enemies"]) for case in regressions]
+    measurements = []
+    for label, hero, role, enemies in lineups:
+        layers = {}
+        for layer in ("l1", "l2"):
+            repo = Repository(root)
+            context = repo.context(
+                hero, role, enemies, "fast_draft", layer=layer, include_reasoning=True
+            )
+            paths = ["knowledge/VERSION.json", *repo.cached]
+            prompts = ["prompts/cloud_bootstrap.md", "prompts/fast_draft.md"]
+            if layer == "l2":
+                paths.append("packs/INDEX.json")
+                prompts.append("prompts/reasoning_protocol.md")
+            layers[layer] = {
+                "assembled_tokens": tokens(context),
+                "github_knowledge_file_count": len(paths),
+                "github_knowledge_tokens": raw_tokens(paths),
+                "github_tokens_with_prompts": raw_tokens(paths + prompts),
+            }
+        measurements.append(
+            {"case": label, "hero": hero, "role": role, "enemies": enemies, **layers}
+        )
+    return {
+        "tokenizer": "o200k_base",
+        "scope": "JSON dựng cục bộ và tổng token file thô mô phỏng đọc GitHub. Chưa đo connector, chất lượng đầu ra hoặc win rate.",
+        "cases": measurements,
+    }
 
 
 def benchmark_catalogs(root: Path) -> dict:
@@ -68,13 +121,7 @@ def benchmark(root: Path, *, reasoning: bool = False) -> dict:
     import tiktoken
 
     tokenizer = tiktoken.get_encoding("o200k_base")
-    cases = [
-        ("thane", ["trieu van", "bolt baron", "allain", "natalya", "ryoma"]),
-        ("thane", ["richter", "trieu van", "hayate", "raz", "kaine"]),
-        ("thane", ["ybneth", "fennik", "trieu van", "omen", "preyta"]),
-        ("thane", ["butterfly", "yue", "arthur", "hayate", "edras"]),
-        ("thane", ["raz", "natalya", "butterfly", "preyta", "darcy"]),
-    ]
+    cases = [("thane", enemies) for enemies in DRAFT_CASES]
     measurements = []
     for hero, enemies in cases:
         start = perf_counter_ns()

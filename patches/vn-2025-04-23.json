@@ -1,0 +1,80 @@
+{
+  "id": "vn-2025-04-23",
+  "title": "Lễ Hội 5v5, sạc riêng của Hồi Huyết",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2025-04-23",
+  "evidence": "patch-2025-04-23-support-recharge",
+  "changes": [
+    {
+      "entity": "items/dai-dia-hoi-huyet",
+      "property": "active.independent-recharge",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đang sạc lượt Hồi Huyết.",
+          "activation": "manual",
+          "exceptions": [
+            "Sạc theo bộ đếm riêng của Hồi Huyết."
+          ],
+          "detail": "Bản vá xác nhận độc lập với hồi trang bị trợ thủ khác; cần kiểm tra giữ lượt/cấu hình khi đổi nhánh."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-04-23",
+        "evidence": [
+          "patch-2025-04-23-support-recharge",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/liet-hoa-hoi-huyet",
+      "property": "active.independent-recharge",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đang sạc lượt Hồi Huyết.",
+          "activation": "manual",
+          "exceptions": [
+            "Sạc theo bộ đếm riêng của Hồi Huyết."
+          ],
+          "detail": "Bản vá xác nhận độc lập với hồi trang bị trợ thủ khác; cần kiểm tra giữ lượt/cấu hình khi đổi nhánh."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-04-23",
+        "evidence": [
+          "patch-2025-04-23-support-recharge",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.humility-gold",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "support-holder",
+          "delivery": "battlefield",
+          "trigger": "Khi Khiêm nhường chia vàng có đồng đội gần.",
+          "detail": "Tỷ lệ vàng của trợ thủ: 30% trước phút 4, 35% phút 4–7, 40% phút 7–10, 45% phút 10–13, 50% từ phút 13. Mốc XP chưa được ghi riêng trong bản vá."
+        },
+        "evidence": [
+          "patch-2025-04-23-support-recharge",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-04-23"
+      }
+    }
+  ]
+}

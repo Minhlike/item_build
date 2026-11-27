@@ -478,6 +478,46 @@
         "status": "LIVE_VN",
         "effective_from": "2026-10-15"
       }
+    },
+    {
+      "entity": "enchantments/rung-nguyen-sinh",
+      "property": "tier-3.du-hiep.immunity",
+      "classification": "bug_fix",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "trigger": "Đòn kích hoạt Du hiệp trúng tướng.",
+          "target": "target-hit",
+          "exceptions": [
+            "Làm chậm bị chặn khi mục tiêu đang miễn khống."
+          ]
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15"
+        ]
+      }
+    },
+    {
+      "entity": "enchantments/rung-nguyen-sinh",
+      "property": "tier-2.cuu-vien.refresh",
+      "classification": "bug_fix",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "trigger": "Hiệu ứng Cứu viện đang hoạt động.",
+          "target": "self-and-nearby-allied-heroes",
+          "exceptions": [
+            "Đã sửa lỗi tự làm mới hiệu ứng liên tục."
+          ]
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15"
+        ]
+      }
     }
   ],
   "review_notes": []

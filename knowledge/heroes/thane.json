@@ -151,6 +151,49 @@
         "value": "Thông báo 13/08 ghi phần gốc là vật lý với gốc 480, thêm 240 mỗi cấp chiêu và 8% máu tối đa của Thane. Trang kỹ năng mô tả sát thương chuẩn riêng cùng phần vật lý theo máu đã mất của mục tiêu. Chưa phân giải phần gốc và khả năng hai nguồn mô tả các thành phần khác nhau."
       }
     ],
+    "skill-3.cast-mitigation": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Đang tụ lực và thi triển Excalibur.",
+          "detail": "Tách riêng với nội tại. Chưa rõ thứ tự, cộng dồn và áp dụng với sát thương chuẩn.",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "skill-3.cast-protection": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Trong lần tung Excalibur.",
+          "detail": "Mô tả không thể bị ngăn cản khi tung. Chưa thử áp chế và thời điểm rời trạng thái."
+        }
+      }
+    ],
+    "skill-1.end-airborne": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Chặng cuối Xung phong trúng mục tiêu.",
+          "detail": "Hất tung cuối tách với các nhịp đẩy trên đường lướt."
+        }
+      }
+    ],
     "passive.damage-reduction": [
       {
         "evidence": [

@@ -1,0 +1,65 @@
+{
+  "id": "truong-hon-mang",
+  "kind": "items",
+  "name": "Trượng hỗn mang",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2050.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 180.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.percent-magic-penetration": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "magic_pen",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang trang bị.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          },
+          "unique_group": "xuyen-phep"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

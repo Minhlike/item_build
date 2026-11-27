@@ -63,6 +63,49 @@
         }
       }
     ],
+    "tier-1.am-kich": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đánh thường từ trong bụi cỏ.",
+          "detail": "Sát thương thêm loại chuẩn.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "tier-3.du-hiep": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "trigger": "Đòn kế tiếp sau khi rời giao tranh.",
+          "detail": "Làm chậm và giảm sát thương của địch; chưa rõ lượng, thời lượng và hồi."
+        }
+      }
+    ],
+    "tier-1.nhay-ben.identity": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": true
+      }
+    ],
+    "tier-2.sinh-ton.identity": [
+      {
+        "evidence": [
+          "academy-badges"
+        ],
+        "value": true
+      }
+    ],
     "tier-2.cuu-vien": [
       {
         "evidence": [
@@ -89,10 +132,45 @@
           }
         }
       }
+    ],
+    "tier-3.du-hiep.immunity": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "trigger": "Đòn kích hoạt Du hiệp trúng tướng.",
+          "exceptions": [
+            "Làm chậm bị chặn khi mục tiêu đang miễn khống."
+          ]
+        }
+      }
+    ],
+    "tier-2.cuu-vien.refresh": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "special",
+          "target": "self-and-nearby-allied-heroes",
+          "trigger": "Hiệu ứng Cứu viện đang hoạt động.",
+          "exceptions": [
+            "Đã sửa lỗi tự làm mới hiệu ứng liên tục."
+          ]
+        }
+      }
     ]
   },
   "unknown": [
-    "Đủ các nút theo tầng và ràng buộc nhánh chính/phụ"
+    "Đủ các nút theo tầng và ràng buộc nhánh chính/phụ",
+    "Mô tả cơ chế Nhạy bén và Sinh tồn mâu thuẫn tiêu đề trong danh mục. Cần đọc giao diện VN."
   ],
   "relations": []
 }

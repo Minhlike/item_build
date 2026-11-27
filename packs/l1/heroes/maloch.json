@@ -1,0 +1,1 @@
+{"name":"Maloch","l2":"packs/heroes/maloch.json","live":{"skill-1.base-physical":{"effect":"damage","target":"target-hit","trigger":"Đường chém Chiêu 1 trúng; nguồn ghi thành phần cơ bản.","damage_type":"physical","formula_basis":["skill_rank","bonus_ad"]}},"unknown":["Chỉ số gốc","Các kỹ năng và tương tác còn lại"]}

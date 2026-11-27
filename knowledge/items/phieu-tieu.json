@@ -1,0 +1,11 @@
+{
+  "id": "phieu-tieu",
+  "kind": "items",
+  "name": "Phi tiêu",
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

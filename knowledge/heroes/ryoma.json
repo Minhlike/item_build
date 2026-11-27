@@ -42,6 +42,98 @@
         }
       }
     ],
+    "skill-1.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Kiếm từ Nhất kích tất sát trúng.",
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 200.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nhất kích trúng mục tiêu.",
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 330.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 66.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.heal": [
+      {
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Một đòn Loạn Trảm trúng tướng.",
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp.",
+          "formula": {
+            "unit": "hp",
+            "base": 80.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      }
+    ],
     "skill-3.base-physical": [
       {
         "evidence": [

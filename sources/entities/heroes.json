@@ -144,6 +144,49 @@
           ],
           "status": "UNVERIFIED"
         }
+      ],
+      "skill-3.cast-mitigation": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "trigger": "Đang tụ lực và thi triển Excalibur.",
+            "target": "self",
+            "amount": {
+              "amount": 0.2,
+              "unit": "ratio"
+            },
+            "detail": "Tách riêng với nội tại. Chưa rõ thứ tự, cộng dồn và áp dụng với sát thương chuẩn."
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "skill-3.cast-protection": [
+        {
+          "value": {
+            "effect": "cc_immunity",
+            "trigger": "Trong lần tung Excalibur.",
+            "target": "self",
+            "detail": "Mô tả không thể bị ngăn cản khi tung. Chưa thử áp chế và thời điểm rời trạng thái."
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
+      ],
+      "skill-1.end-airborne": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "trigger": "Chặng cuối Xung phong trúng mục tiêu.",
+            "target": "target-hit",
+            "detail": "Hất tung cuối tách với các nhịp đẩy trên đường lướt."
+          },
+          "evidence": [
+            "thane"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -900,6 +943,49 @@
             "target": "self",
             "trigger": "Lá chắn chiêu cuối còn hiệu lực",
             "delivery": "ability"
+          },
+          "evidence": [
+            "natalya"
+          ]
+        }
+      ],
+      "skill-1.hit-refund": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "trigger": "Các bóng ma trúng tướng địch.",
+            "target": "self",
+            "detail": "Hồi một phần năng lượng và giảm hồi chiêu. Chưa có hệ số và thứ tự tính theo số bóng."
+          },
+          "evidence": [
+            "natalya"
+          ]
+        }
+      ],
+      "skill-3.tick": [
+        {
+          "value": {
+            "effect": "damage",
+            "trigger": "Tia Năng lượng chết chóc duy trì trúng mục tiêu.",
+            "target": "target-hit",
+            "damage_type": "magic",
+            "timing": {
+              "interval_s": 0.25
+            },
+            "detail": "Cần đo số nhịp, mốc dừng và hiệu lực khi vỡ lá chắn."
+          },
+          "evidence": [
+            "natalya"
+          ]
+        }
+      ],
+      "skill-3.shield-control": [
+        {
+          "value": {
+            "effect": "cc_immunity",
+            "trigger": "Còn lá chắn do chiêu cuối tạo.",
+            "target": "self",
+            "detail": "Cần kiểm tra miễn khống hết tại lúc vỡ lá chắn hay khi ngừng thi triển."
           },
           "evidence": [
             "natalya"

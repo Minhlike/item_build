@@ -1,0 +1,97 @@
+{
+  "id": "ma-phap-truong-bao",
+  "kind": "items",
+  "name": "Ma pháp trường bào",
+  "facts": {
+    "shop.recipe": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items"
+        ],
+        "effective_from": "2025-07-09",
+        "value": [
+          "items/mat-na-ma-quai",
+          "items/sach-co"
+        ]
+      }
+    ],
+    "passive.magic-pen": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang Ma pháp trường bào.",
+          "activation": "automatic",
+          "detail": "32–60 điểm và 3% theo máu cộng thêm; trần 150 điểm. Học viện ghi đạt tối đa theo thời gian ở phút 13."
+        }
+      }
+    ],
+    "passive.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang Ma pháp trường bào.",
+          "activation": "automatic",
+          "detail": "26–40 điểm cùng hệ số HP; trần 100 điểm. Bản ra mắt ghi máu thêm, Học viện ghi máu bản thân."
+        }
+      }
+    ],
+    "stat.price": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 2160.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 120.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 900.0,
+          "unit": "hp"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

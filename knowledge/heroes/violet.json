@@ -83,8 +83,9 @@
         "evidence": [
           "patch-2026-03-11"
         ],
-        "status": "LIVE_VN",
+        "status": "SUPERSEDED",
         "effective_from": "2026-03-11",
+        "effective_until": "2026-04-08",
         "value": {
           "effect": "special",
           "target": "self",
@@ -100,6 +101,22 @@
                 }
               ]
             },
+            "cooldown_start": "cast"
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Thi triển Chiêu 1.",
+          "timing": {
+            "cooldown_s": 5.0,
             "cooldown_start": "cast"
           }
         }
@@ -185,6 +202,32 @@
           "exceptions": [
             "Thành phần gây lên lính có dấu tăng gấp đôi."
           ]
+        }
+      }
+    ],
+    "skill-1.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn cường hóa từ Chiêu 1 trúng.",
+          "detail": "Phần gốc được công bố. Không gồm tỷ lệ đánh thường hay chí mạng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 225.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25.0
+              }
+            ]
+          }
         }
       }
     ]
