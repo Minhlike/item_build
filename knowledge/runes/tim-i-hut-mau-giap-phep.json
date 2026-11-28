@@ -1,0 +1,52 @@
+{
+  "id": "tim-i-hut-mau-giap-phep",
+  "kind": "runes",
+  "name": "Tím I Hút máu/Giáp phép",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "purple"
+      }
+    ],
+    "stat.lifesteal": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.003,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.2,
+          "unit": "magic_defense"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+  ],
+  "relations": []
+}

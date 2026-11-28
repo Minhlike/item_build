@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from .catalog import eligibility
+from .catalog import defense_purchase_matrix, eligibility
 from .storage import encode, read
 
 DRAFT = "packs/l1"
@@ -180,6 +180,22 @@ def thane_support(packs, files, index, tactics, preference, release, item_draft)
         key.split("/")[1]: value for key, value in packs.items() if key.startswith("items/")
     }
     choices = {}
+    components = {
+        "bua-suc-manh",
+        "dai-khang-phep",
+        "day-chuyen-hong-ngoc",
+        "gang-bach-kim",
+        "gang-giac-dau",
+        "giap-chan",
+        "giap-hiep-si",
+        "giap-nhe",
+        "nhan-hong-ngoc",
+        "tim-incubus",
+        "giay-thep",
+        "hoa-he-bao-thach",
+        "nguyen-to-bao-thach",
+        "tho-he-bao-thach",
+    }
     for item_id, entry in all_items.items():
         if (
             entry["shop_group"] not in {"defense", "support", "boots"}
@@ -188,6 +204,8 @@ def thane_support(packs, files, index, tactics, preference, release, item_draft)
             continue
         decision = eligibility(item_id, entry, preference)
         if not decision.startswith("excluded"):
+            if decision == "reviewable" and item_id in components:
+                decision = "component"
             choices[item_id] = item_draft(entry) | {"eligibility": decision}
     # Recipe parts may live in another shop category or have their own recipes.
     pending_parts = list(choices.values())
@@ -238,18 +256,18 @@ def thane_support(packs, files, index, tactics, preference, release, item_draft)
         "personal_preference": preference,
         "academy_candidate_defaults": ACADEMY_ITEM_DEFAULT,
         "shortlist": choices,
+        "purchase_comparison": defense_purchase_matrix(choices),
         "macro_goals": [
             rule for rule in support["macro_goals"] if rule.get("hero", "thane") == "thane"
         ],
         "team_threats": tactics["team_threats"],
         "rules": [
-            "So slot 3–4 theo tổng vàng, chỉ tính tiền thành phần đã có khi công thức và giá xác minh.",
-            "Tách sát thương vật lý, phép, chuẩn và HP theo chủ thể. Không suy hiệu lực khiên, xuyên hoặc cộng dồn khi thiếu bằng chứng.",
-            "Kiểm tra mục tiêu, phạm vi và điều kiện hồi phục, giảm hồi, lá chắn, khống chế, chí mạng và tàng hình.",
-            "live là LIVE_VN. academy_candidates kế thừa academy_candidate_defaults. Giá, công thức, khả dụng và màu client vắng mặt vẫn chưa xác minh.",
-            "Mở l2 của đúng thuộc tính ảnh hưởng quyết định khi thiếu dữ liệu, canonical để kiểm mâu thuẫn.",
-            "Chấm icon dùng identity.icon-color LIVE_VN hoặc icon_reference từ ảnh Garena. Ghi phạm vi ảnh nếu cần và dùng ⚪ khi thiếu nguồn.",
-            "Trả một bộ sáu món và chiến thuật bắt đầu bằng Mid đầu trận, tối đa 50 từ. Nêu ngắn giới hạn làm thay đổi thứ tự mua.",
+            "Dùng purchase_comparison để so toàn lộ trình. Ở cùng ngân sách slot 3–4, thử đổi món hoặc đảo thứ tự, giữ phương án còn ổn định trước phép, vật lý/chuẩn và khống chế thực sự chạm ta hoặc chủ lực.",
+            "So đợt dồn ngắn, đánh kéo dài và thời gian rút. Tách HP/giáp, chuẩn theo HP, lá chắn lúc kịp kích hoạt, hồi theo nhịp, giải khống và bảo kê. Ưu tiên sống sót sớm; bỏ phương án thua ở mọi tiêu chí đã biết, không cho điểm tùy ý.",
+            "Hayate: Khiên thất truyền đáng so khi bị đánh thường, chưa biết số phi tiêu hoặc tốc đánh lấy ở mốc tung chiêu. Ra cần Hỏa diệm phủ đúng cửa sổ hồi của địch và đáng đánh đổi chỉ số. So Gaia/Troy với Khiên Thánh Quang nếu hai món vật lý làm hở sát thương phép.",
+            "Chỉ cộng phần ghép có giá và công thức. Kiểm tra nội tại trùng, trần CDR và giá trị khi trận kết thúc sớm. Giữ ô thiếu là unknown; nếu thứ hạng đổi theo giả định, chốt một đường có điều kiện.",
+            "live là LIVE_VN. academy_candidates kế thừa academy_candidate_defaults. Chỉ mở l2 nếu thiếu trường có thể đổi quyết định; L3 kiểm mâu thuẫn. Màu ưu tiên client có nguồn rồi ảnh Garena; thiếu dùng ⚪.",
+            "Xuất đúng một build sáu món, chiến thuật mở bằng Mid đầu trận, tối đa 50 từ. Chỉ nêu giới hạn ảnh hưởng quyết định.",
         ],
     }
 
@@ -281,6 +299,7 @@ def draft_context(repo, hero: str, role: str | None, enemies: list[str], allies:
                     "personal_preference",
                     "academy_candidate_defaults",
                     "shortlist",
+                    "purchase_comparison",
                     "macro_goals",
                     "rules",
                 )

@@ -1,0 +1,53 @@
+{
+  "id": "tim-ii-hut-mau-giap-phep",
+  "kind": "runes",
+  "name": "Tím II Hút máu/Giáp phép",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "purple"
+      }
+    ],
+    "stat.lifesteal": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.01,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 4.1,
+          "unit": "magic_defense"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+    "Danh mục lặp cùng trị số của ngọc III; cần kiểm phiên bản."
+  ],
+  "relations": []
+}

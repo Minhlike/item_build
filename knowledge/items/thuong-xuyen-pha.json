@@ -1,0 +1,68 @@
+{
+  "id": "thuong-xuyen-pha",
+  "kind": "items",
+  "name": "Thương Xuyên Phá",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 110.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "passive.flat-pen": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "armor_pen",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang trang bị.",
+          "activation": "automatic",
+          "detail": "40–180 xuyên giáp phẳng theo trang học viện; mốc tăng chưa có."
+        }
+      }
+    ],
+    "passive.travel-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Rời trạng thái giao tranh.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "unique_group": "khinh-cong"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

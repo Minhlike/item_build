@@ -168,6 +168,16 @@
         }
       }
     ],
+    "tactics.interrupt-after-cleanse": [
+      {
+        "evidence": [
+          "trieu-van",
+          "patch-2026-02-05"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ một lượt hất/đẩy sau Long huyết nếu đã quan sát đối thủ dùng giải hiệu ứng. Giảm hồi có điều kiện lên nhịp hút máu khi anh ta còn bám mục tiêu. Tách phần đánh thường khỏi lần nện Long kích."
+      }
+    ],
     "skill-2.base-physical": [
       {
         "evidence": [

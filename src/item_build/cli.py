@@ -9,7 +9,7 @@ from .acquisition import audit, clean_for_review, monitor, snap
 from .benchmark import benchmark, benchmark_catalogs, benchmark_progressive
 from .compiler import compile_repo
 from .coverage import assess_readiness, measure_coverage
-from .local_review import build_local_review
+from .local_review import build_local_review, source_locations
 from .reasoning import Comparison, PurchaseScenario, compare_combat, plan_purchases
 from .retrieval import LANES, Repository
 from .storage import encode, read, write
@@ -22,6 +22,7 @@ def main() -> int:
     for name in ("ingest", "audit", "enrich", "compile", "validate", "update"):
         commands.add_parser(name)
     commands.choices["enrich"].add_argument("--hero")
+    commands.choices["enrich"].add_argument("--source-locations", action="store_true")
     query = commands.add_parser("query")
     query.add_argument("--hero", required=True)
     query.add_argument("--canonical", action="store_true")
@@ -79,6 +80,11 @@ def run(root: Path, options) -> dict:
             build_local_review(root, manifest, datasets)
             return audit(root, manifest, datasets) if options.command == "audit" else manifest
         case "enrich":
+            if options.source_locations:
+                locations = source_locations(root)
+                path = "knowledge/sources/upstream-locations.json"
+                write(root / path, encode(locations, compact=True))
+                return {"path": path, "sha": locations["sha"]}
             repo = Repository(root)
             if options.hero:
                 key = f"heroes/{repo.identify(options.hero)}"

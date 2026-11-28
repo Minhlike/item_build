@@ -1,4 +1,5 @@
 from collections import defaultdict
+from itertools import combinations
 from pathlib import Path
 
 from pydantic import Field
@@ -89,6 +90,103 @@ def eligibility(item_id: str, entry: dict, preferences: dict | None) -> str:
     if entry["activation"] == "unknown" and not manual_ok:
         return "activation_needs_confirmation"
     return "reviewable"
+
+
+def pareto_front(vectors):
+    """Return undominated IDs for maximized, comparable coordinates.
+
+    Unknown coordinates prevent elimination. A tie leaves both options available.
+    """
+    survivors = []
+    for key, values in vectors.items():
+        if not any(
+            key != other
+            and len(values) == len(alternative)
+            and all(
+                a is not None and b is not None and b >= a
+                for a, b in zip(values, alternative, strict=True)
+            )
+            and any(b > a for a, b in zip(values, alternative, strict=True))
+            for other, alternative in vectors.items()
+        ):
+            survivors.append(key)
+    return survivors
+
+
+DEFENSE_CHECKPOINT_ITEMS = (
+    "khien-that-truyen",
+    "ao-choang-than-ra",
+    "khien-thanh-quang",
+    "giap-gaia",
+    "huan-chuong-troy",
+    "phu-chu-truong-sinh",
+)
+DEFENSE_STAT_FIELDS = (
+    "stat.price",
+    "stat.hp",
+    "stat.armor",
+    "stat.magic-defense",
+    "stat.cooldown-reduction",
+)
+
+
+def defense_purchase_matrix(items):
+    def quantity(item, field):
+        if field in item["live"]:
+            return [item["live"][field]["amount"], "LIVE_VN"]
+        candidate = item.get("academy_candidates", {}).get(field)
+        return [candidate["amount"], "UNVERIFIED"] if candidate else None
+
+    selected = [id for id in DEFENSE_CHECKPOINT_ITEMS if id in items]
+    opening = [
+        id
+        for id, item in items.items()
+        if item["shop_group"] == "boots" and item["live"].get("shop.tier", {}).get("amount") == 2
+    ]
+    support = [
+        id
+        for id, item in items.items()
+        if item["shop_group"] == "support" and item["live"].get("shop.tier", {}).get("amount") == 3
+    ]
+    values = {id: [quantity(items[id], field) for field in DEFENSE_STAT_FIELDS] for id in selected}
+    openings = {items[id]["live"].get("stat.price", {}).get("amount") for id in opening}
+    supports = {items[id]["live"].get("stat.price", {}).get("amount") for id in support}
+    base = (
+        min(openings) + min(supports)
+        if None not in openings | supports and len(openings) == len(supports) == 1
+        else None
+    )
+    prices = {id: row[0] for id, row in values.items()}
+    totals = {
+        f"{a}+{b}": [
+            base + prices[a][0] + prices[b][0],
+            "LIVE_VN" if prices[a][1] == prices[b][1] == "LIVE_VN" else "UNVERIFIED",
+        ]
+        for a, b in combinations(selected, 2)
+        if base is not None and prices[a] is not None and prices[b] is not None
+    }
+    groups = defaultdict(set)
+    for id, entry in items.items():
+        for layer in (entry["live"], entry.get("academy_candidates", {})):
+            for mechanic in layer.values():
+                if isinstance(mechanic, dict) and "unique_group" in mechanic:
+                    groups[mechanic["unique_group"]].add(id)
+    return {
+        "columns": DEFENSE_STAT_FIELDS,
+        "rows": values,
+        "slot_1_2_full_price": base,
+        "slot_3_full_price": {
+            id: [base + value[0], value[1]]
+            for id, value in prices.items()
+            if base is not None and value is not None
+        },
+        "slot_4_full_price_pairs": totals,
+        "shared_unique_groups": {
+            group: sorted(ids) for group, ids in sorted(groups.items()) if len(ids) > 1
+        },
+        "scope": "Mốc nguyên món khi không tính bù thành phần hoặc bán đồ. Ô null là thiếu dữ kiện. "
+        "Nhóm nội tại trùng cần đối chiếu trước khi cộng. Giữ CDR thô khi chưa xác minh trần.",
+    }
 
 
 def group_packs(packs: dict) -> dict:

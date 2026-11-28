@@ -79,6 +79,8 @@ Khóa `kind` mặc định là `mechanical_fact`, còn `status` mặc định l�
 
 Registry tại `knowledge/sources/registry.json` lưu phạm vi khai thác và phân phối. Dữ liệu upstream được giữ cục bộ. Giấy phép MIT của upstream áp dụng cho crawler và script hợp nhất. Bản phát hành công khai dùng định danh, dữ kiện độc lập đã biên tập, dẫn nguồn và số liệu kiểm định tổng hợp. [LICENSE tại SHA đã kiểm định](https://github.com/MLuc24/lien-quan-data/blob/a210fe47690de7cefd18f76b61694724e02fdb5e/LICENSE)
 
+`upstream_locations` trong `packs/INDEX.json` dẫn tới chỉ mục tham chiếu theo ID chuẩn. Ghép URL `file` với `#L<đầu>-L<cuối>` của hồ sơ hoặc kỹ năng để mở bản gốc. Dữ liệu đọc tại đó giữ trạng thái ứng viên. Khi đổi pin hoặc mapping ID, chạy `uv run item-build ingest` rồi `uv run item-build enrich --source-locations` trước `compile`. [Chỉ mục nguồn](knowledge/sources/upstream-locations.json)
+
 ## Cập nhật và khôi phục
 
 1. Chạy `uv run item-build update` để kiểm tra HEAD upstream, kiểm tra các URL có quyền theo dõi đã đăng ký và biên dịch lại. Thông báo Garena được rà qua trang [Cập nhật](https://lienquan.garena.vn/cap-nhat/) do quyền theo dõi tự động chưa được cấp.
@@ -92,3 +94,5 @@ Theo dõi HTTP chỉ hoạt động với `acquisition: approved_http`, `permiss
 Xem [bàn giao Phase 2](reports/phase2.md), [kiểm định upstream](reports/upstream-audit.json), [benchmark pack nhóm](reports/catalog-benchmark.json) và [bộ câu hỏi nghiệm thu](evaluations/reasoning.md). [Bàn giao Phase 1](reports/handoff.md) và [benchmark Phase 1](reports/benchmark.json) lưu số liệu tại checkpoint ban đầu.
 
 Số liệu trước/sau và khoảng trống nằm trong [bàn giao Phase 3](reports/phase3.md). Kiểm định đối chứng và hướng dẫn chấm nằm trong [bộ đề Phase 3](evaluations/phase3/README.md). Phiên bản hiện tại dùng các nguyên lý đã đối chiếu trong [ghi chú nghiên cứu](reports/phase3-research.md).
+
+Xem [hồi quy Thane SP và độ phủ dữ liệu](reports/decision-review.md) để đối chiếu hai đường mua tại cùng mốc vàng.

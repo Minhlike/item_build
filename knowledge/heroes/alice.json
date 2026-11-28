@@ -107,6 +107,16 @@
         }
       }
     ],
+    "tactics.leave-shred-zone": [
+      {
+        "evidence": [
+          "hero-alice",
+          "patch-aug"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Rời vùng rồi mới đổi lượt tranh chấp. Tránh đứng chung đường tiếp cận cho phép đối phương nối vào lá chắn và khống chế; giảm hồi không làm giảm lá chắn Alice."
+      }
+    ],
     "skill-2.cooldown": [
       {
         "evidence": [

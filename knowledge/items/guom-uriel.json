@@ -1,0 +1,96 @@
+{
+  "id": "guom-uriel",
+  "kind": "items",
+  "name": "Gươm Uriel",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2000.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 80.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.25,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 200.0,
+          "unit": "magic_defense"
+        }
+      }
+    ],
+    "passive.magic-shield": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "HP xuống dưới 40%.",
+          "activation": "automatic",
+          "detail": "Chỉ lá chắn phép 600–2000 theo danh mục. Trong cửa sổ có thêm 25% kháng hiệu ứng và 30% tốc chạy.",
+          "timing": {
+            "duration_s": 5.0,
+            "internal_cooldown_s": 75.0
+          },
+          "unique_group": "bao-ho-ma-phap"
+        }
+      }
+    ],
+    "passive.on-hit-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đánh thường.",
+          "activation": "automatic",
+          "detail": "Tăng tốc chạy.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "unique_group": "cuong-bao"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

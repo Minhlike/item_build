@@ -518,6 +518,194 @@
           "patch-oct15"
         ]
       }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "passive.full-power-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Kỹ năng kế tiếp đánh trúng khi đầy Ma lực.",
+          "detail": "Đồng thời triệu hồi Ma vật gây sát thương phép. Thiếu lượng khiên và mốc nạp."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "passive.full-power-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Ma vật lao tới sau lần tung chiêu trúng lúc đầy Ma lực.",
+          "damage_type": "magic"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-1.explosion",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Ma vật chạm địch hoặc đến cuối tầm.",
+          "detail": "Nổ và tỏa đạn. Kiểm tra góc đứng để tránh nhiều thành phần; chưa xác minh số đạn cùng trúng."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-2.center-knockup",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-center",
+          "trigger": "Đứng ở trung tâm vết nứt lúc nổ sau độ trễ.",
+          "detail": "Vùng giữa có hất tung và sát thương cao hơn."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-2.outer-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-area",
+          "trigger": "Vết nứt bùng phát trúng.",
+          "detail": "Dùng bước ra khỏi vùng trễ để tránh cả khống chế và chuỗi nối."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.opening-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-path",
+          "trigger": "Ma vật xung kích lúc được triệu hồi trúng."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.cast-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Tung Triệu hồi hắc ám."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.summon-magic-defense-reduction",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "trigger": "Ma vật chạm địch trong thời gian chiêu cuối.",
+          "detail": "Giảm giáp phép của đích; chưa biết dạng phẳng/phần trăm, hệ số, cộng dồn hoặc thời lượng."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.contact-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Ma vật được triệu hồi chạm địch.",
+          "detail": "Tạo khiên cho Evita; chưa biết có cộng với khiên lúc tung chiêu."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.resource-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Chiêu cuối đang duy trì.",
+          "detail": "Tăng nhịp nạp Ma lực. Ma vật tự tìm mục tiêu sau cú xung kích."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
     }
   ],
   "review_notes": []

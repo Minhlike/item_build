@@ -32,6 +32,17 @@
         ],
         "value": "stats_only"
       }
+    ],
+    "stat.move-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 30.0,
+          "unit": "move_speed"
+        }
+      }
     ]
   },
   "unknown": [

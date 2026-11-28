@@ -36,6 +36,54 @@
         }
       }
     ],
+    "tactics.defend-dive-lane": [
+      {
+        "evidence": [
+          "hero-toro",
+          "patch-2026-03-11"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Toro mở đường cho bắn và cấu rỉa nối tiếp. Đẩy tướng gây sát thương hoặc tách chủ lực khi Toro đang thi triển. Hồi rời giao tranh chỉ đáng mua giảm hồi nếu Hỏa diệm còn phủ khi bắt đầu nhịp."
+      }
+    ],
+    "skill-1.front-knockup": [
+      {
+        "evidence": [
+          "hero-toro"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-path",
+          "trigger": "Toro húc trúng trên đường lướt."
+        }
+      }
+    ],
+    "skill-2.refresh-dash": [
+      {
+        "evidence": [
+          "hero-toro"
+        ],
+        "value": {
+          "effect": "reset_cooldown",
+          "target": "self",
+          "trigger": "Kẻ địch trong phạm vi Dư chấn.",
+          "detail": "Làm mới S1 theo hồ sơ bộ chiêu; cần kiểm tra thời điểm chính xác."
+        }
+      }
+    ],
+    "skill-3.third-knockup": [
+      {
+        "evidence": [
+          "hero-toro"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "trigger": "Nhịp cuối Đại địa chấn trúng.",
+          "detail": "Đọc cùng ứng viên miễn khống trong lúc tung; không giả định mọi loại ngắt đều vô hiệu."
+        }
+      }
+    ],
     "passive.out-of-combat-heal": [
       {
         "evidence": [

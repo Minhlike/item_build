@@ -1,0 +1,54 @@
+{
+  "id": "vuong-mien-hecate",
+  "kind": "items",
+  "name": "Vương miện Hecate",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2400.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 240.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "passive.ap-multiplier": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Trang bị Thuật sư.",
+          "activation": "automatic",
+          "detail": "Tăng AP; chưa rõ cách gộp các nguồn khuếch đại.",
+          "amount": {
+            "amount": 0.35,
+            "unit": "ratio"
+          },
+          "unique_group": "thuat-su"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

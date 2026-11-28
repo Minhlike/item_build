@@ -599,6 +599,26 @@
         "status": "LIVE_VN",
         "effective_from": "2026-10-30"
       }
+    },
+    {
+      "entity": "heroes/tamyn",
+      "property": "passive.empowered-physical",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "delivery": "empowered_attack",
+          "trigger": "Đòn đánh thường cường hóa trúng.",
+          "damage_type": "physical",
+          "detail": "Phần gốc 182–364, cộng 0,28 công vật lý cộng thêm. Chưa có mốc nội suy."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "evidence": [
+          "patch-oct"
+        ]
+      }
     }
   ],
   "review_notes": []

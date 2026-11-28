@@ -1,0 +1,65 @@
+{
+  "id": "chuy-co",
+  "kind": "items",
+  "name": "Chùy cổ",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 740.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 25.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.15,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.on-hit-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đánh thường.",
+          "activation": "automatic",
+          "detail": "Tăng tốc chạy.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "unique_group": "cuong-bao"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

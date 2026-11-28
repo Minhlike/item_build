@@ -1,0 +1,78 @@
+{
+  "id": "song-dao-bao-tap",
+  "kind": "items",
+  "name": "Song đao bão táp",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1920.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.35,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.critical": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.25,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.07,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.crit-tenacity": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "tenacity",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đánh chí mạng.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.35,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 2.0
+          },
+          "unique_group": "cuong-phong"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

@@ -257,6 +257,10 @@ def relation_is_live(relation, entities, day):
 def artifacts(root: Path) -> dict[str, bytes]:
     entities, evidence, relations, release, patch = load_inputs(root)
     validate_graph(entities, evidence, relations)
+    upstream_index = "knowledge/sources/upstream-locations.json"
+    locations = read(root / upstream_index)
+    if locations["sha"] != read(root / "sources/upstream.json")["sha"]:
+        raise ValueError("Cần tạo lại chỉ mục tham chiếu sau khi đổi pin upstream.")
     day = release.as_of
     recipes = {
         key: fact.value
@@ -364,6 +368,7 @@ def artifacts(root: Path) -> dict[str, bytes]:
             "groups": paths,
             "entry_fields": ["name", "pack", "canonical", "aliases"],
             "evidence": "knowledge/sources/INDEX.json",
+            "upstream_locations": upstream_index,
             "roles": "packs/roles/",
             "catalogs": catalog_paths,
             "preferences": preference_paths,

@@ -1,0 +1,78 @@
+{
+  "id": "cung-ta-ma",
+  "kind": "items",
+  "name": "Cung tà ma",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2250.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 90.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.lifesteal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.critical": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "active.lifesteal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Tướng đánh xa bấm Hấp huyết.",
+          "activation": "manual",
+          "amount": {
+            "amount": 0.6,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 3.0,
+            "cooldown_s": 60.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

@@ -2602,5 +2602,1666 @@
     "unknown": [
       "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
     ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-giap-phep",
+    "name": "Xanh II Giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 5.6,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-hoi-chieu",
+    "name": "Xanh I Hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-hoi-chieu",
+    "name": "Xanh II Hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.006,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-giap",
+    "name": "Xanh I Giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 2.7,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-giap",
+    "name": "Xanh II Giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 5.6,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-giap-phep",
+    "name": "Xanh I Giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+      "Trang danh mục thiếu trị số dưới tên ngọc."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-mau-hoi-chieu",
+    "name": "Xanh I Máu/Hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+      "Trang danh mục thiếu trị số dưới tên ngọc."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-hut-phep-giap",
+    "name": "Xanh I Hút phép/Giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 1.8,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-hut-phep-giap",
+    "name": "Xanh II Hút phép/Giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 3.7,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.spell-lifesteal": [
+        {
+          "value": {
+            "amount": 0.004,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-cong-vat-ly-xuyen-giap",
+    "name": "Xanh II Công vật lý/Xuyên giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 0.6,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor-pen": [
+        {
+          "value": {
+            "amount": 4,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-cong-phep-hoi-chieu",
+    "name": "Xanh I Công phép/Hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 0.7,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-cong-phep-hoi-chieu",
+    "name": "Xanh II Công phép/Hồi chiêu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 1.5,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.004,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-toc-danh-xuyen-giap-phep",
+    "name": "Xanh I Tốc đánh/Xuyên giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+      "Tên nói xuyên phép nhưng dòng trị số ghi xuyên giáp; giữ đơn vị chưa rõ."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-i-giap-giap-phep",
+    "name": "Xanh I Giáp/Giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 1.5,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 1.5,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "xanh-ii-giap-giap-phep",
+    "name": "Xanh II Giáp/Giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 3.1,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 3.1,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-toc-danh-chay",
+    "name": "Tím I Tốc đánh/Chạy",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-iii-hut-mau-thu-phep",
+    "name": "Tím III Hút máu/Thủ phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 3,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 4.1,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-hut-mau-giap-phep",
+    "name": "Tím II Hút máu/Giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 4.1,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+      "Danh mục lặp cùng trị số của ngọc III; cần kiểm phiên bản."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-hut-mau-giap-phep",
+    "name": "Tím I Hút máu/Giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 1.2,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-mau",
+    "name": "Tím I Máu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 22.5,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-i-hut-mau",
+    "name": "Tím I Hút máu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.005,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-hut-mau",
+    "name": "Tím II Hút máu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "tim-ii-mau-toi-da",
+    "name": "Tím II Máu tối đa",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "purple",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 46.9,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-cong-vat-ly-xuyen-giap",
+    "name": "Đỏ II Công vật lý/Xuyên giáp",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 1.3,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.armor-pen": [
+        {
+          "value": {
+            "amount": 2.3,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-cong-vat-ly",
+    "name": "Đỏ II Công vật lý",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-toc-danh-ty-le-chi-mang",
+    "name": "Đỏ II Tốc đánh/Tỷ lệ chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-cong-phep-xuyen-giap-phep",
+    "name": "Đỏ II Công phép/Xuyên giáp phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 2.6,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+      "Danh mục ghi 1,5% xuyên phép trong khi các phiên bản cùng loại dùng điểm; cần kiểm đơn vị client."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-cong-phep",
+    "name": "Đỏ II Công phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 3.3,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-ti-le-chi-mang1",
+    "name": "Đỏ II Tỉ lệ chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-ii-cong-vat-ly-hut-mau",
+    "name": "Đỏ II Công vật lý/Hút máu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 1.6,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.003,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-toc-danh-ty-le-chi-mang",
+    "name": "Đỏ I Tốc đánh/Tỷ lệ chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.005,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-ty-le-chi-mang",
+    "name": "Đỏ I Tỷ lệ chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.005,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-cong-phep-toc-danh",
+    "name": "Đỏ I Công phép/Tốc đánh",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 1.3,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-ty-le-sat-thuong-chi-mang",
+    "name": "Đỏ I Tỷ lệ/Sát thương chí mạng",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.crit-damage": [
+        {
+          "value": {
+            "amount": 0.011,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-cong-vat-ly-hut-mau",
+    "name": "Đỏ I Công vật lý/Hút máu",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 0.8,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.002,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-cong-vat-ly",
+    "name": "Đỏ I Công vật lý",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
+  },
+  {
+    "kind": "runes",
+    "id": "do-i-cong-phep",
+    "name": "Đỏ I Công phép",
+    "facts": {
+      "rune.tier": [
+        {
+          "value": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "rune.color": [
+        {
+          "value": "red",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 1.6,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+    ]
   }
 ]

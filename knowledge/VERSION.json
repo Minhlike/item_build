@@ -18,25 +18,25 @@
   "coverage": {
     "heroes": {
       "entities": 130,
-      "entities_with_live_facts": 84,
-      "live_properties": 250,
-      "review_claims": 116,
-      "live_mechanics": 242,
-      "mechanical_properties_any": 342
+      "entities_with_live_facts": 85,
+      "live_properties": 261,
+      "review_claims": 157,
+      "live_mechanics": 253,
+      "mechanical_properties_any": 381
     },
     "items": {
-      "entities": 85,
+      "entities": 114,
       "entities_with_live_facts": 43,
       "live_properties": 159,
-      "review_claims": 252,
+      "review_claims": 389,
       "live_mechanics": 39,
-      "mechanical_properties_any": 89
+      "mechanical_properties_any": 124
     },
     "runes": {
-      "entities": 51,
+      "entities": 88,
       "entities_with_live_facts": 0,
       "live_properties": 0,
-      "review_claims": 203,
+      "review_claims": 330,
       "live_mechanics": 0,
       "mechanical_properties_any": 0
     },

@@ -1,4 +1,4 @@
-from collections import Counter
+from collections import Counter, defaultdict
 from math import isfinite
 from typing import Annotated, Literal
 
@@ -47,6 +47,7 @@ class PurchaseScenario(Model):
     paths: Annotated[list[PurchasePath], Field(min_length=1)]
     excluded_items: set[Id] = Field(default_factory=set)
     direct_component_credit: bool = False
+    retain_completed_items: bool = False
 
 
 def current_price(pack):
@@ -58,7 +59,7 @@ def current_price(pack):
     return None
 
 
-def purchase_step(step, pack, owned, packs, direct_credit):
+def purchase_step(step, pack, owned, packs, direct_credit, retained):
     recipe = pack["live"].get("shop.recipe", {}).get("value")
     if step.quoted_cost is not None:
         consumed = Counter(step.quoted_consumption)
@@ -73,6 +74,8 @@ def purchase_step(step, pack, owned, packs, direct_credit):
     if not owned:
         return price, Counter(), "live_full_price"
     if recipe is None:
+        if not (owned - retained):
+            return price, Counter(), "scenario_full_price_retaining_completed_items"
         return None, Counter(), "unknown_recipe_with_inventory"
     consumed = Counter(key.split("/")[1] for key in recipe) & owned
     if not consumed:
@@ -84,6 +87,33 @@ def purchase_step(step, pack, owned, packs, direct_credit):
     if cost < 0:
         return None, consumed, "inconsistent_upgrade_cost"
     return cost, consumed, "scenario_direct_component_credit"
+
+
+def purchase_totals(owned, packs):
+    summed = defaultdict(float)
+    unique_groups = defaultdict(set)
+    incomplete = defaultdict(list)
+    for item, quantity in owned.items():
+        live = packs[item]["live"]
+        for prop in ("stat.hp", "stat.armor", "stat.magic-defense", "stat.cooldown-reduction"):
+            value = live.get(prop, {}).get("value")
+            if isinstance(value, dict) and "amount" in value:
+                summed[prop] += value["amount"] * quantity
+            else:
+                incomplete[prop].append(item)
+        for fact in live.values():
+            value = fact["value"]
+            if isinstance(value, dict) and (group := value.get("unique_group")):
+                unique_groups[group].add(item)
+    return {
+        "verified_stat_terms_only": dict(summed),
+        "unresolved_stat_fields": dict(incomplete),
+        "shared_unique_groups": {
+            group: sorted(items)
+            for group, items in unique_groups.items()
+            if sum(owned[item] for item in items) > 1
+        },
+    }
 
 
 def plan_purchases(repo: Repository, scenario: PurchaseScenario) -> dict:
@@ -117,7 +147,12 @@ def plan_purchases(repo: Repository, scenario: PurchaseScenario) -> dict:
             row.update(gold_before=step.cumulative_gold - spent, held_before=dict(owned))
             pack = packs[step.item]
             cost, consumed, basis = purchase_step(
-                step, pack, owned, packs, scenario.direct_component_credit
+                step,
+                pack,
+                owned,
+                packs,
+                scenario.direct_component_credit,
+                designated if scenario.retain_completed_items else Counter(),
             )
             row.update(cost=cost, cost_basis=basis, components_on_purchase=dict(consumed))
             rows.append(row)
@@ -158,12 +193,15 @@ def plan_purchases(repo: Repository, scenario: PurchaseScenario) -> dict:
             "steps": rows,
             "spent": spent,
             "unreached_steps": len(path.steps) - len(rows),
+            "purchased_totals": purchase_totals(owned, packs),
         }
     return {
         "hero": player,
         "role": scenario.role,
         "paths": results,
-        "scope": "Affordability and preference only. Quotes and component credit are scenario inputs; verify shop availability, stacking and item legality separately.",
+        "scope": "Affordability and preference. Quotes, retained items and component credit are scenario inputs. "
+        "Stat sums only include verified additive terms, before any cap, and report missing fields. "
+        "Check shop availability, stacking and item legality separately.",
     }
 
 

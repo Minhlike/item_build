@@ -11,6 +11,174 @@
         "value": true
       }
     ],
+    "tactics.avoid-follow-up": [
+      {
+        "evidence": [
+          "hero-evita",
+          "patch-oct15"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách cú nổ đầu khỏi các lần Ma vật tự tìm mục tiêu. Khi Ma vật bám được tuyến trước, để trống kháng phép tới slot 5 dễ làm hở chuỗi phép. Giảm hồi phục không xử lý các lá chắn đã biết."
+      }
+    ],
+    "passive.full-power-shield": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Kỹ năng kế tiếp đánh trúng khi đầy Ma lực.",
+          "detail": "Đồng thời triệu hồi Ma vật gây sát thương phép. Thiếu lượng khiên và mốc nạp."
+        }
+      }
+    ],
+    "passive.full-power-magic": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Ma vật lao tới sau lần tung chiêu trúng lúc đầy Ma lực.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.explosion": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Ma vật chạm địch hoặc đến cuối tầm.",
+          "detail": "Nổ và tỏa đạn. Kiểm tra góc đứng để tránh nhiều thành phần; chưa xác minh số đạn cùng trúng."
+        }
+      }
+    ],
+    "skill-2.center-knockup": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-center",
+          "trigger": "Đứng ở trung tâm vết nứt lúc nổ sau độ trễ.",
+          "detail": "Vùng giữa có hất tung và sát thương cao hơn."
+        }
+      }
+    ],
+    "skill-2.outer-slow": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-area",
+          "trigger": "Vết nứt bùng phát trúng.",
+          "detail": "Dùng bước ra khỏi vùng trễ để tránh cả khống chế và chuỗi nối."
+        }
+      }
+    ],
+    "skill-3.opening-slow": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-path",
+          "trigger": "Ma vật xung kích lúc được triệu hồi trúng."
+        }
+      }
+    ],
+    "skill-3.cast-shield": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Tung Triệu hồi hắc ám."
+        }
+      }
+    ],
+    "skill-3.summon-magic-defense-reduction": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "trigger": "Ma vật chạm địch trong thời gian chiêu cuối.",
+          "detail": "Giảm giáp phép của đích; chưa biết dạng phẳng/phần trăm, hệ số, cộng dồn hoặc thời lượng."
+        }
+      }
+    ],
+    "skill-3.contact-shield": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Ma vật được triệu hồi chạm địch.",
+          "detail": "Tạo khiên cho Evita; chưa biết có cộng với khiên lúc tung chiêu."
+        }
+      }
+    ],
+    "skill-3.resource-speed": [
+      {
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Chiêu cuối đang duy trì.",
+          "detail": "Tăng nhịp nạp Ma lực. Ma vật tự tìm mục tiêu sau cú xung kích."
+        }
+      }
+    ],
     "skill-1.base-magic": [
       {
         "evidence": [

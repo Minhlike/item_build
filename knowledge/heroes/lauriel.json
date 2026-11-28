@@ -133,6 +133,16 @@
         }
       }
     ],
+    "tactics.break-mark-window": [
+      {
+        "evidence": [
+          "hero-lauriel",
+          "lauriel-damage-type-conflict"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Rời pháp trận giữa các lượt, tách người đang có dấu khỏi đồng minh. So chống dồn với hồi ngoài giao tranh; phần chuẩn còn mâu thuẫn của Trời Phạt phải xét riêng."
+      }
+    ],
     "passive.heal": [
       {
         "evidence": [

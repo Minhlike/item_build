@@ -1,0 +1,53 @@
+{
+  "id": "thuong-dau-si",
+  "kind": "items",
+  "name": "Thương đấu sĩ",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 830.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 50.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "passive.flat-pen": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "armor_pen",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang Phá giáp.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 60.0,
+            "unit": "armor"
+          },
+          "unique_group": "pha-giap"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

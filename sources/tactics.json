@@ -1,6 +1,13 @@
 {
   "team_threats": [
     {
+      "id": "evita-toro-persistent-magic", "enemies": ["evita", "toro"], "pattern": "control",
+      "condition": "Toro chiếm lối di chuyển và Ma vật của Evita có thể chạm cùng mục tiêu sau lần mở.",
+      "chain": "Áp lực vật lý từ Toro và chuỗi phép giảm giáp phép của Ma vật cần hai lớp phòng thủ. Lá chắn Evita có thể giữ chuỗi active khi Ma vật còn chạm đích.",
+      "response": "Giữ đường rút khỏi lối hẹp. So kháng phép sớm nếu Ma vật thường chạm người chơi. Hồi giữa hai đợt chỉ có giá trị sau khi thoát áp lực.",
+      "anchors": ["heroes/evita#skill-3.summon-magic-defense-reduction", "heroes/evita#skill-3.contact-shield", "heroes/toro#skill-2.physical"]
+    },
+    {
       "id": "alice-hayate-shielded-entry", "enemies": ["alice", "hayate"], "pattern": "burst",
       "condition": "Alice còn lá chắn hoặc đã che Hayate, Hayate có góc giữ tiếp xúc lên cùng mục tiêu.",
       "chain": "Lá chắn có thể kéo dài thời gian Hayate đứng an toàn. Phi tiêu gây vật lý và đủ dấu mới mở cửa sổ chuẩn trên cùng đích.",

@@ -151,6 +151,16 @@
         }
       }
     ],
+    "tactics.peel-marked-ally": [
+      {
+        "evidence": [
+          "arthur",
+          "academy-arthur-detail"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đổi góc khi bản thân hoặc chủ lực đã mang dấu. Tách cú đánh vật lý khỏi phần phép theo HP đích để không tính giáp vật lý cho cả chuỗi."
+      }
+    ],
     "skill-1.empowered-range": [
       {
         "evidence": [

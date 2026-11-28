@@ -114,6 +114,17 @@
         }
       }
     ],
+    "tactics.deny-same-target-stacks": [
+      {
+        "evidence": [
+          "hayate",
+          "academy-hayate",
+          "academy-items"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Khiên thất truyền chỉ đáng tin ở nhánh Hayate đánh vào chính người mang; số phi tiêu và thời điểm lấy tốc đánh chưa được kiểm chứng. Giữ cắt góc hoặc ngắt chiêu cuối, tránh để sáu nhịp cùng chạm một người."
+      }
+    ],
     "passive.marked-true": [
       {
         "evidence": [

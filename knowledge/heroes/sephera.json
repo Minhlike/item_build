@@ -11,6 +11,96 @@
         "value": true
       }
     ],
+    "passive.low-ally-heal": [
+      {
+        "evidence": [
+          "hero-sephera"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "lowest-health-nearby-ally",
+          "trigger": "Sephera tung một kỹ năng."
+        }
+      }
+    ],
+    "passive.low-enemy-magic": [
+      {
+        "evidence": [
+          "hero-sephera"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "lowest-health-nearby-enemy-hero",
+          "trigger": "Sephera tung một kỹ năng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.cooldown-on-hit": [
+      {
+        "evidence": [
+          "hero-sephera"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Đánh đòn cường hóa sau Thủy âm.",
+          "detail": "Áp dụng cho các chiêu theo hồ sơ.",
+          "amount": {
+            "amount": 1.0,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "skill-2.rim-stun": [
+      {
+        "evidence": [
+          "hero-sephera"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-at-rim",
+          "trigger": "Nạn nhân ở rìa vòng khi nó xuất hiện sau 1,5 giây."
+        }
+      }
+    ],
+    "skill-3.untargetable": [
+      {
+        "evidence": [
+          "hero-sephera"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Bật Sóng ngầm.",
+          "timing": {
+            "duration_s": 1.7
+          }
+        }
+      }
+    ],
+    "skill-3.nearby-heal": [
+      {
+        "evidence": [
+          "hero-sephera"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "nearby-allies",
+          "trigger": "Bật Sóng ngầm cạnh đồng minh."
+        }
+      }
+    ],
+    "tactics.deny-repeat": [
+      {
+        "evidence": [
+          "hero-sephera"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Ép ra khỏi tầm thực hiện đòn kế tiếp để bớt nhịp hồi chiêu và nhịp hồi máu. Giữ kỹ năng chọn mục tiêu cho sau Sóng ngầm và xét giảm hồi theo thời điểm Sephera còn cạnh mục tiêu được cứu."
+      }
+    ],
     "passive.self-bonus-hp-heal": [
       {
         "evidence": [

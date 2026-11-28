@@ -62,6 +62,57 @@
         }
       }
     ],
+    "passive.wall-camouflage": [
+      {
+        "evidence": [
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "camouflage",
+          "target": "self",
+          "trigger": "Rời giao tranh 5 giây và đi sát vách.",
+          "detail": "Hồ sơ mô tả ngụy trang mờ. Kiểm phạm vi phát hiện trước khi gộp với tàng hình."
+        }
+      }
+    ],
+    "skill-1.station-vision": [
+      {
+        "evidence": [
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "reveal",
+          "target": "area-around-device",
+          "trigger": "Đặt Ưng trạm.",
+          "detail": "Bán kính 600–1000 theo cấp, tối đa ba trạm đã đặt; tướng địch giẫm lên làm vô hiệu. Quy tắc nhận diện tàng hình cần kiểm.",
+          "timing": {
+            "duration_s": 300.0
+          }
+        }
+      }
+    ],
+    "skill-3.recoil": [
+      {
+        "evidence": [
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Tung Giật bắn.",
+          "detail": "Lùi khỏi hướng bắn; tăng tốc trong 2 giây sau đáp, mất khi đánh thường hoặc tung chiêu."
+        }
+      }
+    ],
+    "tactics.disrupt-stationary-pen": [
+      {
+        "evidence": [
+          "hero-elsu"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đổi đường tiến để ép Elsu rời góc ngắm và ngừng làm mới xuyên giáp do đứng yên. Nếu hắn còn Giật bắn, chọn đường cắt sau lưng trước khi dồn, tránh lao thẳng qua tầm nhìn Ưng trạm."
+      }
+    ],
     "skill-2.base-physical": [
       {
         "evidence": [

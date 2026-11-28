@@ -126,6 +126,28 @@
           }
         }
       }
+    ],
+    "skill-1.near-pull": [
+      {
+        "evidence": [
+          "hero-omen"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-front",
+          "trigger": "Sát kiếm trúng phía trước.",
+          "detail": "Kéo lại gần, sau đó làm chậm."
+        }
+      }
+    ],
+    "tactics.deny-empowered-uptime": [
+      {
+        "evidence": [
+          "hero-omen"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh cho Omen tích sát khí miễn phí trước khi mở. Khi bị nhốt, ưu tiên khống chế hoặc che chắn trong nhịp đòn đánh cường hóa. Đánh thường thẳng vào Sát niệm có thể tạo thêm đòn phản và sát khí."
+      }
     ]
   },
   "unknown": [

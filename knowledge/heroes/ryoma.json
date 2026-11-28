@@ -42,6 +42,43 @@
         }
       }
     ],
+    "tactics.deny-hit-heal": [
+      {
+        "evidence": [
+          "ryoma",
+          "patch-2026-03-11"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đổi góc khỏi rìa đòn choáng và cắt nhát đâm trúng tướng. Món giảm hồi chỉ tạo chênh khi hiệu ứng phủ đúng nhịp đâm, sát thương vật lý vẫn cần được xử lý ở cùng ngân sách."
+      }
+    ],
+    "passive.reach-poke": [
+      {
+        "evidence": [
+          "ryoma"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-path",
+          "trigger": "Đòn đánh cường hóa phóng kiếm khí.",
+          "detail": "Làm chậm khi trúng; tách với đòn choáng vùng rìa của S2.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.refresh-condition": [
+      {
+        "evidence": [
+          "ryoma"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "S1 chém trúng tướng địch.",
+          "detail": "Giảm hồi chiêu theo hồ sơ; không cộng dồn. Chưa xác minh lượng giảm."
+        }
+      }
+    ],
     "skill-1.base-physical": [
       {
         "evidence": [

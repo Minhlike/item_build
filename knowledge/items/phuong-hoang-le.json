@@ -1,0 +1,63 @@
+{
+  "id": "phuong-hoang-le",
+  "kind": "items",
+  "name": "Phượng hoàng lệ",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 500.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 50.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "passive.level-heal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Lên cấp khi có Tưởng thưởng anh hùng.",
+          "activation": "automatic",
+          "detail": "Có kèm hồi năng lượng.",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.2
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 3.0
+          },
+          "unique_group": "tuong-thuong-anh-hung"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

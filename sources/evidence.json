@@ -1140,5 +1140,41 @@
     "retrieved_at": "2026-11-27",
     "verification_status": "verified_official",
     "evidence_ref": "Khiên thất truyền: ảnh gắn tên món trong danh mục Học viện. Màu nhận diện nhìn trên tài sản ảnh công khai, chưa đối chiếu client."
+  },
+  "hero-evita": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/evita/",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-28",
+    "verification_status": "unverified",
+    "evidence_ref": "Đối chiếu bản giới thiệu Evita và hồ sơ bộ chiêu."
+  },
+  "hero-aleister": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/aleister/",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-28",
+    "verification_status": "unverified",
+    "evidence_ref": "Hồ sơ kỹ năng chưa có ngày hiệu lực."
+  },
+  "hero-xeniel": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/xeniel/",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-28",
+    "verification_status": "unverified",
+    "evidence_ref": "Hồ sơ kỹ năng chưa có ngày hiệu lực."
+  },
+  "hero-omen": {
+    "source_id": "garena_vn",
+    "source_url": "https://lienquan.garena.vn/hoc-vien/tuong-skin/d/omen/",
+    "source_type": "official",
+    "server": "VN",
+    "retrieved_at": "2026-11-28",
+    "verification_status": "unverified",
+    "evidence_ref": "Hồ sơ kỹ năng chưa có ngày hiệu lực."
   }
 }

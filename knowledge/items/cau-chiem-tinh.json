@@ -1,0 +1,57 @@
+{
+  "id": "cau-chiem-tinh",
+  "kind": "items",
+  "name": "Cầu chiêm tinh",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 800.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 80.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "passive.echo": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "delivery": "item",
+          "trigger": "Tung chiêu làm Vang vọng kích hoạt.",
+          "activation": "automatic",
+          "damage_type": "magic",
+          "amount": {
+            "amount": 180.0,
+            "unit": "damage"
+          },
+          "timing": {
+            "internal_cooldown_s": 5.0
+          },
+          "unique_group": "vang-vong"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

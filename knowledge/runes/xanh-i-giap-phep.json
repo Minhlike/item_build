@@ -1,0 +1,31 @@
+{
+  "id": "xanh-i-giap-phep",
+  "kind": "runes",
+  "name": "Xanh I Giáp phép",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "green"
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+    "Trang danh mục thiếu trị số dưới tên ngọc."
+  ],
+  "relations": []
+}

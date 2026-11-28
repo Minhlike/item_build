@@ -453,6 +453,16 @@
             "trieu-van"
           ]
         }
+      ],
+      "tactics.interrupt-after-cleanse": [
+        {
+          "value": "Giữ một lượt hất/đẩy sau Long huyết nếu đã quan sát đối thủ dùng giải hiệu ứng. Giảm hồi có điều kiện lên nhịp hút máu khi anh ta còn bám mục tiêu. Tách phần đánh thường khỏi lần nện Long kích.",
+          "evidence": [
+            "trieu-van",
+            "patch-2026-02-05"
+          ],
+          "kind": "tactical_heuristic"
+        }
       ]
     },
     "unknown": [
@@ -703,6 +713,17 @@
             "academy-hayate-critical"
           ]
         }
+      ],
+      "tactics.deny-same-target-stacks": [
+        {
+          "value": "Khiên thất truyền chỉ đáng tin ở nhánh Hayate đánh vào chính người mang; số phi tiêu và thời điểm lấy tốc đánh chưa được kiểm chứng. Giữ cắt góc hoặc ngắt chiêu cuối, tránh để sáu nhịp cùng chạm một người.",
+          "evidence": [
+            "hayate",
+            "academy-hayate",
+            "academy-items"
+          ],
+          "kind": "tactical_heuristic"
+        }
       ]
     },
     "unknown": [
@@ -833,6 +854,28 @@
           "evidence": [
             "omen"
           ]
+        }
+      ],
+      "skill-1.near-pull": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-front",
+            "trigger": "Sát kiếm trúng phía trước.",
+            "detail": "Kéo lại gần, sau đó làm chậm."
+          },
+          "evidence": [
+            "hero-omen"
+          ]
+        }
+      ],
+      "tactics.deny-empowered-uptime": [
+        {
+          "value": "Tránh cho Omen tích sát khí miễn phí trước khi mở. Khi bị nhốt, ưu tiên khống chế hoặc che chắn trong nhịp đòn đánh cường hóa. Đánh thường thẳng vào Sát niệm có thể tạo thêm đòn phản và sát khí.",
+          "evidence": [
+            "hero-omen"
+          ],
+          "kind": "tactical_heuristic"
         }
       ]
     },
@@ -992,6 +1035,43 @@
             "target": "enemies-at-outer-edge",
             "trigger": "Trúng rìa Nhất Kích Tất Sát",
             "delivery": "ability"
+          },
+          "evidence": [
+            "ryoma"
+          ]
+        }
+      ],
+      "tactics.deny-hit-heal": [
+        {
+          "value": "Đổi góc khỏi rìa đòn choáng và cắt nhát đâm trúng tướng. Món giảm hồi chỉ tạo chênh khi hiệu ứng phủ đúng nhịp đâm, sát thương vật lý vẫn cần được xử lý ở cùng ngân sách.",
+          "evidence": [
+            "ryoma",
+            "patch-2026-03-11"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ],
+      "passive.reach-poke": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-path",
+            "trigger": "Đòn đánh cường hóa phóng kiếm khí.",
+            "damage_type": "physical",
+            "detail": "Làm chậm khi trúng; tách với đòn choáng vùng rìa của S2."
+          },
+          "evidence": [
+            "ryoma"
+          ]
+        }
+      ],
+      "skill-1.refresh-condition": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "S1 chém trúng tướng địch.",
+            "detail": "Giảm hồi chiêu theo hồ sơ; không cộng dồn. Chưa xác minh lượng giảm."
           },
           "evidence": [
             "ryoma"
@@ -1521,6 +1601,16 @@
             "academy-arthur-detail",
             "arthur-ultimate-hp-conflict"
           ]
+        }
+      ],
+      "tactics.peel-marked-ally": [
+        {
+          "value": "Đổi góc khi bản thân hoặc chủ lực đã mang dấu. Tách cú đánh vật lý khỏi phần phép theo HP đích để không tính giáp vật lý cho cả chuỗi.",
+          "evidence": [
+            "arthur",
+            "academy-arthur-detail"
+          ],
+          "kind": "tactical_heuristic"
         }
       ]
     },
@@ -2059,6 +2149,57 @@
             "hero-elsu"
           ]
         }
+      ],
+      "passive.wall-camouflage": [
+        {
+          "value": {
+            "effect": "camouflage",
+            "target": "self",
+            "trigger": "Rời giao tranh 5 giây và đi sát vách.",
+            "detail": "Hồ sơ mô tả ngụy trang mờ. Kiểm phạm vi phát hiện trước khi gộp với tàng hình."
+          },
+          "evidence": [
+            "hero-elsu"
+          ]
+        }
+      ],
+      "skill-1.station-vision": [
+        {
+          "value": {
+            "effect": "reveal",
+            "target": "area-around-device",
+            "trigger": "Đặt Ưng trạm.",
+            "timing": {
+              "duration_s": 300
+            },
+            "detail": "Bán kính 600–1000 theo cấp, tối đa ba trạm đã đặt; tướng địch giẫm lên làm vô hiệu. Quy tắc nhận diện tàng hình cần kiểm."
+          },
+          "evidence": [
+            "hero-elsu"
+          ]
+        }
+      ],
+      "skill-3.recoil": [
+        {
+          "value": {
+            "effect": "dash",
+            "target": "self",
+            "trigger": "Tung Giật bắn.",
+            "detail": "Lùi khỏi hướng bắn; tăng tốc trong 2 giây sau đáp, mất khi đánh thường hoặc tung chiêu."
+          },
+          "evidence": [
+            "hero-elsu"
+          ]
+        }
+      ],
+      "tactics.disrupt-stationary-pen": [
+        {
+          "value": "Đổi đường tiến để ép Elsu rời góc ngắm và ngừng làm mới xuyên giáp do đứng yên. Nếu hắn còn Giật bắn, chọn đường cắt sau lưng trước khi dồn, tránh lao thẳng qua tầm nhìn Ưng trạm.",
+          "evidence": [
+            "hero-elsu"
+          ],
+          "kind": "tactical_heuristic"
+        }
       ]
     },
     "unknown": [
@@ -2152,6 +2293,54 @@
             "hero-toro"
           ]
         }
+      ],
+      "tactics.defend-dive-lane": [
+        {
+          "value": "Toro mở đường cho bắn và cấu rỉa nối tiếp. Đẩy tướng gây sát thương hoặc tách chủ lực khi Toro đang thi triển. Hồi rời giao tranh chỉ đáng mua giảm hồi nếu Hỏa diệm còn phủ khi bắt đầu nhịp.",
+          "evidence": [
+            "hero-toro",
+            "patch-2026-03-11"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ],
+      "skill-1.front-knockup": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-path",
+            "trigger": "Toro húc trúng trên đường lướt."
+          },
+          "evidence": [
+            "hero-toro"
+          ]
+        }
+      ],
+      "skill-2.refresh-dash": [
+        {
+          "value": {
+            "effect": "reset_cooldown",
+            "target": "self",
+            "trigger": "Kẻ địch trong phạm vi Dư chấn.",
+            "detail": "Làm mới S1 theo hồ sơ bộ chiêu; cần kiểm tra thời điểm chính xác."
+          },
+          "evidence": [
+            "hero-toro"
+          ]
+        }
+      ],
+      "skill-3.third-knockup": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-area",
+            "trigger": "Nhịp cuối Đại địa chấn trúng.",
+            "detail": "Đọc cùng ứng viên miễn khống trong lúc tung; không giả định mọi loại ngắt đều vô hiệu."
+          },
+          "evidence": [
+            "hero-toro"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -2197,6 +2386,60 @@
             "target": "self",
             "trigger": "Lượt thứ ba của Tàn Ảnh Đao",
             "detail": "Trở về điểm bắt đầu của chuỗi."
+          },
+          "evidence": [
+            "hero-murad"
+          ]
+        }
+      ],
+      "skill-2.edge-armor-reduction": [
+        {
+          "value": {
+            "effect": "armor_reduction",
+            "target": "enemies-touching-edge",
+            "trigger": "Chạm biên Vô Ảnh Vực.",
+            "timing": {
+              "duration_s": 3
+            },
+            "detail": "Kèm sát thương vật lý và làm chậm 2 giây. Chưa rõ lượng giảm giáp."
+          },
+          "evidence": [
+            "hero-murad"
+          ]
+        }
+      ],
+      "skill-2.cast-untargetable": [
+        {
+          "value": {
+            "effect": "untargetable",
+            "target": "self",
+            "trigger": "Kích hoạt Vô Ảnh Vực."
+          },
+          "evidence": [
+            "hero-murad"
+          ]
+        }
+      ],
+      "skill-3.channel-untargetable": [
+        {
+          "value": {
+            "effect": "untargetable",
+            "target": "self",
+            "trigger": "Đang thi triển Ảo Ảnh Trảm."
+          },
+          "evidence": [
+            "hero-murad"
+          ]
+        }
+      ],
+      "skill-3.slashes": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Ảo Ảnh Trảm trúng.",
+            "damage_type": "physical",
+            "detail": "Năm nhát; có nhánh giảm sát thương khi trúng nhiều tướng, tối đa 20% theo hồ sơ."
           },
           "evidence": [
             "hero-murad"
@@ -2317,6 +2560,16 @@
             "hero-alice"
           ]
         }
+      ],
+      "tactics.leave-shred-zone": [
+        {
+          "value": "Rời vùng rồi mới đổi lượt tranh chấp. Tránh đứng chung đường tiếp cận cho phép đối phương nối vào lá chắn và khống chế; giảm hồi không làm giảm lá chắn Alice.",
+          "evidence": [
+            "hero-alice",
+            "patch-aug"
+          ],
+          "kind": "tactical_heuristic"
+        }
       ]
     },
     "unknown": [
@@ -2345,7 +2598,98 @@
     "id": "sephera",
     "kind": "heroes",
     "name": "Sephera",
-    "facts": {},
+    "facts": {
+      "passive.low-ally-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "lowest-health-nearby-ally",
+            "trigger": "Sephera tung một kỹ năng."
+          },
+          "evidence": [
+            "hero-sephera"
+          ]
+        }
+      ],
+      "passive.low-enemy-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "lowest-health-nearby-enemy-hero",
+            "trigger": "Sephera tung một kỹ năng.",
+            "damage_type": "magic"
+          },
+          "evidence": [
+            "hero-sephera"
+          ]
+        }
+      ],
+      "skill-1.cooldown-on-hit": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Đánh đòn cường hóa sau Thủy âm.",
+            "amount": {
+              "amount": 1,
+              "unit": "second"
+            },
+            "detail": "Áp dụng cho các chiêu theo hồ sơ."
+          },
+          "evidence": [
+            "hero-sephera"
+          ]
+        }
+      ],
+      "skill-2.rim-stun": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-at-rim",
+            "trigger": "Nạn nhân ở rìa vòng khi nó xuất hiện sau 1,5 giây."
+          },
+          "evidence": [
+            "hero-sephera"
+          ]
+        }
+      ],
+      "skill-3.untargetable": [
+        {
+          "value": {
+            "effect": "untargetable",
+            "target": "self",
+            "trigger": "Bật Sóng ngầm.",
+            "timing": {
+              "duration_s": 1.7
+            }
+          },
+          "evidence": [
+            "hero-sephera"
+          ]
+        }
+      ],
+      "skill-3.nearby-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "nearby-allies",
+            "trigger": "Bật Sóng ngầm cạnh đồng minh."
+          },
+          "evidence": [
+            "hero-sephera"
+          ]
+        }
+      ],
+      "tactics.deny-repeat": [
+        {
+          "value": "Ép ra khỏi tầm thực hiện đòn kế tiếp để bớt nhịp hồi chiêu và nhịp hồi máu. Giữ kỹ năng chọn mục tiêu cho sau Sóng ngầm và xét giảm hồi theo thời điểm Sephera còn cạnh mục tiêu được cứu.",
+          "evidence": [
+            "hero-sephera"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ]
+    },
     "unknown": [
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
     ]
@@ -2414,7 +2758,82 @@
     "id": "xeniel",
     "name": "Xeniel",
     "kind": "heroes",
-    "facts": {},
+    "facts": {
+      "passive.third-hit": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đòn đánh thường thứ ba trúng.",
+            "damage_type": "magic",
+            "basis": "caster_max_hp",
+            "detail": "Theo máu tối đa Xeniel; chưa có hệ số hiệu lực."
+          },
+          "evidence": [
+            "hero-xeniel"
+          ]
+        }
+      ],
+      "skill-1.shield-break-exception": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "self",
+            "trigger": "Khiên Thần Hộ Thể bị phá trước lúc Xeniel kích nổ.",
+            "detail": "Mất nhịp gây sát thương do chủ động hủy khiên."
+          },
+          "evidence": [
+            "hero-xeniel"
+          ]
+        }
+      ],
+      "skill-2.landing-knockup": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "enemies-in-landing-zone",
+            "trigger": "Chùy Thần Lực đáp trúng."
+          },
+          "evidence": [
+            "hero-xeniel"
+          ]
+        }
+      ],
+      "skill-3.ally-shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "selected-ally",
+            "trigger": "Chọn đồng minh bằng chiêu cuối, trước khi Xeniel bay tới."
+          },
+          "evidence": [
+            "hero-xeniel"
+          ]
+        }
+      ],
+      "skill-3.arrival-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "selected-ally",
+            "trigger": "Xeniel giáng xuống tại tướng được chọn.",
+            "detail": "Có thành phần theo máu tối đa; kiểm cơ sở và hệ số trước khi tính."
+          },
+          "evidence": [
+            "hero-xeniel"
+          ]
+        }
+      ],
+      "tactics.split-entry-timing": [
+        {
+          "value": "Tướng bị dồn có thể được che chắn trước khi Xeniel tới. Tách nhịp xuyên khiên ra khỏi nhịp hồi khi đáp. Nếu cửa sổ kết liễu đã qua, giữ khống chế chặn Xeniel hoặc lùi khỏi điểm đáp.",
+          "evidence": [
+            "hero-xeniel"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ]
+    },
     "unknown": [
       "Chỉ số gốc",
       "Các kỹ năng và tương tác còn lại"
@@ -2424,7 +2843,18 @@
     "id": "evita",
     "name": "Evita",
     "kind": "heroes",
-    "facts": {},
+    "facts": {
+      "tactics.avoid-follow-up": [
+        {
+          "value": "Tách cú nổ đầu khỏi các lần Ma vật tự tìm mục tiêu. Khi Ma vật bám được tuyến trước, để trống kháng phép tới slot 5 dễ làm hở chuỗi phép. Giảm hồi phục không xử lý các lá chắn đã biết.",
+          "evidence": [
+            "hero-evita",
+            "patch-oct15"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ]
+    },
     "unknown": [
       "Chỉ số gốc",
       "Các kỹ năng và tương tác còn lại"
@@ -2596,11 +3026,99 @@
           ],
           "effective_from": "2026-02-05"
         }
+      ],
+      "tactics.break-mark-window": [
+        {
+          "value": "Rời pháp trận giữa các lượt, tách người đang có dấu khỏi đồng minh. So chống dồn với hồi ngoài giao tranh; phần chuẩn còn mâu thuẫn của Trời Phạt phải xét riêng.",
+          "evidence": [
+            "hero-lauriel",
+            "lauriel-damage-type-conflict"
+          ],
+          "kind": "tactical_heuristic"
+        }
       ]
     },
     "unknown": [
       "Mốc cấp, số nhịp sát thương và hồi chiêu theo cấp",
       "Hệ số và loại sát thương nổ Trời Phạt"
+    ]
+  },
+  {
+    "id": "aleister",
+    "kind": "heroes",
+    "name": "Aleister",
+    "facts": {
+      "passive.mark-detonation": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "marked-target",
+            "trigger": "Đủ ba dấu Ma thuật đen.",
+            "damage_type": "true",
+            "detail": "Chưa rõ công thức và nhịp tích chính xác theo từng chiêu."
+          },
+          "evidence": [
+            "hero-aleister"
+          ]
+        }
+      ],
+      "skill-1.stun": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "target-hit",
+            "trigger": "Chạm Vách ngăn hắc ám."
+          },
+          "evidence": [
+            "hero-aleister"
+          ]
+        }
+      ],
+      "skill-2.zone-ticks": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-zone",
+            "trigger": "Còn đứng trong Ma trận ở nhịp gây sát thương.",
+            "damage_type": "magic",
+            "detail": "Mỗi nhịp gây sát thương tiếp tục đặt dấu."
+          },
+          "evidence": [
+            "hero-aleister"
+          ]
+        }
+      ],
+      "skill-3.channel": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "selected-target",
+            "trigger": "Bắt mục tiêu bằng Ngục tù vĩnh hằng.",
+            "timing": {
+              "duration_s": 2.5
+            },
+            "detail": "Duy trì bằng niệm chiêu. Có thể ngắt do thao tác người tung sau 0,7 giây theo hồ sơ. Cần kiểm riêng ngoại lệ giải khống chế."
+          },
+          "evidence": [
+            "hero-aleister"
+          ]
+        }
+      ],
+      "tactics.avoid-mark-overlap": [
+        {
+          "value": "Tách khỏi vùng Ma trận sớm để cắt số nhịp phép lẫn cơ hội nổ chuẩn. Giữ góc có thể can thiệp lúc đối phương niệm Ngục tù, đừng đặt toàn bộ bảo kê vào kháng hiệu ứng khi chưa rõ ngoại lệ.",
+          "evidence": [
+            "hero-aleister"
+          ],
+          "kind": "tactical_heuristic"
+        }
+      ]
+    },
+    "unknown": [
+      "Chỉ số gốc",
+      "Bộ chiêu đầy đủ và biến thể",
+      "Hồi chiêu theo cấp",
+      "Tương tác và ngưỡng sức mạnh"
     ]
   }
 ]

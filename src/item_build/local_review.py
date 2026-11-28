@@ -1,7 +1,9 @@
-"""Candidate observations derived from the pinned snapshot for local use."""
+"""Local snapshot observations and public references to the source records."""
 
 import re
+from hashlib import sha256
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from .storage import encode, read, write
 
@@ -56,6 +58,78 @@ def classify_item_effect(text: str) -> str:
     if "nội tại" in folded:
         return "automatic_candidate"
     return "unknown"
+
+
+def line_ranges(lines, indent):
+    start, end = " " * indent + "{", " " * indent + "}"
+    opened = None
+    for number, line in enumerate(lines, 1):
+        if line == start:
+            opened = number
+        if line.rstrip(",") == end and opened is not None:
+            yield opened, number
+            opened = None
+
+
+def source_locations(root: Path) -> dict:
+    """Index direct links to source records without copying third-party records."""
+    pin = read(root / "sources/upstream.json")
+    folder = root / ".local/raw" / pin["sha"]
+    manifest = read(folder / "manifest.json")
+    if (manifest["sha"], manifest["repository"]) != (pin["sha"], pin["repository"]):
+        raise ValueError("Snapshot không khớp nguồn và SHA đã pin.")
+    canonical_ids = pin.get("canonical_ids", {})
+    hero_ids = {
+        upstream: hero for hero, upstream in read(root / "sources/identity-map.json").items()
+    }
+    base = pin["repository"].removesuffix(".git") + "/blob/" + pin["sha"] + "/data/"
+    datasets = {}
+    for group in ("heroes", "items", "runes", "badges", "spells", "modes"):
+        file = f"{group}.json"
+        path = folder / "data" / file
+        raw = path.read_bytes()
+        digest = sha256(raw).hexdigest()
+        if digest != manifest["files"][f"data/{file}"]["sha256"]:
+            raise ValueError(f"Snapshot lệch hash tại {file}.")
+        lines = raw.decode("utf-8").splitlines()
+        ids = hero_ids if group == "heroes" else canonical_ids.get(group, {})
+        index = {}
+        for row, (first, last) in zip(read(path), line_ranges(lines, 2), strict=True):
+            slug = row["slug"]
+            entity_id = ids.get(slug, slug)
+            if entity_id in index:
+                raise ValueError(f"ID tham chiếu bị trùng: {group}/{entity_id}.")
+            entry = {"lines": [first, last]}
+            if entity_id != slug:
+                entry["upstream_id"] = slug
+            if group == "heroes":
+                span = lines[first - 1 : last]
+                skill_start = span.index('    "skills": [') + 1
+                skill_end = span.index("    ],", skill_start)
+                entry["slots"] = {
+                    str(skill["slot"]): [first + skill_start + a - 1, first + skill_start + b - 1]
+                    for skill, (a, b) in zip(
+                        row["skills"], line_ranges(span[skill_start:skill_end], 6), strict=True
+                    )
+                }
+                official_profile = row["sources"].get("garena") or ""
+                url = urlsplit(official_profile)
+                if url.scheme == "https" and url.hostname == "lienquan.garena.vn":
+                    entry["official_profile"] = official_profile
+            if group == "badges":
+                entry["nodes"] = [
+                    [first + a - 1, first + b - 1]
+                    for a, b in line_ranges(lines[first - 1 : last], 10)
+                ]
+            index[entity_id] = entry
+        datasets[group] = {"file": base + file, "records": index}
+    return {
+        "sha": pin["sha"],
+        "status": "UNVERIFIED",
+        "scope": "Tham chiếu gốc theo dòng. Giá, icon, mô tả và chỉ số nằm tại nguồn gốc.",
+        "license": base.removesuffix("data/") + "LICENSE",
+        "datasets": datasets,
+    }
 
 
 def build_local_review(root: Path, manifest: dict, datasets: dict) -> dict:

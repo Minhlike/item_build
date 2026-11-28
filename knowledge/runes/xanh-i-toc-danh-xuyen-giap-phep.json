@@ -1,0 +1,42 @@
+{
+  "id": "xanh-i-toc-danh-xuyen-giap-phep",
+  "kind": "runes",
+  "name": "Xanh I Tốc đánh/Xuyên giáp phép",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "green"
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.002,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+    "Tên nói xuyên phép nhưng dòng trị số ghi xuyên giáp; giữ đơn vị chưa rõ."
+  ],
+  "relations": []
+}

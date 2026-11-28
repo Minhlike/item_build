@@ -50,6 +50,60 @@
           "detail": "Trở về điểm bắt đầu của chuỗi."
         }
       }
+    ],
+    "skill-2.edge-armor-reduction": [
+      {
+        "evidence": [
+          "hero-murad"
+        ],
+        "value": {
+          "effect": "armor_reduction",
+          "target": "enemies-touching-edge",
+          "trigger": "Chạm biên Vô Ảnh Vực.",
+          "detail": "Kèm sát thương vật lý và làm chậm 2 giây. Chưa rõ lượng giảm giáp.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "skill-2.cast-untargetable": [
+      {
+        "evidence": [
+          "hero-murad"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Kích hoạt Vô Ảnh Vực."
+        }
+      }
+    ],
+    "skill-3.channel-untargetable": [
+      {
+        "evidence": [
+          "hero-murad"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Đang thi triển Ảo Ảnh Trảm."
+        }
+      }
+    ],
+    "skill-3.slashes": [
+      {
+        "evidence": [
+          "hero-murad"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Ảo Ảnh Trảm trúng.",
+          "detail": "Năm nhát; có nhánh giảm sát thương khi trúng nhiều tướng, tối đa 20% theo hồ sơ.",
+          "damage_type": "physical"
+        }
+      }
     ]
   },
   "unknown": [

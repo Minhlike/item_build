@@ -18,6 +18,7 @@ DRAFT_CASES = [
     ["raz", "natalya", "butterfly", "preyta", "darcy"],
 ]
 THANE_CLOUD_CASE = ["Alice", "Hayate", "Arthur", "Triệu Vân", "Lauriel"]
+THANE_EVITA_CASE = ["Evita", "Toro", "Hayate", "Triệu Vân", "Ryoma"]
 
 
 def benchmark_progressive(root: Path) -> dict:
@@ -37,6 +38,7 @@ def benchmark_progressive(root: Path) -> dict:
     ]
     lineups += [(case["id"], case["hero"], case["role"], case["enemies"]) for case in regressions]
     lineups.append(("cloud-67s", "thane", "support", THANE_CLOUD_CASE))
+    lineups.append(("cloud-35s", "thane", "support", THANE_EVITA_CASE))
     measurements = []
     for label, hero, role, enemies in lineups:
         layers = {}
