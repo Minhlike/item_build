@@ -129,6 +129,14 @@
       "anchors": ["battlefield/ranked-vn#tactics.mid-priority", "battlefield/ranked-vn#season.boss-first-selection"]
     },
     {
+      "id": "thane-retreat-after-disengage", "roles": ["support"], "hero": "thane", "region": "objective", "resource": "boss", "tactic": "retreat", "phase": "mid",
+      "condition": "Thane đã tách được khỏi giao tranh ở cửa hang mục tiêu, còn ít máu, chiêu cuối đang hồi và vẫn có lối rút.",
+      "action": "Ping lùi và đi theo lối an toàn. Nếu đồng đội trong tầm đang bị bám, giữ đẩy lùi để cắt đường truy đuổi rồi rút cùng.",
+      "benefit": "Giữ người cho lượt tranh tiếp theo và hạn chế bị bắt khi quay lại qua lối hẹp.",
+      "risk": "Địch có thể giành lối vào hang hoặc ăn mục tiêu trong lúc phe mình hồi phục.",
+      "anchors": ["heroes/thane#tactics.peel", "battlefield/ranked-vn#tactics.objective-trade"]
+    },
+    {
       "id": "late-react-to-dive", "roles": ["support", "mid", "dragon"], "region": "objective", "resource": "boss", "tactic": "counter-engage", "phase": "late",
       "condition": "Địch còn mối đe dọa lao vào, phe mình có chủ lực trong tầm che và đang mất thông tin sườn.",
       "action": "Giữ góc phản giao tranh bên chủ lực, chỉ vào hang boss sau khi biết lối vào và lối rút.",
