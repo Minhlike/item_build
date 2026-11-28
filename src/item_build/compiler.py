@@ -297,6 +297,22 @@ def artifacts(root: Path) -> dict[str, bytes]:
                         }
                     )
 
+        if entity.shop_group:
+            # Keep the corroborating claim in canonical and avoid repeating it in item packs.
+            review = {
+                prop: claims
+                for prop, timeline in review.items()
+                if (
+                    claims := [
+                        claim
+                        for claim in timeline
+                        if prop not in live
+                        or claim["value"] != live[prop]["value"]
+                        or claim["evidence_layer"] == "conflict"
+                    ]
+                )
+            }
+
         live_relations = [
             payload(edge) for edge in edges[key] if relation_is_live(edge, entities, day)
         ]

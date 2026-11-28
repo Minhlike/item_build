@@ -3,7 +3,7 @@ from pathlib import Path
 import pytest
 
 from item_build.benchmark import THANE_CLOUD_CASE, THANE_EVITA_CASE
-from item_build.catalog import pareto_front
+from item_build.catalog import comparison_quantity, pareto_front
 from item_build.progressive import THANE_SUPPORT_PACK
 from item_build.reasoning import Combat, PurchaseScenario, evaluate_combat, plan_purchases
 from item_build.retrieval import Repository
@@ -119,11 +119,33 @@ def test_thane_compares_same_budget_and_retains_unresolved_options():
     for item in ("giap-nhe", "dai-khang-phep", "giay-thep", "tho-he-bao-thach"):
         assert draft["shortlist"][item]["eligibility"] == "component"
     assert matrix["slot_3_full_price"]["ao-choang-than-ra"] == [4660, "LIVE_VN"]
-    assert matrix["slot_3_full_price"]["khien-that-truyen"] == [4700, "UNVERIFIED"]
-    assert "khien-thanh-quang" not in matrix["slot_3_full_price"]
+    official = ["UNVERIFIED", "official_undated_or_unresolved"]
+    community = ["UNVERIFIED", "community_or_unverified"]
+    assert matrix["slot_3_full_price"]["khien-that-truyen"] == [4700, *official]
+    assert matrix["rows"]["khien-thanh-quang"][0] == [2040, *community]
+    assert matrix["slot_3_full_price"]["khien-thanh-quang"] == [4640, *community]
     assert matrix["slot_4_full_price_pairs"]["ao-choang-than-ra+giap-gaia"] == [6840, "LIVE_VN"]
-    assert matrix["slot_4_full_price_pairs"]["khien-that-truyen+giap-gaia"] == [6880, "UNVERIFIED"]
+    assert matrix["slot_4_full_price_pairs"]["khien-that-truyen+giap-gaia"] == [6880, *official]
+    assert matrix["slot_4_full_price_pairs"]["khien-thanh-quang+giap-gaia"] == [6820, *community]
+    assert matrix["slot_4_full_price_pairs"]["khien-that-truyen+khien-thanh-quang"] == [
+        6740,
+        *community,
+    ]
     assert matrix["shared_unique_groups"]["linh-gac"] == ["giap-hiep-si", "khien-that-truyen"]
+    price = "stat.price"
+    shield_pack = repo.get("items/khien-thanh-quang")
+    (candidate,) = shield_pack["candidates"][price]
+    assert draft["shortlist"]["khien-thanh-quang"]["candidates"][price] == [candidate]
+    assert (
+        candidate["value"]
+        == repo.get("items/khien-thanh-quang", canonical=True)["facts"][price][0]["value"]
+    )
+    assert price not in repo.get("items/ao-choang-than-ra")["candidates"]
+    assert comparison_quantity(repo.get("items/giap-thong-kho"), price) is None
+    assert comparison_quantity(repo.get("items/vo-anh-tien"), price) is None
+    conflicting = candidate | {"value": {"amount": 2100, "unit": "gold"}}
+    disputed = shield_pack | {"candidates": {price: [candidate, conflicting]}}
+    assert comparison_quantity(disputed, price) is None
 
     def path(first_item, second_item, gold, *, quoted=False):
         steps = [

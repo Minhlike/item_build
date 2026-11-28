@@ -121,62 +121,95 @@ DEFENSE_CHECKPOINT_ITEMS = (
     "huan-chuong-troy",
     "phu-chu-truong-sinh",
 )
-DEFENSE_STAT_FIELDS = (
-    "stat.price",
-    "stat.hp",
-    "stat.armor",
-    "stat.magic-defense",
-    "stat.cooldown-reduction",
-)
+COMPARISON_UNITS = {
+    "stat.price": "gold",
+    "stat.hp": "hp",
+    "stat.armor": "armor",
+    "stat.magic-defense": "magic_defense",
+    "stat.cooldown-reduction": "ratio",
+}
+COMPARISON_CONFIDENCE = {
+    ("UNVERIFIED", "community_or_unverified"): 0,
+    ("UNVERIFIED", "official_undated_or_unresolved"): 1,
+    ("LIVE_VN",): 2,
+}
+
+
+def comparison_quantity(item, field):
+    """Use LIVE first, or an agreed candidate quantity with source confidence."""
+    unit = COMPARISON_UNITS[field]
+
+    def amount(claim):
+        value = claim.get("value")
+        if not isinstance(value, dict) or value.get("unit") != unit:
+            return None
+        number = value["amount"]
+        if number < 0 or (unit == "gold" and int(number) != number):
+            return None
+        return number
+
+    live = item["live"].get(field)
+    if live is not None and (value := amount(live)) is not None:
+        return [value, "LIVE_VN"]
+    values = defaultdict(set)
+    for claim in item.get("candidates", {}).get(field, []):
+        confidence = (claim["status"], claim["evidence_layer"])
+        if confidence in COMPARISON_CONFIDENCE and (value := amount(claim)) is not None:
+            values[value].add(confidence)
+    if len(values) != 1:
+        return None
+    ((value, levels),) = values.items()
+    return [value, *max(levels, key=COMPARISON_CONFIDENCE.__getitem__)]
 
 
 def defense_purchase_matrix(items):
-    def quantity(item, field):
-        if field in item["live"]:
-            return [item["live"][field]["amount"], "LIVE_VN"]
-        candidate = item.get("academy_candidates", {}).get(field)
-        return [candidate["amount"], "UNVERIFIED"] if candidate else None
+    def sum_prices(*rows):
+        confidence = min((tuple(row[1:]) for row in rows), key=COMPARISON_CONFIDENCE.__getitem__)
+        return [sum(row[0] for row in rows), *confidence]
+
+    def common_group_price(group, tier):
+        prices = [
+            comparison_quantity(item, "stat.price")
+            for item in items.values()
+            if item["shop_group"] == group
+            and item["live"].get("shop.tier", {}).get("value", {}).get("amount") == tier
+        ]
+        if not prices or None in prices or len({row[0] for row in prices}) != 1:
+            return None
+        return min(prices, key=lambda row: COMPARISON_CONFIDENCE[tuple(row[1:])])
 
     selected = [id for id in DEFENSE_CHECKPOINT_ITEMS if id in items]
-    opening = [
-        id
-        for id, item in items.items()
-        if item["shop_group"] == "boots" and item["live"].get("shop.tier", {}).get("amount") == 2
-    ]
-    support = [
-        id
-        for id, item in items.items()
-        if item["shop_group"] == "support" and item["live"].get("shop.tier", {}).get("amount") == 3
-    ]
-    values = {id: [quantity(items[id], field) for field in DEFENSE_STAT_FIELDS] for id in selected}
-    openings = {items[id]["live"].get("stat.price", {}).get("amount") for id in opening}
-    supports = {items[id]["live"].get("stat.price", {}).get("amount") for id in support}
-    base = (
-        min(openings) + min(supports)
-        if None not in openings | supports and len(openings) == len(supports) == 1
-        else None
-    )
+    values = {
+        id: [comparison_quantity(items[id], field) for field in COMPARISON_UNITS] for id in selected
+    }
+    boots = common_group_price("boots", 2)
+    support = common_group_price("support", 3)
+    base = sum_prices(boots, support) if boots and support else None
     prices = {id: row[0] for id, row in values.items()}
     totals = {
-        f"{a}+{b}": [
-            base + prices[a][0] + prices[b][0],
-            "LIVE_VN" if prices[a][1] == prices[b][1] == "LIVE_VN" else "UNVERIFIED",
-        ]
+        f"{a}+{b}": sum_prices(base, prices[a], prices[b])
         for a, b in combinations(selected, 2)
         if base is not None and prices[a] is not None and prices[b] is not None
     }
     groups = defaultdict(set)
     for id, entry in items.items():
-        for layer in (entry["live"], entry.get("academy_candidates", {})):
-            for mechanic in layer.values():
-                if isinstance(mechanic, dict) and "unique_group" in mechanic:
+        for prop in entry["live"].keys() | entry["candidates"].keys():
+            claims = [entry["live"][prop]] if prop in entry["live"] else entry["candidates"][prop]
+            for claim in claims:
+                mechanic = claim["value"]
+                if (
+                    isinstance(mechanic, dict)
+                    and "unique_group" in mechanic
+                    and claim.get("evidence_layer") != "conflict"
+                ):
                     groups[mechanic["unique_group"]].add(id)
     return {
-        "columns": DEFENSE_STAT_FIELDS,
+        "columns": list(COMPARISON_UNITS),
         "rows": values,
-        "slot_1_2_full_price": base,
+        "slot_1_2_full_price": base[0] if base else None,
+        **({"slot_1_2_price_basis": base[1:]} if base and base[1] != "LIVE_VN" else {}),
         "slot_3_full_price": {
-            id: [base + value[0], value[1]]
+            id: sum_prices(base, value)
             for id, value in prices.items()
             if base is not None and value is not None
         },
@@ -184,8 +217,9 @@ def defense_purchase_matrix(items):
         "shared_unique_groups": {
             group: sorted(ids) for group, ids in sorted(groups.items()) if len(ids) > 1
         },
-        "scope": "Mốc nguyên món khi không tính bù thành phần hoặc bán đồ. Ô null là thiếu dữ kiện. "
-        "Nhóm nội tại trùng cần đối chiếu trước khi cộng. Giữ CDR thô khi chưa xác minh trần.",
+        "scope": "Giá nguyên món. Ô null là thiếu hoặc chưa có giá trị duy nhất. "
+        "Các tổng giữ mức bằng chứng thấp nhất trong các giá thành phần. "
+        "Kiểm tra bù thành phần, nội tại trùng và trần CDR trước khi tính hiệu lực.",
     }
 
 

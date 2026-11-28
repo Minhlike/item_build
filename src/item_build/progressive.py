@@ -12,8 +12,10 @@ ICON_DOTS = {
     "vang": "🟡",
     "cam": "🟠",
     "do": "🔴",
+    "tim": "🟣",
     "xam": "⚪",
 }
+ARTWORK_COLOR_FIELDS = ("identity.official-icon-color", "identity.official-artwork-color")
 ACADEMY_ITEM_DEFAULT = {
     "status": "UNVERIFIED",
     "evidence_layer": "official_undated_or_unresolved",
@@ -25,17 +27,24 @@ COMMON_ITEM_GAPS = {
     "Màu biểu tượng trong cửa hàng hiện hành",
     "Công thức ghép hiện hành",
     "Công thức ghép và giới hạn mua",
+    "Hiệu lực công thức ghép trong client VN",
+    "Giới hạn mua",
+    "Quy tắc mua",
     "Đối chiếu cửa hàng trong game",
     "Đối chiếu số liệu trong cửa hàng phiên bản VN",
     "Giá vàng hiện hành",
     "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Khả dụng trong cửa hàng VN",
+    "Khả dụng và hiệu lực công thức ghép trong client VN",
+    "Đối chiếu phiên bản và khả dụng trong client VN.",
 }
 
 
 def official_icon(record: dict, evidence: dict) -> dict | None:
     images = {
         (claim["value"], ref)
-        for claim in record["candidates"].get("identity.official-icon-color", [])
+        for prop in ARTWORK_COLOR_FIELDS
+        for claim in record["candidates"].get(prop, [])
         for ref in claim["evidence"]
         if claim["evidence_layer"] != "conflict"
         and evidence[ref].source_type == "official"
@@ -45,11 +54,9 @@ def official_icon(record: dict, evidence: dict) -> dict | None:
     if len({color for color, _ in images}) != 1:
         return None
     color, ref = min(images)
-    if color not in ICON_DOTS:
-        raise ValueError(f"Màu ảnh chưa có chấm tương ứng: {color}.")
     return {
         "color": color,
-        "dot": ICON_DOTS[color],
+        **({"dot": ICON_DOTS[color]} if color in ICON_DOTS else {}),
         "scope": "official_artwork",
         "source": str(evidence[ref].source_url),
     }
@@ -97,7 +104,7 @@ def draft_entity(record: dict, *, exclude=()) -> dict:
     review = [
         prop
         for prop in record["review_properties"]
-        if prop not in candidates and prop not in live and prop != "identity.official-icon-color"
+        if relevant(prop) and prop not in candidates and prop not in live
     ]
     return {
         "name": record["name"],
@@ -220,6 +227,7 @@ def thane_support(packs, files, index, tactics, preference, release, item_draft)
             if part_id not in choices:
                 choices[part_id] = item_draft(all_items[part_id]) | {"eligibility": "component"}
                 pending_parts.append(choices[part_id])
+    purchase_comparison = defense_purchase_matrix({id: all_items[id] for id in choices})
     for entry in choices.values():
         # The same undated Academy citation applies to most shop properties.
         candidates = entry.get("candidates", {})
@@ -241,7 +249,7 @@ def thane_support(packs, files, index, tactics, preference, release, item_draft)
             entry.pop("unknown", None)
     support = files[f"{DRAFT}/roles/support.json"]
     return {
-        "release": release.model_dump(mode="json"),
+        "release": release.model_dump(mode="json", exclude={"gaps"}),
         "version_source": index["version"],
         "scope": tactics["scope"],
         "hero_lookup": index["heroes"],
@@ -250,24 +258,35 @@ def thane_support(packs, files, index, tactics, preference, release, item_draft)
         "role_pack": {
             key: value
             for key, value in support.items()
-            if key not in {"shortlist", "preferences", "macro_goals"}
+            if key not in {"shortlist", "preferences", "macro_goals", "live"}
+        }
+        | {
+            "live": {
+                key: value for key, value in support["live"].items() if key != "catalog.entries"
+            }
         },
         "battlefield": files[f"{DRAFT}/battlefield.json"],
         "personal_preference": preference,
         "academy_candidate_defaults": ACADEMY_ITEM_DEFAULT,
         "shortlist": choices,
-        "purchase_comparison": defense_purchase_matrix(choices),
+        "purchase_comparison": purchase_comparison,
         "macro_goals": [
-            rule for rule in support["macro_goals"] if rule.get("hero", "thane") == "thane"
+            {
+                key: value
+                for key, value in rule.items()
+                if key not in {"anchors", "evidence", "roles", "hero"}
+            }
+            for rule in support["macro_goals"]
+            if rule.get("hero", "thane") == "thane"
         ],
-        "team_threats": tactics["team_threats"],
+        "team_threats": [
+            {key: value for key, value in rule.items() if key not in {"anchors", "evidence"}}
+            for rule in tactics["team_threats"]
+        ],
         "rules": [
-            "Dùng purchase_comparison để so toàn lộ trình. Ở cùng ngân sách slot 3–4, thử đổi món hoặc đảo thứ tự, giữ phương án còn ổn định trước phép, vật lý/chuẩn và khống chế thực sự chạm ta hoặc chủ lực.",
-            "So đợt dồn ngắn, đánh kéo dài và thời gian rút. Tách HP/giáp, chuẩn theo HP, lá chắn lúc kịp kích hoạt, hồi theo nhịp, giải khống và bảo kê. Ưu tiên sống sót sớm; bỏ phương án thua ở mọi tiêu chí đã biết, không cho điểm tùy ý.",
-            "Hayate: Khiên thất truyền đáng so khi bị đánh thường, chưa biết số phi tiêu hoặc tốc đánh lấy ở mốc tung chiêu. Ra cần Hỏa diệm phủ đúng cửa sổ hồi của địch và đáng đánh đổi chỉ số. So Gaia/Troy với Khiên Thánh Quang nếu hai món vật lý làm hở sát thương phép.",
-            "Chỉ cộng phần ghép có giá và công thức. Kiểm tra nội tại trùng, trần CDR và giá trị khi trận kết thúc sớm. Giữ ô thiếu là unknown; nếu thứ hạng đổi theo giả định, chốt một đường có điều kiện.",
-            "live là LIVE_VN. academy_candidates kế thừa academy_candidate_defaults. Chỉ mở l2 nếu thiếu trường có thể đổi quyết định; L3 kiểm mâu thuẫn. Màu ưu tiên client có nguồn rồi ảnh Garena; thiếu dùng ⚪.",
-            "Xuất đúng một build sáu món, chiến thuật mở bằng Mid đầu trận, tối đa 50 từ. Chỉ nêu giới hạn ảnh hưởng quyết định.",
+            "So ít nhất hai đường mua tại cùng vàng slot 3–4 và xét lúc chưa ghép xong. Hai món thiên giáp liên tiếp cần đối chiếu với đường kháng phép hoặc bảo kê sớm. Tách chống dồn, chịu đòn kéo dài và rút giao tranh.",
+            "Tách vật lý, phép, chuẩn theo HP, chống khống chế, khiên và hồi theo thời điểm. Với Hayate chỉ tính giảm tốc đánh khi bị áp hiệu ứng, chưa suy số phi tiêu. Ra cần Hỏa diệm phủ nhịp hồi.",
+            "Dùng giá ứng viên để so có điều kiện. Không tự điền ô null, đặt trọng số hoặc giả định giảm giá ghép, cộng nội tại trùng hay trần CDR. Chỉ tra L2/L3 nếu một dữ kiện có thể đổi lựa chọn.",
         ],
     }
 

@@ -1,18 +1,17 @@
 # Dùng repo ITEM_BUILD
 
-Dùng repository GitHub `Minhlike/item_build` làm nguồn tri thức. Nếu người dùng chỉ định nhánh hoặc commit, đọc đúng ref đó. Lấy SHA và đọc `knowledge/VERSION.json` cùng chỉ mục của tầng đang dùng. Cache theo SHA khi có thể.
+Dùng GitHub `Minhlike/item_build`. Chốt SHA do người dùng chọn hoặc SHA của nhánh được chỉ định trước lượt đọc đầu tiên. Mặc định dùng nhánh `phat-trien/kho-tri-thuc`. Dùng lại dữ kiện cùng SHA trong chat.
 
 ## Thane SP cấm/chọn nhanh
 
-1. Khi đã biết người chơi là Thane hỗ trợ rank đơn VN, đọc duy nhất `packs/l1/thane-support.json` tại SHA đã chọn **trước khi hiện form**. Pack nhúng mốc phát hành từ cùng lần biên dịch, alias, cơ chế Thane, vai trò, chiến trường, quy tắc và đồ ứng viên. Giữ nội dung pack cùng SHA trong ngữ cảnh. Form chỉ cần năm ô tướng địch và nút tối ưu.
-2. Sau khi gửi form, dùng `hero_lookup` chuẩn hóa các tên đã nhập. Tải song song các tệp theo `hero_path` của đúng những tướng còn thiếu tại SHA đó. Dùng lại tướng đã đọc trong chat. Nếu lựa chọn đổi, chỉ bổ sung tướng mới. Với đội trùng hoàn toàn và ngữ cảnh đủ, số lượt đọc là 0. Chỉ nạp lại pack khi đổi SHA hoặc bị mất ngữ cảnh.
-3. Ghép mẫu `team_threats` bằng các tướng thực sự đã nhập rồi áp `personal_preference`. Dùng `purchase_comparison` so ít nhất hai tiền tố cạnh tranh ở cùng vàng slot 3–4 trước khi điền slot cuối. Nếu hai món thiên giáp vật lý liên tiếp, so một đường có kháng phép hoặc khả năng che chủ lực sớm hơn. Kiểm tra phòng thủ ở trận kết thúc sớm và chống dồn, đánh kéo dài, rút giao tranh. Hàng `component` chỉ hỗ trợ đường ghép. Hàng `reviewable` vẫn cần xét điều kiện kích hoạt.
-4. `live` giữ giá trị có hiệu lực. `academy_candidates` kế thừa nhãn trong `academy_candidate_defaults`. Ứng viên có thể hỗ trợ so điều kiện, mâu thuẫn giữ riêng. FAST_DRAFT thường chỉ dùng các pack đã nạp. Chỉ đọc đúng L2/L3 nếu thiếu thuộc tính có thể đổi quyết định. Để việc kiểm định toàn kho và nghiên cứu web cho luồng chuẩn bị hoặc kiểm chứng chuyên sâu.
-5. Dùng màu client đã xác minh nếu có. `icon_reference` là màu quan sát trên ảnh Garena và có URL định danh. Có thể dùng chấm của ảnh, ghi phạm vi khi cần. Món chưa có nguồn dùng ⚪. Chỉ trả một thứ tự sáu món và một dòng chiến thuật mở bằng “Mid đầu trận”, tối đa 50 từ.
+1. Đọc duy nhất `packs/l1/thane-support.json` **trước form**. Pack có mốc phát hành, alias và quy tắc theo vai trò. Khi chưa nhận đội hình, chỉ hiện năm ô tên địch và nút **Tối ưu build**, hoặc một dòng năm ô trống nếu chat chỉ có văn bản.
+2. Chuẩn hóa bằng `hero_lookup`, rồi đọc song song các `hero_path` còn thiếu. Giữ pack chung và tướng đã đọc khi đổi đội, không gọi thêm nếu toàn bộ dữ kiện cùng SHA còn trong ngữ cảnh.
+3. Ghép `team_threats`, áp `personal_preference` và `rules` của pack. So hai thứ tự ở cùng vàng slot 3–4 bằng `purchase_comparison`. Hàng `component` chỉ dùng để ghép. Giá ứng viên dùng có điều kiện với lớp bằng chứng trong ô giá. Giữ ô `null` bỏ ngỏ, chỉ mở L2 hoặc L3 nếu dữ kiện có thể đổi phương án.
+4. Chỉ trả một thứ tự sáu món kèm màu client có nguồn hoặc `icon_reference.dot`, dùng ⚪ khi thiếu chấm có căn cứ. Dòng chiến thuật mở bằng **Mid đầu trận**, tối đa 50 từ và có thể kèm giới hạn ảnh hưởng đến build. Nếu chưa chốt được, nêu điểm thiếu quyết định trong một câu.
 
 ## L1 dành cho cấm/chọn nhanh
 
-1. Đọc `packs/l1/INDEX.json` và `prompts/fast_draft.md` tại cùng SHA. Chuẩn hóa ID, tên và alias từ `heroes`. Nếu tên chưa rõ, hỏi ngắn. Flowborn cần xác định dạng pháp sư hoặc xạ thủ.
+1. Đọc `knowledge/VERSION.json` và `packs/l1/INDEX.json` cùng SHA. Chuẩn hóa ID, tên và alias từ `heroes`. Nếu tên chưa rõ, hỏi ngắn. Flowborn cần xác định dạng pháp sư hoặc xạ thủ. Dùng định dạng trong `prompts/fast_draft.md` nếu chưa có trong ngữ cảnh.
 2. Dùng đường dẫn trong L1 để lấy file chiến trường, vai trò, tướng người chơi và các tướng địch hoặc đồng minh đã nhập. Chỉ mở `team/<id>.json` khi toàn bộ tướng trong mục tương ứng của `team_threats` có trong đội địch. Giữ đúng điều kiện áp dụng và lọc macro theo `hero` khi có.
 3. Dùng `shortlist` để tìm các món theo vai trò. Áp `preferences` và `personal_filter` khi đúng ID và vai trò. Khi thiếu phương án hợp lệ hoặc cơ chế ảnh hưởng quyết định, mở món tương ứng trong L2.
 4. `live` của L1 chứa giá trị đã xác minh và công thức hiện có. `candidates` giữ nội dung ứng viên liên quan kèm trạng thái, lớp và ID nguồn. `review` chỉ liệt kê phần còn phải đọc sâu. Đọc `l2` khi thiếu thuộc tính ảnh hưởng quyết định hoặc cần nguồn chi tiết. Khi cần lịch sử, lấy `canonical` từ L2 và tra ID nguồn theo `evidence` trong chỉ mục.
