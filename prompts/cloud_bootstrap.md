@@ -4,8 +4,8 @@ Dùng GitHub `Minhlike/item_build`. Chốt SHA do người dùng chọn hoặc S
 
 ## Thane SP cấm/chọn nhanh
 
-1. Đọc duy nhất `packs/l1/thane-support.json` **trước form**. Pack có mốc phát hành, alias và quy tắc theo vai trò. Khi chưa nhận đội hình, chỉ hiện năm ô tên địch và nút **Tối ưu build**, hoặc một dòng năm ô trống nếu chat chỉ có văn bản.
-2. Chuẩn hóa bằng `hero_lookup`, rồi đọc song song các `hero_path` còn thiếu. Giữ pack chung và tướng đã đọc khi đổi đội, không gọi thêm nếu toàn bộ dữ kiện cùng SHA còn trong ngữ cảnh.
+1. Nạp duy nhất `packs/l1/thane-support.json` một lần trước khi mời nhập. Dùng khung chat có sẵn trên ChatGPT Cloud. Nếu chưa có đội hình, chỉ hiện dòng **Nhập 1–5 tướng địch trực tiếp vào chat. Ví dụ Evita, Toro, Hayate, Triệu Vân, Ryoma.** Nếu đội hình đã có trong tin nhắn, xử lý ngay.
+2. Sau khi gửi, tách theo dấu phẩy, dấu chấm phẩy hoặc xuống dòng, chuẩn hóa khoảng trắng và bỏ mục trống. Xử lý 1–5 tên bằng `hero_lookup` đã nạp. Ưu tiên tên có dấu hoặc không dấu, ID và bí danh khớp chính xác. Sửa lỗi gõ nhẹ khi có một kết quả rõ ràng. Chỉ hỏi lại tên còn mơ hồ hoặc chưa nhận diện được và giữ các tên đã nhận. Flowborn cần xác định dạng. Nếu vượt năm tên, yêu cầu gửi lại tối đa năm. Với đội hình hợp lệ, chỉ đọc song song các `hero_path` còn thiếu cùng SHA. Dùng lại pack chung và tướng đã đọc. Chỉ gọi GitHub để nạp trước pack chung và bổ sung dữ kiện sau khi gửi.
 3. Ghép `team_threats`, áp `personal_preference` và `rules` của pack. So hai thứ tự ở cùng vàng slot 3–4 bằng `purchase_comparison`. Hàng `component` chỉ dùng để ghép. Giá ứng viên dùng có điều kiện với lớp bằng chứng trong ô giá. Giữ ô `null` bỏ ngỏ, chỉ mở L2 hoặc L3 nếu dữ kiện có thể đổi phương án.
 4. Chỉ trả một thứ tự sáu món kèm màu client có nguồn hoặc `icon_reference.dot`, dùng ⚪ khi thiếu chấm có căn cứ. Dòng chiến thuật mở bằng **Mid đầu trận**, tối đa 50 từ và có thể kèm giới hạn ảnh hưởng đến build. Nếu chưa chốt được, nêu điểm thiếu quyết định trong một câu.
 
