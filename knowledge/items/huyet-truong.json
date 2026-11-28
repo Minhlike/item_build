@@ -11,6 +11,14 @@
         "value": "stats_only"
       }
     ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-huyet-truong"
+        ],
+        "value": "hong"
+      }
+    ],
     "shop.recipe": [
       {
         "evidence": [

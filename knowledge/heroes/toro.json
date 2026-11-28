@@ -84,6 +84,67 @@
         }
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Đang tung chiêu hoặc duy trì giao tranh",
+          "detail": "Bảo hộ khống chế khi tung và có Chiến ý tăng miễn thương, đầy thêm tốc đánh. Sau giao tranh Chiến ý giảm và thành hồi."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Cú húc trúng dọc đường",
+          "detail": "Hất và vật lý. Đòn thường thứ ba có nhánh vật lý theo 3% HP tối đa của Toro theo hồ sơ."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Tụ Dư chấn",
+          "detail": "Có khiên, nổ vật lý sau khoảng 1 giây, tâm mạnh hơn. Có địch gần làm mới S1 và làm chậm; đơn vị khác tướng bị kéo vào tâm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đáp rồi phát ba nhịp chấn động",
+          "detail": "Hai nhịp đầu vật lý/chậm, nhịp ba hất. Có thể nối S1 trong lúc tung theo hồ sơ."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không trông chờ ngắt Toro giữa nhịp miễn khống. Tách chủ lực khỏi tuyến lao kép, đánh hồi rời giao tranh chỉ nếu hiệu ứng giảm hồi còn phủ."
+      }
+    ],
     "passive.out-of-combat-heal": [
       {
         "evidence": [

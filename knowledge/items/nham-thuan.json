@@ -71,6 +71,14 @@
           "unique_group": "tich-tu"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-nham-thuan"
+        ],
+        "value": "vang"
+      }
     ]
   },
   "unknown": [

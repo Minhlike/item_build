@@ -47,6 +47,14 @@
         }
       }
     ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-dao-truy-hon"
+        ],
+        "value": "hong"
+      }
+    ],
     "passive.wound": [
       {
         "evidence": [

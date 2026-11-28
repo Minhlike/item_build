@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zata"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Phong sát gây sát thương",
+          "detail": "Rút hồi cuối, giữ riêng cơ chế va chạm và công thức từng nhịp."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zata"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Phi đạn chậm dần đi qua đích",
+          "detail": "Phép trên đường, tới cuối nổ phép thêm.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zata"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lốc tạo ở vùng chọn",
+          "detail": "Gây phép và chậm, quay về điểm Zata đứng lúc tung để tạo đường nối chiêu.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zata"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Hoàn tất ba nhịp xung kích theo điều kiện va",
+          "detail": "Lướt dọc đường có phép, đạt ngưỡng lên không thể chọn và bắn phép quanh. Hồ sơ nêu cửa sổ nối khoảng 3 giây."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-zata"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Ngắt trước khi đủ lượt, sau khi lên không thì tách người yếu khỏi tầm. Phân biệt vị trí lốc bay về và nơi Zata đang di chuyển."
+      }
+    ],
     "skill-3.takeoff-magic": [
       {
         "evidence": [
@@ -42,10 +105,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

@@ -11,6 +11,67 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lumburr"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Có đồng đội trong khoảng 5 m",
+          "detail": "Tăng song giáp cho Lumburr và người thấp máu nhất gần."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lumburr"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Quét trúng tướng bằng S1",
+          "detail": "Gây vật lý và giảm sát thương vật lý/phép tướng đó gây ra trong cửa sổ, không suy phần chuẩn."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lumburr"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lướt qua địch hoặc đồng minh",
+          "detail": "Địch bị hất, vật lý và chậm khi đáp; đồng minh nhận khiên và tăng chạy."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lumburr"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Khe nứt mở trúng địch",
+          "detail": "Nhịp mở vật lý và hất, vùng lưu lại vừa làm chậm vừa gây vật lý."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-lumburr"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không xếp hàng dọc hướng khe. Đợi suy yếu trên chủ lực hết trước khi dồn, hoặc dùng nguồn khác để tách người được khiên."
+      }
+    ],
     "passive.armor": [
       {
         "evidence": [
@@ -86,10 +147,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

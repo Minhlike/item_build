@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krixi"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Một kỹ năng trúng",
+          "detail": "Tăng tốc chạy ngắn để rút hoặc đổi góc."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krixi"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Ảo bướm đi và về qua đích",
+          "detail": "Cả hai lượt phép, càng qua nhiều đơn vị sát thương về sau giảm, sàn theo hồ sơ 40%.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krixi"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Bão lá chạm vùng chọn",
+          "detail": "Hất và gây phép."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krixi"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Địch ở gần Krixi khi sao rơi",
+          "detail": "Cửa sổ 5 giây, tối đa bốn nhịp trên mỗi đích; Krixi có tăng chạy.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-krixi"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đổi góc khỏi đường hồi của bướm và né hất trước khi vào. Rút ngoài tầm mưa nếu người thấp HP bị bám."
+      }
+    ],
     "skill-1.base-magic": [
       {
         "evidence": [
@@ -57,10 +120,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

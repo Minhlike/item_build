@@ -22,6 +22,22 @@
           "trigger": "Đứng gần trụ",
           "detail": "Nhận cả kháng hiệu ứng. Chưa rõ phạm vi và hệ số."
         }
+      },
+      {
+        "evidence": [
+          "sforum-badges-quantities"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Ở gần trụ hoặc nhà chính trong phạm vi.",
+          "detail": "Bài hướng dẫn ghi kèm 15% kháng hiệu ứng. Cộng nhiều nguồn miễn thương hoặc kháng hiệu ứng cần quy tắc riêng.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "radius": 6.0
+        }
       }
     ],
     "tier-2.bom-mau": [
@@ -34,6 +50,21 @@
           "target": "self",
           "trigger": "Đang dùng Bơm máu",
           "detail": "Tăng hiệu quả hồi máu và lá chắn; kiểm tra cách cộng dồn theo nguồn."
+        }
+      },
+      {
+        "evidence": [
+          "sforum-badges-quantities"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "healed-or-shielded-target",
+          "trigger": "Tạo lượng hồi máu hoặc lá chắn đủ điều kiện.",
+          "detail": "Nguồn ghi thêm 10 điểm phần trăm hiệu quả nếu đích dưới 50% HP; áp vào lượng hiệu quả chứ không cộng trực tiếp vào hệ số HP. Hút máu cần kiểm riêng.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          }
         }
       }
     ],
@@ -75,6 +106,31 @@
           "detail": "Sát thương thêm loại chuẩn.",
           "damage_type": "true"
         }
+      },
+      {
+        "evidence": [
+          "sforum-badges-quantities"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đánh thường trong bụi hoặc trong 4 giây sau rời bụi.",
+          "detail": "Phần chuẩn lấy HP hiện tại địch. Chưa suy cơ chế xuyên lá chắn đặc biệt.",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "target_current_hp",
+                "coefficient": 0.04
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 10.0
+          }
+        }
       }
     ],
     "tier-3.du-hiep": [
@@ -104,6 +160,36 @@
           "academy-badges"
         ],
         "value": true
+      }
+    ],
+    "tier-1.nhay-ben": [
+      {
+        "evidence": [
+          "hqct-nhay-ben"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Đang ở khu vực đường sông.",
+          "detail": "Tăng chạy. Cứ 5 giây ứng viên hồi 20 HP và 10 năng lượng trong khu vực.",
+          "amount": {
+            "amount": 10.0,
+            "unit": "move_speed"
+          }
+        }
+      }
+    ],
+    "tier-2.sinh-ton": [
+      {
+        "evidence": [
+          "hqct-sinh-ton"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Lính hoặc quái rừng gần bị hạ.",
+          "detail": "Mỗi lính cộng một, quái nhỏ hai và quái lớn ba tầng. Hệ số 8 HP tối đa vĩnh viễn mỗi tầng. Giới hạn nguồn cộng đồng ghi khác nhau, chưa dùng 100 làm trần đã xác minh."
+        }
       }
     ],
     "tier-2.cuu-vien": [

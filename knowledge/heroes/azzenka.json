@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-azzenka"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Chiêu hoặc đánh thường đặt ảnh hưởng cát",
+          "detail": "Có thêm phép, số dấu và điều kiện khống chế ưu tiên theo bản vá tái thiết kế.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-azzenka"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Nghi thức trúng vùng chỉ định",
+          "detail": "Hất và làm chậm liên tục. Hồ sơ nêu Azzen’Ka ở trong vùng được bảo hộ 3 giây, cần đối chiếu điều kiện chính xác."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-azzenka"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Thần sa trúng rồi nảy",
+          "detail": "Kiểm khả năng chạm lại theo danh sách đầy đủ, nên giãn các đơn vị gần nhau.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-azzenka"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Luồng cát đi tới điểm cuối",
+          "detail": "Đẩy dọc đường, để vùng lún gây phép và chậm."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-azzenka"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh xếp dọc luồng đẩy hoặc đứng quanh đích nảy. Giữ đòn dồn cho lúc Azzen’Ka rời vùng bảo hộ nếu cơ chế còn hiệu lực."
+      }
+    ],
     "skill-2.base-magic": [
       {
         "evidence": [
@@ -97,10 +160,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

@@ -54,6 +54,14 @@
           "unique_group": "xuyen-phep"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-truong-hon-mang"
+        ],
+        "value": "tim"
+      }
     ]
   },
   "unknown": [

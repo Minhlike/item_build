@@ -21,6 +21,74 @@
         "value": "Tách cú nổ đầu khỏi các lần Ma vật tự tìm mục tiêu. Khi Ma vật bám được tuyến trước, để trống kháng phép tới slot 5 dễ làm hở chuỗi phép. Giảm hồi phục không xử lý các lá chắn đã biết."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-evita",
+          "hero-evita"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Đầy Ma lực và chiêu kế trúng",
+          "detail": "Tiêu lực, gọi Ma vật gây phép và tự nhận khiên; Ma lực tích theo thời gian."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-evita",
+          "hero-evita"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Ma vật chạm địch hoặc đi hết tầm",
+          "detail": "Nổ rồi bắn đạn tỏa, tách phần chạm và vùng sau nổ.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-evita",
+          "hero-evita"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Địch ở tâm vết nứt lúc nổ",
+          "detail": "Hất tung và chịu phần phép mạnh hơn; vùng ngoài làm chậm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-evita",
+          "hero-evita"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Dùng chiêu cuối rồi để Ma vật chạm",
+          "detail": "Có khiên lúc bật và khi chạm riêng, Ma vật tự tìm đích và giảm giáp phép; tốc nạp Ma lực tăng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-evita",
+          "hero-evita"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Né tâm và cắt chuỗi tiếp xúc của Ma vật. Giảm hồi không tác động lá chắn."
+      }
+    ],
     "passive.full-power-shield": [
       {
         "evidence": [

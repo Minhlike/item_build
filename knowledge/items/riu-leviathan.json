@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Rìu Leviathan",
   "facts": {
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-riu-leviathan"
+        ],
+        "value": "lam"
+      }
+    ],
     "shop.recipe": [
       {
         "evidence": [

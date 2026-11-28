@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Nhận sát thương và kích lưỡi hái",
+          "detail": "Có vật lý quanh Mina theo hồ sơ, bản vá có cách tích theo đòn cần đọc nếu khác.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Vung lưỡi hái trúng cự ly gần",
+          "detail": "Vật lý theo HP tối đa đích trong hồ sơ. Phân biệt nhánh mới có thể cho hồi hoặc đổi loại sát thương.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lưỡi hái quét trúng địch",
+          "detail": "Kéo gần, gây vật lý và làm chậm 50% theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Kích khiếu khích địch gần",
+          "detail": "Buộc đánh Mina, hồ sơ nêu 2 giây và giảm sát thương cô nhận từ người bị khiêu khích."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ xạ thủ ngoài bán kính kéo-khiêu khích và đừng nuôi lưỡi hái bằng giao tranh kéo dài nếu Mina còn nhiều mục tiêu."
+      }
+    ],
     "skill-1.base-physical": [
       {
         "evidence": [
@@ -46,10 +109,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

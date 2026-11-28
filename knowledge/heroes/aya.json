@@ -11,6 +11,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aya"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Xuống dưới 40% HP theo hồ sơ",
+          "detail": "Hóa sóc 5 giây, không thể bị chọn và có bộ chiêu biến thể."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Quang cầu trúng địch",
+          "detail": "Chậm và lộ diện, tách phát hiện mục tiêu khỏi lượng phép.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aya"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "protected-allies",
+          "trigger": "Bay tới đồng minh hoặc bấm khi đang bám",
+          "detail": "Bảo hộ/vùng khiên trên người bám. Có thể kéo chiêu để rời đồng minh."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aya"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Địch đứng trong pháp trận quanh người được bám khi hiệu ứng phát",
+          "detail": "Có biến hình và sát thương, đồng minh được tăng chạy."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-aya"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Xét tướng mang Aya như tâm di động của biến hình. Dãn ra khi pháp trận chuẩn bị phát và đợi Aya lộ trước khi dùng kỹ năng khóa mục tiêu."
+      }
+    ],
     "skill-2.shield": [
       {
         "evidence": [
@@ -134,10 +196,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

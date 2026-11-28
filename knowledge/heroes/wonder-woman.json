@@ -10,13 +10,74 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-wonder-woman"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đòn đánh thứ ba phóng khiên trúng",
+          "detail": "Có chuẩn, chậm, tự hồi, hiệu lực hồi gấp ba khi trúng tướng.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-wonder-woman"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt khiên trúng rồi có thể nối nhát kiếm",
+          "detail": "Phần khiên chậm và trúng tướng cho miễn thương. Đầu mũi kiếm chịu gấp đôi nhịp kiếm.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-wonder-woman"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Dây chạm đích",
+          "detail": "Trên 50% HP kéo Wonder Woman tới, dưới 50% kéo mục tiêu về, gây vật lý và giảm hồi khi trúng. Quy tắc đúng 50% chưa rõ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-wonder-woman"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "protected-allies",
+          "trigger": "Sóng chiêu cuối được tung",
+          "detail": "Đồng minh sau lưng và bản thân được khiên, phía trước chịu vật lý và choáng. Có hiệu ứng tốc chạy cho đồng minh và miễn thương khi tung."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-wonder-woman"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng đứng lẻ trước dây khi thấp máu. Tách hướng tấn công để cô khó vừa che đồng đội phía sau vừa choáng cả đội phía trước."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

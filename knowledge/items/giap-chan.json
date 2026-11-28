@@ -32,6 +32,14 @@
         ],
         "value": "stats_only"
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-chan"
+        ],
+        "value": "luc"
+      }
     ]
   },
   "unknown": [

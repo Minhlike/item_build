@@ -34,6 +34,14 @@
         }
       }
     ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-liet-hoa-hoi-huyet"
+        ],
+        "value": "luc"
+      }
+    ],
     "active.independent-recharge": [
       {
         "evidence": [

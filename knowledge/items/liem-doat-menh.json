@@ -65,6 +65,14 @@
           "unique_group": "than-linh-can-thiep"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-liem-doat-menh"
+        ],
+        "value": "tim"
+      }
     ]
   },
   "unknown": [

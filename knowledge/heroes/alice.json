@@ -117,6 +117,68 @@
         "value": "Rời vùng rồi mới đổi lượt tranh chấp. Tránh đứng chung đường tiếp cận cho phép đối phương nối vào lá chắn và khống chế; giảm hồi không làm giảm lá chắn Alice."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-alice"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Alice tung chiêu",
+          "detail": "Tăng tốc chạy ngắn, hồ sơ nêu 1 giây."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-alice"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Vụ nổ trúng vùng chọn",
+          "detail": "Sát thương phép và choáng."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-alice"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "protected-allies",
+          "trigger": "Bật bảo hộ khi có đồng minh gần",
+          "detail": "Lá chắn và tăng tốc đến cùng đợt, hệ số theo bản vá."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-alice"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Địch ở trong dòng thời không",
+          "detail": "Phép mỗi 0,5 giây theo hồ sơ, giảm giáp phép và tốc chạy. Bước vào vùng có câm lặng, kiểm nhịp tái nhập.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-alice"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Ra khỏi vùng trước khi trả sát thương và giãn trước choáng. Giảm hồi không làm yếu khiên."
+      }
+    ],
     "skill-2.cooldown": [
       {
         "evidence": [

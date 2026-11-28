@@ -68,6 +68,14 @@
           "unique_group": "suc-manh-nguyen-to"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-guom-nguyen-to"
+        ],
+        "value": "tim"
+      }
     ]
   },
   "unknown": [

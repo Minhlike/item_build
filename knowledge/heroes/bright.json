@@ -11,6 +11,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bright"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đánh xa để đánh dấu",
+          "detail": "Duy trì 5 giây, tối đa năm tầng. Cận chiến lên đích có dấu thêm chuẩn, hệ số chưa rõ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bright"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Hai phát giáo cùng chạm một tướng",
+          "detail": "Tạo dấu và choáng, có vật lý và lộ diện. Một phát trúng tướng đã cho Bright tăng chạy."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bright"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đột kích trúng bằng đao ánh sáng",
+          "detail": "Tăng tốc đánh ba đòn và hồi. Cận chiến lên dấu tiêu dấu và giảm nửa hồi, hạ tướng làm mới S2.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bright"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Bật trạng thái trì hoãn",
+          "detail": "Sát thương nhận dời 3 giây, loại được phần từ đối thủ Bright hạ. Cửa sổ 6 giây, cấm S1, đánh xa xuyên đặt dấu, đánh gần diện rộng thêm chuẩn."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-bright"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Người gây sát thương ưu tiên sống hết thời gian trì hoãn. Tách khỏi đích mang dấu và giữ khống chế để Bright khó tìm mạng làm mới."
+      }
+    ],
     "skill-2.attack-speed": [
       {
         "evidence": [
@@ -61,10 +123,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

@@ -64,6 +64,14 @@
           "unique_group": "vang-vong"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-truong-bung-no"
+        ],
+        "value": "lam"
+      }
     ]
   },
   "unknown": [

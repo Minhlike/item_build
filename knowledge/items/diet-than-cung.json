@@ -94,6 +94,14 @@
           "unique_group": "pha-than"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-diet-than-cung"
+        ],
+        "value": "xanh-ngoc"
+      }
     ]
   },
   "unknown": [

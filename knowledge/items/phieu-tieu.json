@@ -44,6 +44,14 @@
           "unique_group": "diem-yeu"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-phieu-tieu"
+        ],
+        "value": "do"
+      }
     ]
   },
   "unknown": [

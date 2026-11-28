@@ -125,6 +125,70 @@
         "value": "Khiên thất truyền chỉ đáng tin ở nhánh Hayate đánh vào chính người mang; số phi tiêu và thời điểm lấy tốc đánh chưa được kiểm chứng. Giữ cắt góc hoặc ngắt chiêu cuối, tránh để sáu nhịp cùng chạm một người."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-hayate"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đủ sáu lần đánh/chiêu trúng cùng mục tiêu",
+          "detail": "Có cửa sổ 4 giây thêm chuẩn theo hồ sơ; phân biệt phần gốc AD với sát thương theo HP. Đòn vật lý có lan đối tượng gần.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-hayate"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Phi tiêu trúng theo đường",
+          "detail": "Vừa phóng vừa tăng chạy, vật lý và tích dấu, xuyên đơn vị không phải tướng có giảm sát thương trên đường.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-hayate"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Lướt hướng chỉ định, có thể qua địa hình",
+          "detail": "Có tăng sát thương/chạy khi tướng địch trong khoảng 5 m theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-hayate"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lao tới vùng rồi phóng phi tiêu nhiều nhịp",
+          "detail": "Có vật lý và tích dấu. Mỗi nguồn hiệu ứng tốc đánh cần kiểm thời điểm lấy.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-hayate"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Cắt sáu nhịp cùng đích, giữ đẩy ngắt Bão phi tiêu. Khiên thất truyền chỉ có cơ sở trên nhánh Hayate đánh vào người mang và giảm được tốc đánh."
+      }
+    ],
     "passive.marked-true": [
       {
         "evidence": [

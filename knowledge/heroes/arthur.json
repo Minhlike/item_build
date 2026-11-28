@@ -161,6 +161,68 @@
         "value": "Đổi góc khi bản thân hoặc chủ lực đã mang dấu. Tách cú đánh vật lý khỏi phần phép theo HP đích để không tính giáp vật lý cho cả chuỗi."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại hồi theo nhịp",
+          "detail": "Hồ sơ mô tả phần theo HP tối đa của Arthur, kiểm lượng đúng bản trước khi tính."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đánh áp sát sau khi bật chạy",
+          "detail": "Vật lý và câm lặng, đặt dấu. Đòn hoặc chiêu tiếp theo lên dấu có phép theo HP đích.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Triệu gươm khiên",
+          "detail": "Khiên dựa HP tối đa Arthur, vòng có nhịp phép mỗi 0,5 giây theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Cú nhảy chiêu cuối chạm vùng",
+          "detail": "Hất trong vùng và có phần phép, còn nhịp phép sau cú đáp. Nguồn về HP cơ sở của cú đáp mâu thuẫn."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách người mang dấu khỏi Arthur. Đừng gộp dấu theo HP đích hoặc phần vòng phép vào phần vật lý của đòn áp sát."
+      }
+    ],
     "skill-1.empowered-range": [
       {
         "evidence": [

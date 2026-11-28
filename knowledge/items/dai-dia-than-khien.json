@@ -77,6 +77,14 @@
         }
       }
     ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-dai-dia-than-khien"
+        ],
+        "value": "vang"
+      }
+    ],
     "shop.tier": [
       {
         "evidence": [

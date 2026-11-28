@@ -64,6 +64,14 @@
           "unique_group": "chien-khi"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-ho-menh"
+        ],
+        "value": "cam"
+      }
     ]
   },
   "unknown": [

@@ -98,6 +98,14 @@
           "unique_group": "thanh-quang"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-thap-tu-kiem"
+        ],
+        "value": "tim"
+      }
     ]
   },
   "unknown": [

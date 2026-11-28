@@ -2,6 +2,57 @@
   "id": "chuy-mau",
   "kind": "items",
   "name": "Chùy máu",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 410.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 10.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.lifesteal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-chuy-mau"
+        ],
+        "value": "do"
+      }
+    ]
+  },
   "unknown": [
     "Khả dụng cửa hàng và đường ghép hiện hành",
     "Màu biểu tượng trong cửa hàng hiện hành"

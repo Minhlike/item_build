@@ -68,6 +68,14 @@
           "unique_group": "gia-bang"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-truong-bang"
+        ],
+        "value": "lam"
+      }
     ]
   },
   "unknown": [

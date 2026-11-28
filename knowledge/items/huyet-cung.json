@@ -57,6 +57,14 @@
           "unique_group": "xuyen-thau"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-huyet-cung"
+        ],
+        "value": "cam"
+      }
     ]
   },
   "unknown": [

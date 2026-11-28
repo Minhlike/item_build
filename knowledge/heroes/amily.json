@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-amily"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Đòn đánh hoặc S2 chỉ chạm một đích",
+          "detail": "Hồ sơ nêu hệ số đơn mục tiêu 1,5. Xét ngoại lệ nhát đánh cường hóa."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-amily"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tàng đao nảy giữa mục tiêu",
+          "detail": "Tối đa bốn lần, đích đầu bị chậm mạnh khoảng 1 giây. Khi đao về, hồi và tăng chạy 20% trong 3 giây, giảm 30% hồi S1.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-amily"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lượt đá thứ hai trúng",
+          "detail": "Hất, đồng thời mở đòn vật lý cường hóa. Ngoài giao tranh hồi 1% HP và năng lượng tối đa mỗi giây theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-amily"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Sau khoảng 1 giây vận công",
+          "detail": "Nổ phép quanh, trong trạng thái 8 giây tăng AD, chạy, miễn thương và gây phép mỗi giây.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-amily"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh đấu đơn ngay khi cô vừa bật chiêu cuối. Đợi hết miễn thương và chặn cú đá hai trước khi dồn."
+      }
+    ],
     "skill-2.no-target-dash": [
       {
         "evidence": [
@@ -29,10 +92,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

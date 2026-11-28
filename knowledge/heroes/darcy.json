@@ -11,6 +11,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-darcy"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Đánh hoặc chiêu trúng để tích trong giao tranh",
+          "detail": "Rời giao tranh mất dần, đầy mở chiêu thường cường hóa và tăng chạy. Ưu tiên quy tắc bản tái thiết kế tháng 8."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-darcy"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Kích Du hành rồi đánh trong cửa sổ",
+          "detail": "Đòn phép tăng tầm và chậm, trạng thái di chuyển có miễn khống và giảm sát thương; điều kiện hủy theo lượt đánh/tung chiêu."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-darcy"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Khối lập phương chạm tại thời điểm nổ",
+          "detail": "Có độ trễ, dạng đầy năng lượng tăng phạm vi và có nạp lại khi trúng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-darcy"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Mục tiêu đã chịu dấu Ma trận tới nhịp kích",
+          "detail": "Bị kéo về tâm và choáng. D’Arcy có thể dịch vào tâm bằng tái tung, bản vá thêm tương tác với khối lập phương."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-darcy"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không né chỉ khỏi tâm ban đầu nếu đã mang dấu. Dàn quanh tâm kéo và giao tranh sau khi D’Arcy tiêu năng lượng."
+      }
+    ],
     "passive.dimension-energy": [
       {
         "evidence": [
@@ -319,10 +381,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

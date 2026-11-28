@@ -44,6 +44,14 @@
           "unique_group": "linh-gac"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-hiep-si"
+        ],
+        "value": "lam"
+      }
     ]
   },
   "unknown": [

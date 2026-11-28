@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arum"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Linh thú chạm mục tiêu gần",
+          "detail": "Gây phép và hồi Arum. Hồi thấp hơn nếu đích không phải tướng."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arum"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Dùng Thú kích trong vùng quanh Arum",
+          "detail": "Có phép, tạo một thú tối đa ba. Trúng địch rút hồi, hồ sơ nêu giảm 50%.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arum"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Thả số thú đang có vào vùng",
+          "detail": "Thú rời Arum. Hai lượt đầu chậm, lượt ba choáng 1 giây. Arum tăng chạy thoáng chốc.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arum"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Áp đến khóa mục tiêu",
+          "detail": "Gọi đủ ba thú, cả hai bất động và chia sẻ sát thương nhận trong lúc nối. Coi riêng áp chế, chưa suy giải bằng kháng hiệu ứng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-arum"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ ngoài tầm khóa khi đứng gần trụ hoặc nguồn dồn. Nếu đồng đội bị nối, tránh dồn sát thương vào Arum trước khi link hết."
+      }
+    ],
     "stat.base.move-speed": [
       {
         "evidence": [
@@ -50,10 +113,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

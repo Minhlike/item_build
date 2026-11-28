@@ -3,6 +3,79 @@
   "kind": "items",
   "name": "Rựa thợ săn",
   "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 250.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "passive.monster-burn": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "monster",
+          "delivery": "item",
+          "trigger": "Đòn đánh hoặc kỹ năng chạm quái.",
+          "activation": "automatic",
+          "detail": "50–120 chuẩn mỗi nhịp theo Học viện, chưa có mốc nội suy.",
+          "damage_type": "true",
+          "timing": {
+            "duration_s": 2.0,
+            "interval_s": 0.5
+          }
+        }
+      }
+    ],
+    "passive.monster-exp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "economy",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Hạ quái rừng với trang bị.",
+          "activation": "automatic",
+          "detail": "Phần kinh nghiệm nhận thêm.",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "passive.lane-penalty": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "economy",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Chia lính khi có đồng minh gần trước phút 4.",
+          "activation": "automatic",
+          "detail": "Ứng viên người mang nhận 50% vàng/EXP và giảm 25% sát thương lên lính. Cần đối chiếu phần hưởng của đồng minh và xóa điều kiện ở phút 4."
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-rua-tho-san"
+        ],
+        "value": "xam"
+      }
+    ],
     "passive.jungle-damage": [
       {
         "evidence": [

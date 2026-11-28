@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dextra"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đánh thường hoặc chiêu trúng",
+          "detail": "Trúng tướng tăng hai lớp. Tầng tốc đánh tối đa 16 kéo dài 5 giây, mỗi tầng 5% và tăng theo cấp. Khi chạm trần tốc đánh thêm chuẩn 60+12/cấp tướng theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dextra"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Chạy nạp cưa rồi đánh cường hóa",
+          "detail": "Tự bỏ chậm, miễn khống lúc nạp, thêm 50 chạy mỗi 0,5 giây tối đa sáu. Chạm địch 50+10/cấp+0,25 AD; đòn kế 150+30/cấp+1,0 AD và chậm 50% trong 1 giây.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dextra"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Huyết cưa rơi, quay về rồi nổ",
+          "detail": "Ba nhịp đều 100+20/cấp+0,25 AD theo hồ sơ. Lượt về kéo địch. Hồi 2% HP tối đa mỗi đích, thêm 3 điểm nếu là tướng. Hồi chiêu 8−0,4/cấp, mốc chưa xác minh.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dextra"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Bật Hiến tế hoặc chịu đòn chí tử khi sẵn",
+          "detail": "Gỡ khống, miễn sát thương 2,5 giây; chuyển 20% sát thương đến thành hồi. Hồi chiêu 70−10/cấp theo hồ sơ, đối chiếu bản giảm lực mới."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-dextra"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Dừng dồn khi Hiến tế bật để tránh nuôi hồi, tản khỏi đường cưa quay về rồi tái nhập khi hết hiệu lực."
+      }
+    ],
     "passive.sacrifice-for-sinestrea": [
       {
         "evidence": [
@@ -95,10 +158,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

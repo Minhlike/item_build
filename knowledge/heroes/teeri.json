@@ -10,13 +10,75 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-teeri"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Đánh thường hoặc dùng chiêu trúng",
+          "detail": "Tích đến 100, có 3 giây tăng sát thương và không trừ lượt đánh cường hóa.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-teeri"
+        ],
+        "value": {
+          "effect": "soft_cc",
+          "target": "affected-enemies",
+          "trigger": "Đạn găm trúng mục tiêu trong vùng",
+          "detail": "Gây sát thương, để dấu và làm chậm."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-teeri"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Bật Xuyên tâm luân",
+          "detail": "Tăng chạy và có lượt đánh xuyên nhiều đích. Khi có hai đích, dấu chậm chuyển ra mục tiêu phía sau."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-teeri"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Song luân đi rồi quay về",
+          "detail": "Có thể kéo dài đường bay khi qua tướng, gây sát thương và lộ diện dọc đường."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-teeri"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đứng lệch khỏi lính hoặc tướng tuyến trước để hạn chế đòn xuyên. Canh cả đường hồi của song luân, không chỉ hướng tung đầu."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

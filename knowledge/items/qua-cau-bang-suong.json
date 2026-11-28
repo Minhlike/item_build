@@ -45,6 +45,14 @@
         }
       }
     ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-qua-cau-bang-suong"
+        ],
+        "value": "lam"
+      }
+    ],
     "shop.recipe": [
       {
         "evidence": [

@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Giày Hermes",
   "facts": {
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-giay-hermes"
+        ],
+        "value": "hong"
+      }
+    ],
     "stat.price": [
       {
         "evidence": [

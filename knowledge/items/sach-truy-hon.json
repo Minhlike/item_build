@@ -91,6 +91,14 @@
           "unique_group": "troc-na"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-sach-truy-hon"
+        ],
+        "value": "tim"
+      }
     ]
   },
   "unknown": [

@@ -58,6 +58,14 @@
           "unique_group": "hien-gia"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-day-chuyen-luc-bao"
+        ],
+        "value": "tim"
+      }
     ]
   },
   "unknown": [

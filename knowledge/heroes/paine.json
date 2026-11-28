@@ -11,6 +11,73 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-paine"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đánh trong 4 giây sau tung chiêu",
+          "detail": "Các đòn đổi sang phép, đòn đầu đột kích ra sau và gây gấp đôi theo hồ sơ.",
+          "damage_type": "magic",
+          "timing": {
+            "duration_s": 4.0
+          }
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-paine"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Linh hồn đi qua địch rồi thân xác tới điểm đó",
+          "detail": "Hai đường gây phép, đoạn nhập kèm chậm, giai đoạn xuất hồn có bảo hộ khống chế.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-paine"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Địch ở trong Vong hồn khi tung",
+          "detail": "Câm lặng và phép. Paine ở lại vòng 2 giây hồi nội năng, nội tại S2 hoàn lại phần sát thương phép nhận trong 5 giây."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-paine"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đáp vào điểm chọn sau tụ",
+          "detail": "Có miễn thương ngắn, gây phép ở vùng đáp và thêm dọc tuyến lao.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-paine"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh đứng ở cả đường xuất hồn và đường nhập. Đợi sau câm lặng để bảo kê, tính việc Paine có thể hồi một phần sát thương phép."
+      }
+    ],
     "skill-3.cooldown": [
       {
         "evidence": [
@@ -68,10 +135,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

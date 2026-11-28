@@ -75,11 +75,79 @@
         "kind": "tactical_heuristic",
         "value": "Tách khỏi vùng Ma trận sớm để cắt số nhịp phép lẫn cơ hội nổ chuẩn. Giữ góc có thể can thiệp lúc đối phương niệm Ngục tù, đừng đặt toàn bộ bảo kê vào kháng hiệu ứng khi chưa rõ ngoại lệ."
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aleister",
+          "hero-aleister"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đủ dấu Ma thuật đen trên một đích",
+          "detail": "Kích nổ chuẩn, số nhịp dùng dữ kiện riêng theo kỹ năng.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aleister",
+          "hero-aleister"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Địch chạm vách",
+          "detail": "Choáng và sát thương phép. Cần kiểm số dấu đặt bởi từng hit."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aleister",
+          "hero-aleister"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Địch ở trong ma trận đúng nhịp",
+          "detail": "Phép theo nhịp để tiếp tục tích dấu.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aleister",
+          "hero-aleister"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Bắt một đích và niệm Ngục tù",
+          "detail": "Phép nhiều nhịp khoảng 2,5 giây, có thể tự ngắt sau 0,7 giây. Cơ chế giải áp chế cần nguồn riêng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-aleister",
+          "hero-aleister"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách khỏi ma trận khi mang dấu và chuẩn bị can thiệp khi Aleister niệm, tránh đợi kháng hiệu ứng thường tự giải."
+      }
     ]
   },
   "unknown": [
     "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
+    "Hệ số và biến thể chưa có số liệu theo phiên bản.",
     "Hồi chiêu theo cấp",
     "Tương tác và ngưỡng sức mạnh"
   ],

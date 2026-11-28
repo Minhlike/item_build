@@ -59,6 +59,70 @@
         "value": "Xét dấu hiệu chí mạng hoặc xuyên giáp từ đồ đối phương thực sự mua như Thánh kiếm và Muramasa. Riêng tỷ lệ chí mạng của phát cường hóa cần xác nhận, không gán mặc định."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Đánh thường hoặc S2/S3 trúng tướng",
+          "detail": "Bớt 0,5 giây hồi đạn xuyên theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lộn rồi đánh cường hóa",
+          "detail": "Đạn vật lý xuyên đường và tăng tầm. Lộn gần địch có tăng chạy theo hồ sơ, hồi theo patch.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lựu đạn nổ trúng vùng",
+          "detail": "Vật lý kèm chậm khoảng 1 giây.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Pháo đại trúng khu vực",
+          "detail": "Hồ sơ có thêm 12% HP đã mất đích thành vật lý, xem công thức bản vá.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đứng lệch khỏi lính và tuyến trước, chờ cú lộn rồi ép góc. Người thấp HP tránh đứng trong vùng pháo đại."
+      }
+    ],
     "passive.nonhero-cdr": [
       {
         "evidence": [

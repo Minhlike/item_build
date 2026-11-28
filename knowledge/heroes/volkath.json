@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-volkath"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Gây sát thương và đủ bốn dấu",
+          "detail": "Nổ vật lý, Volkath nhận khiên."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-volkath"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Vung đao trúng gần",
+          "detail": "Đích đã mang dấu nhận thêm sát thương và choáng.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-volkath"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Trảo chạm tướng rồi tái kích hoạt dấu",
+          "detail": "Lộ diện và chậm ban đầu, lao tới gây vật lý theo HP mất. Hạ bằng chiêu có thể làm mới.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-volkath"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Lên ngựa, rồi bấm xuống ngựa",
+          "detail": "Bảo hộ khi lên và đòn cận quét vật lý. Đủ Ma uy từ đòn tướng kéo dài bất tử, hết cửa sổ có hồi. Dolia có ngoại lệ riêng theo patch."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-volkath"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Hạn chế đòn vào tướng để Volkath ít Ma uy. Dồn sau bất tử hoặc phủ giảm hồi trước khi cửa sổ kết thúc."
+      }
+    ],
     "skill-3.attack-physical": [
       {
         "evidence": [
@@ -106,10 +169,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

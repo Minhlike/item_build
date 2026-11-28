@@ -46,6 +46,22 @@
           "unit": "count"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-tho-he-bao-thach"
+        ],
+        "value": "cam"
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "automatic"
+      }
     ]
   },
   "unknown": [

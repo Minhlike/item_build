@@ -11,6 +11,97 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ignis"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu sau kích dấu Hỏa hồn",
+          "detail": "Hồ sơ dấu 2,5 giây, có cường hóa và hồi đã đổi theo bản vá."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ignis"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Hỏa cầu chạm địch đầu",
+          "detail": "Nổ hình nón phía sau, Ignis tăng chạy. Trúng dấu có khiên 2 giây theo hồ sơ.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ignis"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Mục tiêu ở trong mưa lửa",
+          "detail": "Ba giây, các nhịp phép làm chậm. Nếu mang dấu có choáng 0,75 giây.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ignis"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Pháp trận nổ khi mục tiêu còn trong vùng",
+          "detail": "Thường phép, hồ sơ mô tả đổi sang chuẩn nếu mang Hỏa hồn. Cần phân biệt lần kích dấu với phần gốc."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-ignis"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tản theo chiều ngang sau vật chắn để tránh nón. Ra pháp trận khi còn dấu, hạn chế tạo cửa sổ cho Ignis vừa nổ chuẩn vừa hồi."
+      }
+    ],
+    "skill-2.rain-magic": [
+      {
+        "evidence": [
+          "vn-aug-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Mưa lửa chạm mục tiêu trong vùng.",
+          "detail": "Lượng được nêu trong bản 28/08/2025. Đọc cùng phạm vi và điều kiện dấu Hỏa hồn.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 180.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.4
+              }
+            ]
+          }
+        }
+      }
+    ],
     "passive.mark-heal": [
       {
         "evidence": [

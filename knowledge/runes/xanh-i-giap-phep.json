@@ -21,6 +21,19 @@
         ],
         "value": "green"
       }
+    ],
+    "effect.stat-selection": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Gắn đúng viên ngọc xanh cấp I.",
+          "detail": "Giáp phép là chỉ số chính và không phụ thuộc kích hoạt. Học viện để trống ô số. Khi cần tính tổng, giữ lượng chưa biết."
+        }
+      }
     ]
   },
   "unknown": [

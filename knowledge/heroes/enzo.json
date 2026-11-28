@@ -10,13 +10,74 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-enzo"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đánh trúng trong tầm liềm",
+          "detail": "Tầm xa hơn có phần cộng và có thể tăng tốc khi đánh tướng, theo điều kiện S1.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-enzo"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Lướt hoặc đánh ở rìa sau S1",
+          "detail": "Tăng công, chậm địch khi đánh xa. Nếu đang nối Câu hồn, cú lướt kéo nạn nhân lệch theo."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-enzo"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Liềm lúc quay lại móc địch đầu tiên",
+          "detail": "Tụ lâu tăng tầm, hủy tụ hoặc mục tiêu chết có thể giảm hồi. Tái tung quăng nạn nhân rồi mất dấu. Có tăng sát thương và giảm sát thương nhận từ nạn nhân mang dấu."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-enzo"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Có nạn nhân nối Câu hồn",
+          "detail": "Lướt tới sau lưng, gây vật lý dọc đường và có miễn thương. Hạ hoặc phụ hạ tướng cho tăng tốc chạy, đánh.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-enzo"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ lính hoặc khoảng trống để hạn chế móc, cứu người có dấu bằng cách tách Enzo. Giữ kỹ năng dồn sau cú lao chiêu cuối."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

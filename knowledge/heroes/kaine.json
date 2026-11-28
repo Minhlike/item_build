@@ -65,6 +65,68 @@
           "trigger": "Trong lúc lướt Huyết Kích"
         }
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kaine"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Ở ngoài phạm vi phát hiện của địch sau đủ điều kiện",
+          "detail": "Có tàng hình. Dùng nguồn theo bản vá để chốt bán kính, độ trễ và chỉ báo."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kaine"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Huyết luân quét địch quanh mình",
+          "detail": "Người ít máu nhất chịu phần thêm theo hồ sơ.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kaine"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Kiếm khí gắn dấu/chậm rồi Kaine đánh tiếp lên dấu",
+          "detail": "Gây choáng. Tách nhịp đặt và nhịp kích để bảo kê."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kaine"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Lướt Huyết kích theo hướng đã chọn",
+          "detail": "Miễn khống và không bị khóa lúc lướt, gây sát thương dọc đường."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-kaine"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Người thấp HP tránh đi riêng qua góc khuất. Giữ bảo kê cho khi Kaine kích dấu hoặc đã hết đoạn miễn khống."
+      }
     ]
   },
   "unknown": [

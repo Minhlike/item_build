@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-slimz"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đòn thường thứ ba trúng",
+          "detail": "Xuyên ra đích phía sau với vật lý.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-slimz"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lao chạm mục tiêu đầu",
+          "detail": "Khoảng bay càng dài choáng/vật lý càng cao, sát thương tối đa gấp đôi theo hồ sơ. Trúng địch tăng tốc đánh; trúng tướng thêm tốc chạy, trúng lính/quái thêm chuẩn."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-slimz"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Nhảy lò xo đến vị trí chọn",
+          "detail": "Khi đáp có tăng AD ngắn."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-slimz"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Bật Thuốc cà rốt rồi đánh",
+          "detail": "Có vật lý theo HP tối đa đích và tăng chạy; hạ/phụ có thể kéo dài cửa sổ.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-slimz"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không đứng thành hàng và canh lao từ ngoài tầm nhìn. Ép Slimz dùng nhảy để rút rồi mới bám, tách phần theo HP khỏi sát thương chuẩn."
+      }
+    ],
     "passive.empowered-physical": [
       {
         "evidence": [
@@ -42,10 +105,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

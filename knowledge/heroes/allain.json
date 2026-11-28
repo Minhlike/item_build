@@ -93,6 +93,69 @@
         "value": "Đòn thứ tư được mô tả có sát thương chuẩn, với biểu thức 45 + 3 theo cấp tướng + 0,54 công vật lý. Bản công bố cũng có ký hiệu STVL trong dòng này. Chưa xác nhận diễn giải của ký hiệu và mốc tăng cấp."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-allain"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đánh thường hoặc S1 trúng tướng",
+          "detail": "Có đột kích qua đòn đánh, tích xuyên cả hai loại giáp và tự hồi khi đủ lượt trúng."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-allain"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Mục tiêu đứng trong chuỗi kiếm",
+          "detail": "Nhiều nhịp sát thương, có nhịp hất. Xét loại sát thương từng nhịp theo dữ kiện bản vá."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-allain"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt qua địch",
+          "detail": "Sát thương vật lý kèm chậm, tách khỏi các hiệu ứng ghim nếu bản vá bổ sung.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-allain"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Khóa một tướng rồi biến khỏi mục tiêu",
+          "detail": "Sau khoảng 1,5 giây đáp và gây chuẩn vùng. Đích được theo trong thời gian trên không.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-allain"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách quanh người đang bị khóa, đợi cú đáp rồi khóa Allain. Hạn chế để hắn vừa bám đòn vừa tích xuyên giáp."
+      }
+    ],
     "passive.first-three-physical": [
       {
         "evidence": [

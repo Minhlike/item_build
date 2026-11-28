@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Gươm Loki",
   "facts": {
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-guom-loki"
+        ],
+        "value": "cam"
+      }
+    ],
     "stat.price": [
       {
         "evidence": [

@@ -55,6 +55,14 @@
           "unique_group": "chinh-phat"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-nanh-fenrir"
+        ],
+        "value": "do"
+      }
     ]
   },
   "unknown": [

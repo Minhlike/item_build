@@ -32,6 +32,14 @@
         ],
         "value": "stats_only"
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-day-chuyen-hong-ngoc"
+        ],
+        "value": "luc"
+      }
     ]
   },
   "unknown": [

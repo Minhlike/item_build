@@ -68,6 +68,14 @@
           "unique_group": "xuyen-thau"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-kiem-muramasa"
+        ],
+        "value": "do"
+      }
     ]
   },
   "unknown": [

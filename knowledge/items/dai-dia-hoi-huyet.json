@@ -34,6 +34,14 @@
         }
       }
     ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-dai-dia-hoi-huyet"
+        ],
+        "value": "luc"
+      }
+    ],
     "active.independent-recharge": [
       {
         "evidence": [

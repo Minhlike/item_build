@@ -11,6 +11,67 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ata"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Mất HP rồi gây sát thương trong khi còn thanh máu ảo",
+          "detail": "Phần có thể hoàn hồi phụ thuộc sát thương và HP ảo còn tồn tại."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ata"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Hai lượt đáp gây vật lý",
+          "detail": "Lượt sau choáng, Ata miễn khống trong chuỗi nhảy."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ata"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Mỏ neo chạm địch hoặc địa hình",
+          "detail": "Địch bị kéo nhẹ/chậm. Ghim tường cho Ata lướt và cuốn địch trên đường, gây vật lý và choáng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ata"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Tung thuyền",
+          "detail": "Tạo vật cản cả hai phe khoảng 4 giây, gây vật lý trước mặt. Miễn khống lúc tung và có thể hủy."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-ata"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng đứng kẹp giữa Ata và địa hình. Nếu đã bào thanh máu, rời tầm để Ata khó hoàn HP ảo bằng đánh trúng."
+      }
+    ],
     "skill-1.cooldown": [
       {
         "evidence": [
@@ -68,10 +129,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

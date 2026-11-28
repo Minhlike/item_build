@@ -11,6 +11,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bonnie"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Bão sét S1 chạm địch",
+          "detail": "Bonnie tăng tốc chạy để đổi vị trí."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bonnie"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Thả thỏ vàng tới vùng",
+          "detail": "Phép và sóng lộ diện, sát thương thỏ có thể kích Bão sét.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bonnie"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Thỏ đỏ trúng trong vùng",
+          "detail": "Gây phép và trói chân."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bonnie"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Thỏ tím được đặt vào vùng có địch",
+          "detail": "Hút bớt về giữa, sau đó nổ gây phép và choáng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-bonnie"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không đứng gom quanh thỏ tím. Đổi góc sau khi thỏ vàng soi và tránh dùng lộ diện như bằng chứng có tầm nhìn chuẩn mọi trường hợp."
+      }
+    ],
     "skill-1.burst-magic": [
       {
         "evidence": [
@@ -97,10 +159,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

@@ -10,13 +10,80 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-chaugnar",
+          "profile-vn-chaugnar"
+        ],
+        "value": {
+          "effect": "cleanse",
+          "target": "self",
+          "trigger": "Bấm Thủy triều",
+          "detail": "Chaugnar tự gỡ khống chế và được tăng tốc chạy, miễn thương."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-chaugnar",
+          "profile-vn-chaugnar"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Luồng nước trúng trên đường đi",
+          "detail": "Kèm chậm 50% tốc chạy.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-chaugnar",
+          "profile-vn-chaugnar"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Gây sát thương ở cự ly gần",
+          "detail": "Giảm hồi Thủy triều 1 giây và tích tăng sát thương lượt Nước xoáy sau, tối đa bốn tầng.",
+          "damage_type": "magic",
+          "stacks": 4
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-chaugnar",
+          "profile-vn-chaugnar"
+        ],
+        "value": {
+          "effect": "cleanse",
+          "target": "self-and-nearby-allies",
+          "trigger": "Tung cạnh đồng minh",
+          "detail": "Giải khống, thêm kháng hiệu ứng, miễn thương và tốc chạy. Hiệu ứng 1 giây cho đồng minh và 3 giây cho bản thân. Nước xoáy hồi 1 giây và không tốn năng lượng trong 6 giây."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-chaugnar",
+          "profile-vn-chaugnar"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Ép dùng giải khống bằng đợt đầu, dàn đợt khống chế sau khi hết hiệu ứng. Không mặc định áp chế bị giải."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

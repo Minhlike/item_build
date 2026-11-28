@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Vô ảnh tiễn",
   "facts": {
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-vo-anh-tien"
+        ],
+        "value": "lam"
+      }
+    ],
     "stat.ad": [
       {
         "evidence": [

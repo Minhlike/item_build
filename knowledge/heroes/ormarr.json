@@ -11,6 +11,67 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ormarr"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Một lần gây sát thương khi Man lực sẵn",
+          "detail": "Có xác suất choáng và thêm phép theo máu tối đa theo hồ sơ, hồi nội tại khoảng 6 giây."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ormarr"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lướt vung búa trúng",
+          "detail": "Hất và gây vật lý."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ormarr"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đập búa có đủ ba dấu từ lần trúng tướng",
+          "detail": "Thường vật lý/chậm, mốc đủ đặt thêm choáng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ormarr"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Xoay búa trúng tướng",
+          "detail": "Vật lý theo nhịp, hồi ứng viên 2% HP tối đa. Có thể dùng S1 khi xoay và vẫn chịu chậm."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-ormarr"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không đứng gần cửa lướt khi đội đã kéo dài. Đánh bật cự ly hoặc dùng chậm trong lúc xoay để giảm số lần hồi."
+      }
+    ],
     "skill-1.empowered-physical": [
       {
         "evidence": [
@@ -68,10 +129,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

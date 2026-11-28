@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kriknak"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Chiêu trúng rồi đánh thường",
+          "detail": "Đòn kế thêm vật lý."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kriknak"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đặt Ấu trùng rồi đánh hoặc dùng chiêu trúng đích",
+          "detail": "Lượt đặt vật lý, nổ dấu phép theo HP tối đa địch. Nổ giúp hồi năng lượng và rút hồi chiêu.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kriknak"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Húc trúng tướng trên đường lao",
+          "detail": "Có vật lý, hồi theo số tướng trúng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kriknak"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tái tung khi đang trên không để đáp",
+          "detail": "Tăng chạy khi bay, còn có thể dùng S1. Đáp gây vật lý và chậm.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-kriknak"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Người đã có dấu cần tránh bị chạm lần hai. Né điểm đáp rồi dồn, giãn để Kriknak khó hồi từ nhiều tướng."
+      }
+    ],
     "skill-2.nonhero-heal-factor": [
       {
         "evidence": [

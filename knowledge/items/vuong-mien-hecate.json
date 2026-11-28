@@ -44,6 +44,14 @@
           "unique_group": "thuat-su"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-vuong-mien-hecate"
+        ],
+        "value": "vang"
+      }
     ]
   },
   "unknown": [

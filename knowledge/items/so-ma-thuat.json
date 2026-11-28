@@ -32,6 +32,14 @@
         ],
         "value": "stats_only"
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-so-ma-thuat"
+        ],
+        "value": "hong"
+      }
     ]
   },
   "unknown": [

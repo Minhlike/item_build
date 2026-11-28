@@ -43,6 +43,14 @@
           "unique_group": "pha-giap"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-thuong-dau-si"
+        ],
+        "value": "hong"
+      }
     ]
   },
   "unknown": [

@@ -473,6 +473,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-dai-dia-ma-nhan"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -495,13 +503,24 @@
             "icon-garena-khien-thanh-quang"
           ]
         }
+      ],
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2040,
+            "unit": "gold"
+          },
+          "evidence": [
+            "tierlq-khien-thanh-quang"
+          ]
+        }
       ]
     },
     "unknown": [
       "Màu nhận diện icon",
       "Công thức ghép hiện hành",
       "Đối chiếu số liệu trong cửa hàng phiên bản VN",
-      "Giá vàng hiện hành"
+      "Giá 2.040 vàng từ nguồn cộng đồng, chưa kiểm chứng trong client VN."
     ],
     "shop_group": "defense"
   },
@@ -510,7 +529,16 @@
     "id": "vo-anh-tien",
     "name": "Vô ảnh tiễn",
     "aliases": [],
-    "facts": {},
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-vo-anh-tien"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu nhận diện icon",
       "Công thức ghép hiện hành",
@@ -544,6 +572,14 @@
           },
           "evidence": [
             "academy-reflect-conflict"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-giap-thong-kho"
           ]
         }
       ]
@@ -757,6 +793,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-nham-thuan"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -942,6 +986,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-khien-huyen-thoai"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1033,6 +1085,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-ao-choang-bang-gia"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1107,6 +1167,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-giap-ho-menh"
           ]
         }
       ]
@@ -1187,6 +1255,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-giap-cuong-no"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1241,6 +1317,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-giap-hiep-si"
           ]
         }
       ]
@@ -1298,6 +1382,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-gang-bach-kim"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1340,6 +1432,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-gang-giac-dau"
           ]
         }
       ]
@@ -1386,6 +1486,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-giap-nhe"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1428,6 +1536,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-nhan-hong-ngoc"
           ]
         }
       ]
@@ -1474,6 +1590,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-bua-suc-manh"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1516,6 +1640,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-kiem-ngan"
           ]
         }
       ]
@@ -1562,6 +1694,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-dao-gam"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1604,6 +1744,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-gang-tay"
           ]
         }
       ]
@@ -1650,6 +1798,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-sach-phep"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1692,6 +1848,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-sach-co"
           ]
         }
       ]
@@ -1738,6 +1902,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-so-ma-thuat"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1780,6 +1952,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-nhan-lapis"
           ]
         }
       ]
@@ -1923,6 +2103,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-giay-thuat-si"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -1976,6 +2164,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-giay-thep"
           ]
         }
       ]
@@ -2055,6 +2251,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-kiem-muramasa"
           ]
         }
       ]
@@ -2139,6 +2343,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-thanh-kiem"
           ]
         }
       ]
@@ -2240,6 +2452,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-thuong-khung-kiem"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -2305,6 +2525,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-nanh-fenrir"
           ]
         }
       ]
@@ -2387,6 +2615,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-sach-truy-hon"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -2466,6 +2702,14 @@
           ],
           "effective_from": "2025-07-09"
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-xuyen-tam-lenh"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -2530,6 +2774,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-dai-dia-than-khien"
           ]
         }
       ]
@@ -2672,6 +2924,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-nguyen-to-bao-thach"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -2772,6 +3032,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-cung-bao-to"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -2791,6 +3059,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-huyet-truong"
           ]
         }
       ]
@@ -2814,6 +3090,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-quyen-truong-rhea"
           ]
         }
       ]
@@ -2855,6 +3139,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-the-uoc-carano"
           ]
         }
       ]
@@ -2909,6 +3201,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-qua-cau-bang-suong"
           ]
         }
       ]
@@ -2967,6 +3267,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-dao-truy-hon"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3009,6 +3317,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-giap-chan"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3049,6 +3365,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-kiem-dai"
           ]
         }
       ]
@@ -3104,6 +3428,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-song-dao"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3116,7 +3448,81 @@
     "name": "Rựa thợ săn",
     "kind": "items",
     "shop_group": "jungle",
-    "facts": {},
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 250,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.monster-burn": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "monster",
+            "trigger": "Đòn đánh hoặc kỹ năng chạm quái.",
+            "activation": "automatic",
+            "delivery": "item",
+            "damage_type": "true",
+            "timing": {
+              "duration_s": 2,
+              "interval_s": 0.5
+            },
+            "detail": "50–120 chuẩn mỗi nhịp theo Học viện, chưa có mốc nội suy."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.monster-exp": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "self",
+            "trigger": "Hạ quái rừng với trang bị.",
+            "activation": "automatic",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.2,
+              "unit": "ratio"
+            },
+            "detail": "Phần kinh nghiệm nhận thêm."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.lane-penalty": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "self",
+            "trigger": "Chia lính khi có đồng minh gần trước phút 4.",
+            "activation": "automatic",
+            "delivery": "item",
+            "detail": "Ứng viên người mang nhận 50% vàng/EXP và giảm 25% sát thương lên lính. Cần đối chiếu phần hưởng của đồng minh và xóa điều kiện ở phút 4."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-rua-tho-san"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu icon và quy tắc mua",
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
@@ -3127,7 +3533,98 @@
     "name": "Gươm hiến tế",
     "kind": "items",
     "shop_group": "jungle",
-    "facts": {},
+    "facts": {
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 40,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.monster-burn": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "monster",
+            "trigger": "Đòn đánh hoặc kỹ năng chạm quái.",
+            "activation": "automatic",
+            "delivery": "item",
+            "damage_type": "true",
+            "timing": {
+              "duration_s": 2,
+              "interval_s": 0.5
+            },
+            "detail": "60–172 chuẩn mỗi nhịp theo Học viện, chưa có mốc nội suy."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.monster-exp": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "self",
+            "trigger": "Hạ quái rừng với trang bị.",
+            "activation": "automatic",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.35,
+              "unit": "ratio"
+            },
+            "detail": "Phần kinh nghiệm nhận thêm."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.lane-penalty": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "self",
+            "trigger": "Chia lính khi có đồng minh gần trước phút 4.",
+            "activation": "automatic",
+            "delivery": "item",
+            "detail": "Ứng viên người mang nhận 50% vàng/EXP và giảm 25% sát thương lên lính. Cần đối chiếu phần hưởng của đồng minh và xóa điều kiện ở phút 4."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.jungle-stacks": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "self",
+            "trigger": "Mình hoặc đồng minh gần hạ quái rừng.",
+            "activation": "automatic",
+            "delivery": "item",
+            "stacks": 15,
+            "detail": "Mỗi điểm cho 4 AP và 0,2% CDR theo Học viện.",
+            "unique_group": "lung-diet"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-guom-hien-te"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu icon và quy tắc mua",
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
@@ -3138,7 +3635,16 @@
     "name": "Rìu Gnoll",
     "kind": "items",
     "shop_group": "jungle",
-    "facts": {},
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-riu-gnoll"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu icon và quy tắc mua",
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
@@ -3149,7 +3655,16 @@
     "name": "Đao truy kích",
     "kind": "items",
     "shop_group": "jungle",
-    "facts": {},
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-dao-truy-kich"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu icon và quy tắc mua",
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
@@ -3160,7 +3675,16 @@
     "name": "Cung gió lốc",
     "kind": "items",
     "shop_group": "jungle",
-    "facts": {},
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-cung-gio-loc"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu icon và quy tắc mua",
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
@@ -3171,7 +3695,16 @@
     "name": "Gươm Loki",
     "kind": "items",
     "shop_group": "jungle",
-    "facts": {},
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-guom-loki"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu icon và quy tắc mua",
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
@@ -3182,7 +3715,16 @@
     "name": "Rìu Leviathan",
     "kind": "items",
     "shop_group": "jungle",
-    "facts": {},
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-riu-leviathan"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu icon và quy tắc mua",
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
@@ -3193,7 +3735,16 @@
     "name": "Kiếm truy hồn",
     "kind": "items",
     "shop_group": "jungle",
-    "facts": {},
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-kiem-truy-hon"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Màu icon và quy tắc mua",
       "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
@@ -3217,6 +3768,14 @@
           ],
           "effective_from": "2025-07-09"
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-chuy-bang-suong"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3229,7 +3788,57 @@
     "kind": "items",
     "name": "Chùy máu",
     "shop_group": "physical",
-    "facts": {},
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 410,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 10,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.08,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-chuy-mau"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Khả dụng cửa hàng và đường ghép hiện hành",
       "Màu biểu tượng trong cửa hàng hiện hành"
@@ -3240,7 +3849,46 @@
     "kind": "items",
     "name": "Chùy xích",
     "shop_group": "physical",
-    "facts": {},
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 450,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 40,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-chuy-xich"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Khả dụng cửa hàng và đường ghép hiện hành",
       "Màu biểu tượng trong cửa hàng hiện hành"
@@ -3281,6 +3929,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-dai-dia-hoi-huyet"
           ]
         }
       ]
@@ -3324,6 +3980,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-dai-dia-than-toc"
           ]
         }
       ]
@@ -3400,6 +4064,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-dai-khang-phep"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3440,6 +4112,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-day-chuyen-hong-ngoc"
           ]
         }
       ]
@@ -3502,6 +4182,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-giay-du-muc"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3514,7 +4202,16 @@
     "kind": "items",
     "name": "Giày Hermes",
     "shop_group": "boots",
-    "facts": {},
+    "facts": {
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-giay-hermes"
+          ]
+        }
+      ]
+    },
     "unknown": [
       "Khả dụng cửa hàng và đường ghép hiện hành",
       "Màu biểu tượng trong cửa hàng hiện hành"
@@ -3534,6 +4231,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-giay-phu-thuy"
           ]
         }
       ]
@@ -3559,6 +4264,14 @@
             "patch-2025-07-09-items"
           ],
           "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-guom-sam-set"
+          ]
         }
       ]
     },
@@ -3616,6 +4329,22 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-hoa-he-bao-thach"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "automatic",
+          "evidence": [
+            "academy-items"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3639,6 +4368,14 @@
             "patch-2025-07-09-items"
           ],
           "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-huyet-anh-dao"
+          ]
         }
       ]
     },
@@ -3732,6 +4469,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-kiem-fafnir"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3774,6 +4519,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-liet-hoa-hoi-huyet"
           ]
         }
       ]
@@ -3819,6 +4572,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-liet-hoa-ma-nhan"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3860,6 +4621,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-liet-hoa-mo-troi"
           ]
         }
       ]
@@ -3905,6 +4674,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-liet-hoa-than-khien"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -3946,6 +4723,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-liet-hoa-than-toc"
           ]
         }
       ]
@@ -4004,6 +4789,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-ma-phap-truong-bao"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -4056,6 +4849,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-mat-na-ma-quai"
           ]
         }
       ]
@@ -4112,6 +4913,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-phieu-tieu"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -4137,6 +4946,14 @@
           ],
           "effective_from": "2025-07-09"
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-quy-kiem"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -4161,6 +4978,14 @@
             "patch-2025-07-09-items"
           ],
           "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-sach-thanh"
+          ]
         }
       ]
     },
@@ -4214,6 +5039,22 @@
             "amount": 2,
             "unit": "count"
           },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-tho-he-bao-thach"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "automatic",
           "evidence": [
             "academy-items"
           ]
@@ -4320,6 +5161,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-thuong-longinus"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -4372,6 +5221,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-tim-incubus"
           ]
         }
       ]
@@ -4439,6 +5296,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-truong-hon-mang"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -4493,6 +5358,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-cau-chiem-tinh"
           ]
         }
       ]
@@ -4598,6 +5471,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-diet-than-cung"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -4662,6 +5543,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-huyet-cung"
           ]
         }
       ]
@@ -4742,6 +5631,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-vuot-hung-tan"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -4807,6 +5704,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-thuong-xuyen-pha"
           ]
         }
       ]
@@ -4884,6 +5789,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-cung-ta-ma"
           ]
         }
       ]
@@ -4985,6 +5898,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-xa-nhat-cung"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -5068,6 +5989,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-hercule-thinh-no"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -5119,6 +6048,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-vuong-mien-hecate"
           ]
         }
       ]
@@ -5214,6 +6151,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-ngoc-dai-phap-su"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -5276,6 +6221,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-phuong-hoang-le"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -5315,6 +6268,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-nhan-ma-phap"
           ]
         }
       ]
@@ -5394,6 +6355,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-guom-nguyen-to"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -5463,6 +6432,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-bang-nhan-skadi"
           ]
         }
       ]
@@ -5553,6 +6530,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-mat-na-berith"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -5628,6 +6613,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-truong-bang"
           ]
         }
       ]
@@ -5737,6 +6730,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-thap-tu-kiem"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -5808,6 +6809,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-truong-bung-no"
           ]
         }
       ]
@@ -5883,6 +6892,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-guom-hien-triet"
           ]
         }
       ]
@@ -5973,6 +6990,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-guom-tan-the"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -6040,6 +7065,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-day-chuyen-luc-bao"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -6100,6 +7133,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-vong-duc-hanh"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -6136,6 +7177,14 @@
           "value": "stats_only",
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-day-chuyen-ma-thuat"
           ]
         }
       ]
@@ -6213,6 +7262,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-song-dao-bao-tap"
           ]
         }
       ]
@@ -6330,6 +7387,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-phuc-hop-kiem"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -6402,6 +7467,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-liem-doat-menh"
           ]
         }
       ]
@@ -6499,6 +7572,14 @@
             "academy-items"
           ]
         }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-guom-uriel"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -6549,6 +7630,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-thuong-dau-si"
           ]
         }
       ]
@@ -6613,6 +7702,14 @@
           },
           "evidence": [
             "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-chuy-co"
           ]
         }
       ]

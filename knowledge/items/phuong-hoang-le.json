@@ -53,6 +53,14 @@
           "unique_group": "tuong-thuong-anh-hung"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-phuong-hoang-le"
+        ],
+        "value": "vang"
+      }
     ]
   },
   "unknown": [

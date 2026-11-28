@@ -148,6 +148,78 @@
         "kind": "tactical_heuristic",
         "value": "Tránh cho Omen tích sát khí miễn phí trước khi mở. Khi bị nhốt, ưu tiên khống chế hoặc che chắn trong nhịp đòn đánh cường hóa. Đánh thường thẳng vào Sát niệm có thể tạo thêm đòn phản và sát khí."
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-omen",
+          "omen"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đánh thường trúng để đủ năm Sát khí",
+          "detail": "Cường hóa khoảng 5 giây, tăng đánh/chạy và có chuẩn, bớt 1 giây hồi S1/S2 mỗi đòn. Nhịp đánh thứ ba có đòn kép theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-omen",
+          "omen"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Sát kiếm quét trúng phía trước",
+          "detail": "Kéo gần, gây vật lý và làm chậm."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-omen",
+          "omen"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Bật Sát niệm",
+          "detail": "Có miễn thương và chạy 2 giây. Mỗi tướng chỉ bị phản đòn thường một lần, đòn phản thêm Sát khí và chậm.",
+          "timing": {
+            "duration_s": 2.0
+          }
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-omen",
+          "omen"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lao chạm tướng đầu tiên",
+          "detail": "Tạo đấu trường giữ mục tiêu 5 giây theo hồ sơ, giảm sát thương mục tiêu gây ra và có vật lý lúc vào.",
+          "timing": {
+            "duration_s": 5.0
+          }
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-omen",
+          "omen"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Rút khỏi cự ly đòn khi đủ Sát khí. Trong Sát niệm tránh nuôi phản đòn, bảo kê người bị nhốt từ ngoài."
+      }
     ]
   },
   "unknown": [

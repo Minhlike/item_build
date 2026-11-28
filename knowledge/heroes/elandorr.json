@@ -11,6 +11,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-elandorr"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đòn đánh thường tích dấu trên đích",
+          "detail": "Đủ ba nổ phép vùng. Đèn cố định hoặc di chuyển tạo điểm tái dịch, không cầm đèn tăng chạy."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-elandorr"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Lướt Phi điệp",
+          "detail": "Để đèn lại điểm đi, tái tung trở lại nếu còn cửa sổ."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-elandorr"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Hồ điệp bay quanh Eland’orr",
+          "detail": "Hai lượt phép nếu địch ở vùng ảnh hưởng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-elandorr"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đẩy địch theo hướng Phá kén",
+          "detail": "Gây phép và đèn tiếp tục đi theo đường đó, tạo điểm dịch tiếp theo."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-elandorr"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Canh vị trí và đường đèn thay vì đuổi bóng người. Tách khỏi tuyến đẩy để giữ góc phục kích khi đối thủ tái dịch."
+      }
+    ],
     "passive.post-cast-critical": [
       {
         "evidence": [

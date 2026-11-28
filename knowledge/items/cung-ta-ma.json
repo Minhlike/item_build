@@ -68,6 +68,14 @@
           }
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-cung-ta-ma"
+        ],
+        "value": "do"
+      }
     ]
   },
   "unknown": [

@@ -10,13 +10,73 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-qi"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Chiêu chạm địch",
+          "detail": "Hai đòn kế tăng tốc đánh, thêm vật lý và hồi."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-qi"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lướt trúng trên đường",
+          "detail": "Hất tung và gây vật lý."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-qi"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Chưởng liên tiếp trúng phía trước",
+          "detail": "Mỗi nhịp giảm giáp trên đích.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-qi"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Chưởng xô địch về phía trước",
+          "detail": "Va địa hình thêm vật lý, choáng và mở lượt lướt gây vật lý tiếp."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-qi"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đánh ở giữa khoảng trống thay vì quay lưng vào tường. Tách sau cú chưởng đầu để Qi khó vừa lướt vừa hồi qua đòn đánh."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

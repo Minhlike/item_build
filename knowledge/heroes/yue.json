@@ -34,6 +34,68 @@
           "stacks": 2
         }
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yue"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Mỗi lần dùng S1/S2",
+          "detail": "Tích hai cộng dồn để làm mới và mở hai kỹ năng cường hóa.",
+          "stacks": 2
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yue"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Hai đường phiến của Cắt giang sơn đi qua đích",
+          "detail": "Giao điểm ăn hai nhịp, bản cường hóa có phần thêm."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yue"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Các phiến của Trảm thiên địa vào giao điểm",
+          "detail": "Hai nhịp chồng nếu đứng đúng giao điểm, tách khoảng cách giao cắt riêng của S1/S2."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yue"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Chiêu cuối đẩy địch trước mặt",
+          "detail": "Yue nhảy lùi và có tăng tầm nhìn theo hồ sơ."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-yue"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tiến từ hướng lệch giao điểm. Ép Yue mất cú đẩy/lùi rồi mới dùng kỹ năng áp sát chính."
+      }
     ]
   },
   "unknown": [

@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-gildur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đòn đánh liên tiếp thứ tư",
+          "detail": "Đẩy và gây phép, tự nhận khiên theo hồ sơ.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-gildur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Cú lao đấm trúng",
+          "detail": "Sát thương vật lý theo mô tả chiêu, mở sẵn đòn Bàn tay vàng.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-gildur"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Vàng nổ trúng vùng",
+          "detail": "Phép và choáng, dùng bản vá để tách nhịp gốc với phần sau."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-gildur"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đứng trong Vương quốc vàng lúc Gildur niệm",
+          "detail": "Phép và choáng nhiều nhịp, thi triển đứng yên, sau 1 giây có thể tự hủy theo hồ sơ."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-gildur"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tản để tránh trúng cùng một vệt vàng. Giữ hướng can thiệp từ ngoài vùng chiêu cuối, tránh chạy theo đường lao đã có đòn đẩy."
+      }
+    ],
     "skill-2.cooldown": [
       {
         "evidence": [

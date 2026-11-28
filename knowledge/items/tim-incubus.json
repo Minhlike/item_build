@@ -43,6 +43,14 @@
           }
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-tim-incubus"
+        ],
+        "value": "cam"
+      }
     ]
   },
   "unknown": [

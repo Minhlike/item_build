@@ -10,13 +10,74 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-liliana"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Chuyển giữa người và hồ ly",
+          "detail": "Người đánh xa, cáo có tăng song giáp và tốc chạy, đòn đánh cáo là phép."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-liliana"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tùy dạng khi S1 trúng",
+          "detail": "Người trúng ít nhất hai tướng mở một đòn phép theo HP tối đa đích. Cáo mở chuỗi ba đòn phép vồ đích sau cú quét.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-liliana"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đạn ở dạng người trúng",
+          "detail": "Nổ phép, choáng vùng 0,75 giây. Dạng cáo lướt gây phép, trúng tướng mở lượt đạn truy đuổi.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-liliana"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Trong lúc lướt đổi dạng",
+          "detail": "Không thể bị chọn. Người sang cáo làm chậm 2 giây và có song giáp, AP 2,5 giây. Cáo sang người để hai vùng nổ sau 1 giây và tăng AP 2,5 giây."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-liliana"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách đội hình để S1 người khó trúng hai tướng. Giữ khống chế chọn đích sau khi cú đổi dạng kết thúc, rời vùng hai đầu lướt."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

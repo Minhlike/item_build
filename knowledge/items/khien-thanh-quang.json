@@ -11,6 +11,17 @@
         "value": "vang"
       }
     ],
+    "stat.price": [
+      {
+        "evidence": [
+          "tierlq-khien-thanh-quang"
+        ],
+        "value": {
+          "amount": 2040.0,
+          "unit": "gold"
+        }
+      }
+    ],
     "stat.cooldown-reduction": [
       {
         "evidence": [
@@ -103,7 +114,7 @@
     "Màu nhận diện icon",
     "Công thức ghép hiện hành",
     "Đối chiếu số liệu trong cửa hàng phiên bản VN",
-    "Giá vàng hiện hành"
+    "Giá 2.040 vàng từ nguồn cộng đồng, chưa kiểm chứng trong client VN."
   ],
   "shop_group": "defense",
   "relations": [

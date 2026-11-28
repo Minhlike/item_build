@@ -43,6 +43,14 @@
         ],
         "value": "stats_only"
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-gang-bach-kim"
+        ],
+        "value": "lam"
+      }
     ]
   },
   "unknown": [

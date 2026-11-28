@@ -11,6 +11,152 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "vn-jan-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Trảm trúng để cường hóa Quỷ kiếm",
+          "detail": "Mở khi S1 hoặc S3 trúng tướng. Bản 15/01 mô tả phần chuẩn ở đòn thường cường hóa và tự hồi. Tách công thức vật lý của chiêu.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-maloch"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Chém Quỷ kiếm theo cung",
+          "detail": "Tung hụt mất trạng thái, trúng duy trì và nên so phần vật lý với phần chuẩn khi cường hóa."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-maloch"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Đoạt hồn trúng địch vùng trước",
+          "detail": "Chậm và có lá chắn, hồ sơ ghi lá chắn có thể chuyển thành hồi. Kiểm thời điểm chuyển trước khi cộng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-maloch"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lao xuống vùng đã đánh dấu",
+          "detail": "Hất và sát thương vùng, có cường hóa bảo hộ theo mô tả hiện tại."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-maloch"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Né cung chém để làm mất cường hóa, tránh xếp nhiều tướng cho khiên. Ra khỏi vùng báo trước thay vì đợi thấy Maloch đáp."
+      }
+    ],
+    "passive.enchanted-attack": [
+      {
+        "evidence": [
+          "vn-jan-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "S1 hoặc S3 trúng tướng rồi Maloch đánh thường khi kiếm cường hóa.",
+          "detail": "Bản 15/01 tách phần chuẩn của đòn thường với vật lý của kỹ năng. Đòn thường cường hóa hồi 1% HP tối đa.",
+          "damage_type": "true",
+          "timing": {
+            "duration_s": 8.0
+          }
+        }
+      }
+    ],
+    "skill-1.swing-physical": [
+      {
+        "evidence": [
+          "vn-jan-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Quỷ kiếm chạm nạn nhân.",
+          "detail": "Ứng viên từ bản tháng 1: khi thường có 30% xuyên giáp, khi cường hóa hồi 5% HP tối đa mỗi tướng trúng. Hụt tướng mất cường hóa.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 700.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 140.0
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 2.5
+              }
+            ]
+          },
+          "timing": {
+            "cooldown_s": 5.0
+          }
+        }
+      }
+    ],
+    "skill-2.shield-per-soul": [
+      {
+        "evidence": [
+          "vn-jan-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Thu hồn từ địch trong vùng.",
+          "detail": "Mỗi giây chuyển 25% phần khiên đang còn sang hồi với hiệu suất 50% theo bản 15/01; không cộng lượng khiên đã chuyển vào hồi thêm lần nữa.",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.06
+              }
+            ]
+          },
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 9.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          },
+          "stacks": 3
+        }
+      }
+    ],
     "skill-1.base-physical": [
       {
         "evidence": [

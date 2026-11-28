@@ -69,6 +69,14 @@
           "unique_group": "hung-bao"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-vuot-hung-tan"
+        ],
+        "value": "cam"
+      }
     ]
   },
   "unknown": [

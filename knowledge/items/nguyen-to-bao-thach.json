@@ -39,6 +39,14 @@
           "detail": "Đồng minh nhận đủ vàng và EXP; phần người mang tăng theo thời gian trong khoảng 30–50%, tới phút 13 đạt mốc trên."
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-nguyen-to-bao-thach"
+        ],
+        "value": "xam"
+      }
     ]
   },
   "unknown": [

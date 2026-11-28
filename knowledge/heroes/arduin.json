@@ -11,6 +11,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Đang giao tranh, máu thấp và Hồn huyết sẵn",
+          "detail": "Đòn đánh hoặc chiêu trúng cho hồi, dùng công thức bản vá theo HP cộng thêm thay mô tả cũ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Rìu quét trúng",
+          "detail": "Chậm, gặp tướng thì mở lượt nện gây vật lý và hất.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Kích Hồn giáp",
+          "detail": "Khiên bản thân, có nổ phép gần. Ba đòn sau thêm chuẩn và mỗi đòn trúng giảm 1 giây hồi S3 theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Rìu trúng địch đầu tiên",
+          "detail": "Choáng, có vật lý lúc rìu bay và lúc Arduin lao tới. Khống chế thông thường không chặn chặng lao đã kích."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh để lượt đầu S1 chạm tuyến trước rồi nối hất. Cắt đòn sau Hồn giáp để hạn chế vừa chuẩn vừa rút hồi chiêu cuối."
+      }
+    ],
     "passive.heal": [
       {
         "evidence": [

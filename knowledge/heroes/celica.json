@@ -14,6 +14,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-celica"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đòn đánh thường trúng",
+          "detail": "Tích chí mạng và công vật lý tới năm tầng."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-celica"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Bật Bùng nổ",
+          "detail": "Tăng chạy giảm dần và có thể hủy pháo giàn. Bản vá tách công vật lý lúc bật khỏi mức nội tại thường."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-celica"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Địch chạm mìn và tướng là đích ưu tiên",
+          "detail": "Cho tầm nhìn quanh mìn, có vật lý. Tướng bị chậm/giảm giáp, Celica nhận khiên. Trữ tối đa hai.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-celica"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đánh thường khi pháo giàn mở",
+          "detail": "Có tối đa bảy lượt theo hồ sơ, tăng hai giáp, không di chuyển, tái tung để hủy.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-celica"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Áp từ hông khi giàn pháo đã cắm và tránh mìn trên đường, ép Celica dừng trạng thái để mất nhịp bắn."
+      }
+    ],
     "skill-3.cooldown": [
       {
         "evidence": [

@@ -21,6 +21,19 @@
         ],
         "value": "green"
       }
+    ],
+    "effect.stat-selection": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Gắn đúng viên ngọc xanh cấp I.",
+          "detail": "Có hai trục độc lập là HP và CDR. Chưa có tỷ lệ cho từng viên cấp I. Học viện để trống ô số. Khi cần tính tổng, giữ lượng chưa biết."
+        }
+      }
     ]
   },
   "unknown": [

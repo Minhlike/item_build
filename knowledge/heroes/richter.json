@@ -66,6 +66,73 @@
         }
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-richter"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Ở địa hình đủ thời gian",
+          "detail": "Bụi cho tốc đánh, sông tăng chạy, đường cho miễn thương; đổi dạng tăng tốc ngắn. Hồ sơ nêu mốc chuyển 1,5 giây."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-richter"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt rồi chém trúng",
+          "detail": "Dạng bụi/hệ tương ứng có hất, sông tầm xa hơn và chậm, dạng đường có nhánh theo HP đích. Đòn kế có phép. Trúng mở lượt lại theo bộ đếm.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-richter"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Trong nhịp thủ gươm",
+          "detail": "Bảo hộ sát thương và khống chế 0,75 giây theo hồ sơ, sau đó trả vật lý. Trữ hai lượt, dạng gươm vàng chặn khống thành công có choáng.",
+          "timing": {
+            "duration_s": 0.75
+          },
+          "charges": 2
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-richter"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Địch nhận dấu và ở trong vùng",
+          "detail": "Chuẩn/chậm theo nhịp, đủ đợt nổ thêm chuẩn và câm lặng. Dùng số liệu bản vá mới cho hệ số.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-richter"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Nhìn màu gươm trước khi chọn hướng vào. Ép mất lượt chặn bằng đòn nhỏ rồi rút khỏi vùng trước khi đủ đợt chuẩn."
+      }
+    ],
     "skill-1.cooldown": [
       {
         "evidence": [

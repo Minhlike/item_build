@@ -11,6 +11,72 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Tung chiêu hoặc đủ chuỗi đánh để mở Vô tận tên",
+          "detail": "Có nhiều nhịp thẳng gồm vật lý và phần theo HP tối đa địch. Dùng bản 29/09 cho hệ số lên tướng thay dòng 1% cũ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Vụ nổ tên trúng vùng",
+          "detail": "Gây vật lý và choáng theo hồ sơ, bản vá thêm lộ diện."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Nhịp tên theo slot chiêu 2",
+          "detail": "Bản 29/09 ghi soi theo đường bay, lộ cả hai đầu khi trúng. Hồ sơ cũ gán Mưa tên vào slot này nên cần đối chiếu tên/slot trước khi dùng cơ chế cũ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Dùng chiêu cuối rồi mở Vô tận tên",
+          "detail": "Hồ sơ cũ nêu Tên thần có vật lý cộng phần phép theo HP thiếu. Chỉ áp nếu khớp phiên bản/slot, bản vá ghi chiêu đường bay ở S2."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Né ngang tuyến bắn nhiều nhịp. Thoát vùng bị soi trước khi vòng hông và giữ người thấp HP khỏi đường tên dài."
+      }
+    ],
     "skill-1.reveal": [
       {
         "evidence": [
@@ -76,10 +142,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

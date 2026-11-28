@@ -75,6 +75,68 @@
         }
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-raz"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Dùng chiêu rồi lách, hoặc đưa cú đấm cường hóa trúng",
+          "detail": "Có đẩy lùi và phép ở các cú quy định. Kiểm bộ đếm khi đánh nhiều mục tiêu."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-raz"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đấm móc chạm vùng",
+          "detail": "Gây phép và hất; trúng có hồi nội năng."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-raz"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Cú gió gặp địch đầu",
+          "detail": "Phép, chậm và giảm giáp phép, trúng giúp hồi nội năng. Kiểm tương tác nảy của bản vá trước khi dùng lính che.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-raz"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Raz lao trong tuyến đấm",
+          "detail": "Phép và đẩy lùi, trúng hoàn nội năng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-raz"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách người bị giảm giáp phép khỏi đường nối. Giữ góc tránh đẩy về phía đối phương và phản công khi Raz thiếu nội năng."
+      }
+    ],
     "skill-1.cooldown": [
       {
         "evidence": [

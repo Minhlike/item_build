@@ -66,6 +66,14 @@
           "unique_group": "dien-cuong"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-cuong-no"
+        ],
+        "value": "do"
+      }
     ]
   },
   "unknown": [

@@ -11,6 +11,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-preyta"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Chiêu trúng đặt Dịch bệnh",
+          "detail": "Nhịp duy trì nổ vùng ở ba dấu. Trúng tướng/hạ lính hoặc quái tích tài nguyên tăng AP và mở mốc chiêu."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-preyta"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Tăng cường thường trong 4 giây",
+          "detail": "Tốc đánh, tầm và chạy tăng, đòn thứ ba đánh vùng, mốc 25 chuyển mọi đòn cửa sổ thành vùng."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-preyta"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Địch còn trong pháp trận lúc trễ 1 giây",
+          "detail": "Nhịp trước làm chậm, nhịp sau hất. Mốc 75 tăng vùng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-preyta"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Sau khi tụ thì phóng ba sóng",
+          "detail": "Di chuyển hoặc bấm lại phóng ngay, tụ tăng tầm tới mốc nguồn 1800. Từ 145 năng lượng có thể di chuyển trong khi dùng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-preyta"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Né lệch tuyến sóng và không đứng lại khi mang hai dấu. Xem số tài nguyên trước khi chọn góc lách đường đánh thường diện rộng."
+      }
+    ],
     "passive.infection": [
       {
         "evidence": [

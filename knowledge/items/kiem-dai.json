@@ -32,6 +32,14 @@
         ],
         "value": "stats_only"
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-kiem-dai"
+        ],
+        "value": "vang"
+      }
     ]
   },
   "unknown": [

@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Kiếm truy hồn",
   "facts": {
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-kiem-truy-hon"
+        ],
+        "value": "do"
+      }
+    ],
     "shop.recipe": [
       {
         "evidence": [

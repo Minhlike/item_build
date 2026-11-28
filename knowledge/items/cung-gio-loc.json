@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Cung gió lốc",
   "facts": {
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-cung-gio-loc"
+        ],
+        "value": "vang"
+      }
+    ],
     "stat.price": [
       {
         "evidence": [

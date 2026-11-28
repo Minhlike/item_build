@@ -78,6 +78,14 @@
           "unique_group": "hoi-tho-rong"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-kiem-fafnir"
+        ],
+        "value": "do"
+      }
     ]
   },
   "unknown": [

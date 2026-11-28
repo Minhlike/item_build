@@ -11,6 +11,70 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-moren"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đạn pháo thường trúng",
+          "detail": "Nổ vùng, ứng viên thêm 1% HP tối đa đích thành vật lý. Đạn dưới đất có thể bị đơn vị chặn.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-moren"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Nạp Siêu đạn rồi đánh",
+          "detail": "Ba đòn cường hóa tăng vùng và vật lý, vẫn bị chắn khi dưới đất.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-moren"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self-and-nearby-allies",
+          "trigger": "Ném khói dưới đất hoặc bấm khi đang bay",
+          "detail": "Khói ẩn mình và đồng đội 3,5 giây. Bay giúp bỏ cản địa hình cho chiêu/đánh, 0,8 giây tăng tốc và có thể kéo dài bằng hoạt động."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-moren"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Khóa tướng rồi bắn năm rocket",
+          "detail": "Có miễn khống ngắn, nổ theo HP thiếu thành vật lý, trùng đích từ viên hai còn 25% theo hồ sơ.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-moren"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tản khi rocket đã khóa người trong vùng. Theo dõi khói và đường bay, đừng coi lính chắn được đạn khi Moren đã lên không."
+      }
+    ],
     "stat.base.move-speed": [
       {
         "evidence": [
@@ -110,10 +174,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

@@ -11,6 +11,67 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Đòn đánh ở nhịp ám khí",
+          "detail": "Ném đoản kiếm với hiệu ứng theo màu, dùng bản vá để biết loại sát thương và nhịp suy giảm tầng."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Ném phi tiêu S1 trúng",
+          "detail": "Có sát thương và tích Thợ săn, loại sát thương ưu tiên bản vá thay mô tả phép cũ."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Phi tiêu vàng trúng",
+          "detail": "Choáng mục tiêu, tích Thợ săn và có sát thương."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Bắn sáu viên hình quạt theo hồ sơ",
+          "detail": "Trúng tăng tầng và tốc đánh; viên sau trên cùng đích bị giảm, kiểm loại sát thương và mốc hiện hành."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng vào cự ly quạt khi còn choáng chỉ định. Đợi tầng rơi trước khi kéo dài trao đổi, tránh gộp ám khí mọi màu vào một hệ số."
+      }
+    ],
     "passive.red-physical": [
       {
         "evidence": [

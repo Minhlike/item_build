@@ -11,6 +11,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ishar"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Tí Nị được gọi tự động và đi theo Ishar",
+          "detail": "Chỉ số thú có liên quan công phép chủ, các hệ số HP/giáp cần đối chiếu."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ishar"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đá bay chạm địch",
+          "detail": "Tí Nị truy đích đầu, vồ tướng đứng lẻ. Cường hóa dựng nấm sau địch rồi nổ phép theo điều kiện trúng tướng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ishar"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Ishar kích bảo hộ",
+          "detail": "Khiên và tăng chạy, thú quay về ngay và hất/chậm địch cạnh chủ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ishar"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lồng xuất hiện ở vùng mục tiêu",
+          "detail": "Tạo ranh giới giữ địch, Tí Nị nhảy vào gây phép khi đáp."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-ishar"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Bẻ góc giữa Ishar và thú để tránh vừa trúng đá vừa bị vồ. Rời vùng lồng sớm, đừng vào khi thú đang chờ quay về hất."
+      }
+    ],
     "skill-1.mushroom-slow": [
       {
         "evidence": [
@@ -122,10 +184,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

@@ -106,6 +106,14 @@
           "unique_group": "cuong-bao"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-phuc-hop-kiem"
+        ],
+        "value": "cam"
+      }
     ]
   },
   "unknown": [

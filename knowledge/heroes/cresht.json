@@ -10,13 +10,73 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-cresht"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Đánh thường để tích Nộ",
+          "detail": "Đủ thanh mở hóa Thủy thần. Trong dạng lớn, tung chiêu kèm làm chậm gần và đánh thường có thêm công vật lý."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-cresht"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đinh ba trúng vùng quét",
+          "detail": "Dạng thường tích Nộ, dạng lớn gây sát thương hướng trước.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-cresht"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "protected-allies",
+          "trigger": "Dạng thường đáp tới vị trí của đồng minh",
+          "detail": "Tạo bảo hộ và tăng Nộ. Dạng lớn dùng cú đáp gây sát thương vật lý trong vùng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-cresht"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đủ Nộ và tung Thủy thần",
+          "detail": "Cresht có lá chắn lớn. Sóng gây vật lý, đẩy lùi, đồng thời tăng tốc cho Cresht đi trên sóng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-cresht"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Xét thanh Nộ trước khi mở. Ép khi vừa hết dạng lớn, tránh xếp hàng theo sóng và tách lá chắn khỏi hồi máu."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

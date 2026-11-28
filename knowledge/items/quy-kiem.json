@@ -16,6 +16,14 @@
         ]
       }
     ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-quy-kiem"
+        ],
+        "value": "cam"
+      }
+    ],
     "stat.price": [
       {
         "evidence": [

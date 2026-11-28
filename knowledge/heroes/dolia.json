@@ -11,6 +11,67 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dolia"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Ở trong nước và đổi dạng",
+          "detail": "Đánh thường lan, hồi HP/năng lượng, tốc chạy thay đổi. Có khế ước ưu tiên đồng minh khi dùng hồi."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dolia"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đợt cuối trong bốn sóng chạm tướng khi Dolia ở nước",
+          "detail": "Bật mục tiêu, các nhịp còn lại gây sát thương và làm chậm."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dolia"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "nearby-allies",
+          "trigger": "Nhảy đáp tạo hồ cạnh đồng minh khi ở đất",
+          "detail": "Người trong hồ hồi HP/năng lượng. Vào nước hoặc hồ giảm hồi 30%. Ra hồ 4 giây thì hồ mất theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dolia"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Tung Tiên cá thánh ca khi có đồng minh trong tầm",
+          "detail": "Ưu tiên người khế ước, làm mới chiêu hồi lâu nhất, có tương tác của chính Dolia, kiểm riêng ngoại lệ tướng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-dolia"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tính thêm một lượt chiêu lớn của người được nối trước khi dồn. Ép khỏi nước để hạn chế hồi và giữ giãn khỏi sóng cuối."
+      }
+    ],
     "skill-2.cooldown": [
       {
         "evidence": [
@@ -85,10 +146,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

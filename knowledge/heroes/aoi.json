@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Tích một Long lực khi tung chiêu, tối đa bốn",
+          "detail": "Đòn kế có đột kích vật lý, tăng tầm/tốc đánh. Đòn cường hóa thứ tư chí mạng và giảm hồi theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Trảo thường chạm hoặc cú bổ khi bay trúng",
+          "detail": "Thường tự hồi, phi hành hất và cấp khiên thay hồi.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Móc trảo vào địa hình",
+          "detail": "Chọn xung kích hay phi hành theo hướng di chuyển, chứa hai lượt chịu CDR. Miễn khống khi di chuyển theo trảo."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Aoi lên không rồi giật lùi",
+          "detail": "Không thể bị chọn khi lên. Nhịp đầu làm chậm, lượt kéo trảo thêm vật lý dựa HP mất của đích.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng ôm tường khi Aoi còn trảo. Giữ đòn dồn cho sau lúc cô có thể bị chọn, che mục tiêu ít máu khỏi lượt giật."
+      }
+    ],
     "passive.empowered-physical": [
       {
         "evidence": [

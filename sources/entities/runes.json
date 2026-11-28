@@ -2826,6 +2826,19 @@
             "academy-runes"
           ]
         }
+      ],
+      "effect.stat-selection": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Gắn đúng viên ngọc xanh cấp I.",
+            "detail": "Giáp phép là chỉ số chính và không phụ thuộc kích hoạt. Học viện để trống ô số. Khi cần tính tổng, giữ lượng chưa biết."
+          },
+          "evidence": [
+            "academy-runes"
+          ]
+        }
       ]
     },
     "unknown": [
@@ -2852,6 +2865,19 @@
       "rune.color": [
         {
           "value": "green",
+          "evidence": [
+            "academy-runes"
+          ]
+        }
+      ],
+      "effect.stat-selection": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Gắn đúng viên ngọc xanh cấp I.",
+            "detail": "Có hai trục độc lập là HP và CDR. Chưa có tỷ lệ cho từng viên cấp I. Học viện để trống ô số. Khi cần tính tổng, giữ lượng chưa biết."
+          },
           "evidence": [
             "academy-runes"
           ]

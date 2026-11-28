@@ -15,6 +15,68 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lu-bo"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đánh hoặc chiêu trúng",
+          "detail": "Mỗi lần bớt 1 giây hồi S2 theo hồ sơ, tung kỹ năng tăng tốc đánh tối đa 10 tầng."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lu-bo"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Ba lượt lao Xích thố",
+          "detail": "Đổi góc hoặc vượt địa hình. Lượt ba hất, kiểm lại chi tiết huých/choáng và hệ số ở client."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lu-bo"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Sóng thương chạm địch trên đường",
+          "detail": "Gây vật lý kèm làm chậm.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lu-bo"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Bật Chiến thần",
+          "detail": "Tự giải, hồi một phần HP mất, tăng AD và kháng hiệu ứng. Đánh/chiêu tiếp tục hồi trong cửa sổ."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-lu-bo"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Ép Lữ Bố tiêu Chiến thần rồi ngắt tiếp xúc. Giảm hồi có ý nghĩa nếu các đòn hoặc chiêu vẫn chạm trong lúc hiệu ứng phủ."
+      }
+    ],
     "skill-2.base-physical": [
       {
         "evidence": [

@@ -126,6 +126,14 @@
           "items/nhan-hong-ngoc"
         ]
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-xuyen-tam-lenh"
+        ],
+        "value": "cam"
+      }
     ]
   },
   "unknown": [

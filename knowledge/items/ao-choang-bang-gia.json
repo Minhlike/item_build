@@ -79,6 +79,14 @@
           "unique_group": "suc-manh-nguyen-to"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-ao-choang-bang-gia"
+        ],
+        "value": "lam"
+      }
     ]
   },
   "unknown": [

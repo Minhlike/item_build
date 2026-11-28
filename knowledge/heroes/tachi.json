@@ -10,13 +10,73 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tachi"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Gây sát thương lên tướng hoặc quái lớn từ các hướng đủ dấu",
+          "detail": "Nhịp long khí vật lý, hồi dựa HP mất và tăng chạy. Mở đủ bốn dấu cho khiên, tốc đánh và chuyển kiểu sát thương sang chuẩn."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tachi"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Chém S1 tùy trạng thái",
+          "detail": "Vật lý và chậm khi chưa mở. Đã mở tụ 1 giây miễn khống rồi đánh chuẩn, ba đòn thường đầu có thể tăng phần này."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tachi"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Lướt rồi chém vòng ở điểm cuối",
+          "detail": "Hai nhịp vật lý ở dạng thường. Khi mở ba đòn đầu giảm hồi. Có thể đổi vị trí trong lúc tụ S1 với đánh đổi sát thương."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tachi"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tới vùng chọn và chém ba nhịp",
+          "detail": "Hai nhịp đầu đao giao nhau kèm chậm, nhịp cuối phủ vùng. Đáp đất mở phong ấn ngay.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-tachi"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không để Tachi đi đủ góc lấy dấu dễ dàng. Rút khỏi điểm đáp khi phong ấn sắp mở, dành giáp để tính nhánh vật lý trước đó."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

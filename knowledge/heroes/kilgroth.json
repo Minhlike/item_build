@@ -10,13 +10,78 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kilgroth",
+          "vn-june-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đòn đánh thường trúng",
+          "detail": "Cộng tốc đánh tối đa năm tầng, đòn thứ ba quét rộng. Hạ đơn vị tăng AD vĩnh viễn. Bản tháng 6/2025 giảm thưởng hạ tướng/trụ từ 8 còn 5.",
+          "stacks": 5
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kilgroth"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đâm trúng theo hướng lướt",
+          "detail": "Làm chậm và được hoàn một phần hồi nếu trúng tướng.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kilgroth"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Dùng Mâu thần lực rồi đánh trúng",
+          "detail": "Hồi theo số đích, hồi nhiều hơn khi trúng tướng; trong đợt có phần vật lý bổ sung, đòn thứ ba có thành phần phép."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-kilgroth"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Bật chiêu cuối",
+          "detail": "Gỡ khống chế, nhận ngay năm tầng và tăng chạy. Miễn khống 4 giây, đánh trúng tướng kéo dài tối đa thêm 3 giây.",
+          "timing": {
+            "duration_s": 4.0
+          }
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-kilgroth"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách ra trong thời gian miễn khống và không đứng lại cho kéo dài bằng đánh thường. Giảm hồi phải chạm vào nhịp đánh."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

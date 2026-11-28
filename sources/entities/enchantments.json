@@ -24,6 +24,21 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Chọn Mật ngữ và dùng phép bổ trợ.",
+            "amount": {
+              "amount": 0.15,
+              "unit": "ratio"
+            },
+            "detail": "Giảm thời gian hồi của phép bổ trợ. Không áp vào kỹ năng tướng."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-1.qua-cau-bang-suong": [
@@ -66,6 +81,24 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Dùng nút hồi đã được thay bởi Siêu hồi máu.",
+            "amount": {
+              "amount": 660,
+              "unit": "hp"
+            },
+            "timing": {
+              "cooldown_s": 60
+            },
+            "detail": "Bài hướng dẫn còn ghi hồi 210 năng lượng."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-2.uy-ap": [
@@ -79,6 +112,20 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "special",
+            "target": "eligible-minion",
+            "trigger": "Hồi nội tại sẵn và chiêu hoặc đánh thường chạm lính đủ điều kiện.",
+            "timing": {
+              "internal_cooldown_s": 25
+            },
+            "detail": "Hạ lính đủ điều kiện. Mốc 10 lần có thưởng 200 vàng và làm mới, một số lính đặc biệt bị loại."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-2.tho-san": [
@@ -91,6 +138,18 @@
           },
           "evidence": [
             "academy-badges"
+          ]
+        },
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Vào trận và tham gia hạ từng tướng khác nhau.",
+            "stacks": 6,
+            "detail": "Khởi đầu có một tầng, mỗi tướng khác thêm một tầng. +8 AD và +12 AP mỗi tầng theo bài hướng dẫn."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
           ]
         }
       ],
@@ -155,6 +214,32 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đòn thường thứ ba liên tiếp trúng tướng gọi tinh linh.",
+            "damage_type": "true",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "target_max_hp",
+                  "coefficient": 0.02
+                }
+              ]
+            },
+            "timing": {
+              "duration_s": 5,
+              "internal_cooldown_s": 10
+            },
+            "detail": "Tinh linh tiếp tục bắn đích chủ nhân đánh theo tốc đánh của chủ trong khoảng 9,5 m. Chưa suy khả năng xuyên mọi lá chắn."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-1.tuong-phan": [
@@ -181,6 +266,24 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "resource",
+            "target": "self",
+            "trigger": "Tung chiêu hoặc đòn đánh trúng tướng và đủ thời gian nội tại.",
+            "amount": {
+              "amount": 0.08,
+              "unit": "ratio"
+            },
+            "timing": {
+              "internal_cooldown_s": 5
+            },
+            "detail": "Bài hướng dẫn ghi hồi 8% năng lượng; cơ sở tối đa/đã mất phải đối chiếu trước khi tính."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-2.xuyen-tam": [
@@ -193,6 +296,17 @@
           },
           "evidence": [
             "academy-badges"
+          ]
+        },
+        {
+          "value": {
+            "effect": "special",
+            "target": "self",
+            "trigger": "Chọn Xuyên tâm trong nhánh Tháp quang minh.",
+            "detail": "Bài hướng dẫn ghi 18–60 xuyên giáp hoặc xuyên giáp phép theo cấp tướng. Cần biết cách chọn nhánh trước khi cộng vào cả hai."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
           ]
         }
       ],
@@ -207,6 +321,17 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Nhận thuộc tính chí mạng hoặc công phép từ trang bị.",
+            "detail": "Bài 2024 ghi khuếch đại tỷ lệ chí mạng từ trang bị 16% và phần AP từ trang bị 8%. Giữ riêng các tỷ lệ khi tính, có thể đổi theo mùa."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-3.thanh-thuan": [
@@ -220,6 +345,20 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "Nhận sát thương vượt ngưỡng 30% HP trong thời gian ngắn.",
+            "timing": {
+              "internal_cooldown_s": 30
+            },
+            "detail": "Nguồn mô tả khiên kèm hút máu phép 20% trong 6 giây, có thể kéo dài 3 giây bằng tham gia hạ. Chưa thống nhất công thức lá chắn/khung thời gian nhận sát thương."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-3.than-quang": [
@@ -232,6 +371,35 @@
           },
           "evidence": [
             "academy-badges"
+          ]
+        },
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Lần đầu đánh hoặc tung chiêu trúng tướng khi Thần quang sẵn.",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 80,
+              "terms": [
+                {
+                  "basis": "hero_level",
+                  "coefficient": 8
+                },
+                {
+                  "basis": "ap",
+                  "coefficient": 0.3
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 12
+            },
+            "detail": "Lượt chạm kế giảm 1 giây hồi, khoảng cách giữa hai lần giảm lớn hơn 0,5 giây theo nguồn."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
           ]
         }
       ]
@@ -266,6 +434,27 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Tham gia hạ một tướng địch.",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.09
+                }
+              ]
+            },
+            "detail": "Kèm 15% năng lượng tối đa theo ứng viên. Hiệu lực hồi cần xét giảm hồi đang phủ."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-1.du-anh": [
@@ -283,6 +472,22 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đòn đánh sau một hoặc nhiều lần dịch chuyển tiêu các Dư ảnh.",
+            "damage_type": "physical",
+            "stacks": 3,
+            "timing": {
+              "duration_s": 4
+            },
+            "detail": "Sát thương mỗi tầng tăng theo cấp tướng và AD. Nhịp lướt cách quá 4 giây có thể đứt tích."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-3.ma-chu": [
@@ -296,6 +501,41 @@
           },
           "evidence": [
             "academy-badges"
+          ]
+        },
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-near-mark",
+            "trigger": "Chiêu hoặc đòn trúng tướng đủ ba dấu trong cửa sổ.",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 40,
+              "terms": [
+                {
+                  "basis": "hero_level",
+                  "coefficient": 4
+                },
+                {
+                  "basis": "unspecified_ad",
+                  "coefficient": 0.25
+                },
+                {
+                  "basis": "ap",
+                  "coefficient": 0.15
+                }
+              ]
+            },
+            "stacks": 3,
+            "timing": {
+              "duration_s": 1.5,
+              "internal_cooldown_s": 15
+            },
+            "detail": "Có nhịp phép thứ hai sau 1 giây theo HP đã mất của đích. Hệ số tăng theo AD/AP cần kiểm lại."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
           ]
         }
       ],
@@ -323,6 +563,34 @@
           },
           "evidence": [
             "academy-badges"
+          ]
+        },
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Tung chiêu hoặc đánh thường trúng tướng khi Ma hỏa sẵn.",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 50,
+              "terms": [
+                {
+                  "basis": "hero_level",
+                  "coefficient": 5
+                },
+                {
+                  "basis": "ap",
+                  "coefficient": 0.15
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 8
+            }
+          },
+          "evidence": [
+            "sforum-badges-quantities"
           ]
         }
       ],
@@ -363,6 +631,25 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Tung chiêu cuối khi Ma tính sẵn.",
+            "amount": {
+              "amount": 0.3,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 6,
+              "internal_cooldown_s": 30
+            },
+            "detail": "Hoàn phần hồi còn lại của hai chiêu cơ bản tại thời điểm bật, phân biệt với tăng chỉ số CDR. Nhánh 20% CDR và miễn thương được mô tả khác ở các nguồn, cần xác minh bản VN."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ]
     },
@@ -395,6 +682,22 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Ở gần trụ hoặc nhà chính trong phạm vi.",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "radius": 6,
+            "detail": "Bài hướng dẫn ghi kèm 15% kháng hiệu ứng. Cộng nhiều nguồn miễn thương hoặc kháng hiệu ứng cần quy tắc riêng."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-2.bom-mau": [
@@ -407,6 +710,21 @@
           },
           "evidence": [
             "academy-badges"
+          ]
+        },
+        {
+          "value": {
+            "effect": "special",
+            "target": "healed-or-shielded-target",
+            "trigger": "Tạo lượng hồi máu hoặc lá chắn đủ điều kiện.",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "detail": "Nguồn ghi thêm 10 điểm phần trăm hiệu quả nếu đích dưới 50% HP; áp vào lượng hiệu quả chứ không cộng trực tiếp vào hệ số HP. Hút máu cần kiểm riêng."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
           ]
         }
       ],
@@ -448,6 +766,31 @@
           "evidence": [
             "academy-badges"
           ]
+        },
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đánh thường trong bụi hoặc trong 4 giây sau rời bụi.",
+            "damage_type": "true",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "target_current_hp",
+                  "coefficient": 0.04
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 10
+            },
+            "detail": "Phần chuẩn lấy HP hiện tại địch. Chưa suy cơ chế xuyên lá chắn đặc biệt."
+          },
+          "evidence": [
+            "sforum-badges-quantities"
+          ]
         }
       ],
       "tier-3.du-hiep": [
@@ -476,6 +819,36 @@
           "value": true,
           "evidence": [
             "academy-badges"
+          ]
+        }
+      ],
+      "tier-1.nhay-ben": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Đang ở khu vực đường sông.",
+            "amount": {
+              "amount": 10,
+              "unit": "move_speed"
+            },
+            "detail": "Tăng chạy. Cứ 5 giây ứng viên hồi 20 HP và 10 năng lượng trong khu vực."
+          },
+          "evidence": [
+            "hqct-nhay-ben"
+          ]
+        }
+      ],
+      "tier-2.sinh-ton": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "self",
+            "trigger": "Lính hoặc quái rừng gần bị hạ.",
+            "detail": "Mỗi lính cộng một, quái nhỏ hai và quái lớn ba tầng. Hệ số 8 HP tối đa vĩnh viễn mỗi tầng. Giới hạn nguồn cộng đồng ghi khác nhau, chưa dùng 100 làm trần đã xác minh."
+          },
+          "evidence": [
+            "hqct-sinh-ton"
           ]
         }
       ]

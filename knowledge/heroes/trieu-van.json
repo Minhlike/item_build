@@ -178,6 +178,69 @@
         "value": "Giữ một lượt hất/đẩy sau Long huyết nếu đã quan sát đối thủ dùng giải hiệu ứng. Giảm hồi có điều kiện lên nhịp hút máu khi anh ta còn bám mục tiêu. Tách phần đánh thường khỏi lần nện Long kích."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-trieu-van"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Tham gia hạ tướng",
+          "detail": "Tăng AD cộng dồn, hồ sơ nêu tối đa 20 và hồi 5% HP tối đa mỗi lượt."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-trieu-van"
+        ],
+        "value": {
+          "effect": "cleanse",
+          "target": "self",
+          "trigger": "Bật Long huyết",
+          "detail": "Tự gỡ hiệu ứng và tăng chạy. Đòn kế thêm vật lý/chậm, bản vá có lướt đuổi."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-trieu-van"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Quét thương trúng",
+          "detail": "Vật lý quanh và cho tốc đánh/hút máu, tách khỏi hồi từ lần hạ.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-trieu-van"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Nện Long kích",
+          "detail": "Phần đầu chuẩn và hất ngắn, nhận miễn thương và đòn đánh thêm chuẩn trong cửa sổ ứng viên 5 giây. Chưa rõ cơ sở HP của phần chuẩn.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-trieu-van"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Chừa khống chế sau khi hắn dùng Long huyết. Cắt chuỗi đánh vào chủ lực ngay sau nện, đừng tính giáp lên phần chuẩn."
+      }
+    ],
     "skill-2.base-physical": [
       {
         "evidence": [

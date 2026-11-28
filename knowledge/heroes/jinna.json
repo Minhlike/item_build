@@ -14,6 +14,125 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "patch-2026-05-21",
+          "patch-2026-05-22"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Sau ba lần đánh hoặc dùng chiêu, thực hiện đòn thường cường hóa.",
+          "detail": "Có thể giữ dấu, đánh trong lúc di chuyển và xuyên địch. Hệ số phép 280+20/cấp tướng+70% AP từ bản 22/05.",
+          "damage_type": "magic",
+          "stacks": 3
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-jinna"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Chuỗi hạt chạm tới hai địch gần rồi nảy",
+          "detail": "Mỗi lần trúng tướng hồi, lặp đích bị giảm sát thương và hồi.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "patch-2026-05-21",
+          "patch-2026-05-22"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt S2 gây sát thương gần điểm va.",
+          "detail": "S2 lướt và có miễn chậm/giảm sát thương trong nhịp lướt. Trúng địch tự hồi, đích khác tướng cho nửa lượng. Bấm S1 trong lúc lướt có thể nối một lần dịch chuyển nữa.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-jinna"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Bật kết giới có tướng địch gần",
+          "detail": "Giảm sát thương cơ bản rồi tăng thêm theo số tướng cạnh. Xá lợi gây phép khoảng 10 nhịp và Jinna có tăng chạy giảm dần."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "patch-2026-05-21",
+          "patch-2026-05-22"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Dàn người và tránh đứng cùng góc để Jinna khó chạm nhiều đích. Khi Jinna đang lướt S2, giữ đường thoát cho lần lướt thêm từ S1."
+      }
+    ],
+    "skill-2.dash-magic": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Lướt S2 tới điểm có kẻ địch.",
+          "detail": "Chậm trong 2 giây, gốc 15% và tăng 3 điểm mỗi cấp chiêu.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 450.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 60.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.dash-mitigation": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Trong nhịp lướt S2.",
+          "detail": "Kèm miễn làm chậm theo bản thay đổi 21/05.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.1,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.02
+              }
+            ]
+          }
+        }
+      }
+    ],
     "passive.empowered-magic": [
       {
         "evidence": [

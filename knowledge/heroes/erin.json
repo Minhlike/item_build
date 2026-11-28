@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Đòn đánh thường trúng để nạp năng lượng",
+          "detail": "Đầy cho tăng chạy và một đòn cường hóa. Hút máu/xuyên theo nhánh giá trị lớn hơn giữa vật lý và phép theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Kim diệp trúng đích đầu hoặc tới cuối tầm",
+          "detail": "Buộc có tướng trúng hoặc đến cuối đường thì nổ vùng, làm chậm và tích dấu theo lần tung.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Dùng chúc phúc hồ điệp",
+          "detail": "Nạp đầy năng lượng, tích nguyệt quế, tăng tốc đánh và miễn làm chậm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đầy năng lượng để tích dấu, từ sáu dấu mở chiêu cuối",
+          "detail": "Bắn liên tục vào địch thấp máu gần, tốn dấu, tăng chạy và giảm hồi S2.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Người thấp máu rời khỏi bán kính bắn trước khi Erin bắt đầu chuỗi lá. Đánh cửa sổ sau khi đã tiêu dấu, tránh tâm nổ/chậm."
+      }
+    ],
     "skill-1.base-magic": [
       {
         "evidence": [

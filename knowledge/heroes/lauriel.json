@@ -143,6 +143,70 @@
         "value": "Rời pháp trận giữa các lượt, tách người đang có dấu khỏi đồng minh. So chống dồn với hồi ngoài giao tranh; phần chuẩn còn mâu thuẫn của Trời Phạt phải xét riêng."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lauriel"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Bốn dấu từ chiêu trúng cùng một đích",
+          "detail": "Nổ vùng làm chậm, tự hồi. Loại sát thương của nhịp nổ có mâu thuẫn giữa bản vá và hồ sơ, hồi phụ thuộc HP cộng thêm Lauriel theo patch."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lauriel"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đường sáng trúng lúc vẽ hoặc sau nổ",
+          "detail": "Hai nhịp có thể cùng trúng nếu địch còn ở vùng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lauriel"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt rồi phóng ba luồng",
+          "detail": "Trúng có giảm hồi. Kiểm cửa sổ né/không thể chọn và điều kiện lấy hồi riêng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-lauriel"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tạo và tan pháp trận có phép",
+          "detail": "Ở trong vùng hồi chiêu nhanh hơn. Tách cơ chế vùng khỏi CDR từ đồ.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-lauriel"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Ra ngoài pháp trận rồi tái nhập, tránh dồn quanh người mang dấu. Áp giảm hồi trước khi các dấu kịp nổ."
+      }
+    ],
     "passive.heal": [
       {
         "evidence": [

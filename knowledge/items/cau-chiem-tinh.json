@@ -47,6 +47,14 @@
           "unique_group": "vang-vong"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-cau-chiem-tinh"
+        ],
+        "value": "lam"
+      }
     ]
   },
   "unknown": [

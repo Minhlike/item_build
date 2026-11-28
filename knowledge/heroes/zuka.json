@@ -10,13 +10,80 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zuka"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Gây sát thương lên tướng khi nội tại sẵn",
+          "detail": "Tăng AD; nội tại nêu mỗi 15 giây."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zuka"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt vung gậy trúng địch",
+          "detail": "Có lượt hai trong 5 giây, mỗi lần mở đòn đánh xa hơn với vật lý thêm.",
+          "damage_type": "physical",
+          "charges": 2
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zuka"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Lộn trúng đích",
+          "detail": "Sát thương vật lý dọc đường, tự nhận khiên 2,5 giây. Đòn đánh kế thêm vật lý và hất 0,5 giây. Khiên vỡ mở hồi trong 3 giây.",
+          "timing": {
+            "duration_s": 2.5
+          }
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zuka"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Cú nện từ trên không trúng vùng",
+          "detail": "Vật lý và choáng 1 giây, đòn kế quét thêm vật lý.",
+          "timing": {
+            "duration_s": 1.0
+          }
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-zuka"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng chồng người vào vùng nện. Sau cú lộn hụt Zuka thiếu khiên và lượt hất, tạo cơ hội phản công."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

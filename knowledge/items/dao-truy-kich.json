@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Đao truy kích",
   "facts": {
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-dao-truy-kich"
+        ],
+        "value": "do"
+      }
+    ],
     "stat.price": [
       {
         "evidence": [

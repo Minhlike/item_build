@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dyadia"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Hết nhịp hồi của đòn Phúc duyên",
+          "detail": "Sau 7,5–6 giây theo cấp, lao đá phép và hất lùi rồi bật ra. Nghi thức Lương/Ác Duyên có vàng và giảm một nửa bộ đếm; dùng mốc vàng mới hơn nếu khác."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dyadia"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "nearby-allies",
+          "trigger": "Gắn dây tốt rồi tái dùng trong khoảng 5 giây",
+          "detail": "Cùng người cho Dyadia lướt và hồi cả hai. Hai người khác nhau có tăng tốc khi lại gần rồi hồi khi chạm."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dyadia"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Gắn Ác duyên lên địch",
+          "detail": "Lộ diện 5 giây, sát thương theo nhịp rồi nổ. Hai người chạm nhau có thể kết sớm và trả vàng. Tái dùng trong 5 giây lao trói 0,75 giây và có miễn thương.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dyadia"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đàn tinh linh qua địch hoặc đồng minh",
+          "detail": "Địch nhận phép/dấu, nếu đã có dấu làm mới và trói 1 giây. Đồng minh nhận hồi/dấu và tăng chạy 2 giây nếu được làm mới. Sức mạnh có thành phần theo vàng kiếm từ bộ chiêu.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-dyadia"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ khoảng cách với Dyadia lúc đã bị đánh dấu, cân nhắc dứt dấu bằng chạm người cùng dấu chỉ khi tránh được trói vùng. Phủ giảm hồi kịp nhịp cứu."
+      }
+    ],
     "skill-2.damage-over-time": [
       {
         "evidence": [

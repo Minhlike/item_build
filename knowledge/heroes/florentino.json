@@ -90,6 +90,68 @@
         "kind": "tactical_heuristic",
         "value": "Tránh đứng vào đường nối hoa. Ép đối phương bỏ lộ trình nhặt hoa hoặc rút chờ cửa sổ quyết đấu."
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-florentino"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Đòn đánh sau rời giao tranh hoặc nhặt hoa",
+          "detail": "Đột kích vật lý/chậm, trúng tướng hồi và sau đó lướt ngắn miễn khống."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-florentino"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Hoa phóng trúng",
+          "detail": "Choáng, tạo ba hoa trong 5 giây. Nhặt hồi nội năng và làm lại Thưởng hoa."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-florentino"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Thưởng hoa trúng qua ba nhánh",
+          "detail": "Có chuẩn theo HP tối đa đích bên cạnh phần vật lý, nhánh Hộ hoa hất còn Khai hoa có hai kiếm.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-florentino"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Lao trúng tướng đầu tiên mở quyết đấu",
+          "detail": "Trong cửa sổ, Florentino được lợi khi đánh người bị khóa, giảm giáp và có bảo hộ từ phía đối thủ ngoài quyết đấu. Dùng bản vá để chốt mức miễn thương."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-florentino"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không đứng trên tuyến nhặt hoa. Chặn người bị quyết đấu khỏi chuỗi đánh thay vì mặc định đồng đội dồn được ngay lúc bảo hộ."
+      }
     ]
   },
   "unknown": [

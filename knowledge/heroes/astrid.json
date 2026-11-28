@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-astrid"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Đòn thường trúng tướng ngoài đòn Đột kích",
+          "detail": "Giảm hồi S1/S2, lên quái nửa hiệu lực theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-astrid"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Bạt kiếm quét trúng các đích",
+          "detail": "Hồ sơ cũ nêu tích tốc đánh/chạy. Khi cần so giáp dùng bản vá có xuyên giáp phẳng.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-astrid"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Dùng Quả cảm",
+          "detail": "Lướt, mở Đột kích vật lý, làm chậm và bản thân có khiên. Kiểm hai nhánh dấu và chuyển dấu theo bản vá."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-astrid"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Hoàn tất tụ Cự kiếm",
+          "detail": "Có thời gian bảo hộ lúc tụ, cú quét chuẩn có nhánh choáng/hồi theo điều kiện. Ưu tiên cơ chế Cự kiếm hiện hành khi hồ sơ khác.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-astrid"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không dồn vào thời điểm tụ. Né vùng quét và đọc dấu trước khi lùi sát đồng đội, tránh cho Astrid chuyển đích."
+      }
+    ],
     "skill-1.flat-armor-penetration": [
       {
         "evidence": [

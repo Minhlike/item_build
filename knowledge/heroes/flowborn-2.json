@@ -17,6 +17,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-flowborn-2"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Chọn thuộc tính ở tế đàn",
+          "detail": "Pháp sư có AP theo cấp, có thể chọn HP, xuyên phép, tốc chạy hoặc CDR. Tốn một tầng cho đòn phép lan tối đa bốn lượt."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-flowborn-2"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tụ hội gây phép gần",
+          "detail": "Đẩy, hồi mình, lấy năm tầng và giảm nửa hồi S2/S3. Có thêm lợi ích từ lính/tướng đồng minh gần.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-flowborn-2"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Vùng pháp trận trúng",
+          "detail": "Vùng thường làm chậm 1 giây và gây sát thương theo nhịp. Tái tung trong 2 giây mở vùng rộng hơn và choáng, tốn bốn tầng để lặp."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-flowborn-2"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tia kết nối tới mục tiêu",
+          "detail": "Có phần đầu chậm 1 giây và sát thương duy trì. Tốn năm tầng để lặp, vẫn có thể dùng chiêu khác khi duy trì.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-flowborn-2"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Rời đàn lính khi pháp sư còn nhiều tầng. Dàn ra để pháp trận lặp khó choáng chung, cắt tiếp xúc của tia."
+      }
+    ],
     "skill-2.base-magic": [
       {
         "evidence": [

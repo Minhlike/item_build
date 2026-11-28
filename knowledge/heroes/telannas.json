@@ -10,13 +10,73 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-telannas"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Có một tướng đồng minh ở gần",
+          "detail": "Công vật lý tăng 8% theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-telannas"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Bật Ưng nhãn",
+          "detail": "Tăng tầm và tốc đánh, đòn cường hóa có phần sát thương thêm, loại phần thêm cần đối chiếu bản vá thay vì gộp với đòn gốc."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-telannas"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Ba tên chạm địch",
+          "detail": "Làm chậm, trúng tướng giúp Tel’Annas tăng chạy trong cửa sổ sau.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-telannas"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Mũi tên sau lúc niệm chạm tướng",
+          "detail": "Gây vật lý kèm choáng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-telannas"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Ép mất cửa sổ Ưng nhãn hoặc áp từ góc khuất tầm. Để lệch hướng mũi tên mở giao tranh, nhất là người giữ giải khống."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

@@ -11,6 +11,70 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tamyn"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Nhặt hoặc thu hồi đoản thương",
+          "detail": "Hồi 100+7/cấp tướng+2% HP thêm theo hồ sơ; đòn cường hóa trong 4 giây, trữ hai, trúng tăng gấp hồi và giảm 1 giây hồi các chiêu. Chạy cộng thêm tác động sát thương, công thức đòn dùng patch 30/10."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tamyn"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Phóng thương qua địch",
+          "detail": "Hồ sơ nêu 350+70/cấp+1,4 AD thêm. Hạ đích có thể xuyên thêm đoạn, đích sau nhận tỷ lệ thấp hơn. Theo dõi vị trí thương cắm.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tamyn"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Thương trời rơi tại vùng chọn",
+          "detail": "Hồ sơ nêu 300+60/cấp+1,2 AD thêm, gây chậm 2 giây. Duy trì thương tại vùng tới khi thu hồi.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tamyn"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Gọi thương về qua đường nối",
+          "detail": "Hồ sơ nêu 150+150/cấp+0,85 AD thêm, có thể giữ tới bốn lượt khi đủ cấp.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-tamyn"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đứng lệch khỏi đường thẳng giữa Tamyn và thương. Tranh chấp khi hắn đã thu ít thương để hạn chế đòn cường hóa và hồi."
+      }
+    ],
     "passive.empowered-physical": [
       {
         "evidence": [
@@ -30,10 +94,8 @@
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

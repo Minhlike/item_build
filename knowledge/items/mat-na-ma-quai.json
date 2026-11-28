@@ -43,6 +43,14 @@
           "unique_group": "diet-than"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-mat-na-ma-quai"
+        ],
+        "value": "xanh-ngoc"
+      }
     ]
   },
   "unknown": [

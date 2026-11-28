@@ -67,6 +67,14 @@
           "unique_group": "troi-buoc-tinh-than"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-khien-huyen-thoai"
+        ],
+        "value": "cam"
+      }
     ]
   },
   "unknown": [

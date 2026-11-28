@@ -79,6 +79,14 @@
           "unique_group": "thong-kho"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-mat-na-berith"
+        ],
+        "value": "hong"
+      }
     ]
   },
   "unknown": [

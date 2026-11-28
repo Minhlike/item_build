@@ -113,6 +113,75 @@
         "value": "Đổi đường tiến để ép Elsu rời góc ngắm và ngừng làm mới xuyên giáp do đứng yên. Nếu hắn còn Giật bắn, chọn đường cắt sau lưng trước khi dồn, tránh lao thẳng qua tầm nhìn Ưng trạm."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-elsu",
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đánh thường vật lý",
+          "detail": "Hồ sơ nêu không chí mạng và mỗi điểm phần trăm chí mạng đổi 3 AD. Ngụy trang cạnh vách sau 5 giây rời giao tranh.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-elsu",
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Đặt Ưng trạm hoặc giữ đứng yên",
+          "detail": "Tầm trạm 600–1000, tồn tại 300 giây, trữ hai/đặt ba. Địch giẫm vô hiệu. Đứng yên mỗi giây tích xuyên giáp tới năm."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-elsu",
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Ngắm rồi đạn chạm tướng đầu tiên",
+          "detail": "Vật lý và chậm; ngắm khoảng 2 giây để tăng tầm và độ chính xác.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-elsu",
+          "hero-elsu"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Giật lùi đồng thời bắn trước mặt",
+          "detail": "Vật lý/chậm; khi đáp có tăng chạy 2 giây, bị mất khi đánh hoặc tung chiêu.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-elsu",
+          "hero-elsu"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Áp góc khác để ép rời điểm ngắm. Tôn trọng vùng có mắt và phân biệt ngụy trang với tàng hình hoàn toàn."
+      }
+    ],
     "skill-2.base-physical": [
       {
         "evidence": [

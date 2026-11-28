@@ -131,6 +131,136 @@
         }
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bolt-baron"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Đánh thường bằng sét",
+          "detail": "Sát thương phép, cận chiến giảm khoảng cách giữa đòn. Đủ sáu điểm mở lượt chiêu cơ bản; sau chiêu có đòn phép diện rộng hồi máu, đích phụ đòn xa nhận 66% và không kích hiệu ứng đánh thường.",
+          "stacks": 6
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bolt-baron"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt trúng địch dọc đường",
+          "detail": "Gây phép và có khiên 2 giây.",
+          "damage_type": "magic",
+          "timing": {
+            "duration_s": 2.0
+          }
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bolt-baron"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Tia sét tới điểm cuối hoặc chạm địch rồi nổ",
+          "detail": "Phép và đẩy lùi, Bolt càng gần nạn nhân càng bị đẩy xa."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bolt-baron"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Biến thân 1,5 giây",
+          "detail": "Miễn khống, tăng chạy 30% và vượt tường, năm sét phép cho điểm và khiên. Đáp gây phép vùng. Dạng 10 giây, đánh cho hai điểm và sét nảy.",
+          "damage_type": "magic",
+          "timing": {
+            "duration_s": 10.0,
+            "cast_s": 1.5
+          }
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-bolt-baron"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giãn để cắt sét nảy và chừa công cụ khóa sau khi đáp. Không dùng giáp vật lý để đối phó chuỗi đòn đánh phép."
+      }
+    ],
+    "skill-1.shield-on-cast": [
+      {
+        "evidence": [
+          "vn-jan-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Lướt S1.",
+          "detail": "Mốc bảo hộ từ bản 15/01/2025, kiểm bản mới nếu số liệu khác.",
+          "formula": {
+            "unit": "hp",
+            "base": 125.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 75.0
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.06
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 2.0
+          }
+        }
+      }
+    ],
+    "skill-3.strike-shield": [
+      {
+        "evidence": [
+          "vn-jan-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Sét đánh trong khi hóa thân.",
+          "formula": {
+            "unit": "hp",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 100.0
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 1.0
+          }
+        }
+      }
+    ],
     "skill-1.cooldown": [
       {
         "evidence": [

@@ -27,6 +27,68 @@
         "value": "Ưu tiên tránh để đồng đội đứng thấp máu cô lập. Sát thủ có thể nối pha truy đuổi sau khi mục tiêu ngã."
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-butterfly"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Theo dõi lượt hạ hoặc hỗ trợ và bộ đếm",
+          "detail": "Hồ sơ Học viện ghi reset toàn bộ, cần đối chiếu quy tắc số tầng/mạng ở bản vá hiện hành."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-butterfly"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Quét kiếm trúng",
+          "detail": "Nhịp quét cơ bản, gỡ làm chậm và tăng chạy theo hồ sơ. Bản 17/11 bổ sung đao ảnh vật lý.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-butterfly"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Phi kiếm chạm đích rồi đánh các đòn cường hóa",
+          "detail": "Bản 17/11 tách phần vật lý và phần phép chắc chắn chí mạng, không dùng mô tả vật lý đơn của hồ sơ cũ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-butterfly"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Đánh vào mục tiêu đã bị Ám sát đánh dấu",
+          "detail": "Bản 17/11 chuyển việc hồi sang mỗi lần gây sát thương, lượng khác giữa tướng và đích khác. Cú lao vẫn là nhịp áp sát."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-butterfly"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Rút người thấp HP khỏi tầm nối ngay từ trước. Cắt đánh lên người mang dấu hoặc áp giảm hồi tại thời điểm Butterfly thực sự gây sát thương."
+      }
+    ],
     "skill-1.blade": [
       {
         "evidence": [

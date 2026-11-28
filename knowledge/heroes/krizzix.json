@@ -11,6 +11,67 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Rời tầm nhìn địch khoảng 3 giây",
+          "detail": "Đòn kế thêm phép và chậm vùng. Đánh khi chưa bị thấy có thể rút nhịp hồi."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Bật ngụy trang riêng và lướt ngang đích",
+          "detail": "Tăng chạy, gây phép và giảm giáp lẫn giáp phép. Gây sát thương từ nguồn khác chấm dứt ngụy trang."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Ở trong trận quanh Krizzix lúc nổ",
+          "detail": "Hai nhịp phép, hút rồi choáng. Trúng tướng cấp khiên cho mình và đồng đội trong tầm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self-and-nearby-allies",
+          "trigger": "Đứng gần Krizzix khi dùng ngụy trang đồng bộ",
+          "detail": "Tăng chạy trước, sau 1 giây cùng ngụy trang. Krizzix có tầm nhìn tướng địch gần nhất."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Chừa khoảng trống để một pha hút không trúng cả đội. Xét phát hiện ngụy trang và giảm song giáp theo thời điểm Krizzix thực sự lướt qua."
+      }
+    ],
     "skill-2.end-magic": [
       {
         "evidence": [

@@ -46,6 +46,69 @@
         }
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-fennik"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Phát hiện chuyển động gần",
+          "detail": "Lộ diện 1 giây theo từng đơn vị, bộ đếm riêng khoảng 6 giây theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-fennik"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Gắn kíp lên địch hoặc trụ",
+          "detail": "Nổ sau 4 giây hay sớm khi đủ bốn dấu. Có điều kiện lướt ngắn, tăng tốc đánh/tầm và ngắt bằng S2/S3.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-fennik"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Lộn qua địch khi Nẹt điện",
+          "detail": "Không thể chọn trong đoạn lộn, có vật lý/chậm và vệt điện gây thêm sát thương theo vùng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-fennik"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Địch ở trong bão siêu thanh",
+          "detail": "Nhịp 0,5 giây thêm kíp và chậm, phần giữa gấp đôi theo hồ sơ.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-fennik"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đổi góc khi bị gắn kíp để tránh lên bốn dấu. Rời tâm lốc trước khi trả sát thương và canh hết đoạn không thể chọn."
+      }
+    ],
     "skill-1.initial": [
       {
         "evidence": [

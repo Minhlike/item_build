@@ -74,6 +74,14 @@
           "unique_group": "hercule-cuong-no"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-hercule-thinh-no"
+        ],
+        "value": "cam"
+      }
     ]
   },
   "unknown": [

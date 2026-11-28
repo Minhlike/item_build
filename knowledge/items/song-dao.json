@@ -43,6 +43,14 @@
         ],
         "value": "stats_only"
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-song-dao"
+        ],
+        "value": "tim"
+      }
     ]
   },
   "unknown": [

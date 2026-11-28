@@ -62,6 +62,14 @@
           "unique_group": "giap-bang"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-bang-nhan-skadi"
+        ],
+        "value": "lam"
+      }
     ]
   },
   "unknown": [

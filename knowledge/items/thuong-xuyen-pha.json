@@ -58,6 +58,14 @@
           "unique_group": "khinh-cong"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-thuong-xuyen-pha"
+        ],
+        "value": "lam"
+      }
     ]
   },
   "unknown": [

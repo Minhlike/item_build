@@ -10,13 +10,105 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-laville"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Tích tầng khi đánh trúng",
+          "detail": "Tốc đánh tăng theo tầng, ở ba tầng một đòn bắn ba viên.",
+          "stacks": 3
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-laville"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đánh thường trong cửa sổ cường hóa",
+          "detail": "Khi đủ tầng, viên đạn còn lan tới tối đa hai địch khác trong tầm.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-laville"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Bật Khiên phản tốc",
+          "detail": "Đỡ chiêu, tăng chạy. Đánh thường trong 3 giây gây chậm cộng tối đa ba lần.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-laville"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đạn đường dài chạm tướng",
+          "detail": "Gây vật lý vùng và làm choáng mục tiêu trực tiếp."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-laville"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách đội hình khỏi mục tiêu tuyến trước khi Laville đạt ba tầng. Dụ mất khiên rồi mới dùng khống chế quan trọng."
+      }
+    ],
+    "skill-1.charge-physics": [
+      {
+        "evidence": [
+          "vn-july-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh được S1 cường hóa chạm đích.",
+          "detail": "Công thức tại bản 09/07/2025, không tự nhân theo viên khi chưa xác định phần này áp lên từng viên.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 175.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 35.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

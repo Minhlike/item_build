@@ -90,6 +90,14 @@
           "unique_group": "toai-giap"
         }
       }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-thuong-longinus"
+        ],
+        "value": "vang"
+      }
     ]
   },
   "unknown": [

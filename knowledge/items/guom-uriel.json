@@ -86,6 +86,14 @@
           "unique_group": "cuong-bao"
         }
       }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-guom-uriel"
+        ],
+        "value": "hong"
+      }
     ]
   },
   "unknown": [

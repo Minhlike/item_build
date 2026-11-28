@@ -10,13 +10,78 @@
         ],
         "value": true
       }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zill"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Chiêu chạm để đủ ba dấu",
+          "detail": "Mốc đủ kéo dài 5 giây và làm chậm. Đánh thường lên mục tiêu mang bão hoàn ngay S2, thêm phép; phần phép đòn thường mạnh lên trên quái/lính.",
+          "timing": {
+            "duration_s": 5.0
+          },
+          "stacks": 3
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zill"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Cặp đao đi và quay lại qua mục tiêu",
+          "detail": "Cả hai lượt có sát thương, lượt đi làm chậm.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zill"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Điểm dịch chuyển có địch trong vùng",
+          "detail": "Gây phép quanh đích, có thể trở lại sớm nhờ đòn đánh lên dấu.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zill"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Trong chuỗi năm nhát Phong Ba",
+          "detail": "Không thể bị chọn/công kích. Mỗi nhát phép, lặp đích bị giảm từ lượt hai, nhát đầu câm lặng 1 giây."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-zill"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ khoảng cách để Zill khó đánh thường vào người đủ dấu. Câu chiêu cuối khi có thể chia nhát hoặc giữ công cụ bảo kê cho lúc hiện ra."
+      }
     ]
   },
   "unknown": [
-    "Chỉ số gốc",
-    "Bộ chiêu đầy đủ và biến thể",
-    "Hồi chiêu theo cấp",
-    "Tương tác và ngưỡng sức mạnh"
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
   ],
   "relations": []
 }

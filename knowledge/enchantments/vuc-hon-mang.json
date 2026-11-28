@@ -23,6 +23,27 @@
           "detail": "Đồng thời hồi năng lượng; tỷ lệ còn thiếu.",
           "basis": "caster_missing_hp"
         }
+      },
+      {
+        "evidence": [
+          "sforum-badges-quantities"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Tham gia hạ một tướng địch.",
+          "detail": "Kèm 15% năng lượng tối đa theo ứng viên. Hiệu lực hồi cần xét giảm hồi đang phủ.",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.09
+              }
+            ]
+          }
+        }
       }
     ],
     "tier-1.du-anh": [
@@ -40,6 +61,22 @@
           "stacks": 3,
           "ends_when": "Đòn đánh thường kế tiếp tiêu thụ các tầng."
         }
+      },
+      {
+        "evidence": [
+          "sforum-badges-quantities"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh sau một hoặc nhiều lần dịch chuyển tiêu các Dư ảnh.",
+          "detail": "Sát thương mỗi tầng tăng theo cấp tướng và AD. Nhịp lướt cách quá 4 giây có thể đứt tích.",
+          "damage_type": "physical",
+          "timing": {
+            "duration_s": 4.0
+          },
+          "stacks": 3
+        }
       }
     ],
     "tier-3.ma-chu": [
@@ -52,6 +89,41 @@
           "target": "marked-enemy-hero",
           "trigger": "Đòn đánh hoặc kỹ năng đủ ba dấu trên tướng",
           "damage_type": "magic",
+          "stacks": 3
+        }
+      },
+      {
+        "evidence": [
+          "sforum-badges-quantities"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-near-mark",
+          "trigger": "Chiêu hoặc đòn trúng tướng đủ ba dấu trong cửa sổ.",
+          "detail": "Có nhịp phép thứ hai sau 1 giây theo HP đã mất của đích. Hệ số tăng theo AD/AP cần kiểm lại.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 40.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 4.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.25
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 1.5,
+            "internal_cooldown_s": 15.0
+          },
           "stacks": 3
         }
       }
@@ -80,6 +152,34 @@
           "target": "target-hit",
           "trigger": "Đòn hoặc chiêu trúng tướng.",
           "detail": "Có sát thương thêm; chưa đủ hệ số và hồi."
+        }
+      },
+      {
+        "evidence": [
+          "sforum-badges-quantities"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Tung chiêu hoặc đánh thường trúng tướng khi Ma hỏa sẵn.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 50.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 5.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 8.0
+          }
         }
       }
     ],
@@ -119,6 +219,25 @@
           "target": "self",
           "trigger": "Tung chiêu cuối.",
           "detail": "Giảm hồi chiêu khác. Hạ hoặc hỗ trợ hạ kéo dài hiệu lực."
+        }
+      },
+      {
+        "evidence": [
+          "sforum-badges-quantities"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Tung chiêu cuối khi Ma tính sẵn.",
+          "detail": "Hoàn phần hồi còn lại của hai chiêu cơ bản tại thời điểm bật, phân biệt với tăng chỉ số CDR. Nhánh 20% CDR và miễn thương được mô tả khác ở các nguồn, cần xác minh bản VN.",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 6.0,
+            "internal_cooldown_s": 30.0
+          }
         }
       }
     ],

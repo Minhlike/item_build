@@ -14,6 +14,14 @@
         }
       }
     ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-giay-phu-thuy"
+        ],
+        "value": "tim"
+      }
+    ],
     "stat.price": [
       {
         "evidence": [

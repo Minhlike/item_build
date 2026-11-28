@@ -3,6 +3,14 @@
   "kind": "items",
   "name": "Rìu Gnoll",
   "facts": {
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-riu-gnoll"
+        ],
+        "value": "xanh-ngoc"
+      }
+    ],
     "stat.price": [
       {
         "evidence": [

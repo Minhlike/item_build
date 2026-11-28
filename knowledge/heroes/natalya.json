@@ -105,6 +105,69 @@
         }
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Phép từ nhiều hit kỹ năng lên cùng địch",
+          "detail": "Nội tại cộng thêm phép, hồ sơ nêu tối đa 10 tầng trong 3 giây."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Bóng ma bay vào vùng, gặp tướng dừng",
+          "detail": "Mỗi bóng gây phép; chạm tướng cho hồi năng lượng và giảm hồi, đối chiếu hệ số trúng chồng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Cầu trúng đích đầu hoặc hết tầm",
+          "detail": "Choáng rồi vùng phép nhiều nhịp kèm chậm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tia duy trì địch trong tầm",
+          "detail": "Phép theo nhịp, Natalya nhận khiên và bảo hộ khỏi khống chế khi còn khiên theo hồ sơ.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Né ngang tia và tránh để cầu trúng tuyến trước ngay trong đường tia. Khống chế sau khi khiên hết nếu còn góc."
+      }
+    ],
     "skill-2.base-magic": [
       {
         "evidence": [

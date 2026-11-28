@@ -11,6 +11,69 @@
         "value": true
       }
     ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-errol"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Đánh trúng để tích Quỷ trảo",
+          "detail": "Tối đa năm, có tốc chạy/đánh/hút máu và đổi phòng thủ. Đòn thứ ba có đột kích. Dùng nhịp suy giảm từ bản 15/10."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-errol"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt gặp địch trong hướng liềm",
+          "detail": "Ghim mục tiêu, dịch tới cạnh và quét; trúng đúng điều kiện cho giảm hồi và hồi theo HP thiếu.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-errol"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Chém đại đao trúng",
+          "detail": "Vật lý và chậm khoảng 1 giây, hồi khi trúng tướng. Đủ Quỷ trảo tiêu dấu để tăng sát thương/hồi và hất.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-errol"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Chọn điểm đáp sau khi bay",
+          "detail": "Hồ sơ nêu 2 giây không thể bị hạ trong lúc chọn điểm, rơi hất và gây vật lý. Cần phân biệt không thể chọn với miễn mọi sát thương."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-errol"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh để tích sẵn trên lính. Lùi khỏi vùng đáp rồi dùng khống chế tiếp theo, hạn chế nhịp chém đủ tầng trúng nhiều người."
+      }
+    ],
     "skill-1.base-physical": [
       {
         "evidence": [
