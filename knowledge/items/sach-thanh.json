@@ -1,0 +1,99 @@
+{
+  "id": "sach-thanh",
+  "kind": "items",
+  "name": "Sách thánh",
+  "facts": {
+    "shop.recipe": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items"
+        ],
+        "effective_from": "2025-07-09",
+        "value": [
+          "items/so-ma-thuat",
+          "items/so-ma-thuat",
+          "items/sach-co"
+        ]
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-sach-thanh"
+        ],
+        "value": "luc"
+      }
+    ],
+    "stat.price": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 2610.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 350.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.spell-body": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang Sách thánh.",
+          "activation": "automatic",
+          "detail": "Mỗi 100 công phép tăng 0,5 điểm phần trăm miễn thương và 0,5 điểm phần trăm sát thương gây ra. Chưa rõ làm tròn, trần và thứ tự.",
+          "amount": {
+            "amount": 0.005,
+            "unit": "ratio"
+          },
+          "unique_group": "phap-the"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng và hiệu lực công thức ghép trong client VN",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

@@ -1,0 +1,222 @@
+{
+  "id": "sinestrea",
+  "kind": "heroes",
+  "name": "Sinestrea",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-sinestrea"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Đánh liên tiếp bốn lần hoặc dùng nút thay Biến về",
+          "detail": "Đổi dạng làm mới hai chiêu đầu. Huyết tế trả 50% HP hiện tại, có không thể chọn, choáng 0,5 giây và hồi 10% HP tối đa mỗi tướng, hồi chiêu hồ sơ 150 giây."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-sinestrea"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lướt hoặc bắn tùy dạng",
+          "detail": "Gần ngủ rồi đột kích vật lý, có thể tự ngủ khi đứng yên. Xa bắn đẩy tướng đầu, gần tường phía sau có nhánh trói."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-sinestrea"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Dùng Huyết sát gần hoặc Huyết bão xa",
+          "detail": "Gần quét nón vật lý, xa ngắm khóa địch rồi bắn vùng với phần vật lý tăng.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-sinestrea"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Bật Huyết ảnh",
+          "detail": "Vào dạng xa, thường bắn ba tiễn, được 10–20% hút máu vật lý, chạy 30% và miễn chậm theo hồ sơ."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-sinestrea"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Chừa đường né tên ở sát tường, phủ giảm hồi lúc Sinestrea tái nhập để đánh. Kiểm nhánh Huyết tế hiện hành trước khi cố kết liễu."
+      }
+    ],
+    "ranged.skill-3.blood-arrow-ratio": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "SUPERSEDED",
+        "effective_from": "2026-06-04",
+        "effective_until": "2026-08-13",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Đòn Huyết tiễn trong cường hóa Chiêu 3.",
+          "detail": "Tỷ lệ mới, dòng cập nhật không làm rõ cơ sở.",
+          "amount": {
+            "amount": 0.55,
+            "unit": "ratio"
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Đánh thường khi Chiêu 3 đang hiệu lực ở dạng đánh xa.",
+          "detail": "Ba huyết tiễn theo tỷ lệ 100%, 30%, 30%. Chỉ mũi đầu kích hoạt hiệu ứng đòn đánh."
+        }
+      }
+    ],
+    "ranged.skill-3.lifesteal": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "trigger": "Chiêu 3 đang hiệu lực.",
+          "detail": "Dùng Chiêu 3 lập tức vào dạng đánh xa.",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "melee.skill-2.base-physical": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản của Chiêu 2 dạng cận chiến.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 275.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "ranged.skill-2.missing-hp": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 ở dạng đánh xa gây sát thương.",
+          "detail": "100% phần sát thương tham chiếu cộng thêm 10% máu đã mất mục tiêu.",
+          "basis": "target_missing_hp",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "exceptions": [
+            "Giới hạn công bố 500 với mục tiêu không phải tướng."
+          ]
+        }
+      }
+    ],
+    "passive.blood-ritual": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Chọn Huyết tế trên vị trí kích hoạt trang bị.",
+          "detail": "Tiêu hao một nửa HP hiện tại, rồi tụ lực trong trạng thái không bị chọn. Nổ làm choáng tướng trúng 0,5 giây và chia đều máu với các tướng đó.",
+          "interactions": [
+            "Vị trí nút trang bị kích hoạt."
+          ]
+        }
+      }
+    ],
+    "passive.dextra-wish": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Có Ước nguyện Huyết linh do Dextra cấp và chịu sát thương chí tử.",
+          "detail": "Trong thoáng chốc, sát thương nhận vào chuyển thành máu. Chưa có thời lượng chính xác của khoảng chuyển hóa.",
+          "interactions": [
+            "Hiến tế của Dextra."
+          ]
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

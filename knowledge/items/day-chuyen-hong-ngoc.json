@@ -1,0 +1,51 @@
+{
+  "id": "day-chuyen-hong-ngoc",
+  "kind": "items",
+  "name": "Dây chuyền hồng ngọc",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 540.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 600.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-day-chuyen-hong-ngoc"
+        ],
+        "value": "luc"
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

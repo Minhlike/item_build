@@ -1,0 +1,83 @@
+{
+  "id": "taara",
+  "kind": "heroes",
+  "name": "Taara",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-taara"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Tung chiêu ở một lượng HP nhất định",
+          "detail": "S1/S2 trả 4%, S3 trả 8% HP hiện tại. Hồi 6% HP đã mất trong 3 giây. Công vật lý tăng theo tỷ lệ HP tối đa đã mất."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-taara"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Nhảy tới và búa đập chạm đích",
+          "detail": "Kèm chậm, có thể đổi đường áp sát.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-taara"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Mục tiêu ở cự ly quét của búa",
+          "detail": "Hai lượt gây vật lý.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-taara"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Bật Thân thể thép",
+          "detail": "Hồi 8% HP tối đa mỗi giây trong cửa sổ chiêu theo hồ sơ, đồng thời tăng chạy."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-taara"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng tiêu hết đợt dồn khi Taara còn S3 và sắp thoát tầm. Phủ giảm hồi vào đúng lúc bắt đầu hồi, ưu tiên cắt đường rút."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

@@ -1,0 +1,156 @@
+{
+  "id": "teemee",
+  "kind": "heroes",
+  "name": "TeeMee",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-teemee"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Hạ đơn vị không phải tướng gần TeeMee",
+          "detail": "Đồng đội gần và bản thân có thưởng vàng, hồ sơ nêu 25%."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-teemee"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Chờ hoặc chủ động kích nổ sau khi nín",
+          "detail": "Có tối đa 5 giây để chuẩn bị, giữ lâu tăng phép và choáng."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-teemee"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Giáo móc chạm mục tiêu",
+          "detail": "Kéo TeeMee về phía đích, địch nhận phép và choáng khoảng 1 giây."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-teemee"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Người được bảo hộ chết trong cửa sổ ma trận",
+          "detail": "Có hồi sinh sau 2 giây theo hồ sơ, khi trở lại nổ phép và chậm gần. Ưu tiên đồng minh thấp HP."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-teemee"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đếm thời gian ma trận trước khi kết liễu. Câu hồi sinh bằng áp lực rồi đổi đích hoặc đợi hết vòng, canh TeeMee kéo tới trước khi tách chủ lực."
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": 5.0
+          }
+        }
+      }
+    ],
+    "skill-1.minimum-magic": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 ở mức sát thương cơ bản.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 400.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.9
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.maximum-magic": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 đạt sát thương tối đa.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 800.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 160.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.8
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Các kỹ năng và tương tác còn lại"
+  ],
+  "relations": []
+}

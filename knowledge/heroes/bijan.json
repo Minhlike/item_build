@@ -1,0 +1,81 @@
+{
+  "id": "bijan",
+  "kind": "heroes",
+  "name": "Bijan",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bijan"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Đòn đánh theo nhịp cường hóa sẵn",
+          "detail": "Thêm vật lý và tự hồi. Nhận vật lý, chuẩn hoặc đánh trúng bằng chiêu giúp tích giáp."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bijan"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lướt bổ chùy rồi vùng đất trúng địch",
+          "detail": "Có nhịp hất tung sau cú áp sát."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bijan"
+        ],
+        "value": {
+          "effect": "soft_cc",
+          "target": "affected-enemies",
+          "trigger": "Lướt trúng địch",
+          "detail": "Gây sát thương và làm chậm, mở chuỗi tối đa ba lần quét ngang."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-bijan"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Sa thú va tướng, địa hình hoặc được bấm dừng",
+          "detail": "Gây vật lý, hất tung và giảm giáp. Bijan miễn khống khi lái, có thể chở một đồng minh."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-bijan"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đứng lệch đường xe và trông mặt tướng được chở. Giữ giãn cách sau va chạm để tránh dồn vật lý vào mục tiêu vừa mất giáp."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

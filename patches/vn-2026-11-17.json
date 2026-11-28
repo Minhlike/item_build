@@ -1,0 +1,1015 @@
+{
+  "id": "vn-2026-11-17",
+  "title": "Vết Nứt Thời Không 2026-11-17",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-11-17",
+  "evidence": "patch-mid",
+  "changes": [
+    {
+      "entity": "heroes/fennik",
+      "property": "skill-1.initial",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-unit-or-structure",
+          "trigger": "Đòn gây sát thương gốc của Kíp nổ; vị trí trong chuỗi cần đối chiếu",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 125,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.75
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-fennik",
+          "fennik"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-unit-or-structure",
+          "trigger": "Đòn gây sát thương gốc của Kíp nổ; vị trí trong chuỗi cần đối chiếu",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 90,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 18
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.65
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-fennik"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/fennik",
+      "property": "skill-1.detonation",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-unit-or-structure",
+          "trigger": "Dấu trên một mục tiêu hết thời gian hoặc đạt đủ bốn lần tích từ đánh thường",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 125,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.75
+              }
+            ]
+          },
+          "stacks": 4,
+          "timing": {
+            "duration_s": 4
+          },
+          "exceptions": [
+            "Có thể đặt dấu lên công trình.",
+            "Đánh thường tích đủ bốn lần có thể nổ sớm."
+          ]
+        },
+        "evidence": [
+          "patch-fennik",
+          "fennik"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-unit-or-structure",
+          "trigger": "Dấu trên một mục tiêu hết thời gian hoặc đạt đủ bốn lần tích từ đánh thường",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 90,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 18
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.65
+              }
+            ]
+          },
+          "stacks": 4,
+          "timing": {
+            "duration_s": 4
+          },
+          "exceptions": [
+            "Có thể đặt dấu lên công trình.",
+            "Đánh thường tích đủ bốn lần có thể nổ sớm."
+          ]
+        },
+        "evidence": [
+          "patch-fennik"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/butterfly",
+      "property": "skill-1.blade",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Chiêu 1 trúng, sinh thêm đao ảnh",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 80,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 16
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-butterfly"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/butterfly",
+      "property": "skill-2.first-hit",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "first-target",
+          "trigger": "Chiêu 2 trúng mục tiêu đầu",
+          "damage_type": "magic",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 50,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 10
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.15
+              }
+            ]
+          },
+          "exceptions": [
+            "Thành phần này chắc chắn chí mạng."
+          ]
+        },
+        "evidence": [
+          "patch-butterfly"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "first-target",
+          "trigger": "Chiêu 2 trúng mục tiêu đầu",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.3
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-butterfly"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/butterfly",
+      "property": "skill-2.empowered-hit",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Một trong ba đòn cường hóa sau chiêu 2",
+          "damage_type": "magic",
+          "delivery": "empowered_attack",
+          "charges": 3,
+          "formula": {
+            "unit": "damage",
+            "base": 20,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 4
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.3
+              }
+            ]
+          },
+          "exceptions": [
+            "Thành phần này chắc chắn chí mạng."
+          ]
+        },
+        "evidence": [
+          "patch-butterfly"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/butterfly",
+      "property": "skill-3.mark-heal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Mỗi lần gây sát thương lên mục tiêu đang mang dấu chiêu cuối",
+          "delivery": "ability",
+          "detail": "Hồi tức thời, thời điểm theo từng lần gây sát thương."
+        },
+        "evidence": [
+          "patch-butterfly"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Dấu ấn chấm dứt hoặc mục tiêu bị hạ",
+          "delivery": "ability"
+        },
+        "evidence": [
+          "patch-butterfly"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/richter",
+      "property": "skill-1.cooldown",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "delivery": "ability",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "delivery": "ability",
+          "timing": {
+            "cooldown_s": 8
+          }
+        },
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/richter",
+      "property": "skill-3.base",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Nhịp cơ bản của Chiêu 3",
+          "damage_type": "true",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 50,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Nhịp cơ bản của Chiêu 3",
+          "damage_type": "true",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 60,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.13
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/richter",
+      "property": "skill-3.detonation",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Mục tiêu mang dấu đủ điều kiện kích nổ",
+          "damage_type": "true",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 300,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 150
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Mục tiêu mang dấu đủ điều kiện kích nổ",
+          "damage_type": "true",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 330,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 165
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-richter"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/arduin",
+      "property": "passive.heal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại hồi máu của Arduin kích hoạt",
+          "delivery": "passive",
+          "formula": {
+            "unit": "hp",
+            "base": 180,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 13
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.05
+              }
+            ]
+          },
+          "detail": "Nguồn ghi theo cấp chiêu; chưa rõ cách ánh xạ cấp cho nội tại."
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại hồi máu của Arduin kích hoạt",
+          "delivery": "passive",
+          "formula": {
+            "unit": "hp",
+            "base": 0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/arduin",
+      "property": "skill-2.true",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Hiệu ứng sát thương chuẩn Chiêu 2",
+          "damage_type": "true",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/dirak",
+      "property": "skill-2.cooldown",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 2",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 2",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 12.5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/grakk",
+      "property": "skill-1.magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 180,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 150,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/dyadia",
+      "property": "skill-2.damage-over-time",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Tổng sát thương kéo dài của Chiêu 2 theo ghi chú",
+          "damage_type": "magic",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 540,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 108
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Tổng sát thương kéo dài của Chiêu 2 theo ghi chú",
+          "damage_type": "magic",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 640,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 128
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.95
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.king-kong-cycle",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 4.5
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 9
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.dark-king-kong-cycle",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 3
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      },
+      "previous": {
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 6
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "minions.late-scaling",
+      "classification": "buff",
+      "replacement": {
+        "value": "Lính được tăng máu và tốc đánh sau phút 20; thông báo không nêu mức tăng.",
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "caesar.tyrant-vanguard-attack",
+      "classification": "buff",
+      "replacement": {
+        "value": "Công vật lý gốc tăng cho Caesar tiên phong bạo chúa; chưa công bố con số.",
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "spells/ma-chung-hac-am",
+      "property": "active.shield",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Kích hoạt phép giới hạn mùa",
+          "delivery": "spell",
+          "formula": {
+            "unit": "hp",
+            "base": 350,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 25,
+                "origin": 0
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "spells/ma-chung-hac-am",
+      "property": "active.magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemy",
+          "trigger": "Ma vật triệu hồi gây sát thương",
+          "damage_type": "magic",
+          "delivery": "spell",
+          "formula": {
+            "unit": "damage",
+            "base": 350,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 25,
+                "origin": 0
+              }
+            ]
+          },
+          "interactions": [
+            "Kèm giảm tốc chạy 30% trong một giây."
+          ]
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/dyadia",
+      "property": "passive.bonus-magic-upper-bound",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần nội tại, ở điểm cao nhất của khoảng công bố.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 280,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "heroes/dyadia",
+      "property": "passive.bonus-magic-lower-bound",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần nội tại, ở điểm thấp nhất của khoảng công bố.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 140,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.king-kong-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "trigger": "Kỹ năng triệu hồi tương ứng áp làm chậm.",
+          "delivery": "battlefield",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.5
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "season.dark-king-kong-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "trigger": "Kỹ năng triệu hồi tương ứng áp làm chậm.",
+          "delivery": "battlefield",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.5
+          }
+        },
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17"
+      }
+    }
+  ],
+  "review_notes": []
+}

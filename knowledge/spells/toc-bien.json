@@ -1,0 +1,27 @@
+{
+  "id": "toc-bien",
+  "kind": "spells",
+  "name": "Tốc biến",
+  "facts": {
+    "active.effect": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "teleport",
+          "target": "self",
+          "delivery": "spell",
+          "trigger": "Chọn hướng dịch chuyển",
+          "timing": {
+            "cooldown_s": 120.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+  ],
+  "relations": []
+}

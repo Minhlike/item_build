@@ -1,0 +1,82 @@
+{
+  "id": "truong-bung-no",
+  "kind": "items",
+  "name": "Trượng bùng nổ",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1800.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 200.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.echo": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-around-target",
+          "delivery": "item",
+          "trigger": "Chiêu trúng tạo vùng nổ.",
+          "activation": "automatic",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 120.0,
+            "terms": [
+              {
+                "basis": "bonus_ap",
+                "coefficient": 0.4
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 5.0
+          },
+          "unique_group": "vang-vong"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-truong-bung-no"
+        ],
+        "value": "lam"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

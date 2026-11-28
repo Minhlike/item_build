@@ -1,0 +1,63 @@
+{
+  "id": "phieu-tieu",
+  "kind": "items",
+  "name": "Phi tiêu",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 750.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.2,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.ranged-on-hit": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đánh thường trúng.",
+          "activation": "automatic",
+          "detail": "21–35 đánh gần, 42–70 đánh xa. Mốc tăng chưa rõ.",
+          "damage_type": "physical",
+          "timing": {
+            "internal_cooldown_s": 0.3
+          },
+          "unique_group": "diem-yeu"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-phieu-tieu"
+        ],
+        "value": "do"
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

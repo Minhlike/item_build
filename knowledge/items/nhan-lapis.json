@@ -1,0 +1,51 @@
+{
+  "id": "nhan-lapis",
+  "kind": "items",
+  "name": "Nhẫn Lapis",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 220.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.mana": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 300.0,
+          "unit": "mana"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-nhan-lapis"
+        ],
+        "value": "lam"
+      }
+    ]
+  },
+  "unknown": [
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

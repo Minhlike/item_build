@@ -1,0 +1,102 @@
+{
+  "id": "ngoc-dai-phap-su",
+  "kind": "items",
+  "name": "Ngọc đại pháp sư",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1800.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 140.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.cooldown-reduction": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.growth": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đến nhịp Trường tồn.",
+          "activation": "automatic",
+          "detail": "Thêm 12 AP và 120 HP mỗi tầng.",
+          "timing": {
+            "interval_s": 30.0
+          },
+          "stacks": 10,
+          "unique_group": "truong-ton"
+        }
+      }
+    ],
+    "passive.level-heal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Lên cấp khi có Tưởng thưởng anh hùng.",
+          "activation": "automatic",
+          "detail": "Có kèm hồi năng lượng, thời điểm từng nhịp chưa rõ.",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.2
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 3.0
+          },
+          "unique_group": "tuong-thuong-anh-hung"
+        }
+      }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-ngoc-dai-phap-su"
+        ],
+        "value": "tim"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

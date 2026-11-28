@@ -1,0 +1,8 @@
+{
+  "support": ["dai-dia-mo-troi", "dai-dia-than-khien", "dai-dia-ma-nhan", "dai-dia-hoi-huyet", "giay-ho-ve", "giay-kien-cuong", "khien-thanh-quang", "giap-gaia", "phu-chu-truong-sinh", "ao-choang-than-ra", "huan-chuong-troy", "khien-that-truyen"],
+  "mid": ["giay-phu-thuy", "giay-thuat-si", "xuyen-tam-lenh", "sach-thanh", "ma-phap-truong-bao", "the-uoc-carano", "sach-truy-hon", "huyet-truong"],
+  "jungle": ["riu-leviathan", "kiem-truy-hon", "guom-loki", "kiem-muramasa", "thuong-longinus", "giay-kien-cuong", "nanh-fenrir"],
+  "dragon": ["giay-ho-ve", "giay-du-muc", "vo-anh-tien", "kiem-fafnir", "kiem-muramasa", "thanh-kiem", "huyet-anh-dao", "cung-bao-to"],
+  "slayer": ["giay-ho-ve", "giay-kien-cuong", "thuong-longinus", "chuy-bang-suong", "giap-gaia", "ao-choang-than-ra", "phu-chu-truong-sinh", "kiem-muramasa"],
+  "general": ["giay-ho-ve", "giay-kien-cuong", "khien-thanh-quang", "giap-gaia", "phu-chu-truong-sinh", "ao-choang-than-ra", "xuyen-tam-lenh", "kiem-muramasa"]
+}

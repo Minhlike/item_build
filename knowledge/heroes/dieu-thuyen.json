@@ -1,0 +1,94 @@
+{
+  "id": "dieu-thuyen",
+  "kind": "heroes",
+  "name": "Điêu Thuyền",
+  "aliases": [
+    "Diaochan",
+    "Diao Chan",
+    "DT"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dieu-thuyen"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Có khoảng nghỉ không nhận công kích hoặc khống chế",
+          "detail": "Tạo lớp đỡ một kỹ năng gồm phần sát thương và khống chế theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dieu-thuyen"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Băng phủ trúng vùng chọn",
+          "detail": "Mục tiêu chịu chậm 50% tốc chạy.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dieu-thuyen"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Sen băng trúng",
+          "detail": "Đóng băng 2,5 giây, tối đa hai lượt trữ. Lần thứ hai trong 5 giây có thời gian đóng băng giảm. Khi mục tiêu đóng băng, sát thương của Điêu Thuyền thêm một phần phép.",
+          "timing": {
+            "duration_s": 2.5
+          },
+          "charges": 2
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-dieu-thuyen"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Mục tiêu còn trong bão khi đang niệm",
+          "detail": "Gây sát thương và chậm, Điêu Thuyền được giáp. Tối đa 5,3 giây, có thể chủ động dừng sau 0,6 giây.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-dieu-thuyen"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Dùng chiêu nhẹ phá khiên trước lần khóa chính. Không lặp đường vào qua điểm sen thứ hai."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

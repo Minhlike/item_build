@@ -1,0 +1,166 @@
+{
+  "id": "keera",
+  "kind": "heroes",
+  "name": "Keera",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-keera"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Hút máu phép và gây chiêu vào nhiều đích",
+          "detail": "Hồ sơ tách đánh thường vật lý với chiêu chia sát thương theo số đích, tối đa chia ba.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-keera"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đặt ảnh rồi nhảy tới vùng",
+          "detail": "Kéo đích gần nhất và đánh dấu 3 giây, ba đòn kế đổi sang phép. Tái tung dẫn ảnh tới dấu hoặc về Keera nếu thiếu dấu tướng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-keera"
+        ],
+        "value": {
+          "effect": "untargetable",
+          "target": "self",
+          "trigger": "Lướt tạo hai phân thân",
+          "detail": "Không thể chọn lúc lướt, đường và tam giác nổ sau 1 giây đều có phép. Chạm biên gây choáng; đủ ba Ám đao mở đánh xa."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-keera"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Bật bảo hộ tường",
+          "detail": "Tăng chạy, xuyên tường, chạm địa hình để ẩn. Có bảo hộ ba đòn thường của tướng theo hồ sơ, hết thì làm mới hai chiêu đầu."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-keera"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Canh đường ra khỏi tường và vùng biên tam giác. Giữ kỹ năng cho sau đoạn không thể chọn, tách người bị đánh dấu."
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 5.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-2.path-magic": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Chiêu 2 lướt trúng trên đường di chuyển",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.triangle-magic": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Mục tiêu trong vùng tam giác Chiêu 2",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 400.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.8
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "relations": []
+}

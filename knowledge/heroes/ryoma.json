@@ -1,0 +1,300 @@
+{
+  "id": "ryoma",
+  "kind": "heroes",
+  "name": "Ryoma",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "skill-3.hit-heal": [
+      {
+        "evidence": [
+          "ryoma"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Mỗi nhát đâm chiêu cuối trúng tướng",
+          "detail": "Bốn nhát độc lập.",
+          "exceptions": [
+            "Trúng nhiều tướng trong một nhát không tăng hồi máu.",
+            "Hiệu lực giảm với đơn vị không phải tướng theo mô tả."
+          ]
+        }
+      }
+    ],
+    "skill-2.edge-stun": [
+      {
+        "evidence": [
+          "ryoma"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-at-outer-edge",
+          "delivery": "ability",
+          "trigger": "Trúng rìa Nhất Kích Tất Sát"
+        }
+      }
+    ],
+    "tactics.deny-hit-heal": [
+      {
+        "evidence": [
+          "ryoma",
+          "patch-2026-03-11"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đổi góc khỏi rìa đòn choáng và cắt nhát đâm trúng tướng. Món giảm hồi chỉ tạo chênh khi hiệu ứng phủ đúng nhịp đâm, sát thương vật lý vẫn cần được xử lý ở cùng ngân sách."
+      }
+    ],
+    "passive.reach-poke": [
+      {
+        "evidence": [
+          "ryoma"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-path",
+          "trigger": "Đòn đánh cường hóa phóng kiếm khí.",
+          "detail": "Làm chậm khi trúng; tách với đòn choáng vùng rìa của S2.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.refresh-condition": [
+      {
+        "evidence": [
+          "ryoma"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "S1 chém trúng tướng địch.",
+          "detail": "Giảm hồi chiêu theo hồ sơ; không cộng dồn. Chưa xác minh lượng giảm."
+        }
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ryoma"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đòn cường hóa Kiếm quyết sẵn",
+          "detail": "Kiếm khí vật lý chậm, rìa chịu phần thêm. Hồ sơ nêu mỗi 5 giây.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ryoma"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Cú nhảy lùi kèm chém chạm tướng",
+          "detail": "Gây vật lý và hoàn một phần hồi S1, không cộng từ nhiều đích cùng lượt.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ryoma"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Rút kiếm theo hướng đâm",
+          "detail": "Địch đầu nhận vật lý cao hơn, mục tiêu ở rìa bị choáng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ryoma"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Loạn trảm đâm trúng tướng",
+          "detail": "Bốn nhịp vật lý, mỗi nhịp hồi khi chạm tướng, trúng nhiều người cùng nhịp không cộng thêm hồi theo hồ sơ."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-ryoma"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đổi góc để né rìa choáng và hướng đâm. Chỉ tính giảm hồi khi Ryoma thực sự có đích để hồi."
+      }
+    ],
+    "skill-1.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Kiếm từ Nhất kích tất sát trúng.",
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 200.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nhất kích trúng mục tiêu.",
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 330.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 66.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.heal": [
+      {
+        "evidence": [
+          "patch-2026-03-11",
+          "ryoma"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Một đòn Loạn Trảm trúng tướng.",
+          "detail": "Dòng patch không phân biệt AD tổng/cộng thêm hay mốc số hạng theo cấp.",
+          "formula": {
+            "unit": "hp",
+            "base": 80.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.base-physical": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn của Loạn Trảm trúng đích.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 110.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

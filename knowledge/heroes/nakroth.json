@@ -1,0 +1,86 @@
+{
+  "id": "nakroth",
+  "kind": "heroes",
+  "name": "Nakroth",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-nakroth"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đòn đánh thường thứ tư trúng",
+          "detail": "Hất mục tiêu, tăng tốc đánh khi chiêu trúng hoặc dùng S2."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-nakroth"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lao S1 trúng",
+          "detail": "Hất và gây vật lý, còn một lần tái tung miễn phí trong 5 giây.",
+          "charges": 2
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-nakroth"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Lộn ngược hướng chỉ định",
+          "detail": "Đòn tiếp theo trong 3 giây thành quét vật lý.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-nakroth"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Mục tiêu đứng trong vùng chém",
+          "detail": "Đòn cuối hất. Nakroth miễn khống trong cửa sổ chém.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-nakroth"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ khóa cho lúc hết lượt lướt hoặc miễn khống. Để ý S2 lộn ngược hướng thao tác, không dồn vào vị trí trước khi lướt."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

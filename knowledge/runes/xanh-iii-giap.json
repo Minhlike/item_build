@@ -1,0 +1,41 @@
+{
+  "id": "xanh-iii-giap",
+  "kind": "runes",
+  "name": "Xanh III Giáp",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 3.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "green"
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 9.0,
+          "unit": "armor"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực, số lượng tối đa theo luật hiện hành"
+  ],
+  "relations": []
+}

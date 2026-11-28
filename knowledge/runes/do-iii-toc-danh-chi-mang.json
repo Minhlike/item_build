@@ -1,0 +1,52 @@
+{
+  "id": "do-iii-toc-danh-chi-mang",
+  "kind": "runes",
+  "name": "Đỏ III Tốc đánh/Tỉ lệ chí mạng",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 3.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "red"
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.016,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.crit": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.005,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "relations": []
+}

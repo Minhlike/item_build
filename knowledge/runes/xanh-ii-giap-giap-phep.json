@@ -1,0 +1,52 @@
+{
+  "id": "xanh-ii-giap-giap-phep",
+  "kind": "runes",
+  "name": "Xanh II Giáp/Giáp phép",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "green"
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 3.1,
+          "unit": "armor"
+        }
+      }
+    ],
+    "stat.magic-defense": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 3.1,
+          "unit": "magic_defense"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+  ],
+  "relations": []
+}

@@ -1,0 +1,149 @@
+{
+  "id": "ngo-khong",
+  "kind": "heroes",
+  "name": "Ngộ Không",
+  "aliases": [
+    "Wukong",
+    "Ngộ",
+    "NK"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.innate-critical": [
+      {
+        "evidence": [
+          "hero-ngo-khong"
+        ],
+        "value": {
+          "effect": "critical",
+          "target": "self",
+          "trigger": "Nội tại Hành giả",
+          "detail": "Có tỷ lệ chí mạng sẵn, hệ số không đọc được từ mô tả đang công bố."
+        }
+      }
+    ],
+    "skill-3.recast-stealth": [
+      {
+        "evidence": [
+          "hero-ngo-khong"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Bấm lại Gậy như ý trong 5 giây",
+          "detail": "Đồng thời gỡ làm chậm và tăng tốc chạy; 5 giây là cửa sổ tái kích hoạt."
+        }
+      }
+    ],
+    "tactics.ambush": [
+      {
+        "evidence": [
+          "hero-ngo-khong"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ tầm nhìn ở góc khuất và tính cả cú quay lại sau bước tàng hình; đừng để chủ lực đứng lẻ trước cửa sông."
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ngo-khong"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Tung chiêu rồi đánh thường",
+          "detail": "Đòn cường hóa áp sát và thêm vật lý. Có sẵn chí mạng, dùng công thức bản vá cho phần thêm."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ngo-khong"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Bật Phân thân",
+          "detail": "Tàng hình và thêm tốc chạy ngắn, tránh giả định miễn sát thương."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ngo-khong"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Lướt bằng Cân đẩu vân",
+          "detail": "Có song giáp trong một thời gian theo hồ sơ, rồi mở đánh cường hóa qua nội tại."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ngo-khong"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Gậy chạm vùng gần",
+          "detail": "Vật lý và choáng. Có tái tung trong 5 giây để gỡ chậm rồi tàng hình/tăng chạy theo hồ sơ."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-ngo-khong"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ khoảng trống quanh người yếu khi mất dấu Ngộ Không. Đợi lần tàng hình thứ hai hoặc chiêu lao đã dùng rồi phản công."
+      }
+    ],
+    "passive.empowered-physical": [
+      {
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "empowered_attack",
+          "trigger": "Đòn đánh cường hóa từ nội tại trúng",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 450.0,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

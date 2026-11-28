@@ -1,0 +1,73 @@
+{
+  "id": "hoa-he-bao-thach",
+  "kind": "items",
+  "name": "Hỏa hệ bảo thạch",
+  "facts": {
+    "shop.tier": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 600.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-hoa-he-bao-thach"
+        ],
+        "value": "cam"
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "automatic"
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "support",
+  "relations": []
+}

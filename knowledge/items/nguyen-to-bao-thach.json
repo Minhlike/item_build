@@ -1,0 +1,58 @@
+{
+  "id": "nguyen-to-bao-thach",
+  "kind": "items",
+  "name": "Nguyên tố bảo thạch",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 300.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.funneling": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "economy",
+          "target": "nearby-allies-and-self",
+          "delivery": "item",
+          "trigger": "Có đồng minh lân cận và lính hoặc quái bị hạ",
+          "activation": "automatic",
+          "detail": "Đồng minh nhận đủ vàng và EXP; phần người mang tăng theo thời gian trong khoảng 30–50%, tới phút 13 đạt mốc trên."
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-nguyen-to-bao-thach"
+        ],
+        "value": "xam"
+      }
+    ]
+  },
+  "unknown": [
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "support",
+  "relations": []
+}

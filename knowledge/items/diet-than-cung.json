@@ -1,0 +1,112 @@
+{
+  "id": "diet-than-cung",
+  "kind": "items",
+  "name": "Diệt thần cung",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2980.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 50.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.3,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.critical": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.ranged-armor-pen": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "armor_pen",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Trang bị Xuyên thấu.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "exceptions": [
+            "Gấp đôi với tướng đánh xa."
+          ],
+          "unique_group": "xuyen-thau"
+        }
+      }
+    ],
+    "passive.on-hit": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đòn đánh thường trúng.",
+          "activation": "automatic",
+          "damage_type": "physical",
+          "amount": {
+            "amount": 50.0,
+            "unit": "damage"
+          },
+          "timing": {
+            "internal_cooldown_s": 0.35
+          },
+          "exceptions": [
+            "Gấp đôi với tướng đánh xa."
+          ],
+          "unique_group": "pha-than"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-diet-than-cung"
+        ],
+        "value": "xanh-ngoc"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

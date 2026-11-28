@@ -1,0 +1,122 @@
+{
+  "id": "skud",
+  "kind": "heroes",
+  "name": "Skud",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-skud",
+          "vn-aug-2025-ability-reference",
+          "profile-vn-skud"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đánh mục tiêu có HP tối đa thấp hơn Skud",
+          "detail": "Phần phép không chí mạng nếu đích có HP tối đa thấp hơn Skud theo hồ sơ. Công thức lấy HP của Skud và AD, bản 28/08/2025 bỏ hệ số AP.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.02
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-skud",
+          "profile-vn-skud"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Cú đấm lao trúng",
+          "detail": "Tăng tốc đánh bản thân, đòn cường hóa S2 có thêm phép.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-skud",
+          "vn-aug-2025-ability-reference",
+          "profile-vn-skud"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Nạp găng rồi đánh trúng",
+          "detail": "Nhịp cường hóa gây phép, làm chậm và có hồi chiêu khi trúng theo hồ sơ. Hệ số HP của Skud và AD theo bản 28/08/2025, chưa xác minh loại AD.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 200.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 40.0
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.07
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-skud",
+          "profile-vn-skud"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Hoàn tất tụ ngắn cạnh nạn nhân",
+          "detail": "Hất và đẩy với sát thương vật lý. Hạ lính/quái cho hồi theo HP đã mất qua nội tại chiêu."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-skud"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh để Skud vừa áp sát vừa lấy hồi từ lính. Xét phần phép riêng kể cả khi cú đấm vật lý, tránh đứng sát nhiều đồng đội trước chiêu cuối."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

@@ -1,0 +1,86 @@
+{
+  "id": "khien-huyen-thoai",
+  "kind": "items",
+  "name": "Khiên huyền thoại",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2180.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 360.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "stat.mana": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 400.0,
+          "unit": "mana"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.2,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.attack-slow": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "attack_speed",
+          "target": "nearby-enemies",
+          "delivery": "item",
+          "trigger": "Kẻ địch ở trong hào quang",
+          "activation": "automatic",
+          "detail": "Giảm tốc đánh.",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "radius": 5.0,
+          "unique_group": "troi-buoc-tinh-than"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-khien-huyen-thoai"
+        ],
+        "value": "cam"
+      }
+    ]
+  },
+  "unknown": [
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

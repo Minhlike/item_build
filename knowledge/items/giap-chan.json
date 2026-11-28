@@ -1,0 +1,51 @@
+{
+  "id": "giap-chan",
+  "kind": "items",
+  "name": "Giáp chân",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1000.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-chan"
+        ],
+        "value": "luc"
+      }
+    ]
+  },
+  "unknown": [
+    "Quy tắc mua",
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

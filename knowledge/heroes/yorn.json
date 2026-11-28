@@ -1,0 +1,149 @@
+{
+  "id": "yorn",
+  "kind": "heroes",
+  "name": "Yorn",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Tung chiêu hoặc đủ chuỗi đánh để mở Vô tận tên",
+          "detail": "Có nhiều nhịp thẳng gồm vật lý và phần theo HP tối đa địch. Dùng bản 29/09 cho hệ số lên tướng thay dòng 1% cũ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Vụ nổ tên trúng vùng",
+          "detail": "Gây vật lý và choáng theo hồ sơ, bản vá thêm lộ diện."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Nhịp tên theo slot chiêu 2",
+          "detail": "Bản 29/09 ghi soi theo đường bay, lộ cả hai đầu khi trúng. Hồ sơ cũ gán Mưa tên vào slot này nên cần đối chiếu tên/slot trước khi dùng cơ chế cũ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Dùng chiêu cuối rồi mở Vô tận tên",
+          "detail": "Hồ sơ cũ nêu Tên thần có vật lý cộng phần phép theo HP thiếu. Chỉ áp nếu khớp phiên bản/slot, bản vá ghi chiêu đường bay ở S2."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-yorn",
+          "profile-vn-yorn"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Né ngang tuyến bắn nhiều nhịp. Thoát vùng bị soi trước khi vòng hông và giữ người thấp HP khỏi đường tên dài."
+      }
+    ],
+    "skill-1.reveal": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "reveal",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 trúng."
+        }
+      }
+    ],
+    "skill-2.path-vision": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "reveal",
+          "target": "flight-path",
+          "trigger": "Đạn Chiêu 2 đang bay.",
+          "detail": "Cấp tầm nhìn dọc đường bay."
+        }
+      }
+    ],
+    "skill-2.hit-reveal": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "reveal",
+          "target": "target-and-self",
+          "trigger": "Chiêu 2 trúng đích."
+        }
+      }
+    ],
+    "passive.hero-hit-amount": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "enemy-hero",
+          "trigger": "Nội tại gây sát thương lên tướng.",
+          "detail": "Phần gốc 28–56 cùng 1,5% máu tối đa mục tiêu. Chưa chốt loại sát thương và quy luật tăng phần gốc từ mục này.",
+          "basis": "target_max_hp",
+          "amount": {
+            "amount": 0.015,
+            "unit": "ratio"
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

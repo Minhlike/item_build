@@ -1,0 +1,142 @@
+{
+  "id": "roxie",
+  "kind": "heroes",
+  "name": "Roxie",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-roxie"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Có thêm HP tối đa hoặc đánh trúng đòn thứ ba",
+          "detail": "50 HP đổi 1 AP theo hồ sơ, đòn thứ ba hồi 8% năng lượng tối đa và gắn dấu 5 giây."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-roxie"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Địch ở trong vệt patin",
+          "detail": "Phép mỗi 0,5 giây, tối đa ba tầng, vệt tồn tại khoảng 2,5 giây. Trúng dấu có hồi theo HP thiếu, gấp đôi trên tướng và không cộng nhiều lần.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-roxie"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Bật ba lô lửa",
+          "detail": "Hồ sơ nêu khiên 3 giây và 20% chạy, địch va phải chậm. Đọc riêng nhịp sát thương ở bản vá."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-roxie"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Keo chạm đích đầu hợp lệ",
+          "detail": "Kéo theo Roxie khoảng 2,5 giây, nạn nhân miễn khống khác; đặt dấu, làm mới Patin, trúng tướng có điều kiện hồi S2. Không rút thời lượng bằng kháng hiệu ứng theo hồ sơ.",
+          "timing": {
+            "duration_s": 2.5
+          }
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-roxie"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Né hướng Keo, đừng trông chờ kháng hiệu ứng. Rời vệt lửa để cắt cả nhịp phép và nhịp hồi của Roxie."
+      }
+    ],
+    "skill-2.magic": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 trúng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 180.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.shield": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Chiêu 2 cấp lá chắn",
+          "formula": {
+            "unit": "hp",
+            "base": 250.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.08
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Các kỹ năng và tương tác còn lại"
+  ],
+  "relations": []
+}

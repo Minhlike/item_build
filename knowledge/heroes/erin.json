@@ -1,0 +1,174 @@
+{
+  "id": "erin",
+  "kind": "heroes",
+  "name": "Erin",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Đòn đánh thường trúng để nạp năng lượng",
+          "detail": "Đầy cho tăng chạy và một đòn cường hóa. Hút máu/xuyên theo nhánh giá trị lớn hơn giữa vật lý và phép theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Kim diệp trúng đích đầu hoặc tới cuối tầm",
+          "detail": "Buộc có tướng trúng hoặc đến cuối đường thì nổ vùng, làm chậm và tích dấu theo lần tung.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Dùng chúc phúc hồ điệp",
+          "detail": "Nạp đầy năng lượng, tích nguyệt quế, tăng tốc đánh và miễn làm chậm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đầy năng lượng để tích dấu, từ sáu dấu mở chiêu cuối",
+          "detail": "Bắn liên tục vào địch thấp máu gần, tốn dấu, tăng chạy và giảm hồi S2.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-erin"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Người thấp máu rời khỏi bán kính bắn trước khi Erin bắt đầu chuỗi lá. Đánh cửa sổ sau khi đã tiêu dấu, tránh tâm nổ/chậm."
+      }
+    ],
+    "skill-1.base-magic": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Thành phần sát thương cơ bản của Chiêu 1",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 450.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 90.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.05
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.contact-magic": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "damage",
+          "target": "enemy-hit",
+          "trigger": "Thành phần khi đạn chạm mục tiêu",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 150.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.35
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.2
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-oct"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-30",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 1",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "relations": []
+}

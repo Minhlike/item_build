@@ -1,0 +1,398 @@
+[
+  {
+    "kind": "spells",
+    "id": "suy-nhuoc",
+    "name": "Suy nhược",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self-and-nearby-enemies",
+            "trigger": "Bật phép cạnh địch",
+            "timing": {
+              "cooldown_s": 90
+            },
+            "delivery": "spell"
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ],
+      "active.self-mitigation": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Sau khi bấm Suy nhược",
+            "amount": {
+              "amount": 0.2,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 4,
+              "cooldown_s": 90
+            }
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ],
+      "active.enemy-output": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "nearby-enemies",
+            "trigger": "Kẻ địch lân cận lúc bấm Suy nhược",
+            "amount": {
+              "amount": 0.2,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 4
+            },
+            "detail": "Giảm sát thương kẻ địch gây ra; lớp khác với miễn thương của người dùng."
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "toc-bien",
+    "name": "Tốc biến",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "teleport",
+            "target": "self",
+            "trigger": "Chọn hướng dịch chuyển",
+            "timing": {
+              "cooldown_s": 120
+            },
+            "delivery": "spell"
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "thanh-tay",
+    "name": "Thanh tẩy",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "cleanse",
+            "target": "self",
+            "trigger": "Kích hoạt lúc cần gỡ hiệu ứng",
+            "timing": {
+              "cooldown_s": 120
+            },
+            "delivery": "spell"
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ],
+      "active.cc-immunity": [
+        {
+          "value": {
+            "effect": "cc_immunity",
+            "target": "self",
+            "trigger": "Sau khi bấm Thanh tẩy",
+            "timing": {
+              "duration_s": 1.5
+            },
+            "exceptions": [
+              "Đối chiếu riêng các dạng áp chế hoặc cấm dùng phép."
+            ]
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "ngat-ngu",
+    "name": "Ngất ngư",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "hard_cc",
+            "target": "nearby-enemies",
+            "trigger": "Bật gần kẻ địch",
+            "timing": {
+              "cooldown_s": 90
+            },
+            "delivery": "spell"
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "cap-cuu",
+    "name": "Cấp cứu",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self-and-nearby-allies",
+            "trigger": "Kích hoạt gần đồng minh",
+            "timing": {
+              "cooldown_s": 120
+            },
+            "delivery": "spell"
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ],
+      "active.team-move": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self-and-nearby-allies",
+            "trigger": "Bấm Cấp cứu",
+            "amount": {
+              "amount": 0.15,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 2
+            },
+            "detail": "Tăng tốc chạy, tách khỏi nhịp hồi."
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "gam-thet",
+    "name": "Gầm thét",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Kích hoạt để giao tranh",
+            "timing": {
+              "cooldown_s": 60
+            },
+            "delivery": "spell"
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ],
+      "active.lifesteal": [
+        {
+          "value": {
+            "effect": "lifesteal",
+            "target": "self",
+            "trigger": "Bấm Gầm thét",
+            "amount": {
+              "amount": 0.15,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 7,
+              "cooldown_s": 60
+            }
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ],
+      "active.spell-lifesteal": [
+        {
+          "value": {
+            "effect": "spell_lifesteal",
+            "target": "self",
+            "trigger": "Bấm Gầm thét",
+            "amount": {
+              "amount": 0.3,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 7
+            }
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "trung-tri",
+    "name": "Trừng trị",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "jungle",
+            "target": "nearby-jungle-monsters",
+            "trigger": "Kích hoạt gần quái; phiên bản mới có tích lượt cần đối chiếu",
+            "delivery": "spell"
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "boc-pha",
+    "name": "Bộc phá",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target",
+            "trigger": "Kích hoạt lên tướng cần kết liễu",
+            "damage_type": "true",
+            "delivery": "spell",
+            "timing": {
+              "cooldown_s": 90
+            },
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "target_missing_hp",
+                  "coefficient": 0.16
+                }
+              ]
+            }
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "toc-hanh",
+    "name": "Tốc hành",
+    "aliases": [],
+    "facts": {
+      "active.effect": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Kích hoạt để chạy và gỡ chậm",
+            "delivery": "spell"
+          },
+          "evidence": [
+            "academy-spells"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "dich-chuyen",
+    "name": "Dịch chuyển",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Kiểm tra khả dụng trong từng hàng chờ và ngày hết hiệu lực"
+    ]
+  },
+  {
+    "kind": "spells",
+    "id": "ma-chung-hac-am",
+    "name": "Ma chủng hắc ám",
+    "aliases": [],
+    "facts": {},
+    "unknown": [
+      "Kiểm tra khả dụng trong từng hàng chờ và ngày hết hiệu lực"
+    ]
+  },
+  {
+    "id": "te-cong",
+    "name": "Tê Cóng",
+    "kind": "spells",
+    "facts": {},
+    "unknown": [
+      "Ngưỡng nâng cấp theo luật mua trong từng hàng chờ",
+      "Khả dụng ngoài điều kiện trang bị đi rừng",
+      "Mốc cấp của sát thương lên tướng và lượng sát thương chuẩn lên quái/lính"
+    ]
+  }
+]

@@ -1,0 +1,117 @@
+{
+  "id": "tulen",
+  "kind": "heroes",
+  "name": "Tulen",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tulen"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Chiêu trúng tích đủ năm dấu",
+          "detail": "Bắn năm sét phép ưu tiên tướng gần, lặp một người trong 1 giây suy giảm."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tulen"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Bắn ba tia theo phía trước",
+          "detail": "Mỗi tia trúng cho một dấu, nhiều tia cùng đích nhận ít sát thương hơn ở các tia phụ.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tulen"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lướt gây phép ở điểm đi và đến",
+          "detail": "Cùng người trúng hai vùng, lượt sau còn 50%. Bị lặp trong 5 giây có chậm mạnh. Trữ tới ba lượt và giãn 2 giây theo hồ sơ.",
+          "damage_type": "magic",
+          "timing": {
+            "internal_cooldown_s": 2.0
+          },
+          "charges": 3
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-tulen"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Chim điện khóa mục tiêu",
+          "detail": "Có thể di chuyển khi tung, thêm một dấu. Tướng hạ trực tiếp kích sét và giảm mạnh hồi; tướng đồng đội có thể đứng chặn.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-tulen"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Che đúng tuyến đạn cho người thấp HP để Tulen khó chuyền lượt hạ. Tránh dồn người quanh hắn khi đã gần đủ dấu."
+      }
+    ],
+    "skill-1.base-magic": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 1.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 480.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 96.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.8
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

@@ -1,0 +1,237 @@
+{
+  "id": "natalya",
+  "kind": "heroes",
+  "name": "Natalya",
+  "aliases": [
+    "Nat"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.magic": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "passive",
+          "trigger": "Kỹ năng trúng địch",
+          "damage_type": "magic",
+          "timing": {
+            "duration_s": 3.0
+          },
+          "stacks": 10
+        }
+      }
+    ],
+    "skill-3.beam": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-beam",
+          "delivery": "ability",
+          "trigger": "Kẻ địch đứng trong luồng chiêu cuối",
+          "damage_type": "magic",
+          "timing": {
+            "interval_s": 0.25
+          }
+        }
+      }
+    ],
+    "skill-3.cc-immunity": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Lá chắn chiêu cuối còn hiệu lực"
+        }
+      }
+    ],
+    "skill-1.hit-refund": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Các bóng ma trúng tướng địch.",
+          "detail": "Hồi một phần năng lượng và giảm hồi chiêu. Chưa có hệ số và thứ tự tính theo số bóng."
+        }
+      }
+    ],
+    "skill-3.tick": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Tia Năng lượng chết chóc duy trì trúng mục tiêu.",
+          "detail": "Cần đo số nhịp, mốc dừng và hiệu lực khi vỡ lá chắn.",
+          "damage_type": "magic",
+          "timing": {
+            "interval_s": 0.25
+          }
+        }
+      }
+    ],
+    "skill-3.shield-control": [
+      {
+        "evidence": [
+          "natalya"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Còn lá chắn do chiêu cuối tạo.",
+          "detail": "Cần kiểm tra miễn khống hết tại lúc vỡ lá chắn hay khi ngừng thi triển."
+        }
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Phép từ nhiều hit kỹ năng lên cùng địch",
+          "detail": "Nội tại cộng thêm phép, hồ sơ nêu tối đa 10 tầng trong 3 giây."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Bóng ma bay vào vùng, gặp tướng dừng",
+          "detail": "Mỗi bóng gây phép; chạm tướng cho hồi năng lượng và giảm hồi, đối chiếu hệ số trúng chồng.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Cầu trúng đích đầu hoặc hết tầm",
+          "detail": "Choáng rồi vùng phép nhiều nhịp kèm chậm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tia duy trì địch trong tầm",
+          "detail": "Phép theo nhịp, Natalya nhận khiên và bảo hộ khỏi khống chế khi còn khiên theo hồ sơ.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-natalya"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Né ngang tia và tránh để cầu trúng tuyến trước ngay trong đường tia. Khống chế sau khi khiên hết nếu còn góc."
+      }
+    ],
+    "skill-2.base-magic": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản của Chiêu 2 theo ghi chú cân bằng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.base-magic": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản của Chiêu 3 theo ghi chú cân bằng.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

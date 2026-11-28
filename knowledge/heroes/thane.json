@@ -1,0 +1,293 @@
+{
+  "id": "thane",
+  "kind": "heroes",
+  "name": "Thane",
+  "aliases": [
+    "Thanh",
+    "Thane SP"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "tactics.peel": [
+      {
+        "evidence": [
+          "academy-butterfly",
+          "thane"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-11-25",
+        "value": "Có thể cắt đường áp sát của Butterfly bằng đẩy lùi nếu chiêu còn sẵn và Thane đứng đủ gần chủ lực."
+      }
+    ],
+    "passive.low-hp-heal": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Máu rơi dưới ngưỡng kích hoạt nội tại",
+          "detail": "Hồi theo máu tối đa của Thane; ngưỡng, lượng, chu kỳ và hồi nội tại chưa xác minh.",
+          "basis": "caster_max_hp",
+          "interactions": [
+            "Tăng máu tối đa làm tăng trị liệu tuyệt đối nếu cùng hệ số.",
+            "Giảm hồi phục chỉ có lợi nếu bao phủ các nhịp hồi."
+          ]
+        }
+      }
+    ],
+    "passive.low-hp-mitigation": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Nội tại kích hoạt lúc máu thấp",
+          "detail": "Miễn thương ngắn khi nội tại kích hoạt; phần trăm và thời lượng chưa xác minh."
+        }
+      }
+    ],
+    "skill-1.push": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-path",
+          "delivery": "ability",
+          "trigger": "Lướt qua kẻ địch",
+          "detail": "Đẩy nhiều nhịp, hất văng ở cuối; có thể tách sát thủ khỏi chủ lực."
+        }
+      }
+    ],
+    "skill-1.damage": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-path",
+          "delivery": "ability",
+          "trigger": "Mỗi nhịp chiêu 1 trúng địch",
+          "detail": "Đứng gần Thane chịu sát thương cao hơn theo mô tả.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.control": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "delivery": "ability",
+          "trigger": "Cắm kiếm trúng mục tiêu",
+          "detail": "Có làm chậm sau hất văng."
+        }
+      }
+    ],
+    "skill-3.true": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-front",
+          "delivery": "ability",
+          "trigger": "Kiếm chém trúng mục tiêu",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "skill-3.missing-hp": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-front",
+          "delivery": "ability",
+          "trigger": "Kiếm chém trúng mục tiêu",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "target_missing_hp",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.base-type-conflict": [
+      {
+        "evidence": [
+          "patch-aug",
+          "thane",
+          "thane-source-conflict"
+        ],
+        "value": "Thông báo 13/08 ghi phần gốc là vật lý với gốc 480, thêm 240 mỗi cấp chiêu và 8% máu tối đa của Thane. Trang kỹ năng mô tả sát thương chuẩn riêng cùng phần vật lý theo máu đã mất của mục tiêu. Chưa phân giải phần gốc và khả năng hai nguồn mô tả các thành phần khác nhau."
+      }
+    ],
+    "skill-3.cast-mitigation": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Đang tụ lực và thi triển Excalibur.",
+          "detail": "Tách riêng với nội tại. Chưa rõ thứ tự, cộng dồn và áp dụng với sát thương chuẩn.",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "skill-3.cast-protection": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Trong lần tung Excalibur.",
+          "detail": "Mô tả không thể bị ngăn cản khi tung. Chưa thử áp chế và thời điểm rời trạng thái."
+        }
+      }
+    ],
+    "skill-1.end-airborne": [
+      {
+        "evidence": [
+          "thane"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Chặng cuối Xung phong trúng mục tiêu.",
+          "detail": "Hất tung cuối tách với các nhịp đẩy trên đường lướt."
+        }
+      }
+    ],
+    "passive.damage-reduction": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Trong thời gian giảm sát thương do nội tại đã kích hoạt.",
+          "detail": "Bản này xác nhận mức giảm. Không ấn định ngưỡng máu, nội hồi hoặc thời lượng từ nguồn này.",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "skill-3.damage-heal": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Chiêu 3 gây sát thương thành công",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "damage_dealt",
+                "coefficient": 0.25
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": [
+    {
+      "evidence": [
+        "academy-butterfly",
+        "patch-items",
+        "thane"
+      ],
+      "status": "LIVE_VN",
+      "kind": "derived_knowledge",
+      "effective_from": "2026-11-25",
+      "id": "thane-shield",
+      "subject": "heroes/thane#tactics.peel",
+      "predicate": "SYNERGIZES_WITH",
+      "object": "items/khien-thanh-quang",
+      "condition": "Thane phải gây sát thương lên tướng địch đủ gần để cấp lá chắn cho đồng minh cần giữ.",
+      "scope": "ranked_solo_vn"
+    },
+    {
+      "evidence": [
+        "academy-butterfly"
+      ],
+      "status": "LIVE_VN",
+      "kind": "tactical_heuristic",
+      "effective_from": "2026-11-25",
+      "id": "thane-butterfly-peel",
+      "subject": "heroes/thane#tactics.peel",
+      "predicate": "MITIGATES",
+      "object": "heroes/butterfly#tactics.cleanup",
+      "condition": "Giữ chiêu đẩy khi Butterfly có góc tiếp cận; cần đứng đủ gần chủ lực.",
+      "scope": "ranked_solo_vn"
+    },
+    {
+      "evidence": [
+        "academy-items",
+        "thane"
+      ],
+      "kind": "derived_knowledge",
+      "id": "truong-sinh-thane",
+      "subject": "items/phu-chu-truong-sinh#passive.in-combat-regen",
+      "predicate": "SYNERGIZES_WITH",
+      "object": "heroes/thane#passive.low-hp-heal",
+      "condition": "Máu tối đa từ đồ tăng giá trị của hồi theo máu tối đa nếu nội tại Thane còn sẵn. Hồi định kỳ và hồi ngưỡng là hai sự kiện.",
+      "scope": "ranked_solo_vn"
+    }
+  ]
+}

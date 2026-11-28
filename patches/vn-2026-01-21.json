@@ -1,0 +1,404 @@
+{
+  "id": "vn-2026-01-21",
+  "title": "Tân Niên Khởi Thế 21/01/2026",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-01-21",
+  "evidence": "patch-2026-01-21",
+  "changes": [
+    {
+      "entity": "items/huyet-truong",
+      "property": "shop.recipe",
+      "classification": "rework",
+      "replacement": {
+        "value": [
+          "items/sach-phep",
+          "items/sach-phep"
+        ],
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/quyen-truong-rhea",
+      "property": "shop.recipe",
+      "classification": "rework",
+      "replacement": {
+        "value": [
+          "items/huyet-truong",
+          "items/huyet-truong",
+          "items/nhan-hong-ngoc"
+        ],
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "shop.recipe",
+      "classification": "rework",
+      "replacement": {
+        "value": [
+          "items/sach-co",
+          "items/huyet-truong"
+        ],
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/qua-cau-bang-suong",
+      "property": "shop.recipe",
+      "classification": "rework",
+      "replacement": {
+        "value": [
+          "items/so-ma-thuat",
+          "items/huyet-truong"
+        ],
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/huyet-truong",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 800,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/huyet-truong",
+      "property": "stat.ap",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 80,
+          "unit": "ability_power"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/huyet-truong",
+      "property": "stat.spell-lifesteal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.12,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/quyen-truong-rhea",
+      "property": "stat.ap",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 160,
+          "unit": "ability_power"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/quyen-truong-rhea",
+      "property": "stat.hp",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 800,
+          "unit": "hp"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/quyen-truong-rhea",
+      "property": "stat.spell-lifesteal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.25,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "stat.ap",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 180,
+          "unit": "ability_power"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "stat.spell-lifesteal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.12,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "stat.move",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/qua-cau-bang-suong",
+      "property": "stat.spell-lifesteal",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 0.12,
+          "unit": "ratio"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/ao-choang-than-ra",
+      "property": "stat.price",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "amount": 2060,
+          "unit": "gold"
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/quyen-truong-rhea",
+      "property": "passive.lifesteal-cdr",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Có hút máu phép khi mang Rhea",
+          "delivery": "item",
+          "activation": "automatic",
+          "detail": "Mỗi 2 điểm phần trăm hút máu phép cho 1 điểm phần trăm giảm hồi chiêu. Cách làm tròn và trần tổng cần kiểm tra."
+        },
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/dao-truy-hon",
+      "property": "passive.wound",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal_reduction",
+          "target": "damaged-target",
+          "trigger": "Đòn đánh hoặc chiêu gây sát thương",
+          "delivery": "item",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 3
+          },
+          "unique_group": "troc-na"
+        },
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/sach-truy-hon",
+      "property": "passive.wound",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal_reduction",
+          "target": "damaged-target",
+          "trigger": "Đòn đánh hoặc chiêu gây sát thương",
+          "delivery": "item",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 3
+          },
+          "unique_group": "troc-na"
+        },
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "items/ao-choang-than-ra",
+      "property": "passive.anti-heal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal_reduction",
+          "target": "damaged-target",
+          "trigger": "Hỏa diệm đốt trúng",
+          "delivery": "item",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.4,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 3
+          },
+          "unique_group": "troc-na"
+        },
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.logistics-tier-1-2",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "lowest-gold-team-hero",
+          "delivery": "battlefield",
+          "trigger": "Trang bị trợ thủ cấp 1–2 cấp nhịp Hậu cần.",
+          "detail": "Thưởng 6 vàng và 6 kinh nghiệm mỗi nhịp; dữ liệu không nêu cách chọn khi hòa vàng.",
+          "timing": {
+            "interval_s": 3
+          }
+        },
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "support.logistics-tier-3",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "economy",
+          "target": "lowest-gold-team-hero",
+          "delivery": "battlefield",
+          "trigger": "Trang bị trợ thủ cấp 3 cấp nhịp Hậu cần.",
+          "detail": "Thưởng 8 vàng và 8 kinh nghiệm mỗi nhịp; dữ liệu không nêu cách chọn khi hòa vàng.",
+          "timing": {
+            "interval_s": 3
+          }
+        },
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21"
+      }
+    }
+  ],
+  "review_notes": [
+    "Quả cầu băng sương được ghi 200 công phép ở đây. Danh mục Học viện ghi 220 công phép; giữ ứng viên xung đột ở hồ sơ cho tới khi xác nhận patch thay đổi."
+  ]
+}

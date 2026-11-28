@@ -1,0 +1,778 @@
+{
+  "id": "ranked-vn",
+  "kind": "battlefield",
+  "name": "Chiến trường xếp hạng Việt Nam",
+  "facts": {
+    "tactics.mid-priority": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-09-29",
+        "value": "Khi đợt lính giữa đã an toàn và biết đường rút, tận dụng nhịp di chuyển để kiểm soát cửa sông, hỗ trợ cánh hoặc vào mục tiêu cùng đồng đội. Nếu phải bỏ lính, vòng rừng hoặc chủ lực đang bị ép, nhường quyền đến trước và gọi đổi phía."
+      }
+    ],
+    "tactics.objective-trade": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "kind": "tactical_heuristic",
+        "effective_from": "2026-09-29",
+        "value": "Xét quyền đường, vị trí người cầm Trừng trị, tầm nhìn và quân số trước khi mở mục tiêu. Nếu địch có lợi thế tiếp cận, cân nhắc đẩy trụ hoặc đổi mục tiêu ở cánh còn lại."
+      }
+    ],
+    "support.earth-aura": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self-and-nearby-allied-heroes",
+          "trigger": "Mang Đại địa hoặc Thổ hệ và ở trong phạm vi Nguyên lực.",
+          "detail": "Cấp 3 được ghi tăng 32–60 giáp và giáp phép. Mốc tăng, phạm vi và cộng dồn chưa xác minh."
+        }
+      }
+    ],
+    "support.fire-aura": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self-and-nearby-allied-heroes",
+          "trigger": "Mang Liệt hỏa hoặc Hỏa hệ và ở trong phạm vi Cực ảnh.",
+          "detail": "Danh mục ghi 5% tốc đánh và 5% giảm hồi chiêu. Chưa rõ phạm vi và cộng dồn với nguồn khác."
+        }
+      }
+    ],
+    "support.reward-primary-stat": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Mang nhánh trợ thủ có Tưởng thưởng.",
+          "detail": "Cấp 2 ghi 16–30, cấp 3 ghi 32–60 chỉ số chủ đạo. Một điểm tương ứng 1 AD hoặc 2 AP. Cơ chế chọn chỉ số và mốc tăng chưa rõ."
+        }
+      }
+    ],
+    "items.tier-two-boot-swap": [
+      {
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Đang có giày cấp II và tính năng đổi sẵn sàng.",
+          "detail": "Hoán đổi qua lại giữa các giày cấp II không tốn vàng; hồi giữa các lượt đổi.",
+          "timing": {
+            "cooldown_s": 180.0
+          }
+        }
+      }
+    ],
+    "support.humility-gold": [
+      {
+        "evidence": [
+          "patch-2025-04-23-support-recharge",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-04-23",
+        "value": {
+          "effect": "economy",
+          "target": "support-holder",
+          "delivery": "battlefield",
+          "trigger": "Khi Khiêm nhường chia vàng có đồng đội gần.",
+          "detail": "Tỷ lệ vàng của trợ thủ: 30% trước phút 4, 35% phút 4–7, 40% phút 7–10, 45% phút 10–13, 50% từ phút 13. Mốc XP chưa được ghi riêng trong bản vá."
+        }
+      }
+    ],
+    "support.logistics-tier-1-2": [
+      {
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "effect": "economy",
+          "target": "lowest-gold-team-hero",
+          "delivery": "battlefield",
+          "trigger": "Trang bị trợ thủ cấp 1–2 cấp nhịp Hậu cần.",
+          "detail": "Thưởng 6 vàng và 6 kinh nghiệm mỗi nhịp; dữ liệu không nêu cách chọn khi hòa vàng.",
+          "timing": {
+            "interval_s": 3.0
+          }
+        }
+      }
+    ],
+    "support.logistics-tier-3": [
+      {
+        "evidence": [
+          "patch-2026-01-21",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "effect": "economy",
+          "target": "lowest-gold-team-hero",
+          "delivery": "battlefield",
+          "trigger": "Trang bị trợ thủ cấp 3 cấp nhịp Hậu cần.",
+          "detail": "Thưởng 8 vàng và 8 kinh nghiệm mỗi nhịp; dữ liệu không nêu cách chọn khi hòa vàng.",
+          "timing": {
+            "interval_s": 3.0
+          }
+        }
+      }
+    ],
+    "jungle.early-minion-penalty": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "stat_change",
+          "target": "minion",
+          "delivery": "battlefield",
+          "trigger": "Có trang bị rừng, tấn công lính trong 4 phút đầu.",
+          "detail": "Giảm sát thương lên lính.",
+          "amount": {
+            "amount": 0.25,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "support.bonus-hp-tier-2": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Mang trang bị trợ thủ cấp 2.",
+          "detail": "Tưởng thưởng cấp thêm 200–410 HP tối đa. Cần xác minh cách đạt từng giá trị."
+        }
+      }
+    ],
+    "support.bonus-hp-tier-3": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Mang trang bị trợ thủ cấp 3.",
+          "detail": "Tưởng thưởng cấp thêm 400–820 HP tối đa. Cần xác minh cách đạt từng giá trị."
+        }
+      }
+    ],
+    "draft.flowborn-same-team": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Đội đã có Flowborn ở một trong hai dạng.",
+          "detail": "Bản sửa lỗi chặn hai dạng Flowborn xạ thủ và pháp sư cùng xuất hiện trong một đội."
+        }
+      }
+    ],
+    "items.active-shared-cooldown": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Sở hữu đồng thời nhiều trang bị chủ động",
+          "detail": "Có thêm nút kích hoạt; các trang bị chủ động vẫn dùng chung hồi chiêu theo quy tắc."
+        }
+      }
+    ],
+    "river.light-beetle.first-spawn": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 30.0,
+          "unit": "second"
+        }
+      }
+    ],
+    "river.light-beetle.respawn": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 60.0,
+          "unit": "second"
+        }
+      }
+    ],
+    "river.light-beetle.gold": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 45.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "river.light-beetle.xp": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 50.0,
+          "unit": "experience"
+        }
+      }
+    ],
+    "river.light-beetle.hp": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 2500.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "river.light-beetle.armor": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 600.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "river.light-beetle.magic-defense": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 0.0,
+          "unit": "magic_defense"
+        }
+      }
+    ],
+    "river.light-beetle.vision": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "reveal",
+          "target": "enemy-jungle-path",
+          "trigger": "Trong bốn phút đầu, đội hạ Bọ Ánh Sáng phía Caesar",
+          "detail": "Tinh linh đi theo đường bay vào rừng đối phương và soi sáng đường bay."
+        }
+      }
+    ],
+    "jungle.guardian-bird": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "stat_change",
+          "target": "invading-hero",
+          "trigger": "Tướng địch vào khu bùa phe mình trước phút 4",
+          "detail": "Giảm sát thương gây ra khi bị Tinh Linh Điểu xua đuổi.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "ends_when": "Rời vùng bảo vệ hoặc trận tới phút 4."
+        }
+      }
+    ],
+    "jungle.buff-evolution": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "special",
+          "target": "red-and-blue-buff-monsters",
+          "trigger": "Phút 10",
+          "detail": "Nếu quái cũ còn sống, quái cường hóa kế thừa tỷ lệ máu hiện tại.",
+          "amount": {
+            "amount": 600.0,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "jungle.buff-sharing": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "jungle",
+          "target": "closest-teammate",
+          "trigger": "Đồng minh đến gần người vừa hạ bùa đã cường hóa",
+          "detail": "Linh hồn truyền bùa tương ứng cho đồng minh gần nhất."
+        }
+      }
+    ],
+    "mid.early-melee-minion-gold": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 27.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "mid.early-ranged-minion-gold": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "amount": 29.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "support.gold-pickup-tier-2": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "economy",
+          "target": "support-holder",
+          "trigger": "Vàng lính không có người nhận và có trang bị trợ thủ cấp 2",
+          "detail": "Thả 50% phần vàng không được nhận; chạm trần nhặt 450 vàng. Có đợt hút toàn bản đồ.",
+          "amount": {
+            "amount": 450.0,
+            "unit": "gold"
+          },
+          "timing": {
+            "cooldown_s": 15.0
+          }
+        }
+      }
+    ],
+    "support.gold-pickup-tier-3": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "economy",
+          "target": "support-holder",
+          "trigger": "Vàng lính không có người nhận và có trang bị trợ thủ cấp 3",
+          "detail": "Thả 50% phần vàng không được nhận; có đợt hút toàn bản đồ. Tích 600 mở Cộng hưởng.",
+          "amount": {
+            "amount": 600.0,
+            "unit": "gold"
+          },
+          "timing": {
+            "cooldown_s": 10.0
+          }
+        }
+      }
+    ],
+    "support.resonance": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "economy",
+          "target": "self-and-selected-ally",
+          "trigger": "Sau khi nhặt tích đủ 600 vàng với trang bị trợ thủ cấp 3, bấm Cộng hưởng lên một đồng minh",
+          "activation": "manual",
+          "detail": "Tổng lợi ích chung cho cả hai là 200 vàng và 200 EXP. Một lần mỗi trận.",
+          "charges": 1
+        }
+      }
+    ],
+    "season.portal-cooldown": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "teleport",
+          "target": "self",
+          "delivery": "battlefield",
+          "trigger": "Dùng Cổng dịch chuyển",
+          "timing": {
+            "cooldown_s": 60.0
+          }
+        }
+      }
+    ],
+    "season.boss-evolution": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "boss",
+          "delivery": "battlefield",
+          "trigger": "Trận vào phút 20",
+          "detail": "Boss cường hóa và đi tuần sông; đội hạ Boss nhận Hắc Ám Tối Thượng và ba đợt Caesar tiên phong.",
+          "amount": {
+            "amount": 1200.0,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "caesar.vanguard-waves": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-09-29",
+        "value": {
+          "amount": 1.0,
+          "unit": "count"
+        }
+      },
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "caesar.vanguard-gold": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "economy",
+          "target": "allied-team",
+          "delivery": "battlefield",
+          "trigger": "Caesar tiên phong tiêu diệt lính",
+          "detail": "Đồng minh được chia vàng; tỷ lệ chia chưa xác minh."
+        }
+      }
+    ],
+    "season.boss-first-selection": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "delivery": "battlefield",
+          "trigger": "Trận tới phút 15",
+          "detail": "Một trong Caesar bạo chúa, Rồng bạo chúa Kraydus và King Kong xuất hiện tại hang Rồng hoặc Caesar theo lựa chọn ngẫu nhiên.",
+          "amount": {
+            "amount": 900.0,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "season.boss-respawn": [
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "delivery": "battlefield",
+          "trigger": "Boss đã bị hạ",
+          "timing": {
+            "cooldown_s": 210.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-battlefield"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "special",
+          "target": "neutral-boss",
+          "delivery": "battlefield",
+          "trigger": "Boss đã bị hạ",
+          "timing": {
+            "cooldown_s": 180.0
+          }
+        }
+      }
+    ],
+    "turret.outer-hp": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "amount": 6500.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "turret.middle-hp": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "amount": 7750.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "season.king-kong-cycle": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 9.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 4.5
+          }
+        }
+      }
+    ],
+    "season.dark-king-kong-cycle": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 6.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "special",
+          "target": "summoned-buff",
+          "trigger": "Tới nhịp kích hoạt bùa của kỹ năng Triệu hồi",
+          "timing": {
+            "interval_s": 3.0
+          }
+        }
+      }
+    ],
+    "minions.late-scaling": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": "Lính được tăng máu và tốc đánh sau phút 20; thông báo không nêu mức tăng."
+      }
+    ],
+    "caesar.tyrant-vanguard-attack": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": "Công vật lý gốc tăng cho Caesar tiên phong bạo chúa; chưa công bố con số."
+      }
+    ],
+    "season.king-kong-slow": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "delivery": "battlefield",
+          "trigger": "Kỹ năng triệu hồi tương ứng áp làm chậm.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "season.dark-king-kong-slow": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "delivery": "battlefield",
+          "trigger": "Kỹ năng triệu hồi tương ứng áp làm chậm.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "ratio"
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Lịch xuất hiện lính, quái và bùa theo phút",
+    "Khung tầm nhìn bụi, kinh tế và chia sẻ EXP đầy đủ",
+    "Luật giai đoạn trụ và cơ chế bù kinh tế",
+    "Điều kiện cụ thể của Boss ở từng nhánh"
+  ],
+  "relations": [
+    {
+      "evidence": [
+        "patch-battlefield"
+      ],
+      "status": "LIVE_VN",
+      "kind": "derived_knowledge",
+      "effective_from": "2026-09-29",
+      "id": "ranked-teleport",
+      "subject": "battlefield/ranked-vn#season.portal-cooldown",
+      "predicate": "SYNERGIZES_WITH",
+      "object": "spells/dich-chuyen#active.teleport",
+      "condition": "Cửa sổ 30 giây kể từ khi dùng Cổng có thể rút 30 giây hồi phép. Kiểm tra khả dụng theo hàng chờ.",
+      "scope": "ranked_solo_vn"
+    }
+  ]
+}

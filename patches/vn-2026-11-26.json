@@ -1,0 +1,543 @@
+{
+  "id": "vn-2026-11-26",
+  "title": "Vết Nứt Thời Không 2026-11-26",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-11-26",
+  "evidence": "patch-latest",
+  "changes": [
+    {
+      "entity": "heroes/rouie",
+      "property": "skill-3.team-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "allies-in-area",
+          "trigger": "Đồng đội trong phạm vi chiêu cuối",
+          "delivery": "ability",
+          "timing": {
+            "duration_s": 8
+          },
+          "formula": {
+            "unit": "hp",
+            "base": 300,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 150
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/valhein",
+      "property": "passive.stack-decay",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "spend_stack",
+          "target": "self",
+          "trigger": "Trong pha giảm dấu ấn nội tại",
+          "delivery": "passive",
+          "amount": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "timing": {
+            "interval_s": 1
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/yena",
+      "property": "passive.shield",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Nhận lá chắn theo nội tại Yena",
+          "delivery": "passive",
+          "formula": {
+            "unit": "hp",
+            "base": 280,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 140
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.8
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      },
+      "previous": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Nhận lá chắn theo nội tại Yena",
+          "delivery": "passive",
+          "formula": {
+            "unit": "hp",
+            "base": 200,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 100
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.4
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/yena",
+      "property": "crescent.skill-2.physical",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Chiêu 2 dạng Viên đao trúng địch",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 140,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 28
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.75
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Chiêu 2 dạng Viên đao trúng địch",
+          "damage_type": "physical",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 130,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.68
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/yena",
+      "property": "dual.skill-2.cooldown",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 2 dạng Song loan đao",
+          "delivery": "ability",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 12,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      },
+      "previous": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Chiêu 2 dạng Song loan đao",
+          "delivery": "ability",
+          "timing": {
+            "cooldown_s": 12
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/ignis",
+      "property": "passive.mark-heal",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Kích hoạt Dấu ấn của Ignis",
+          "delivery": "passive",
+          "formula": {
+            "unit": "hp",
+            "base": 95,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 7
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.15
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      },
+      "previous": {
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Kích hoạt Dấu ấn của Ignis",
+          "delivery": "passive",
+          "formula": {
+            "unit": "hp",
+            "base": 90,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 6
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.14
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/ignis",
+      "property": "skill-1.magic",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 425,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 85
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.7
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "delivery": "ability",
+          "formula": {
+            "unit": "damage",
+            "base": 425,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/aoi",
+      "property": "passive.empowered-physical",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Đòn đánh cường hóa từ Nội tại trúng đích",
+          "damage_type": "physical",
+          "delivery": "empowered_attack",
+          "formula": {
+            "unit": "damage",
+            "base": 90,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Đòn đánh cường hóa từ Nội tại trúng đích",
+          "damage_type": "physical",
+          "delivery": "empowered_attack",
+          "formula": {
+            "unit": "damage",
+            "base": 60,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "passive.mark-burst",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Dấu ấn nổ",
+          "damage_type": "magic",
+          "delivery": "passive",
+          "formula": {
+            "unit": "damage",
+            "base": 180,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 13
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.3
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-preyta"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Dấu ấn nổ",
+          "damage_type": "magic",
+          "delivery": "passive",
+          "formula": {
+            "unit": "damage",
+            "base": 210,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 15
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.4
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-preyta"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26"
+      }
+    },
+    {
+      "entity": "heroes/preyta",
+      "property": "passive.mark-ongoing",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Nhịp sát thương kéo dài của Dấu ấn",
+          "damage_type": "magic",
+          "delivery": "passive",
+          "formula": {
+            "unit": "damage",
+            "base": 12,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 1
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.025
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-preyta"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26"
+      },
+      "previous": {
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Nhịp sát thương kéo dài của Dấu ấn",
+          "damage_type": "magic",
+          "delivery": "passive",
+          "formula": {
+            "unit": "damage",
+            "base": 16,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 1
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.03
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-preyta"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26"
+      }
+    }
+  ],
+  "review_notes": [
+    "Sửa hình ảnh đòn đánh thường Bolt Baron hiện hiệu ứng Alice. Thông báo này chỉ xác nhận sửa hiển thị; các thành phần sát thương đối chiếu ở nguồn kỹ năng.",
+    "Theo dõi các bài sửa lỗi hiển thị và Caesar tiên phong. Dữ liệu công bố ghi theo ngày, giờ triển khai có thể khác theo khu vực."
+  ]
+}

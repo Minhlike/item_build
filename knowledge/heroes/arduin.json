@@ -1,0 +1,167 @@
+{
+  "id": "arduin",
+  "kind": "heroes",
+  "name": "Arduin",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Đang giao tranh, máu thấp và Hồn huyết sẵn",
+          "detail": "Đòn đánh hoặc chiêu trúng cho hồi, dùng công thức bản vá theo HP cộng thêm thay mô tả cũ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Rìu quét trúng",
+          "detail": "Chậm, gặp tướng thì mở lượt nện gây vật lý và hất.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Kích Hồn giáp",
+          "detail": "Khiên bản thân, có nổ phép gần. Ba đòn sau thêm chuẩn và mỗi đòn trúng giảm 1 giây hồi S3 theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Rìu trúng địch đầu tiên",
+          "detail": "Choáng, có vật lý lúc rìu bay và lúc Arduin lao tới. Khống chế thông thường không chặn chặng lao đã kích."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-arduin"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tránh để lượt đầu S1 chạm tuyến trước rồi nối hất. Cắt đòn sau Hồn giáp để hạn chế vừa chuẩn vừa rút hồi chiêu cuối."
+      }
+    ],
+    "passive.heal": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Nội tại hồi máu của Arduin kích hoạt",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Nội tại hồi máu của Arduin kích hoạt",
+          "detail": "Nguồn ghi theo cấp chiêu; chưa rõ cách ánh xạ cấp cho nội tại.",
+          "formula": {
+            "unit": "hp",
+            "base": 180.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 13.0
+              },
+              {
+                "basis": "caster_bonus_hp",
+                "coefficient": 0.05
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.true": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "ability",
+          "trigger": "Hiệu ứng sát thương chuẩn Chiêu 2",
+          "damage_type": "true",
+          "formula": {
+            "unit": "damage",
+            "base": 150.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30.0
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

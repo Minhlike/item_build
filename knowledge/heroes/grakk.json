@@ -1,0 +1,143 @@
+{
+  "id": "grakk",
+  "kind": "heroes",
+  "name": "Grakk",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-grakk"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Nhận một đợt sát thương lớn hoặc đã chết đến nhịp nổ",
+          "detail": "Hồ sơ mô tả nhánh phản nổ khi vượt 10% HP hiện tại, hồi 2 giây, và nổ trễ 3 giây lúc chết. Bán kính cần đối chiếu.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-grakk"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Địch đứng gần khi Càn quét trúng",
+          "detail": "Làm chậm, vùng sát người có câm lặng 0,5 giây và phần sát thương/chậm mạnh hơn.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-grakk"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Dây xích chạm địch",
+          "detail": "Kéo về trước Grakk và có phép. Nội tại lưu thêm HP khi tham gia hạ, mức hồ sơ 125 tối đa 20 tầng."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-grakk"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Địch ở trước mặt khi Grakk niệm",
+          "detail": "Hút và choáng nhiều nhịp phép khoảng 3 giây, Grakk có khiên nếu trúng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-grakk"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ vật chắn giữa Grakk và chủ lực. Chuẩn bị giải hoặc tách khi kéo hụt, tránh đứng lại quanh vị trí hắn bị hạ."
+      }
+    ],
+    "skill-1.magic": [
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "delivery": "ability",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 150.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-mid"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-17",
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "delivery": "ability",
+          "trigger": "Chiêu 1 trúng địch",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 180.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

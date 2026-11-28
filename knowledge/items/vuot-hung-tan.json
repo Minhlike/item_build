@@ -1,0 +1,87 @@
+{
+  "id": "vuot-hung-tan",
+  "kind": "items",
+  "name": "Vuốt Hung Tàn",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1960.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.3,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.critical": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.2,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.ramp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "attack_speed",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đòn đánh thường trúng.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 2.0
+          },
+          "stacks": 5,
+          "unique_group": "hung-bao"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-vuot-hung-tan"
+        ],
+        "value": "cam"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

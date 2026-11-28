@@ -1,0 +1,82 @@
+{
+  "id": "superman",
+  "kind": "heroes",
+  "name": "Superman",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-superman"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Di chuyển liên tục đến đủ siêu năng",
+          "detail": "Mở phi hành, mất dạng khi chạy dưới 375 theo hồ sơ. Đánh mở khi bay thêm vật lý theo HP tối đa Superman."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-superman"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tung S1 theo dạng",
+          "detail": "Bộ hành thổi lạnh và chậm. Phi hành lao rồi có tia tại đường tấn công, hai phần vật lý.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-superman"
+        ],
+        "value": {
+          "effect": "cleanse",
+          "target": "self",
+          "trigger": "Kích hoạt gỡ khống và tăng tốc",
+          "detail": "Nếu đang bay còn lao xuống tạo vùng vật lý."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-superman"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Kích hoạt khi đang phi hành",
+          "detail": "Đẩy lùi, gây vật lý và tăng gấp đôi nhịp nạp siêu năng. Dạng đi bộ chỉ tăng nhịp nạp."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-superman"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ góc sao cho bị đẩy không tách khỏi đội. Sau S2 mới dùng hiệu ứng giữ chậm hoặc chặn đường chạy, tránh đuổi thẳng."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

@@ -1,0 +1,165 @@
+{
+  "id": "krizzix",
+  "kind": "heroes",
+  "name": "Krizzix",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Rời tầm nhìn địch khoảng 3 giây",
+          "detail": "Đòn kế thêm phép và chậm vùng. Đánh khi chưa bị thấy có thể rút nhịp hồi."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self",
+          "trigger": "Bật ngụy trang riêng và lướt ngang đích",
+          "detail": "Tăng chạy, gây phép và giảm giáp lẫn giáp phép. Gây sát thương từ nguồn khác chấm dứt ngụy trang."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Ở trong trận quanh Krizzix lúc nổ",
+          "detail": "Hai nhịp phép, hút rồi choáng. Trúng tướng cấp khiên cho mình và đồng đội trong tầm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "value": {
+          "effect": "stealth",
+          "target": "self-and-nearby-allies",
+          "trigger": "Đứng gần Krizzix khi dùng ngụy trang đồng bộ",
+          "detail": "Tăng chạy trước, sau 1 giây cùng ngụy trang. Krizzix có tầm nhìn tướng địch gần nhất."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-krizzix"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Chừa khoảng trống để một pha hút không trúng cả đội. Xét phát hiện ngụy trang và giảm song giáp theo thời điểm Krizzix thực sự lướt qua."
+      }
+    ],
+    "skill-2.end-magic": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương kết thúc Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 400.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-3.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 35.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5.0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "passive.bonus-magic": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Nội tại gây sát thương thêm.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 235.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 17.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Các kỹ năng và tương tác còn lại"
+  ],
+  "relations": []
+}

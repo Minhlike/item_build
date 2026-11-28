@@ -1,0 +1,52 @@
+{
+  "id": "do-ii-ti-le-sat-thuong-chi-mang",
+  "kind": "runes",
+  "name": "Đỏ II Tỷ lệ chí mạng/Sát thương chí mạng",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "red"
+      }
+    ],
+    "stat.crit": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.004,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.crit-damage": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.023,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+  ],
+  "relations": []
+}

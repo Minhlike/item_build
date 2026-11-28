@@ -1,0 +1,85 @@
+{
+  "id": "giap-cuong-no",
+  "kind": "items",
+  "name": "Giáp cuồng nộ",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1200.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 225.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.ramp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Chịu sát thương",
+          "activation": "automatic",
+          "detail": "Mỗi tầng tăng 1% tốc chạy và 2% sát thương gây ra.",
+          "timing": {
+            "duration_s": 3.0
+          },
+          "stacks": 5,
+          "unique_group": "dien-cuong"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-cuong-no"
+        ],
+        "value": "do"
+      }
+    ]
+  },
+  "unknown": [
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

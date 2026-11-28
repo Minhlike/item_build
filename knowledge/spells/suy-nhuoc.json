@@ -1,0 +1,67 @@
+{
+  "id": "suy-nhuoc",
+  "kind": "spells",
+  "name": "Suy nhược",
+  "facts": {
+    "active.effect": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self-and-nearby-enemies",
+          "delivery": "spell",
+          "trigger": "Bật phép cạnh địch",
+          "timing": {
+            "cooldown_s": 90.0
+          }
+        }
+      }
+    ],
+    "active.self-mitigation": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Sau khi bấm Suy nhược",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 4.0,
+            "cooldown_s": 90.0
+          }
+        }
+      }
+    ],
+    "active.enemy-output": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "nearby-enemies",
+          "trigger": "Kẻ địch lân cận lúc bấm Suy nhược",
+          "detail": "Giảm sát thương kẻ địch gây ra; lớp khác với miễn thương của người dùng.",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 4.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+  ],
+  "relations": []
+}

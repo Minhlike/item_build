@@ -1,0 +1,166 @@
+{
+  "id": "biron",
+  "kind": "heroes",
+  "name": "Biron",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-biron"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Đánh hoặc tung chiêu chưa cường hóa trúng",
+          "detail": "Nạp tối đa 90. Từ 30, đánh thêm vật lý/hồi và mở chiêu cường hóa, các nhịp đã cường hóa không nạp như bình thường.",
+          "stacks": 90
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-biron"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Vung chùy trúng các đích",
+          "detail": "Gây vật lý và tự hồi, bản cường hóa tăng hai phần. Hồi từ đích không phải tướng giảm một nửa theo hồ sơ."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-biron"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Lao rồi đánh đòn kế",
+          "detail": "Vật lý và chậm. Tiêu nội năng cho đòn cường hóa có hất/choáng và sau đó chậm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-biron"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Đập chùy xuống vùng",
+          "detail": "Có vật lý, chậm và khiên. Bản cường hóa tăng khiên, tạo lưới cướp tốc chạy từng tướng địch."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-biron"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng mở vào Biron đã đủ nội năng giữa lính. Né lượt đòn sau cú lao và giảm hồi lúc hắn còn nhiều mục tiêu S1."
+      }
+    ],
+    "skill-1.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 gây sát thương thường.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 120.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 24.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.empowered-physical": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 gây sát thương ở trạng thái cường hóa.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 180.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.5
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-07-23"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-23",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 5.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

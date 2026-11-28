@@ -1,0 +1,116 @@
+{
+  "id": "mina",
+  "kind": "heroes",
+  "name": "Mina",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Nhận sát thương và kích lưỡi hái",
+          "detail": "Có vật lý quanh Mina theo hồ sơ, bản vá có cách tích theo đòn cần đọc nếu khác.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Vung lưỡi hái trúng cự ly gần",
+          "detail": "Vật lý theo HP tối đa đích trong hồ sơ. Phân biệt nhánh mới có thể cho hồi hoặc đổi loại sát thương.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lưỡi hái quét trúng địch",
+          "detail": "Kéo gần, gây vật lý và làm chậm 50% theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Kích khiếu khích địch gần",
+          "detail": "Buộc đánh Mina, hồ sơ nêu 2 giây và giảm sát thương cô nhận từ người bị khiêu khích."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-mina"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ xạ thủ ngoài bán kính kéo-khiêu khích và đừng nuôi lưỡi hái bằng giao tranh kéo dài nếu Mina còn nhiều mục tiêu."
+      }
+    ],
+    "skill-1.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản Chiêu 1.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 175.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 35.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.6
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.09
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

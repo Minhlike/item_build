@@ -1,0 +1,92 @@
+{
+  "id": "hercule-thinh-no",
+  "kind": "items",
+  "name": "Hercule thịnh nộ",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2000.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 80.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 240.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "passive.shield": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "HP xuống dưới 40%.",
+          "activation": "automatic",
+          "detail": "Khoảng 880–2000, chưa rõ mốc tăng. Tách điều kiện hút máu đánh gần.",
+          "timing": {
+            "duration_s": 8.0,
+            "internal_cooldown_s": 60.0
+          },
+          "unique_group": "hercule-cuong-no"
+        }
+      }
+    ],
+    "passive.melee-lifesteal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "lifesteal",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "HP dưới 40% và Cuồng Nộ đang có hiệu lực với tướng cận chiến.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "unique_group": "hercule-cuong-no"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-hercule-thinh-no"
+        ],
+        "value": "cam"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

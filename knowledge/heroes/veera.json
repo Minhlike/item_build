@@ -1,0 +1,83 @@
+{
+  "id": "veera",
+  "kind": "heroes",
+  "name": "Veera",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-veera"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Rời giao tranh",
+          "detail": "Bật tăng tốc chạy theo hồ sơ hiện có."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-veera"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Dơi bay chạm địch",
+          "detail": "Vệt phép tầm xa, lượng và hồi chiêu chưa rõ.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-veera"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Trúng Hôn gió",
+          "detail": "Gây phép và choáng một mục tiêu."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-veera"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Tiểu quỷ tiếp cận các mục tiêu gần",
+          "detail": "Tối đa năm, các nhịp sau lên cùng một đích còn 50% mỗi con.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-veera"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không vào góc khuất khi Veera còn choáng. Kháng phép giảm đợt dồn, đồng minh hoặc đơn vị khác trong tầm có thể thay đổi phân bổ tiểu quỷ."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

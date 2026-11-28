@@ -1,0 +1,140 @@
+{
+  "id": "baldum",
+  "kind": "heroes",
+  "name": "Baldum",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-baldum"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đòn đánh thường chạm địch",
+          "detail": "Có phép cộng thêm, kèm giáp bản thân từ nội tại. Giá trị giáp theo hồ sơ là 18%.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-baldum"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Lao chạm tướng đầu tiên",
+          "detail": "Vật lý và hất đích ra sau. Hồ sơ nêu phần vật lý theo 8% HP tối đa đích và chậm 1 giây."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-baldum"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đứng cạnh Baldum trong Địa chấn",
+          "detail": "Nhiều nhịp vật lý/chậm, bị trúng làm giảm sát thương vật lý gây ngược lại. Trúng tướng rút hồi.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-baldum"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Vào vùng đất trước khi đóng",
+          "detail": "Có báo chậm rồi bị giam và không thể chọn khoảng 3 giây, hết giam nhận vật lý/chậm."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-baldum"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Lệch khỏi tuyến lao để đỡ cùng người bị hất. Khi đồng minh đang bị giam, giữ tài nguyên cho cửa ra thay vì ném vào vùng không chọn được."
+      }
+    ],
+    "skill-3.recast": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "hard_cc",
+          "target": "imprisoned-enemies",
+          "trigger": "Kích hoạt Chiêu 3 lần hai khi còn giam giữ.",
+          "detail": "Baldum nện xuống tâm, kết thúc giam sớm và hất tung kèm sát thương."
+        }
+      }
+    ],
+    "skill-1.landing-knockback": [
+      {
+        "evidence": [
+          "patch-2026-06-04"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-06-04",
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Tướng địch bị hất qua vai rơi xuống đất.",
+          "detail": "Nạn nhân tiếp tục bị bật lùi một đoạn ngắn."
+        }
+      }
+    ],
+    "skill-2.mitigation": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Dùng Chiêu 2",
+          "detail": "Giá trị mỗi tầng. Khi mở chiêu nhận hai tầng; trần năm tầng.",
+          "formula": {
+            "unit": "ratio",
+            "base": 0.04,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 0.008
+              }
+            ]
+          },
+          "timing": {},
+          "stacks": 5
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Các kỹ năng và tương tác còn lại"
+  ],
+  "relations": []
+}

@@ -1,0 +1,81 @@
+{
+  "id": "huyet-truong",
+  "kind": "items",
+  "name": "Huyết trượng",
+  "facts": {
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-huyet-truong"
+        ],
+        "value": "hong"
+      }
+    ],
+    "shop.recipe": [
+      {
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": [
+          "items/sach-phep",
+          "items/sach-phep"
+        ]
+      }
+    ],
+    "stat.price": [
+      {
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "amount": 800.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "amount": 80.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.spell-lifesteal": [
+      {
+        "evidence": [
+          "patch-2026-01-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-01-21",
+        "value": {
+          "amount": 0.12,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Quy tắc mua",
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

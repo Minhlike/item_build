@@ -1,0 +1,111 @@
+{
+  "id": "ilumia",
+  "kind": "heroes",
+  "name": "Ilumia",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ilumia"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Tung đủ hai chiêu bất kỳ",
+          "detail": "Làm mới S1 và mở quả cầu cường hóa trong 3 giây theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ilumia"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Quả cầu chạm hoặc hết tầm",
+          "detail": "Nổ phép. Cường hóa gây thêm dọc đường và ở điểm cuối, hất rồi choáng/chậm.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ilumia"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Địch đứng cạnh Ilumia khi Trục xuất tung",
+          "detail": "Đẩy và gây phép. Khi có đích trúng, địch chậm và Ilumia tăng chạy."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-ilumia"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Pháp trận xuất hiện dưới các tướng địch",
+          "detail": "Lộ diện ngắn, nổ phép và choáng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-ilumia"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đếm hai lượt tung để dự báo quả cầu kế. Sau khi có dấu toàn bản đồ, rời điểm đứng hiện tại trước nổ."
+      }
+    ],
+    "skill-1.base-magic": [
+      {
+        "evidence": [
+          "patch-late-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-27",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 gây sát thương.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 320.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 64.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

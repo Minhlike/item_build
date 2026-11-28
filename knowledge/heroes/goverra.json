@@ -1,0 +1,230 @@
+{
+  "id": "goverra",
+  "kind": "heroes",
+  "name": "Goverra",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-goverra"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Goverra hạ một đơn vị",
+          "detail": "Thiết vệ tự đánh, hết hạn sẽ hợp với thiết vệ đồng cấp hoặc nổ phép. Giới hạn thiết vệ cấp 1/2/3 là 4/2/1, vượt giới hạn đẩy lượt cũ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-goverra"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Máy bay trúng dọc tuyến chọn",
+          "detail": "Có nhịp thứ ba sau hai đợt. Tái tung tách máy bay, mục tiêu trúng cả hai luồng bị làm chậm.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-goverra"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Thả lính máy vào vùng chỉ định",
+          "detail": "Sau 1 giây bắt đầu tự đánh. Tích tối đa ba lượt, nạp 15–12 giây chịu CDR.",
+          "damage_type": "magic",
+          "timing": {
+            "cooldown_s": 3.0
+          },
+          "charges": 3
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-goverra"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Tín hiệu trúng mục tiêu",
+          "detail": "Choáng tướng, đặt dấu gây phép và chậm mỗi 0,5 giây rồi nổ. Thiết vệ tăng tốc và đổ vào đích. Tướng có dấu chết sinh ba thiết vệ. Có thể đặt lên trụ mà không choáng."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-goverra"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng tranh lâu cạnh cụm thiết vệ đã dựng. Rút ngay mục tiêu trúng dấu để tránh duy trì chuỗi triệu hồi."
+      }
+    ],
+    "skill-1.flight-magic": [
+      {
+        "evidence": [
+          "vn-july-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-path",
+          "trigger": "Máy bay chạm địch trong hai lượt đầu.",
+          "detail": "Nhịp ba gấp đôi phần này. Trúng cả hai máy bay ở lượt tách thì chậm 50% trong 1,5 giây.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 75.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 15.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.12
+              }
+            ]
+          },
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "skill-2.deploy-magic": [
+      {
+        "evidence": [
+          "vn-july-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Thả thiết vệ tại điểm có địch.",
+          "detail": "Thiết vệ hoạt động sau 1 giây, sạc 15–12 giây chịu CDR. Hệ số này lấy từ bản ra mắt.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.2
+              }
+            ]
+          },
+          "timing": {
+            "cooldown_s": 3.0
+          },
+          "charges": 3
+        }
+      }
+    ],
+    "skill-3.mark-tick": [
+      {
+        "evidence": [
+          "vn-july-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Tín hiệu còn trên đích vào nhịp sát thương.",
+          "detail": "Choáng mở 0,75 giây lên tướng và chậm 30% theo nhịp. Lần nổ sau cùng quy từ tổng sát thương trong dấu, gốc 25% và tăng 12,5 điểm phần trăm mỗi cấp chiêu.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.05
+              }
+            ]
+          },
+          "timing": {
+            "duration_s": 3.0,
+            "interval_s": 0.5,
+            "cooldown_s": {
+              "unit": "second",
+              "base": 30.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -3.0
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "passive.sentry-explosion": [
+      {
+        "evidence": [
+          "vn-aug-2025-ability-reference",
+          "vn-july-2025-ability-reference"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-near-sentry",
+          "trigger": "Thiết vệ hết hạn mà không tìm được thiết vệ cùng cấp để hợp.",
+          "detail": "Công thức nổ từ bản 28/08/2025. Tách khỏi sát thương S2 khi thả thiết vệ.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 200.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 15.0
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.3
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

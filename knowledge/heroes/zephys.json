@@ -1,0 +1,83 @@
+{
+  "id": "zephys",
+  "kind": "heroes",
+  "name": "Zephys",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zephys"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Mỗi 3 điểm phần trăm HP đang mất",
+          "detail": "Tăng 1 điểm phần trăm miễn thương theo hồ sơ, thứ tự áp với các nguồn khác cần đối chiếu."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zephys"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lao thẳng trúng địch",
+          "detail": "Đòn đánh kế thêm vật lý và chậm.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zephys"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đứng trong hướng bốn nhịp đâm",
+          "detail": "Các hit vật lý trúng giúp Zephys hồi.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-zephys"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Cú đáp trúng vùng",
+          "detail": "Hất và gây vật lý, đặt Rền vang làm các đòn đánh hoặc chiêu của Zephys có thêm phép."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-zephys"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Bước lệch khỏi hướng đâm để cắt hồi. Giữ nguồn dồn lúc đã mất máu thay vì giả định sát thương nhận luôn tỷ lệ cố định."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

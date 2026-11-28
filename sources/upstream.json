@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/MLuc24/lien-quan-data.git",
+  "sha": "a210fe47690de7cefd18f76b61694724e02fdb5e",
+  "canonical_ids": {
+    "items": {
+      "phi-tieu": "phieu-tieu"
+    },
+    "runes": {
+      "do-i-cong-xuyen-giap-phep": "do-i-cong-phep-xuyen-thu-phep",
+      "do-ii-ti-le-chi-mang-sat-thuong-chi-mang": "do-ii-ti-le-sat-thuong-chi-mang",
+      "do-iii-ti-le-chi-mang-sat-thuong-chi-mang": "do-iii-ti-le-sat-thuong-chi-mang",
+      "do-iii-toc-danh-ti-le-chi-mang": "do-iii-toc-danh-chi-mang",
+      "tim-i-cong-hut-mau-phep": "tim-i-cong-phep-hut-mau-phep",
+      "tim-i-ty-le-chi-mang-mau": "tim-i-ti-le-chi-mang-mau",
+      "tim-ii-cong-hut-mau-phep": "tim-ii-cong-phep-hut-mau-phep",
+      "tim-ii-toc-danh-chay": "tim-ii-toc-danh-toc-chay",
+      "tim-ii-ty-le-chi-mang-mau": "tim-ii-ti-le-chi-mang-mau",
+      "xanh-ii-mau-hoi-chieu": "xanh-ii-mau-toi-da-giam-hoi-chieu"
+    }
+  }
+}

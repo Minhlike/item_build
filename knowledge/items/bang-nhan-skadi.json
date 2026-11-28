@@ -1,0 +1,80 @@
+{
+  "id": "bang-nhan-skadi",
+  "kind": "items",
+  "name": "Băng nhẫn Skadi",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2100.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 140.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 600.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.cooldown-reduction": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.dual-defense": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang Giáp băng.",
+          "activation": "automatic",
+          "detail": "Cộng giáp và giáp phép theo 0,5 AP, giới hạn 230 điểm. Chưa rõ cách làm tròn.",
+          "unique_group": "giap-bang"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-bang-nhan-skadi"
+        ],
+        "value": "lam"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

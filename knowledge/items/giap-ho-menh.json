@@ -1,0 +1,83 @@
+{
+  "id": "giap-ho-menh",
+  "kind": "items",
+  "name": "Giáp hộ mệnh",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2400.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 120.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "passive.resurrection": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "revive",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Bị hạ và Phục sinh sẵn sàng",
+          "activation": "automatic",
+          "detail": "Hồi sinh tại chỗ sau 2 giây với 2100–3500 HP, tối đa 2 lần mỗi trận.",
+          "timing": {
+            "internal_cooldown_s": 150.0
+          },
+          "charges": 2,
+          "unique_group": "phuc-sinh"
+        }
+      }
+    ],
+    "passive.output": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đang sở hữu trang bị",
+          "activation": "automatic",
+          "detail": "Tăng sát thương gây ra.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "unique_group": "chien-khi"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-ho-menh"
+        ],
+        "value": "cam"
+      }
+    ]
+  },
+  "unknown": [
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

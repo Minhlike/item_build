@@ -1,0 +1,52 @@
+{
+  "id": "tim-i-cong-vat-ly-toc-chay",
+  "kind": "runes",
+  "name": "Tím I Công vật lý/Tốc chạy",
+  "facts": {
+    "stat.ad": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.5,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.003,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 1.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "purple"
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng trong bảng ngọc hiện hành"
+  ],
+  "relations": []
+}

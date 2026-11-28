@@ -1,0 +1,62 @@
+{
+  "id": "mat-na-ma-quai",
+  "kind": "items",
+  "name": "Mặt nạ ma quái",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 960.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 100.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "passive.penetration": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "magic_pen",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang trang bị.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 75.0,
+            "unit": "magic_defense"
+          },
+          "unique_group": "diet-than"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-mat-na-ma-quai"
+        ],
+        "value": "xanh-ngoc"
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

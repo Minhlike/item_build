@@ -1,0 +1,42 @@
+{
+  "id": "do-ii-cong-phep-xuyen-giap-phep",
+  "kind": "runes",
+  "name": "Đỏ II Công phép/Xuyên giáp phép",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "red"
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.6,
+          "unit": "ability_power"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng ở đấu hạng VN.",
+    "Danh mục ghi 1,5% xuyên phép trong khi các phiên bản cùng loại dùng điểm; cần kiểm đơn vị client."
+  ],
+  "relations": []
+}

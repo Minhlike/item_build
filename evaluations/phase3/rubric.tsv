@@ -1,0 +1,57 @@
+id	dimension	must	must_also	reference
+q01	mechanics	120 HP, lấy 25% của 480 sát thương đã gây.	Chiêu 3 phải gây sát thương thành công, phép tính chỉ cho lượng hồi từ chiêu.	heroes/thane#skill-3.damage-heal
+q02	mechanics	Điểm rơi Chiêu 2 ở vòng trong của Chiêu 1.	Pháo tử quang là Chiêu 4, Chiêu 3 là Lô cốt.	heroes/dirak#skill-2.inner-fall; heroes/dirak#skill-3.bastion
+q03	mechanics	Phần phép chắc chắn chí mạng khi trúng mục tiêu đầu và trong ba đòn cường hóa.	Hồi tức thời mỗi lần gây sát thương lên mục tiêu đang có dấu Chiêu 3.	heroes/butterfly#skill-2.first-hit; heroes/butterfly#skill-2.empowered-hit; heroes/butterfly#skill-3.mark-heal
+q04	mechanics	Có tầm nhìn dọc đường bay, khi trúng lộ mục tiêu và chính Yorn.	Thời lượng chưa có trong bằng chứng này.	heroes/yorn#skill-2.path-vision; heroes/yorn#skill-2.hit-reveal
+q05	mechanics	Cơ bản và tối đa là hai mốc của một thành phần, không cộng.	Phần thêm Chiêu 2 Hắc Ám dùng AD cộng thêm.	heroes/edras#light.skill-1.base; heroes/edras#light.skill-1.maximum; heroes/edras#dark.skill-2.bonus
+q06	mechanics	Tâm ở trong Ma trận trong pha đầu, nổ ngay sau khi kéo.	Ngoài điều kiện ấy dùng thời điểm thông thường của lập phương, nổ sau 1 giây.	heroes/darcy#skill-3.cube-trigger; heroes/darcy#skill-2.cube-blast
+q07	mechanics	100 HP, 4% của máu cộng thêm.	Đây là phần bổ sung cho bản thân, chưa có tổng hồi.	heroes/sephera#passive.self-bonus-hp-heal
+q08	context	Tách bước Raz cấu và giảm giáp phép, Natalya nối sát thương phép vào cùng mục tiêu.	Cần kiểm tra trúng, hiệu lực giảm giáp, góc của Natalya, ai là người thực sự phơi nhiễm.	raz-natalya-poke-to-burst
+q09	context	D’Arcy gom mục tiêu còn dấu, Preyta canh hất tung có độ trễ.	Thiếu dấu hoặc lệch thời điểm/vị trí chuỗi gãy. Không gán hỗ trợ từ đồng minh.	preyta-darcy-chain-control
+q10	context	Cấu rỉa đã mở cơ hội cho Butterfly kết liễu nếu tìm được đường áp sát.	Lùi theo góc sáng hoặc giữ cách chặn áp sát. Không tự gán người bảo kê/giá trị vàng.	raz-butterfly-cleanup
+q11	context	Kiểm tra miễn tử thực sự kết thúc và khả năng Dolia đã/sắp làm mới chiêu.	Mất dấu Dolia không xác nhận cửa sổ thứ hai đã hết. Giữ tài nguyên khi chưa rõ.	dolia-volkath-second-window
+q12	context	Chỉ ra Hayate có thành phần chuẩn theo dấu và Allain có thành phần chuẩn riêng, Ilumia có phép.	Tỷ trọng phụ thuộc đòn thực sự trúng, trạng thái và khoảng tiếp xúc.	heroes/hayate#passive.marked-true; heroes/allain#passive.fourth-true; heroes/ilumia#skill-1.base-magic
+q13	context	Kiểm tra vị trí/path vào của Quillen và mục tiêu thấp máu cần bảo vệ.	Florentino đang lộ không chứng minh Quillen cùng đánh tuyến trước. Điều kiện đổi góc phải quan sát được.	florentino-quillen-uneven-focus
+q14	quantitative	A còn 2296, B còn 2440.	Tách phần chuẩn 304/352 và chỉ kết luận B còn nhiều HP hơn trong cửa sổ đã cho.	Dữ liệu giả định trong câu hỏi
+q15	quantitative	Ban đầu A 4075, B 3975.	Sau xuyên giả định A 3700, B 3900. Thứ hạng đổi, giữ nguyên phạm vi giả định.	Dữ liệu giả định trong câu hỏi
+q16	quantitative	6,3% × 8000 = 504 chuẩn mỗi nhịp.	Cần số lần trúng và các thành phần còn lại để tính combo.	heroes/florentino#skill-2.target-max-hp-true
+q17	quantitative	Sẵn giây 2 thì hồi được ở giây 3, còn 400 HP.	Sẵn giây 5 thì tại giây 3 không hồi, về 0 HP ở giây 4.	Dữ liệu giả định trong câu hỏi
+q18	quantitative	Cửa sổ sớm cho 360 HP.	Cửa sổ muộn cho 600 HP vì hồi trước lúc bị giảm.	Dữ liệu giả định trong câu hỏi
+q19	quantitative	25% cho mốc sẵn giây 8,5, trễ.	45% chặn tại 40%, sẵn giây 7, kịp. Trần thuộc kịch bản.	Dữ liệu giả định trong câu hỏi
+q20	quantitative	A còn 1950, B mất 500 chuẩn và phần vật lý còn chưa biết.	Chưa thể xếp hạng. Cần hệ số B hoặc xác định kết quả theo từng hệ số.	Dữ liệu giả định trong câu hỏi
+q21	legality	Loại Giáp thống khổ vì đích danh và Vô ảnh tiễn vì chủ động ngoài nhóm hỗ trợ.	Ma nhãn được xem xét theo nhóm hỗ trợ, vẫn cần kiểm cơ chế, khả dụng và đường mua.	packs/preferences/thane-support.json; items/vo-anh-tien; items/dai-dia-ma-nhan
+q22	legality	Thánh châu mô tả CDR chiêu cuối, 40% trong phạm vi mô tả.	Ứng viên không ngày. Xác minh quy tắc chọn và trần của cơ chế cần tính trước khi áp.	enchantments/thap-quang-minh#tier-1.thanh-chau
+q23	legality	Giáp/giáp phép và công phép/CDR phục vụ hai ưu tiên khác nhau; có thể nêu số ứng viên.	Học viện thiếu hiệu lực và luật số lượng hiện hành nên chưa chốt bảng.	runes/xanh-iii-giap-giap-phep; runes/xanh-iii-cong-phep-giam-hoi-chieu
+q24	legality	Thông số tác dụng Dịch chuyển không xác nhận quyền chọn trong hàng chờ.	Kiểm tra phụ trợ hợp lệ cho vai trò, tương tác với đồ rừng và nhu cầu tranh mục tiêu.	spells/dich-chuyen#active.teleport; packs/roles/jungle.json
+q25	legality	Kiểm tra cơ chế dùng chung hồi chiêu khi sở hữu nhiều trang bị chủ động.	Không cam kết hai lần bấm độc lập liền nhau chỉ từ số hồi riêng.	battlefield/ranked-vn#items.active-shared-cooldown
+q26	legality	Kiểm tra quy tắc mua và giới hạn nội tại duy nhất riêng, không cộng hai lần một cách mặc định.	Giá ứng viên chưa đủ cho lộ trình thực tế. Cần giá, công thức và điều kiện hợp lệ hiện hành.	sources/relations.json; prompts/cloud_bootstrap.md
+q27	legality	Chủ động. Cận chiến 1 giây, đánh xa 2,5 giây.	Đánh thường hoặc tung chiêu kết thúc sớm.	items/vo-anh-tien#active.stealth-melee; items/vo-anh-tien#active.stealth-ranged
+q28	purchase-order	Sau A còn 0, giữ A. Sau B còn 50, giữ A và B.	C trả 250 mới, còn 0, giữ C và tiêu A+B.	Dữ liệu giả định trong câu hỏi
+q29	purchase-order	X thiếu 100 ở mốc đầu.	Y chưa đến theo lộ trình đó, cần một nhánh mua lại nếu muốn bỏ hoặc dời X.	Dữ liệu giả định trong câu hỏi
+q30	purchase-order	Chưa biết đủ vàng nâng cấp hay không.	Giá thiếu ngày và chưa biết thành phần được tính thế nào, cần giá/ghép đã xác minh hoặc báo giá giả định rõ.	Dữ kiện trong câu hỏi
+q31	purchase-order	Cần vàng, giá thực trả, thành phần và hiệu ứng/HP đang có ở mỗi slot.	So lá chắn cần kích và cửa sổ hồi phục trong trạng thái chưa đủ món. Giữ giá chưa xác minh rõ trạng thái.	items/khien-thanh-quang; items/phu-chu-truong-sinh; packs/preferences/thane-support.json
+q32	purchase-order	Mốc 1700 có thể tác động cửa sổ 2100, mốc 2600 chưa có món.	Phải gây được sát thương đúng lúc và hiệu lực bao phủ lượt hồi; hai nhánh vẫn có chi phí cơ hội.	Dữ liệu giả định trong câu hỏi
+q33	purchase-order	Trả 1100.	Tiêu đúng một A đang giữ, sau mua còn 0 A.	Dữ liệu giả định trong câu hỏi
+q34	purchase-order	Phương án A cần slot thứ bảy nên không đủ chỗ.	Phương án B tiêu một và thay bằng một, còn sáu nếu các điều kiện khác thỏa.	Dữ liệu giả định trong câu hỏi
+q35	tactics	Mở bằng Mid đầu trận, đi sông theo điều kiện an toàn đã cho.	Có nhịp giữa/cuối, đề cập giữ chủ lực hoặc mục tiêu theo tình hình, không quá 50 từ.	thane-mid-start; prompts/fast_draft.md
+q36	tactics	Chọn đường vòng rừng an toàn và giữ tài nguyên vòng đầu.	Nhận diện rủi ro bị kẹp khi thiếu quyền Mid, chỉ đổi khi có quan sát đường/lối vào.	jungle-avoid-blind-invade
+q37	tactics	Giữ và dọn lính, chỉ ra sông khi có đường về hoặc thông tin tướng mất dấu.	Nêu rủi ro mất lính và bị bắt ở sông khuất.	mid-clear-before-river
+q38	tactics	Thu lính an toàn trước, bảo toàn vàng.	Chỉ đổi mục tiêu khi đường sông có thông tin và điều kiện theo kịp.	dragon-wave-before-objective
+q39	tactics	Ép trụ đường biên khi chưa tranh được boss.	Lùi khi các mối đe dọa mất dấu hoặc đội cần phòng thủ, thừa nhận nguy cơ đội thiếu người.	slayer-opposite-turret
+q40	tactics	Bảo kê khi chủ lực thấp máu, sát thủ mất dấu và thiếu người theo.	Chỉ mở xa khi đã thấy mối đe dọa/đường rút và đồng minh thực sự trong tầm nối.	late-react-to-dive; open-after-sight
+q41	uncertainty	Lấy VERSION và pack cùng SHA, lấy hệ số Preyta từ 26/11.	Phân biệt sát thương nổ và theo thời gian, ghi chú 29/09 dùng cho cơ chế chưa bị thay thế.	heroes/preyta#passive.mark-burst; heroes/preyta#passive.mark-ongoing
+q42	uncertainty	Phân giải rõ Flowborn dạng xạ thủ hay pháp sư.	Giữ công thức và dữ liệu build theo đúng ID biến thể.	packs/INDEX.json
+q43	uncertainty	Mốc là cấp 1 hay offset khác chưa rõ nên chưa có hai giá trị chắc.	Dùng cùng mốc đã xác minh hoặc đưa kịch bản với mốc giả định ghi rõ.	src/item_build/models.py
+q44	uncertainty	Biết biên phần gốc 250–500 và tỷ lệ 4%.	HP tham chiếu và cách chọn phần gốc chưa rõ. Có thể nêu 240/340 là hai giả định tách biệt, chưa ra giá trị thực.	items/khien-thanh-quang#passive.shield-melee
+q45	uncertainty	Dùng ⚪ khi chưa xác minh, vẫn giữ thứ tự món nếu build hợp lệ.	Màu cần bằng chứng icon hiện hành, nhóm đồ không phải bằng chứng màu.	prompts/fast_draft.md
+q46	uncertainty	Giữ cả hai ở đúng lớp nguồn và máy chủ, không áp chắc vào rank VN.	Cần mốc hiệu lực và xác minh VN cho cùng cơ chế, công thức và kiểu kích hoạt.	prompts/cloud_bootstrap.md
+q47	uncertainty	Công thức chỉ cho phần cất cánh, sát thương phép.	Cần phần đòn trên không, số lần trúng, mức giảm khi trúng lặp và các điều kiện liên quan nếu có.	heroes/zata#skill-3.takeoff-magic
+q48	preference	Loại Giáp thống khổ ngay theo cấm đích danh.	Chỉ số cao hay quyết định không bấm không gỡ được ràng buộc.	packs/preferences/thane-support.json
+q49	preference	Đồ phòng thủ chưa rõ kích hoạt chờ xác minh; chủ động hỗ trợ có thể đưa vào xem xét.	Khả năng xem xét chưa xác nhận giá, điều kiện mua và tác dụng.	packs/preferences/thane-support.json; src/item_build/catalog.py
+q50	preference	Hồ sơ gắn đúng Thane/hỗ trợ, nên mặc định không tự áp cho Mid.	Có thể áp sở thích do người dùng xác nhận trực tiếp, không tự bê chiến thuật hỗ trợ sang Mid.	packs/preferences/thane-support.json
+q51	preference	Ma nhãn thuộc hỗ trợ nên vượt lọc thao tác, cần bao phủ lối vòng đúng thời điểm.	Giữ tương tác phát hiện là điều kiện/ứng viên khi chưa xác minh; cần có phương án giữ góc và chủ lực.	items/dai-dia-ma-nhan; heroes/quillen; packs/preferences/thane-support.json
+q52	preference	Loại Vô ảnh tiễn vì kích hoạt tay và áp yêu cầu trực tiếp của người chơi.	Ứng viên không rõ thao tác cần xác minh trước khi được chọn.	items/vo-anh-tien#active.stealth-ranged
+q53	preference	So sống sót tại mốc vàng và cửa sổ giao tranh người chơi đã nêu.	Tỷ lệ thắng được nhắc thiếu điều kiện và không tự thay đổi ưu tiên cá nhân.	prompts/reasoning_protocol.md
+q54	preference	Lọc trước các mục cấm đích danh, kích hoạt theo nhóm và hồi sinh theo yêu cầu mới.	Xác minh trạng thái hồi sinh trước khi duyệt ứng viên chưa rõ.	packs/preferences/thane-support.json; prompts/reasoning_protocol.md
+q55	uncertainty	Phần hồi cơ bản trong patch và khoảng nhịp/thời lượng ứng viên có mức chứng cứ khác nhau.	Cần số nhịp hiệu dụng, thời gian duy trì hoặc bị ngắt, và mốc cấp trước khi chốt tổng.	heroes/quillen#skill-3.heal; heroes/quillen#skill-3.stealth
+q56	legality	Cứu viện là Rừng nguyên sinh cấp 2, nhịp 15 giây, hồi cả bản thân và đồng minh gần.	Cần riêng luật lắp nhánh chính/phụ và khả dụng, một nút không chứng minh toàn bộ.	enchantments/rung-nguyen-sinh#tier-2.cuu-vien

@@ -1,0 +1,86 @@
+{
+  "id": "truong-bang",
+  "kind": "items",
+  "name": "Trượng băng",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 2020.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 140.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 850.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.slow": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Chiêu gây sát thương.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 2.0
+          },
+          "unique_group": "gia-bang"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-truong-bang"
+        ],
+        "value": "lam"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

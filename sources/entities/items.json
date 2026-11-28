@@ -1,0 +1,7681 @@
+[
+  {
+    "kind": "items",
+    "id": "ao-choang-than-ra",
+    "name": "Áo choàng thần Ra",
+    "aliases": [
+      "Áo lửa",
+      "Áo Ra"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2060,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1000,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 225,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.regen": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "hp_per_5_seconds"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.burn": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "nearby-enemies",
+            "trigger": "Kẻ địch ở sát người mang áo khi tới nhịp Hỏa diệm",
+            "damage_type": "magic",
+            "delivery": "item",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.02
+                }
+              ]
+            },
+            "timing": {
+              "interval_s": 1
+            },
+            "unique_group": "hoa-diem",
+            "exceptions": [
+              "Tăng 50% sát thương lên lính hoặc quái theo danh mục."
+            ],
+            "activation": "automatic"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.anti-heal": [
+        {
+          "value": {
+            "effect": "heal_reduction",
+            "target": "burned-target",
+            "trigger": "Hỏa diệm gây sát thương lên mục tiêu",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.4,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 3
+            },
+            "unique_group": "troc-na",
+            "activation": "automatic"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-ao-choang-than-ra"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ],
+    "shop_group": "defense"
+  },
+  {
+    "kind": "items",
+    "id": "khien-that-truyen",
+    "name": "Khiên thất truyền",
+    "aliases": [
+      "KTT"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2100,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 275,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.slow-attack": [
+        {
+          "value": {
+            "effect": "attack_speed",
+            "target": "attacker",
+            "trigger": "Người mang khiên chịu sát thương từ đối thủ",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.3,
+              "unit": "ratio"
+            },
+            "detail": "Giảm tốc đánh, kèm giảm 15% tốc chạy; danh mục không nêu thời lượng.",
+            "unique_group": "linh-gac",
+            "activation": "automatic"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-khien-that-truyen"
+          ]
+        }
+      ],
+      "passive.slow-movement": [
+        {
+          "value": {
+            "effect": "soft_cc",
+            "target": "attacker",
+            "trigger": "Người mang nhận sát thương.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.15,
+              "unit": "ratio"
+            },
+            "unique_group": "linh-gac"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ],
+    "shop_group": "defense"
+  },
+  {
+    "kind": "items",
+    "id": "huan-chuong-troy",
+    "name": "Huân chương Troy",
+    "aliases": [
+      "Troy"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2320,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1000,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 200,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.magic-shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "Rời giao tranh",
+            "delivery": "item",
+            "detail": "Hấp thu 460–1300 sát thương phép theo danh mục. Có nội tại riêng cho giáp phép theo cấp.",
+            "unique_group": "ho-than",
+            "activation": "automatic"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-huan-chuong-troy"
+          ]
+        }
+      ],
+      "passive.magic-defense-growth": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Tăng theo cấp người mang.",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Nội lực thêm 0–112 giáp phép theo danh mục. Mốc tăng chưa rõ.",
+            "unique_group": "noi-luc"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ],
+    "shop_group": "defense"
+  },
+  {
+    "kind": "items",
+    "id": "giay-kien-cuong",
+    "name": "Giày kiên cường",
+    "aliases": [
+      "GKC"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 700,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 90,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move-speed": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "move_speed"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.tenacity": [
+        {
+          "value": {
+            "effect": "tenacity",
+            "target": "self",
+            "trigger": "Khi sở hữu giày theo danh mục",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.35,
+              "unit": "ratio"
+            },
+            "detail": "Cần kiểm tra ngoại lệ theo loại khống chế.",
+            "activation": "automatic"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-giay-kien-cuong"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ],
+    "shop_group": "boots"
+  },
+  {
+    "kind": "items",
+    "id": "dai-dia-ma-nhan",
+    "name": "Đại địa ma nhãn",
+    "aliases": [
+      "Ma nhãn",
+      "Ma nhan"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.reveal": [
+        {
+          "value": {
+            "effect": "reveal",
+            "target": "nearby-area",
+            "trigger": "Bật Ma nhãn",
+            "delivery": "item",
+            "timing": {
+              "duration_s": 4,
+              "cooldown_s": 45
+            },
+            "detail": "Tạo tầm nhìn chuẩn quanh người mang. Phạm vi cụ thể và tương tác với phiên bản tàng hình hiện tại còn cần thử.",
+            "activation": "manual"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.pulse-damage": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "nearby-enemy-heroes",
+            "trigger": "Bấm Ma nhãn",
+            "delivery": "item",
+            "activation": "manual",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "target_current_hp",
+                  "coefficient": 0.08
+                }
+              ]
+            },
+            "detail": "Hai nhịp trong hai giây; mỗi nhịp tính theo máu hiện tại tại thời điểm đó. Có làm chậm 50%.",
+            "timing": {
+              "duration_s": 2,
+              "cooldown_s": 45
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-dai-dia-ma-nhan"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN"
+    ],
+    "shop_group": "support"
+  },
+  {
+    "kind": "items",
+    "id": "khien-thanh-quang",
+    "name": "Khiên Thánh Quang",
+    "aliases": [],
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-khien-thanh-quang"
+          ]
+        }
+      ],
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2040,
+            "unit": "gold"
+          },
+          "evidence": [
+            "tierlq-khien-thanh-quang"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN",
+      "Giá chưa đối chiếu trong client VN."
+    ],
+    "shop_group": "defense"
+  },
+  {
+    "kind": "items",
+    "id": "vo-anh-tien",
+    "name": "Vô ảnh tiễn",
+    "aliases": [],
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-vo-anh-tien"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN",
+      "Giá vàng hiện hành"
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "giap-thong-kho",
+    "name": "Giáp thống khổ",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1940,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-reflect-conflict"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-reflect-conflict"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-giap-thong-kho"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép hiện hành",
+      "Đối chiếu số liệu trong cửa hàng phiên bản VN",
+      "Giá vàng hiện hành"
+    ],
+    "shop_group": "defense"
+  },
+  {
+    "id": "phu-chu-truong-sinh",
+    "name": "Phù chú trường sinh",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [
+      "Trường sinh",
+      "PCTS"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2190,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1500,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 150,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 100,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.in-combat-regen": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Đến nhịp hồi của Trường Sinh, đang trong cửa sổ 3 giây chịu đòn của tướng địch hoặc trụ",
+            "delivery": "item",
+            "activation": "automatic",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.01
+                }
+              ]
+            },
+            "unique_group": "truong-sinh",
+            "timing": {
+              "interval_s": 2
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.out-of-combat-regen": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Đến nhịp hồi và đã qua ít nhất 3 giây không bị tướng địch hoặc trụ tấn công",
+            "delivery": "item",
+            "activation": "automatic",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.04
+                }
+              ]
+            },
+            "unique_group": "truong-sinh",
+            "detail": "Thay nhịp hồi cơ bản; hai mức không cộng lại.",
+            "timing": {
+              "interval_s": 2
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-phu-chu-truong-sinh"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "nham-thuan",
+    "name": "Nham thuẫn",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1980,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 240,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "Tự bấm Tích tụ, kể cả lúc bị khống chế theo danh mục",
+            "delivery": "item",
+            "activation": "manual",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.3
+                },
+                {
+                  "basis": "caster_missing_hp",
+                  "coefficient": 0.1
+                }
+              ]
+            },
+            "unique_group": "tich-tu",
+            "exceptions": [
+              "Trong cửa sổ lá chắn, sát thương người dùng gây ra giảm 70%."
+            ],
+            "timing": {
+              "duration_s": 3,
+              "cooldown_s": 60
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-nham-thuan"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "giap-gaia",
+    "name": "Giáp Gaia",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [
+      "Gaia"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2180,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 200,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.damage-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Chịu sát thương và Hồi phục đang sẵn sàng",
+            "delivery": "item",
+            "activation": "automatic",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.04
+                }
+              ]
+            },
+            "unique_group": "gaia-hoi-phuc",
+            "timing": {
+              "duration_s": 2,
+              "internal_cooldown_s": 10
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.heal-amplifier": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "self",
+            "trigger": "Mỗi bậc mất thêm 10% máu",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.05,
+              "unit": "ratio"
+            },
+            "detail": "Tăng hiệu quả hồi máu theo bậc; giới hạn và phép gộp với nguồn tăng hồi khác chưa rõ.",
+            "unique_group": "huyet-thong"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-giap-gaia"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "khien-huyen-thoai",
+    "name": "Khiên huyền thoại",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2180,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 360,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.mana": [
+        {
+          "value": {
+            "amount": 400,
+            "unit": "mana"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.attack-slow": [
+        {
+          "value": {
+            "effect": "attack_speed",
+            "target": "nearby-enemies",
+            "trigger": "Kẻ địch ở trong hào quang",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.3,
+              "unit": "ratio"
+            },
+            "radius": 5,
+            "detail": "Giảm tốc đánh.",
+            "unique_group": "troi-buoc-tinh-than"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-khien-huyen-thoai"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "ao-choang-bang-gia",
+    "name": "Áo choàng băng giá",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1970,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 800,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 200,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.spellblade": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-and-nearby-enemies",
+            "trigger": "Đòn đánh thường kế tiếp trong 5 giây sau khi tung chiêu",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "physical",
+            "formula": {
+              "unit": "damage",
+              "base": 100,
+              "terms": [
+                {
+                  "basis": "unspecified_ad",
+                  "coefficient": 0.3
+                }
+              ]
+            },
+            "radius": 3,
+            "unique_group": "suc-manh-nguyen-to",
+            "exceptions": [
+              "Làm chậm 0,5 giây, 30% với người dùng cận chiến và 20% với người dùng đánh xa."
+            ],
+            "timing": {
+              "internal_cooldown_s": 0.65
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-ao-choang-bang-gia"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "giap-ho-menh",
+    "name": "Giáp hộ mệnh",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2400,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 120,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.resurrection": [
+        {
+          "value": {
+            "effect": "revive",
+            "target": "self",
+            "trigger": "Bị hạ và Phục sinh sẵn sàng",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Hồi sinh tại chỗ sau 2 giây với 2100–3500 HP, tối đa 2 lần mỗi trận.",
+            "unique_group": "phuc-sinh",
+            "charges": 2,
+            "timing": {
+              "internal_cooldown_s": 150
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.output": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Đang sở hữu trang bị",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "detail": "Tăng sát thương gây ra.",
+            "unique_group": "chien-khi"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-giap-ho-menh"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "giap-cuong-no",
+    "name": "Giáp cuồng nộ",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 225,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.ramp": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "self",
+            "trigger": "Chịu sát thương",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Mỗi tầng tăng 1% tốc chạy và 2% sát thương gây ra.",
+            "stacks": 5,
+            "unique_group": "dien-cuong",
+            "timing": {
+              "duration_s": 3
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-giap-cuong-no"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "giap-hiep-si",
+    "name": "Giáp hiệp sĩ",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 730,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 210,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.attack-slow": [
+        {
+          "value": {
+            "effect": "attack_speed",
+            "target": "attacker",
+            "trigger": "Người mang chịu sát thương",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.15,
+              "unit": "ratio"
+            },
+            "detail": "Giảm tốc đánh.",
+            "unique_group": "linh-gac"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-giap-hiep-si"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "gang-bach-kim",
+    "name": "Găng bạch kim",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 660,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 110,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-gang-bach-kim"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "gang-giac-dau",
+    "name": "Găng giác đấu",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 220,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 90,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-gang-giac-dau"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "giap-nhe",
+    "name": "Giáp nhẹ",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 220,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 90,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-giap-nhe"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "nhan-hong-ngoc",
+    "name": "Nhẫn hồng ngọc",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 300,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 300,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-nhan-hong-ngoc"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "bua-suc-manh",
+    "name": "Bùa sức mạnh",
+    "kind": "items",
+    "shop_group": "defense",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 140,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp-regen": [
+        {
+          "value": {
+            "amount": 30,
+            "unit": "hp_per_5_seconds"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-bua-suc-manh"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "kiem-ngan",
+    "name": "Kiếm ngắn",
+    "kind": "items",
+    "shop_group": "physical",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 250,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 20,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-kiem-ngan"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "dao-gam",
+    "name": "Dao găm",
+    "kind": "items",
+    "shop_group": "physical",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 290,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-dao-gam"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "gang-tay",
+    "name": "Găng tay",
+    "kind": "items",
+    "shop_group": "physical",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 300,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.08,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-gang-tay"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "sach-phep",
+    "name": "Sách phép",
+    "kind": "items",
+    "shop_group": "magic",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 300,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 40,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-sach-phep"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "sach-co",
+    "name": "Sách cổ",
+    "kind": "items",
+    "shop_group": "magic",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 540,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 80,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-sach-co"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "so-ma-thuat",
+    "name": "Sớ ma thuật",
+    "kind": "items",
+    "shop_group": "magic",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 820,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 120,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-so-ma-thuat"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "nhan-lapis",
+    "name": "Nhẫn Lapis",
+    "kind": "items",
+    "shop_group": "magic",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 220,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.mana": [
+        {
+          "value": {
+            "amount": 300,
+            "unit": "mana"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-nhan-lapis"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "giay-ho-ve",
+    "name": "Giày hộ vệ",
+    "kind": "items",
+    "shop_group": "boots",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 700,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 110,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "move_speed"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.physical-mitigation": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Nhận sát thương vật lý",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "unique_group": "ho-ve"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-giay-ho-ve"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "giay-thuat-si",
+    "name": "Giày thuật sĩ",
+    "kind": "items",
+    "shop_group": "boots",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 700,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "move_speed"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.spell-cooldown": [
+        {
+          "value": {
+            "effect": "reduce_cooldown",
+            "target": "self",
+            "trigger": "Đang sở hữu giày",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.15,
+              "unit": "ratio"
+            },
+            "detail": "Tác dụng ghi cho phép bổ trợ, cần kiểm tra tương tác với Mật ngữ.",
+            "unique_group": "thuat-si"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-giay-thuat-si"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "giay-thep",
+    "name": "Giày thép",
+    "kind": "items",
+    "shop_group": "boots",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 250,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 30,
+            "unit": "move_speed"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move-speed": [
+        {
+          "value": {
+            "amount": 30,
+            "unit": "move_speed"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-giay-thep"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "kiem-muramasa",
+    "name": "Kiếm Muramasa",
+    "kind": "items",
+    "shop_group": "physical",
+    "aliases": [
+      "Muramasa"
+    ],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2020,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 80,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 500,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.penetration": [
+        {
+          "value": {
+            "effect": "armor_pen",
+            "target": "self",
+            "trigger": "Khi sở hữu trang bị",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.35,
+              "unit": "ratio"
+            },
+            "unique_group": "xuyen-thau"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-kiem-muramasa"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "thanh-kiem",
+    "name": "Thánh kiếm",
+    "kind": "items",
+    "shop_group": "physical",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2120,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 100,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.crit": [
+        {
+          "value": {
+            "amount": 0.25,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.critical-amplify": [
+        {
+          "value": {
+            "effect": "critical",
+            "target": "self",
+            "trigger": "Đòn gây chí mạng",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.4,
+              "unit": "ratio"
+            },
+            "detail": "Tăng sát thương chí mạng."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.ranged-speed": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Tướng đánh xa vừa gây chí mạng",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Tăng 3–45 tốc chạy.",
+            "timing": {
+              "duration_s": 1.5
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-thanh-kiem"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "thuong-khung-kiem",
+    "name": "Thương khung kiếm",
+    "kind": "items",
+    "shop_group": "physical",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2120,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 100,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 500,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.mitigation": [
+        {
+          "value": {
+            "effect": "damage_reduction",
+            "target": "self",
+            "trigger": "Bấm Bất khuất, có thể dùng lúc bị khống chế",
+            "delivery": "item",
+            "activation": "manual",
+            "amount": {
+              "amount": 0.4,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 2,
+              "cooldown_s": 90
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.first-hit": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "first-hero-hit",
+            "trigger": "Tung chiêu trúng tướng đầu tiên",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Làm chậm 30% và giảm 20% sát thương mục tiêu gây ra.",
+            "timing": {
+              "duration_s": 3,
+              "internal_cooldown_s": 8
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-thuong-khung-kiem"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "nanh-fenrir",
+    "name": "Nanh Fenrir",
+    "kind": "items",
+    "shop_group": "physical",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2800,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 180,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.execute-pressure": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "target",
+            "trigger": "Mục tiêu còn dưới 50% máu",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.3,
+              "unit": "ratio"
+            },
+            "detail": "Tăng sát thương mục tiêu nhận từ người mang theo mô tả danh mục.",
+            "unique_group": "chinh-phat"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-nanh-fenrir"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "sach-truy-hon",
+    "name": "Sách Truy Hồn",
+    "kind": "items",
+    "shop_group": "magic",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 140,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 600,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.wound": [
+        {
+          "value": {
+            "effect": "heal_reduction",
+            "target": "damaged-target",
+            "trigger": "Gây sát thương bằng đòn đánh hoặc kỹ năng",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.4,
+              "unit": "ratio"
+            },
+            "unique_group": "troc-na",
+            "timing": {
+              "duration_s": 3
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-sach-truy-hon"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "xuyen-tam-lenh",
+    "name": "Xuyên tâm lệnh",
+    "kind": "items",
+    "shop_group": "magic",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1980,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 140,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 500,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.magic-debuff": [
+        {
+          "value": {
+            "effect": "special",
+            "target": "enemy-hit",
+            "trigger": "Dùng kỹ năng trúng mục tiêu",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Giảm 10% công phép và 100 giáp phép của nạn nhân.",
+            "timing": {
+              "duration_s": 3
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.recipe": [
+        {
+          "value": [
+            "items/mat-na-ma-quai",
+            "items/sach-phep",
+            "items/sach-phep",
+            "items/nhan-hong-ngoc"
+          ],
+          "evidence": [
+            "patch-2025-07-09-items"
+          ],
+          "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-xuyen-tam-lenh"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Giới hạn mua và hiệu lực công thức ghép trong client VN",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "dai-dia-than-khien",
+    "name": "Đại địa thần khiên",
+    "kind": "items",
+    "shop_group": "support",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.08,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.team-shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self-and-nearby-allies",
+            "trigger": "Bấm Thần khiên",
+            "delivery": "item",
+            "activation": "manual",
+            "detail": "Lá chắn trong khoảng 680–1800, cách tính theo cấp cần đối chiếu.",
+            "timing": {
+              "duration_s": 3,
+              "cooldown_s": 60
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-dai-dia-than-khien"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "dai-dia-mo-troi",
+    "name": "Đại địa Mở trói",
+    "kind": "items",
+    "shop_group": "support",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.08,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.cleanse": [
+        {
+          "value": {
+            "effect": "cleanse",
+            "target": "self-and-nearby-allies",
+            "trigger": "Bấm Mở trói",
+            "delivery": "item",
+            "activation": "manual",
+            "timing": {
+              "cooldown_s": 90
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.cc-immunity": [
+        {
+          "value": {
+            "effect": "cc_immunity",
+            "target": "self-and-nearby-allies",
+            "trigger": "Sau Mở trói",
+            "delivery": "item",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 0.5
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-dai-dia-mo-troi"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "nguyen-to-bao-thach",
+    "name": "Nguyên tố bảo thạch",
+    "kind": "items",
+    "shop_group": "support",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 300,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.funneling": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "nearby-allies-and-self",
+            "trigger": "Có đồng minh lân cận và lính hoặc quái bị hạ",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Đồng minh nhận đủ vàng và EXP; phần người mang tăng theo thời gian trong khoảng 30–50%, tới phút 13 đạt mốc trên."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-nguyen-to-bao-thach"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Công thức ghép và giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "cung-bao-to",
+    "name": "Cung Bão Tố",
+    "kind": "items",
+    "shop_group": "jungle",
+    "aliases": [],
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2000,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.07,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.stacking-magic": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "attacked-target",
+            "trigger": "Đánh thường tích tầng lên nạn nhân",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "magic",
+            "stacks": 6,
+            "unique_group": "loc-xoay",
+            "detail": "15–19 sát thương phép theo danh mục; mốc chưa xác minh.",
+            "timing": {
+              "internal_cooldown_s": 0.3
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.jungle-ticks": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "jungle-monster",
+            "trigger": "Đòn đánh hoặc kỹ năng trúng quái rừng",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "true",
+            "detail": "Ghi khoảng 60–172 theo mỗi nhịp.",
+            "unique_group": "san-bat",
+            "timing": {
+              "interval_s": 0.5,
+              "duration_s": 2
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-cung-bao-to"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Giới hạn mua",
+      "Đối chiếu cửa hàng trong game"
+    ]
+  },
+  {
+    "id": "huyet-truong",
+    "name": "Huyết trượng",
+    "kind": "items",
+    "shop_group": "magic",
+    "facts": {
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-huyet-truong"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "quyen-truong-rhea",
+    "name": "Quyền trượng Rhea",
+    "kind": "items",
+    "shop_group": "magic",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2050,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-quyen-truong-rhea"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "the-uoc-carano",
+    "name": "Thệ ước Carano",
+    "kind": "items",
+    "shop_group": "magic",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2050,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.emergency-shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "Máu giảm dưới 30%",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Tự gỡ khống chế và nhận lá chắn 510–1000 cộng công phép và 8% máu thêm. Có tăng tốc chạy 30%.",
+            "timing": {
+              "duration_s": 4
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-the-uoc-carano"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "qua-cau-bang-suong",
+    "name": "Quả cầu băng sương",
+    "kind": "items",
+    "shop_group": "magic",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2200,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 220,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items",
+            "qua-cau-ap-conflict"
+          ]
+        }
+      ],
+      "active.stasis": [
+        {
+          "value": {
+            "effect": "damage_immunity",
+            "target": "self",
+            "trigger": "Bấm Phong ấn",
+            "delivery": "item",
+            "activation": "manual",
+            "detail": "Bất động trong hiệu lực. Sau khi thoát nhận lá chắn trong một giây.",
+            "timing": {
+              "duration_s": 1.5,
+              "cooldown_s": 75
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-qua-cau-bang-suong"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "dao-truy-hon",
+    "name": "Đao Truy Hồn",
+    "kind": "items",
+    "shop_group": "physical",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 80,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 800,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-dao-truy-hon"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "giap-chan",
+    "name": "Giáp chân",
+    "kind": "items",
+    "shop_group": "defense",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1000,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-giap-chan"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "kiem-dai",
+    "name": "Kiếm dài",
+    "kind": "items",
+    "shop_group": "physical",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 910,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 80,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-kiem-dai"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "song-dao",
+    "name": "Song đao",
+    "kind": "items",
+    "shop_group": "physical",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 780,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.25,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-song-dao"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "rua-tho-san",
+    "name": "Rựa thợ săn",
+    "kind": "items",
+    "shop_group": "jungle",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 250,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.monster-burn": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "monster",
+            "trigger": "Đòn đánh hoặc kỹ năng chạm quái.",
+            "activation": "automatic",
+            "delivery": "item",
+            "damage_type": "true",
+            "timing": {
+              "duration_s": 2,
+              "interval_s": 0.5
+            },
+            "detail": "50–120 chuẩn mỗi nhịp theo Học viện, chưa có mốc nội suy."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.monster-exp": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "self",
+            "trigger": "Hạ quái rừng với trang bị.",
+            "activation": "automatic",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.2,
+              "unit": "ratio"
+            },
+            "detail": "Phần kinh nghiệm nhận thêm."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.lane-penalty": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "self",
+            "trigger": "Chia lính khi có đồng minh gần trước phút 4.",
+            "activation": "automatic",
+            "delivery": "item",
+            "detail": "Ứng viên người mang nhận 50% vàng/EXP và giảm 25% sát thương lên lính. Cần đối chiếu phần hưởng của đồng minh và xóa điều kiện ở phút 4."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xam",
+          "evidence": [
+            "icon-garena-rua-tho-san"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "guom-hien-te",
+    "name": "Gươm hiến tế",
+    "kind": "items",
+    "shop_group": "jungle",
+    "facts": {
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 40,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.monster-burn": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "monster",
+            "trigger": "Đòn đánh hoặc kỹ năng chạm quái.",
+            "activation": "automatic",
+            "delivery": "item",
+            "damage_type": "true",
+            "timing": {
+              "duration_s": 2,
+              "interval_s": 0.5
+            },
+            "detail": "60–172 chuẩn mỗi nhịp theo Học viện, chưa có mốc nội suy."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.monster-exp": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "self",
+            "trigger": "Hạ quái rừng với trang bị.",
+            "activation": "automatic",
+            "delivery": "item",
+            "amount": {
+              "amount": 0.35,
+              "unit": "ratio"
+            },
+            "detail": "Phần kinh nghiệm nhận thêm."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.lane-penalty": [
+        {
+          "value": {
+            "effect": "economy",
+            "target": "self",
+            "trigger": "Chia lính khi có đồng minh gần trước phút 4.",
+            "activation": "automatic",
+            "delivery": "item",
+            "detail": "Ứng viên người mang nhận 50% vàng/EXP và giảm 25% sát thương lên lính. Cần đối chiếu phần hưởng của đồng minh và xóa điều kiện ở phút 4."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.jungle-stacks": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "self",
+            "trigger": "Mình hoặc đồng minh gần hạ quái rừng.",
+            "activation": "automatic",
+            "delivery": "item",
+            "stacks": 15,
+            "detail": "Mỗi điểm cho 4 AP và 0,2% CDR theo Học viện.",
+            "unique_group": "lung-diet"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-guom-hien-te"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "riu-gnoll",
+    "name": "Rìu Gnoll",
+    "kind": "items",
+    "shop_group": "jungle",
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-riu-gnoll"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "dao-truy-kich",
+    "name": "Đao truy kích",
+    "kind": "items",
+    "shop_group": "jungle",
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-dao-truy-kich"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "cung-gio-loc",
+    "name": "Cung gió lốc",
+    "kind": "items",
+    "shop_group": "jungle",
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-cung-gio-loc"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "guom-loki",
+    "name": "Gươm Loki",
+    "kind": "items",
+    "shop_group": "jungle",
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-guom-loki"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "riu-leviathan",
+    "name": "Rìu Leviathan",
+    "kind": "items",
+    "shop_group": "jungle",
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-riu-leviathan"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "kiem-truy-hon",
+    "name": "Kiếm truy hồn",
+    "kind": "items",
+    "shop_group": "jungle",
+    "facts": {
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-kiem-truy-hon"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Quy tắc mua",
+      "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+    ]
+  },
+  {
+    "id": "chuy-bang-suong",
+    "kind": "items",
+    "name": "Chùy băng sương",
+    "shop_group": "physical",
+    "facts": {
+      "shop.recipe": [
+        {
+          "value": [
+            "items/phieu-tieu",
+            "items/chuy-xich",
+            "items/nhan-hong-ngoc"
+          ],
+          "evidence": [
+            "patch-2025-07-09-items"
+          ],
+          "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-chuy-bang-suong"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng và hiệu lực công thức ghép trong client VN",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "chuy-mau",
+    "kind": "items",
+    "name": "Chùy máu",
+    "shop_group": "physical",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 410,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 10,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.08,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-chuy-mau"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "chuy-xich",
+    "kind": "items",
+    "name": "Chùy xích",
+    "shop_group": "physical",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 450,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 40,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-chuy-xich"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "dai-dia-hoi-huyet",
+    "kind": "items",
+    "name": "Đại địa hồi huyết",
+    "shop_group": "support",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.hoi-huyet": [
+        {
+          "value": {
+            "effect": "heal",
+            "actor": "caster",
+            "target": "self-and-lowest-hp-nearby-allied-hero",
+            "delivery": "item",
+            "trigger": "Bấm khi còn lượt sạc và có đồng minh trong tầm nối dây.",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 5,
+              "recharge_s": 50
+            },
+            "detail": "Dây đứt khi quá tầm. Mô tả PvP giảm còn 20% hiệu lực, chưa rõ áp cho ai và trong bao lâu. Chưa rõ HP của ai dùng làm cơ sở.",
+            "charges": 2
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-dai-dia-hoi-huyet"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "dai-dia-than-toc",
+    "kind": "items",
+    "name": "Đại địa thần tốc",
+    "shop_group": "support",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.than-toc": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "actor": "caster",
+            "target": "nearby-allied-heroes",
+            "delivery": "item",
+            "trigger": "Bấm trang bị Thần tốc.",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 4,
+              "cooldown_s": 75
+            },
+            "detail": "Tăng dần 2 giây; đồng bộ khi đi qua đồng minh. Giao chiến tướng chỉ giữ lại 20% tốc độ cộng thêm."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-dai-dia-than-toc"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "dai-khang-phep",
+    "kind": "items",
+    "name": "Đai kháng phép",
+    "shop_group": "defense",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1000,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 700,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 110,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.damage-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "actor": "caster",
+            "target": "self",
+            "delivery": "item",
+            "trigger": "Nhận sát thương.",
+            "activation": "automatic",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.04
+                }
+              ]
+            },
+            "timing": {
+              "duration_s": 2,
+              "internal_cooldown_s": 15
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-dai-khang-phep"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "day-chuyen-hong-ngoc",
+    "kind": "items",
+    "name": "Dây chuyền hồng ngọc",
+    "shop_group": "defense",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 540,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 600,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-day-chuyen-hong-ngoc"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "giay-du-muc",
+    "kind": "items",
+    "name": "Giày du mục",
+    "shop_group": "boots",
+    "facts": {
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move-speed": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "move_speed"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.on-hit-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "actor": "caster",
+            "target": "self",
+            "delivery": "item",
+            "trigger": "Đánh thường trúng mục tiêu.",
+            "activation": "automatic",
+            "amount": {
+              "amount": 20,
+              "unit": "hp"
+            },
+            "timing": {
+              "internal_cooldown_s": 0.3
+            },
+            "exceptions": [
+              "Đơn vị không phải tướng chỉ cho nửa lượng hồi."
+            ],
+            "unique_group": "du-muc-heal"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-giay-du-muc"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "giay-hermes",
+    "kind": "items",
+    "name": "Giày Hermes",
+    "shop_group": "boots",
+    "facts": {
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-giay-hermes"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "giay-phu-thuy",
+    "kind": "items",
+    "name": "Giày phù thủy",
+    "shop_group": "boots",
+    "facts": {
+      "stat.move-speed": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "move_speed"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-giay-phu-thuy"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "guom-sam-set",
+    "kind": "items",
+    "name": "Gươm sấm sét",
+    "shop_group": "physical",
+    "facts": {
+      "shop.recipe": [
+        {
+          "value": [
+            "items/phieu-tieu",
+            "items/dao-gam"
+          ],
+          "evidence": [
+            "patch-2025-07-09-items"
+          ],
+          "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-guom-sam-set"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng và hiệu lực công thức ghép trong client VN",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "hoa-he-bao-thach",
+    "kind": "items",
+    "name": "Hỏa hệ bảo thạch",
+    "shop_group": "support",
+    "facts": {
+      "shop.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 600,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.price": [
+        {
+          "value": {
+            "amount": 900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-hoa-he-bao-thach"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "automatic",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "huyet-anh-dao",
+    "kind": "items",
+    "name": "Huyết ảnh đao",
+    "shop_group": "physical",
+    "facts": {
+      "shop.recipe": [
+        {
+          "value": [
+            "items/chuy-mau",
+            "items/kiem-ngan"
+          ],
+          "evidence": [
+            "patch-2025-07-09-items"
+          ],
+          "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-huyet-anh-dao"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng và hiệu lực công thức ghép trong client VN",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ],
+    "aliases": [
+      "Huyết đao"
+    ]
+  },
+  {
+    "id": "kiem-fafnir",
+    "kind": "items",
+    "name": "Kiếm Fafnir",
+    "shop_group": "physical",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2040,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.current-hp-hit": [
+        {
+          "value": {
+            "effect": "damage",
+            "actor": "caster",
+            "target": "target-hit",
+            "delivery": "item",
+            "trigger": "Đòn đánh thường trúng.",
+            "activation": "automatic",
+            "damage_type": "physical",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "target_current_hp",
+                  "coefficient": 0.08
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 0.3
+            },
+            "exceptions": [
+              "Sát thương giới hạn 80 lên quái rừng."
+            ],
+            "unique_group": "hoi-tho-rong"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-kiem-fafnir"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "liet-hoa-hoi-huyet",
+    "kind": "items",
+    "name": "Liệt hỏa hồi huyết",
+    "shop_group": "support",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.hoi-huyet": [
+        {
+          "value": {
+            "effect": "heal",
+            "actor": "caster",
+            "target": "self-and-lowest-hp-nearby-allied-hero",
+            "delivery": "item",
+            "trigger": "Bấm khi còn lượt sạc và có đồng minh trong tầm nối dây.",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 5,
+              "recharge_s": 50
+            },
+            "detail": "Dây đứt khi quá tầm. Mô tả PvP giảm còn 20% hiệu lực, chưa rõ áp cho ai và trong bao lâu. Chưa rõ HP của ai dùng làm cơ sở.",
+            "charges": 2
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-liet-hoa-hoi-huyet"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "liet-hoa-ma-nhan",
+    "kind": "items",
+    "name": "Liệt hoả ma nhãn",
+    "shop_group": "support",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.ma-nhan": [
+        {
+          "value": {
+            "effect": "reveal",
+            "actor": "caster",
+            "target": "nearby-enemy-heroes",
+            "delivery": "item",
+            "trigger": "Bấm trang bị Ma nhãn.",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 4,
+              "cooldown_s": 45
+            },
+            "detail": "Tầm nhìn chuẩn; hai nhịp phép trong 2 giây, mỗi nhịp lấy 8% HP hiện tại của nạn nhân và làm chậm 50%."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-liet-hoa-ma-nhan"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "liet-hoa-mo-troi",
+    "kind": "items",
+    "name": "Liệt hỏa mở trói",
+    "shop_group": "support",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.mo-troi": [
+        {
+          "value": {
+            "effect": "cleanse",
+            "actor": "caster",
+            "target": "self-and-nearby-allied-heroes",
+            "delivery": "item",
+            "trigger": "Bấm trang bị Mở trói.",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 0.5,
+              "cooldown_s": 90
+            },
+            "detail": "Giải khống chế kèm cửa sổ miễn khống. Cần thử với hiệu ứng đặc biệt."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-liet-hoa-mo-troi"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "liet-hoa-than-khien",
+    "kind": "items",
+    "name": "Liệt hỏa thần khiên",
+    "shop_group": "support",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.than-khien": [
+        {
+          "value": {
+            "effect": "shield",
+            "actor": "caster",
+            "target": "self-and-nearby-allied-heroes",
+            "delivery": "item",
+            "trigger": "Bấm trang bị Thần khiên.",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 3,
+              "cooldown_s": 60
+            },
+            "detail": "Lá chắn 680–1800; chưa rõ các mốc, thụ hưởng đồng thời và các loại sát thương hấp thụ."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-liet-hoa-than-khien"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "liet-hoa-than-toc",
+    "kind": "items",
+    "name": "Liệt hỏa thần tốc",
+    "shop_group": "support",
+    "facts": {
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 1200,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.than-toc": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "actor": "caster",
+            "target": "nearby-allied-heroes",
+            "delivery": "item",
+            "trigger": "Bấm trang bị Thần tốc.",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 4,
+              "cooldown_s": 75
+            },
+            "detail": "Tăng dần 2 giây; đồng bộ khi đi qua đồng minh. Giao chiến tướng chỉ giữ lại 20% tốc độ cộng thêm."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-liet-hoa-than-toc"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "ma-phap-truong-bao",
+    "kind": "items",
+    "name": "Ma pháp trường bào",
+    "shop_group": "magic",
+    "facts": {
+      "shop.recipe": [
+        {
+          "value": [
+            "items/mat-na-ma-quai",
+            "items/sach-co"
+          ],
+          "evidence": [
+            "patch-2025-07-09-items"
+          ],
+          "effective_from": "2025-07-09"
+        }
+      ],
+      "passive.magic-pen": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "actor": "caster",
+            "target": "self",
+            "delivery": "item",
+            "trigger": "Mang Ma pháp trường bào.",
+            "activation": "automatic",
+            "detail": "32–60 điểm và 3% theo máu cộng thêm; trần 150 điểm. Học viện ghi đạt tối đa theo thời gian ở phút 13."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.ap": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "actor": "caster",
+            "target": "self",
+            "delivery": "item",
+            "trigger": "Mang Ma pháp trường bào.",
+            "activation": "automatic",
+            "detail": "26–40 điểm cùng hệ số HP; trần 100 điểm. Bản ra mắt ghi máu thêm, Học viện ghi máu bản thân."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-ma-phap-truong-bao"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng và hiệu lực công thức ghép trong client VN",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "mat-na-ma-quai",
+    "kind": "items",
+    "name": "Mặt nạ ma quái",
+    "shop_group": "magic",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 960,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 100,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.penetration": [
+        {
+          "value": {
+            "effect": "magic_pen",
+            "actor": "caster",
+            "target": "self",
+            "delivery": "item",
+            "trigger": "Mang trang bị.",
+            "activation": "automatic",
+            "amount": {
+              "amount": 75,
+              "unit": "magic_defense"
+            },
+            "unique_group": "diet-than"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-mat-na-ma-quai"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "phieu-tieu",
+    "kind": "items",
+    "name": "Phi tiêu",
+    "shop_group": "physical",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 750,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.ranged-on-hit": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đánh thường trúng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "physical",
+            "timing": {
+              "internal_cooldown_s": 0.3
+            },
+            "detail": "21–35 đánh gần, 42–70 đánh xa. Mốc tăng chưa rõ.",
+            "unique_group": "diem-yeu"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-phieu-tieu"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "quy-kiem",
+    "kind": "items",
+    "name": "Quỷ Kiếm",
+    "shop_group": "physical",
+    "facts": {
+      "shop.recipe": [
+        {
+          "value": [
+            "items/huyet-anh-dao",
+            "items/chuy-mau",
+            "items/nhan-hong-ngoc"
+          ],
+          "evidence": [
+            "patch-2025-07-09-items"
+          ],
+          "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-quy-kiem"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng và hiệu lực công thức ghép trong client VN",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "sach-thanh",
+    "kind": "items",
+    "name": "Sách thánh",
+    "shop_group": "magic",
+    "facts": {
+      "shop.recipe": [
+        {
+          "value": [
+            "items/so-ma-thuat",
+            "items/so-ma-thuat",
+            "items/sach-co"
+          ],
+          "evidence": [
+            "patch-2025-07-09-items"
+          ],
+          "effective_from": "2025-07-09"
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-sach-thanh"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng và hiệu lực công thức ghép trong client VN",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "tho-he-bao-thach",
+    "kind": "items",
+    "name": "Thổ hệ bảo thạch",
+    "shop_group": "support",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 600,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.tier": [
+        {
+          "value": {
+            "amount": 2,
+            "unit": "count"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-tho-he-bao-thach"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "automatic",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "thuong-longinus",
+    "kind": "items",
+    "name": "Thương Longinus",
+    "shop_group": "physical",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2030,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 80,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 500,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.flat-penetration": [
+        {
+          "value": {
+            "effect": "armor_pen",
+            "actor": "caster",
+            "target": "self",
+            "delivery": "item",
+            "trigger": "Mang trang bị.",
+            "activation": "automatic",
+            "amount": {
+              "amount": 60,
+              "unit": "armor"
+            },
+            "unique_group": "pha-giap"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.armor-shred": [
+        {
+          "value": {
+            "effect": "armor_reduction",
+            "actor": "caster",
+            "target": "target-hit",
+            "delivery": "item",
+            "trigger": "Gây sát thương lên mục tiêu.",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.06,
+              "unit": "ratio"
+            },
+            "stacks": 4,
+            "timing": {
+              "duration_s": 5,
+              "internal_cooldown_s": 0.3
+            },
+            "unique_group": "toai-giap",
+            "detail": "Tỷ lệ mỗi tầng; thứ tự áp dụng với xuyên giáp chưa xác minh."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-thuong-longinus"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "tim-incubus",
+    "kind": "items",
+    "name": "Tim Incubus",
+    "shop_group": "defense",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 720,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 150,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.burn": [
+        {
+          "value": {
+            "effect": "damage",
+            "actor": "caster",
+            "target": "nearby-enemies",
+            "delivery": "item",
+            "trigger": "Kẻ địch ở gần người mang.",
+            "activation": "automatic",
+            "damage_type": "magic",
+            "timing": {
+              "interval_s": 1
+            },
+            "detail": "50–78 mỗi nhịp; tăng 50% với lính và quái. Mốc giá trị và bán kính chưa rõ."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-tim-incubus"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "id": "truong-hon-mang",
+    "kind": "items",
+    "name": "Trượng hỗn mang",
+    "shop_group": "magic",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2050,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 180,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cdr": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.percent-magic-penetration": [
+        {
+          "value": {
+            "effect": "magic_pen",
+            "actor": "caster",
+            "target": "self",
+            "delivery": "item",
+            "trigger": "Mang trang bị.",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.4,
+              "unit": "ratio"
+            },
+            "unique_group": "xuyen-phep"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-truong-hon-mang"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Khả dụng cửa hàng và đường ghép hiện hành",
+      "Màu biểu tượng trong cửa hàng hiện hành"
+    ]
+  },
+  {
+    "kind": "items",
+    "id": "cau-chiem-tinh",
+    "name": "Cầu chiêm tinh",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 800,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 80,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.echo": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-in-area",
+            "trigger": "Tung chiêu làm Vang vọng kích hoạt.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "magic",
+            "amount": {
+              "amount": 180,
+              "unit": "damage"
+            },
+            "timing": {
+              "internal_cooldown_s": 5
+            },
+            "unique_group": "vang-vong"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-cau-chiem-tinh"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "diet-than-cung",
+    "name": "Diệt thần cung",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2980,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 50,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.critical": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.ranged-armor-pen": [
+        {
+          "value": {
+            "effect": "armor_pen",
+            "target": "self",
+            "trigger": "Trang bị Xuyên thấu.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.2,
+              "unit": "ratio"
+            },
+            "exceptions": [
+              "Gấp đôi với tướng đánh xa."
+            ],
+            "unique_group": "xuyen-thau"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.on-hit": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đòn đánh thường trúng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "physical",
+            "amount": {
+              "amount": 50,
+              "unit": "damage"
+            },
+            "timing": {
+              "internal_cooldown_s": 0.35
+            },
+            "exceptions": [
+              "Gấp đôi với tướng đánh xa."
+            ],
+            "unique_group": "pha-than"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-diet-than-cung"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "huyet-cung",
+    "name": "Huyết cung",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1100,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 40,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.ranged-armor-pen": [
+        {
+          "value": {
+            "effect": "armor_pen",
+            "target": "self",
+            "trigger": "Trang bị Xuyên thấu.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "exceptions": [
+              "Gấp đôi với tướng đánh xa."
+            ],
+            "unique_group": "xuyen-thau"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-huyet-cung"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "vuot-hung-tan",
+    "name": "Vuốt Hung Tàn",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1960,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.critical": [
+        {
+          "value": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.ramp": [
+        {
+          "value": {
+            "effect": "attack_speed",
+            "target": "self",
+            "trigger": "Đòn đánh thường trúng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 2
+            },
+            "stacks": 5,
+            "unique_group": "hung-bao"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-vuot-hung-tan"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "thuong-xuyen-pha",
+    "name": "Thương Xuyên Phá",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 110,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.flat-pen": [
+        {
+          "value": {
+            "effect": "armor_pen",
+            "target": "self",
+            "trigger": "Mang trang bị.",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "40–180 xuyên giáp phẳng theo trang học viện; mốc tăng chưa có."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.travel-speed": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Rời trạng thái giao tranh.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "unique_group": "khinh-cong"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-thuong-xuyen-pha"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "cung-ta-ma",
+    "name": "Cung tà ma",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2250,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 90,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.lifesteal": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.critical": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.lifesteal": [
+        {
+          "value": {
+            "effect": "lifesteal",
+            "target": "self",
+            "trigger": "Tướng đánh xa bấm Hấp huyết.",
+            "delivery": "item",
+            "activation": "manual",
+            "amount": {
+              "amount": 0.6,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 3,
+              "cooldown_s": 60
+            }
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "do",
+          "evidence": [
+            "icon-garena-cung-ta-ma"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "xa-nhat-cung",
+    "name": "Xạ Nhật Cung",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2000,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.critical": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.on-hit": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đánh thường trúng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "physical",
+            "amount": {
+              "amount": 50,
+              "unit": "damage"
+            },
+            "timing": {
+              "internal_cooldown_s": 0.35
+            },
+            "exceptions": [
+              "Gấp đôi với tướng đánh xa."
+            ]
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "active.ranged-reach": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Tướng đánh xa bấm Xạ Nhật.",
+            "delivery": "item",
+            "activation": "manual",
+            "timing": {
+              "duration_s": 5,
+              "cooldown_s": 60
+            },
+            "detail": "Thêm 150 tầm đánh và 20% tốc chạy."
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-xa-nhat-cung"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "hercule-thinh-no",
+    "name": "Hercule thịnh nộ",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2000,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 80,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.armor": [
+        {
+          "value": {
+            "amount": 240,
+            "unit": "armor"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "HP xuống dưới 40%.",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Khoảng 880–2000, chưa rõ mốc tăng. Tách điều kiện hút máu đánh gần.",
+            "timing": {
+              "duration_s": 8,
+              "internal_cooldown_s": 60
+            },
+            "unique_group": "hercule-cuong-no"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.melee-lifesteal": [
+        {
+          "value": {
+            "effect": "lifesteal",
+            "target": "self",
+            "trigger": "HP dưới 40% và Cuồng Nộ đang có hiệu lực với tướng cận chiến.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.2,
+              "unit": "ratio"
+            },
+            "unique_group": "hercule-cuong-no"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-hercule-thinh-no"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "defense"
+  },
+  {
+    "kind": "items",
+    "id": "vuong-mien-hecate",
+    "name": "Vương miện Hecate",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2400,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 240,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.ap-multiplier": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Trang bị Thuật sư.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.35,
+              "unit": "ratio"
+            },
+            "detail": "Tăng AP; chưa rõ cách gộp các nguồn khuếch đại.",
+            "unique_group": "thuat-su"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-vuong-mien-hecate"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "ngoc-dai-phap-su",
+    "name": "Ngọc đại pháp sư",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1800,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 140,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.growth": [
+        {
+          "value": {
+            "effect": "accrue_stack",
+            "target": "self",
+            "trigger": "Đến nhịp Trường tồn.",
+            "delivery": "item",
+            "activation": "automatic",
+            "timing": {
+              "interval_s": 30
+            },
+            "stacks": 10,
+            "detail": "Thêm 12 AP và 120 HP mỗi tầng.",
+            "unique_group": "truong-ton"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.level-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Lên cấp khi có Tưởng thưởng anh hùng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.2
+                }
+              ]
+            },
+            "timing": {
+              "duration_s": 3
+            },
+            "detail": "Có kèm hồi năng lượng, thời điểm từng nhịp chưa rõ.",
+            "unique_group": "tuong-thuong-anh-hung"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-ngoc-dai-phap-su"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "phuong-hoang-le",
+    "name": "Phượng hoàng lệ",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 500,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 50,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.level-heal": [
+        {
+          "value": {
+            "effect": "heal",
+            "target": "self",
+            "trigger": "Lên cấp khi có Tưởng thưởng anh hùng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "formula": {
+              "unit": "hp",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "caster_max_hp",
+                  "coefficient": 0.2
+                }
+              ]
+            },
+            "timing": {
+              "duration_s": 3
+            },
+            "detail": "Có kèm hồi năng lượng.",
+            "unique_group": "tuong-thuong-anh-hung"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-phuong-hoang-le"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "nhan-ma-phap",
+    "name": "Nhẫn ma pháp",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 300,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-nhan-ma-phap"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "guom-nguyen-to",
+    "name": "Gươm nguyên tố",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 820,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 40,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.spellblade": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đánh thường kế tiếp sau tung chiêu.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "unspecified_ad",
+                  "coefficient": 0.3
+                },
+                {
+                  "basis": "ap",
+                  "coefficient": 0.18
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 3
+            },
+            "unique_group": "suc-manh-nguyen-to"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-guom-nguyen-to"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "bang-nhan-skadi",
+    "name": "Băng nhẫn Skadi",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2100,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 140,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 600,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.dual-defense": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Mang Giáp băng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "Cộng giáp và giáp phép theo 0,5 AP, giới hạn 230 điểm. Chưa rõ cách làm tròn.",
+            "unique_group": "giap-bang"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-bang-nhan-skadi"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "mat-na-berith",
+    "name": "Mặt nạ Berith",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1800,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 140,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 600,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.current-hp-burn": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Chiêu thức trúng và kích hoạt Thống khổ.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 80,
+              "terms": [
+                {
+                  "basis": "target_current_hp",
+                  "coefficient": 0.02
+                }
+              ]
+            },
+            "timing": {
+              "interval_s": 1,
+              "duration_s": 3
+            },
+            "exceptions": [
+              "Danh mục ghi trần 200 lên quái rừng; chưa rõ tách trần mỗi nhịp."
+            ],
+            "unique_group": "thong-kho"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-mat-na-berith"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "truong-bang",
+    "name": "Trượng băng",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2020,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 140,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 850,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.slow": [
+        {
+          "value": {
+            "effect": "soft_cc",
+            "target": "target-hit",
+            "trigger": "Chiêu gây sát thương.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.2,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 2
+            },
+            "unique_group": "gia-bang"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-truong-bang"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "thap-tu-kiem",
+    "name": "Thập Tự Kiếm",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1900,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 180,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.2,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.attack-speed": [
+        {
+          "value": {
+            "effect": "attack_speed",
+            "target": "self",
+            "trigger": "Đòn đánh thường kế tiếp.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.15,
+              "unit": "ratio"
+            },
+            "stacks": 2,
+            "timing": {
+              "duration_s": 4
+            },
+            "unique_group": "cap-nhan"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.on-hit": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đòn đánh thường trúng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 40,
+              "terms": [
+                {
+                  "basis": "bonus_ap",
+                  "coefficient": 0.2
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 0.35
+            },
+            "unique_group": "thanh-quang"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-thap-tu-kiem"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "truong-bung-no",
+    "name": "Trượng bùng nổ",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1800,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 200,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.echo": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "enemies-around-target",
+            "trigger": "Chiêu trúng tạo vùng nổ.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 120,
+              "terms": [
+                {
+                  "basis": "bonus_ap",
+                  "coefficient": 0.4
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 5
+            },
+            "unique_group": "vang-vong"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-truong-bung-no"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "guom-hien-triet",
+    "name": "Gươm hiền triết",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2100,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 140,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 600,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.pen-stack": [
+        {
+          "value": {
+            "effect": "magic_pen",
+            "target": "self",
+            "trigger": "Đòn thường hoặc chiêu trúng tướng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "detail": "10–24 điểm mỗi tầng, mốc tăng chưa rõ.",
+            "stacks": 10,
+            "timing": {
+              "duration_s": 3
+            },
+            "unique_group": "diet-than"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "vang",
+          "evidence": [
+            "icon-garena-guom-hien-triet"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "guom-tan-the",
+    "name": "Gươm tận thế",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1800,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 180,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.spellblade": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đòn đánh thường kế tiếp sau tung chiêu.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "magic",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "unspecified_ad",
+                  "coefficient": 0.3
+                },
+                {
+                  "basis": "ap",
+                  "coefficient": 0.8
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 2
+            },
+            "unique_group": "suc-manh-nguyen-to"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "xanh-ngoc",
+          "evidence": [
+            "icon-garena-guom-tan-the"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "day-chuyen-luc-bao",
+    "name": "Dây chuyền lục bảo",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1800,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 160,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.mana-tick": [
+        {
+          "value": {
+            "effect": "resource",
+            "target": "self",
+            "trigger": "Đến nhịp Hiền giả.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.01,
+              "unit": "ratio"
+            },
+            "detail": "Hồi năng lượng. Danh mục ghi thêm dòng 25 năng lượng mỗi 5 giây.",
+            "timing": {
+              "interval_s": 1
+            },
+            "unique_group": "hien-gia"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-day-chuyen-luc-bao"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "vong-duc-hanh",
+    "name": "Vòng đức hạnh",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 720,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ap": [
+        {
+          "value": {
+            "amount": 60,
+            "unit": "ability_power"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.05,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.mana-regen-note": [
+        {
+          "value": "20 năng lượng mỗi 5 giây trong danh mục",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-vong-duc-hanh"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "day-chuyen-ma-thuat",
+    "name": "Dây chuyền ma thuật",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 120,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.mana-regen-note": [
+        {
+          "value": "10 năng lượng mỗi 5 giây trong danh mục",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "shop.activation": [
+        {
+          "value": "stats_only",
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "lam",
+          "evidence": [
+            "icon-garena-day-chuyen-ma-thuat"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "magic"
+  },
+  {
+    "kind": "items",
+    "id": "song-dao-bao-tap",
+    "name": "Song đao bão táp",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 1920,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.35,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.critical": [
+        {
+          "value": {
+            "amount": 0.25,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.move": [
+        {
+          "value": {
+            "amount": 0.07,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.crit-tenacity": [
+        {
+          "value": {
+            "effect": "tenacity",
+            "target": "self",
+            "trigger": "Đánh chí mạng.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.35,
+              "unit": "ratio"
+            },
+            "timing": {
+              "duration_s": 2
+            },
+            "unique_group": "cuong-phong"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-song-dao-bao-tap"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "phuc-hop-kiem",
+    "name": "Phức hợp kiếm",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2150,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 70,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.cooldown-reduction": [
+        {
+          "value": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 600,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.spellblade": [
+        {
+          "value": {
+            "effect": "damage",
+            "target": "target-hit",
+            "trigger": "Đòn kế tiếp trong 5 giây sau tung chiêu.",
+            "delivery": "item",
+            "activation": "automatic",
+            "damage_type": "physical",
+            "formula": {
+              "unit": "damage",
+              "base": 0,
+              "terms": [
+                {
+                  "basis": "unspecified_ad",
+                  "coefficient": 1
+                }
+              ]
+            },
+            "timing": {
+              "internal_cooldown_s": 2
+            },
+            "unique_group": "suc-manh-nguyen-to"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.on-hit-speed": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Đánh thường.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "detail": "Tăng tốc chạy.",
+            "unique_group": "cuong-bao"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "cam",
+          "evidence": [
+            "icon-garena-phuc-hop-kiem"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "liem-doat-menh",
+    "name": "Liềm Đoạt Mệnh",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2000,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 75,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.hp": [
+        {
+          "value": {
+            "amount": 500,
+            "unit": "hp"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.lethal-window": [
+        {
+          "value": {
+            "effect": "damage_immunity",
+            "target": "self",
+            "trigger": "Nhận sát thương chí tử khi nội tại sẵn.",
+            "delivery": "item",
+            "activation": "automatic",
+            "timing": {
+              "internal_cooldown_s": 120
+            },
+            "detail": "Cửa sổ 0,75 giây; tăng đến 1,5 giây sau 4 phút mang. Kèm tăng tốc chạy, tốc đánh. Chưa rõ cộng với các nguồn miễn chết khác.",
+            "unique_group": "than-linh-can-thiep"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "tim",
+          "evidence": [
+            "icon-garena-liem-doat-menh"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "guom-uriel",
+    "name": "Gươm Uriel",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 2000,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 80,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.25,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.magic-defense": [
+        {
+          "value": {
+            "amount": 200,
+            "unit": "magic_defense"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.magic-shield": [
+        {
+          "value": {
+            "effect": "shield",
+            "target": "self",
+            "trigger": "HP xuống dưới 40%.",
+            "delivery": "item",
+            "activation": "automatic",
+            "timing": {
+              "duration_s": 5,
+              "internal_cooldown_s": 75
+            },
+            "detail": "Chỉ lá chắn phép 600–2000 theo danh mục. Trong cửa sổ có thêm 25% kháng hiệu ứng và 30% tốc chạy.",
+            "unique_group": "bao-ho-ma-phap"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.on-hit-speed": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Đánh thường.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "detail": "Tăng tốc chạy.",
+            "unique_group": "cuong-bao"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-guom-uriel"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "thuong-dau-si",
+    "name": "Thương đấu sĩ",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 830,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 50,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.flat-pen": [
+        {
+          "value": {
+            "effect": "armor_pen",
+            "target": "self",
+            "trigger": "Mang Phá giáp.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 60,
+              "unit": "armor"
+            },
+            "unique_group": "pha-giap"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-artwork-color": [
+        {
+          "value": "hong",
+          "evidence": [
+            "icon-garena-thuong-dau-si"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  },
+  {
+    "kind": "items",
+    "id": "chuy-co",
+    "name": "Chùy cổ",
+    "facts": {
+      "stat.price": [
+        {
+          "value": {
+            "amount": 740,
+            "unit": "gold"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.ad": [
+        {
+          "value": {
+            "amount": 25,
+            "unit": "attack_damage"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "stat.attack-speed": [
+        {
+          "value": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "passive.on-hit-speed": [
+        {
+          "value": {
+            "effect": "stat_change",
+            "target": "self",
+            "trigger": "Đánh thường.",
+            "delivery": "item",
+            "activation": "automatic",
+            "amount": {
+              "amount": 0.1,
+              "unit": "ratio"
+            },
+            "detail": "Tăng tốc chạy.",
+            "unique_group": "cuong-bao"
+          },
+          "evidence": [
+            "academy-items"
+          ]
+        }
+      ],
+      "identity.official-icon-color": [
+        {
+          "value": "luc",
+          "evidence": [
+            "icon-garena-chuy-co"
+          ]
+        }
+      ]
+    },
+    "unknown": [
+      "Đối chiếu phiên bản và khả dụng trong client VN."
+    ],
+    "shop_group": "physical"
+  }
+]

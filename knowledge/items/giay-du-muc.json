@@ -1,0 +1,96 @@
+{
+  "id": "giay-du-muc",
+  "kind": "items",
+  "name": "Giày du mục",
+  "facts": {
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.2,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.move-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 60.0,
+          "unit": "move_speed"
+        }
+      }
+    ],
+    "passive.on-hit-heal": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đánh thường trúng mục tiêu.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 20.0,
+            "unit": "hp"
+          },
+          "timing": {
+            "internal_cooldown_s": 0.3
+          },
+          "exceptions": [
+            "Đơn vị không phải tướng chỉ cho nửa lượng hồi."
+          ],
+          "unique_group": "du-muc-heal"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giay-du-muc"
+        ],
+        "value": "do"
+      }
+    ],
+    "stat.price": [
+      {
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "value": {
+          "amount": 700.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "shop.tier": [
+      {
+        "evidence": [
+          "patch-2024-07-10-shoes",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2024-07-10",
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "boots",
+  "relations": []
+}

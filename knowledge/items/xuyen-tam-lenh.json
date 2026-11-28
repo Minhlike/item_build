@@ -1,0 +1,145 @@
+{
+  "id": "xuyen-tam-lenh",
+  "kind": "items",
+  "name": "Xuyên tâm lệnh",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1980.0,
+          "unit": "gold"
+        }
+      },
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 1980.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 140.0,
+          "unit": "ability_power"
+        }
+      },
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 140.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 500.0,
+          "unit": "hp"
+        }
+      },
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 500.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "passive.magic-debuff": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "enemy-hit",
+          "delivery": "item",
+          "trigger": "Dùng kỹ năng trúng mục tiêu",
+          "activation": "automatic",
+          "detail": "Giảm 10% công phép và 100 giáp phép của nạn nhân.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Tung chiêu trúng kẻ địch.",
+          "activation": "automatic",
+          "detail": "Hạ 100 giáp phép và 10% công phép của mục tiêu.",
+          "amount": {
+            "amount": 100.0,
+            "unit": "magic_defense"
+          },
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "shop.recipe": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items"
+        ],
+        "effective_from": "2025-07-09",
+        "value": [
+          "items/mat-na-ma-quai",
+          "items/sach-phep",
+          "items/sach-phep",
+          "items/nhan-hong-ngoc"
+        ]
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-xuyen-tam-lenh"
+        ],
+        "value": "cam"
+      }
+    ]
+  },
+  "unknown": [
+    "Giới hạn mua và hiệu lực công thức ghép trong client VN",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

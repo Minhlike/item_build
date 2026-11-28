@@ -1,0 +1,93 @@
+{
+  "id": "liet-hoa-than-khien",
+  "kind": "items",
+  "name": "Liệt hỏa thần khiên",
+  "facts": {
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1200.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "active.than-khien": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self-and-nearby-allied-heroes",
+          "delivery": "item",
+          "trigger": "Bấm trang bị Thần khiên.",
+          "activation": "manual",
+          "detail": "Lá chắn 680–1800; chưa rõ các mốc, thụ hưởng đồng thời và các loại sát thương hấp thụ.",
+          "timing": {
+            "duration_s": 3.0,
+            "cooldown_s": 60.0
+          }
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-liet-hoa-than-khien"
+        ],
+        "value": "vang"
+      }
+    ],
+    "shop.tier": [
+      {
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 3.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "stat.price": [
+      {
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "patch-2026-04-08",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng cửa hàng và đường ghép hiện hành",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "support",
+  "relations": []
+}

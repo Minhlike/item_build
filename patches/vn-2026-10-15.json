@@ -1,0 +1,712 @@
+{
+  "id": "vn-2026-10-15",
+  "title": "Vết Nứt Thời Không 2026-10-15",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-10-15",
+  "evidence": "patch-oct15",
+  "changes": [
+    {
+      "entity": "heroes/ngo-khong",
+      "property": "passive.empowered-physical",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Đòn đánh cường hóa từ nội tại trúng",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 450,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              }
+            ]
+          },
+          "delivery": "empowered_attack"
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/errol",
+      "property": "passive.stack-decay",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "spend_stack",
+          "target": "self",
+          "trigger": "Vào pha trừ tầng nội tại",
+          "amount": {
+            "amount": 1,
+            "unit": "count"
+          },
+          "timing": {
+            "interval_s": 1
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/flowborn",
+      "property": "skill-3.volley-physical",
+      "classification": "nerf",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Loạt Chiêu 3 dạng xạ thủ trúng",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 64,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 32
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.26
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/raz",
+      "property": "skill-2.magic-poke",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Cú Đấm Chân Không trúng mục tiêu đầu tiên.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 450,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 90
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.9
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/kriknak",
+      "property": "skill-1.base-physical",
+      "classification": "buff",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản Chiêu 1, chưa tính sát thương dấu ấn.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 325,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 65
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 1.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/gildur",
+      "property": "skill-2.base-magic",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần cơ bản Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 350,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 70
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/gildur",
+      "property": "skill-2.ongoing-magic",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần duy trì Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 35,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 7
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.05
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/raz",
+      "property": "skill-1.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 8,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/gildur",
+      "property": "skill-3.cooldown",
+      "classification": "rework",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng kỹ năng",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 45,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/trieu-van",
+      "property": "skill-1.empowered-dash",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Đòn đánh cường hóa từ Chiêu 1",
+          "detail": "Có mục tiêu thì đột kích mục tiêu; thiếu mục tiêu thì lướt về trước."
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/dirak",
+      "property": "skill-2.inner-fall",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Chọn điểm rơi Chiêu 2 trong vòng trong của Chiêu 1.",
+          "detail": "Chiêu 2 rơi xuống trực tiếp.",
+          "interactions": [
+            "Vòng trong của Chiêu 1."
+          ]
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/dirak",
+      "property": "skill-3.bastion",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Dùng Lô cốt tử quang.",
+          "detail": "Chiêu phòng thủ; Pháo tử quang chuyển sang Chiêu 4."
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/dirak",
+      "property": "skill-4.blast",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Dùng Pháo tử quang, nay là Chiêu 4.",
+          "detail": "Giá trị sát thương công bố: 500 cộng 250 mỗi cấp chiêu và 0,8 công phép. Mục này không ghi loại sát thương.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 50,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/dirak",
+      "property": "skill-4.mana",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Thi triển Chiêu 4.",
+          "formula": {
+            "unit": "mana",
+            "base": 90,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/dirak",
+      "property": "identity.ability-inventory",
+      "classification": "addition",
+      "replacement": {
+        "value": [
+          "skill-1",
+          "skill-2",
+          "skill-3",
+          "skill-4"
+        ],
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/raz",
+      "property": "skill-2.magic-defense-reduction",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 áp hiệu ứng lên mục tiêu.",
+          "formula": {
+            "unit": "magic_defense",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20
+              }
+            ]
+          },
+          "detail": "Giảm giáp phép của mục tiêu. Chưa có thời lượng trong ghi chú."
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/dolia",
+      "property": "skill-3.volkath-reset",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "reset_cooldown",
+          "target": "volkath",
+          "trigger": "Dolia làm mới Chiêu 3 của Volkath.",
+          "detail": "Bản sửa lỗi xác nhận làm mới chiêu và bảo toàn trạng thái miễn tử của lần dùng được làm mới.",
+          "interactions": [
+            "Chiêu 3 của Volkath sau khi được làm mới."
+          ]
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "heroes/volkath",
+      "property": "skill-3.undying-after-reset",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Trong cửa sổ Miễn tử khi dùng Chiêu 3 sau khi Dolia làm mới.",
+          "detail": "Vẫn hưởng miễn tử theo bản sửa lỗi. Chưa có độ dài cửa sổ trong thông báo.",
+          "interactions": [
+            "Chiêu làm mới của Dolia."
+          ]
+        },
+        "evidence": [
+          "patch-oct15"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15"
+      }
+    },
+    {
+      "entity": "enchantments/rung-nguyen-sinh",
+      "property": "tier-3.du-hiep.immunity",
+      "classification": "bug_fix",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "trigger": "Đòn kích hoạt Du hiệp trúng tướng.",
+          "target": "target-hit",
+          "exceptions": [
+            "Làm chậm bị chặn khi mục tiêu đang miễn khống."
+          ]
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15"
+        ]
+      }
+    },
+    {
+      "entity": "enchantments/rung-nguyen-sinh",
+      "property": "tier-2.cuu-vien.refresh",
+      "classification": "bug_fix",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "trigger": "Hiệu ứng Cứu viện đang hoạt động.",
+          "target": "self-and-nearby-allied-heroes",
+          "exceptions": [
+            "Đã sửa lỗi tự làm mới hiệu ứng liên tục."
+          ]
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "passive.full-power-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Kỹ năng kế tiếp đánh trúng khi đầy Ma lực.",
+          "detail": "Đồng thời triệu hồi Ma vật gây sát thương phép. Thiếu lượng khiên và mốc nạp."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "passive.full-power-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Ma vật lao tới sau lần tung chiêu trúng lúc đầy Ma lực.",
+          "damage_type": "magic"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-1.explosion",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "target-hit",
+          "trigger": "Ma vật chạm địch hoặc đến cuối tầm.",
+          "detail": "Nổ và tỏa đạn. Kiểm tra góc đứng để tránh nhiều thành phần; chưa xác minh số đạn cùng trúng."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-2.center-knockup",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-center",
+          "trigger": "Đứng ở trung tâm vết nứt lúc nổ sau độ trễ.",
+          "detail": "Vùng giữa có hất tung và sát thương cao hơn."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-2.outer-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-area",
+          "trigger": "Vết nứt bùng phát trúng.",
+          "detail": "Dùng bước ra khỏi vùng trễ để tránh cả khống chế và chuỗi nối."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.opening-slow",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "target": "enemies-in-path",
+          "trigger": "Ma vật xung kích lúc được triệu hồi trúng."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.cast-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Tung Triệu hồi hắc ám."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.summon-magic-defense-reduction",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "trigger": "Ma vật chạm địch trong thời gian chiêu cuối.",
+          "detail": "Giảm giáp phép của đích; chưa biết dạng phẳng/phần trăm, hệ số, cộng dồn hoặc thời lượng."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.contact-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Ma vật được triệu hồi chạm địch.",
+          "detail": "Tạo khiên cho Evita; chưa biết có cộng với khiên lúc tung chiêu."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    },
+    {
+      "entity": "heroes/evita",
+      "property": "skill-3.resource-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "trigger": "Chiêu cuối đang duy trì.",
+          "detail": "Tăng nhịp nạp Ma lực. Ma vật tự tìm mục tiêu sau cú xung kích."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2026-10-15",
+        "evidence": [
+          "patch-oct15",
+          "hero-evita"
+        ]
+      }
+    }
+  ],
+  "review_notes": []
+}

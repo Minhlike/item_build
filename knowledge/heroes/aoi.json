@@ -1,0 +1,143 @@
+{
+  "id": "aoi",
+  "kind": "heroes",
+  "name": "Aoi",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Tích một Long lực khi tung chiêu, tối đa bốn",
+          "detail": "Đòn kế có đột kích vật lý, tăng tầm/tốc đánh. Đòn cường hóa thứ tư chí mạng và giảm hồi theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Trảo thường chạm hoặc cú bổ khi bay trúng",
+          "detail": "Thường tự hồi, phi hành hất và cấp khiên thay hồi.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "value": {
+          "effect": "dash",
+          "target": "self",
+          "trigger": "Móc trảo vào địa hình",
+          "detail": "Chọn xung kích hay phi hành theo hướng di chuyển, chứa hai lượt chịu CDR. Miễn khống khi di chuyển theo trảo."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Aoi lên không rồi giật lùi",
+          "detail": "Không thể bị chọn khi lên. Nhịp đầu làm chậm, lượt kéo trảo thêm vật lý dựa HP mất của đích.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-aoi"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng ôm tường khi Aoi còn trảo. Giữ đòn dồn cho sau lúc cô có thể bị chọn, che mục tiêu ít máu khỏi lượt giật."
+      }
+    ],
+    "passive.empowered-physical": [
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "empowered_attack",
+          "trigger": "Đòn đánh cường hóa từ Nội tại trúng đích",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 60.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10.0
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.45
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "empowered_attack",
+          "trigger": "Đòn đánh cường hóa từ Nội tại trúng đích",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 90.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10.0
+              },
+              {
+                "basis": "bonus_ad",
+                "coefficient": 0.5
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

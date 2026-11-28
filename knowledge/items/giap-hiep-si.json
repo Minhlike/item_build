@@ -1,0 +1,63 @@
+{
+  "id": "giap-hiep-si",
+  "kind": "items",
+  "name": "Giáp hiệp sĩ",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 730.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 210.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "passive.attack-slow": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "attack_speed",
+          "target": "attacker",
+          "delivery": "item",
+          "trigger": "Người mang chịu sát thương",
+          "activation": "automatic",
+          "detail": "Giảm tốc đánh.",
+          "amount": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "unique_group": "linh-gac"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-giap-hiep-si"
+        ],
+        "value": "lam"
+      }
+    ]
+  },
+  "unknown": [
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

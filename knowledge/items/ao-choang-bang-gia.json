@@ -1,0 +1,98 @@
+{
+  "id": "ao-choang-bang-gia",
+  "kind": "items",
+  "name": "Áo choàng băng giá",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1970.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 800.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "stat.armor": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 200.0,
+          "unit": "armor"
+        }
+      }
+    ],
+    "stat.cdr": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.spellblade": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-and-nearby-enemies",
+          "delivery": "item",
+          "trigger": "Đòn đánh thường kế tiếp trong 5 giây sau khi tung chiêu",
+          "activation": "automatic",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.3
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 0.65
+          },
+          "radius": 3.0,
+          "exceptions": [
+            "Làm chậm 0,5 giây, 30% với người dùng cận chiến và 20% với người dùng đánh xa."
+          ],
+          "unique_group": "suc-manh-nguyen-to"
+        }
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-ao-choang-bang-gia"
+        ],
+        "value": "lam"
+      }
+    ]
+  },
+  "unknown": [
+    "Công thức ghép và giới hạn mua",
+    "Đối chiếu cửa hàng trong game"
+  ],
+  "shop_group": "defense",
+  "relations": []
+}

@@ -1,0 +1,85 @@
+{
+  "id": "omega",
+  "kind": "heroes",
+  "name": "Omega",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-omega"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemy-structures",
+          "trigger": "Dùng kỹ năng đánh công trình",
+          "detail": "Có phần chuẩn lên công trình, không suy ra hiệu lực chuẩn lên tướng.",
+          "damage_type": "true"
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-omega"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Bật Xung phong",
+          "detail": "Mở khiên và tăng tốc khoảng 3 giây theo hồ sơ. Đòn đánh kế gây thêm vật lý và hất, cần tách thời điểm tính khiên và khi đòn trúng.",
+          "timing": {
+            "duration_s": 3.0
+          }
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-omega"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Omega tiếp xúc địch trong phạm vi S2",
+          "detail": "Làm choáng và gây vật lý."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-omega"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Địch ở gần trong lúc chiêu cuối quét",
+          "detail": "Các nhịp vật lý đẩy lùi."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-omega"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng đứng sát đường trụ khi Omega đẩy chung đội. Bảo kê bằng cách ngắt đường áp sát từ trước cú đánh cường hóa."
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc theo cấp",
+    "Hệ số, hồi chiêu và biến thể chưa có số liệu theo phiên bản."
+  ],
+  "relations": []
+}

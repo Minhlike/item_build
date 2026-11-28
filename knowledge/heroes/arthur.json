@@ -1,0 +1,278 @@
+{
+  "id": "arthur",
+  "kind": "heroes",
+  "name": "Arthur",
+  "aliases": [
+    "Arhur"
+  ],
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "tactics.peel": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Giữ chiêu áp sát và gây gián đoạn khi đối thủ lao vào chủ lực."
+      }
+    ],
+    "passive.max-hp-heal": [
+      {
+        "evidence": [
+          "arthur",
+          "academy-arthur-detail"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại Uy dũng phát nhịp tự hồi.",
+          "detail": "Hồ sơ ghi nhịp theo giây, hướng dẫn cũ ghi 2% HP mỗi 2 giây. Chưa chốt nhịp hoặc hệ số hiện hành.",
+          "basis": "caster_max_hp"
+        }
+      }
+    ],
+    "skill-1.empowered-physical": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh Gươm chính nghĩa cường hóa chạm mục tiêu.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-1.silence": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "target-hit",
+          "trigger": "Đòn đánh Gươm chính nghĩa cường hóa chạm mục tiêu.",
+          "detail": "Câm lặng. Thời lượng hiện hành chưa rõ."
+        }
+      }
+    ],
+    "skill-1.mark-max-hp-magic": [
+      {
+        "evidence": [
+          "arthur",
+          "academy-arthur-detail"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "trigger": "Arthur đánh thường hoặc dùng chiêu lên kẻ đang mang dấu Gươm chính nghĩa.",
+          "detail": "Tính theo HP tối đa của đích; vẫn là phép.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "target_max_hp",
+                "coefficient": 0.01
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.orbit-magic": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "nearby-enemies",
+          "trigger": "Vòng khiên chạm mục tiêu trong từng nhịp.",
+          "damage_type": "magic",
+          "timing": {
+            "interval_s": 0.5
+          }
+        }
+      }
+    ],
+    "skill-3.knockup": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "trigger": "Arthur đáp xuống khi dùng chiêu cuối.",
+          "detail": "Hất tung vùng."
+        }
+      }
+    ],
+    "skill-3.zone-magic": [
+      {
+        "evidence": [
+          "arthur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "enemies-in-area",
+          "trigger": "Đứng trong vùng dư âm sau cú đáp.",
+          "damage_type": "magic",
+          "timing": {
+            "duration_s": 5.0,
+            "interval_s": 1.0
+          }
+        }
+      }
+    ],
+    "skill-3.impact-magic": [
+      {
+        "evidence": [
+          "arthur",
+          "academy-arthur-detail",
+          "arthur-ultimate-hp-conflict"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Cú đáp Công lý phán quyết trúng.",
+          "detail": "Chủ thể HP tối đa mâu thuẫn; chưa dùng hệ số từ hướng dẫn làm số hiện hành.",
+          "damage_type": "magic"
+        }
+      }
+    ],
+    "tactics.peel-marked-ally": [
+      {
+        "evidence": [
+          "arthur",
+          "academy-arthur-detail"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đổi góc khi bản thân hoặc chủ lực đã mang dấu. Tách cú đánh vật lý khỏi phần phép theo HP đích để không tính giáp vật lý cho cả chuỗi."
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Nội tại hồi theo nhịp",
+          "detail": "Hồ sơ mô tả phần theo HP tối đa của Arthur, kiểm lượng đúng bản trước khi tính."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đánh áp sát sau khi bật chạy",
+          "detail": "Vật lý và câm lặng, đặt dấu. Đòn hoặc chiêu tiếp theo lên dấu có phép theo HP đích.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Triệu gươm khiên",
+          "detail": "Khiên dựa HP tối đa Arthur, vòng có nhịp phép mỗi 0,5 giây theo hồ sơ."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Cú nhảy chiêu cuối chạm vùng",
+          "detail": "Hất trong vùng và có phần phép, còn nhịp phép sau cú đáp. Nguồn về HP cơ sở của cú đáp mâu thuẫn."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-arthur"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Tách người mang dấu khỏi Arthur. Đừng gộp dấu theo HP đích hoặc phần vòng phép vào phần vật lý của đòn áp sát."
+      }
+    ],
+    "skill-1.empowered-range": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "stat_change",
+          "target": "target-hit",
+          "trigger": "Đòn đánh được Gươm chính nghĩa cường hóa.",
+          "detail": "Tầm đòn đánh cường hóa tăng 500 lên 600 theo đơn vị trong thông báo."
+        }
+      }
+    ],
+    "skill-2.shield": [
+      {
+        "evidence": [
+          "patch-aug"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-08-13",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Chiêu 2 cấp lá chắn",
+          "formula": {
+            "unit": "hp",
+            "base": 150.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 30.0
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.04
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

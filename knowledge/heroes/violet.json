@@ -1,0 +1,303 @@
+{
+  "id": "violet",
+  "kind": "heroes",
+  "name": "Violet",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "skill-1.poke": [
+      {
+        "evidence": [
+          "hero-violet"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-and-units-behind",
+          "delivery": "empowered_attack",
+          "trigger": "Đòn bắn cường hóa sau cú lộn trúng",
+          "detail": "Tầm xa hơn đánh thường, có thể cấu rỉa từ ngoài tầm trả đòn.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.missing-hp-physical": [
+      {
+        "evidence": [
+          "hero-violet"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "trigger": "Pháo đại trúng địch",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "target_missing_hp",
+                "coefficient": 0.12
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "tactics.enemy-critical": [
+      {
+        "evidence": [
+          "hero-violet",
+          "academy-items"
+        ],
+        "kind": "derived_knowledge",
+        "value": "Xét dấu hiệu chí mạng hoặc xuyên giáp từ đồ đối phương thực sự mua như Thánh kiếm và Muramasa. Riêng tỷ lệ chí mạng của phát cường hóa cần xác nhận, không gán mặc định."
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "value": {
+          "effect": "stat_change",
+          "target": "self",
+          "trigger": "Đánh thường hoặc S2/S3 trúng tướng",
+          "detail": "Bớt 0,5 giây hồi đạn xuyên theo hồ sơ."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lộn rồi đánh cường hóa",
+          "detail": "Đạn vật lý xuyên đường và tăng tầm. Lộn gần địch có tăng chạy theo hồ sơ, hồi theo patch.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Lựu đạn nổ trúng vùng",
+          "detail": "Vật lý kèm chậm khoảng 1 giây.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Pháo đại trúng khu vực",
+          "detail": "Hồ sơ có thêm 12% HP đã mất đích thành vật lý, xem công thức bản vá.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-violet"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đứng lệch khỏi lính và tuyến trước, chờ cú lộn rồi ép góc. Người thấp HP tránh đứng trong vùng pháo đại."
+      }
+    ],
+    "passive.nonhero-cdr": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "reduce_cooldown",
+          "target": "self",
+          "trigger": "Đánh thường trúng đơn vị không phải tướng địch.",
+          "detail": "Giảm thời gian hồi Chiêu 1.",
+          "amount": {
+            "amount": 0.5,
+            "unit": "second"
+          }
+        }
+      }
+    ],
+    "skill-1.cooldown": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "SUPERSEDED",
+        "effective_from": "2026-03-11",
+        "effective_until": "2026-04-08",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Thi triển Chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 5.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.2
+                }
+              ]
+            },
+            "cooldown_start": "cast"
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Thi triển Chiêu 1.",
+          "timing": {
+            "cooldown_s": 5.0,
+            "cooldown_start": "cast"
+          }
+        }
+      }
+    ],
+    "skill-2.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương gốc khi Chiêu 2 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 250.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.0
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "skill-2.armor-debuff": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "armor_reduction",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 trúng và đánh dấu mục tiêu.",
+          "amount": {
+            "amount": 0.1,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 5.0
+          }
+        }
+      }
+    ],
+    "skill-2.marked-hit": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "damage",
+          "target": "marked-target",
+          "delivery": "basic_attack",
+          "trigger": "Đánh thường mục tiêu đang chịu dấu ấn Chiêu 2.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.2
+              }
+            ]
+          },
+          "exceptions": [
+            "Thành phần gây lên lính có dấu tăng gấp đôi."
+          ]
+        }
+      }
+    ],
+    "skill-1.base-physical": [
+      {
+        "evidence": [
+          "patch-2026-04-08"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-04-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn cường hóa từ Chiêu 1 trúng.",
+          "detail": "Phần gốc được công bố. Không gồm tỷ lệ đánh thường hay chí mạng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 225.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 25.0
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "relations": []
+}

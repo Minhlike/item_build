@@ -1,0 +1,242 @@
+{
+  "id": "yena",
+  "kind": "heroes",
+  "name": "Yena",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yena"
+        ],
+        "value": {
+          "effect": "accrue_stack",
+          "target": "self",
+          "trigger": "Dạng loan đao đánh trúng tướng",
+          "detail": "Đủ năm dấu có vật lý, câm lặng/chậm. Dạng viên đao đổi tốc đánh lấy sát thương và bảo hộ khi tung; xem khiên theo patch."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yena"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Loan đao lướt trúng mở lượt hai trong 5 giây",
+          "detail": "Viên đao tụ tối đa khoảng 2 giây rồi chém mạnh hơn theo thời gian, trúng mở thêm lượt.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yena"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Loan đao để vệt xoay vật lý/chậm",
+          "detail": "Viên đao quét bốn nhịp đẩy/chậm, nhịp bốn hất. Nhặt lại vũ khí giúp giảm hồi."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-yena"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "affected-enemies",
+          "trigger": "Đổi dạng và đánh vùng quanh",
+          "detail": "Sang viên đao tăng AD, về loan đao tăng tốc đánh trong cửa sổ. Toàn bộ S1/S2 đổi cơ chế.",
+          "damage_type": "physical"
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-yena"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Rời nhịp quét lặp khi có nguy cơ câm lặng. Tấn công sau khi cô tung hết cửa sổ bảo hộ dạng viên đao, đừng đứng vào đích nhặt đao."
+      }
+    ],
+    "passive.shield": [
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Nhận lá chắn theo nội tại Yena",
+          "formula": {
+            "unit": "hp",
+            "base": 200.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 100.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.4
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26",
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Nhận lá chắn theo nội tại Yena",
+          "formula": {
+            "unit": "hp",
+            "base": 280.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 140.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.8
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "crescent.skill-2.physical": [
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "ability",
+          "trigger": "Chiêu 2 dạng Viên đao trúng địch",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 130.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.68
+              }
+            ]
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26",
+        "value": {
+          "effect": "damage",
+          "target": "target",
+          "delivery": "ability",
+          "trigger": "Chiêu 2 dạng Viên đao trúng địch",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 140.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 28.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.75
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "dual.skill-2.cooldown": [
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "SUPERSEDED",
+        "effective_until": "2026-11-26",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng Chiêu 2 dạng Song loan đao",
+          "timing": {
+            "cooldown_s": 12.0
+          }
+        }
+      },
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26",
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "delivery": "ability",
+          "trigger": "Dùng Chiêu 2 dạng Song loan đao",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 12.0,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

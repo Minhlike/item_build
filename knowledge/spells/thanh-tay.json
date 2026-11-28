@@ -1,0 +1,45 @@
+{
+  "id": "thanh-tay",
+  "kind": "spells",
+  "name": "Thanh tẩy",
+  "facts": {
+    "active.effect": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "cleanse",
+          "target": "self",
+          "delivery": "spell",
+          "trigger": "Kích hoạt lúc cần gỡ hiệu ứng",
+          "timing": {
+            "cooldown_s": 120.0
+          }
+        }
+      }
+    ],
+    "active.cc-immunity": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Sau khi bấm Thanh tẩy",
+          "timing": {
+            "duration_s": 1.5
+          },
+          "exceptions": [
+            "Đối chiếu riêng các dạng áp chế hoặc cấm dùng phép."
+          ]
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+  ],
+  "relations": []
+}

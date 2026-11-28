@@ -1,0 +1,86 @@
+{
+  "id": "guom-nguyen-to",
+  "kind": "items",
+  "name": "Gươm nguyên tố",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 820.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 40.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.cooldown-reduction": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.spellblade": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đánh thường kế tiếp sau tung chiêu.",
+          "activation": "automatic",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.3
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.18
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 3.0
+          },
+          "unique_group": "suc-manh-nguyen-to"
+        }
+      }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-guom-nguyen-to"
+        ],
+        "value": "tim"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

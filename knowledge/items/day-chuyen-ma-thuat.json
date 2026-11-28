@@ -1,0 +1,47 @@
+{
+  "id": "day-chuyen-ma-thuat",
+  "kind": "items",
+  "name": "Dây chuyền ma thuật",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 120.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.mana-regen-note": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "10 năng lượng mỗi 5 giây trong danh mục"
+      }
+    ],
+    "shop.activation": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": "stats_only"
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-day-chuyen-ma-thuat"
+        ],
+        "value": "lam"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

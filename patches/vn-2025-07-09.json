@@ -1,0 +1,675 @@
+{
+  "id": "vn-2025-07-09",
+  "title": "Ngày hội Liên Quân 2025, trang bị",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2025-07-09",
+  "evidence": "patch-2025-07-09-items",
+  "changes": [
+    {
+      "entity": "items/ma-phap-truong-bao",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2160,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/ma-phap-truong-bao",
+      "property": "stat.ap",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 120,
+          "unit": "ability_power"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/ma-phap-truong-bao",
+      "property": "stat.hp",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 900,
+          "unit": "hp"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/sach-thanh",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2610,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/sach-thanh",
+      "property": "stat.ap",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 350,
+          "unit": "ability_power"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/sach-thanh",
+      "property": "stat.cdr",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/xuyen-tam-lenh",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1980,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/xuyen-tam-lenh",
+      "property": "stat.ap",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 140,
+          "unit": "ability_power"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/xuyen-tam-lenh",
+      "property": "stat.hp",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 500,
+          "unit": "hp"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/huyet-anh-dao",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 830,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/huyet-anh-dao",
+      "property": "stat.ad",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 30,
+          "unit": "attack_damage"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/huyet-anh-dao",
+      "property": "stat.lifesteal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.1,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/chuy-bang-suong",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2060,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/chuy-bang-suong",
+      "property": "stat.ad",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 60,
+          "unit": "attack_damage"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/chuy-bang-suong",
+      "property": "stat.attack-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.3,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/chuy-bang-suong",
+      "property": "stat.hp",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 900,
+          "unit": "hp"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/guom-sam-set",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1840,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/guom-sam-set",
+      "property": "stat.attack-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.35,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/guom-sam-set",
+      "property": "stat.move",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.08,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/quy-kiem",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 1800,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/quy-kiem",
+      "property": "stat.ad",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 100,
+          "unit": "attack_damage"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/quy-kiem",
+      "property": "stat.lifesteal",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 0.25,
+          "unit": "ratio"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/quy-kiem",
+      "property": "stat.hp",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 600,
+          "unit": "hp"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/huyet-anh-dao",
+      "property": "passive.blood-feast",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Máu bản thân dưới 30%.",
+          "activation": "automatic",
+          "unique_group": "huyet-yen",
+          "timing": {
+            "duration_s": 5,
+            "internal_cooldown_s": 20
+          },
+          "detail": "400–610 HP tổng cả cửa sổ; mốc tăng và số nhịp chưa rõ."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/quy-kiem",
+      "property": "passive.blood-feast",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "heal",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Máu bản thân dưới 30%.",
+          "activation": "automatic",
+          "unique_group": "huyet-yen",
+          "timing": {
+            "duration_s": 5,
+            "internal_cooldown_s": 20
+          },
+          "detail": "400–610 HP tổng cả cửa sổ; mốc tăng và số nhịp chưa rõ."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/chuy-bang-suong",
+      "property": "passive.freeze",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "soft_cc",
+          "actor": "caster",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đánh thường hoặc tung chiêu trúng.",
+          "activation": "automatic",
+          "timing": {
+            "duration_s": 1.5
+          },
+          "stacks": 2,
+          "unique_group": "dong-bang",
+          "detail": "5–10% tốc chạy, trần 2 tầng; chưa rõ mốc theo cấp."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/chuy-bang-suong",
+      "property": "passive.cold-damage",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "actor": "caster",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đánh thường hoặc tung chiêu trúng.",
+          "activation": "automatic",
+          "damage_type": "physical",
+          "timing": {
+            "internal_cooldown_s": 3
+          },
+          "unique_group": "han-khi",
+          "detail": "140–280 sát thương gốc cộng 45% AD cộng thêm; cần mốc mức gốc."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/sach-thanh",
+      "property": "passive.spell-body",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage_reduction",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Mang Sách thánh.",
+          "activation": "automatic",
+          "unique_group": "phap-the",
+          "amount": {
+            "amount": 0.005,
+            "unit": "ratio"
+          },
+          "detail": "Mỗi 100 công phép tăng 0,5 điểm phần trăm miễn thương và 0,5 điểm phần trăm sát thương gây ra. Chưa rõ làm tròn, trần và thứ tự."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/xuyen-tam-lenh",
+      "property": "passive.magic-debuff",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "actor": "caster",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Tung chiêu trúng kẻ địch.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 100,
+            "unit": "magic_defense"
+          },
+          "timing": {
+            "duration_s": 3
+          },
+          "detail": "Hạ 100 giáp phép và 10% công phép của mục tiêu."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "shop.recipe",
+      "classification": "addition",
+      "replacement": {
+        "value": [
+          "items/so-ma-thuat",
+          "items/nhan-lapis",
+          "items/day-chuyen-hong-ngoc"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "stat.price",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "amount": 2050,
+          "unit": "gold"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "passive.emergency-shield",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "shield",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Máu dưới 30%.",
+          "activation": "automatic",
+          "timing": {
+            "duration_s": 4
+          },
+          "detail": "Lá chắn 510–1000 + 100% AP + 8% HP cộng thêm. Phần gốc có mốc chưa rõ.",
+          "unique_group": "carano-protection"
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "passive.emergency-cleanse",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "cleanse",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Máu dưới 30%.",
+          "activation": "automatic",
+          "detail": "Hóa giải khống chế trên bản thân."
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    },
+    {
+      "entity": "items/the-uoc-carano",
+      "property": "passive.emergency-speed",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "stat_change",
+          "actor": "caster",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Trong cửa sổ bảo hộ.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.3,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 4
+          }
+        },
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ]
+      }
+    }
+  ]
+}

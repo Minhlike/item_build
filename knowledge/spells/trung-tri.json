@@ -1,0 +1,64 @@
+{
+  "id": "trung-tri",
+  "kind": "spells",
+  "name": "Trừng trị",
+  "facts": {
+    "active.effect": [
+      {
+        "evidence": [
+          "academy-spells"
+        ],
+        "value": {
+          "effect": "jungle",
+          "target": "nearby-jungle-monsters",
+          "delivery": "spell",
+          "trigger": "Kích hoạt gần quái; phiên bản mới có tích lượt cần đối chiếu"
+        }
+      }
+    ],
+    "active.charges": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "charge",
+          "target": "self",
+          "delivery": "spell",
+          "trigger": "Hồi lượt Trừng trị hoặc Tê Cóng",
+          "detail": "Giãn cách sử dụng và thời gian hồi một lượt là hai bộ đếm riêng.",
+          "timing": {
+            "cooldown_s": 10.0,
+            "recharge_s": 45.0
+          },
+          "charges": 2
+        }
+      }
+    ],
+    "active.pve-true": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "nearby-monsters-and-minions",
+          "delivery": "spell",
+          "trigger": "Kích hoạt Trừng trị hoặc Tê Cóng",
+          "damage_type": "true",
+          "interactions": [
+            "Làm choáng các mục tiêu PvE trong 1 giây."
+          ]
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu hồi chiêu và ngoại lệ theo bản hiện hành"
+  ],
+  "relations": []
+}

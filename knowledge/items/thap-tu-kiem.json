@@ -1,0 +1,116 @@
+{
+  "id": "thap-tu-kiem",
+  "kind": "items",
+  "name": "Thập Tự Kiếm",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1900.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 180.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.2,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.move": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.05,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.attack-speed": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "attack_speed",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đòn đánh thường kế tiếp.",
+          "activation": "automatic",
+          "amount": {
+            "amount": 0.15,
+            "unit": "ratio"
+          },
+          "timing": {
+            "duration_s": 4.0
+          },
+          "stacks": 2,
+          "unique_group": "cap-nhan"
+        }
+      }
+    ],
+    "passive.on-hit": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đòn đánh thường trúng.",
+          "activation": "automatic",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 40.0,
+            "terms": [
+              {
+                "basis": "bonus_ap",
+                "coefficient": 0.2
+              }
+            ]
+          },
+          "timing": {
+            "internal_cooldown_s": 0.35
+          },
+          "unique_group": "thanh-quang"
+        }
+      }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-thap-tu-kiem"
+        ],
+        "value": "tim"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

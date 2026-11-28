@@ -1,0 +1,225 @@
+{
+  "id": "toro",
+  "kind": "heroes",
+  "name": "Toro",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.cast-immunity": [
+      {
+        "evidence": [
+          "hero-toro"
+        ],
+        "value": {
+          "effect": "cc_immunity",
+          "target": "self",
+          "trigger": "Toro đang tung chiêu"
+        }
+      }
+    ],
+    "passive.combat-mitigation": [
+      {
+        "evidence": [
+          "hero-toro"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Tăng chiến ý trong giao tranh",
+          "detail": "Ra khỏi giao tranh làm giảm chiến ý; mô tả cũng ghi hồi máu khi rời giao tranh."
+        }
+      }
+    ],
+    "tactics.defend-dive-lane": [
+      {
+        "evidence": [
+          "hero-toro",
+          "patch-2026-03-11"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Toro mở đường cho bắn và cấu rỉa nối tiếp. Đẩy tướng gây sát thương hoặc tách chủ lực khi Toro đang thi triển. Hồi rời giao tranh chỉ đáng mua giảm hồi nếu Hỏa diệm còn phủ khi bắt đầu nhịp."
+      }
+    ],
+    "skill-1.front-knockup": [
+      {
+        "evidence": [
+          "hero-toro"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-path",
+          "trigger": "Toro húc trúng trên đường lướt."
+        }
+      }
+    ],
+    "skill-2.refresh-dash": [
+      {
+        "evidence": [
+          "hero-toro"
+        ],
+        "value": {
+          "effect": "reset_cooldown",
+          "target": "self",
+          "trigger": "Kẻ địch trong phạm vi Dư chấn.",
+          "detail": "Làm mới S1 theo hồ sơ bộ chiêu; cần kiểm tra thời điểm chính xác."
+        }
+      }
+    ],
+    "skill-3.third-knockup": [
+      {
+        "evidence": [
+          "hero-toro"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "enemies-in-area",
+          "trigger": "Nhịp cuối Đại địa chấn trúng.",
+          "detail": "Đọc cùng ứng viên miễn khống trong lúc tung; không giả định mọi loại ngắt đều vô hiệu."
+        }
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Đang tung chiêu hoặc duy trì giao tranh",
+          "detail": "Bảo hộ khống chế khi tung và có Chiến ý tăng miễn thương, đầy thêm tốc đánh. Sau giao tranh Chiến ý giảm và thành hồi."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Cú húc trúng dọc đường",
+          "detail": "Hất và vật lý. Đòn thường thứ ba có nhánh vật lý theo 3% HP tối đa của Toro theo hồ sơ."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "value": {
+          "effect": "shield",
+          "target": "self",
+          "trigger": "Tụ Dư chấn",
+          "detail": "Có khiên, nổ vật lý sau khoảng 1 giây, tâm mạnh hơn. Có địch gần làm mới S1 và làm chậm; đơn vị khác tướng bị kéo vào tâm."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Đáp rồi phát ba nhịp chấn động",
+          "detail": "Hai nhịp đầu vật lý/chậm, nhịp ba hất. Có thể nối S1 trong lúc tung theo hồ sơ."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-toro"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Không trông chờ ngắt Toro giữa nhịp miễn khống. Tách chủ lực khỏi tuyến lao kép, đánh hồi rời giao tranh chỉ nếu hiệu ứng giảm hồi còn phủ."
+      }
+    ],
+    "passive.out-of-combat-heal": [
+      {
+        "evidence": [
+          "patch-2026-03-11"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-03-11",
+        "value": {
+          "effect": "heal",
+          "target": "self",
+          "trigger": "Rời giao tranh và nội tại cấp hồi phục.",
+          "detail": "Chưa xác định số nhịp hoặc khoảng cách giữa các nhịp từ dòng cập nhật.",
+          "formula": {
+            "unit": "hp",
+            "base": 0.0,
+            "terms": [
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.014
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "passive.mitigation": [
+      {
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21",
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Nội tại giảm sát thương đang hiệu lực.",
+          "amount": {
+            "amount": 0.2,
+            "unit": "ratio"
+          }
+        }
+      }
+    ],
+    "skill-2.physical": [
+      {
+        "evidence": [
+          "patch-sep"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-09-29",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 180.0,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36.0
+              },
+              {
+                "basis": "caster_max_hp",
+                "coefficient": 0.035
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu các thuộc tính chưa có mốc hiệu lực"
+  ],
+  "relations": []
+}

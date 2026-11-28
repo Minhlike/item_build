@@ -1,0 +1,163 @@
+{
+  "id": "valhein",
+  "kind": "heroes",
+  "name": "Valhein",
+  "facts": {
+    "identity.roster": [
+      {
+        "evidence": [
+          "official-roster"
+        ],
+        "value": true
+      }
+    ],
+    "passive.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "value": {
+          "effect": "empowered_attack",
+          "target": "self",
+          "trigger": "Đòn đánh ở nhịp ám khí",
+          "detail": "Ném đoản kiếm với hiệu ứng theo màu, dùng bản vá để biết loại sát thương và nhịp suy giảm tầng."
+        }
+      }
+    ],
+    "skill-1.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Ném phi tiêu S1 trúng",
+          "detail": "Có sát thương và tích Thợ săn, loại sát thương ưu tiên bản vá thay mô tả phép cũ."
+        }
+      }
+    ],
+    "skill-2.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "value": {
+          "effect": "hard_cc",
+          "target": "affected-enemies",
+          "trigger": "Phi tiêu vàng trúng",
+          "detail": "Choáng mục tiêu, tích Thợ săn và có sát thương."
+        }
+      }
+    ],
+    "skill-3.combat": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "value": {
+          "effect": "special",
+          "target": "affected-targets",
+          "trigger": "Bắn sáu viên hình quạt theo hồ sơ",
+          "detail": "Trúng tăng tầng và tốc đánh; viên sau trên cùng đích bị giảm, kiểm loại sát thương và mốc hiện hành."
+        }
+      }
+    ],
+    "tactics.counterplay": [
+      {
+        "evidence": [
+          "snapshot-heroes-valhein"
+        ],
+        "kind": "tactical_heuristic",
+        "value": "Đừng vào cự ly quạt khi còn choáng chỉ định. Đợi tầng rơi trước khi kéo dài trao đổi, tránh gộp ám khí mọi màu vào một hệ số."
+      }
+    ],
+    "passive.red-physical": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phi tiêu đỏ của nội tại trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 20.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.37
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "passive.blue-physical": [
+      {
+        "evidence": [
+          "patch-july"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-07-08",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phi tiêu xanh của nội tại trúng.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 50.0,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 10.0
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 0.185
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "passive.stack-decay": [
+      {
+        "evidence": [
+          "patch-latest"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-11-26",
+        "value": {
+          "effect": "spend_stack",
+          "target": "self",
+          "delivery": "passive",
+          "trigger": "Trong pha giảm dấu ấn nội tại",
+          "amount": {
+            "amount": 1.0,
+            "unit": "count"
+          },
+          "timing": {
+            "interval_s": 1.0
+          }
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Chỉ số gốc",
+    "Hồi chiêu theo cấp",
+    "Xác nhận cơ chế chưa định phiên bản",
+    "Ngưỡng sức mạnh và tương tác ngọc/phù hiệu"
+  ],
+  "relations": []
+}

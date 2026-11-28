@@ -1,0 +1,76 @@
+{
+  "id": "day-chuyen-luc-bao",
+  "kind": "items",
+  "name": "Dây chuyền lục bảo",
+  "facts": {
+    "stat.price": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 1800.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ap": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 160.0,
+          "unit": "ability_power"
+        }
+      }
+    ],
+    "stat.cooldown-reduction": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "amount": 0.15,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "passive.mana-tick": [
+      {
+        "evidence": [
+          "academy-items"
+        ],
+        "value": {
+          "effect": "resource",
+          "target": "self",
+          "delivery": "item",
+          "trigger": "Đến nhịp Hiền giả.",
+          "activation": "automatic",
+          "detail": "Hồi năng lượng. Danh mục ghi thêm dòng 25 năng lượng mỗi 5 giây.",
+          "amount": {
+            "amount": 0.01,
+            "unit": "ratio"
+          },
+          "timing": {
+            "interval_s": 1.0
+          },
+          "unique_group": "hien-gia"
+        }
+      }
+    ],
+    "identity.official-artwork-color": [
+      {
+        "evidence": [
+          "icon-garena-day-chuyen-luc-bao"
+        ],
+        "value": "tim"
+      }
+    ]
+  },
+  "unknown": [
+    "Đối chiếu phiên bản và khả dụng trong client VN."
+  ],
+  "shop_group": "magic",
+  "relations": []
+}

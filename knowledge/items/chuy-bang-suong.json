@@ -1,0 +1,136 @@
+{
+  "id": "chuy-bang-suong",
+  "kind": "items",
+  "name": "Chùy băng sương",
+  "facts": {
+    "shop.recipe": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items"
+        ],
+        "effective_from": "2025-07-09",
+        "value": [
+          "items/phieu-tieu",
+          "items/chuy-xich",
+          "items/nhan-hong-ngoc"
+        ]
+      }
+    ],
+    "identity.official-icon-color": [
+      {
+        "evidence": [
+          "icon-garena-chuy-bang-suong"
+        ],
+        "value": "lam"
+      }
+    ],
+    "stat.price": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 2060.0,
+          "unit": "gold"
+        }
+      }
+    ],
+    "stat.ad": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 60.0,
+          "unit": "attack_damage"
+        }
+      }
+    ],
+    "stat.attack-speed": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 0.3,
+          "unit": "ratio"
+        }
+      }
+    ],
+    "stat.hp": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "amount": 900.0,
+          "unit": "hp"
+        }
+      }
+    ],
+    "passive.freeze": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "effect": "soft_cc",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đánh thường hoặc tung chiêu trúng.",
+          "activation": "automatic",
+          "detail": "5–10% tốc chạy, trần 2 tầng; chưa rõ mốc theo cấp.",
+          "timing": {
+            "duration_s": 1.5
+          },
+          "stacks": 2,
+          "unique_group": "dong-bang"
+        }
+      }
+    ],
+    "passive.cold-damage": [
+      {
+        "evidence": [
+          "patch-2025-07-09-items",
+          "academy-items"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2025-07-09",
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "delivery": "item",
+          "trigger": "Đánh thường hoặc tung chiêu trúng.",
+          "activation": "automatic",
+          "detail": "140–280 sát thương gốc cộng 45% AD cộng thêm; cần mốc mức gốc.",
+          "damage_type": "physical",
+          "timing": {
+            "internal_cooldown_s": 3.0
+          },
+          "unique_group": "han-khi"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Khả dụng và hiệu lực công thức ghép trong client VN",
+    "Màu biểu tượng trong cửa hàng hiện hành"
+  ],
+  "shop_group": "physical",
+  "relations": []
+}

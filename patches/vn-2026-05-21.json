@@ -1,0 +1,393 @@
+{
+  "id": "vn-2026-05-21",
+  "title": "Lễ hội 5v5 21/05/2026",
+  "status": "LIVE_VN",
+  "server": "VN",
+  "effective_from": "2026-05-21",
+  "evidence": "patch-2026-05-21",
+  "changes": [
+    {
+      "entity": "heroes/gildur",
+      "property": "skill-2.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 2.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 10,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.4
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/volkath",
+      "property": "skill-3.attack-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Thành phần đánh thường khi dùng Chiêu 3.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/volkath",
+      "property": "skill-3.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương cơ bản của Chiêu 3.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 100,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 50
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/biron",
+      "property": "skill-1.base-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 gây sát thương thường.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 120,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 24
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/biron",
+      "property": "skill-1.empowered-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 1 gây sát thương ở trạng thái cường hóa.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 180,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 36
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1.5
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/flowborn-2",
+      "property": "skill-2.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 2 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 275,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 55
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.55
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/flowborn-2",
+      "property": "skill-3.base-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Chiêu 3 của dạng pháp sư.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 600,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 300
+              },
+              {
+                "basis": "ap",
+                "coefficient": 1.2
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/krizzix",
+      "property": "skill-2.end-magic",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Phần sát thương kết thúc Chiêu 2.",
+          "damage_type": "magic",
+          "formula": {
+            "unit": "damage",
+            "base": 400,
+            "terms": [
+              {
+                "basis": "skill_rank",
+                "coefficient": 80
+              },
+              {
+                "basis": "ap",
+                "coefficient": 0.6
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/krizzix",
+      "property": "skill-3.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 3.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 35,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -5
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/slimz",
+      "property": "passive.empowered-physical",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage",
+          "target": "target-hit",
+          "trigger": "Đòn đánh thường cường hóa của nội tại.",
+          "damage_type": "physical",
+          "formula": {
+            "unit": "damage",
+            "base": 220,
+            "terms": [
+              {
+                "basis": "hero_level",
+                "coefficient": 16
+              },
+              {
+                "basis": "unspecified_ad",
+                "coefficient": 1
+              }
+            ]
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/toro",
+      "property": "passive.mitigation",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "damage_reduction",
+          "target": "self",
+          "trigger": "Nội tại giảm sát thương đang hiệu lực.",
+          "amount": {
+            "unit": "ratio",
+            "amount": 0.2
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "heroes/wiro",
+      "property": "skill-1.cooldown",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Hồi chiêu 1.",
+          "timing": {
+            "cooldown_s": {
+              "unit": "second",
+              "base": 7.5,
+              "terms": [
+                {
+                  "basis": "skill_rank",
+                  "coefficient": -0.3
+                }
+              ]
+            }
+          }
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    },
+    {
+      "entity": "battlefield/ranked-vn",
+      "property": "draft.flowborn-same-team",
+      "classification": "addition",
+      "replacement": {
+        "value": {
+          "effect": "special",
+          "target": "self",
+          "trigger": "Đội đã có Flowborn ở một trong hai dạng.",
+          "delivery": "battlefield",
+          "detail": "Bản sửa lỗi chặn hai dạng Flowborn xạ thủ và pháp sư cùng xuất hiện trong một đội."
+        },
+        "evidence": [
+          "patch-2026-05-21"
+        ],
+        "status": "LIVE_VN",
+        "effective_from": "2026-05-21"
+      }
+    }
+  ]
+}

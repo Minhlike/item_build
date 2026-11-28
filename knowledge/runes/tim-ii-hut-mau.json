@@ -1,0 +1,41 @@
+{
+  "id": "tim-ii-hut-mau",
+  "kind": "runes",
+  "name": "Tím II Hút máu",
+  "facts": {
+    "rune.tier": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 2.0,
+          "unit": "count"
+        }
+      }
+    ],
+    "rune.color": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": "purple"
+      }
+    ],
+    "stat.lifesteal": [
+      {
+        "evidence": [
+          "academy-runes"
+        ],
+        "value": {
+          "amount": 0.01,
+          "unit": "ratio"
+        }
+      }
+    ]
+  },
+  "unknown": [
+    "Ngày hiệu lực và khả dụng ở đấu hạng VN."
+  ],
+  "relations": []
+}

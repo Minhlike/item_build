@@ -1,0 +1,156 @@
+{
+  "tokenizer": "o200k_base",
+  "platform": "Windows",
+  "runs_per_case": 200,
+  "scope": "Local runtime. File reads include initial indexes. Model quality and connector latency remain unmeasured.",
+  "cases": [
+    {
+      "hero": "thane",
+      "enemies": [
+        "trieu van",
+        "bolt baron",
+        "allain",
+        "natalya",
+        "ryoma"
+      ],
+      "file_reads": 15,
+      "index_load_ms": 1.916,
+      "first_context_ms": 2.194,
+      "warm_context_p95_ms": 0.043,
+      "formats": {
+        "json": {
+          "bytes": 34616,
+          "tokens": 9099,
+          "round_trip": true,
+          "decode_p95_ms": 0.354,
+          "sha256": "450252ec3d7d7245828996b43d2024c7602ca318a28f7c54efb78807cf48acfc"
+        },
+        "json_compact": {
+          "bytes": 23985,
+          "tokens": 6474,
+          "round_trip": true,
+          "decode_p95_ms": 0.34,
+          "sha256": "f22d9ec548913d151a51956b1f8f8f773471245bb3fa90f2b5a4ac0817a54aa3"
+        },
+        "markdown_sections_with_json": {
+          "bytes": 24146,
+          "tokens": 6538,
+          "round_trip": true,
+          "decode_p95_ms": 0.338,
+          "sha256": "afd632bb995f9fafe31c3599a57a644b764ac37b5422b9a636cdb2e27a6aec3b"
+        }
+      }
+    },
+    {
+      "hero": "thane",
+      "enemies": [
+        "richter",
+        "trieu van",
+        "hayate",
+        "raz",
+        "kaine"
+      ],
+      "file_reads": 15,
+      "index_load_ms": 1.961,
+      "first_context_ms": 2.213,
+      "warm_context_p95_ms": 0.04,
+      "formats": {
+        "json": {
+          "bytes": 38876,
+          "tokens": 10230,
+          "round_trip": true,
+          "decode_p95_ms": 0.417,
+          "sha256": "5ae6221a59dbb65ff9ebfa7327a9dd971d6d09bf288d5689263db6c571253eab"
+        },
+        "json_compact": {
+          "bytes": 26719,
+          "tokens": 7275,
+          "round_trip": true,
+          "decode_p95_ms": 0.342,
+          "sha256": "7ebb8792be46e200324ced22f1ca20485ccac6a566cf300a167bbf9e5d2279aa"
+        },
+        "markdown_sections_with_json": {
+          "bytes": 26880,
+          "tokens": 7339,
+          "round_trip": true,
+          "decode_p95_ms": 0.385,
+          "sha256": "1da654f961ed99a9e0dde7b500cb4ea444e029872d6cb3891956531078f60975"
+        }
+      }
+    },
+    {
+      "hero": "thane",
+      "enemies": [
+        "ybneth",
+        "fennik",
+        "trieu van",
+        "omen",
+        "preyta"
+      ],
+      "file_reads": 15,
+      "index_load_ms": 1.506,
+      "first_context_ms": 2.293,
+      "warm_context_p95_ms": 0.044,
+      "formats": {
+        "json": {
+          "bytes": 37186,
+          "tokens": 9801,
+          "round_trip": true,
+          "decode_p95_ms": 0.382,
+          "sha256": "9f67f511fee04d7096b8f41b88a4890d01934fdd1ca9bf006ab7e1a4ca6b5818"
+        },
+        "json_compact": {
+          "bytes": 25611,
+          "tokens": 6982,
+          "round_trip": true,
+          "decode_p95_ms": 0.341,
+          "sha256": "0d065c8bfa02ed238e36ce2d47a889ac46b4f4799ab5df58c78b984d2062af36"
+        },
+        "markdown_sections_with_json": {
+          "bytes": 25772,
+          "tokens": 7046,
+          "round_trip": true,
+          "decode_p95_ms": 0.356,
+          "sha256": "6b80cdd364b96b6370fde5ee3210b8488a90fc419c81172c118fcb37cba24759"
+        }
+      }
+    },
+    {
+      "hero": "thane",
+      "enemies": [
+        "butterfly",
+        "yue",
+        "arthur",
+        "hayate",
+        "edras"
+      ],
+      "file_reads": 15,
+      "index_load_ms": 1.665,
+      "first_context_ms": 2.379,
+      "warm_context_p95_ms": 0.039,
+      "formats": {
+        "json": {
+          "bytes": 39516,
+          "tokens": 10288,
+          "round_trip": true,
+          "decode_p95_ms": 0.417,
+          "sha256": "de89fa7c74713021f267630f10ca06b644888482de4bdfca92fa0566dce838ff"
+        },
+        "json_compact": {
+          "bytes": 26918,
+          "tokens": 7289,
+          "round_trip": true,
+          "decode_p95_ms": 0.4,
+          "sha256": "ae775f8e4417592578f8fe3e54df42c537c56a1e995abd7721c5f1f2d7ef388b"
+        },
+        "markdown_sections_with_json": {
+          "bytes": 27079,
+          "tokens": 7353,
+          "round_trip": true,
+          "decode_p95_ms": 0.386,
+          "sha256": "0b7f9294ce4f207bcc311c1e0d219ca19006c99940bdbe24904cfe40fe877740"
+        }
+      }
+    }
+  ]
+}
